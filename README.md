@@ -39,7 +39,7 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 
 中文到日文的训练
 
-在hugging找一下有没有已经能用的中转日翻译 比如 ssmisya/zh-jp_translator
+在hugging找一下有没有已经能用的中转日翻译 比如 ssmisya/zh-jp_translator K024/mt5-zh-ja-en-trimmed larryvrh/mt5-translation-ja_zh 
 
 日文数据 https://huggingface.co/datasets?language=language:zh,language:ja&sort=downloads
 
