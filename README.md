@@ -41,3 +41,4 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 - [ ] 招人
 - [ ] 去下载Haruhi的动画片视频，想办法先搞几张台词和图片的匹配
 - [ ] 一个增强的gradio系统，支持根据台词显示haruhi的图片
+- [ ] 去二次元社区找更熟悉凉宫春日的同学众测
