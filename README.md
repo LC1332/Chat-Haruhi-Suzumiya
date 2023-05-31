@@ -37,6 +37,24 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 
 ---
 
+中文到日文的训练
+
+在hugging找一下有没有已经能用的中转日翻译 比如 ssmisya/zh-jp_translator
+
+日文数据 https://huggingface.co/datasets?language=language:zh,language:ja&sort=downloads
+
+- [ ] 检查这个模型是不是直接能用(可以问鲁叔，要一些台词文件)
+- [ ] 如果模型很能用，任务就结束了，可以考虑训别的东西（一般不会）
+- [ ] 搜集台词数据、搜集hugging face上所有能用的日文翻译数据
+- [ ] 数据最好达到200k级别
+- [ ] 问鲁叔要一下沈junyi之前的训练代码
+- [ ] 训练中文转日文模型
+- [ ] 对接测试
+
+封小洋 is working on that
+
+---
+
 李鲁鲁的self driving
 
 - [ ] 构建项目页
