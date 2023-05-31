@@ -32,3 +32,12 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 
 贾曜恺 is working on that
 
+
+---
+
+李鲁鲁的self driving
+
+- [ ] 构建项目页
+- [ ] 招人
+- [ ] 去下载Haruhi的动画片视频，想办法先搞几张台词和图片的匹配
+- [ ] 一个增强的gradio系统，支持根据台词显示haruhi的图片
