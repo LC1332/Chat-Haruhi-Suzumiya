@@ -26,6 +26,8 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 
 带socket（或者其他本地与前端链接方式的后端）
 
+这里前端可以去用https://github.com/Voine/ChatWaifu_Mobile  也可以去用别的
+
 - [ ] 调研ChatWaifu的后端怎么和前端连接
 - [ ] 制作一个foo的后端，看看能不能接入
 - [ ] 待app.py有个基础版本后，修改为适合ChatWaifu的后端
