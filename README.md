@@ -13,11 +13,13 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 
 基础的python后端
 
-- [ ] 将Notebook移动到一个app.py的文件中 (doing by 闫晨曦)
-- [ ] 确认app.py能够修改台词记录folder 这样可以存到本地或者colab启动的时候可以存到google drive
+- [x] 将Notebook移动到一个app.py的文件中 (doing by 闫晨曦)
+- [x] 确认app.py能够修改台词记录folder 这样可以存到本地或者colab启动的时候可以存到google drive
 - [x] system prompt存成txt( characters/haruhi/system_prompt.txt )，支持切换。
-- [ ] 确认app.py能够正确调用haruhi的system prompt
-- [ ] app.py 支持设定max_len_story 和max_len_history 默认为 1500, 1200
+- [x] 确认app.py能够正确调用haruhi的system prompt
+- [ ] 冷子昂测试app.py
+- [ ] 确认app.py能够启动gradio
+- [x] app.py 支持设定max_len_story 和max_len_history 默认为 1500, 1200
 - [ ] (opt) 前面都完成之后，项目可以转成public，方便从colab去拉取代码，建立一个colab脚本, 直接clone项目，调用app.py进行玩耍
 
 闫晨曦 is working on that
