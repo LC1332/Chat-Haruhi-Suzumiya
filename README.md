@@ -39,6 +39,11 @@ Chat凉宫春日 是 模仿凉宫春日等一系列动漫人物，使用近似�
   </tr>
 </table>
 
+本项目的核心思想是在prompt构造的时候利用[Luotuo-BERT](https://github.com/LC1332/Luotuo-Text-Embedding)，对经典剧情进行了搜索，作为Fewshot（或者说更接近CoT）的构造标准。
+
+Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM)的子项目之一, 后者由李鲁鲁, 冷子昂, 陈启源发起。
+
+本项目采用Apache 2.0协议，也就是你可以利用项目中的代码进行商用。但是你仍然需要遵守包括 1.角色本身的版权方的协议 2.项目中使用的接口方，比如OpenAI的协议， 3.项目中使用的模型的协议（比如如果我们后期采用了LlaMA或者GLM的模型。）
 
 ## 快速开始
 
@@ -46,9 +51,35 @@ Chat凉宫春日 是 模仿凉宫春日等一系列动漫人物，使用近似�
 |---|---|---|
 |万恶之源|<a href="https://colab.research.google.com/github/LC1332/Prophet-Andrew-Ng/blob/main/prophet-code/haruhiLangChain.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 李鲁鲁最早开发的gradio Chat凉宫春日 |
 
-
-
 ## 计划Feature
+
+我们计划最终产生一个多个前端版本的 Chat凉宫春日，具体特征如下
+
+- Gradio版本
+
+    - 可以在colab启动，方便任何人使用
+
+    - 支持静态图的显示，念白经典台词的时候会同时显示对应的经典画面
+
+    - (opt) 如果Gradio支持语音的话，再做一个合成日文语音的版本
+
+- 本地版本
+
+    - 支持一个Live2D的老婆，口型与语音同步
+
+    - 支持输出的文本转成日文再用合成语音念出来
+
+    - 争取换成haruhi酱的形象
+
+- 后端特征
+
+    - 理论上支持角色更换
+
+    - 日语翻译支持本地/gpt3.5特征
+
+    - (后期) 支持使用本地模型去替换gpt3.5
+
+
 
 ## 赞助
 
