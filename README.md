@@ -30,6 +30,7 @@
     <td>
       <ul>
         <li><a href="#快速开始">快速开始</a></li>
+        <li><a href="#核心原理">核心原理</a></li>
         <li><a href="#计划Feature">计划Feature</a></li>
         <li><a href="#赞助">赞助 | SponsorShip </a></li>
         <li><a href="#人员">人员 </a></li>
@@ -47,6 +48,14 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 本项目采用Apache 2.0协议，也就是你可以利用项目中的代码进行商用。但是你仍然需要遵守包括 1.角色本身的版权方的协议 2.项目中使用的接口方，比如OpenAI的协议， 3.项目中使用的模型的协议（比如如果我们后期采用了LlaMA或者GLM的模型。）
 
 本项目是DataWhale的5月学习的作业，其中闫晨曦，封小洋等同学都由DataWhale社区招募。
+
+## 核心原理
+
+<p align="center">
+        <img src="figures/pipeline.png">
+</p>
+
+上图解释了整个系统的核心原理。
 
 ## 快速开始
 
