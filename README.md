@@ -1,9 +1,45 @@
-# Chat凉宫春日
+中文 | English | 日本語
+
+# Chat凉宫春日 Chat-Haruhi-Suzumiya
+
+[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)]()
+[![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)]()
+
+Chat凉宫春日 是 模仿凉宫春日等一系列动漫人物，使用近似语气、个性和剧情聊天的语言模型，
+
+<details>
+  <summary> 本项目由李鲁鲁，冷子昂，闫晨曦，封小洋等开发。 </summary>
+
+李鲁鲁发起了项目，并完成了最早的版本，在多个微信群实现了测试。
+
+冷子昂参与了早期Gradio的开发，并且参与了后端和前端的选型
+
+闫晨曦将李鲁鲁的notebook重构为app.py
+
+封小洋进行了中文转日文模型的选型
+
+</details>
+
+<table>
+  <tr>
+    <td>
+      <p align="center">
+        <img src="https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/figures/haruhi_suzumiya_bondage_rp.jpg" height="400">
+      </p>
+    </td>
+    <td>
+      <ul>
+        <li><a href="#快速开始">快速开始</a></li>
+        <li><a href="#TODO">TODO</a></li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 
 Chat凉宫春日, Developed by 李鲁鲁, 冷子昂等人。
 
-## TODO LIST
+## TODO
 
 持续招人中
 
