@@ -30,7 +30,7 @@
     <td>
       <ul>
         <li><a href="#快速开始">快速开始</a></li>
-        <li><a href="#快速开始">计划Feature</a></li>
+        <li><a href="#计划Feature">计划Feature</a></li>
         <li><a href="#赞助">赞助 | SponsorShip </a></li>
         <li><a href="#人员">人员 </a></li>
         <li><a href="#TODO">TODO</a></li>
