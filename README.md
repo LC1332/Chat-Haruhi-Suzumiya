@@ -145,9 +145,10 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 - [x] 确认app.py能够修改台词记录folder 这样可以存到本地或者colab启动的时候可以存到google drive
 - [x] system prompt存成txt( characters/haruhi/system_prompt.txt )，支持切换。
 - [x] 确认app.py能够正确调用haruhi的system prompt
-- [ ] 冷子昂测试app.py
-- [ ] 确认app.py能够启动gradio
+- [x] 冷子昂测试app.py
+- [x] 确认app.py能够启动gradio
 - [x] app.py 支持设定max_len_story 和max_len_history 默认为 1500, 1200
+- [ ] 写一个更好的notebook，把外部参数都放在外面，启动gradio；
 - [ ] (opt) 前面都完成之后，项目可以转成public，方便从colab去拉取代码，建立一个colab脚本, 直接clone项目，调用app.py进行玩耍
 
 闫晨曦 is working on that
@@ -157,15 +158,19 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 
 新的后端任务
 
-- [ ] 将text的embedding和字典做预存
+- [x] 将text的embedding和字典做预存
 
 我已经在characters/haruhi/images 上传了文件
 
 同时text_image_dict里面存储了文件名和台词之间的关系
 
-- [ ] 待鲁叔初步的图-文数据之后，做一个类，
+- [x] 待鲁叔初步的图-文数据之后，做一个类，
 
 支持文本embedding抽取、预存、载入、给定文本出(图片、相似度)
+
+- [ ] 在src目录下，建立一个testing子目录， 为文-文 搜索 写一个单元测试
+
+- [ ] 为 文-图搜索写一个单元测试
 
 - [ ] 如果手快的话，再把这个出图片的整合到gradio里面去(新建一个后端任务)
 
@@ -178,6 +183,8 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 - [ ] 调研ChatWaifu的后端怎么和前端连接
 - [ ] 制作一个foo的后端，看看能不能接入
 - [ ] 待app.py有个基础版本后，修改为适合ChatWaifu的后端
+
+- [ ] 如果ChatWaifu的前端很难的话，可以先写个前后端分离的gradio或者flask前端，把后端献给做好
 
 贾曜恺 is working on that
 
@@ -192,6 +199,8 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 
 - [x] 检查这个模型是不是直接能用(可以问鲁叔，要一些台词文件)
 - [x] 如果模型很能用，任务就结束了，可以考虑训别的东西（一般不会）
+
+- [ ] 可以研究下日语文本到语音，有没有可能用python+gradio的形式输出
 
 （暂时选定这个模型）
 
@@ -212,6 +221,21 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 **注意：大量的图文、视频数据不要上传到git**
 **放少量的测试数据是可以的**
 
+注意是基于srt文件的，
+
+实现一个视觉分类器，可以判断srt中的每一句是不是春日说的
+（我看了分镜，很有可能要做三分类，是春日，是其他人，不确定）
+
+春日的连续几句话合并成同一句
+
+形如
+
+春日-不确定-不确定-春日-不确定-春日
+
+图片尽可能截取春日的。
+
+把数据存下来给李鲁鲁核验
+
 - [ ] 实现台词和视频的对齐
 - [ ] 实现视觉分类器，能够把Haruhi的台词部分抽取出来
 - [ ] 鲁叔会整理一个jsonl文件，把haruhi在之前测试时候输出的话总结一下
@@ -224,10 +248,10 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 
 李鲁鲁的self driving
 
-
+- [ ] 构建台词-关键词-新台词的增广系统
 - [x] 构建项目页
 - [x] 招人
-- [ ] 整理田野测试时候ChatHaruhi输出的台词
+- [x] 整理田野测试时候ChatHaruhi输出的台词
 - [x] 去下载Haruhi的动画片视频，想办法先搞几张台词和图片的匹配
 - [ ] 一个增强的gradio系统，支持根据台词显示haruhi的图片
 - [x] 去二次元社区找更熟悉凉宫春日的同学众测
