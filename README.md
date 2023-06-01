@@ -5,7 +5,7 @@
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)]()
 [![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)]()
 
-Chat凉宫春日 是 模仿凉宫春日等一系列动漫人物，使用近似语气、个性和剧情聊天的语言模型，
+**Chat凉宫春日**是模仿凉宫春日等一系列动漫人物，使用近似语气、个性和剧情聊天的语言模型，
 
 <details>
   <summary> 本项目由李鲁鲁，冷子昂，闫晨曦，封小洋等开发。 </summary>
@@ -120,7 +120,7 @@ If you are interested in sponsoring the [Luotuo Project](https://github.com/LC13
 
 贾曜恺正在进行后端对接前端的部分
 
-scixing正在尝试搭建前端
+[scixing](https://github.com/ssccinng) 正在尝试搭建前端
 
 ## TODO
 
