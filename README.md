@@ -30,6 +30,11 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 新的后端任务
 
 - [ ] 将text的embedding和字典做预存
+
+我已经在characters/haruhi/images 上传了文件
+
+同时text_image_dict里面存储了文件名和台词之间的关系
+
 - [ ] 待鲁叔初步的图-文数据之后，做一个类，
 
 支持文本embedding抽取、预存、载入、给定文本出(图片、相似度)
