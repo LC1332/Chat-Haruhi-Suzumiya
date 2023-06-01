@@ -110,15 +110,15 @@ If you are interested in sponsoring the [Luotuo Project](https://github.com/LC13
 
 ## 人员
 
-李鲁鲁发起了项目，并完成了最早的版本，在多个微信群实现了测试。
+[李鲁鲁](https://github.com/LC1332)发起了项目，并完成了最早的版本，在多个微信群实现了测试。
 
-冷子昂参与了早期Gradio的开发，并且参与了后端和前端的选型
+[冷子昂](https://blairleng.github.io)参与了早期Gradio的开发，并且参与了后端和前端的选型
 
-闫晨曦将李鲁鲁的notebook重构为app.py
+[闫晨曦@成都信息工程大学](https://github.com/todochenxi)将李鲁鲁的notebook重构为app.py
 
-封小洋进行了中文转日文模型的选型
+[封小洋](https://github.com/fengyunzaidushi)进行了中文转日文模型的选型，并且正在尝试从TV动漫中提取图-文对
 
-贾曜恺正在进行后端对接前端的部分
+[贾曜恺]（https://ngdc.cncb.ac.cn/people/Yaokai-Jia?lang=en）@[中国科学院北京基因组研究所（国家生物信息中心）]（http://www.big.ac.cn/）正在进行后端对接前端的部分
 
 [scixing](https://github.com/ssccinng) 正在尝试搭建前端
 
