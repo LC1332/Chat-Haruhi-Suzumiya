@@ -32,6 +32,7 @@ Chat凉宫春日 是 模仿凉宫春日等一系列动漫人物，使用近似�
         <li><a href="#快速开始">快速开始</a></li>
         <li><a href="#快速开始">计划Feature</a></li>
         <li><a href="#赞助">赞助 | SponsorShip </a></li>
+        <li><a href="#赞助">人员 </a></li>
         <li><a href="#TODO">TODO</a></li>
       </ul>
     </td>
@@ -40,6 +41,12 @@ Chat凉宫春日 是 模仿凉宫春日等一系列动漫人物，使用近似�
 
 
 ## 快速开始
+
+|名称|colab链接|说明|
+|---|---|---|
+|万恶之源|<a href="https://colab.research.google.com/github/LC1332/Prophet-Andrew-Ng/blob/main/prophet-code/haruhiLangChain.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 李鲁鲁最早开发的gradio Chat凉宫春日 |
+
+
 
 ## 计划Feature
 
