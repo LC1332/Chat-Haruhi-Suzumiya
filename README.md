@@ -30,7 +30,8 @@
     <td>
       <ul>
         <li><a href="#快速开始">快速开始</a></li>
-        <li><a href="#快速开始">计划Feature</a></li>
+        <li><a href="#核心原理">核心原理</a></li>
+        <li><a href="#计划Feature">计划Feature</a></li>
         <li><a href="#赞助">赞助 | SponsorShip </a></li>
         <li><a href="#人员">人员 </a></li>
         <li><a href="#TODO">TODO</a></li>
@@ -47,6 +48,14 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 本项目采用Apache 2.0协议，也就是你可以利用项目中的代码进行商用。但是你仍然需要遵守包括 1.角色本身的版权方的协议 2.项目中使用的接口方，比如OpenAI的协议， 3.项目中使用的模型的协议（比如如果我们后期采用了LlaMA或者GLM的模型。）
 
 本项目是DataWhale的5月学习的作业，其中闫晨曦，封小洋等同学都由DataWhale社区招募。
+
+## 核心原理
+
+<p align="center">
+        <img src="figures/pipeline.png">
+</p>
+
+上图解释了整个系统的核心原理。
 
 ## 快速开始
 
@@ -110,15 +119,15 @@ If you are interested in sponsoring the [Luotuo Project](https://github.com/LC13
 
 ## 人员
 
-李鲁鲁发起了项目，并完成了最早的版本，在多个微信群实现了测试。
+[李鲁鲁](https://github.com/LC1332)发起了项目，并完成了最早的版本，在多个微信群实现了测试。
 
-冷子昂参与了早期Gradio的开发，并且参与了后端和前端的选型
+[冷子昂](https://blairleng.github.io)参与了早期Gradio的开发，并且参与了后端和前端的选型
 
-闫晨曦将李鲁鲁的notebook重构为app.py
+[闫晨曦@成都信息工程大学](https://github.com/todochenxi)将李鲁鲁的notebook重构为app.py
 
-封小洋进行了中文转日文模型的选型
+[封小洋](https://github.com/fengyunzaidushi)进行了中文转日文模型的选型，并且正在尝试从TV动漫中提取图-文对
 
-贾曜恺正在进行后端对接前端的部分
+[贾曜恺](https://ngdc.cncb.ac.cn/people/Yaokai-Jia?lang=en) @ [中国科学院北京基因组研究所](http://www.big.ac.cn/) 正在进行后端对接前端的部分
 
 [scixing](https://github.com/ssccinng) 正在尝试搭建前端
 
