@@ -24,6 +24,18 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 
 闫晨曦 is working on that
 
+
+---
+
+新的后端任务
+
+- [ ] 将text的embedding和字典做预存
+- [ ] 待鲁叔初步的图-文数据之后，做一个类，
+
+支持文本embedding抽取、预存、载入、给定文本出(图片、相似度)
+
+- [ ] 如果手快的话，再把这个出图片的整合到gradio里面去(新建一个后端任务)
+
 ---
 
 带socket（或者其他本地与前端链接方式的后端）
@@ -45,8 +57,11 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 
 日文数据 https://huggingface.co/datasets?language=language:zh,language:ja&sort=downloads
 
-- [ ] 检查这个模型是不是直接能用(可以问鲁叔，要一些台词文件)
-- [ ] 如果模型很能用，任务就结束了，可以考虑训别的东西（一般不会）
+- [x] 检查这个模型是不是直接能用(可以问鲁叔，要一些台词文件)
+- [x] 如果模型很能用，任务就结束了，可以考虑训别的东西（一般不会）
+
+（暂时选定这个模型）
+
 - [ ] 搜集台词数据、搜集hugging face上所有能用的日文翻译数据
 - [ ] 数据最好达到200k级别
 - [ ] 问鲁叔要一下沈junyi之前的训练代码
@@ -54,6 +69,12 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 - [ ] 对接测试
 
 封小洋 is working on that
+
+---
+
+批量台词抽取
+
+- [ ] 等待鲁叔share数据
 
 ---
 
