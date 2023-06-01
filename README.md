@@ -96,6 +96,16 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 
 ## 赞助
 
+因为Chat凉宫春日采用了类似CoT的策略，相比于通常聊天，要贵上10-20倍，目前API token都采用社区捐赠的费用来支持。
+
+另外我们在积极寻找服务器资源(A100，A800)，如果您愿意捐助，欢迎联系我们。
+
+如果你有兴趣赞助Chat凉宫春日 或者 骆驼项目，请点击[主项目](https://github.com/LC1332/Luotuo-Chinese-LLM#%E8%B5%9E%E5%8A%A9sponsorships)或者查看[赞助表单](https://github.com/LC1332/Luotuo-Chinese-LLM/blob/main/data/Sponsorship_and_balance.md)
+
+If you are interested in sponsoring the [Luotuo Project](https://github.com/LC1332/Luotuo-Chinese-LLM#%E8%B5%9E%E5%8A%A9sponsorships), please click on the [major project](https://github.com/LC1332/Luotuo-Chinese-LLM) or view the [sponsorship form](https://github.com/LC1332/Luotuo-Chinese-LLM/blob/main/data/Sponsorship_and_balance.md).
+
+[回到开头](#BigTitle)
+
 
 ## TODO
 
@@ -191,10 +201,9 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 李鲁鲁的self driving
 
 
-
-
 - [x] 构建项目页
 - [x] 招人
+- [ ] 整理田野测试时候ChatHaruhi输出的台词
 - [x] 去下载Haruhi的动画片视频，想办法先搞几张台词和图片的匹配
 - [ ] 一个增强的gradio系统，支持根据台词显示haruhi的图片
 - [x] 去二次元社区找更熟悉凉宫春日的同学众测
