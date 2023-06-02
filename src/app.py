@@ -87,7 +87,7 @@ class Run:
             text = text[:512]
         texts = [text]
         # Tokenize the text
-        inputs = tokenizer(texts, padding=True, truncation=True, return_tensors="pt")
+        inputs = tokenizer(texts, padding=True, truncation=False, return_tensors="pt")
         # Extract the embeddings
         # Get the embeddings
         with torch.no_grad():

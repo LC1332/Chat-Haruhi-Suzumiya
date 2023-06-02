@@ -1,0 +1,11 @@
+6.2
+1. 修改 get_cosine_similarity(texts)
+    使其输入texts列表，一次查询所有query=texts[0] 和 texts[1:] 的相似度，避免query_similarity的重复计算
+
+2. query-text-image 文生图
+    query-text --> texts --> similarity --> text_image.keys()[key_index]=image
+3. query-text 文生文
+    query-text --> texts --> similarity --> pkl.keys()[key_index]=value
+to do list:
+1. 生成图的格式和gradio对接
+2. 把原有的图台词做个矩形框处理掉，再拿周围的进行修补，再加上匹配到的台词

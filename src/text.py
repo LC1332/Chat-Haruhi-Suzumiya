@@ -4,6 +4,7 @@ import pickle
 from argparse import Namespace
 import torch
 from PIL import Image
+from torch import cosine_similarity
 from transformers import AutoTokenizer, AutoModel
 
 
@@ -62,15 +63,27 @@ class Text:
         else:
             print("No path")
 
-    def get_cosine_similarity(self, text1, text2):
+    def get_cosine_similarity(self, texts):
+        """
+            计算文本列表的相似度避免重复计算query_similarity
+            texts[0] = query
+        """
         pkl = self.load()
-        embed1 = pkl[text1] if text1 in pkl.keys() else self.get_embedding(text1)
-        embed2 = pkl[text2] if text2 in pkl.keys() else self.get_embedding(text2)
-        return torch.nn.functional.cosine_similarity(embed1, embed2, dim=0)
+        texts_similarity = []
+        texts_embeddings = []
+        query_embedding = pkl[texts[0]] if texts[0] in pkl.keys() else self.get_embedding(texts[0])
+        texts_embeddings.append(query_embedding)
+        for text in texts[1:]:
+            text_embedding = pkl[text] if text in pkl.keys() else self.get_embedding(text)
+            texts_embeddings.append(text_embedding)
+        for embed in texts_embeddings[1:]:
+            texts_similarity.append(cosine_similarity(query_embedding, embed, dim=0))
+        return texts_similarity
 
     def text_to_image(self, text, dict_path=None, image_path=None):
         """
             给定文本出图片
+            计算query 和 texts 的相似度，取最高的作为new_query 查询image
             到text_image_dict 读取图片名
             然后到images里面加载该图片然后返回
         """
@@ -80,9 +93,16 @@ class Text:
                 data = f.readlines()
                 for sub_text, image in zip(data[::2], data[1::2]):
                     text_image[sub_text.strip()] = image.strip()
+            keys = list(text_image.keys())
+            keys.insert(0, text)
+            print(keys)
+            query_similarity = self.get_cosine_similarity(keys)
+            key_index = query_similarity.index(max(query_similarity))
+            text = list(text_image.keys())[key_index]
+
             image = text_image[text] + '.jpg'
             if image in os.listdir(image_path):
-                res = Image.open(image_path+'/'+image)
+                res = Image.open(image_path + '/' + image)
                 res.show()
                 return res
             else:
@@ -90,20 +110,29 @@ class Text:
         else:
             print("No path")
 
+    def text_to_text(self, text):
+        pkl = self.load()
+        texts = list(pkl.keys())
+        texts.insert(0, text)
+        texts_similarity = self.get_cosine_similarity(texts)
+        print(texts_similarity)
+        print(max(texts_similarity))
+        key_index = texts_similarity.index(max(texts_similarity))
+        value = list(pkl.keys())[key_index]
+        return value
+
 
 if __name__ == '__main__':
     path = './pkl/texts.pkl'
     model = download_models()
     text = Text("../characters/haruhi/texts", model=model, num_steps=50, path=path)
-    text.read_text(is_save=True)
-    data = text.load()
-    sub_text = "你们之中要是有外星人  未来人  异世界人或者超能力者的话 就尽管来找我吧！"
+    # text.read_text(is_save=True)
+    # data = text.load()
+    sub_text = "什么？你在说什么啊？我可不会让你这么轻易地逃脱我的视线。SOS团可是需要你这样的人才的。"
     dict_path = "../characters/haruhi/text_image_dict.txt"
     image_path = "../characters/haruhi/images"
-    image = text.text_to_image(sub_text, dict_path=dict_path, image_path=image_path)
-    print(image)
-    print(data)
-    text1 = "我无意中听到一件事。"
-    text2 = "反正不会是什么重要的事。"
-    res = text.get_cosine_similarity(text1, text2)
-    print(res)
+    # image = text.text_to_image(sub_text, dict_path=dict_path, image_path=image_path)
+    # print(image)
+    # print(data)
+    value = text.text_to_text(sub_text)
+    print(value)
