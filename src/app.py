@@ -1,4 +1,6 @@
 import os
+os.environ['http_proxy']  = "http://127.0.0.1:1450"
+os.environ['https_proxy'] = "http://127.0.0.1:1450"
 import argparse
 import openai
 import tiktoken
@@ -23,7 +25,7 @@ from langchain.schema import (
 )
 
 # OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY2")
-openai.api_key = 'sk-DfFyRKOnKSZx'  # 在这里输入你的OpenAI API Token
+openai.api_key = 'sk-lfrdoJKjlGuu'  # 在这里输入你的OpenAI API Token
 
 os.environ["OPENAI_API_KEY"] = openai.api_key
 
@@ -236,7 +238,7 @@ class Run:
 
         return messages
 
-    def get_response(self, user_message, chat_history_tuple, embeddings, embed_to_title):
+    def get_response(self, user_message, chat_history_tuple):
 
         history_chat = []
         history_response = []
@@ -251,8 +253,11 @@ class Run:
         print('history done')
 
         new_query = user_message
-
         query_embed = self.get_embedding(new_query)
+
+        titles, title_to_text = self.read_prompt_data()
+        embeddings, embed_to_title = self.title_text_embedding(titles, title_to_text)
+
         selected_sample = self.retrieve_title(query_embed, embeddings, embed_to_title, 7)
 
         story, selected_sample = self.organize_story_with_maxlen(selected_sample)
@@ -276,26 +281,23 @@ class Run:
                 file.write(res)
                 file.write("\n---\n")
 
-    def create_gradio(self, drive_path):
-        from google.colab import drive
-        drive.mount(drive_path)
+    def create_gradio(self):
+        # from google.colab import drive
+        # drive.mount(drive_path)
         with gr.Blocks() as demo:
             gr.Markdown(
-                """## Chat凉宫春日 ChatHaruhi
-
-                  Chat凉宫春日 是由[李鲁鲁](https://github.com/LC1332)设计 prompt与知识搜索系统的的聊天机器人
-                  冷子昂实现了Gradio
-
-                  这个Bot是李鲁鲁为了快一点写的单并发的版本，多人使用有可能会串聊天记录（但是这个实现比较快）
-
-                  输入message之后按回车给出，我之后再分离一个submit按钮吧，还没学会
+                """
+                ## Chat凉宫春日 ChatHaruhi
+                此版本为测试版本，非正式版本，正式版本功能更多，敬请期待
                 """
             )
 
             chatbot = gr.Chatbot()
             role_name = gr.Textbox(label="角色名", placeholde="输入角色名")
             msg = gr.Textbox(label="输入")
-            clear = gr.Button("Clear")
+            with gr.Row():
+                clear = gr.Button("Clear")
+                sub = gr.Button("Submit")
 
             def respond(role_name, user_message, chat_history):
                 input_message = role_name + ':「' + user_message + '」'
@@ -307,8 +309,8 @@ class Run:
 
             msg.submit(respond, [role_name, msg, chatbot], [msg, chatbot])
             clear.click(lambda: None, None, chatbot, queue=False)
-
-        demo.launch(debug=True, share=True)
+            sub.click(fn=respond, inputs=[role_name, msg, chatbot], outputs=[msg, chatbot])
+        demo.launch(debug=True,share=True)
 
 
 if __name__ == '__main__':
@@ -317,7 +319,8 @@ if __name__ == '__main__':
     parser.add_argument("--system_prompt", default="../characters/haruhi/system_prompt.txt", help="store system_prompt")
     parser.add_argument("--max_len_story", default=1500, type=int)
     parser.add_argument("--max_len_history", default=1200, type=int)
-    parser.add_argument("--save_path", default="/content/drive/MyDrive/GPTData/Haruhi-Lulu/")
+    # parser.add_argument("--save_path", default="/content/drive/MyDrive/GPTData/Haruhi-Lulu/")
+    parser.add_argument("--save_path", default=os.getcwd()+"/Suzumiya")
     options = parser.parse_args()
     params = {
         "folder": options.folder,
@@ -327,30 +330,31 @@ if __name__ == '__main__':
         "save_path": options.save_path
     }
     run = Run(**params)
-    history_chat = []
-    history_response = []
-    chat_timer = 5
-    new_query = '鲁鲁:你好我是新同学鲁鲁'
+    run.create_gradio()
+    # history_chat = []
+    # history_response = []
+    # chat_timer = 5
+    # new_query = '鲁鲁:你好我是新同学鲁鲁'
 
-    query_embed = run.get_embedding(new_query)
-    titles, title_to_text = run.read_prompt_data()
-    embeddings, embed_to_title = run.title_text_embedding()
-    selected_sample = run.retrieve_title(query_embed, embeddings, embed_to_title, 7)
+    # query_embed = run.get_embedding(new_query)
+    # titles, title_to_text = run.read_prompt_data()
+    # embeddings, embed_to_title = run.title_text_embedding(titles, title_to_text)
+    # selected_sample = run.retrieve_title(query_embed, embeddings, embed_to_title, 7)
 
-    print('限制长度之前:', selected_sample)
+    # print('限制长度之前:', selected_sample)
 
-    story, selected_sample = run.organize_story_with_maxlen(selected_sample)
+    # story, selected_sample = run.organize_story_with_maxlen(selected_sample)
 
-    print('当前辅助sample:', selected_sample)
+    # print('当前辅助sample:', selected_sample)
 
-    messages = run.organize_message(story, history_chat, history_response, new_query)
+    # messages = run.organize_message(story, history_chat, history_response, new_query)
 
-    response = run.get_completion_from_messages(messages)
+    # response = run.get_completion_from_messages(messages)
 
-    print(response)
+    # print(response)
 
-    history_chat.append(new_query)
-    history_response.append(response)
+    # history_chat.append(new_query)
+    # history_response.append(response)
 
-    history_chat, history_response = run.keep_tail(history_chat, history_response)
-    print(history_chat, history_response)
+    # history_chat, history_response = run.keep_tail(history_chat, history_response)
+    # print(history_chat, history_response)
