@@ -25,9 +25,19 @@ from langchain.schema import (
 )
 
 # OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY2")
-openai.api_key = 'sk-lfrdoJKjlGuu'  # 在这里输入你的OpenAI API Token
+openai.api_key = 'sk-lfrdoJKjFJdz8FxnSTqmuu'  # 在这里输入你的OpenAI API Token
 
 os.environ["OPENAI_API_KEY"] = openai.api_key
+
+folder_name = "Suzumiya"
+current_directory = os.getcwd()
+new_directory = os.path.join(current_directory, folder_name)
+
+if not os.path.exists(new_directory):
+    os.makedirs(new_directory)
+    print(f"文件夹 '{folder_name}' 创建成功！")
+else:
+    print(f"文件夹 '{folder_name}' 已经存在。")
 
 enc = tiktoken.get_encoding("cl100k_base")
 
