@@ -17,13 +17,14 @@ def download_models():
 
 
 class Text:
-    def __init__(self, text_dir, model, num_steps, pkl_path=None, dict_path=None, image_path=None):
+    def __init__(self, text_dir, model, num_steps, pkl_path=None, dict_path=None, image_path=None, maps_path=None):
         self.text_dir = text_dir
         self.model = model
         self.num_steps = num_steps
         self.pkl_path = pkl_path
         self.dict_path = dict_path
         self.image_path = image_path
+        self.maps_path = maps_path
 
     def get_embedding(self, text):
         tokenizer = AutoTokenizer.from_pretrained("silk-road/luotuo-bert")
@@ -39,28 +40,43 @@ class Text:
             embeddings = model(**inputs, output_hidden_states=True, return_dict=True, sent_emb=True).pooler_output
         return embeddings[0]
 
-    def read_text(self, is_save=False):
+    def read_text(self, save_embeddings=False, save_maps=False):
         """抽取、预存"""
         text_embeddings = collections.defaultdict()
         dirs = os.listdir(self.text_dir)
+        data = []
+        id = 0
         for dir in dirs:
             with open(self.text_dir + '/' + dir, 'r') as fr:
                 for line in fr.readlines():
+                    category = collections.defaultdict(str)
                     ch = '：' if '：' in line else ':'
                     if '旁白' in line:
                         text = line.strip().split(ch)[1].strip()
                     else:
                         text = ''.join(list(line.strip().split(ch)[1])[1:-1])  # 提取「」内的文本
+                    if text in text_embeddings.keys():  # 避免重复的text，导致embeds 和 maps形状不一致
+                        continue
+                    if save_maps:
+                        category["category"] = dir.split('.')[0]
+                        category["id"] = str(id)
+                        id = int(id) + 1
+                        data.append(dict(category))
                     text_embeddings[text] = self.get_embedding(text)
-        if is_save and self.pkl_path:
+        if save_maps and save_embeddings and self.pkl_path and self.maps_path:
             with open(self.pkl_path, 'wb+') as fw:
                 pickle.dump(text_embeddings, fw)
+            with open(self.maps_path, 'wb+') as fw:
+                pickle.dump(data, fw)
 
-        return text_embeddings
+        return text_embeddings, data
 
-    def load(self):
-        if self.pkl_path:
+    def load(self, load_pkl=False, load_maps=False):
+        if self.pkl_path and load_pkl:
             with open(self.pkl_path, 'rb') as f:
+                return pickle.load(f)
+        elif self.maps_path and load_maps:
+            with open(self.maps_path, 'rb') as f:
                 return pickle.load(f)
         else:
             print("No pkl_path")
@@ -70,7 +86,7 @@ class Text:
             计算文本列表的相似度避免重复计算query_similarity
             texts[0] = query
         """
-        pkl = self.load()
+        pkl = self.load(load_pkl=True)
         texts_similarity = []
         texts_embeddings = []
         query_embedding = pkl[texts[0]] if texts[0] in pkl.keys() else self.get_embedding(texts[0])
@@ -112,7 +128,7 @@ class Text:
             print("No path")
 
     def text_to_text(self, text):
-        pkl = self.load()
+        pkl = self.load(load_pkl=True)
         texts = list(pkl.keys())
         texts.insert(0, text)
         texts_similarity = self.get_cosine_similarity(texts)
@@ -128,7 +144,7 @@ if __name__ == '__main__':
     model = download_models()
     text = Text("../characters/haruhi/texts", model=model, num_steps=50, pkl_path=pkl_path, dict_path=dict_path, image_path=image_path)
     # text.read_text(is_save=True)
-    # data = text.load()
+    # data = text.load(load_pkl=True)
     sub_text = "什么？你在说什么啊？我可不会让你这么轻易地逃脱我的视线。SOS团可是需要你这样的人才的。"
     # image = text.text_to_image(sub_text, dict_path=dict_path, image_path=image_path)
     # print(image)
