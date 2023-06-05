@@ -6,6 +6,9 @@
     query-text --> texts --> similarity --> text_image.keys()[key_index]=image
 3. query-text 文生文
     query-text --> texts --> similarity --> pkl.keys()[key_index]=value
+
+6.4
+add embedding maps
+update text.py
 to do list:
-1. 生成图的格式和gradio对接
 2. 把原有的图台词做个矩形框处理掉，再拿周围的进行修补，再加上匹配到的台词
