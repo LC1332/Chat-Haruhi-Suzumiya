@@ -43,6 +43,7 @@ class Text:
     def read_text(self, save_embeddings=False, save_maps=False):
         """抽取、预存"""
         text_embeddings = collections.defaultdict()
+        text_keys = []
         dirs = os.listdir(self.text_dir)
         data = []
         id = 0
@@ -55,17 +56,21 @@ class Text:
                         text = line.strip().split(ch)[1].strip()
                     else:
                         text = ''.join(list(line.strip().split(ch)[1])[1:-1])  # 提取「」内的文本
-                    if text in text_embeddings.keys():  # 避免重复的text，导致embeds 和 maps形状不一致
+                    if text in text_keys:  # 避免重复的text，导致embeds 和 maps形状不一致
                         continue
+                    text_keys.append(text)
                     if save_maps:
-                        category["category"] = dir.split('.')[0]
+                        category["titles"] = dir.split('.')[0]
                         category["id"] = str(id)
-                        id = int(id) + 1
+                        category["text"] = text
+                        id = id + 1
                         data.append(dict(category))
-                    text_embeddings[text] = self.get_embedding(text)
-        if save_maps and save_embeddings and self.pkl_path and self.maps_path:
+                    if save_embeddings:
+                        text_embeddings[text] = self.get_embedding(text)
+        if save_embeddings:
             with open(self.pkl_path, 'wb+') as fw:
                 pickle.dump(text_embeddings, fw)
+        if save_maps:
             with open(self.maps_path, 'wb+') as fw:
                 pickle.dump(data, fw)
 
