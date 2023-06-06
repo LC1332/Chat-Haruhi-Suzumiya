@@ -318,7 +318,9 @@ class Run:
             gr.Markdown(
                 """
                 ## Chat凉宫春日 ChatHaruhi
-                此版本为测试版本，非正式版本，正式版本功能更多，敬请期待
+                项目地址 [https://github.com/LC1332/Chat-Haruhi-Suzumiya](https://github.com/LC1332/Chat-Haruhi-Suzumiya)
+                骆驼项目地址 [https://github.com/LC1332/Luotuo-Chinese-LLM](https://github.com/LC1332/Luotuo-Chinese-LLM)
+                此版本为图文版本，非最终版本，将上线更多功能，敬请期待
                 """
             )
             image_input = gr.Textbox(visible=False)
