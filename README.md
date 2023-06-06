@@ -185,6 +185,31 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 
 - [ ] 如果手快的话，再把这个出图片的整合到gradio里面去(新建一个后端任务)
 
+
+---
+
+app.py的测试
+
+建议闫晨曦做一下这个
+
+gradio和app之间的一致性测试
+
+使用同样的query语句
+
+- [ ] 测试在notebook状态下， organize_message_langchain 函数中，把messages用pkl存起来
+- [ ] 然后在app.py状态下，对于同样的query，也把messages保存出来
+- [ ] 对于所有的message in messages, 比较message.content， 如果完全一致，就是对的，如果不一致，就有问题
+
+（当然我原来的system_prompt被我加了两行，以本项目的为准。）
+
+如果两者不一致，就要好好检查一下了
+
+- [ ] 根据你写的text.py, 额外写一个app_with_text_preload.py，
+- [ ] 进行功能测试，对比app.py和app_with_text_preload.py之间的区别。report到群里
+
+这样我们才能确保text.py是能用的。
+
+
 ---
 
 带socket（或者其他本地与前端链接方式的后端）
@@ -247,12 +272,12 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 
 把数据存下来给李鲁鲁核验
 
-- [ ] 实现台词和视频的对齐，确认台词和视频是良好对齐的，取视频前中后都试试看
-- [ ] 实现台词对应的照片抽取，抽取台词发生时间剧中的照片。
+- [x] 实现台词和视频的对齐，确认台词和视频是良好对齐的，取视频前中后都试试看
+- [x] 实现台词对应的照片抽取，抽取台词发生时间剧中的照片。
 - [ ] 使用swin-transformer或者好一点的一个ViT模型，抽取特征，准备少部分数据，制作一个凉宫的三分类器
 - [ ] 把形如 春日-不确定-不确定-春日-不确定-春日 这样春日起始，春日结尾的段落截取出来，这里可以保留三张图片
 - [ ] 图片到文本的映射可以是多对一的
-- [ ] 图片保存为高度为480的jpg，这样小一点，容易存
+- [x] 图片保存为高度为480的jpg，这样小一点，容易存
 - [ ] 图片统一给鲁叔，可以人工筛一下，把不好看的去掉
 - [x] 鲁叔会整理一个jsonl文件，把haruhi在之前测试时候输出的话总结一下
 - [ ] 然后我们根据ChatHaruhi输出的台词去retrive Haruhi剧中的台词，争取找一些高频出现的台词
@@ -264,12 +289,12 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 
 李鲁鲁的self driving
 
-- [ ] 构建台词-关键词-新台词的增广系统
+- [x] 构建台词-关键词-新台词的增广系统
 - [x] 构建项目页
 - [x] 招人
 - [x] 整理田野测试时候ChatHaruhi输出的台词
 - [x] 去下载Haruhi的动画片视频，想办法先搞几张台词和图片的匹配
-- [ ] 一个增强的gradio系统，支持根据台词显示haruhi的图片
+- [ ] （这个冷子昂今天上午会做）一个增强的gradio系统，支持根据台词显示haruhi的图片
 - [x] 去二次元社区找更熟悉凉宫春日的同学众测
 
 
