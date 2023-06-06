@@ -8,17 +8,23 @@
 **Chat凉宫春日**是模仿凉宫春日等一系列动漫人物，使用近似语气、个性和剧情聊天的语言模型，
 
 <details>
-  <summary> 本项目由李鲁鲁，冷子昂，闫晨曦，封小洋等开发。 </summary>
+  <summary> 本项目由李鲁鲁，冷子昂，闫晨曦，封小洋，scixing等开发。 </summary>
 
-李鲁鲁发起了项目，并完成了最早的版本，在多个微信群实现了测试。
+李鲁鲁发起了项目，并完成了最早的版本，在多个微信群实现了测试。完成了GPT自动生成对话部分。
 
-冷子昂参与了早期Gradio的开发，并且参与了后端和前端的选型
+冷子昂参与了早期Gradio的开发，并且参与了后端和前端的选型。debug和最终上线了app.py
 
 闫晨曦将李鲁鲁的notebook重构为app.py
 
-封小洋进行了中文转日文模型的选型
+封小洋进行了中文转日文模型的选型，完成了针对台词抽取图片的工具，（将要完成）和haruhi图片分类器
+
+scixing实践了VITS语音，完成了台词对应的语音抽取，（将要完成）特定人物的语音分类器。
+
+贾曜恺正在实验一个带图片和语音的前端实现方案。
 
 </details>
+
+本项目是一个在建项目，本项目中的代码和工具，也支持其他动漫人物的建立。在初步完成Haruhi预计的功能后，我们会开始尝试其他角色。
 
 <table>
   <tr>
@@ -49,6 +55,13 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 
 本项目是DataWhale的5月学习的作业，其中闫晨曦，封小洋等同学都由DataWhale社区招募。
 
+
+## 快速开始
+
+|名称|colab链接|说明|
+|---|---|---|
+|万恶之源|<a href="https://colab.research.google.com/github/LC1332/Prophet-Andrew-Ng/blob/main/prophet-code/haruhiLangChain.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 李鲁鲁最早开发的gradio Chat凉宫春日 |
+
 ## 核心原理
 
 <p align="center">
@@ -56,12 +69,6 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 </p>
 
 上图解释了整个系统的核心原理。
-
-## 快速开始
-
-|名称|colab链接|说明|
-|---|---|---|
-|万恶之源|<a href="https://colab.research.google.com/github/LC1332/Prophet-Andrew-Ng/blob/main/prophet-code/haruhiLangChain.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 李鲁鲁最早开发的gradio Chat凉宫春日 |
 
 ## 计划Feature
 
@@ -90,6 +97,10 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
     - 日语翻译支持本地/gpt3.5 模型的选择，能不花钱就不花钱呗
 
     - (后期) 支持使用本地模型去替换gpt3.5，能不花钱就不花钱
+
+- 额外工具
+
+    - 支持从字幕同步的动画片中，抽取特定人物的台词，支持声纹和图片的分类，尽可能抓取到特定人物画面下，这个人的台词。
 
 - (opt)研究部分
 
