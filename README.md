@@ -288,7 +288,7 @@ gradio和app之间的一致性测试
 scixing is working on 声纹识别
 
 <details>
-  <summary> ~~之前的图文截取需求~~ </summary>
+  <summary> 之前的图文截取需求（以上面新的为准） </summary>
 
 注意是基于srt文件的，
 
