@@ -196,7 +196,7 @@ gradio和app之间的一致性测试
 
 使用同样的query语句
 
-- [ ] 测试在notebook状态下， organize_message_langchain 函数中，把messages用pkl存起来
+- [ ] 测试在notebook状态下， organize_message_langchain 函数的输出，把messages用pkl存起来
 - [ ] 然后在app.py状态下，对于同样的query，也把messages保存出来
 - [ ] 对于所有的message in messages, 比较message.content， 如果完全一致，就是对的，如果不一致，就有问题
 
@@ -238,6 +238,9 @@ gradio和app之间的一致性测试
 
 - [ ] 可以研究下日语文本到语音，有没有可能用python+gradio的形式输出
 
+<details>
+  <summary> 中文到日文模型 日后再说 </summary>
+
 （暂时选定这个模型）
 
 - [ ] 搜集台词数据、搜集hugging face上所有能用的日文翻译数据
@@ -246,7 +249,11 @@ gradio和app之间的一致性测试
 - [ ] 训练中文转日文模型
 - [ ] 对接测试
 
+</details>
+
 封小洋 is working on that
+
+
 
 ---
 
@@ -256,6 +263,10 @@ gradio和app之间的一致性测试
 
 **注意：大量的图文、视频数据不要上传到git**
 **放少量的测试数据是可以的**
+
+
+<details>
+  <summary> ～～之前的图文截取需求～～ </summary>
 
 注意是基于srt文件的，
 
@@ -269,6 +280,8 @@ gradio和app之间的一致性测试
 春日-不确定-不确定-春日-不确定-春日
 
 图片尽可能截取春日的。
+
+</details>
 
 把数据存下来给李鲁鲁核验
 
