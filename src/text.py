@@ -97,17 +97,18 @@ class Text:
             计算文本列表的相似度避免重复计算query_similarity
             texts[0] = query
         """
-        if get_texts:
-            pkl = self.load(load_pkl=True)
-        elif get_image:
+        if get_image:
             pkl = self.load(load_dict_text=True)
+        elif get_texts:
+            pkl = self.load(load_pkl=True)
         texts_similarity = []
-        texts_embeddings = []
+        # texts_embeddings = []
         query_embedding = self.get_embedding(texts[0])
-        texts_embeddings.append(query_embedding)
-        for text in texts[1:]:
-            text_embedding = pkl[text] if text in pkl.keys() else self.get_embedding(text)
-            texts_embeddings.append(text_embedding)
+        texts_embeddings = list(pkl.values())
+        texts_embeddings.insert(0, query_embedding)
+        # for text in texts[1:]:
+        #     text_embedding = pkl[text] if text in pkl.keys() else self.get_embedding(text)
+        #     texts_embeddings.append(text_embedding)
         for embed in texts_embeddings[1:]:
             texts_similarity.append(cosine_similarity(query_embedding, embed, dim=0))
         return texts_similarity
@@ -164,22 +165,22 @@ class Text:
         return value
 
 
-if __name__ == '__main__':
-    pkl_path = './pkl/texts.pkl'
-    text_image_pkl_path='./pkl/text_image.pkl'
-    dict_path = "../characters/haruhi/text_image_dict.txt"
-    dict_text_pkl_path = './pkl/dict_text.pkl'
-    image_path = "../characters/haruhi/images"
-    model = download_models()
-    text = Text("../characters/haruhi/texts", text_image_pkl_path=text_image_pkl_path,
-                dict_text_pkl_path=dict_text_pkl_path, model=model, num_steps=50, pkl_path=pkl_path,
-                dict_path=dict_path, image_path=image_path)
-    # text.read_text(is_save=True)
-    # data = text.load(load_pkl=True)
-    sub_text = "什么？你在说什么啊？我可不会让你这么轻易地逃脱我的视线。SOS团可是需要你这样的人才的。"
-    # print(text.get_embedding(sub_text))
-    image = text.text_to_image(sub_text)
-    print(image)
-    # print(data)
-    # value = text.text_to_text(sub_text)
-    # print(value)
+# if __name__ == '__main__':
+#     pkl_path = './pkl/texts.pkl'
+#     text_image_pkl_path='./pkl/text_image.pkl'
+#     dict_path = "../characters/haruhi/text_image_dict.txt"
+#     dict_text_pkl_path = './pkl/dict_text.pkl'
+#     image_path = "../characters/haruhi/images"
+#     model = download_models()
+#     text = Text("../characters/haruhi/texts", text_image_pkl_path=text_image_pkl_path,
+#                 dict_text_pkl_path=dict_text_pkl_path, model=model, num_steps=50, pkl_path=pkl_path,
+#                 dict_path=dict_path, image_path=image_path)
+#     # text.read_text(is_save=True)
+#     # data = text.load(load_pkl=True)
+#     sub_text = "什么？你在说什么啊？我可不会让你这么轻易地逃脱我的视线。SOS团可是需要你这样的人才的。"
+#     # print(text.get_embedding(sub_text))
+#     image = text.text_to_image(sub_text)
+#     print(image)
+#     # print(data)
+#     # value = text.text_to_text(sub_text)
+#     # print(value)

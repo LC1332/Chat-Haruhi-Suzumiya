@@ -23,15 +23,35 @@ from langchain.schema import (
     HumanMessage,
     SystemMessage
 )
+from text import Text
+
+def download_models():
+    # Import our models. The package will take care of downloading the models automatically
+    model_args = Namespace(do_mlm=None, pooler_type="cls", temp=0.05, mlp_only_train=False,
+                            init_embeddings_model=None)
+    model = AutoModel.from_pretrained("silk-road/luotuo-bert", trust_remote_code=True, model_args=model_args)
+    return model
 
 # OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY2")
-openai.api_key = 'sk-lfrdoJKjFJdz8FxnSTqmuu'  # 在这里输入你的OpenAI API Token
+openai.api_key = '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'  # 在这里输入你的OpenAI API Token
 
 os.environ["OPENAI_API_KEY"] = openai.api_key
 
 folder_name = "Suzumiya"
 current_directory = os.getcwd()
 new_directory = os.path.join(current_directory, folder_name)
+
+
+pkl_path = './pkl/texts.pkl'
+text_image_pkl_path='./pkl/text_image.pkl'
+dict_path = "../characters/haruhi/text_image_dict.txt"
+dict_text_pkl_path = './pkl/dict_text.pkl'
+
+image_path = "../characters/haruhi/images"
+model = download_models()
+text = Text("../characters/haruhi/texts", text_image_pkl_path=text_image_pkl_path,
+                dict_text_pkl_path=dict_text_pkl_path, model=model, num_steps=50, pkl_path=pkl_path,
+                dict_path=dict_path, image_path=image_path)
 
 if not os.path.exists(new_directory):
     os.makedirs(new_directory)
@@ -53,11 +73,14 @@ class Run:
             * 实现一个colab脚本，可以clone转换后的项目并运行，方便其他用户体验
         """
         self.folder = params['folder']
-        self.system_prompt = params['system_prompt']
+        # self.system_prompt = params['system_prompt']
+        with open(params['system_prompt'], 'r') as f:
+                    self.system_prompt = f.read()
         self.max_len_story = params['max_len_story']
         self.max_len_history = params['max_len_history']
         self.save_path = params['save_path']
-
+        self.titles, self.title_to_text = self.read_prompt_data()
+        self.embeddings, self.embed_to_title = self.title_text_embedding(self.titles, self.title_to_text)
         # 一个封装 OpenAI 接口的函数，参数为 Prompt，返回对应结果
 
     def get_completion_from_messages(self, messages, model="gpt-3.5-turbo", temperature=0):
@@ -85,16 +108,10 @@ class Run:
 
         return titles, title_to_text
 
-    def download_models(self):
-        # Import our models. The package will take care of downloading the models automatically
-        model_args = Namespace(do_mlm=None, pooler_type="cls", temp=0.05, mlp_only_train=False,
-                               init_embeddings_model=None)
-        model = AutoModel.from_pretrained("silk-road/luotuo-bert", trust_remote_code=True, model_args=model_args)
-        return model
 
     def get_embedding(self, text):
         tokenizer = AutoTokenizer.from_pretrained("silk-road/luotuo-bert")
-        model = self.download_models()
+        model = download_models()
         if len(text) > 512:
             text = text[:512]
         texts = [text]
@@ -125,7 +142,7 @@ class Run:
 
         return embeddings, embed_to_title
 
-    def get_cosine_similarity(embed1, embed2):
+    def get_cosine_similarity(self, embed1, embed2):
         return torch.nn.functional.cosine_similarity(embed1, embed2, dim=0)
 
     def retrieve_title(self, query_embed, embeddings, embed_to_title, k):
@@ -153,16 +170,16 @@ class Run:
 
     def organize_story_with_maxlen(self, selected_sample):
         maxlen = self.max_len_story
-        title_to_text, _ = self.read_prompt_data()
+        # title_to_text, _ = self.read_prompt_data()
         story = "凉宫春日的经典桥段如下:\n"
 
         count = 0
 
         final_selected = []
-
+        print(selected_sample)
         for sample_topic in selected_sample:
             # find sample_answer in dictionary
-            sample_story = title_to_text[sample_topic]
+            sample_story = self.title_to_text[sample_topic]
 
             sample_len = len(enc.encode(sample_story))
             # print(sample_topic, ' ' , sample_len)
@@ -265,11 +282,13 @@ class Run:
         new_query = user_message
         query_embed = self.get_embedding(new_query)
 
-        titles, title_to_text = self.read_prompt_data()
-        embeddings, embed_to_title = self.title_text_embedding(titles, title_to_text)
+        # print("1")
+        # embeddings, embed_to_title = self.title_text_embedding(self.titles, self.title_to_text)
 
-        selected_sample = self.retrieve_title(query_embed, embeddings, embed_to_title, 7)
+        print("2")
+        selected_sample = self.retrieve_title(query_embed, self.embeddings, self.embed_to_title, 7)
 
+        print("3")
         story, selected_sample = self.organize_story_with_maxlen(selected_sample)
 
         ## TODO: visualize seletected sample later
@@ -301,13 +320,15 @@ class Run:
                 此版本为测试版本，非正式版本，正式版本功能更多，敬请期待
                 """
             )
-
-            chatbot = gr.Chatbot()
+            with gr.Row():
+                chatbot = gr.Chatbot()
+                image_output = gr.Image()
             role_name = gr.Textbox(label="角色名", placeholde="输入角色名")
             msg = gr.Textbox(label="输入")
             with gr.Row():
                 clear = gr.Button("Clear")
                 sub = gr.Button("Submit")
+                image_button = gr.Button("给我一个图")
 
             def respond(role_name, user_message, chat_history):
                 input_message = role_name + ':「' + user_message + '」'
@@ -315,17 +336,35 @@ class Run:
                 chat_history.append((input_message, bot_message))
                 self.save_response(chat_history)
                 # time.sleep(1)
-                return "", chat_history
+                return "", chat_history, bot_message
+
+            image_input = gr.Textbox(visible=False)
 
             msg.submit(respond, [role_name, msg, chatbot], [msg, chatbot])
             clear.click(lambda: None, None, chatbot, queue=False)
-            sub.click(fn=respond, inputs=[role_name, msg, chatbot], outputs=[msg, chatbot])
+            sub.click(fn=respond, inputs=[role_name, msg, chatbot], outputs=[msg, chatbot, image_input])
+            
+            # with gr.Tab("text_to_text"):
+            #     text_input = gr.Textbox()
+            #     text_output = gr.Textbox()
+            #     text_button = gr.Button('begin')
+
+            # text_button.click(text.text_to_text, inputs=text_input, outputs=text_output)
+            
+            # with gr.Tab("text_to_iamge"):
+                # with gr.Row():
+            # image_input = gr.Textbox(invisible=True)
+                    # image_output = gr.Image()
+            # image_button = gr.Button("给我一个图")
+
+            image_button.click(text.text_to_image, inputs=image_input, outputs=image_output)
+
         demo.launch(debug=True,share=True)
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="-----[Chat凉宫春日]-----")
-    parser.add_argument("--folder", help="text folder")
+    parser.add_argument("--folder", default="../characters/haruhi/texts", help="text folder")
     parser.add_argument("--system_prompt", default="../characters/haruhi/system_prompt.txt", help="store system_prompt")
     parser.add_argument("--max_len_story", default=1500, type=int)
     parser.add_argument("--max_len_history", default=1200, type=int)
@@ -341,6 +380,8 @@ if __name__ == '__main__':
     }
     run = Run(**params)
     run.create_gradio()
+
+    
     # history_chat = []
     # history_response = []
     # chat_timer = 5
