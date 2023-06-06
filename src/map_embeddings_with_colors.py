@@ -35,5 +35,5 @@ project = atlas.map_embeddings(embeddings=embeddings,
                                name="Chat-Haruhi",
                                colorable_fields=['titles'],
                                description="Embedding Visualization",
-                               reset_project_if_exists=True,
+                               # reset_project_if_exists=True,
                                )
