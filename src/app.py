@@ -31,9 +31,8 @@ def download_models():
     return model
 
 # OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY2")
-openai.api_key = 'sk-kAkf2nc4tIHl'  # 在这里输入你的OpenAI API Token
-
-os.environ["OPENAI_API_KEY"] = openai.api_key
+# openai.api_key = 'sk-kAkf2nc4tIHl'  # 在这里输入你的OpenAI API Token
+# os.environ["OPENAI_API_KEY"] = openai.api_key
 
 folder_name = "Suzumiya"
 current_directory = os.getcwd()
