@@ -1,4 +1,4 @@
-中文 | English | 日本語
+中文 | English | 日本語 | [赞助](#赞助)
 
 # Chat凉宫春日 Chat-Haruhi-Suzumiya
 
