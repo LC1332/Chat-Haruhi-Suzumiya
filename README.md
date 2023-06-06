@@ -1,4 +1,4 @@
-中文 | English | 日本語
+中文 | English | 日本語 | [赞助](#赞助)
 
 # Chat凉宫春日 Chat-Haruhi-Suzumiya
 
@@ -8,17 +8,23 @@
 **Chat凉宫春日**是模仿凉宫春日等一系列动漫人物，使用近似语气、个性和剧情聊天的语言模型，
 
 <details>
-  <summary> 本项目由李鲁鲁，冷子昂，闫晨曦，封小洋等开发。 </summary>
+  <summary> 本项目由李鲁鲁，冷子昂，闫晨曦，封小洋，scixing等开发。 </summary>
 
-李鲁鲁发起了项目，并完成了最早的版本，在多个微信群实现了测试。
+李鲁鲁发起了项目，并完成了最早的版本，在多个微信群实现了测试。完成了GPT自动生成对话部分。
 
-冷子昂参与了早期Gradio的开发，并且参与了后端和前端的选型
+冷子昂参与了早期Gradio的开发，并且参与了后端和前端的选型。debug和最终上线了app.py
 
 闫晨曦将李鲁鲁的notebook重构为app.py
 
-封小洋进行了中文转日文模型的选型
+封小洋进行了中文转日文模型的选型，完成了针对台词抽取图片的工具，（将要完成）和haruhi图片分类器
+
+scixing实践了VITS语音，完成了台词对应的语音抽取，（将要完成）特定人物的语音分类器。
+
+贾曜恺正在实验一个带图片和语音的前端实现方案。
 
 </details>
+
+本项目是一个在建项目，本项目中的代码和工具，也支持其他动漫人物的建立。在初步完成Haruhi预计的功能后，我们会开始尝试其他角色。
 
 <table>
   <tr>
@@ -49,6 +55,13 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 
 本项目是DataWhale的5月学习的作业，其中闫晨曦，封小洋等同学都由DataWhale社区招募。
 
+
+## 快速开始
+
+|名称|colab链接|说明|
+|---|---|---|
+|万恶之源|<a href="https://colab.research.google.com/github/LC1332/Prophet-Andrew-Ng/blob/main/prophet-code/haruhiLangChain.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 李鲁鲁最早开发的gradio Chat凉宫春日 |
+
 ## 核心原理
 
 <p align="center">
@@ -56,12 +69,6 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 </p>
 
 上图解释了整个系统的核心原理。
-
-## 快速开始
-
-|名称|colab链接|说明|
-|---|---|---|
-|万恶之源|<a href="https://colab.research.google.com/github/LC1332/Prophet-Andrew-Ng/blob/main/prophet-code/haruhiLangChain.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 李鲁鲁最早开发的gradio Chat凉宫春日 |
 
 ## 计划Feature
 
@@ -90,6 +97,10 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
     - 日语翻译支持本地/gpt3.5 模型的选择，能不花钱就不花钱呗
 
     - (后期) 支持使用本地模型去替换gpt3.5，能不花钱就不花钱
+
+- 额外工具
+
+    - 支持从字幕同步的动画片中，抽取特定人物的台词，支持声纹和图片的分类，尽可能抓取到特定人物画面下，这个人的台词。
 
 - (opt)研究部分
 
@@ -174,6 +185,31 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 
 - [ ] 如果手快的话，再把这个出图片的整合到gradio里面去(新建一个后端任务)
 
+
+---
+
+app.py的测试
+
+建议闫晨曦做一下这个
+
+gradio和app之间的一致性测试
+
+使用同样的query语句
+
+- [ ] 测试在notebook状态下， organize_message_langchain 函数的输出，把messages用pkl存起来
+- [ ] 然后在app.py状态下，对于同样的query，也把messages保存出来
+- [ ] 对于所有的message in messages, 比较message.content， 如果完全一致，就是对的，如果不一致，就有问题
+
+（当然我原来的system_prompt被我加了两行，以本项目的为准。）
+
+如果两者不一致，就要好好检查一下了
+
+- [ ] 根据你写的text.py, 额外写一个app_with_text_preload.py，
+- [ ] 进行功能测试，对比app.py和app_with_text_preload.py之间的区别。report到群里
+
+这样我们才能确保text.py是能用的。
+
+
 ---
 
 带socket（或者其他本地与前端链接方式的后端）
@@ -202,6 +238,9 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 
 - [ ] 可以研究下日语文本到语音，有没有可能用python+gradio的形式输出
 
+<details>
+  <summary> 中文到日文模型 日后再说 </summary>
+
 （暂时选定这个模型）
 
 - [ ] 搜集台词数据、搜集hugging face上所有能用的日文翻译数据
@@ -210,7 +249,11 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 - [ ] 训练中文转日文模型
 - [ ] 对接测试
 
+</details>
+
 封小洋 is working on that
+
+
 
 ---
 
@@ -220,6 +263,32 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 
 **注意：大量的图文、视频数据不要上传到git**
 **放少量的测试数据是可以的**
+
+
+更新后的人台词抽取需求
+
+输入:
+
+- 视频、和视频同步的字幕
+- 一些指定人物的图片，用来确定这个人物（三分类，单独出现，面对面合照中景，和不出现主题人物）
+- 一些指定人物的音频，用来确定这个人物
+- (opt) 升级为多人物音频识别，可以提取完整的台本
+
+输出:
+
+- 一个jsonl，包含所有视频中这个人的连续对话文本
+- 大量的截图，和一个{截图,对话}的jsonl， 多张截图可以对应同一段对话
+  - 如果一段对话的多句中有这个人物出现，则截取这个人物
+  - 如果完全没有这个人物出现，则不截取图片，只在第一个连续对话文本中有
+  - 如果一段对话中没有主题人物单独出现，但是有合照，也可以截取（备用，这种情况应该很罕见）
+
+
+封小洋 is working on 图片分类
+
+scixing is working on 声纹识别
+
+<details>
+  <summary> ~~之前的图文截取需求~~ </summary>
 
 注意是基于srt文件的，
 
@@ -234,13 +303,19 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 
 图片尽可能截取春日的。
 
+</details>
+
 把数据存下来给李鲁鲁核验
 
-- [ ] 实现台词和视频的对齐
-- [ ] 实现视觉分类器，能够把Haruhi的台词部分抽取出来
-- [ ] 鲁叔会整理一个jsonl文件，把haruhi在之前测试时候输出的话总结一下
+- [x] 实现台词和视频的对齐，确认台词和视频是良好对齐的，取视频前中后都试试看
+- [x] 实现台词对应的照片抽取，抽取台词发生时间剧中的照片。
+- [ ] 使用swin-transformer或者好一点的一个ViT模型，抽取特征，准备少部分数据，制作一个凉宫的三分类器
+- [ ] 把形如 春日-不确定-不确定-春日-不确定-春日 这样春日起始，春日结尾的段落截取出来，这里可以保留三张图片
+- [ ] 图片到文本的映射可以是多对一的
+- [x] 图片保存为高度为480的jpg，这样小一点，容易存
+- [ ] 图片统一给鲁叔，可以人工筛一下，把不好看的去掉
+- [x] 鲁叔会整理一个jsonl文件，把haruhi在之前测试时候输出的话总结一下
 - [ ] 然后我们根据ChatHaruhi输出的台词去retrive Haruhi剧中的台词，争取找一些高频出现的台词
-- [ ] 图片保存为高度为480的jpg，这样小一点，容易存
 - [ ] 我们只保留高频台词和对应的台本，形成text-image数据集，作为补充包 **这个大的数据不要上传到github**
 
 
@@ -248,12 +323,12 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 
 李鲁鲁的self driving
 
-- [ ] 构建台词-关键词-新台词的增广系统
+- [x] 构建台词-关键词-新台词的增广系统
 - [x] 构建项目页
 - [x] 招人
 - [x] 整理田野测试时候ChatHaruhi输出的台词
 - [x] 去下载Haruhi的动画片视频，想办法先搞几张台词和图片的匹配
-- [ ] 一个增强的gradio系统，支持根据台词显示haruhi的图片
+- [ ] （这个冷子昂今天上午会做）一个增强的gradio系统，支持根据台词显示haruhi的图片
 - [x] 去二次元社区找更熟悉凉宫春日的同学众测
 
 
