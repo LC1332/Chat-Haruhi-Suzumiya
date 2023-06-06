@@ -17,7 +17,9 @@ def download_models():
 
 
 class Text:
-    def __init__(self, text_dir, model, num_steps, pkl_path=None, dict_path=None, image_path=None, maps_path=None):
+    def __init__(self, text_dir, model, num_steps, text_image_pkl_path, dict_text_pkl_path=None, pkl_path=None, dict_path=None, image_path=None, maps_path=None):
+        self.dict_text_pkl_path = dict_text_pkl_path
+        self.text_image_pkl_path = text_image_pkl_path
         self.text_dir = text_dir
         self.model = model
         self.num_steps = num_steps
@@ -68,64 +70,85 @@ class Text:
                     if save_embeddings:
                         text_embeddings[text] = self.get_embedding(text)
         if save_embeddings:
-            with open(self.pkl_path, 'wb+') as fw:
-                pickle.dump(text_embeddings, fw)
+            self.store(self.pkl_path, text_embeddings)
         if save_maps:
-            with open(self.maps_path, 'wb+') as fw:
-                pickle.dump(data, fw)
+            self.store(self.maps_path, data)
 
         return text_embeddings, data
 
-    def load(self, load_pkl=False, load_maps=False):
+    def load(self, load_pkl=False, load_maps=False, load_dict_text=False, load_text_image=False):
         if self.pkl_path and load_pkl:
             with open(self.pkl_path, 'rb') as f:
                 return pickle.load(f)
         elif self.maps_path and load_maps:
             with open(self.maps_path, 'rb') as f:
                 return pickle.load(f)
+        elif self.dict_text_pkl_path and load_dict_text:
+            with open(self.dict_text_pkl_path, 'rb') as f:
+                return pickle.load(f)
+        elif self.text_image_pkl_path and load_text_image:
+            with open(self.text_image_pkl_path, 'rb') as f:
+                return pickle.load(f)
         else:
             print("No pkl_path")
 
-    def get_cosine_similarity(self, texts):
+    def get_cosine_similarity(self, texts, get_image=False, get_texts=True):
         """
             计算文本列表的相似度避免重复计算query_similarity
             texts[0] = query
         """
-        pkl = self.load(load_pkl=True)
+        if get_image:
+            pkl = self.load(load_dict_text=True)
+        elif get_texts:
+            pkl = self.load(load_pkl=True)
         texts_similarity = []
-        texts_embeddings = []
-        query_embedding = pkl[texts[0]] if texts[0] in pkl.keys() else self.get_embedding(texts[0])
-        texts_embeddings.append(query_embedding)
-        for text in texts[1:]:
-            text_embedding = pkl[text] if text in pkl.keys() else self.get_embedding(text)
-            texts_embeddings.append(text_embedding)
+        # texts_embeddings = []
+        query_embedding = self.get_embedding(texts[0])
+        texts_embeddings = list(pkl.values())
+        texts_embeddings.insert(0, query_embedding)
+        # for text in texts[1:]:
+        #     text_embedding = pkl[text] if text in pkl.keys() else self.get_embedding(text)
+        #     texts_embeddings.append(text_embedding)
         for embed in texts_embeddings[1:]:
             texts_similarity.append(cosine_similarity(query_embedding, embed, dim=0))
         return texts_similarity
 
-    def text_to_image(self, text):
+    def store(self, path, data):
+        with open(path, 'wb+') as f:
+            pickle.dump(data, f)
+
+    def text_to_image(self, text, save_dict_text=False):
         """
             给定文本出图片
             计算query 和 texts 的相似度，取最高的作为new_query 查询image
             到text_image_dict 读取图片名
             然后到images里面加载该图片然后返回
         """
-        if self.dict_path and self.image_path:
+        if save_dict_text:
             text_image = collections.defaultdict()
             with open(self.dict_path, 'r') as f:
                 data = f.readlines()
                 for sub_text, image in zip(data[::2], data[1::2]):
                     text_image[sub_text.strip()] = image.strip()
+            self.store(self.text_image_pkl_path, text_image)
+
+            keys_embeddings = collections.defaultdict(str)
+            for key in text_image.keys():
+                keys_embeddings[key] = self.get_embedding(key)
+            self.store(self.dict_text_pkl_path, keys_embeddings)
+
+        if self.dict_path and self.image_path:
+            text_image = self.load(load_text_image=True)
             keys = list(text_image.keys())
             keys.insert(0, text)
-            query_similarity = self.get_cosine_similarity(keys)
+            query_similarity = self.get_cosine_similarity(keys, get_image=True)
             key_index = query_similarity.index(max(query_similarity))
             text = list(text_image.keys())[key_index]
 
             image = text_image[text] + '.jpg'
             if image in os.listdir(self.image_path):
                 res = Image.open(self.image_path + '/' + image)
-                # res.show()
+                res.show()
                 return res
             else:
                 print("Image doesn't exist")
@@ -142,17 +165,22 @@ class Text:
         return value
 
 
-if __name__ == '__main__':
-    pkl_path = './pkl/texts.pkl'
-    dict_path = "../characters/haruhi/text_image_dict.txt"
-    image_path = "../characters/haruhi/images"
-    model = download_models()
-    text = Text("../characters/haruhi/texts", model=model, num_steps=50, pkl_path=pkl_path, dict_path=dict_path, image_path=image_path)
-    # text.read_text(is_save=True)
-    # data = text.load(load_pkl=True)
-    sub_text = "什么？你在说什么啊？我可不会让你这么轻易地逃脱我的视线。SOS团可是需要你这样的人才的。"
-    # image = text.text_to_image(sub_text, dict_path=dict_path, image_path=image_path)
-    # print(image)
-    # print(data)
-    value = text.text_to_text(sub_text)
-    print(value)
+# if __name__ == '__main__':
+#     pkl_path = './pkl/texts.pkl'
+#     text_image_pkl_path='./pkl/text_image.pkl'
+#     dict_path = "../characters/haruhi/text_image_dict.txt"
+#     dict_text_pkl_path = './pkl/dict_text.pkl'
+#     image_path = "../characters/haruhi/images"
+#     model = download_models()
+#     text = Text("../characters/haruhi/texts", text_image_pkl_path=text_image_pkl_path,
+#                 dict_text_pkl_path=dict_text_pkl_path, model=model, num_steps=50, pkl_path=pkl_path,
+#                 dict_path=dict_path, image_path=image_path)
+#     # text.read_text(is_save=True)
+#     # data = text.load(load_pkl=True)
+#     sub_text = "什么？你在说什么啊？我可不会让你这么轻易地逃脱我的视线。SOS团可是需要你这样的人才的。"
+#     # print(text.get_embedding(sub_text))
+#     image = text.text_to_image(sub_text)
+#     print(image)
+#     # print(data)
+#     # value = text.text_to_text(sub_text)
+#     # print(value)
