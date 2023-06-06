@@ -160,3 +160,7 @@ cython_debug/
 .idea/
 src/tts_vits/vits_models/Haruhi_54000.pth
 src/tts_vits/hubert/hubert-soft-0d54a1f4.pt
+src/tts_vits/results/8key_haruhi_41e8ac4d-2746-4f25-ab11-0aaf035b8f64.wav
+src/tts_vits/results/8key_haruhi_4938eed9-7863-420e-8323-ce1e11df22f0.wav
+src/tts_vits/results/8key_haruhi_abbcd96a-bc5e-4b61-91a9-89f720fe36c7.wav
+src/tts_vits/results/8key_haruhi_ea3ccbd5-18b9-4298-bbaa-7e9150ae07fc.wav
