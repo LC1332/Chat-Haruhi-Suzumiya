@@ -1,6 +1,4 @@
 import os
-os.environ['http_proxy']  = "http://127.0.0.1:1450"
-os.environ['https_proxy'] = "http://127.0.0.1:1450"
 import argparse
 import openai
 import tiktoken
