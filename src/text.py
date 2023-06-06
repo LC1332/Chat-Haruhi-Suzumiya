@@ -118,6 +118,7 @@ class Text:
             pickle.dump(data, f)
 
     def text_to_image(self, text, save_dict_text=False):
+        print("line 121, ", text)
         """
             给定文本出图片
             计算query 和 texts 的相似度，取最高的作为new_query 查询image
@@ -147,8 +148,10 @@ class Text:
 
             image = text_image[text] + '.jpg'
             if image in os.listdir(self.image_path):
+                print("line 150, ", self.image_path)
                 res = Image.open(self.image_path + '/' + image)
-                res.show()
+                print("line 152, ", self.image_path + '/' + image)
+                # res.show()
                 return res
             else:
                 print("Image doesn't exist")
