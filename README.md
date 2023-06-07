@@ -188,6 +188,7 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 - [ ] 如果手快的话，再把这个出图片的整合到gradio里面去(新建一个后端任务)
 
 
+
 ---
 
 app.py的测试
@@ -210,6 +211,22 @@ gradio和app之间的一致性测试
 - [ ] 进行功能测试，对比app.py和app_with_text_preload.py之间的区别。report到群里
 
 这样我们才能确保text.py是能用的。
+
+---
+
+简单的指令注入防御
+
+```python
+def respond(role_name, user_message, chat_history):
+  input_message = role_name + ':「' + user_message + '」'
+```
+
+这里的role_name和user_message在合并字符串之前都要做防御，具体方式如下
+
+- [ ] 长度限制role_name 限制在10个字符以内， user_message限制在200个字符以内
+- [ ] 特殊符号消除，消除两个字符串中所有的':','：'，'「' ,'」','\n'， 一律替换为空格
+- [ ] 主角消除，当role_name中的字符出现'凉宫春日'中的任何一个字时，替换这个字为'阿',或者别的替换规则
+
 
 
 ---
