@@ -2,6 +2,8 @@ import collections
 import os
 import pickle
 from argparse import Namespace
+
+import numpy as np
 import torch
 from PIL import Image
 from torch import cosine_similarity
@@ -17,7 +19,7 @@ def download_models():
 
 
 class Text:
-    def __init__(self, text_dir, model, num_steps, text_image_pkl_path, dict_text_pkl_path=None, pkl_path=None, dict_path=None, image_path=None, maps_path=None):
+    def __init__(self, text_dir, model, num_steps, text_image_pkl_path=None, dict_text_pkl_path=None, pkl_path=None, dict_path=None, image_path=None, maps_path=None):
         self.dict_text_pkl_path = dict_text_pkl_path
         self.text_image_pkl_path = text_image_pkl_path
         self.text_dir = text_dir
@@ -28,19 +30,22 @@ class Text:
         self.image_path = image_path
         self.maps_path = maps_path
 
-    def get_embedding(self, text):
+    def get_embedding(self, texts):
         tokenizer = AutoTokenizer.from_pretrained("silk-road/luotuo-bert")
         model = download_models()
-        if len(text) > self.num_steps:
-            text = text[:self.num_steps]
-        texts = [text]
-        # Tokenize the text
+        # 截断
+        # str or strList
+        texts = texts if isinstance(texts, list) else [texts]
+        for i in range(len(texts)):
+            if len(texts[i]) > self.num_steps:
+                texts[i] = texts[i][:self.num_steps]
+        # Tokenize the texts
         inputs = tokenizer(texts, padding=True, truncation=False, return_tensors="pt")
         # Extract the embeddings
         # Get the embeddings
         with torch.no_grad():
             embeddings = model(**inputs, output_hidden_states=True, return_dict=True, sent_emb=True).pooler_output
-        return embeddings[0]
+        return embeddings[0] if len(texts) == 1 else embeddings
 
     def read_text(self, save_embeddings=False, save_maps=False):
         """抽取、预存"""
@@ -48,6 +53,7 @@ class Text:
         text_keys = []
         dirs = os.listdir(self.text_dir)
         data = []
+        texts = []
         id = 0
         for dir in dirs:
             with open(self.text_dir + '/' + dir, 'r') as fr:
@@ -67,8 +73,11 @@ class Text:
                         category["text"] = text
                         id = id + 1
                         data.append(dict(category))
-                    if save_embeddings:
-                        text_embeddings[text] = self.get_embedding(text)
+                    texts.append(text)
+        embeddings = self.get_embedding(texts)
+        if save_embeddings:
+            for text, embed in zip(texts, embeddings):
+                text_embeddings[text] = self.get_embedding(text)
         if save_embeddings:
             self.store(self.pkl_path, text_embeddings)
         if save_maps:
@@ -92,25 +101,24 @@ class Text:
         else:
             print("No pkl_path")
 
-    def get_cosine_similarity(self, texts, get_image=False, get_texts=True):
+    def get_cosine_similarity(self, texts, get_image=False, get_texts=False):
         """
             计算文本列表的相似度避免重复计算query_similarity
             texts[0] = query
         """
-        if get_texts:
-            pkl = self.load(load_pkl=True)
-        elif get_image:
+        if get_image:
             pkl = self.load(load_dict_text=True)
-        texts_similarity = []
-        texts_embeddings = []
-        query_embedding = self.get_embedding(texts[0])
-        texts_embeddings.append(query_embedding)
-        for text in texts[1:]:
-            text_embedding = pkl[text] if text in pkl.keys() else self.get_embedding(text)
-            texts_embeddings.append(text_embedding)
-        for embed in texts_embeddings[1:]:
-            texts_similarity.append(cosine_similarity(query_embedding, embed, dim=0))
-        return texts_similarity
+        elif get_texts:
+            pkl = self.load(load_pkl=True)
+        else:
+            pkl = {}
+            embeddings = self.get_embedding(texts[1:]).reshape(-1, 1536)
+            for text, embed in zip(texts, embeddings):
+                pkl[text] = embed
+
+        query_embedding = self.get_embedding(texts[0]).reshape(1, -1)
+        texts_embeddings = np.array([value.numpy().reshape(-1, 1536) for value in pkl.values()]).squeeze(1)
+        return cosine_similarity(query_embedding, torch.from_numpy(texts_embeddings))
 
     def store(self, path, data):
         with open(path, 'wb+') as f:
@@ -124,30 +132,32 @@ class Text:
             然后到images里面加载该图片然后返回
         """
         if save_dict_text:
-            text_image = collections.defaultdict()
+            text_image = {}
             with open(self.dict_path, 'r') as f:
                 data = f.readlines()
                 for sub_text, image in zip(data[::2], data[1::2]):
                     text_image[sub_text.strip()] = image.strip()
             self.store(self.text_image_pkl_path, text_image)
 
-            keys_embeddings = collections.defaultdict(str)
-            for key in text_image.keys():
-                keys_embeddings[key] = self.get_embedding(key)
+            keys_embeddings = {}
+            embeddings = self.get_embedding(list(text_image.keys()))
+            for key, embed in zip(text_image.keys(), embeddings):
+                keys_embeddings[key] = embed
             self.store(self.dict_text_pkl_path, keys_embeddings)
 
         if self.dict_path and self.image_path:
+            # 加载 text-imageName
             text_image = self.load(load_text_image=True)
             keys = list(text_image.keys())
             keys.insert(0, text)
             query_similarity = self.get_cosine_similarity(keys, get_image=True)
-            key_index = query_similarity.index(max(query_similarity))
+            key_index = query_similarity.argmax(dim=0)
             text = list(text_image.keys())[key_index]
 
             image = text_image[text] + '.jpg'
             if image in os.listdir(self.image_path):
                 res = Image.open(self.image_path + '/' + image)
-                res.show()
+                # res.show()
                 return res
             else:
                 print("Image doesn't exist")
@@ -158,28 +168,30 @@ class Text:
         pkl = self.load(load_pkl=True)
         texts = list(pkl.keys())
         texts.insert(0, text)
-        texts_similarity = self.get_cosine_similarity(texts)
-        key_index = texts_similarity.index(max(texts_similarity))
+        texts_similarity = self.get_cosine_similarity(texts, get_texts=True)
+        key_index = texts_similarity.argmax(dim=0).item()
         value = list(pkl.keys())[key_index]
         return value
 
 
 if __name__ == '__main__':
     pkl_path = './pkl/texts.pkl'
+    maps_path = './pkl/maps.pkl'
     text_image_pkl_path='./pkl/text_image.pkl'
     dict_path = "../characters/haruhi/text_image_dict.txt"
     dict_text_pkl_path = './pkl/dict_text.pkl'
     image_path = "../characters/haruhi/images"
+    text_dir = "../characters/haruhi/texts"
     model = download_models()
-    text = Text("../characters/haruhi/texts", text_image_pkl_path=text_image_pkl_path,
+    text = Text(text_dir, text_image_pkl_path=text_image_pkl_path, maps_path=maps_path,
                 dict_text_pkl_path=dict_text_pkl_path, model=model, num_steps=50, pkl_path=pkl_path,
                 dict_path=dict_path, image_path=image_path)
-    # text.read_text(is_save=True)
+    # text.read_text(save_maps=True, save_embeddings=True)
     # data = text.load(load_pkl=True)
-    sub_text = "什么？你在说什么啊？我可不会让你这么轻易地逃脱我的视线。SOS团可是需要你这样的人才的。"
-    # print(text.get_embedding(sub_text))
+    sub_text = "你好！"
     image = text.text_to_image(sub_text)
     print(image)
-    # print(data)
-    # value = text.text_to_text(sub_text)
-    # print(value)
+    sub_texts = ["hello", "你好"]
+    print(text.get_cosine_similarity(sub_texts))
+    value = text.text_to_text(sub_text)
+    print(value)
