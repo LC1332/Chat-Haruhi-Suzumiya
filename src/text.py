@@ -174,24 +174,24 @@ class Text:
         return value
 
 
-if __name__ == '__main__':
-    pkl_path = './pkl/texts.pkl'
-    maps_path = './pkl/maps.pkl'
-    text_image_pkl_path='./pkl/text_image.pkl'
-    dict_path = "../characters/haruhi/text_image_dict.txt"
-    dict_text_pkl_path = './pkl/dict_text.pkl'
-    image_path = "../characters/haruhi/images"
-    text_dir = "../characters/haruhi/texts"
-    model = download_models()
-    text = Text(text_dir, text_image_pkl_path=text_image_pkl_path, maps_path=maps_path,
-                dict_text_pkl_path=dict_text_pkl_path, model=model, num_steps=50, pkl_path=pkl_path,
-                dict_path=dict_path, image_path=image_path)
+# if __name__ == '__main__':
+    # pkl_path = './pkl/texts.pkl'
+    # maps_path = './pkl/maps.pkl'
+    # text_image_pkl_path='./pkl/text_image.pkl'
+    # dict_path = "../characters/haruhi/text_image_dict.txt"
+    # dict_text_pkl_path = './pkl/dict_text.pkl'
+    # image_path = "../characters/haruhi/images"
+    # text_dir = "../characters/haruhi/texts"
+    # model = download_models()
+    # text = Text(text_dir, text_image_pkl_path=text_image_pkl_path, maps_path=maps_path,
+    #             dict_text_pkl_path=dict_text_pkl_path, model=model, num_steps=50, pkl_path=pkl_path,
+    #             dict_path=dict_path, image_path=image_path)
     # text.read_text(save_maps=True, save_embeddings=True)
     # data = text.load(load_pkl=True)
-    sub_text = "你好！"
-    image = text.text_to_image(sub_text)
-    print(image)
-    sub_texts = ["hello", "你好"]
-    print(text.get_cosine_similarity(sub_texts))
-    value = text.text_to_text(sub_text)
-    print(value)
+    # sub_text = "你好！"
+    # image = text.text_to_image(sub_text)
+    # print(image)
+    # sub_texts = ["hello", "你好"]
+    # print(text.get_cosine_similarity(sub_texts))
+    # value = text.text_to_text(sub_text)
+    # print(value)
