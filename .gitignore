@@ -157,6 +157,31 @@ cython_debug/
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-.idea/
 src/tts_vits/vits_models/Haruhi_54000.pth
 src/tts_vits/hubert/hubert-soft-0d54a1f4.pt
+src/tts_vits/results/8key_haruhi_41e8ac4d-2746-4f25-ab11-0aaf035b8f64.wav
+src/tts_vits/results/8key_haruhi_4938eed9-7863-420e-8323-ce1e11df22f0.wav
+src/tts_vits/results/8key_haruhi_abbcd96a-bc5e-4b61-91a9-89f720fe36c7.wav
+src/tts_vits/results/8key_haruhi_ea3ccbd5-18b9-4298-bbaa-7e9150ae07fc.wav
+.DS_Store
+node_modules
+/dist
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

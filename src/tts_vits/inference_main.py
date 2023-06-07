@@ -13,9 +13,12 @@ from inference.infer_tool import Svc
 import uuid
 
 logging.getLogger('numba').setLevel(logging.WARNING)
-chunks_dict = infer_tool.read_temp("inference/chunks_temp.json")
+# chunks_dict = infer_tool.read_temp("inference/chunks_temp.json")
 infer_tool.mkdir(["./results"])
 model_path = "vits_models/Haruhi_54000.pth"
+config_path = "configs/config.json"
+svc_model = Svc(model_path, config_path)
+
 
 def set_model_path(path):
     global model_path
@@ -24,8 +27,7 @@ def set_model_path(path):
 
 def infer_to(spk, tran, voice):
     slice_db = -40
-    config_path = "configs/config.json"
-    svc_model = Svc(model_path, config_path)
+    
     wav_format = 'wav'
     audio_file = io.BytesIO(voice)
     # audio_file = voice
