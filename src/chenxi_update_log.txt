@@ -21,6 +21,7 @@ app.py 与 app_with_text_preload.py异同
 - update retrieve_titles: 组装texts, 适应 similarity 计算
 - add text_to_text(): 文生文
 - add text_to_image(): 文生图
+
+所有需要embedding的地方，重构成list,传入
 to do list:
-1. 所有需要embedding的地方，重构成list,传入
 2. 把原有的图台词做个矩形框处理掉，再拿周围的进行修补，再加上匹配到的台词
