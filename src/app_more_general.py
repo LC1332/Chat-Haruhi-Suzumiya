@@ -10,6 +10,7 @@ from langchain.chat_models import ChatOpenAI
 import gradio as gr
 import random
 import time
+from tqdm import tqdm
 from langchain.prompts.chat import (
     ChatPromptTemplate,
     SystemMessagePromptTemplate,
@@ -82,9 +83,9 @@ class Run:
 此版本为图文版本，非最终版本，将上线更多功能，敬请期待
         """
 
-        if params['grad_header'] != None and params["grad_header"] != '':
+        if params['gradio_header'] != None and params["gradio_header"] != '':
             try:
-                with open(params['grad_header'], 'r') as f:
+                with open(params['gradio_header'], 'r') as f:
                             self.gradio_header = f.read()
             except:
                 self.gradio_header = DEFAULT_GRADIO_HEADER
