@@ -31,7 +31,8 @@ def download_models():
     return model
 
 # OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY2")
-# openai.api_key = 'sk-kAkf2nc4tIHl'  # 在这里输入你的OpenAI API Token
+# openai.api_key = 'sk-DfFomLnch'  # 在这里输入你的OpenAI API Token
+
 # os.environ["OPENAI_API_KEY"] = openai.api_key
 
 folder_name = "Suzumiya"
@@ -78,6 +79,7 @@ class Run:
         self.save_path = params['save_path']
         self.titles, self.title_to_text = self.read_prompt_data()
         self.embeddings, self.embed_to_title = self.title_text_embedding(self.titles, self.title_to_text)
+        # self.embeddings, self.embed_to_title = [], []
         # 一个封装 OpenAI 接口的函数，参数为 Prompt，返回对应结果
 
     def get_completion_from_messages(self, messages, model="gpt-3.5-turbo", temperature=0):
@@ -314,9 +316,12 @@ class Run:
             gr.Markdown(
                 """
                 ## Chat凉宫春日 ChatHaruhi
-                此版本为测试版本，非正式版本，正式版本功能更多，敬请期待
+                项目地址 [https://github.com/LC1332/Chat-Haruhi-Suzumiya](https://github.com/LC1332/Chat-Haruhi-Suzumiya)
+                骆驼项目地址 [https://github.com/LC1332/Luotuo-Chinese-LLM](https://github.com/LC1332/Luotuo-Chinese-LLM)
+                此版本为图文版本，非最终版本，将上线更多功能，敬请期待
                 """
             )
+            image_input = gr.Textbox(visible=False)
             with gr.Row():
                 chatbot = gr.Chatbot()
                 image_output = gr.Image()
@@ -326,6 +331,7 @@ class Run:
                 clear = gr.Button("Clear")
                 sub = gr.Button("Submit")
                 image_button = gr.Button("给我一个图")
+            
 
             def respond(role_name, user_message, chat_history):
                 input_message = role_name + ':「' + user_message + '」'
@@ -333,14 +339,11 @@ class Run:
                 chat_history.append((input_message, bot_message))
                 self.save_response(chat_history)
                 # time.sleep(1)
-                return "", chat_history, bot_message
+                return "" , chat_history, bot_message
 
-            image_input = gr.Textbox(visible=False)
-
-            msg.submit(respond, [role_name, msg, chatbot], [msg, chatbot])
+            msg.submit(respond, [role_name, msg, chatbot], [msg, chatbot, image_input])
             clear.click(lambda: None, None, chatbot, queue=False)
             sub.click(fn=respond, inputs=[role_name, msg, chatbot], outputs=[msg, chatbot, image_input])
-            
             # with gr.Tab("text_to_text"):
             #     text_input = gr.Textbox()
             #     text_output = gr.Textbox()
@@ -348,12 +351,14 @@ class Run:
 
             # text_button.click(text.text_to_text, inputs=text_input, outputs=text_output)
             
+
+
             # with gr.Tab("text_to_iamge"):
                 # with gr.Row():
-            # image_input = gr.Textbox(invisible=True)
+                    # image_input = gr.Textbox()
                     # image_output = gr.Image()
             # image_button = gr.Button("给我一个图")
-
+        
             image_button.click(text.text_to_image, inputs=image_input, outputs=image_output)
 
         demo.launch(debug=True,share=True)
