@@ -4,5 +4,5 @@
 骆驼项目地址 [https://github.com/LC1332/Luotuo-Chinese-LLM](https://github.com/LC1332/Luotuo-Chinese-LLM)
 
 争取模仿《路人女主的养成方法》中的加藤惠风格的ChatBot
-
 语料由DataWhale 5月学习2群的“逃出现实”（未确认名字）提供
+欢迎更多同学来一起提供语料！
