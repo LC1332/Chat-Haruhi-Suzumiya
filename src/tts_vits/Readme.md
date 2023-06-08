@@ -17,6 +17,6 @@ pip install -r requirements.txt
 ```python
 # 设置模型路径
 set_model_path("vits_models/Haruhi_54000.pth")
-# 生成语音
+# 生成语音 第一个参数为文本 第二个参数为音高
 vits_haruhi("真実はいつもひとつ", 8)
 ```
