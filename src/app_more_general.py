@@ -74,9 +74,28 @@ class Run:
         # self.system_prompt = params['system_prompt']
         with open(params['system_prompt'], 'r') as f:
                     self.system_prompt = f.read()
+
+        DEFAULT_GRADIO_HEADER = """
+## Chat凉宫春日 ChatHaruhi
+项目地址 [https://github.com/LC1332/Chat-Haruhi-Suzumiya](https://github.com/LC1332/Chat-Haruhi-Suzumiya)
+骆驼项目地址 [https://github.com/LC1332/Luotuo-Chinese-LLM](https://github.com/LC1332/Luotuo-Chinese-LLM)
+此版本为图文版本，非最终版本，将上线更多功能，敬请期待
+        """
+
+        if params['grad_header'] != None and params["grad_header"] != '':
+            try:
+                with open(params['grad_header'], 'r') as f:
+                            self.gradio_header = f.read()
+            except:
+                self.gradio_header = DEFAULT_GRADIO_HEADER
+        else:
+            self.gradio_header = DEFAULT_GRADIO_HEADER
+        
+        self.role = params['role']
         self.max_len_story = params['max_len_story']
         self.max_len_history = params['max_len_history']
         self.save_path = params['save_path']
+        
         self.titles, self.title_to_text = self.read_prompt_data()
         self.embeddings, self.embed_to_title = self.title_text_embedding(self.titles, self.title_to_text)
         # self.embeddings, self.embed_to_title = [], []
@@ -314,12 +333,7 @@ class Run:
         # drive.mount(drive_path)
         with gr.Blocks() as demo:
             gr.Markdown(
-                """
-                ## Chat凉宫春日 ChatHaruhi
-                项目地址 [https://github.com/LC1332/Chat-Haruhi-Suzumiya](https://github.com/LC1332/Chat-Haruhi-Suzumiya)
-                骆驼项目地址 [https://github.com/LC1332/Luotuo-Chinese-LLM](https://github.com/LC1332/Luotuo-Chinese-LLM)
-                此版本为图文版本，非最终版本，将上线更多功能，敬请期待
-                """
+                self.gradio_header
             )
             image_input = gr.Textbox(visible=False)
             with gr.Row():
@@ -366,6 +380,8 @@ class Run:
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="-----[Chat凉宫春日]-----")
+    parser.add_argument("--role", default="Haruhi", help="text folder")
+    parser.add_argument("--gradio_header", default = "", help="gradio header file")
     parser.add_argument("--folder", default="../characters/haruhi/texts", help="text folder")
     parser.add_argument("--system_prompt", default="../characters/haruhi/system_prompt.txt", help="store system_prompt")
     parser.add_argument("--max_len_story", default=1500, type=int)
@@ -374,6 +390,8 @@ if __name__ == '__main__':
     parser.add_argument("--save_path", default=os.getcwd()+"/Suzumiya")
     options = parser.parse_args()
     params = {
+        "role": options.role, # "Haruhi
+        "gradio_header": options.gradio_header,
         "folder": options.folder,
         "system_prompt": options.system_prompt,
         "max_len_story": options.max_len_story,
