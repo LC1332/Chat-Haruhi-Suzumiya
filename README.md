@@ -8,7 +8,7 @@
 **Chat凉宫春日**是模仿凉宫春日等一系列动漫人物，使用近似语气、个性和剧情聊天的语言模型，
 
 <details>
-  <summary> 本项目由李鲁鲁，冷子昂，闫晨曦，封小洋，scixing等开发。 </summary>
+  <summary> 本项目由李鲁鲁，冷子昂，闫晨曦，封小洋，scixing，贾曜恺等开发。 </summary>
 
 李鲁鲁发起了项目，并完成了最早的版本，在多个微信群实现了测试。完成了GPT自动生成对话部分。
 
@@ -20,7 +20,7 @@
 
 scixing实践了VITS语音，完成了台词对应的语音抽取，（将要完成）特定人物的语音分类器。
 
-贾曜恺正在实验一个带图片和语音的前端实现方案。
+贾曜恺开发了一个前端实现方案，待测试。
 
 </details>
 
@@ -152,6 +152,10 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 
 ---
 
+
+<details>
+  <summary> 已经完成的后端任务 by 闫晨曦, 冷子昂 debuged </summary>
+
 基础的python后端
 
 - [x] 将Notebook移动到一个app.py的文件中 (doing by 闫晨曦)
@@ -161,13 +165,13 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 - [x] 冷子昂测试app.py
 - [x] 确认app.py能够启动gradio
 - [x] app.py 支持设定max_len_story 和max_len_history 默认为 1500, 1200
-- [ ] 写一个更好的notebook，把外部参数都放在外面，启动gradio；
-- [ ] (opt) 前面都完成之后，项目可以转成public，方便从colab去拉取代码，建立一个colab脚本, 直接clone项目，调用app.py进行玩耍
+- [x] 写一个更好的notebook，把外部参数都放在外面，启动gradio；
+- [x] (opt) 前面都完成之后，项目可以转成public，方便从colab去拉取代码，建立一个colab脚本, 直接clone项目，调用app.py进行玩耍
 
 闫晨曦 is working on that
 
+</details>
 
----
 
 新的后端任务
 
@@ -188,8 +192,8 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 - [ ] 如果手快的话，再把这个出图片的整合到gradio里面去(新建一个后端任务)
 
 
-
----
+<details>
+  <summary> 已经完成的后端任务 by 闫晨曦 </summary>
 
 app.py的测试
 
@@ -199,20 +203,21 @@ gradio和app之间的一致性测试
 
 使用同样的query语句
 
-- [ ] 测试在notebook状态下， organize_message_langchain 函数的输出，把messages用pkl存起来
-- [ ] 然后在app.py状态下，对于同样的query，也把messages保存出来
-- [ ] 对于所有的message in messages, 比较message.content， 如果完全一致，就是对的，如果不一致，就有问题
+- [x] 测试在notebook状态下， organize_message_langchain 函数的输出，把messages用pkl存起来
+- [x] 然后在app.py状态下，对于同样的query，也把messages保存出来
+- [x] 对于所有的message in messages, 比较message.content， 如果完全一致，就是对的，如果不一致，就有问题
 
 （当然我原来的system_prompt被我加了两行，以本项目的为准。）
 
 如果两者不一致，就要好好检查一下了
 
-- [ ] 根据你写的text.py, 额外写一个app_with_text_preload.py，
-- [ ] 进行功能测试，对比app.py和app_with_text_preload.py之间的区别。report到群里
+</details>
 
-这样我们才能确保text.py是能用的。
+
 
 ---
+<details>
+  <summary> 已经完成的后端任务 by 闫晨曦 </summary>
 
 简单的指令注入防御
 
@@ -223,10 +228,11 @@ def respond(role_name, user_message, chat_history):
 
 这里的role_name和user_message在合并字符串之前都要做防御，具体方式如下
 
-- [ ] 长度限制role_name 限制在10个字符以内， user_message限制在200个字符以内
-- [ ] 特殊符号消除，消除两个字符串中所有的':','：'，'「' ,'」','\n'， 一律替换为空格
-- [ ] 主角消除，当role_name中的字符出现'凉宫春日'中的任何一个字时，替换这个字为'阿',或者别的替换规则
+- [x] 长度限制role_name 限制在10个字符以内， user_message限制在200个字符以内
+- [x] 特殊符号消除，消除两个字符串中所有的':','：'，'「' ,'」','\n'， 一律替换为空格
+- [x] 主角消除，当role_name中的字符出现'凉宫春日'中的任何一个字时，替换这个字为'阿',或者别的替换规则
 
+</details>
 
 
 ---
