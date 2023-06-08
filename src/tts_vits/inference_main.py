@@ -49,7 +49,7 @@ def infer_to(spk, tran, voice):
             _audio = out_audio.cpu().numpy()
         audio.extend(list(_audio))
 
-    res_path = f'./results/{tran}key_{spk}_{str(uuid.uuid4())}.{wav_format}'
+    res_path = f'./vits_results/{tran}key_{spk}_{str(uuid.uuid4())}.{wav_format}'
     soundfile.write(res_path, audio, svc_model.target_sample, format=wav_format)
 
     return res_path
