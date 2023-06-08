@@ -155,6 +155,20 @@ https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
 
 ---
 
+新的后端任务 more general app
+
+合并app_more_general.app中的修改到app.py
+
+使得notebook中的gradio_megumi.ipynb和gradio_with_image.ipynb都是能跑通的
+
+- [ ] 消除所有强制锁定 凉宫春日、春日、Haruhi的字段，都变成可以调节的
+- [ ] 如果没有图片的情况下，程序仍然是鲁棒的
+- [ ] 现在有一段54-58的文件夹创建我没有明白是什么意思，和save有关是吗 是的话应该重构到类内？
+- [ ] 过多的参数设定有一点过于麻烦，如果比较友善的话，支持可选的通过一个config.txt一同设置
+- [ ] 抽取embedding的时候增加进度条
+
+---
+
 
 <details>
   <summary> 已经完成的后端任务 by 闫晨曦, 冷子昂 debuged </summary>
@@ -352,7 +366,7 @@ scixing is working on 声纹识别
 李鲁鲁的self driving
 
 我说一下我今天上午要做的事儿，
-- [ ] 有个哥们给我发了“加藤惠”的语料， 在app.py之外，启一个app_more_general.py, 去除掉凉宫春日的依赖
+- [x] 有个哥们给我发了“加藤惠”的语料， 在app.py之外，启一个app_more_general.py, 去除掉凉宫春日的依赖
 - [ ] 有一些人格的英文数据，搜一下，然后找群友开始批量运行GPT翻译
 
 另外 贾曜恺的前端我来不及测了，自己录一个视频吧（多录一些不同聊天的，有趣一些）
