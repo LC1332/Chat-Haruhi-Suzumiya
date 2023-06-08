@@ -71,7 +71,7 @@ class Run:
             * 支持设定save_path
             * 实现一个colab脚本，可以clone转换后的项目并运行，方便其他用户体验
         """
-        self.folder = params['folder']
+        self.text_folder = params['text_folder']
         # self.system_prompt = params['system_prompt']
         with open(params['system_prompt'], 'r') as f:
                     self.system_prompt = f.read()
@@ -92,7 +92,9 @@ class Run:
         else:
             self.gradio_header = DEFAULT_GRADIO_HEADER
         
-        self.role = params['role']
+        self.role_name_full = params['role_name_full']
+        self.role_name_short = params['role_name_short']
+        # self.role_name = params['role_name']
         self.max_len_story = params['max_len_story']
         self.max_len_history = params['max_len_history']
         self.save_path = params['save_path']
@@ -117,12 +119,12 @@ class Run:
         """
         titles = []
         title_to_text = {}
-        for file in os.listdir(self.folder):
+        for file in os.listdir(self.text_folder):
             if file.endswith('.txt'):
                 title_name = file[:-4]
                 titles.append(title_name)
 
-                with open(os.path.join(self.folder, file), 'r') as f:
+                with open(os.path.join(self.text_folder, file), 'r') as f:
                     title_to_text[title_name] = f.read()
 
         return titles, title_to_text
@@ -190,7 +192,7 @@ class Run:
     def organize_story_with_maxlen(self, selected_sample):
         maxlen = self.max_len_story
         # title_to_text, _ = self.read_prompt_data()
-        story = "凉宫春日的经典桥段如下:\n"
+        story = self.role_name_full + "的经典桥段如下:\n"
 
         count = 0
 
@@ -381,9 +383,10 @@ class Run:
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="-----[Chat凉宫春日]-----")
-    parser.add_argument("--role", default="Haruhi", help="text folder")
+    parser.add_argument("--role_name_full", default="凉宫春日", help="完整的角色名")
+    parser.add_argument("--role_name_short", default="春日", help="对话时使用的缩略角色名")
     parser.add_argument("--gradio_header", default = "", help="gradio header file")
-    parser.add_argument("--folder", default="../characters/haruhi/texts", help="text folder")
+    parser.add_argument("--text_folder", default="../characters/haruhi/texts", help="text folder")
     parser.add_argument("--system_prompt", default="../characters/haruhi/system_prompt.txt", help="store system_prompt")
     parser.add_argument("--max_len_story", default=1500, type=int)
     parser.add_argument("--max_len_history", default=1200, type=int)
@@ -391,9 +394,10 @@ if __name__ == '__main__':
     parser.add_argument("--save_path", default=os.getcwd()+"/Suzumiya")
     options = parser.parse_args()
     params = {
-        "role": options.role, # "Haruhi
+        "role_name_full": options.role_name_full, # "Haruhi
+        "role_name_short": options.role_name_short,
         "gradio_header": options.gradio_header,
-        "folder": options.folder,
+        "text_folder": options.text_folder,
         "system_prompt": options.system_prompt,
         "max_len_story": options.max_len_story,
         "max_len_history": options.max_len_history,
