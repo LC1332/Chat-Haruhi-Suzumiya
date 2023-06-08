@@ -34,7 +34,7 @@ from langchain.schema import (
 
 # OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY2")
 openai.proxy = "http://127.0.0.1:7890"
-openai.api_key = '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'  # 在这里输入你的OpenAI API Token
+openai.api_key = 'sk-1cdLumZplpy1wCGOybBCxCs5'  # 在这里输入你的OpenAI API Token
 
 os.environ["OPENAI_API_KEY"] = openai.api_key
 
