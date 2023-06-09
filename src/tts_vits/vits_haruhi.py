@@ -6,8 +6,8 @@ import uuid
 def set_model_path(path):
     inference_main.set_model_path(path)
 
-def tts(text):
-    url = "https://fanyi.baidu.com/gettts?lan=jp&text=%E7%A7%81%E3%81%AE%E9%9D%92%E6%98%A5&spd=3&source=web"
+def tts(text, spd):
+    url = f"https://fanyi.baidu.com/gettts?lan=jp&text={text}&spd={spd}&source=web"
 
     payload = {}
     headers = {
@@ -18,17 +18,14 @@ def tts(text):
     while res.content == b'':
         res = requests.request("GET", url, headers=headers, data=payload)
         time.sleep(0.1)
-    # print(len(res.content))
-    # print(res.text)
+
     if res.status_code == 200:
-        # with open("temp.mp3", "wb") as f:
-        #     f.write(res.content)
         return res.content
     else:
         return None
 
-def vits_haruhi(text, tran):
-    voice = tts(text)
+def vits_haruhi(text, tran, spd=3):
+    voice = tts(text, spd)
     if voice is None:
         print("TTS failed")
         return None
