@@ -499,29 +499,12 @@ if __name__ == '__main__':
         "num_steps": options.num_steps
     }
     run = Run(**params)
-    # selected_samples = run.retrieve_title("hello", 7)
-    # story, selected_samples = run.organize_story_with_maxlen(selected_samples)
-    # print(story, selected_samples)
-    # run.read_text()
-    # run.text_to_image("hello", save_dict_text=True)
-    run.create_gradio()
-    # a = run.load(load_texts=True)
-    # print(len(a))
-    # for item in a:
-    #     print(item)
-    # print(len(a))
-    # a = run.load(load_dict_text=True)
-    # print(a)
-    # print(len(a))
-    # a = run.load(load_text_image=True)
-    # print(a)
-    # print(len(a))
-    # a = run.load(load_title_to_text=True)
-    # print(a)
-    # print(len(a))
-    # b = run.load(load_maps=True)
-    # print(len(b))
-    # print(run.load(load_title_to_text)
+    run.read_text()
+    run.text_to_image("hello", save_dict_text=True)
+    # 先运行上面两条命令，写入pkl文件，之后再把他们注释掉，运行gradio
+    # run.create_gradio()
+    
+    
     # history_chat = []
     # history_response = []
     # chat_timer = 5
