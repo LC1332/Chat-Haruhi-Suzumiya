@@ -48,7 +48,7 @@ def infer_to(spk, tran, voice):
             out_audio, out_sr = svc_model.infer(spk, tran, raw_path)
             _audio = out_audio.cpu().numpy()
         audio.extend(list(_audio))
-
+    infer_tool.mkdir(["./vits_results"])
     res_path = f'./vits_results/{tran}key_{spk}_{str(uuid.uuid4())}.{wav_format}'
     soundfile.write(res_path, audio, svc_model.target_sample, format=wav_format)
 

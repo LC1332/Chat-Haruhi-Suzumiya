@@ -1,12 +1,28 @@
 import requests
 import inference_main
+import time
+import uuid
 
 def set_model_path(path):
     inference_main.set_model_path(path)
 
 def tts(text):
-    res = requests.get(f"https://fanyi.baidu.com/gettts?lan=jp&text={text}&spd=5&source=web", headers={"Accept-Encoding": "gzip"})
+    url = "https://fanyi.baidu.com/gettts?lan=jp&text=%E7%A7%81%E3%81%AE%E9%9D%92%E6%98%A5&spd=3&source=web"
+
+    payload = {}
+    headers = {
+    'Cookie': 'BAIDUID=543CBD0E4FB46C2FD5F44F7D81911F15:FG=1'
+    }
+
+    res = requests.request("GET", url, headers=headers, data=payload)
+    while res.content == b'':
+        res = requests.request("GET", url, headers=headers, data=payload)
+        time.sleep(0.1)
+    # print(len(res.content))
+    # print(res.text)
     if res.status_code == 200:
+        # with open("temp.mp3", "wb") as f:
+        #     f.write(res.content)
         return res.content
     else:
         return None
