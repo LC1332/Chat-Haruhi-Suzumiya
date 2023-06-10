@@ -34,3 +34,31 @@ I want you to act like {character} from {series}. I want you to respond and answ
 - **语言习惯:** 语言习惯是最容易
 
 ## 项目的设想
+
+## ChatBot核心的构造
+
+<p align="center">
+        <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/pipeline.png">
+</p>
+
+
+### System Prompt
+
+### 语料与搜索
+
+## 模拟生成更多聊天数据
+
+动机
+
+### 第一句话的生成
+
+### 连续对话的生成
+
+## 辅助工具
+
+## 更多前端的设计
+
+### 实验
+
+
+## 总结与讨论
