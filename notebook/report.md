@@ -33,7 +33,7 @@ I want you to act like {character} from {series}. I want you to respond and answ
 
 - **语言习惯:** 语言习惯是最容易被语言模型进行模仿的，对于近两年的大型语言模型，只要在context中给出合适的例子，语言模型往往会进行模仿输出。这里我们希望这样的文学影视作品的爱好者与ChatBot互动时，能够‘复现’文学影视作品的经典桥段，这样一定会让这些作品的爱好者获得更好的体验。
 
-有很多研究者认为实现这些目标必须通过微调语言模型才能够实现这些目标。本项目会分为两个阶段，在第一个阶段，我们仅仅使用外部知识库和prompting的方法，来实现模仿特定影视人物的ChatBot。在第二个阶段中，我们会讨论如何去自动生成更多的语料并进行模型的微调，可以使用一个本地的模型来完成这样一个ChatBot。
+有很多研究者认为实现这些目标必须通过微调语言模型才能够实现这些目标。本项目会分为两个阶段，在第一个阶段，我们仅仅使用外部知识库和prompting的方法，来实现模仿特定影视人物的ChatBot。在第二个阶段中，我们会讨论如何去自动生成更多的语料并进行模型的微调，可以使用一个本地的模型来完成这样一个ChatBot。在下个章节中马上进入整个项目的完整设计。
 
 ## 项目的设想
 
@@ -43,8 +43,17 @@ I want you to act like {character} from {series}. I want you to respond and answ
         <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/bluePrint.jpg">
 </p>
 
+在这里我们分模块简单介绍Chat凉宫春日的开发计划，更详细的特征设定可以在[项目的readme](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main#%E8%AE%A1%E5%88%92feature)中找到。
 
++ **核心ChatBot:** 根据之前的叙述。我们希望核心的ChatBot部分能够尽可能的能够展现我们要模仿角色的背景、人物性格和语言习惯。
 
++ **多样化的前端实现:**
+
++ **自动台词抽取:**
+
++ **自动对话生成:**
+
++ **本地模型训练:**
 
 
 ## ChatBot核心的构造
