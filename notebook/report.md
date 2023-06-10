@@ -58,6 +58,8 @@ I want you to act like {character} from {series}. I want you to respond and answ
 
 ## ChatBot核心的构造
 
+这个工作的第一阶段尝试我们均使用便宜又好用的turbo3.5模型进行实验。在每一句对话的时候，都会构造一个较长的prompt，这个prompt由系统提示词、经典剧情、过往对话记忆和新的用户询问4个部分构成。
+
 <p align="center">
         <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/pipeline.png">
 </p>
