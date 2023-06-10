@@ -446,7 +446,6 @@ class Run:
                     user_message = user_message.replace(char, ' ')
                 replacement_rules = {'凉': '马', '宫': '宝', '春': '国', '日': '啊'}
                 for char, replacement in replacement_rules.items():
-                    role_name = role_name.replace(char, replacement)
                     user_message = user_message.replace(char, replacement)
 
                 input_message = role_name + ':「' + user_message + '」'
@@ -481,7 +480,7 @@ if __name__ == '__main__':
     parser.add_argument("--text_image_pkl_path", default="./pkl/text_image.pkl")
     parser.add_argument("--dict_path", default="../characters/haruhi/text_image_dict.txt")
     parser.add_argument("--image_path", default="../characters/haruhi/images")
-    parser.add_argument("--num_steps", default=514, type=int)
+    parser.add_argument("--num_steps", default=510, type=int)
     options = parser.parse_args()
     params = {
         "folder": options.folder,
