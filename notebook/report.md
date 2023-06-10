@@ -37,6 +37,12 @@ I want you to act like {character} from {series}. I want you to respond and answ
 
 ## 项目的设想
 
+<p align="center">
+        <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/bluePrint.jpg">
+</p>
+
+
+
 ## ChatBot核心的构造
 
 <p align="center">
