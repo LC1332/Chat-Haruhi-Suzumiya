@@ -37,9 +37,13 @@ I want you to act like {character} from {series}. I want you to respond and answ
 
 ## 项目的设想
 
+本项目完整的开发计划如下图所示:
+
 <p align="center">
         <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/bluePrint.jpg">
 </p>
+
+
 
 
 
