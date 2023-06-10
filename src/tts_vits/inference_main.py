@@ -29,10 +29,10 @@ def infer_to(spk, tran, voice):
     slice_db = -40
     
     wav_format = 'wav'
-    audio_file = io.BytesIO(voice)
-    # audio_file = voice
+    # audio_file = io.BytesIO(voice)
+    audio_file = voice
     chunks = slicer.cut(audio_file, db_thresh=slice_db)
-    audio_file = io.BytesIO(voice)
+    # audio_file = io.BytesIO(voice)
     audio_data, audio_sr = slicer.chunks2audio(audio_file, chunks)
     audio = []
     for (slice_tag, data) in audio_data:
