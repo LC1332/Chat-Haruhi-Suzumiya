@@ -1,4 +1,4 @@
-中文 | English | 日本語 | [赞助](#赞助)
+中文 | English | 日本語 | [赞助](#赞助) | [报告](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/report.md)
 
 # Chat凉宫春日 Chat-Haruhi-Suzumiya
 
