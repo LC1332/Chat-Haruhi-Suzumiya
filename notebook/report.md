@@ -223,9 +223,129 @@ I want you to act like {character} from {series}. I want you to respond and answ
 
 ## 模拟生成更多聊天数据
 
-动机
+相比于传统的聊天机器人，或者相比于简单的角色扮演prompt，本系统需要更大的token花费。所以我们希望尝试去训练一个本地的模型来作为GPT的代替。这样一种使用多个few shot训练的策略非常接近Alpaca-CoT。
+
+最理想的情况下，我们希望获得大量的用户真实对话的数据，然后去进行训练。然而，在短期收集这样的数据有一定的困难。所以我们也设计了一些额外的语料生成方案。这里重点参考了Baize或者CAMEL项目的生成方式。
 
 ### 第一句话的生成
+
+当然在连续对话生成之前，我们需要生成第一句话。在[这个脚本](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/TextGenerationViaKeyword-1.ipynb)中我们演示了使用关键字进行对话的设计。我们使用下面的方法将在微信群收集到的400段语料，以及经典故事，先抽取成关键字
+
+```python
+KEYWORD_PROMPT = """
+提取反引号文本中的关键字Entity，以list的形式输出在一个json中。
+"""
+
+def extract_keywords( new_query ):
+    input1 = """阿虚:「我无意中听到一件事。」
+    春日:「反正不会是什么重要的事。」"""
+    output1 = """{"Entity": ["不重要的事","阿虚","春日"]}"""
+    input2 = """阿虚:「你为什么要剪头发啊？」
+    春日:「没什么理由，就是想剪了而已。」"""
+    output2 = """{"Entity": ["剪头发","没什么理由"]}"""
+    messages = [
+        SystemMessage(content=KEYWORD_PROMPT),
+        HumanMessage(content=input1),
+        AIMessage(content=output1),
+        HumanMessage(content=input2),
+        AIMessage(content=output2)
+    ]
+    messages.append(HumanMessage(content=new_query))
+    return_msg = chatModel(messages)
+    response = return_msg.content
+    return response
+```
+
+测试一下这个函数
+
+```python
+test_input = """旁白:春日从其中一个纸袋取出上头印了些手写文字的A4草稿纸。
+春日:「这是为了让大家认识我们SOS团而特别做的传单。这两百张传单，可是我偷溜进印刷室辛辛苦苦印出来的喔!」
+旁白:春日将传单分发给了大家。上面写着公告『SOS团创团声明 我们SOS团正大募集这世界上所有不可思议的事。欢迎过去曾经历不可思议事件的人，或是现在正面临不可思议、谜样现象的人，以及有预感不久的将来一定直经历奇幻事件的人踊跃与我们咨询。我们会尽力替你解决问题。不过，普通的不可思议事件恕不受理，一定要让我们觉得相当惊人的不可思议事件才行。敬请注意。电子信箱如下……』
+春日:「好了，该去发传单了。」
+阿虚:「去哪里发?」
+春日:「校门口，现在还有很多学生没回家。」
+阿虚:「是是是，你说的都对。」
+春日:「你不用发没关系，实玖瑠跟我去就好了。」
+阿虚:「什么?」
+"""
+
+keywords = extract_keywords(test_input)
+
+print(keywords)
+```
+
+输出为
+
+```js
+{"Entity": ["SOS团","传单","印刷室","大家","不可思议的事","不可思议事件","电子信箱","校门口","学生","实玖瑠"]}
+```
+
+然后再使用随机+反向的方法，去生成更多的第一句聊天
+
+
+<details>
+  <summary> 这个prompt的设计有点长，点开看 </summary>
+  
+```js
+根据keywords的内容补全text，text为对于凉宫春日剧情的一些讨论问题，用一致性的语言风格，根据每行中的json内容，根据keywords中的关键字，补全text的内容。
+
+输入:
+
+{'keywords': ['冷子昂', '你好', '有什么事吗']}
+{'keywords': ['班里', '亚丝娜', '同学', '个性', '女孩子', '好朋友', '光线照射', '情况', '线索', '证据', '调查']}
+{'keywords': ['miku', '你好', '谁', '见过']}
+{'keywords': ['英文名', 'Cosmic Exploration Club', '缩写', 'CEC', '国际化', '记忆']}
+{'keywords': ['123', '奇怪的话']}
+{'keywords': ['不可能', '弟弟', '搞错了人', '宫热']}
+{'keywords': ['普通人', '高中生', '超能力', '神秘身份', '未知领域', '科学', '理性', '神秘', '超自然', '问题', '疑虑', '交流', '互相猜疑', '攻击']}
+{'keywords': ['羽毛球', '队友关系', '任务', '个人感情', '工作', '社团活动', '电影']}
+{'keywords': ['长门有希', '外星人', '超能力', '思维方式', '行为方式', '纯真', '善良', 'SOS团', '有趣', '神秘']}
+{'keywords': ['约翰史密斯', '名字']}
+输出:
+
+{'keywords': ['如何评价'], 'role': '将', 'text': '「如何评价阿虚」'}
+{'keywords': ['超能力', '轻功', '御剑飞行'], 'role': '阿虚', 'text': '「如果他真的会御剑飞行，那算是一种轻功，还算是一种超能力呢？」'}
+{'keywords': ['古墓', '进入'], 'role': '柯南', 'text': '「进入古墓」'}
+{'keywords': [], 'role': 'cj', 'text': '「我也是这样想的！」'}
+{'keywords': ['月球流浪', '求婚'], 'role': '名人漩涡', 'text': '「那你还愿意和我一起到月球流浪么？还愿意向我求婚么？」'}
+{'keywords': ['明天', '河边', 'gerry'], 'role': 'gerry', 'text': '「明天去河边」'}
+{'keywords': ['kiki', '对呀'], 'role': 'kiki', 'text': '「对呀」'}
+{'keywords': ['校园第一节minecraft搭建大赛'], 'role': '阿虚', 'text': '「我们是不是可以举办校园第一节minecraft搭建大赛」'}
+{'keywords': ['破解案子', '投资人', '柯南', '5000亿日元'], 'role': '柯南', 'text': '「我这个月破解了好几个案子, 碰到了一个投资人,说要给我们5000亿日元, 我们接受吗」'}
+{'keywords': ['SOS团', '活动'], 'role': 'Kyon', 'text': '「最近SOS团有什么活动吗」'}
+输入:
+
+{'keywords': ['看法']}
+{'keywords': ['谁']}
+{'keywords': ['Kyon']}
+{'keywords': ['求解', '常微分非齐次线性方程']}
+{'keywords': ['吉他水平', '长门有希']}
+{'keywords': ['打羽毛球', '每天晚上', '运动天赋', '工作']}
+{'keywords': ['下课']}
+{'keywords': ['你', '还好']}
+{'keywords': ['上次和朝比奈一起穿兔女郎', '特别的社团活动']}
+{'keywords': ['永葆青春', '奇异的药水', '艰辛', '奇怪的感情', '永生之路', '帮助', '古墓', '改变基因']}
+```
+
+GPT的输出为
+
+```js
+{'keywords': ['看法'], 'role': 'cj', 'text': '「你们对这个问题有什么看法吗？」'}
+{'keywords': ['谁'], 'role': '阿虚', 'text': '「你说的是谁？」'}
+{'keywords': ['Kyon'], 'role': '长门有希', 'text': '「Kyon，你想说什么？」'}
+{'keywords': ['求解', '常微分非齐次线性方程'], 'role': '小兰', 'text': '「求解那个常微分非齐次线性方程还是挺难的呢」'}
+{'keywords': ['吉他水平', '长门有希'], 'role': '长门有希', 'text': '「你们知道吗，长门有希的吉他水平其实非常高！」'}
+{'keywords': ['打羽毛球', '每天晚上', '运动天赋', '工作'], 'role': '小美', 'text': '「我每天晚上都要打羽毛球，但是我又有很多工作要做，真的是很累啊！不过我相信我自己的运动天赋，会一直保持好的状态的！」'}
+{'keywords': ['下课'], 'role': 'cj', 'text': '「好了，下课了！」'}
+{'keywords': ['你', '还好'], 'role': '阿虚', 'text': '「你觉得我还好吗？」'}
+{'keywords': ['上次和朝比奈一起穿兔女郎', '特别的社团活动'], 'role': '小兰', 'text': '「上次和朝比奈一起穿兔女郎的时候，真的是特别的社团活动啊」'}
+{'keywords': ['永葆青春', '奇异的药水', '艰辛', '奇怪的感情', '永生之路', '帮助', '古墓', '改变基因'], 'role': '柯南', 'text': '「永葆青春、永生之路，这是一场充满艰辛和奇怪感情的旅程，但是只要我们帮助改变基因就可以了，去探索那个古墓吧！」'}
+```
+
+</details>
+
+通过这样一个prompt设计，我们在[这个脚本](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/TextGenerationViaKeyword-2.ipynb)中，实现了7000句第一句对话的自动生成。
 
 ### 连续对话的生成
 
