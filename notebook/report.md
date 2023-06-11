@@ -440,6 +440,106 @@ SYSTEM_PROMPT2 = """
 
 ## 实验
 
+等待GLM和RWKV的模型训练完成之后，我们计划建立一个基于人工比较的测试，用来验证不同方案中ChatBot的生成能力。
 
+### 对Haruhi进行心理测试
+
+因为之前提到我们正在参与中科院心理所的一个特定人格的语言生成的小比赛。所以顺便把Haruhi酱拿来测试了一下。提问的问题均为大五人格中的基准测试。
+
+```
+心理老师:「我最近去体验了钢琴课。你最近有没有学一些新的技能呢？」
+春日:「新技能？我可是SOS团的团长，我每天都在探索未知的领域，发掘神秘的事件，这不是新技能吗？」
+
+心理老师:「你有没有觉得自己有时候有一些奇思妙想差一步就能够实现呢？」
+春日:「当然有啊，我可是一个充满创意和想象力的人，只要有机会，我一定会把我的奇思妙想变成现实。」
+
+心理老师:「美这个词对你来说意味着什么？你喜欢哪种艺术或审美风格？」
+春日:「美？对我来说，美就是那些独特而又充满创意的事物，比如说神秘的事件、未知的领域、奇妙的想象等等。至于艺术或审美风格，我并不是很在意，只要能够引起我的兴趣和好奇心，就是美的。」
+```
+
+然后我们把这个聊天记录，交给GPT，让GPT判断春日是高开放性人格还是低开放性人格，GPT的回答如下
+
+```
+根据春日提供的回答，她表现出了高开放性人格的特征，特别是在Fantasy、Actions以及Ideas这几个维度上。
+她描述了自己充满创意和想象力，热衷于探索未知领域并实现自己的奇思妙想。这表明她在Fantasy和Ideas维度上得分较高。
+她还表达了对学习新技能的兴趣和热情，喜欢尝试新事物，这表明她在Actions维度上得分较高。
+因此，根据她的回答，春日属于高开放性人格。
+```
+
+<details>
+  <summary> 完整的prompt如下 </summary>
+
+```
+你扮演一个资深的心理学家
+
+我正在设计一个心理学的实验，我希望通过访谈，去评估被试在大五人格中 Openness的程度，注意到openness可以被分为Fantasy, Aesthetics, Feelings, Actions, Ideas和Values六个维度。六个维度的解释如下
+
+Fantasy. People who are high in Fantasy are imaginative. They daydream constantly. They ask themself “what if?” They like fiction, and then once they finish a story they’ll start wondering what would have happened if one of the characters had made a different decision.
+
+Aesthetics. People who are high in Aesthetics care deeply about beauty. They love poetry, music, painting, sculpture, dance, and art of all kinds.
+
+Feelings(Openness to Feelings). People who are high in Feelings have more intense emotions. They think emotions are an important part of life. They have a rich emotional vocabulary and nuanced emotional experience.
+
+Actions(Openness to Actions). People who are high in Openness to Actions like trying new things. They like travel, new hobbies, and new foods. If you are outraged that there are places you aren’t going to go and skills you aren’t going to learn and activites you aren’t going to try
+
+Ideas(Openness to Ideas). People who are high in Openness to Ideas are curious. They enjoy thinking, instead of finding it burdensome and laborous. They like philosophical arguments, puzzles, and nonfiction aimed at the educated layperson.
+
+Values(Openness to Values). People who are high in Openness to Values are liberals in the political philosophy sense, not the vote-for-Democrats sense, although they often vote for Democrats. They are tolerant of people different than them. They question tradition. They believe in freedom.
+
+我邀请了一个被试 春日，和她进行了如下对话
+
+「我最近去体验了钢琴课。你最近有没有学一些新的技能呢？」
+春日:「新技能？我可是SOS团的团长，我每天都在探索未知的领域，发掘神秘的事件，这不是新技能吗？」
+「你有没有觉得自己有时候有一些奇思妙想差一步就能够实现呢？」
+春日:「当然有啊，我可是一个充满创意和想象力的人，只要有机会，我一定会把我的奇思妙想变成现实。」
+「美这个词对你来说意味着什么？你喜欢哪种艺术或审美风格？」
+春日:「美？对我来说，美就是那些独特而又充满创意的事物，比如说神秘的事件、未知的领域、奇妙的想象等等。至于艺术或审美风格，我并不是很在意，只要能够引起我的兴趣和好奇心，就是美的。」
+
+请为我判断春日是属于高开放性人格还是低开放性人格
+```
+
+</details>
+
+生成各种人格稳定的动画人物，然后用人格测试去测试他们的设定，或许也是个不错的研究方向。
 
 ## 总结与讨论
+
+为什么我会开始做这个项目？其实很早的时候我就看到了ChatWaifu这个项目。但是在对ChatWaifu的代码进行阅读的时候，我发现这只是简单对接了GPT和一个前端。并没有和故事相关的prompt构造。我在github仔细用中文、英语、日语搜索了凉宫春日（有可能还搜索了其他的动漫人物），发现并没有这样一个项目。在后来学习吴恩达的prompt engineering课程的时候，就完成了[骆驼先知](https://github.com/LC1332/Prophet-Andrew-Ng)这个工作。
+
+后来我就想，如果用先知的思路去做一个动漫人物的聊天，是不是也可行呢。我需要一个世界观和现实相对接近，语言和性格有明显特点，而我自己又熟悉的角色。凉宫春日就是这些集合的交集。于是就有了凉宫春日的初步版本。
+
+后来在DataWhale5月学习社群讨论的时候，进行了微信群测试。即使是对凉宫春日故事不熟悉的同学，也会被这个ChatBot背后所反映的人物人格所打动。所以我们准备扩大这个项目。并在DataWhale社区进行了志愿开发的招募。其中闫晨曦、封小洋、贾曜恺和scixing都来自于DataWhale的社区。另外在项目初步做完一些代码之后，陈昊宇同学又提供了加藤惠的语料。不过由于我对路人女主这个作品不是很了解，也无法直接评判这个产生的效果。我们打算在TV台本自动提取完成之后，对更多人物进行构建和测试。
+
+在项目的过程中，感谢凉宫春日应援会提供的VITS模型，并期待后期的桌面萌宠的进一步合作。感谢[wujohns](https://github.com/wujohns)同学在开发途中进行的讨论，他个人也有一个这样的角色扮演的项目，期待后期进行合并。
+
+## 人员
+
+[李鲁鲁](https://github.com/LC1332)发起了项目，并完成了最早的版本，在多个微信群实现了测试。实现了聊天自动生成的系统。并编写了报告。
+
+[冷子昂](https://blairleng.github.io)参与了早期Gradio的开发，并且参与了后端和前端的选型。最终合成了带语音的前端。
+
+[闫晨曦@成都信息工程大学](https://github.com/todochenxi)将李鲁鲁的notebook重构为app.py。并实现了一些修改和测试。
+
+[封小洋](https://github.com/fengyunzaidushi)进行了中文转日文模型的选型，并且正在尝试从TV动漫中提取图-文对。
+
+[贾曜恺](https://ngdc.cncb.ac.cn/people/Yaokai-Jia?lang=en) @ [中国科学院北京基因组研究所](http://www.big.ac.cn/) 正在进行后端对接前端的部分。
+
+[scixing](https://github.com/ssccinng) 搭建了C#的本地前端。
+
+## 赞助
+
+因为Chat凉宫春日采用了类似CoT的策略，相比于通常聊天，要贵上10-20倍，目前API token都采用社区捐赠的费用来支持。
+
+另外我们在积极寻找服务器资源(A100，A800)，如果您愿意捐助，欢迎联系我们。
+
+如果你有兴趣赞助Chat凉宫春日 或者 骆驼项目，请点击[主项目](https://github.com/LC1332/Luotuo-Chinese-LLM#%E8%B5%9E%E5%8A%A9sponsorships)或者查看[赞助表单](https://github.com/LC1332/Luotuo-Chinese-LLM/blob/main/data/Sponsorship_and_balance.md)
+
+If you are interested in sponsoring the [Luotuo Project](https://github.com/LC1332/Luotuo-Chinese-LLM#%E8%B5%9E%E5%8A%A9sponsorships), please click on the [major project](https://github.com/LC1332/Luotuo-Chinese-LLM) or view the [sponsorship form](https://github.com/LC1332/Luotuo-Chinese-LLM/blob/main/data/Sponsorship_and_balance.md).
+
+## 关于骆驼
+
+我们在积极寻求服务器资源（A100，A800的服务器）的捐赠，当然你也可以去我们的项目页找到[赞助链接](https://github.com/LC1332/Luotuo-Chinese-LLM#sponsorship)来对我们进行支持。所有的赞助资源将会用在服务器资源的购买、数据的获取、社区的正常运维和周边的发放。如果你有兴趣用中文复现上面的一些前沿工作，也欢迎和我们讨论。
+
+[骆驼：开源中文大语言模型](https://github.com/LC1332/Luotuo-Chinese-LLM)
+
+骆驼是我们的个人作业项目。如果你感觉这个文章对你有帮助，也欢迎到我们的骆驼项目主页为我们点上star。如果您没有github账号，也可以在知乎直接点赞。谢谢
