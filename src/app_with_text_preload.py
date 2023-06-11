@@ -37,7 +37,7 @@ openai.proxy = "http://127.0.0.1:7890"
 openai.api_key = 'sk-1cdLumZplpy1wCGOybBCxCs5'  # 在这里输入你的OpenAI API Token
 
 os.environ["OPENAI_API_KEY"] = openai.api_key
-
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 folder_name = "Suzumiya"
 current_directory = os.getcwd()
 new_directory = os.path.join(current_directory, folder_name)
@@ -214,7 +214,7 @@ class Run:
         # Import our models. The package will take care of downloading the models automatically
         model_args = Namespace(do_mlm=None, pooler_type="cls", temp=0.05, mlp_only_train=False,
                                init_embeddings_model=None)
-        model = AutoModel.from_pretrained("silk-road/luotuo-bert", trust_remote_code=True, model_args=model_args)
+        model = AutoModel.from_pretrained("silk-road/luotuo-bert", trust_remote_code=True, model_args=model_args).to(device)
         return model
     def get_embedding(self, texts):
         tokenizer = AutoTokenizer.from_pretrained("silk-road/luotuo-bert")
@@ -227,6 +227,7 @@ class Run:
                 texts[i] = texts[i][:self.num_steps]
         # Tokenize the texts
         inputs = tokenizer(texts, padding=True, truncation=False, return_tensors="pt")
+        inputs = inputs.to(device)
         # Extract the embeddings
         # Get the embeddings
         with torch.no_grad():
