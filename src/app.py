@@ -1,4 +1,6 @@
 import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"  # 指定要使用的GPU设备编号
+from transformers import pipeline
 import argparse
 import openai
 import tiktoken
@@ -31,9 +33,9 @@ def download_models():
     return model
 
 # OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY2")
-# openai.api_key = 'sk-DfFomLnch'  # 在这里输入你的OpenAI API Token
+openai.api_key = 'sk-DfFyRKch'  # 在这里输入你的OpenAI API Token
 
-# os.environ["OPENAI_API_KEY"] = openai.api_key
+os.environ["OPENAI_API_KEY"] = openai.api_key
 
 folder_name = "Suzumiya"
 current_directory = os.getcwd()
@@ -316,12 +318,11 @@ class Run:
             gr.Markdown(
                 """
                 ## Chat凉宫春日 ChatHaruhi
-                项目地址 [https://github.com/LC1332/Chat-Haruhi-Suzumiya](https://github.com/LC1332/Chat-Haruhi-Suzumiya)
-                骆驼项目地址 [https://github.com/LC1332/Luotuo-Chinese-LLM](https://github.com/LC1332/Luotuo-Chinese-LLM)
-                此版本为图文版本，非最终版本，将上线更多功能，敬请期待
+                此版本为测试版本，非正式版本，正式版本功能更多，敬请期待
                 """
             )
             image_input = gr.Textbox(visible=False)
+            japanese_input = gr.Textbox(visible=False)
             with gr.Row():
                 chatbot = gr.Chatbot()
                 image_output = gr.Image()
@@ -331,6 +332,7 @@ class Run:
                 clear = gr.Button("Clear")
                 sub = gr.Button("Submit")
                 image_button = gr.Button("给我一个图")
+            japanese_output = gr.Textbox(interactive=False)
             
 
             def respond(role_name, user_message, chat_history):
@@ -339,11 +341,12 @@ class Run:
                 chat_history.append((input_message, bot_message))
                 self.save_response(chat_history)
                 # time.sleep(1)
-                return "" , chat_history, bot_message
+                jp_text = pipe(f'<-zh2ja-> {bot_message}')[0]['translation_text']
+                return "" , chat_history, bot_message, jp_text
 
-            msg.submit(respond, [role_name, msg, chatbot], [msg, chatbot, image_input])
             clear.click(lambda: None, None, chatbot, queue=False)
-            sub.click(fn=respond, inputs=[role_name, msg, chatbot], outputs=[msg, chatbot, image_input])
+            msg.submit(respond, [role_name, msg, chatbot], [msg, chatbot, image_input, japanese_output])
+            sub.click(fn=respond, inputs=[role_name, msg, chatbot], outputs=[msg, chatbot, image_input, japanese_output])
             # with gr.Tab("text_to_text"):
             #     text_input = gr.Textbox()
             #     text_output = gr.Textbox()
@@ -380,6 +383,7 @@ if __name__ == '__main__':
         "max_len_history": options.max_len_history,
         "save_path": options.save_path
     }
+    pipe = pipeline(model="engmatic-earth/mt5-zh-ja-en-trimmed-fine-tuned-v1", device=0,max_length=120)
     run = Run(**params)
     run.create_gradio()
 
