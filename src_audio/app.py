@@ -342,6 +342,7 @@ class Run:
             
             
             def update_audio(audio, japanese_output):
+                japanese_output = japanese_output.split("春日:")[1]
                 jp_audio_store = vits_haruhi.vits_haruhi(japanese_output, 4)
                 return gr.update(value=jp_audio_store, visible=True)
             
