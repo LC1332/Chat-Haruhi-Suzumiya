@@ -25,7 +25,7 @@
 利用特定人格特质进行语言生成在心理学研究中具有重要的意义。通过模仿不同人格特质生成语言，可以帮助研究人员深入探讨人格结构和特质之间的相互关系。因为在模拟生成不同人格特质下的语言时，可以了解到不同特质个体在表达方式、交流方式等方面的差异和特点，从而有助于更好地理解人格结构的内在机制。此外，通过模仿特定人格特质进行语言生成，可以设计更加友善和准确的人格特质评估手段。
 
 <p align="center">
-    <img src="https://github.com/LC1332/personality-text-generation/blob/main/figures/pipeline.png">
+    <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/figures/pipeline.png">
 </p>
 
 利用模仿特定人格特质进行语言生成也存在许多难点：首先，人格是一个复杂的心理概念，涉及许多方面的特征和表现，并受每个人的背景知识和语言习惯的影响。其次，心理学研究人员长期以来依赖于临床分析和问卷调查等方法来描述和评估人格特质。虽然这些方法易于量化，但它们与自然语言之间存在较大的间隔，需要通过复杂的建模才能建立起量表结果和自然语言之间的联系。第三，从语言模型本身来看，生成过程需要考虑到多个因素的影响，如个人的性格特点、所处环境的影响等等，这些因素可能需要大量的语料库来进行训练，覆盖这些因素可能需要在受限或有噪音数据的情况下进行初步研究，这是一个相当困难的问题。
@@ -33,7 +33,7 @@
 本文主要探讨在给定一定量标注为某个人格特质O（在本文中特指开放性）的用户的历史语言数据的情况下，能否生成一个语言模型P(text|O)，并从中抽样出特定人格特质类别的文本。尽管提供了一定量的文本训练数据，此问题仍具挑战性，原因如下。首先，量表和自然语言是不一致的，量表中常采用客观、冷静、较少涉及事实和专有名词的描述，而自然语言无论是Twitter微博还是聊天时的表达方式都与量表这些特点相反。其次，即使给定特定用户的文本作为训练数据，也不能保证这些文本的每句话都能反映该用户的人格特质。有时甚至会有一些文本与用户的量表测定人格相反。第三，Twitter微博和自然聊天的表达中出现的词汇和内容更常与聊天话题相关，而不是与人格特质相关。或者说，人格特质在语言内容上是一个二级因素，这使得从语言中分析人格特质或根据人格特质生成语言更为困难。
 
 <p align="center">
-    <img src="https://github.com/LC1332/personality-text-generation/blob/main/figures/wordCloud.jpg">
+    <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/figures/wordCloud.jpg">
 </p>
 
 因此，在本文中，一个关键任务是从高/低开放性人格的用户发表的自然文本中提取真正显著的文本，即将问题转化为一个弱监督学习的问题。一个重要步骤是对未清洁的语料进行进一步分类。注意到Openness的定义可以进一步细分为Fantasy, Aesthetics, Feelings, Actions, Ideas和Values。所以我们利用大语言模型的Incontext Learning方式，结合这六个维度对数据进行预标注，并对特定人格特质的语言进行基于这6个维度的生成。
@@ -122,7 +122,7 @@ if the text is an advertisment or a fact (without personal thinking of feeling),
 ```
 
 <p align="center">
-    <img src="https://github.com/LC1332/personality-text-generation/blob/main/figures/annotation.jpg">
+    <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/figures/annotation.jpg">
 </p>
 
 并且我们给定了10条正负平衡，且包含中性数据的样例数据。使用这个prompt，就可以对语料进行批量的标注。从图中也可以看到我们给的两条例子语料，更多的例子语料可以在[更详细的prompt实验](https://github.com/LC1332/personality-text-generation/blob/main/lulu_exp/prompt_exp.md)中看到。
@@ -155,7 +155,7 @@ if the text is an advertisment or a fact (without personal thinking of feeling),
 下图给出了GPT在逐句标注下，对句子进行13分类，在2个数据源（微博与Essay）上的类别分布。
 
 <p align="center">
-    <img src="https://github.com/LC1332/personality-text-generation/blob/main/figures/dataDistribution.jpg">
+    <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/figures/dataDistribution.jpg">
 </p>
 
 
@@ -203,7 +203,7 @@ if the text is an advertisment or a fact (without personal thinking of feeling),
 我们通过一个句子embeding的模型([luotuoBERT](https://github.com/LC1332/Luotuo-Text-Embedding)，这个模型是对OpenAI的Text-Embedding-Ada-002进行了蒸馏，可以认为两者是近似的效果)，对12个类别的数据抽取了特征，并且使用t-SNE将1536维的特征可视化在二维空间。
 
 <p align="center">
-    <img src="https://github.com/LC1332/personality-text-generation/blob/main/figures/360TSNE.png">
+    <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/figures/360TSNE.png">
 </p>
 
 通过观察可视化可以发现，有一些类别比如aesthetics-high或者ideas-high的分布可能是比较集中的，这代表有比较高的机会将他们从文本中分类出来。但是更多的类别，甚至仅考虑一般的高-低开放性人格，在特征空间中往往是较为混淆的。其实这一点不难理解，给定同样的关键词或者主题，甚至同样的因素叙事，高低开放性的人会从内容相似，但是角度不同的角度去进行描述。甚至会出现同一个factor的正反面在特征空间相近，比如feeling-high和feeling-low就出现了这样的现象。这些现象表明，如果我们想训练一个简单的小模型，或者一个传统的基于词频或者n-gram的模型，去区分语言是否属于某个特定的高低开放性的人格，可能是比较困难的。当然，一个足够大的模型，或许可以达到接近人类的判断准确率。
@@ -214,7 +214,7 @@ if the text is an advertisment or a fact (without personal thinking of feeling),
 我们的核心对话功能，参考了我们之前完成的[Chat凉宫春日](https://github.com/LC1332/Chat-Haruhi-Suzumiya)的项目。为了实现这部分的功能，我们需要特定人格的描述，如`对你来说，情绪是生活中的重要组成部分。`。除此之外，我们还需要大量的过往对话数据。这样大语言模型就能够通过这些数据去学习特定类型人格的语言和观点的特点。 因此，这个系统会依赖 人格标注-对话 类型的数据。然而，我们之前无论是Eassy数据还是微博数据，其语言的类型都是单人的个人陈述而不是对话。所以在这里，我们讨论如何将单人的单边陈述型对话，转化为两个人对话类型的数据。
 
 <p align="center">
-    <img src="https://github.com/LC1332/personality-text-generation/blob/main/figures/weibo2QA.jpg">
+    <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/figures/weibo2QA.jpg">
 </p>
 
 幸运的是，借助大语言模型的In Context Learning，我们可以比较轻松的在给定两组例子数据的情况下，将长文本数据转化为对话数据。这里的详细prompt见[详细的prompt试验](https://github.com/LC1332/personality-text-generation/blob/main/lulu_exp/prompt_exp3.md)。需要说明的是，其实第一个样例也是通过对话数据正向总结出来的，再让GPT去学习微博数据到对话数据的逆向过程。我们对360句人工挑选的微博数据和360句人工挑选的Eassy数据进行了对话型数据的转化。
@@ -237,7 +237,7 @@ if the text is an advertisment or a fact (without personal thinking of feeling),
 我们进行了简单的初步验证。如果只是简单的规定人格的prompt，再要求GPT写出一篇Essay。这时语言模型的输出会包含很多 `我总是想要在生活中寻找期待和希望`, `我更喜欢固定的、重复的、相同的事物和环境`这样直接表达出自己人格特点的句子。即使在心理学学生的自我剖析报告中，这样的句子也显得太过刻意和不自然。由此，我们对这样的生成增加了两点改进。
 
 <p align="center">
-    <img src="https://github.com/LC1332/personality-text-generation/blob/main/figures/gaokao.jpg">
+    <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/figures/gaokao.jpg">
 </p>
 
 1. 我们要求在生成作文的时候，尽可能去使用给定的关键词。 2. 我们在生成的时候，增加了主题的概念。使用一个高考作文命题去引导生成。 
@@ -251,7 +251,7 @@ if the text is an advertisment or a fact (without personal thinking of feeling),
 ### 特定人格的ChatBot构建
 
 <p align="center">
-    <img src="https://github.com/LC1332/personality-text-generation/blob/main/figures/chatbotKernel.jpg">
+    <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/figures/chatbotKernel.jpg">
 </p>
 
 在ChatBot构造方面，我们参考了我们比较成熟的[Chat凉宫春日](https://github.com/LC1332/Chat-Haruhi-Suzumiya)项目。在核心ChatBot构造时，我们的Prompt构造一共分为4个部分，即<指定人格的系统提示词>-<特定人格特质的历史聊天记录>-<聊天记录>-<新的聊天问询>。
