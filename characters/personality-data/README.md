@@ -92,9 +92,6 @@ learning. arXiv preprint arXiv:2112.08633.
 -->
 
 
-
-- 介绍in context learning
-
 ## 对语言数据进行13类开放性标注
 
 根据之前的描述，为了能够更精细的去确定文本的内容究竟是关联了用户哪个因素的开放性。我们的第一步是希望去对文本进行13类的辅助标注。对于开放性的6大因素Fantasy, Aesthetics, Feelings, Actions, Ideas和Values中的每一个，我们都设计了两种标签。比如Fantasy-High表示用户的某句特定的语言符合, `People who are high in Fantasy are imaginative`的定义。带上中性的标签一共有13种不同的开放性标签。我们希望借由大语言模型的In context learning的能力，对文本进行批量的标注。在本章我们会讲解这个部分的原理和细节。我们在微博语料（约20万句）和Eassy数据（约2万句）上进行了逐句的批量标注，并且得到的高-低开放性类别标签分布与数据源的高-低开放性得到了双向验证，以高置信度通过了Fisher检验。
