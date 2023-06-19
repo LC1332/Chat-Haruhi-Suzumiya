@@ -35,7 +35,7 @@ def download_models():
     return model
 
 # OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY2")
-openai.api_key = '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'  # 在这里输入你的OpenAI API Token
+openai.api_key = 'skuNs3omLnch'  # 在这里输入你的OpenAI API Token
 
 os.environ["OPENAI_API_KEY"] = openai.api_key
 
