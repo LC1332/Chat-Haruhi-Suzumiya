@@ -1,0 +1,12 @@
+maps:
+为了可视化 text-embedding,
+记录每一个text的属性 {"title", "id","text"}
+
+dict_text:
+预存text_image_dict.txt中 text 的embedding 格式{"text":"embedding"}
+
+text_image:
+预存text_image_dict.txt 格式 {"text":"imageName"}
+
+texts:
+Chat-Haruhi-Suzumiya/characters/haruhi/texts 下所有桥段的 text-embedding
