@@ -1,4 +1,4 @@
-中文 | English | 日本語 | [赞助](#赞助) | [报告](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/report.md)
+中文 | English | 日本語 | [赞助](#赞助) | [报告](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/report.md) | [招人](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/Hiring.md)
 
 # Chat凉宫春日 Chat-Haruhi-Suzumiya
 
@@ -24,8 +24,6 @@ scixing实践了VITS语音，完成了台词对应的语音抽取，（将要完
 贾曜恺开发了一个前端实现方案，待测试。
 
 </details>
-
-临时体验链接（三天一换中） https://a981f8525e269b1065.gradio.live/
 
 本项目是一个在建项目，本项目中的代码和工具，也支持其他动漫人物的建立。在初步完成Haruhi预计的功能后，我们会开始尝试其他角色。
 
