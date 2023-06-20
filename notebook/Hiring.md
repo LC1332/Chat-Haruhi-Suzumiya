@@ -1,13 +1,13 @@
 # Hiring 招人: 让世界变得更热闹的Chat凉宫春日
 
-ChatHaruhi的第一阶段已经结束，DataWhale汇报可以见
+ChatHaruhi的第一阶段已经结束，后续持续招人中
 
-链接: https://pan.baidu.com/s/1yk0voqSkFo0u5Gz-Uz72gQ?pwd=hwr6 
+DataWhale汇报可以见链接: https://pan.baidu.com/s/1yk0voqSkFo0u5Gz-Uz72gQ
 
 提取码下面一个字符串的四个首字母 
 
 ```
-hello world Robin 66666 
+hello world robin 66666 
 ```
 
 
