@@ -402,6 +402,8 @@ https://colab.research.google.com/drive/1GNdmBnc5UA7OYBZPtHu244eiAN-0IMZA?usp=sh
 
 ---
 
+封小洋 is working on that
+
 - [ ] 已经验证了声纹的1-NN是有效的
 - [ ] 有一个Python基础切分的程序
 - [ ] 在每个人物标注5-10段语音情况下，可以开始跑脚本
