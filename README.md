@@ -406,3 +406,19 @@ https://colab.research.google.com/drive/1GNdmBnc5UA7OYBZPtHu244eiAN-0IMZA?usp=sh
 - [ ] 有一个Python基础切分的程序
 - [ ] 在每个人物标注5-10段语音情况下，可以开始跑脚本
 - [ ] （扩充） 假设我们可以在脚本中删除人觉得错误的行，甚至修正一些角色名，这些数据可以作为补充，程序会读取一个人工修正（有删失）的脚本，进一步扩充标定数据
+
+---
+
+使用鲁叔标定的数据，测试更多的声纹模型
+
+标定数据
+
+https://drive.google.com/file/d/1u-GhdIwinaxv8q4aelWRd9HXtGvWK2E7/view?usp=sharing
+
+原始数据
+
+https://drive.google.com/file/d/164yjLh0zN_7kcfW94b0fHXl8Pn2RXlWs/view?usp=sharing
+
+https://drive.google.com/file/d/1cB-sQ1Yo6OlVV_7Lcg99gamCubfowtsL/view?usp=sharing
+
+Aria is working on that
