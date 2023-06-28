@@ -401,3 +401,8 @@ https://colab.research.google.com/drive/1GNdmBnc5UA7OYBZPtHu244eiAN-0IMZA?usp=sh
 试一下ChatGLM2，看看能不能tuning
 
 ---
+
+- [ ] 已经验证了声纹的1-NN是有效的
+- [ ] 有一个Python基础切分的程序
+- [ ] 在每个人物标注5-10段语音情况下，可以开始跑脚本
+- [ ] （扩充） 假设我们可以在脚本中删除人觉得错误的行，甚至修正一些角色名，这些数据可以作为补充，程序会读取一个人工修正（有删失）的脚本，进一步扩充标定数据
