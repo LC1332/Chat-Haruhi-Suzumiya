@@ -358,235 +358,79 @@ Cherrypick了一些有趣的结果，如果你也想测请私下联系我。
 
 ## TODO
 
-持续招人中
+**当前关键进度**
 
-https://github.com/LC1332/Prophet-Andrew-Ng/blob/main/Hiring.md
++ 台本工具 —— scixing，封小洋			需求已经确定
 
----
+封小洋在合并整体程序 0629，希望0630能够整体调通出一版（最好是colab能跑）
 
-新的后端任务 more general app
++ 重构WebUI —— 冷子昂，闫晨曦			需求已经确定
 
-合并app_more_general.app中的修改到app.py
+据说已经初步有一个版本，今天上传到git并且做链接？
 
-使得notebook中的gradio_megumi.ipynb和gradio_with_image.ipynb都是能跑通的
++ 推广精品角色到3个  （等待台本工具）
 
-- [ ] 消除所有强制锁定 凉宫春日、春日、Haruhi的字段，都变成可以调节的
-- [ ] 如果没有图片的情况下，程序仍然是鲁棒的
-- [ ] 现在有一段54-58的文件夹创建我没有明白是什么意思，和save有关是吗 是的话应该重构到类内？
-- [ ] 过多的参数设定有一点过于麻烦，如果比较友善的话，支持可选的通过一个config.txt一同设置
-- [ ] 抽取embedding的时候增加进度条
++ 尝试0613新特征 —— 米唯实			初步探索中
 
----
+我今天和米唯实讨论一下
 
++ 训练本地模型 —— 沈骏一、张财、吴平宇 需求已经确定
 
-<details>
-  <summary> 已经完成的后端任务 by 闫晨曦, 冷子昂 debuged </summary>
-
-基础的python后端
-
-- [x] 将Notebook移动到一个app.py的文件中 (doing by 闫晨曦)
-- [x] 确认app.py能够修改台词记录folder 这样可以存到本地或者colab启动的时候可以存到google drive
-- [x] system prompt存成txt( characters/haruhi/system_prompt.txt )，支持切换。
-- [x] 确认app.py能够正确调用haruhi的system prompt
-- [x] 冷子昂测试app.py
-- [x] 确认app.py能够启动gradio
-- [x] app.py 支持设定max_len_story 和max_len_history 默认为 1500, 1200
-- [x] 写一个更好的notebook，把外部参数都放在外面，启动gradio；
-- [x] (opt) 前面都完成之后，项目可以转成public，方便从colab去拉取代码，建立一个colab脚本, 直接clone项目，调用app.py进行玩耍
-
-闫晨曦 is working on that
-
-</details>
-
-
-新的后端任务
-
-- [x] 将text的embedding和字典做预存
-
-我已经在characters/haruhi/images 上传了文件
-
-同时text_image_dict里面存储了文件名和台词之间的关系
-
-- [x] 待鲁叔初步的图-文数据之后，做一个类，
-
-支持文本embedding抽取、预存、载入、给定文本出(图片、相似度)
-
-- [ ] 在src目录下，建立一个testing子目录， 为文-文 搜索 写一个单元测试
-
-- [ ] 为 文-图搜索写一个单元测试
-
-- [ ] 如果手快的话，再把这个出图片的整合到gradio里面去(新建一个后端任务)
-
-
-<details>
-  <summary> 已经完成的后端任务 by 闫晨曦 </summary>
-
-app.py的测试
-
-建议闫晨曦做一下这个
-
-gradio和app之间的一致性测试
-
-使用同样的query语句
-
-- [x] 测试在notebook状态下， organize_message_langchain 函数的输出，把messages用pkl存起来
-- [x] 然后在app.py状态下，对于同样的query，也把messages保存出来
-- [x] 对于所有的message in messages, 比较message.content， 如果完全一致，就是对的，如果不一致，就有问题
-
-（当然我原来的system_prompt被我加了两行，以本项目的为准。）
-
-如果两者不一致，就要好好检查一下了
-
-</details>
-
-
-
----
-<details>
-  <summary> 已经完成的后端任务 by 闫晨曦 </summary>
-
-简单的指令注入防御
-
-```python
-def respond(role_name, user_message, chat_history):
-  input_message = role_name + ':「' + user_message + '」'
-```
-
-这里的role_name和user_message在合并字符串之前都要做防御，具体方式如下
-
-- [x] 长度限制role_name 限制在10个字符以内， user_message限制在200个字符以内
-- [x] 特殊符号消除，消除两个字符串中所有的':','：'，'「' ,'」','\n'， 一律替换为空格
-- [x] 主角消除，当role_name中的字符出现'凉宫春日'中的任何一个字时，替换这个字为'阿',或者别的替换规则
-
-</details>
-
+看看BaoBig粒可视化的进度，最好等台本工具结束补一批数据生成。
 
 ---
 
-带socket（或者其他本地与前端链接方式的后端）
+生成和实测数据的可视化
 
-这里前端可以去用https://github.com/Voine/ChatWaifu_Mobile  也可以去用别的
+- [ ] 确认收到实测和生成的数据
+- [ ] 尽可能整理成一问一答的相同格式
 
-- [ ] 调研ChatWaifu的后端怎么和前端连接
-- [ ] 制作一个foo的后端，看看能不能接入
-- [ ] 待app.py有个基础版本后，修改为适合ChatWaifu的后端
+阿虚:「说了一句话」
+春日:「说了一句话」
 
-- [ ] 如果ChatWaifu的前端很难的话，可以先写个前后端分离的gradio或者flask前端，把后端献给做好
+- [ ] 拿相同格式的文本抽取embedding
+- [ ] 用新发现的牛逼工具可视化
 
-贾曜恺 is working on that
+https://colab.research.google.com/drive/1GNdmBnc5UA7OYBZPtHu244eiAN-0IMZA?usp=sharing#scrollTo=XBF1d3mMh6vq
 
+- [ ] 跑一下，如果新工具支持中文，那万事大吉
+- [ ] 如果新工具不支持中文，可以把外部标签改成英文，但是内部点的时候还是尽量看到中文
+
+- [ ] 可以用之前的tSNE
 
 ---
 
-中文到日文的训练
+如果做训练的话，沈骏一把生成数据也接手一下
 
-在hugging找一下有没有已经能用的中转日翻译 比如 ssmisya/zh-jp_translator K024/mt5-zh-ja-en-trimmed larryvrh/mt5-translation-ja_zh 
+- [ ] 原来剧本中(后一句有haruhi说话的）台词，可以全部都用标准haruhi的pipeline 生成一遍
 
-日文数据 https://huggingface.co/datasets?language=language:zh,language:ja&sort=downloads
+不是continuous
 
-- [x] 检查这个模型是不是直接能用(可以问鲁叔，要一些台词文件)
-- [x] 如果模型很能用，任务就结束了，可以考虑训别的东西（一般不会）
+不能复现原有角色的话，可以认为训练失败了
 
-- [ ] 可以研究下日语文本到语音，有没有可能用python+gradio的形式输出
+试一下ChatGLM2，看看能不能tuning
 
-<details>
-  <summary> 中文到日文模型 日后再说 </summary>
-
-（暂时选定这个模型）
-
-- [ ] 搜集台词数据、搜集hugging face上所有能用的日文翻译数据
-- [ ] 数据最好达到200k级别
-- [ ] 问鲁叔要一下沈junyi之前的训练代码
-- [ ] 训练中文转日文模型
-- [ ] 对接测试
-
-</details>
+---
 
 封小洋 is working on that
 
-
-
----
-
-批量台词抽取
-
-- [x] 等待鲁叔share数据
-
-**注意：大量的图文、视频数据不要上传到git**
-**放少量的测试数据是可以的**
-
-
-更新后的人台词抽取需求
-
-输入:
-
-- 视频、和视频同步的字幕
-- 一些指定人物的图片，用来确定这个人物（三分类，单独出现，面对面合照中景，和不出现主题人物）
-- 一些指定人物的音频，用来确定这个人物
-- (opt) 升级为多人物音频识别，可以提取完整的台本
-
-输出:
-
-- 一个jsonl，包含所有视频中这个人的连续对话文本
-- 大量的截图，和一个{截图,对话}的jsonl， 多张截图可以对应同一段对话
-  - 如果一段对话的多句中有这个人物出现，则截取这个人物
-  - 如果完全没有这个人物出现，则不截取图片，只在第一个连续对话文本中有
-  - 如果一段对话中没有主题人物单独出现，但是有合照，也可以截取（备用，这种情况应该很罕见）
-
-
-封小洋 is working on 图片分类
-
-scixing is working on 声纹识别
-
-<details>
-  <summary> 之前的图文截取需求（以上面新的为准） </summary>
-
-注意是基于srt文件的，
-
-实现一个视觉分类器，可以判断srt中的每一句是不是春日说的
-（我看了分镜，很有可能要做三分类，是春日，是其他人，不确定）
-
-春日的连续几句话合并成同一句
-
-形如
-
-春日-不确定-不确定-春日-不确定-春日
-
-图片尽可能截取春日的。
-
-</details>
-
-把数据存下来给李鲁鲁核验
-
-- [x] 实现台词和视频的对齐，确认台词和视频是良好对齐的，取视频前中后都试试看
-- [x] 实现台词对应的照片抽取，抽取台词发生时间剧中的照片。
-- [ ] 使用swin-transformer或者好一点的一个ViT模型，抽取特征，准备少部分数据，制作一个凉宫的三分类器
-- [ ] 把形如 春日-不确定-不确定-春日-不确定-春日 这样春日起始，春日结尾的段落截取出来，这里可以保留三张图片
-- [ ] 图片到文本的映射可以是多对一的
-- [x] 图片保存为高度为480的jpg，这样小一点，容易存
-- [ ] 图片统一给鲁叔，可以人工筛一下，把不好看的去掉
-- [x] 鲁叔会整理一个jsonl文件，把haruhi在之前测试时候输出的话总结一下
-- [ ] 然后我们根据ChatHaruhi输出的台词去retrive Haruhi剧中的台词，争取找一些高频出现的台词
-- [ ] 我们只保留高频台词和对应的台本，形成text-image数据集，作为补充包 **这个大的数据不要上传到github**
-
+- [ ] 已经验证了声纹的1-NN是有效的
+- [ ] 有一个Python基础切分的程序
+- [ ] 在每个人物标注5-10段语音情况下，可以开始跑脚本
+- [ ] （扩充） 假设我们可以在脚本中删除人觉得错误的行，甚至修正一些角色名，这些数据可以作为补充，程序会读取一个人工修正（有删失）的脚本，进一步扩充标定数据
 
 ---
 
-李鲁鲁的self driving
+使用鲁叔标定的数据，测试更多的声纹模型
 
-我说一下我今天上午要做的事儿，
-- [x] 有个哥们给我发了“加藤惠”的语料， 在app.py之外，启一个app_more_general.py, 去除掉凉宫春日的依赖
-- [ ] 有一些人格的英文数据，搜一下，然后找群友开始批量运行GPT翻译
+标定数据
 
-另外 贾曜恺的前端我来不及测了，自己录一个视频吧（多录一些不同聊天的，有趣一些）
+https://drive.google.com/file/d/1u-GhdIwinaxv8q4aelWRd9HXtGvWK2E7/view?usp=sharing
 
-- [x] 构建台词-关键词-新台词的增广系统
-- [x] 构建项目页
-- [x] 招人
-- [x] 整理田野测试时候ChatHaruhi输出的台词
-- [x] 去下载Haruhi的动画片视频，想办法先搞几张台词和图片的匹配
-- [x] （这个冷子昂今天上午会做）一个增强的gradio系统，支持根据台词显示haruhi的图片
-- [x] 去二次元社区找更熟悉凉宫春日的同学众测
+原始数据
 
+https://drive.google.com/file/d/164yjLh0zN_7kcfW94b0fHXl8Pn2RXlWs/view?usp=sharing
 
+https://drive.google.com/file/d/1cB-sQ1Yo6OlVV_7Lcg99gamCubfowtsL/view?usp=sharing
 
+Aria is working on that
