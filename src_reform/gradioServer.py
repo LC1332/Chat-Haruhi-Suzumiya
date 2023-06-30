@@ -21,7 +21,7 @@ def create_gradio(chat_person):
         return "", chat_history, bot_message
 
     def upload_file(file_obj):
-        # 上传文件
+        """上传文件，zipfile解压文件名乱码，单独用filenames保存"""
         filenames = []
         with ZipFile(file_obj.name) as zfile:
             zfile.extractall('./texts')
