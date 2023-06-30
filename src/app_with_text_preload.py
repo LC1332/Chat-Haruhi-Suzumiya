@@ -33,8 +33,8 @@ from langchain.schema import (
 )
 
 # OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY2")
-openai.proxy = "http://127.0.0.1:7890"
-openai.api_key = 'sk-1cdLumZplpy1wCGOybBCxCs5'  # 在这里输入你的OpenAI API Token
+# openai.proxy = "http://127.0.0.1:7890"
+openai.api_key = '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'  # 在这里输入你的OpenAI API Token
 
 os.environ["OPENAI_API_KEY"] = openai.api_key
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -65,71 +65,97 @@ class Run:
         self.text_image_pkl_path = params['text_image_pkl_path']
         self.dict_text_pkl_path = params['dict_text_pkl_path']
         self.num_steps = params['num_steps']
-        self.texts_pkl_path = params['texts_pkl_path']
+        self.text_embed_pkl_path = params['text_embed_pkl_path']
+        self.titles_pkl_path = params["titles_pkl_path"]
         self.dict_path = params['dict_path']
         self.image_path = params['image_path']
-        self.maps_pkl_path = params['maps_pkl_path']
         self.folder = params['folder']
         self.system_prompt = params['system_prompt']
         self.max_len_story = params['max_len_story']
         self.max_len_history = params['max_len_history']
         self.save_path = params['save_path']
+        # 预加载pkl文件
+        self.model = self.download_models()
+        self.dict_text = None
+        self.text_image = None
+        self.title_to_text = None
+        self.text_embed = None
+        self.titles = None
 
-    def read_text(self):
-        """抽取、预存"""
-        text_embeddings = {}
-        title_to_text = {}
-        texts = []
-        data = []
-        id = 0
-        for file in os.listdir(self.folder):
-            if file.endswith('.txt'):
-                title_name = file[:-4]
-                with open(os.path.join(self.folder, file), 'r') as fr:
-                    title_to_text[title_name] = fr.read()
-                    for line in title_to_text[title_name].strip().split('\n'):
-                        line = line.strip()
-                        category = {}
-                        ch = '：' if '：' in line else ':'
-                        if '旁白' in line:
-                            text = line.split(ch)[1].strip()
-                        else:
-                            text = ''.join(list(line.split(ch)[1])[1:-1])  # 提取「」内的文本
-                        if title_name + "_" + text in texts:  # 避免重复的text，导致embeds 和 maps形状不一致
-                            continue
-                        texts.append(title_name+"_"+text)
-                        category["titles"] = file.split('.')[0]
-                        category["id"] = str(id)
-                        category["text"] = text
-                        id = id + 1
-                        data.append(dict(category))
-        embeddings = self.get_embedding(texts)
-        for title_text, embed in zip(texts, embeddings):
-            text_embeddings[title_text] = embed
-        self.store(self.title_to_text_pkl_path, title_to_text)
-        self.store(self.texts_pkl_path, text_embeddings)
-        self.store(self.maps_pkl_path, data)
 
-        return text_embeddings, data
+    def read_data(self):
+        pkl_paths = [self.titles_pkl_path, self.title_to_text_pkl_path, self.dict_text_pkl_path,
+                     self.dict_text_pkl_path, self.text_embed_pkl_path]
+        flag = False
+        for path in pkl_paths:
+            if os.path.exists(path):
+                flag = True
+            else:
+                flag = False
+        if flag == False:
+            """抽取、预存"""
+            text_embed = {}
+            title_to_text = {}
+            texts = []
+            titles = []
+            id = 0
+            for file in os.listdir(self.folder):
+                if file.endswith('.txt'):
+                    title_name = file[:-4]
+                    with open(os.path.join(self.folder, file), 'r', encoding='utf-8') as fr:
+                        title_to_text[title_name] = fr.read()
+                        for line in title_to_text[title_name].strip().split('\n'):
+                            line = line.strip()
+                            category = {}
+                            ch = '：' if '：' in line else ':'
+                            if '旁白' in line:
+                                text = line.split(ch)[1].strip()
+                            else:
+                                text = ''.join(list(line.split(ch)[1])[1:-1])  # 提取「」内的文本
+                            if text in texts:  # 避免重复的text，导致embeds 和 maps形状不一致
+                                continue
+                            texts.append(text)
+                            titles.append(title_name)
+                            id = id + 1
+            for text, embed in zip(texts, self.get_embedding(texts)):
+                text_embed[text] = embed
+            self.store(self.title_to_text_pkl_path, title_to_text)
+            self.store(self.text_embed_pkl_path, text_embed)
+            self.store(self.titles_pkl_path, titles)
+
+            text_image = {}
+            with open(self.dict_path, 'r', encoding='utf-8') as f:
+                data = f.readlines()
+                for sub_text, image in zip(data[::2], data[1::2]):
+                    text_image[sub_text.strip()] = image.strip()
+            self.store(self.text_image_pkl_path, text_image)
+
+            keys_embeddings = {}
+            for key in text_image.keys():
+                keys_embeddings[key] = self.get_embedding(key)
+            self.store(self.dict_text_pkl_path, keys_embeddings)
+
+        self.preload()
+
+    def preload(self):
+        self.dict_text = self.load(load_dict_text=True)
+        self.text_image = self.load(load_text_image=True)
+        self.title_to_text = self.load(load_title_to_text=True)
+        self.text_embed = self.load(load_text_embed=True)
+        self.titles = self.load(load_titles=True)
 
     def store(self, path, data):
         with open(path, 'wb+') as f:
             pickle.dump(data, f)
 
-    def load(self, load_texts=False, load_maps=False, load_dict_text=False,
-             load_text_image=False, load_title_to_text=False):
-        if load_texts:
-            if self.texts_pkl_path:
-                with open(self.texts_pkl_path, 'rb') as f:
+    def load(self, load_text_embed=False, load_dict_text=False,
+             load_text_image=False, load_title_to_text=False, load_titles=False):
+        if load_text_embed:
+            if self.text_embed_pkl_path:
+                with open(self.text_embed_pkl_path, 'rb') as f:
                     return pickle.load(f)
             else:
                 print("No texts_pkl_path")
-        elif load_maps:
-            if self.maps_pkl_path:
-                with open(self.maps_pkl_path, 'rb') as f:
-                    return pickle.load(f)
-            else:
-                print("No maps_pkl_path")
         elif load_dict_text:
             if self.dict_text_pkl_path:
                 with open(self.dict_text_pkl_path, 'rb') as f:
@@ -148,56 +174,37 @@ class Run:
                     return pickle.load(f)
             else:
                 print("No title_to_text_pkl_path")
+        elif load_titles:
+            if self.titles_pkl_path:
+                with open(self.titles_pkl_path, 'rb') as f:
+                    return pickle.load(f)
+            else:
+                print('No titles_pkl_path')
         else:
             print("Please specify the loading file！")
 
-    def text_to_image(self, text, save_dict_text=False):
+    def text_to_image(self, text):
         """
             给定文本出图片
             计算query 和 texts 的相似度，取最高的作为new_query 查询image
             到text_image_dict 读取图片名
             然后到images里面加载该图片然后返回
         """
-        if save_dict_text:
-            text_image = collections.defaultdict()
-            with open(self.dict_path, 'r') as f:
-                data = f.readlines()
-                for sub_text, image in zip(data[::2], data[1::2]):
-                    text_image[sub_text.strip()] = image.strip()
-            self.store(self.text_image_pkl_path, text_image)
 
-            keys_embeddings = collections.defaultdict(str)
-            for key in text_image.keys():
-                keys_embeddings[key] = self.get_embedding(key)
-            self.store(self.dict_text_pkl_path, keys_embeddings)
+        # 加载 text-imageName
+        keys = list(self.text_image.keys())
+        keys.insert(0, text)
+        query_similarity = self.get_cosine_similarity(keys, get_image=True)
+        key_index = query_similarity.argmax(dim=0)
+        text = list(self.text_image.keys())[key_index]
 
-        if self.dict_path and self.image_path:
-            # 加载 text-imageName
-            text_image = self.load(load_text_image=True)
-            keys = list(text_image.keys())
-            keys.insert(0, text)
-            query_similarity = self.get_cosine_similarity(keys, get_image=True)
-            key_index = query_similarity.argmax(dim=0)
-            text = list(text_image.keys())[key_index]
-
-            image = text_image[text] + '.jpg'
-            if image in os.listdir(self.image_path):
-                res = Image.open(self.image_path + '/' + image)
-                # res.show()
-                return res
-            else:
-                print("Image doesn't exist")
+        image = self.text_image[text] + '.jpg'
+        if image in os.listdir(self.image_path):
+            res = Image.open(self.image_path + '/' + image)
+            # res.show()
+            return res
         else:
-            print("No path")
-
-    def text_to_text(self, text):
-        pkl = self.load(load_texts=True)
-        texts = [title_text.split('_')[1] for title_text in list(pkl.keys())]
-        texts.insert(0, text)
-        texts_similarity = self.get_cosine_similarity(texts, get_texts=True)
-        key_index = texts_similarity.argmax(dim=0)
-        value = list(pkl.keys())[key_index]
-        return value
+            print("Image doesn't exist")
 
     # 一个封装 OpenAI 接口的函数，参数为 Prompt，返回对应结果
     def get_completion_from_messages(self, messages, model="gpt-3.5-turbo", temperature=0):
@@ -209,16 +216,16 @@ class Run:
         #  print(str(response.choices[0].message))
         return response.choices[0].message["content"]
 
-
     def download_models(self):
         # Import our models. The package will take care of downloading the models automatically
         model_args = Namespace(do_mlm=None, pooler_type="cls", temp=0.05, mlp_only_train=False,
                                init_embeddings_model=None)
-        model = AutoModel.from_pretrained("silk-road/luotuo-bert", trust_remote_code=True, model_args=model_args).to(device)
+        model = AutoModel.from_pretrained("silk-road/luotuo-bert", trust_remote_code=True, model_args=model_args).to(
+            device)
         return model
+
     def get_embedding(self, texts):
         tokenizer = AutoTokenizer.from_pretrained("silk-road/luotuo-bert")
-        model = self.download_models()
         # str or strList
         texts = texts if isinstance(texts, list) else [texts]
         # 截断
@@ -231,9 +238,8 @@ class Run:
         # Extract the embeddings
         # Get the embeddings
         with torch.no_grad():
-            embeddings = model(**inputs, output_hidden_states=True, return_dict=True, sent_emb=True).pooler_output
+            embeddings = self.model(**inputs, output_hidden_states=True, return_dict=True, sent_emb=True).pooler_output
         return embeddings[0] if len(texts) == 1 else embeddings
-   
 
     def get_cosine_similarity(self, texts, get_image=False, get_texts=False):
         """
@@ -241,9 +247,9 @@ class Run:
             texts[0] = query
         """
         if get_image:
-            pkl = self.load(load_dict_text=True)
+            pkl = self.dict_text
         elif get_texts:
-            pkl = self.load(load_texts=True)
+            pkl = self.text_embed
         else:
             # 计算query_embed
             pkl = {}
@@ -259,10 +265,7 @@ class Run:
         # compute cosine similarity between query_embed and embeddings
         embed_to_title = []
         texts = [query_text]
-        texts_pkl = self.load(load_texts=True)
-        for title_text in texts_pkl.keys():
-            res = title_text.split('_')
-            embed_to_title.append(res[0])
+        embed_to_title = self.titles
         cosine_similarities = self.get_cosine_similarity(texts, get_texts=True).numpy().tolist()
         # sort cosine similarity
         sorted_cosine_similarities = sorted(cosine_similarities, reverse=True)
@@ -279,7 +282,6 @@ class Run:
 
     def organize_story_with_maxlen(self, selected_sample):
         maxlen = self.max_len_story
-        title_to_text = self.load(load_title_to_text=True)
         story = "凉宫春日的经典桥段如下:\n"
 
         count = 0
@@ -288,7 +290,7 @@ class Run:
         print(selected_sample)
         for sample_topic in selected_sample:
             # find sample_answer in dictionary
-            sample_story = title_to_text[sample_topic]
+            sample_story = self.title_to_text[sample_topic]
 
             sample_len = len(enc.encode(sample_story))
             # print(sample_topic, ' ' , sample_len)
@@ -407,7 +409,7 @@ class Run:
         return response
 
     def save_response(self, chat_history_tuple):
-        with open(f"{self.save_path}/conversation_{time.time()}.txt", "w") as file:
+        with open(f"{self.save_path}/conversation_{time.time()}.txt", "w", encoding='utf-8') as file:
             for cha, res in chat_history_tuple:
                 file.write(cha)
                 file.write("\n---\n")
@@ -445,9 +447,6 @@ class Run:
                 for char in special_chars:
                     role_name = role_name.replace(char, 'x')
                     user_message = user_message.replace(char, ' ')
-                replacement_rules = {'凉': '马', '宫': '宝', '春': '国', '日': '啊'}
-                for char, replacement in replacement_rules.items():
-                    user_message = user_message.replace(char, replacement)
 
                 input_message = role_name + ':「' + user_message + '」'
                 bot_message = self.get_response(input_message, chat_history)
@@ -463,8 +462,6 @@ class Run:
 
         demo.launch(debug=True, share=True)
 
-    
-
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="-----[Chat凉宫春日]-----")
@@ -474,9 +471,9 @@ if __name__ == '__main__':
     parser.add_argument("--max_len_history", default=1200, type=int)
     # parser.add_argument("--save_path", default="/content/drive/MyDrive/GPTData/Haruhi-Lulu/")
     parser.add_argument("--save_path", default=os.getcwd() + "/Suzumiya")
-    parser.add_argument("--texts_pkl_path", default="./pkl/texts.pkl")
-    parser.add_argument("--maps_pkl_path", default="./pkl/maps.pkl")
+    parser.add_argument("--text_embed_pkl_path", default="./pkl/text_embed.pkl")
     parser.add_argument("--title_to_text_pkl_path", default='./pkl/title_to_text.pkl')
+    parser.add_argument("--titles_pkl_path", default="pkl/titles.pkl")
     parser.add_argument("--dict_text_pkl_path", default="./pkl/dict_text.pkl")
     parser.add_argument("--text_image_pkl_path", default="./pkl/text_image.pkl")
     parser.add_argument("--dict_path", default="../characters/haruhi/text_image_dict.txt")
@@ -489,44 +486,16 @@ if __name__ == '__main__':
         "max_len_story": options.max_len_story,
         "max_len_history": options.max_len_history,
         "save_path": options.save_path,
-        "texts_pkl_path": options.texts_pkl_path,
+        "text_embed_pkl_path": options.text_embed_pkl_path,
         "title_to_text_pkl_path": options.title_to_text_pkl_path,
-        "maps_pkl_path": options.maps_pkl_path,
         "dict_text_pkl_path": options.dict_text_pkl_path,
+        "titles_pkl_path": options.titles_pkl_path,
         "text_image_pkl_path": options.text_image_pkl_path,
         "dict_path": options.dict_path,
         "image_path": options.image_path,
         "num_steps": options.num_steps
     }
     run = Run(**params)
-    run.read_text()
-    run.text_to_image("hello", save_dict_text=True)
-    # 先运行上面两条命令，写入pkl文件，之后再把他们注释掉，运行gradio
-    # run.create_gradio()
-    
-    
-    # history_chat = []
-    # history_response = []
-    # chat_timer = 5
-    # new_query = '鲁鲁:你好我是新同学鲁鲁'
-    #
-    #
-    # selected_sample = run.retrieve_title(new_query, 7)
-    #
-    # print('限制长度之前:', selected_sample)
-    #
-    # story, selected_sample = run.organize_story_with_maxlen(selected_sample)
-    #
-    # print('当前辅助sample:', selected_sample)
-    #
-    # messages = run.organize_message(story, history_chat, history_response, new_query)
-    #
-    # response = run.get_completion_from_messages(messages)
-    #
-    # print(response)
-    #
-    # history_chat.append(new_query)
-    # history_response.append(response)
-    #
-    # history_chat, history_response = run.keep_tail(history_chat, history_response)
-    # print(history_chat, history_response)
+    run.read_data()
+    run.create_gradio()
+    # print(run.title_to_text)

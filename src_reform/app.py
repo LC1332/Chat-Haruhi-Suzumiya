@@ -1,5 +1,5 @@
 import configparser
-from ChatGPT import ChatGPT
+from ChatGPT2 import ChatGPT
 
 class ChatPerson:
     def __init__(self, **params):
@@ -46,6 +46,7 @@ class ChatPerson:
         pass
         print("正在载入角色GPT所需资源")
         self.ChatGPT = ChatGPT(self.configuration)
+        self.ChatGPT.read_data()
 
     def getResponse(self, user_message, chat_history_tuple):
         pass
