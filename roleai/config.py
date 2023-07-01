@@ -9,7 +9,7 @@ audio_config = {
 
 srt_config = {
                "subtitle_dir":"/mnt/sda/baidu_disk/lg/zim/Subtitle_SC_SRT",  # **视频对应字幕，视频和字幕名称需要一致 需要准备 ,
-                "srt_out_dir":"/mnt/sda/baidu_disk/lg/scixing/",  # 预测的角色类型路径
+                "srt_out_dir":"/mnt/sda/baidu_disk/凉宫春日/lg_video/srt_predict",  # 预测的角色类型路径
             }
 
 

@@ -37,7 +37,7 @@ class AudioClassification:
         self.srt_out_dir = srt_out_dir
 
         self.audio_first_dir = get_first_subdir(audio_out_dir)
-        self.candidate_path = self.audio_first_dir[:2]
+        self.candidate_path = self.audio_first_dir[:]
 
         self.roles, self.roles_list = self.get_roles_list()
         self.features, self.labels = self.get_features()
@@ -245,7 +245,7 @@ class AudioClassification:
         threshold_doubt = 0.6
         for idx,feature_folder in enumerate(self.candidate_path):
             name = feature_folder.split('/')[-1]
-            save_name = self.srt_out_dir + f'{name}.txt'
+            save_name = os.path.join(self.srt_out_dir,f'{name}.txt')
             feature_folder = os.path.join(feature_folder,"feature")
 
             file_list = os.listdir(feature_folder)
