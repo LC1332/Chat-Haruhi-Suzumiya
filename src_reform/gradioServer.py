@@ -74,7 +74,7 @@ def create_gradio(chat_person):
             sub.click(fn=respond, inputs=[role_name, msg, chatbot], outputs=[msg, chatbot, image_input])
             # audio_btn.click(fn=update_audio, inputs=[audio, japanese_output], outputs=audio)
 
-            # image_button.click(text.text_to_image, inputs=image_input, outputs=image_output)
+            image_button.click(chat_person.ChatGPT.text_to_image, inputs=image_input, outputs=image_output)
         with gr.Tab("Custom Character"):
             format_rule = """
     台本格式：台本文件夹打包成zip
