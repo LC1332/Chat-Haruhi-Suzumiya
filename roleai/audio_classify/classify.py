@@ -81,7 +81,7 @@ class AudioClassification:
             for file in self.roles_list[self.roles.index(role)]:
                 deal_flag = False
                 for candidate in self.candidate_path: #'/mnt/sda/baidu_disk/lg/scixing/Haruhi ep1'
-                    candidate_fname = os.path.join(candidate, 'voice', )
+                    candidate_fname = os.path.join(candidate, 'voice')
                     if os.path.exists(candidate_fname):
                         deal_flag = True
                         feature_fname = os.path.join(candidate,'feature',file) +'.pkl'
