@@ -1,5 +1,5 @@
 
-import os,re
+import os
 
 #获取子目录
 def get_subdir(directory):
