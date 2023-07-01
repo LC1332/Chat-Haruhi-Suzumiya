@@ -1,0 +1,3 @@
+pyaudio
+pysrt
+pysubs2
