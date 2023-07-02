@@ -3,8 +3,8 @@
 import os
 import shutil
 from roleai.config import audio_config, srt_config
-from tool import get_filename,read_tolist,get_first_subdir,most_pre_ele
-from read import get_subdir
+from tool import get_filename,read_tolist,get_first_subdir
+
 audio_out_dir = audio_config['audio_out_dir']
 audio_roles_dir = audio_config['audio_roles_dir']
 # 统计增加多少条数据
