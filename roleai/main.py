@@ -2,6 +2,7 @@ from clip_tool import VideoSegmentation
 from roleai.audio_feature_ext.audio_fea_ext import AudioFeatureExtraction
 from config import audio_config,srt_config,video_config
 from roleai.audio_classify.classify import AudioClassification
+from incredata import IncrementData
 
 def main():
 
@@ -23,6 +24,11 @@ def main():
 
     audio_classification.get_pridict()
 
+    audio_increment = IncrementData(audio_config['audio_out_dir'],
+                                    audio_config['audio_roles_dir'],
+                                    srt_config['srt_out_dir'])
+
+    audio_increment.process()
 
 if __name__ == '__main__':
     main()
