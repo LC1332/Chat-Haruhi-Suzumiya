@@ -20,7 +20,7 @@ for sub_dir in role_lis:
 origin_lis = [item for sub_lis in list(stattics_dic.values()) for item in sub_lis]
 
 
-golden_res = get_filename(srt_config['srt_annotate'], 'annotate.txt')
+golden_res = get_filename(srt_config['srt_out_dir'], 'annotate.txt')
 same_lis = []
 i = 0
 j = 0
