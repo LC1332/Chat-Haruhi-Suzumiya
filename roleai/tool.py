@@ -74,3 +74,8 @@ def get_first_subdir(directory):
             subdirectories.append(os.path.join(directory, name))
     subdirectories.sort()
     return subdirectories
+
+
+def write_to_file(file,line,mode='w'):
+    with open(file,mode=mode,encoding='utf-8') as f:
+        f.write(line+'\n')
