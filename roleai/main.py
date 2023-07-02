@@ -22,7 +22,7 @@ def main():
                                                srt_config['srt_out_dir'],
                                                audio_config['audio_out_dir'])
 
-    class_name = ['KNN_Classifier_Custom', 'KNN_Classifier']
+    class_name = ['KNN_Classifier_One', 'KNN_Classifier']
     n_neighbors = 3  # 表示knn n_neighbors的取值
     mark = ''  # 在默认输出文件后拼接一个字符,a.txt → a_mark.txt; mark 可自定义为01，02...,区分更新数据集后新的结果
     audio_classification.get_pridict(class_name[1], n_neighbors, mark)
@@ -35,7 +35,7 @@ def main():
     audio_increment.process()
 
     # 再预测
-    audio_classification.get_pridict(class_name[1], n_neighbors, mark='retrain')
+    audio_classification.get_pridict(class_name[0], n_neighbors, mark='retrain')
 
 if __name__ == '__main__':
     main()
