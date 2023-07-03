@@ -88,7 +88,7 @@ class VideoSegmentation:
                         style = most_1[0][0]
         
                     new_subs = [sub for sub in subs if sub.style == style]
-                    for index, subtitle in enumerate(new_subs[:10]):
+                    for index, subtitle in enumerate(new_subs[:]):
                         # 获取开始和结束时间
                         if subtitle.style == style:
                             start_time = subtitle.start
@@ -99,7 +99,8 @@ class VideoSegmentation:
         
         
                             # 使用FFmpeg切割视频 改成mp3就无法输出
-                            audio_output = f'{self.audio_out_dir}/{filename}/{index}_{make_filename_safe(subtitle.text)}_ass.wav'
+
+                            audio_output = f'{self.audio_out_dir}/{filename}/{voice_dir}/{index}_{make_filename_safe(subtitle.text)}.wav'
         
                             command = ['ffmpeg', '-ss', str(start_time), '-to', str(end_time), '-i', f'{pth}', "-vn",  '-c:a', 'pcm_s16le',
                                              audio_output,  '-loglevel', 'quiet']

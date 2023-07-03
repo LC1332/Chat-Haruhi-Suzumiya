@@ -9,7 +9,10 @@ audio_config = {
 
 srt_config = {
                "subtitle_dir":"/mnt/sda/baidu_disk/lg/zim/Subtitle_SC_SRT",  # **视频对应字幕，视频和字幕名称需要一致 需要准备 ,
-                "srt_out_dir":"/mnt/sda/baidu_disk/lg/scixing/",  # 预测的角色类型路径
+                # 1.预测的角色类型输出路径 +
+                # 2.预测输出文本之后→进行人工核之后，文件重命名，增加'annotate',举例 a.txt →a.annotate.txt,可以进行增量训练
+                "srt_out_dir":"./srt_predict_out",
+
             }
 
 
