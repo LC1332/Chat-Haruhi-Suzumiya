@@ -1,8 +1,6 @@
-import json
 import os
-
 import numpy as np
-
+import utils
 # os.environ['http_proxy'] = "http://127.0.0.1:1450"
 # os.environ['https_proxy'] = "http://127.0.0.1:1450"
 import openai
@@ -52,18 +50,10 @@ enc = tiktoken.get_encoding("cl100k_base")
 
 class ChatGPT:
     def __init__(self, configuration):
-        """
-            * 命令行参数的接入
-            * 台词folder,记录台词
-            * system prompt存成txt文件，支持切换
-            * 支持设定max_len_story 和max_len_history
-            * 支持设定save_path
-            * 实现一个colab脚本，可以clone转换后的项目并运行，方便其他用户体验
-        """
         self.title_to_text_pkl_path = configuration['title_to_text_pkl_path']
         self.text_image_pkl_path = configuration['text_image_pkl_path']
         self.dict_text_pkl_path = configuration['dict_text_pkl_path']
-        self.text_embed_jsonl_path = configuration['text_embed_jsonl_path']
+        self.text_embed_pkl_path = configuration['text_embed_pkl_path']
         self.titles_pkl_path = configuration["titles_pkl_path"]
         self.dict_path = configuration['dict_path']
         self.image_path = configuration['image_path']
@@ -83,87 +73,53 @@ class ChatGPT:
         self.titles = None
 
     def read_data(self):
-        pkl_paths = [self.titles_pkl_path, self.title_to_text_pkl_path, self.dict_text_pkl_path,
-                     self.dict_text_pkl_path, self.text_embed_jsonl_path]
-        flag = False
-        for path in pkl_paths:
-            if os.path.exists(path):
-                flag = True
-            else:
-                print(path)
-                flag = False
-        if flag == False:
-            """抽取、预存"""
-            text_embed = []
-            title_to_text = {}
-            texts = []
-            titles = []
-            id = 0
-            for file in os.listdir(self.folder):
-                if file.endswith('.txt'):
-                    title_name = file[:-4]
-                    with open(os.path.join(self.folder, file), 'r', encoding='utf-8') as fr:
-                        title_to_text[title_name] = fr.read()
-                        for line in title_to_text[title_name].strip().split('\n'):
-                            line = line.strip()
-                            ch = '：' if '：' in line else ':'
-                            if '旁白' in line:
-                                text = line.split(ch)[1].strip()
-                            else:
-                                text = ''.join(list(line.split(ch)[1])[1:-1])  # 提取「」内的文本
-                            if text in texts:  # 避免重复的text，导致embeds 和 maps形状不一致
-                                continue
-                            texts.append(text)
-                            titles.append(title_name)
-                            id = id + 1
-            for text, embed in zip(texts, self.get_embedding(texts)):
-                text_embed.append({text: embed})
-            self.store(self.title_to_text_pkl_path, title_to_text)
-            self.store(self.text_embed_jsonl_path, text_embed)
-            self.store(self.titles_pkl_path, titles)
+        # text_embed = {}
+        # title_to_text = {}
+        # titles = []
+        # for file in os.listdir(self.folder):
+        #     if file.endswith('.txt'):
+        #         title_name = file[:-4]
+        #         with open(os.path.join(self.folder, file), 'r', encoding='utf-8') as fr:
+        #             title_to_text[title_name] = fr.read()
+        #             titles.append(title_name)
+        # for text, embed in zip(titles, utils.get_embedding(self.model, list(title_to_text.values()))):
+        #     text_embed[text] = embed
+        # self.store(self.title_to_text_pkl_path, title_to_text)
+        # self.store(self.text_embed_pkl_path, text_embed)
+        # self.store(self.titles_pkl_path, titles)
 
-            text_image = {}
-            with open(self.dict_path, 'r', encoding='utf-8') as f:
-                data = f.readlines()
-                for sub_text, image in zip(data[::2], data[1::2]):
-                    text_image[sub_text.strip()] = image.strip()
-            self.store(self.text_image_pkl_path, text_image)
+        # text_image = {}
+        # with open(self.dict_path, 'r', encoding='utf-8') as f:
+        #     data = f.readlines()
+        #     for sub_text, image in zip(data[::2], data[1::2]):
+        #         text_image[sub_text.strip()] = image.strip()
+        # self.store(self.text_image_pkl_path, text_image)
 
-            keys_embeddings = {}
-            for key in text_image.keys():
-                keys_embeddings[key] = self.get_embedding(key)
-            self.store(self.dict_text_pkl_path, keys_embeddings)
-
-        self.preload()
-
-    def preload(self):
+        #
+        # keys_embeddings = {}
+        # for key in text_image.keys():
+        #     keys_embeddings[key] = utils.get_embedding(self.model, key)
+        # self.store(self.dict_text_pkl_path, keys_embeddings)
         self.dict_text = self.load(load_dict_text=True)
         self.text_image = self.load(load_text_image=True)
         self.title_to_text = self.load(load_title_to_text=True)
         self.text_embed = self.load(load_text_embed=True)
-        self.titles = self.load(load_titles=True)
+        self.titles = list(self.text_embed.keys())
+
+
 
     def store(self, path, data):
-        if path == self.text_embed_jsonl_path:
-            with open(self.text_embed_jsonl_path, 'w+', encoding='utf-8') as f:
-                for item in data:
-                    json.dump(item, f)
-                    f.write('\n')
-        else:
-            with open(path, 'wb+') as f:
-                pickle.dump(data, f)
+        with open(path, 'wb+') as f:
+            pickle.dump(data, f)
 
     def load(self, load_text_embed=False, load_dict_text=False,
-             load_text_image=False, load_title_to_text=False, load_titles=False):
+             load_text_image=False, load_title_to_text=False):
         if load_text_embed:
-            text_embed = {}
-            if self.text_embed_jsonl_path:
-                with open(self.text_embed_jsonl_path, 'r', encoding='utf-8') as f:
-                    for line in f:
-                        text_embed.update(json.loads(line))
-                return text_embed
+            if self.text_embed_pkl_path:
+                with open(self.text_embed_pkl_path, 'rb') as f:
+                   return pickle.load(f)
             else:
-                print("No text_embed_jsonl_path")
+                print("No text_embed_pkl_path")
         elif load_dict_text:
             if self.dict_text_pkl_path:
                 with open(self.dict_text_pkl_path, 'rb') as f:
@@ -182,12 +138,6 @@ class ChatGPT:
                     return pickle.load(f)
             else:
                 print("No title_to_text_pkl_path")
-        elif load_titles:
-            if self.titles_pkl_path:
-                with open(self.titles_pkl_path, 'rb') as f:
-                    return pickle.load(f)
-            else:
-                print('No titles_pkl_path')
         else:
             print("Please specify the loading file！")
 
@@ -225,22 +175,8 @@ class ChatGPT:
         return response.choices[0].message["content"]
 
 
-    def get_embedding(self, texts):
-        tokenizer = AutoTokenizer.from_pretrained("silk-road/luotuo-bert")
-        # str or strList
-        texts = texts if isinstance(texts, list) else [texts]
-        # 截断
-        for i in range(len(texts)):
-            if len(texts[i]) > 510:
-                texts[i] = texts[i][:510]
-        # Tokenize the texts
-        inputs = tokenizer(texts, padding=True, truncation=False, return_tensors="pt")
-        inputs = inputs.to(device)
-        # Extract the embeddings
-        # Get the embeddings
-        with torch.no_grad():
-            embeddings = self.model(**inputs, output_hidden_states=True, return_dict=True, sent_emb=True).pooler_output
-        return embeddings[0] if len(texts) == 1 else embeddings
+
+
 
     def get_cosine_similarity(self, texts, get_image=False, get_texts=False):
         """
@@ -254,12 +190,12 @@ class ChatGPT:
         else:
             # 计算query_embed
             pkl = {}
-            embeddings = self.get_embedding(texts[1:]).reshape(-1, 1536)
+            embeddings = utils.get_embedding(self.model, texts[1:]).reshape(-1, 1536)
             for text, embed in zip(texts, embeddings):
                 pkl[text] = embed
 
-        query_embedding = self.get_embedding(texts[0]).reshape(1, -1)
-        texts_embeddings = np.array([value for value in pkl.values()])
+        query_embedding = utils.get_embedding(self.model, texts[0]).reshape(1, -1)
+        texts_embeddings = np.array([value.numpy().reshape(-1, 1536) for value in pkl.values()]).squeeze(1)
         return cosine_similarity(query_embedding, torch.from_numpy(texts_embeddings))
 
     def retrieve_title(self, query_text, k):
