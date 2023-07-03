@@ -19,59 +19,6 @@ feature是一个N*D的numpy矩阵，每行存储了一个D维特征 labels是一
 from sklearn.neighbors import NearestNeighbors
 import numpy as np
 
-class KNN_Classifier_Custom:
-    def __init__(self, feature, labels,n_neighbors):
-        self.feature = feature
-        self.labels = labels
-
-    def predict(self, x):
-        min_dist = float('inf')
-        predicted_label = None
-
-        for i, f in enumerate(self.feature):
-            dist = cosine(x, f)
-            if dist < min_dist:
-                min_dist = dist
-                predicted_label = self.labels[i]
-
-        return predicted_label, min_dist
-
-
-class KNN_Classifier_One:
-    def __init__(self, feature, labels,n_neighbors):
-        self.feature = feature
-        self.labels = labels
-        self.classifier = NearestNeighbors(n_neighbors=1, metric='cosine')
-        self.classifier.fit(self.feature)
-
-    def predict(self, x):
-        # Get the distances and indices of the nearest neighbors
-        dists, indices = self.classifier.kneighbors(x.reshape(1, -1))
-        predicted_label = self.classifier.predict(x.reshape(1, -1))
-        # Get the label and distance of the nearest neighbor
-        nearest_label = self.labels[indices[0][0]]
-        nearest_dist = dists[0][0]
-
-        return predicted_label,nearest_label, nearest_dist
-
-
-class KNN_Classifier:
-    def __init__(self, feature, labels,n_neighbors=3):
-        self.feature = feature
-        self.labels = labels
-        self.classifier = KNeighborsClassifier(n_neighbors=n_neighbors, metric='cosine')
-        self.classifier.fit(self.feature, self.labels)
-
-    def predict(self, x):
-        # Predict the class label
-        predicted_label = self.classifier.predict(x.reshape(1, -1))
-
-        # Get the distances to the nearest neighbors
-        dist, _ = self.classifier.kneighbors(x.reshape(1, -1))
-
-        # Return the label of the most common class and the smallest distance
-        return predicted_label[0], dist[0].min()
-
 
 class KNN_Classifier_lis:
     def __init__(self, feature, labels,n_neighbors=3):
@@ -93,13 +40,61 @@ class KNN_Classifier_lis:
         # Return the predicted label, nearest labels and distances
         return predicted_label[0], list(zip(nearest_labels, dists[0]))
 
-# 你可以像这样使用这个类
-# 创建一个实例
-# cls = My_Classifier(features, labels)
-# 预测新的数据点
-# result = cls.predict(new_feature)
-# 打印结果
-# print(result)
+
+class KNN_Classifier_One:
+    def __init__(self, feature, labels,n_neighbors):
+        self.feature = feature
+        self.labels = labels
+        self.classifier = NearestNeighbors(n_neighbors=1, metric='cosine')
+        self.classifier.fit(self.feature)
+
+    def predict(self, x):
+        # Get the distances and indices of the nearest neighbors
+        dists, indices = self.classifier.kneighbors(x.reshape(1, -1))
+        # Get the label and distance of the nearest neighbor
+        nearest_label = self.labels[indices[0][0]]
+        nearest_dist = dists[0][0]
+
+        return nearest_label, nearest_dist
+
+
+
+class KNN_Classifier_Custom:
+    def __init__(self, feature, labels,n_neighbors):
+        self.feature = feature
+        self.labels = labels
+
+    def predict(self, x):
+        min_dist = float('inf')
+        predicted_label = None
+
+        for i, f in enumerate(self.feature):
+            dist = cosine(x, f)
+            if dist < min_dist:
+                min_dist = dist
+                predicted_label = self.labels[i]
+
+        return predicted_label, min_dist
+
+
+class KNN_Classifier:
+    def __init__(self, feature, labels,n_neighbors=3):
+        self.feature = feature
+        self.labels = labels
+        self.classifier = KNeighborsClassifier(n_neighbors=n_neighbors, metric='cosine')
+        self.classifier.fit(self.feature, self.labels)
+
+    def predict(self, x):
+        # Predict the class label
+        predicted_label = self.classifier.predict(x.reshape(1, -1))
+
+        # Get the distances to the nearest neighbors
+        dist, _ = self.classifier.kneighbors(x.reshape(1, -1))
+
+        # Return the label of the most common class and the smallest distance
+        return predicted_label[0], dist[0].min()
+
+
 
 
 
