@@ -20,11 +20,14 @@ def create_gradio(chat_person):
         # return "" , chat_history, bot_message, jp_text
         return "", chat_history, bot_message
 
+    def switchCharacter(characterName):
+        return chat_person.switchCharacter(characterName)
+
     def upload_file(file_obj):
         """上传文件，zipfile解压文件名乱码，单独用filenames保存"""
         filenames = []
         with ZipFile(file_obj.name) as zfile:
-            zfile.extractall('./texts_source')
+            zfile.extractall('./texts')
         for filename in zfile.namelist():
             filenames.append(filename.encode('cp437').decode('gbk'))
         print(filenames)
@@ -42,6 +45,7 @@ def create_gradio(chat_person):
         with gr.Tab("Chat-Haruhi") as chat:
             api_key = gr.Textbox(label="输入key", value="sr-xxxxxxxx")
             character = gr.Radio(["凉宫春日", " 灼眼的夏娜", "李云龙"])
+            # radio.change(fn=switchCharacter, inputs=character)
             image_input = gr.Textbox(visible=False)
             japanese_input = gr.Textbox(visible=False)
             with gr.Row():

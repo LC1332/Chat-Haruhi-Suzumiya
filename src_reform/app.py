@@ -9,16 +9,22 @@ class ChatPerson:
         if not params.keys():
             print("载入默认角色")
             self.readConfig()
-            self.checkCharacter()
+            check_result, error_code, error_msg = self.checkCharacter()
+            if not check_result:
+                print(error_msg)
+                return error_code
             self.loadCharacter()
         else:
             print("载入新建角色")
-            checkCharacter()
+            check_result, error_code, error_msg = self.checkCharacter()
+            if not check_result:
+                print(error_msg)
+                return error_code
 
     def checkCharacter(self):
         pass
-        print("检查角色文件是否缺失")
-        checkCharacter(self.configuration)
+        return checkCharacter(self.configuration)
+        
         
     def readConfig(self, character="DEFAULT"):
         pass
@@ -60,6 +66,15 @@ class ChatPerson:
         
     def switchCharacter(self, characterName):
         pass
+        print("正在切换角色")
         self.readConfig(character=characterName)
-        self.checkCharacter()
+        check_result, error_code, error_msg = self.checkCharacter()
+        if not check_result:
+                print(error_msg)
+                return error_code
         self.loadCharacter()
+        print("角色切换完成")
+
+# person = ChatPerson()
+# person.switchCharacter("liyunlong")
+# print(person.configuration)
