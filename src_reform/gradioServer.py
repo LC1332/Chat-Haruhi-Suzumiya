@@ -24,7 +24,7 @@ def create_gradio(chat_person):
         """上传文件，zipfile解压文件名乱码，单独用filenames保存"""
         filenames = []
         with ZipFile(file_obj.name) as zfile:
-            zfile.extractall('./texts')
+            zfile.extractall('./texts_source')
         for filename in zfile.namelist():
             filenames.append(filename.encode('cp437').decode('gbk'))
         print(filenames)

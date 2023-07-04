@@ -26,7 +26,7 @@ def upload_file(file_obj):
     # 上传文件
     filenames = []
     with ZipFile(file_obj.name) as zfile:
-        zfile.extractall('./texts')
+        zfile.extractall('./texts_source')
     for filename in zfile.namelist():
         filenames.append(filename.encode('cp437').decode('gbk'))
     print(filenames)

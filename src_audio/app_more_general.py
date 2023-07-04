@@ -386,7 +386,7 @@ if __name__ == '__main__':
     parser.add_argument("--role_name_full", default="凉宫春日", help="完整的角色名")
     parser.add_argument("--role_name_short", default="春日", help="对话时使用的缩略角色名")
     parser.add_argument("--gradio_header", default = "", help="gradio header file")
-    parser.add_argument("--text_folder", default="../characters/haruhi/texts", help="text folder")
+    parser.add_argument("--text_folder", default="../characters/haruhi/texts_source", help="text folder")
     parser.add_argument("--system_prompt", default="../characters/haruhi/system_prompt.txt", help="store system_prompt")
     parser.add_argument("--max_len_story", default=1500, type=int)
     parser.add_argument("--max_len_history", default=1200, type=int)

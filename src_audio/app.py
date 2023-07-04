@@ -388,7 +388,7 @@ class Run:
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="-----[Chat凉宫春日]-----")
     # parser.add_argument("--folder", default="../characters", help="text folder")
-    parser.add_argument("--folder", default="../characters/haruhi/texts", help="text folder")
+    parser.add_argument("--folder", default="../characters/haruhi/texts_source", help="text folder")
     parser.add_argument("--system_prompt", default="../characters/haruhi/system_prompt.txt", help="store system_prompt")
     parser.add_argument("--max_len_story", default=1500, type=int)
     parser.add_argument("--max_len_history", default=1200, type=int)

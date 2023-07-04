@@ -121,7 +121,7 @@ class ChatGPT:
     def text_to_image(self, text):
         """
             给定文本出图片
-            计算query 和 texts 的相似度，取最高的作为new_query 查询image
+            计算query 和 texts_source 的相似度，取最高的作为new_query 查询image
             到text_image_dict 读取图片名
             然后到images里面加载该图片然后返回
         """
@@ -156,7 +156,7 @@ class ChatGPT:
     def get_cosine_similarity(self, texts, get_image=False, get_texts=False):
         """
             计算文本列表的相似度避免重复计算query_similarity
-            texts[0] = query
+            texts_source[0] = query
         """
         if get_image:
             pkl = self.dict_text
