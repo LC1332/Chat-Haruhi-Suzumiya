@@ -1,3 +1,4 @@
+import json
 import os
 import numpy as np
 import utils
@@ -53,8 +54,7 @@ class ChatGPT:
         self.title_to_text_pkl_path = configuration['title_to_text_pkl_path']
         self.text_image_pkl_path = configuration['text_image_pkl_path']
         self.dict_text_pkl_path = configuration['dict_text_pkl_path']
-        self.text_embed_pkl_path = configuration['text_embed_pkl_path']
-        self.titles_pkl_path = configuration["titles_pkl_path"]
+        self.text_embed_jsonl_path = configuration['text_embed_jsonl_path']
         self.dict_path = configuration['dict_path']
         self.image_path = configuration['image_path']
         self.folder = configuration['folder']
@@ -85,7 +85,7 @@ class ChatGPT:
         # for text, embed in zip(titles, utils.get_embedding(self.model, list(title_to_text.values()))):
         #     text_embed[text] = embed
         # self.store(self.title_to_text_pkl_path, title_to_text)
-        # self.store(self.text_embed_pkl_path, text_embed)
+        # self.store(self.text_embed_jsonl_path, text_embed)
         # self.store(self.titles_pkl_path, titles)
 
         # text_image = {}
@@ -115,9 +115,13 @@ class ChatGPT:
     def load(self, load_text_embed=False, load_dict_text=False,
              load_text_image=False, load_title_to_text=False):
         if load_text_embed:
-            if self.text_embed_pkl_path:
-                with open(self.text_embed_pkl_path, 'rb') as f:
-                   return pickle.load(f)
+            if self.text_embed_jsonl_path:
+                text_embed = {}
+                with open(self.text_embed_jsonl_path, 'r', encoding='utf-8') as f:
+                    for line in f:
+                        data = json.loads(line)
+                        text_embed.update(data)
+                return text_embed
             else:
                 print("No text_embed_pkl_path")
         elif load_dict_text:
@@ -176,8 +180,6 @@ class ChatGPT:
 
 
 
-
-
     def get_cosine_similarity(self, texts, get_image=False, get_texts=False):
         """
             计算文本列表的相似度避免重复计算query_similarity
@@ -195,7 +197,7 @@ class ChatGPT:
                 pkl[text] = embed
 
         query_embedding = utils.get_embedding(self.model, texts[0]).reshape(1, -1)
-        texts_embeddings = np.array([value.numpy().reshape(-1, 1536) for value in pkl.values()]).squeeze(1)
+        texts_embeddings = np.array([value for value in pkl.values()])
         return cosine_similarity(query_embedding, torch.from_numpy(texts_embeddings))
 
     def retrieve_title(self, query_text, k):
