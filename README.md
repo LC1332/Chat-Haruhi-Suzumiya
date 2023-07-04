@@ -46,6 +46,7 @@ scixing实践了VITS语音，完成了台词对应的语音抽取，（将要完
         <li><a href="#人员">人员 </a></li>
         <li><a href="#Citation引用">Citation引用</a></li>
         <li><a href="#当前模型结果">当前模型结果</a></li>
+        <li><a href="#考虑开放性人格特质的个性化语言生成">考虑人格特质的语言生成</a></li>
       </ul>
     </td>
   </tr>
@@ -249,6 +250,37 @@ Please cite the repo if you use the data or code in this repo.
 }
 ```
 
+
+## 考虑开放性人格特质的个性化语言生成
+
+李鲁鲁*, 玄哲理*, 闫晨曦*, 封小洋*, 周筝*, 汪好盛*, 冷子昂*
+
+<details>
+  <summary> * 所有的作者都是第一作者 </summary>
+  李鲁鲁发起了项目，设计了项目中所有涉及的prompt，以及完成了报告中的绝大部分
+
+  玄哲理提供了本项目的心理学知识，并且设计了12个因素的人格提示词和人格测试基准问题，标注了微博360的数据
+
+  闫晨曦完成了本项目中大量的后台工作，包括编写人格类别标注自动高考作文生成等
+
+  封小洋对项目中13类数据进行了统计，并且完成了有偏的对话数据生成。
+
+  周筝实现了关键词的单边抽取，并且实现了词云的统计。
+
+  汪好盛完成了第一个对话数据转化的程序，并且完成了第一个页面版的人格聊天器的前端用于实验。
+
+  冷子昂即将前往新疆为项目答辩
+</details>
+
+开放性人格特质的个性化生成，是[ChatHaruhi](https://github.com/LC1332/Chat-Haruhi-Suzumiya)的分支项目。
+
+<p align="center">
+    <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/BDSC2023_report.png">
+</p>
+
+本项目获得CAAI第八届全国大数据与社会计算学术会议（China National Conference on Big Data & Social Computing，简称BDSC2023）开展社会计算创新大赛的二等奖( top3 ) [链接](https://mp.weixin.qq.com/s/cd4NC8MHoObG2PlTrRnc8Q)。冷子昂将在7月17日赴新疆进行答辩。
+
+更详细的信息见[详细报告](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
 
 ## 当前模型结果
 
