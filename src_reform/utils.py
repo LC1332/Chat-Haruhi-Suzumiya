@@ -22,7 +22,7 @@ def get_embedding(model, texts):
     for i in range(len(texts)):
         if len(texts[i]) > 510:
             texts[i] = texts[i][:510]
-    # Tokenize the texts
+    # Tokenize the texts_source
     inputs = tokenizer(texts, padding=True, truncation=False, return_tensors="pt")
     inputs = inputs.to(device)
     # Extract the embeddings

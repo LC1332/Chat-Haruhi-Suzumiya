@@ -17,7 +17,7 @@ def download_models():
     return model
 
 
-pkl_path = './pkl/texts.pkl'
+pkl_path = './pkl/texts_source.pkl'
 maps_path = './pkl/maps.pkl'
 dict_path = "../characters/haruhi/text_image_dict.txt"
 image_path = "../characters/haruhi/images"

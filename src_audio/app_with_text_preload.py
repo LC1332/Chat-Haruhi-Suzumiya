@@ -154,7 +154,7 @@ class Run:
     def text_to_image(self, text, save_dict_text=False):
         """
             给定文本出图片
-            计算query 和 texts 的相似度，取最高的作为new_query 查询image
+            计算query 和 texts_source 的相似度，取最高的作为new_query 查询image
             到text_image_dict 读取图片名
             然后到images里面加载该图片然后返回
         """
@@ -225,7 +225,7 @@ class Run:
         for i in range(len(texts)):
             if len(texts[i]) > self.num_steps:
                 texts[i] = texts[i][:self.num_steps]
-        # Tokenize the texts
+        # Tokenize the texts_source
         inputs = tokenizer(texts, padding=True, truncation=False, return_tensors="pt")
         inputs = inputs.to(device)
         # Extract the embeddings
@@ -238,7 +238,7 @@ class Run:
     def get_cosine_similarity(self, texts, get_image=False, get_texts=False):
         """
             计算文本列表的相似度避免重复计算query_similarity
-            texts[0] = query
+            texts_source[0] = query
         """
         if get_image:
             pkl = self.load(load_dict_text=True)
@@ -468,13 +468,13 @@ class Run:
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="-----[Chat凉宫春日]-----")
-    parser.add_argument("--folder", default="../characters/haruhi/texts", help="text folder")
+    parser.add_argument("--folder", default="../characters/haruhi/texts_source", help="text folder")
     parser.add_argument("--system_prompt", default="../characters/haruhi/system_prompt.txt", help="store system_prompt")
     parser.add_argument("--max_len_story", default=1500, type=int)
     parser.add_argument("--max_len_history", default=1200, type=int)
     # parser.add_argument("--save_path", default="/content/drive/MyDrive/GPTData/Haruhi-Lulu/")
     parser.add_argument("--save_path", default=os.getcwd() + "/Suzumiya")
-    parser.add_argument("--texts_pkl_path", default="./pkl/texts.pkl")
+    parser.add_argument("--texts_pkl_path", default="./pkl/texts_source.pkl")
     parser.add_argument("--maps_pkl_path", default="./pkl/maps.pkl")
     parser.add_argument("--title_to_text_pkl_path", default='./pkl/title_to_text.pkl')
     parser.add_argument("--dict_text_pkl_path", default="./pkl/dict_text.pkl")

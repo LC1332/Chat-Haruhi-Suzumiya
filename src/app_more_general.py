@@ -41,7 +41,7 @@ current_directory = os.getcwd()
 new_directory = os.path.join(current_directory, folder_name)
 
 
-pkl_path = './pkl/texts.pkl'
+pkl_path = './pkl/texts_source.pkl'
 text_image_pkl_path='./pkl/text_image.pkl'
 dict_path = "../characters/haruhi/text_image_dict.txt"
 dict_text_pkl_path = './pkl/dict_text.pkl'
@@ -386,7 +386,7 @@ if __name__ == '__main__':
     parser.add_argument("--role_name_full", default="凉宫春日", help="完整的角色名")
     parser.add_argument("--role_name_short", default="春日", help="对话时使用的缩略角色名")
     parser.add_argument("--gradio_header", default = "", help="gradio header file")
-    parser.add_argument("--text_folder", default="../characters/haruhi/texts", help="text folder")
+    parser.add_argument("--text_folder", default="../characters/haruhi/texts_source", help="text folder")
     parser.add_argument("--system_prompt", default="../characters/haruhi/system_prompt.txt", help="store system_prompt")
     parser.add_argument("--max_len_story", default=1500, type=int)
     parser.add_argument("--max_len_history", default=1200, type=int)
