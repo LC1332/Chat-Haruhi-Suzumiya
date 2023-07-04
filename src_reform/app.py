@@ -1,5 +1,6 @@
 import configparser
 from ChatGPT2 import ChatGPT
+from checkCharacter import checkCharacter
 
 class ChatPerson:
     def __init__(self, **params):
@@ -17,6 +18,7 @@ class ChatPerson:
     def checkCharacter(self):
         pass
         print("检查角色文件是否缺失")
+        checkCharacter(self.configuration)
         
     def readConfig(self, character="DEFAULT"):
         pass
@@ -55,6 +57,9 @@ class ChatPerson:
             response = self.ChatGPT.get_response(user_message, chat_history_tuple)
             print("获取回复完毕")
             return response
-            
         
-# ChatPerson()
+    def switchCharacter(self, characterName):
+        pass
+        self.readConfig(character=characterName)
+        self.checkCharacter()
+        self.loadCharacter()
