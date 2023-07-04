@@ -1,4 +1,4 @@
-中文 | English | 日本語 | [赞助](#赞助) | [报告](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/report.md) | [招人](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/Hiring.md)
+中文 | English | 日本語 | [赞助](#赞助) | [报告](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/report.md) | [招人](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/Hiring.md) | [特定人格的生成](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
 
 # Chat凉宫春日 Chat-Haruhi-Suzumiya
 
@@ -27,7 +27,7 @@ scixing实践了VITS语音，完成了台词对应的语音抽取，（将要完
 
 本项目是一个在建项目，本项目中的代码和工具，也支持其他动漫人物的建立。在初步完成Haruhi预计的功能后，我们会开始尝试其他角色。
 
-我们准备参加中科院心理所的[一个比赛](https://mp.weixin.qq.com/s/60Lqcum0Ef9DTxqiWIWtsw)。还在持续招募队员，欢迎联系我们！
+在中科院心理所中，项目获得二等奖(top3)，详情请见[链接](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
 
 <table>
   <tr>
