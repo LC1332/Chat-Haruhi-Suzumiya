@@ -59,16 +59,16 @@ class ChatGPT:
         self.image_path = configuration['image_path']
         self.folder = configuration['folder']
         self.system_prompt = configuration['system_prompt']
-        with open(self.system_prompt, "r", encoding="utf-8") as f:
+        with open(self.system_prompt, 'r', encoding='utf-8') as f:
             self.system_prompt = f.read()
-        print(self.system_prompt)
         self.max_len_story = int(configuration['max_len_story'])
         self.max_len_history = int(configuration['max_len_history'])
         self.save_path = configuration['save_path']
         openai.api_key = configuration["openai_key_1"] + configuration["openai_key_2"]
         os.environ["OPENAI_API_KEY"] = openai.api_key
         # 预加载pkl文件
-        self.model = utils.download_models()
+        # self.model, self.tokenizer = utils.load_models()
+        self.model, self.tokenizer = utils.download_models()
         self.dict_text = None
         self.text_image = None
         self.title_to_text = None
@@ -76,33 +76,6 @@ class ChatGPT:
         self.titles = None
 
     def read_data(self):
-        # text_embed = {}
-        # title_to_text = {}
-        # titles = []
-        # for file in os.listdir(self.folder):
-        #     if file.endswith('.txt'):
-        #         title_name = file[:-4]
-        #         with open(os.path.join(self.folder, file), 'r', encoding='utf-8') as fr:
-        #             title_to_text[title_name] = fr.read()
-        #             titles.append(title_name)
-        # for text, embed in zip(titles, utils.get_embedding(self.model, list(title_to_text.values()))):
-        #     text_embed[text] = embed
-        # self.store(self.title_to_text_pkl_path, title_to_text)
-        # self.store(self.text_embed_jsonl_path, text_embed)
-        # self.store(self.titles_pkl_path, titles)
-
-        # text_image = {}
-        # with open(self.dict_path, 'r', encoding='utf-8') as f:
-        #     data = f.readlines()
-        #     for sub_text, image in zip(data[::2], data[1::2]):
-        #         text_image[sub_text.strip()] = image.strip()
-        # self.store(self.text_image_pkl_path, text_image)
-
-        #
-        # keys_embeddings = {}
-        # for key in text_image.keys():
-        #     keys_embeddings[key] = utils.get_embedding(self.model, key)
-        # self.store(self.dict_text_pkl_path, keys_embeddings)
         self.dict_text = self.load(load_dict_text=True)
         self.text_image = self.load(load_text_image=True)
         self.title_to_text = self.load(load_title_to_text=True)
@@ -151,7 +124,7 @@ class ChatGPT:
     def text_to_image(self, text):
         """
             给定文本出图片
-            计算query 和 texts 的相似度，取最高的作为new_query 查询image
+            计算query 和 texts_source 的相似度，取最高的作为new_query 查询image
             到text_image_dict 读取图片名
             然后到images里面加载该图片然后返回
         """
@@ -186,7 +159,7 @@ class ChatGPT:
     def get_cosine_similarity(self, texts, get_image=False, get_texts=False):
         """
             计算文本列表的相似度避免重复计算query_similarity
-            texts[0] = query
+            texts_source[0] = query
         """
         if get_image:
             pkl = self.dict_text
@@ -195,20 +168,20 @@ class ChatGPT:
         else:
             # 计算query_embed
             pkl = {}
-            embeddings = utils.get_embedding(self.model, texts[1:]).reshape(-1, 1536)
+            embeddings = utils.get_embedding(self.model, self.tokenizer, texts[1:]).reshape(-1, 1536)
             for text, embed in zip(texts, embeddings):
                 pkl[text] = embed
 
-        query_embedding = utils.get_embedding(self.model, texts[0]).reshape(1, -1)
+        query_embedding = utils.get_embedding(self.model, self.tokenizer, texts[0]).reshape(1, -1)
         texts_embeddings = np.array([value for value in pkl.values()])
-        return cosine_similarity(query_embedding, torch.from_numpy(texts_embeddings).to(device))
+        return cosine_similarity(query_embedding, torch.from_numpy(texts_embeddings))
 
     def retrieve_title(self, query_text, k):
         # compute cosine similarity between query_embed and embeddings
         embed_to_title = []
         texts = [query_text]
         embed_to_title = self.titles
-        cosine_similarities =self.get_cosine_similarity(texts, get_texts=True).cpu().numpy().tolist()
+        cosine_similarities = self.get_cosine_similarity(texts, get_texts=True).numpy().tolist()
         # sort cosine similarity
         sorted_cosine_similarities = sorted(cosine_similarities, reverse=True)
         top_k_index = []
@@ -224,7 +197,7 @@ class ChatGPT:
 
     def organize_story_with_maxlen(self, selected_sample):
         maxlen = self.max_len_story
-        story = "\n"
+        story = "凉宫春日的经典桥段如下:\n"
 
         count = 0
 
@@ -296,7 +269,7 @@ class ChatGPT:
 
     def organize_message_langchain(self, story, history_chat, history_response, new_query):
         # messages =  [{'role':'system', 'content':SYSTEM_PROMPT}, {'role':'user', 'content':story}]
-        
+
         messages = [
             SystemMessage(content=self.system_prompt),
             HumanMessage(content=story)
@@ -316,7 +289,7 @@ class ChatGPT:
 
         # messages.append( {'role':'user', 'content':new_query })
         messages.append(HumanMessage(content=new_query))
-        print(messages)
+
         return messages
 
     def get_response(self, user_message, chat_history_tuple):

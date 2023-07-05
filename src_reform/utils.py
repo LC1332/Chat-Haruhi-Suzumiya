@@ -9,13 +9,24 @@ def download_models():
     # Import our models. The package will take care of downloading the models automatically
     model_args = Namespace(do_mlm=None, pooler_type="cls", temp=0.05, mlp_only_train=False,
                             init_embeddings_model=None)
-    model = AutoModel.from_pretrained("silk-road/luotuo-bert", trust_remote_code=True, model_args=model_args).to(device)
+    model_name = "silk-road/luotuo-bert"
+
+    model = AutoModel.from_pretrained(model_name, trust_remote_code=True, model_args=model_args).to(device)
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
     print("Luotuo-Bert下载完毕")
-    return model
+    return model, tokenizer
 
+def load_models():
+    model_path = "luotuo-bert"  # 替换为你保存模型的路径
+    print("正在加载luotuo-Bert")
+    tokenizer = AutoTokenizer.from_pretrained(model_path)
+    model_args = Namespace(do_mlm=None, pooler_type="cls", temp=0.05, mlp_only_train=False, init_embeddings_model=None)
+    model = AutoModel.from_pretrained(model_path, trust_remote_code=True, model_args=model_args)
+    print("Luotuo-Bert加载完毕")
+    return model, tokenizer
 
-def get_embedding(model, texts):
-    tokenizer = AutoTokenizer.from_pretrained("silk-road/luotuo-bert")
+def get_embedding(model, tokenizer, texts):
+    # tokenizer = AutoTokenizer.from_pretrained("silk-road/luotuo-bert")
     # str or strList
     texts = texts if isinstance(texts, list) else [texts]
     # 截断
@@ -29,4 +40,7 @@ def get_embedding(model, texts):
     # Get the embeddings
     with torch.no_grad():
         embeddings = model(**inputs, output_hidden_states=True, return_dict=True, sent_emb=True).pooler_output
+    print(embeddings.size())
     return embeddings[0] if len(texts) == 1 else embeddings
+
+
