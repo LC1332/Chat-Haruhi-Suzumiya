@@ -32,7 +32,7 @@ class Text:
         for i in range(len(texts)):
             if len(texts[i]) > self.num_steps:
                 texts[i] = texts[i][:self.num_steps]
-        # Tokenize the texts_source
+        # Tokenize the texts
         inputs = tokenizer(texts, padding=True, truncation=False, return_tensors="pt")
         # Extract the embeddings
         # Get the embeddings
@@ -97,7 +97,7 @@ class Text:
     def get_cosine_similarity(self, texts, get_image=False, get_texts=False):
         """
             计算文本列表的相似度避免重复计算query_similarity
-            texts_source[0] = query
+            texts[0] = query
         """
         if get_image:
             pkl = self.load(load_dict_text=True)
@@ -120,7 +120,7 @@ class Text:
     def text_to_image(self, text, save_dict_text=False):
         """
             给定文本出图片
-            计算query 和 texts_source 的相似度，取最高的作为new_query 查询image
+            计算query 和 texts 的相似度，取最高的作为new_query 查询image
             到text_image_dict 读取图片名
             然后到images里面加载该图片然后返回
         """
@@ -168,13 +168,13 @@ class Text:
 
 
 # if __name__ == '__main__':
-    # pkl_path = './pkl/texts_source.pkl'
+    # pkl_path = './pkl/texts.pkl'
     # maps_path = './pkl/maps.pkl'
     # text_image_pkl_path='./pkl/text_image.pkl'
     # dict_path = "../characters/haruhi/text_image_dict.txt"
     # dict_text_pkl_path = './pkl/dict_text.pkl'
     # image_path = "../characters/haruhi/images"
-    # text_dir = "../characters/haruhi/texts_source"
+    # text_dir = "../characters/haruhi/texts"
     # model = download_models()
     # text = Text(text_dir, text_image_pkl_path=text_image_pkl_path, maps_path=maps_path,
     #             dict_text_pkl_path=dict_text_pkl_path, model=model, num_steps=50, pkl_path=pkl_path,

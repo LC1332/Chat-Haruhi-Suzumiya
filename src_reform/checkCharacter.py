@@ -16,8 +16,8 @@ def checkCharacter(configuration):
         return False, 2, "未找到pkl文件, 请添加"
     else:
         pkl_path = os.path.join(configuration["character_folder"], "pkl")
-        print(pkl_path)
+        # print(pkl_path)
         pkl_elements = os.listdir(pkl_path)
-        print(pkl_elements)
+        # print(pkl_elements)
         
     return True, -1, "角色检查完毕"
