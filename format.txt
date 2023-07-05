@@ -1,0 +1,25 @@
+格式
+
+台本格式：
+    --texts
+        --01.txt
+            春日:「社团名字我刚刚已经想到了!」
+            阿虚:「……那你说来听听啊!」
+            春日:「SOS团!让世界变得更热闹的凉宫春日团，简称SOS团。」
+        --02.txt
+            .....
+
+图片格式：
+    --images（可选）
+        图片名为与该图片故事情节较相似的文本，比如直接就是该图片的字幕
+
+注意事项：
+    请将 texts 和 images 文件夹压缩为zip文件。
+
+texts 和 images 中的文件将用于序列化成2个pickle文件和一个jsonl文件，如下：
+    -- text_embed.jsonl, 每行为一个字典，key=title，value=title对应文件的文本内容的embedding
+    -- title_to_text.pkl, key=title, value=title对应的文本内容
+    -- image_embed.pkl image=图片名，embed=图片名对应的embedding
+
+
+
