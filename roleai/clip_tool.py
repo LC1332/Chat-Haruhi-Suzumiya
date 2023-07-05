@@ -8,7 +8,7 @@ import pysrt
 import pysubs2
 from tool import get_filename
 from tqdm import tqdm
-
+from read import read_bigone
 
 def detect_encoding(file_name):
     with open(file_name, 'rb') as file:
@@ -43,8 +43,9 @@ class VideoSegmentation:
         style = ''
         sub_format = ''
         voice_dir = 'voice'
-        for file, pth in tqdm(video_lis[:], desc='Processing Videos'):
-        
+        new_dic = read_bigone('/mnt/sda/github/6yue/Chat-Haruhi-Suzumiya/roleai/srt_out_lj/dic.txt')
+        for file, pth in tqdm(video_lis[1:2], desc='Processing Videos'):
+            name = file.split('.')[0]
             filename, format = os.path.splitext(file)
             # 创建对应的音频文件夹
             os.makedirs(f'{self.audio_out_dir}/{filename}', exist_ok=True)
@@ -68,17 +69,19 @@ class VideoSegmentation:
         
                         start_time = subtitle.start
                         end_time = subtitle.end
+                        text = subtitle.text
+                        # if text in new_dic[name]:
         
                         start_time = start_time.to_time()
                         end_time = end_time.to_time()
                         # print(f'开始时间：{start_time}，结束时间：{end_time}')
-        
+
                         # 使用FFmpeg切割视频 改成mp3就无法输出
                         audio_output = f'{self.audio_out_dir}/{filename}/{voice_dir}/{index}_{make_filename_safe(subtitle.text)}.wav'
-        
+
                         command = ['ffmpeg', '-ss', str(start_time), '-to', str(end_time), '-i', f'{pth}', "-vn",  '-c:a', 'pcm_s16le',
                                          audio_output,  '-loglevel', 'quiet']
-        
+
                         subprocess.run(command)
                 elif sub_format == '.ass':
                     subs = pysubs2.load(cur_sub_file, encoding=encoding)
