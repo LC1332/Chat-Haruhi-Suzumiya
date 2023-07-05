@@ -1,3 +1,5 @@
+import json
+import pickle
 from argparse import Namespace
 from transformers import AutoModel, AutoTokenizer
 import torch
@@ -44,3 +46,20 @@ def get_embedding(model, tokenizer, texts):
     return embeddings[0] if len(texts) == 1 else embeddings
 
 
+def pkl_to_json(filename):
+    with open(filename, 'rb') as f, open(filename[:-3]+'jsonl', 'w+', encoding='utf-8') as f2:
+        data = pickle.load(f)
+        for k, v in data.items():
+            if isinstance(v, torch.Tensor):
+                v = v.numpy().tolist()
+            item = {k:v}
+            json.dump(item, f2, ensure_ascii=False)
+            f2.write('\n')
+
+
+def check(fileName):
+    with open(fileName, 'rb') as f:
+        print(pickle.load(f))
+
+
+# check('../characters/liyunlong/pkl/dict_text.pkl')
