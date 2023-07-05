@@ -53,6 +53,7 @@ class ChatPerson:
     def initGPT(self):
         pass
         print("正在载入角色GPT所需资源")
+        # print(self.configuration)
         self.ChatGPT = ChatGPT(self.configuration)
         self.ChatGPT.read_data()
 

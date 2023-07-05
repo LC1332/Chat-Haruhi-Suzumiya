@@ -35,7 +35,7 @@ import utils
 # OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY2")
 # openai.proxy = "http://127.0.0.1:7890"
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda:2" if torch.cuda.is_available() else "cpu")
 folder_name = "Suzumiya"
 current_directory = os.getcwd()
 new_directory = os.path.join(current_directory, folder_name)
@@ -51,6 +51,7 @@ enc = tiktoken.get_encoding("cl100k_base")
 
 class ChatGPT:
     def __init__(self, configuration):
+        self.configuration = configuration
         self.title_to_text_pkl_path = configuration['title_to_text_pkl_path']
         self.text_image_pkl_path = configuration['text_image_pkl_path']
         self.dict_text_pkl_path = configuration['dict_text_pkl_path']
@@ -59,16 +60,16 @@ class ChatGPT:
         self.image_path = configuration['image_path']
         self.folder = configuration['folder']
         self.system_prompt = configuration['system_prompt']
-        with open(self.system_prompt, 'r', encoding='utf-8') as f:
+        with open(self.system_prompt, "r", encoding="utf-8") as f:
             self.system_prompt = f.read()
+        # print(self.system_prompt)
         self.max_len_story = int(configuration['max_len_story'])
         self.max_len_history = int(configuration['max_len_history'])
         self.save_path = configuration['save_path']
         openai.api_key = configuration["openai_key_1"] + configuration["openai_key_2"]
         os.environ["OPENAI_API_KEY"] = openai.api_key
         # 预加载pkl文件
-        # self.model, self.tokenizer = utils.load_models()
-        self.model, self.tokenizer = utils.download_models()
+        self.model = utils.download_models()
         self.dict_text = None
         self.text_image = None
         self.title_to_text = None
@@ -76,12 +77,39 @@ class ChatGPT:
         self.titles = None
 
     def read_data(self):
+        # text_embed = {}
+        # title_to_text = {}
+        # titles = []
+        # for file in os.listdir(self.folder):
+        #     if file.endswith('.txt'):
+        #         title_name = file[:-4]
+        #         with open(os.path.join(self.folder, file), 'r', encoding='utf-8') as fr:
+        #             title_to_text[title_name] = fr.read()
+        #             titles.append(title_name)
+        # for text, embed in zip(titles, utils.get_embedding(self.model, list(title_to_text.values()))):
+        #     text_embed[text] = embed
+        # self.store(self.title_to_text_pkl_path, title_to_text)
+        # self.store(self.text_embed_jsonl_path, text_embed)
+        # self.store(self.titles_pkl_path, titles)
+
+        # text_image = {}
+        # with open(self.dict_path, 'r', encoding='utf-8') as f:
+        #     data = f.readlines()
+        #     for sub_text, image in zip(data[::2], data[1::2]):
+        #         text_image[sub_text.strip()] = image.strip()
+        # self.store(self.text_image_pkl_path, text_image)
+
+        #
+        # keys_embeddings = {}
+        # for key in text_image.keys():
+        #     keys_embeddings[key] = utils.get_embedding(self.model, key)
+        # self.store(self.dict_text_pkl_path, keys_embeddings)
         self.dict_text = self.load(load_dict_text=True)
         self.text_image = self.load(load_text_image=True)
+        print(self.text_image)
         self.title_to_text = self.load(load_title_to_text=True)
         self.text_embed = self.load(load_text_embed=True)
         self.titles = list(self.text_embed.keys())
-
 
 
     def store(self, path, data):
@@ -124,18 +152,19 @@ class ChatGPT:
     def text_to_image(self, text):
         """
             给定文本出图片
-            计算query 和 texts_source 的相似度，取最高的作为new_query 查询image
+            计算query 和 texts 的相似度，取最高的作为new_query 查询image
             到text_image_dict 读取图片名
             然后到images里面加载该图片然后返回
         """
 
         # 加载 text-imageName
+        # print(self.configuration)
+        # self.image_path = self.configuration["image_path"]
         keys = list(self.text_image.keys())
         keys.insert(0, text)
         query_similarity = self.get_cosine_similarity(keys, get_image=True)
         key_index = query_similarity.argmax(dim=0)
         text = list(self.text_image.keys())[key_index]
-
         image = self.text_image[text] + '.jpg'
         if image in os.listdir(self.image_path):
             res = Image.open(self.image_path + '/' + image)
@@ -159,8 +188,9 @@ class ChatGPT:
     def get_cosine_similarity(self, texts, get_image=False, get_texts=False):
         """
             计算文本列表的相似度避免重复计算query_similarity
-            texts_source[0] = query
+            texts[0] = query
         """
+        query_embedding = utils.get_embedding(self.model, texts[0]).reshape(1, -1)
         if get_image:
             pkl = self.dict_text
         elif get_texts:
@@ -168,20 +198,23 @@ class ChatGPT:
         else:
             # 计算query_embed
             pkl = {}
-            embeddings = utils.get_embedding(self.model, self.tokenizer, texts[1:]).reshape(-1, 1536)
+            embeddings = utils.get_embedding(self.model, texts[1:]).reshape(-1, 1536)
             for text, embed in zip(texts, embeddings):
                 pkl[text] = embed
 
-        query_embedding = utils.get_embedding(self.model, self.tokenizer, texts[0]).reshape(1, -1)
-        texts_embeddings = np.array([value for value in pkl.values()])
-        return cosine_similarity(query_embedding, torch.from_numpy(texts_embeddings))
+        if get_texts:
+        # print([type(value) for value in pkl.values()])
+            texts_embeddings = np.array([value for value in pkl.values()])
+        else:
+            texts_embeddings = np.array([value.numpy().reshape(-1, 1536) for value in pkl.values()]).squeeze(1)
+        return cosine_similarity(query_embedding, torch.from_numpy(texts_embeddings).to(device))
 
     def retrieve_title(self, query_text, k):
         # compute cosine similarity between query_embed and embeddings
         embed_to_title = []
         texts = [query_text]
         embed_to_title = self.titles
-        cosine_similarities = self.get_cosine_similarity(texts, get_texts=True).numpy().tolist()
+        cosine_similarities =self.get_cosine_similarity(texts, get_texts=True).cpu().numpy().tolist()
         # sort cosine similarity
         sorted_cosine_similarities = sorted(cosine_similarities, reverse=True)
         top_k_index = []
@@ -197,7 +230,7 @@ class ChatGPT:
 
     def organize_story_with_maxlen(self, selected_sample):
         maxlen = self.max_len_story
-        story = "凉宫春日的经典桥段如下:\n"
+        story = "\n"
 
         count = 0
 
@@ -269,7 +302,7 @@ class ChatGPT:
 
     def organize_message_langchain(self, story, history_chat, history_response, new_query):
         # messages =  [{'role':'system', 'content':SYSTEM_PROMPT}, {'role':'user', 'content':story}]
-
+        
         messages = [
             SystemMessage(content=self.system_prompt),
             HumanMessage(content=story)
@@ -289,7 +322,7 @@ class ChatGPT:
 
         # messages.append( {'role':'user', 'content':new_query })
         messages.append(HumanMessage(content=new_query))
-
+        print(messages)
         return messages
 
     def get_response(self, user_message, chat_history_tuple):
@@ -322,60 +355,3 @@ class ChatGPT:
         response = return_msg.content
 
         return response
-
-    def save_response(self, chat_history_tuple):
-        with open(f"{self.save_path}/conversation_{time.time()}.txt", "w", encoding='utf-8') as file:
-            for cha, res in chat_history_tuple:
-                file.write(cha)
-                file.write("\n---\n")
-                file.write(res)
-                file.write("\n---\n")
-
-    def create_gradio(self):
-        # from google.colab import drive
-        # drive.mount(drive_path)
-        with gr.Blocks() as demo:
-            gr.Markdown(
-                """
-                ## Chat凉宫春日 ChatHaruhi
-                项目地址 [https://github.com/LC1332/Chat-Haruhi-Suzumiya](https://github.com/LC1332/Chat-Haruhi-Suzumiya)
-                骆驼项目地址 [https://github.com/LC1332/Luotuo-Chinese-LLM](https://github.com/LC1332/Luotuo-Chinese-LLM)
-                此版本为图文版本，非最终版本，将上线更多功能，敬请期待
-                """
-            )
-            image_input = gr.Textbox(visible=False)
-            with gr.Row():
-                chatbot = gr.Chatbot()
-                image_output = gr.Image()
-            role_name = gr.Textbox(label="角色名", placeholde="输入角色名")
-            msg = gr.Textbox(label="输入")
-            with gr.Row():
-                clear = gr.Button("Clear")
-                sub = gr.Button("Submit")
-                image_button = gr.Button("给我一个图")
-
-            def respond(role_name, user_message, chat_history):
-                role_name = "阿虚" if role_name in ['', ' '] else role_name
-                role_name = role_name[:10] if len(role_name) > 10 else role_name
-                user_message = user_message[:200] if len(user_message) > 200 else user_message
-                special_chars = [':', '：', '「', '」', '\n']
-                for char in special_chars:
-                    role_name = role_name.replace(char, 'x')
-                    user_message = user_message.replace(char, ' ')
-
-                input_message = role_name + ':「' + user_message + '」'
-                bot_message = self.get_response(input_message, chat_history)
-                chat_history.append((input_message, bot_message))
-                self.save_response(chat_history)
-                # time.sleep(1)
-                return "", chat_history, bot_message
-
-            msg.submit(respond, [role_name, msg, chatbot], [msg, chatbot, image_input])
-            clear.click(lambda: None, None, chatbot, queue=False)
-            sub.click(fn=respond, inputs=[role_name, msg, chatbot], outputs=[msg, chatbot, image_input])
-            image_button.click(self.text_to_image, inputs=image_input, outputs=image_output)
-
-        demo.launch(debug=True, share=True)
-
-
-

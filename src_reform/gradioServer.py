@@ -10,9 +10,11 @@ def create_gradio(chat_person):
     # from google.colab import drive
     # drive.mount(drive_path)
     def respond(role_name, user_message, chat_history):
+        print("history is here : ", chat_history)
         input_message = role_name + ':「' + user_message + '」'
         bot_message = chat_person.getResponse(input_message, chat_history)
         chat_history.append((input_message, bot_message))
+        
         # self.save_response(chat_history)
         # time.sleep(1)
         # jp_text = pipe(f'<-zh2ja-> {bot_message}')[0]['translation_text']
@@ -20,8 +22,14 @@ def create_gradio(chat_person):
         # return "" , chat_history, bot_message, jp_text
         return "", chat_history, bot_message
 
-    def switchCharacter(characterName):
-        return chat_person.switchCharacter(characterName)
+    def getImage(query):
+        return chat_person.ChatGPT.text_to_image(query)
+
+    def switchCharacter(characterName, chat_history):
+        chat_history = []
+        chat_person.switchCharacter(characterName)
+        # print(chat_person.ChatGPT.image_path)
+        return chat_history, None
 
     def upload_file(file_obj):
         """上传文件，zipfile解压文件名乱码，单独用filenames保存"""
@@ -44,8 +52,8 @@ def create_gradio(chat_person):
         )
         with gr.Tab("Chat-Haruhi") as chat:
             api_key = gr.Textbox(label="输入key", value="sr-xxxxxxxx")
-            character = gr.Radio(["凉宫春日", " 灼眼的夏娜", "李云龙"])
-            # radio.change(fn=switchCharacter, inputs=character)
+            character = gr.Radio(["凉宫春日", "李云龙"])
+            
             image_input = gr.Textbox(visible=False)
             japanese_input = gr.Textbox(visible=False)
             with gr.Row():
@@ -57,7 +65,7 @@ def create_gradio(chat_person):
             with gr.Row():
                 clear = gr.Button("Clear")
                 image_button = gr.Button("给我一个图")
-                audio_btn = gr.Button("春日和我说")
+                # audio_btn = gr.Button("春日和我说")
             # japanese_output = gr.Textbox(interactive=False, visible=False)
             sub = gr.Button("Submit")
             # audio_store = gr.Textbox(interactive=False)
@@ -69,7 +77,7 @@ def create_gradio(chat_person):
             #     return gr.update(value=jp_audio_store, visible=True)
 
 
-
+            character.change(fn=switchCharacter, inputs=[character, chatbot], outputs=[chatbot, image_output])
 
             clear.click(lambda: None, None, chatbot, queue=False)
             # msg.submit(respond, [role_name, msg, chatbot], [msg, chatbot, image_input, japanese_output])
@@ -78,7 +86,7 @@ def create_gradio(chat_person):
             sub.click(fn=respond, inputs=[role_name, msg, chatbot], outputs=[msg, chatbot, image_input])
             # audio_btn.click(fn=update_audio, inputs=[audio, japanese_output], outputs=audio)
 
-            image_button.click(chat_person.ChatGPT.text_to_image, inputs=image_input, outputs=image_output)
+            image_button.click(getImage, inputs=image_input, outputs=image_output)
         with gr.Tab("Custom Character"):
             format_rule = """
     台本格式：台本文件夹打包成zip
@@ -104,7 +112,7 @@ def create_gradio(chat_person):
                 generate_btn = gr.Button("生成")
 
             with gr.Column(visible=False) as chat:
-                custom_api_key = gr.Textbox(label="输入key", value="sr-xxxxxxxx")
+                custom_api_key = gr.Textbox(label="输入key", interactive=True, placeholder="sr-xxxxxxxx")
                 image_input = gr.Textbox(visible=False)
                 japanese_input = gr.Textbox(visible=False)
                 with gr.Row():
@@ -116,7 +124,7 @@ def create_gradio(chat_person):
                 with gr.Row():
                     custom_clear = gr.Button("Clear")
                     custom_image_button = gr.Button("给我一个图")
-                    custom_audio_btn = gr.Button("春日和我说")
+                    # custom_audio_btn = gr.Button("春日和我说")
                 custom_japanese_output = gr.Textbox(interactive=False)
                 custom_sub = gr.Button("Submit")
 
