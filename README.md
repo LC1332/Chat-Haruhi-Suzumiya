@@ -35,6 +35,8 @@ Aria(Yaying Fei)对接了whisper到台本工具。即将继续参加台本工具
 
 本项目是一个在建项目，本项目中的代码和工具，也支持其他动漫人物的建立。在初步完成Haruhi预计的功能后，我们会开始尝试其他角色。
 
+在魔搭社区主办、阿里云和NVIDIA作为联合发起方，天池协办的Create@AI黑客马拉松中，Chat凉宫春日获得二等奖(top3)
+
 在中科院心理所中，项目获得二等奖(top3)，详情请见[链接](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
 
 <table>
@@ -69,6 +71,14 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 本项目是DataWhale的5月学习的作业，其中闫晨曦，封小洋等同学都由DataWhale社区招募。
 
 
+
+## News
+
+[2023-06-07] 在魔搭社区主办、阿里云和NVIDIA作为联合发起方，天池协办的Create@AI黑客马拉松中，Chat凉宫春日获得二等奖(top3), [讲解视频](https://www.bilibili.com/video/BV1Xh411A7kC/)
+
+[2023-06-03] 在中科院心理所中，项目获得二等奖(top3)，详情请见[链接](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
+
+
 ## 快速开始
 
 
@@ -82,8 +92,8 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 |HuggingFace版本| [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi) | HuggingFace版本，如果key用完了麻烦提醒我们一下 |
 |人格-高考作文 | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/College_essays_gradio.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | 高/低开放性人格对应的高考作文题生成器，[详细报告](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) |
 |人格-Chatbot | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/PersonalityChatbot.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | 高/低开放性人格对应的Chatbot，[详细报告](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) |
-
-
+|[Hackathon](https://www.bilibili.com/video/BV1ho4y1P75H)| |DataWhale作业时候的讲解视频|
+|[Hackathon](https://www.bilibili.com/video/BV1Xh411A7kC/)| |黑客马拉松B站讲解视频|
 
 
   
