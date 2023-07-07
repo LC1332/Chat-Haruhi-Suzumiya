@@ -236,22 +236,33 @@ If you are interested in sponsoring the [Luotuo Project](https://github.com/LC13
 
 ## 人员
 
-[李鲁鲁](https://github.com/LC1332)发起了项目，并完成了最早的版本，在多个微信群实现了测试。
+[李鲁鲁](https://github.com/LC1332)发起了项目，并完成了最早的版本，在多个微信群实现了测试。完成了训练数据自动生成对话部分，设计了整体的路线，并撰写报告。
 
-[冷子昂](https://blairleng.github.io)参与了早期Gradio的开发，并且参与了后端和前端的选型，完成了语音和图片端的对接。
+[冷子昂](https://blairleng.github.io)负责了每一个阶段的Gradio开发，以及每个部分的功能整合和架构设计。
 
-[闫晨曦@成都信息工程大学](https://github.com/todochenxi)将李鲁鲁的notebook重构为app.py
+[闫晨曦@成都信息工程大学](https://github.com/todochenxi)一开始将李鲁鲁的notebook重构为app.py，参与了WebUI的embedding部分重构整合。
 
-[封小洋](https://github.com/fengyunzaidushi)进行了中文转日文模型的选型，并且正在尝试从TV动漫中提取图-文对
+[封小洋](https://github.com/fengyunzaidushi)封小洋进行了中文转日文模型的选型，完成了针对台词抽取图片的工具。整合了声纹识别。即将继续参加台本工具的开发。
 
-[贾曜恺](https://ngdc.cncb.ac.cn/people/Yaokai-Jia?lang=en) @ [中国科学院北京基因组研究所](http://www.big.ac.cn/) 正在进行后端对接前端的部分
+[贾曜恺](https://ngdc.cncb.ac.cn/people/Yaokai-Jia?lang=en) @ [中国科学院北京基因组研究所](http://www.big.ac.cn/) 实现了Vue版本的前端，并且在心理项目中实践了Bert的GPU抽取
 
-[scixing](https://github.com/ssccinng) 正在尝试搭建前端
+[scixing](https://github.com/ssccinng) 实践了VITS语音，完成了台词对应的语音抽取，实现了第一个版本的声纹分类。
 
 [DataWhale助教-马琦钧](https://github.com/Skypow2012) 实现了AI-studio的版本。
 
 沈骏一、张财和吴平宇正在尝试训练本地的模型。
 
+[张一乔](https://github.com/Liyulingyue)
+
+[Aria (YayingFei)](https://github.com/ariafyy) 对接了whisper到台本工具。即将继续参加台本工具的开发。
+
+沈骏一实现了使用ChatGLM2 finetune实验，即将训练了更多的模型
+
+米唯实实现了Chat哆啦A梦的分支版本
+
+吴平宇部署了ChatGLM2的训练程序，并提供了训练的计算资源。
+
+贾曜恺开发了一个Vue前端实现方案
 
 ### Citation引用
 
