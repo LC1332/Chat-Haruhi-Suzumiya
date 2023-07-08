@@ -244,25 +244,21 @@ If you are interested in sponsoring the [Luotuo Project](https://github.com/LC13
 
 [封小洋](https://github.com/fengyunzaidushi)封小洋进行了中文转日文模型的选型，完成了针对台词抽取图片的工具。整合了声纹识别。即将继续参加台本工具的开发。
 
-[贾曜恺](https://ngdc.cncb.ac.cn/people/Yaokai-Jia?lang=en) @ [中国科学院北京基因组研究所](http://www.big.ac.cn/) 实现了Vue版本的前端，并且在心理项目中实践了Bert的GPU抽取
-
 [scixing](https://github.com/ssccinng) 实践了VITS语音，完成了台词对应的语音抽取，实现了第一个版本的声纹分类。
 
 [DataWhale助教-马琦钧](https://github.com/Skypow2012) 实现了AI-studio的版本。
 
-沈骏一、张财和吴平宇正在尝试训练本地的模型。
-
-[张一乔](https://github.com/Liyulingyue)
-
 [Aria (YayingFei)](https://github.com/ariafyy) 对接了whisper到台本工具。即将继续参加台本工具的开发。
 
-沈骏一实现了使用ChatGLM2 finetune实验，即将训练了更多的模型
+[沈骏一@浙江大学](https://github.com/J1shen)实现了使用ChatGLM2 finetune实验，即将训练了更多的模型
 
-米唯实实现了Chat哆啦A梦的分支版本
+[米唯实@清华大学](https://github.com/hhhwmws0117)实现了Chat哆啦A梦的分支版本
 
-吴平宇部署了ChatGLM2的训练程序，并提供了训练的计算资源。
+[吴平宇](https://github.com/wpydcr)部署了ChatGLM2的训练程序，并提供了训练的计算资源。
 
-贾曜恺开发了一个Vue前端实现方案
+[张一乔](https://github.com/Liyulingyue)正在将训练程序部分迁移出一个PaddlePaddle的训练版本
+
+[贾曜恺](https://ngdc.cncb.ac.cn/people/Yaokai-Jia?lang=en) @ [中国科学院北京基因组研究所](http://www.big.ac.cn/) 实现了Vue版本的前端，并且在心理项目中实践了Bert的GPU抽取
 
 ### Citation引用
 
