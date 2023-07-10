@@ -7,6 +7,9 @@ from recognize import recognize
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='YukiBuilder')
+
+    parser.add_argument('-verbose', action='store_true')
+
     subparsers = parser.add_subparsers(dest='subcommand')
 
     whisper_parser = subparsers.add_parser('whisper')
