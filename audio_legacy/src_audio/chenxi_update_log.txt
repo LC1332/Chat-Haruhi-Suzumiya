@@ -1,0 +1,27 @@
+6.2
+1. 修改 get_cosine_similarity(texts)
+    使其输入texts列表，一次查询所有query=texts[0] 和 texts[1:] 的相似度，避免query_similarity的重复计算
+
+2. query-text-image 文生图
+    query-text --> texts --> similarity --> text_image.keys()[key_index]=image
+3. query-text 文生文
+    query-text --> texts --> similarity --> pkl.keys()[key_index]=value
+
+6.4
+add embedding maps
+update text.py
+
+6.6:
+app.py 与 app_with_text_preload.py异同
+- update get_embedding(): 添加num_steps, 支持指定文本截断长度
+- add read_text()：抽取texts、预存embeddings
+- add load(): 加载embeddings, 返回的是defaultdict
+- update get_cosine_similarity: 更改输入格式为texts, text[0] = query_embed, 避免query_embed的重复计算，
+                                更改计算机制，优先从pkl加载embeddings
+- update retrieve_titles: 组装texts, 适应 similarity 计算
+- add text_to_text(): 文生文
+- add text_to_image(): 文生图
+
+所有需要embedding的地方，重构成list,传入
+to do list:
+2. 把原有的图台词做个矩形框处理掉，再拿周围的进行修补，再加上匹配到的台词
