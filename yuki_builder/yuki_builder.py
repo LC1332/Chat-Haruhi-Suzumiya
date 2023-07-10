@@ -6,7 +6,7 @@ from crop import crop
 from recognize import recognize
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='YokiBuilder')
+    parser = argparse.ArgumentParser(description='YukiBuilder')
     subparsers = parser.add_subparsers(dest='subcommand')
 
     whisper_parser = subparsers.add_parser('whisper')
