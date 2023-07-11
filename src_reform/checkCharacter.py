@@ -12,12 +12,12 @@ def checkCharacter(configuration):
         # print("未找到系统提示词，请添加")
         return False, 1, "未找到系统提示词, 请添加"
     # print(os.listdir(configuration['character_folder']))
-    if "pkl" not in elements:
-        return False, 2, "未找到pkl文件, 请添加"
+    if "jsonl" not in elements:
+        return False, 2, "未找到jsonl文件, 请添加"
     else:
-        pkl_path = os.path.join(configuration["character_folder"], "pkl")
-        # print(pkl_path)
-        pkl_elements = os.listdir(pkl_path)
-        # print(pkl_elements)
+        jsonl_path = os.path.join(configuration["character_folder"], "jsonl")
+        # print(jsonl_path)
+        jsonl_elements = os.listdir(jsonl_path)
+        # print(jsonl_elements)
         
     return True, -1, "角色检查完毕"
