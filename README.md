@@ -9,23 +9,33 @@
 **Chat凉宫春日**是模仿凉宫春日等一系列动漫人物，使用近似语气、个性和剧情聊天的语言模型，
 
 <details>
-  <summary> 本项目由李鲁鲁，冷子昂，闫晨曦，封小洋，scixing，贾曜恺等开发。 </summary>
+  <summary> 本项目由李鲁鲁，冷子昂，闫晨曦，封小洋，scixing，沈骏一，Aria Fei, 米唯实, 吴平宇, 贾曜恺等开发。 </summary>
 
-李鲁鲁发起了项目，并完成了最早的版本，在多个微信群实现了测试。完成了GPT自动生成对话部分。
+李鲁鲁发起了项目，并完成了最早的版本，在多个微信群实现了测试。完成了训练数据自动生成对话部分，设计了整体的路线，并撰写报告。
 
-冷子昂参与了早期Gradio的开发，并且参与了后端和前端的选型。debug和最终上线了app.py
+冷子昂负责了每一个阶段的Gradio开发，以及每个部分的功能整合和架构设计。
 
-闫晨曦将李鲁鲁的notebook重构为app.py
+闫晨曦一开始将李鲁鲁的notebook重构为app.py，参与了WebUI的embedding部分重构整合。
 
-封小洋进行了中文转日文模型的选型，完成了针对台词抽取图片的工具，（将要完成）和haruhi图片分类器
+封小洋进行了中文转日文模型的选型，完成了针对台词抽取图片的工具。整合了声纹识别。即将继续参加台本工具的开发。
 
-scixing实践了VITS语音，完成了台词对应的语音抽取，（将要完成）特定人物的语音分类器。
+scixing实践了VITS语音，完成了台词对应的语音抽取，实现了第一个版本的声纹分类。
 
-贾曜恺开发了一个前端实现方案，待测试。
+沈骏一实现了使用ChatGLM2 finetune实验
+
+Aria(Yaying Fei)对接了whisper到台本工具。即将继续参加台本工具的开发。
+
+米唯实实现了Chat哆啦A梦的分支版本
+
+吴平宇部署了ChatGLM2的训练程序，并提供了训练的计算资源。
+
+贾曜恺开发了一个Vue前端实现方案
 
 </details>
 
 本项目是一个在建项目，本项目中的代码和工具，也支持其他动漫人物的建立。在初步完成Haruhi预计的功能后，我们会开始尝试其他角色。
+
+在魔搭社区主办、阿里云和NVIDIA作为联合发起方，天池协办的Create@AI黑客马拉松中，Chat凉宫春日获得二等奖(top3)
 
 在中科院心理所中，项目获得二等奖(top3)，详情请见[链接](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
 
@@ -61,6 +71,14 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 本项目是DataWhale的5月学习的作业，其中闫晨曦，封小洋等同学都由DataWhale社区招募。
 
 
+
+## News
+
+[2023-06-07] 在魔搭社区主办、阿里云和NVIDIA作为联合发起方，天池协办的Create@AI黑客马拉松中，Chat凉宫春日获得二等奖(top3), [讲解视频](https://www.bilibili.com/video/BV1Xh411A7kC/)
+
+[2023-06-03] 在中科院心理所中，项目获得二等奖(top3)，详情请见[链接](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
+
+
 ## 快速开始
 
 
@@ -74,8 +92,8 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 |HuggingFace版本| [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi) | HuggingFace版本，如果key用完了麻烦提醒我们一下 |
 |人格-高考作文 | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/College_essays_gradio.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | 高/低开放性人格对应的高考作文题生成器，[详细报告](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) |
 |人格-Chatbot | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/PersonalityChatbot.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | 高/低开放性人格对应的Chatbot，[详细报告](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) |
-
-
+|[Hackathon](https://www.bilibili.com/video/BV1ho4y1P75H)| |DataWhale作业时候的讲解视频|
+|[Hackathon](https://www.bilibili.com/video/BV1Xh411A7kC/)| |黑客马拉松B站讲解视频|
 
 
   
@@ -218,22 +236,29 @@ If you are interested in sponsoring the [Luotuo Project](https://github.com/LC13
 
 ## 人员
 
-[李鲁鲁](https://github.com/LC1332)发起了项目，并完成了最早的版本，在多个微信群实现了测试。
+[李鲁鲁](https://github.com/LC1332)发起了项目，并完成了最早的版本，在多个微信群实现了测试。完成了训练数据自动生成对话部分，设计了整体的路线，并撰写报告。
 
-[冷子昂](https://blairleng.github.io)参与了早期Gradio的开发，并且参与了后端和前端的选型，完成了语音和图片端的对接。
+[冷子昂](https://blairleng.github.io)负责了每一个阶段的Gradio开发，以及每个部分的功能整合和架构设计。
 
-[闫晨曦@成都信息工程大学](https://github.com/todochenxi)将李鲁鲁的notebook重构为app.py
+[闫晨曦@成都信息工程大学](https://github.com/todochenxi)一开始将李鲁鲁的notebook重构为app.py，参与了WebUI的embedding部分重构整合。
 
-[封小洋](https://github.com/fengyunzaidushi)进行了中文转日文模型的选型，并且正在尝试从TV动漫中提取图-文对
+[封小洋](https://github.com/fengyunzaidushi)封小洋进行了中文转日文模型的选型，完成了针对台词抽取图片的工具。整合了声纹识别。即将继续参加台本工具的开发。
 
-[贾曜恺](https://ngdc.cncb.ac.cn/people/Yaokai-Jia?lang=en) @ [中国科学院北京基因组研究所](http://www.big.ac.cn/) 正在进行后端对接前端的部分
-
-[scixing](https://github.com/ssccinng) 正在尝试搭建前端
+[scixing](https://github.com/ssccinng) 实践了VITS语音，完成了台词对应的语音抽取，实现了第一个版本的声纹分类。
 
 [DataWhale助教-马琦钧](https://github.com/Skypow2012) 实现了AI-studio的版本。
 
-沈骏一、张财和吴平宇正在尝试训练本地的模型。
+[Aria (YayingFei)](https://github.com/ariafyy) 对接了whisper到台本工具。即将继续参加台本工具的开发。
 
+[沈骏一@浙江大学](https://github.com/J1shen)实现了使用ChatGLM2 finetune实验，即将训练了更多的模型
+
+[米唯实@清华大学](https://github.com/hhhwmws0117)实现了Chat哆啦A梦的分支版本
+
+[吴平宇](https://github.com/wpydcr)部署了ChatGLM2的训练程序，并提供了训练的计算资源。
+
+[张一乔](https://github.com/Liyulingyue)正在将训练程序部分迁移出一个PaddlePaddle的训练版本
+
+[贾曜恺](https://ngdc.cncb.ac.cn/people/Yaokai-Jia?lang=en) @ [中国科学院北京基因组研究所](http://www.big.ac.cn/) 实现了Vue版本的前端，并且在心理项目中实践了Bert的GPU抽取
 
 ### Citation引用
 

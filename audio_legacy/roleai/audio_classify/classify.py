@@ -295,7 +295,9 @@ class AudioClassification:
 
         self.roles, self.roles_list = self.get_roles_list()
         self.feat_sel, self.label_sel = self.get_feat_sel(self.roles, self.roles_list)
+
         self.my_classifier = self.create_classifier(class_name,self.feat_sel, self.label_sel,n_neighbors)
+
 
 
         threshold_certain = 0.4
@@ -313,23 +315,26 @@ class AudioClassification:
             file_list.sort(key = lambda x: int(x.split('_')[0]))
             with open(save_name, "w", encoding="utf-8") as f_out:
                 for file in file_list:
-                    id_str = ''.join(file.split('_')[1:])
-                    full_file_name = os.path.join(feature_folder, file)
+                    try:
+                        id_str = ''.join(file.split('_')[1:])
+                        full_file_name = os.path.join(feature_folder, file)
 
-                    with open(full_file_name, 'rb') as f:
-                        feature = pickle.load(f)
+                        with open(full_file_name, 'rb') as f:
+                            feature = pickle.load(f)
 
-                    predicted_label, distance = self.my_classifier.predict(feature)
+                        predicted_label, distance = self.my_classifier.predict(feature)
 
-                    role_name = ''
+                        role_name = ''
 
-                    if distance < threshold_certain:
-                        role_name = predicted_label
-                    elif distance < threshold_doubt:
-                        role_name = '(可能)' + predicted_label
+                        if distance < threshold_certain:
+                            role_name = predicted_label
+                        elif distance < threshold_doubt:
+                            role_name = '(可能)' + predicted_label
 
-                    output_str = role_name + ':「' + id_str[:-8] + '」'
-                    f_out.write(output_str + "\n")
+                        output_str = role_name + ':「' + id_str[:-8] + '」'
+                        f_out.write(output_str + "\n")
+                    except:
+                        continue
 
 
                 # label = 1
