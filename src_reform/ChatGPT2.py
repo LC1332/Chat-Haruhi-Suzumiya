@@ -35,7 +35,7 @@ import utils
 # OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY2")
 # openai.proxy = "http://127.0.0.1:7890"
 
-device = torch.device("cuda:2" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 folder_name = "Suzumiya"
 current_directory = os.getcwd()
 new_directory = os.path.join(current_directory, folder_name)
@@ -52,13 +52,10 @@ enc = tiktoken.get_encoding("cl100k_base")
 class ChatGPT:
     def __init__(self, configuration):
         self.configuration = configuration
-        self.title_to_text_pkl_path = configuration['title_to_text_pkl_path']
-        self.text_image_pkl_path = configuration['text_image_pkl_path']
-        self.dict_text_pkl_path = configuration['dict_text_pkl_path']
-        self.text_embed_jsonl_path = configuration['text_embed_jsonl_path']
-        self.dict_path = configuration['dict_path']
-        self.image_path = configuration['image_path']
-        self.folder = configuration['folder']
+        self.image_embed_jsonl_path = configuration['image_embed_jsonl_path']
+        self.title_text_embed_jsonl_path = configuration['title_text_embed_jsonl_path']
+        self.images_folder = configuration['images_folder']
+        self.texts_folder = configuration['texts_folder']
         self.system_prompt = configuration['system_prompt']
         with open(self.system_prompt, "r", encoding="utf-8") as f:
             self.system_prompt = f.read()
@@ -68,106 +65,48 @@ class ChatGPT:
         self.save_path = configuration['save_path']
         openai.api_key = configuration["openai_key_1"] + configuration["openai_key_2"]
         os.environ["OPENAI_API_KEY"] = openai.api_key
-        # 预加载pkl文件
+        # 预加载jsonl文件
         self.model = utils.download_models()
-        self.dict_text = None
-        self.text_image = None
+        self.image_embed = None
+        self.title_text_embed = None
         self.title_to_text = None
-        self.text_embed = None
         self.titles = None
 
-    def read_data(self):
-        # text_embed = {}
-        # title_to_text = {}
-        # titles = []
-        # for file in os.listdir(self.folder):
-        #     if file.endswith('.txt'):
-        #         title_name = file[:-4]
-        #         with open(os.path.join(self.folder, file), 'r', encoding='utf-8') as fr:
-        #             title_to_text[title_name] = fr.read()
-        #             titles.append(title_name)
-        # for text, embed in zip(titles, utils.get_embedding(self.model, list(title_to_text.values()))):
-        #     text_embed[text] = embed
-        # self.store(self.title_to_text_pkl_path, title_to_text)
-        # self.store(self.text_embed_jsonl_path, text_embed)
-        # self.store(self.titles_pkl_path, titles)
+    def preload(self):
+        self.image_embed = self.load(load_image_embed=True)
+        self.title_text_embed, self.title_to_text, self.titles = self.load(load_title_text_embed=True)
 
-        # text_image = {}
-        # with open(self.dict_path, 'r', encoding='utf-8') as f:
-        #     data = f.readlines()
-        #     for sub_text, image in zip(data[::2], data[1::2]):
-        #         text_image[sub_text.strip()] = image.strip()
-        # self.store(self.text_image_pkl_path, text_image)
+    def load(self, load_title_text_embed=False,
+             load_image_embed=False):
+        if load_title_text_embed:
+            text_embed = {}
+            title_to_text = {}
+            with open(self.title_text_embed_jsonl_path, 'r', encoding='utf-8') as f:
+                for line in f:
+                    data = json.loads(line)
+                    text_embed.update(data)
+            for title_text in text_embed.keys():
+                res = title_text.split("link")
+                title_to_text[res[0]] = res[1]
+            return text_embed, title_to_text, list(title_to_text.keys())
 
-        #
-        # keys_embeddings = {}
-        # for key in text_image.keys():
-        #     keys_embeddings[key] = utils.get_embedding(self.model, key)
-        # self.store(self.dict_text_pkl_path, keys_embeddings)
-        self.dict_text = self.load(load_dict_text=True)
-        self.text_image = self.load(load_text_image=True)
-        print(self.text_image)
-        self.title_to_text = self.load(load_title_to_text=True)
-        self.text_embed = self.load(load_text_embed=True)
-        self.titles = list(self.text_embed.keys())
-
-
-    def store(self, path, data):
-        with open(path, 'wb+') as f:
-            pickle.dump(data, f)
-
-    def load(self, load_text_embed=False, load_dict_text=False,
-             load_text_image=False, load_title_to_text=False):
-        if load_text_embed:
-            if self.text_embed_jsonl_path:
-                text_embed = {}
-                with open(self.text_embed_jsonl_path, 'r', encoding='utf-8') as f:
-                    for line in f:
-                        data = json.loads(line)
-                        text_embed.update(data)
-                return text_embed
-            else:
-                print("No text_embed_pkl_path")
-        elif load_dict_text:
-            if self.dict_text_pkl_path:
-                with open(self.dict_text_pkl_path, 'rb') as f:
-                    return pickle.load(f)
-            else:
-                print("No dict_text_pkl_path")
-        elif load_text_image:
-            if self.text_image_pkl_path:
-                with open(self.text_image_pkl_path, 'rb') as f:
-                    return pickle.load(f)
-            else:
-                print("No text_image_pkl_path")
-        elif load_title_to_text:
-            if self.title_to_text_pkl_path:
-                with open(self.title_to_text_pkl_path, 'rb') as f:
-                    return pickle.load(f)
-            else:
-                print("No title_to_text_pkl_path")
+        elif load_image_embed:
+            image_embed = {}
+            with open(self.image_embed_jsonl_path, 'r', encoding='utf-8') as f:
+                for line in f:
+                    data = json.loads(line)
+                    image_embed.update(data)
+            return image_embed
         else:
             print("Please specify the loading file！")
 
     def text_to_image(self, text):
-        """
-            给定文本出图片
-            计算query 和 texts 的相似度，取最高的作为new_query 查询image
-            到text_image_dict 读取图片名
-            然后到images里面加载该图片然后返回
-        """
-
-        # 加载 text-imageName
-        # print(self.configuration)
-        # self.image_path = self.configuration["image_path"]
-        keys = list(self.text_image.keys())
-        keys.insert(0, text)
-        query_similarity = self.get_cosine_similarity(keys, get_image=True)
+        query_similarity = self.get_cosine_similarity(text, get_image=True)
         key_index = query_similarity.argmax(dim=0)
-        text = list(self.text_image.keys())[key_index]
-        image = self.text_image[text] + '.jpg'
-        if image in os.listdir(self.image_path):
-            res = Image.open(self.image_path + '/' + image)
+        text = list(self.image_embed.keys())[key_index]
+        image = text + '.jpg'
+        if image in os.listdir(self.images_folder):
+            res = Image.open(self.images_folder + '/' + image)
             # res.show()
             return res
         else:
@@ -183,38 +122,30 @@ class ChatGPT:
         #  print(str(response.choices[0].message))
         return response.choices[0].message["content"]
 
-
-
     def get_cosine_similarity(self, texts, get_image=False, get_texts=False):
         """
             计算文本列表的相似度避免重复计算query_similarity
             texts[0] = query
         """
-        query_embedding = utils.get_embedding(self.model, texts[0]).reshape(1, -1)
+        query_embedding = utils.get_embedding(self.model, texts)[0].reshape(1, -1)
         if get_image:
-            pkl = self.dict_text
+            jsonl = self.image_embed
         elif get_texts:
-            pkl = self.text_embed
-        else:
-            # 计算query_embed
-            pkl = {}
-            embeddings = utils.get_embedding(self.model, texts[1:]).reshape(-1, 1536)
-            for text, embed in zip(texts, embeddings):
-                pkl[text] = embed
-
-        if get_texts:
-        # print([type(value) for value in pkl.values()])
-            texts_embeddings = np.array([value for value in pkl.values()])
-        else:
-            texts_embeddings = np.array([value.numpy().reshape(-1, 1536) for value in pkl.values()]).squeeze(1)
+            jsonl = self.title_text_embed
+        # else:
+        #     # 计算query_embed
+        #     jsonl = {}
+        #     embeddings = utils.get_embedding(self.model, texts[1:]).reshape(-1, 1536)
+        #     for text, embed in zip(texts, embeddings):
+        #         jsonl[text] = embed
+        texts_embeddings = np.array([value for value in jsonl.values()])
         return cosine_similarity(query_embedding, torch.from_numpy(texts_embeddings).to(device))
 
     def retrieve_title(self, query_text, k):
         # compute cosine similarity between query_embed and embeddings
-        embed_to_title = []
         texts = [query_text]
         embed_to_title = self.titles
-        cosine_similarities =self.get_cosine_similarity(texts, get_texts=True).cpu().numpy().tolist()
+        cosine_similarities = self.get_cosine_similarity(texts, get_texts=True).cpu().numpy().tolist()
         # sort cosine similarity
         sorted_cosine_similarities = sorted(cosine_similarities, reverse=True)
         top_k_index = []
@@ -229,7 +160,6 @@ class ChatGPT:
         return top_k_title
 
     def organize_story_with_maxlen(self, selected_sample):
-        maxlen = self.max_len_story
         story = "\n"
 
         count = 0
@@ -242,7 +172,7 @@ class ChatGPT:
 
             sample_len = len(enc.encode(sample_story))
             # print(sample_topic, ' ' , sample_len)
-            if sample_len + count > maxlen:
+            if sample_len + count > self.max_len_story:
                 break
 
             story += sample_story
@@ -274,7 +204,6 @@ class ChatGPT:
         return messages
 
     def keep_tail(self, history_chat, history_response):
-        max_len = self.max_len_history
         n = len(history_chat)
         if n == 0:
             return [], []
@@ -294,7 +223,7 @@ class ChatGPT:
 
         for i in range(1, n):
             count += token_len[n - 1 - i]
-            if count > max_len:
+            if count > self.max_len_history:
                 break
             keep_k += 1
 
@@ -302,7 +231,7 @@ class ChatGPT:
 
     def organize_message_langchain(self, story, history_chat, history_response, new_query):
         # messages =  [{'role':'system', 'content':SYSTEM_PROMPT}, {'role':'user', 'content':story}]
-        
+
         messages = [
             SystemMessage(content=self.system_prompt),
             HumanMessage(content=story)

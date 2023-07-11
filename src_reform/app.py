@@ -12,14 +12,16 @@ class ChatPerson:
             check_result, error_code, error_msg = self.checkCharacter()
             if not check_result:
                 print(error_msg)
-                return error_code
+                # return error_code
+                # raise EOFError(error_msg)
             self.loadCharacter()
         else:
             print("载入新建角色")
             check_result, error_code, error_msg = self.checkCharacter()
             if not check_result:
                 print(error_msg)
-                return error_code
+                # return error_code
+                # raise Error
 
     def checkCharacter(self):
         pass
@@ -55,7 +57,7 @@ class ChatPerson:
         print("正在载入角色GPT所需资源")
         # print(self.configuration)
         self.ChatGPT = ChatGPT(self.configuration)
-        self.ChatGPT.read_data()
+        self.ChatGPT.preload()
 
     def getResponse(self, user_message, chat_history_tuple):
         pass
