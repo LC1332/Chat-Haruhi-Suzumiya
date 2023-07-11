@@ -1,6 +1,6 @@
 import argparse
 
-from whisper import whisper
+from run_whisper import run_whisper
 from srt2csv import srt2csv
 from crop import crop
 from recognize import recognize
@@ -33,7 +33,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     if args.subcommand == 'whisper':
-        whisper(args)
+        run_whisper(args)
     elif args.subcommand == 'srt2csv':
         srt2csv(args)
     elif args.subcommand == 'crop':

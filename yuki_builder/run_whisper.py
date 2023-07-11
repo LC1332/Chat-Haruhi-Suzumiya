@@ -2,7 +2,7 @@ import argparse
 
 import os
 
-def whisper(args):
+def run_whisper(args):
 
     if args.verbose:
         print('runing whisper')
