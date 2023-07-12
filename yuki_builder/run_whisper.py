@@ -12,8 +12,11 @@ import argparse
 import os
 import pathlib
 import torch
-import whisper
 from typing import Iterator, TextIO
+try:
+    import whisper
+except ImportError:
+    print("check requirements: yuki_builder/requirements_run_whisper.txt")
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
