@@ -1,7 +1,11 @@
+"""
+Covert .ass or .srt subtitles to a 4 columns .csv file
+"""
 import argparse
 import os
 import pathlib
 import csv
+import ass
 
 def srt2csv(args):
     if args.verbose:
@@ -16,24 +20,17 @@ def srt2csv(args):
 
     # checking if input_srt is a file
     input_srt_file = args.input_srt
+    output_folder = args.srt_folder
     if not os.path.isfile(input_srt_file):
-        print('input_srt is not exist')
+        print('Error: The input file {} is not exist'.format(input_srt_file))
         return
     
     # checking if input_srt is a srt_file
-    if not (pathlib.Path(args.input_srt).suffix == '.srt' or pathlib.Path(args.input_srt).suffix == '.ass'):
-        print('input must be a srt file')
+    if not (pathlib.Path(input_srt_file).suffix == '.srt' or pathlib.Path(input_srt_file).suffix == '.ass'):
+        print('Error: The input file {} must be a .srt or .ass file'.format(input_srt_file))
         return
-  
-
-    # # checking if csv_folder is a folder
-    # if not os.path.isdir(args.csv_folder):
-    #     print('warning csv_folder is not exist')
-    #     # create csv_folder
-    #     os.mkdir(args.csv_folder)
-    #     print('create folder', args.csv_folder)
     
-    convert(input_srt_file, args.srt_folder)
+    convert(input_srt_file, output_folder)
 
 #create csv file
 def render_csv(final_result, csv_file):
@@ -43,12 +40,12 @@ def render_csv(final_result, csv_file):
         writer = csv.writer(file)
         writer.writerow(["空白","内容","开始时间","结束时间"])
         for i in final_result:    
-            writer.writerow(['',i["Translation"],i["TimecodeIn"],i["TimecodeOut"]])
+            writer.writerow(['',i["Text"],i["TimecodeIn"],i["TimecodeOut"]])
     return
 
 #parse srt
 def internalise(lines):
-    cues = []
+    result = []
     GET_TEXT = 1
     WAITING = 2
     cue = 0	
@@ -56,7 +53,6 @@ def internalise(lines):
     start_time = ""
     end_time = ""
     text = ""
-    duration = 0
     text_line = 0
     current_cue = {}
     for line in lines:
@@ -69,11 +65,10 @@ def internalise(lines):
             text_line = 0
             current_cue["TimecodeIn"] = start_time
             current_cue["TimecodeOut"] = end_time
-            current_cue["Duration"] = duration
             continue
         if line == "":
-            current_cue["Translation"] = text
-            cues.append(current_cue)
+            current_cue["Text"] = text
+            result.append(current_cue)
             current_cue = {}
             text = ""
             current_state = WAITING
@@ -85,9 +80,9 @@ def internalise(lines):
             else:
                 text += " " + line
     if current_state == GET_TEXT:
-        current_cue["Translation"] = text
-        cues.append(current_cue)
-    return cues
+        current_cue["Text"] = text
+        result.append(current_cue)
+    return result
 
 #read srt file
 def read_srt(input_file):
@@ -100,27 +95,44 @@ def read_srt(input_file):
         exit()	
     return lines
 
-def convert(input_srt_file, csv_folder):
-    os.makedirs(csv_folder, exist_ok=True)
-    output_csv_file = csv_folder + "/" + pathlib.Path(input_srt_file).stem + "." + 'csv'
-    lines = read_srt(input_srt_file)
-    cues = internalise(lines)
-    render_csv(cues, output_csv_file)
+#parse ass
+def parse_ass(input_file):     
+    with open(input_file, encoding='utf-8-sig') as f:
+        s = ass.parse(f)
+    result = []
+    for line in s.events:
+        result.append({
+        'TimecodeIn': line.start,
+        'TimecodeOut': line.end,
+        'Text': line.fields['Text']
+        })
+    return result
+
+def convert(input_srt_file, output_folder):
+    os.makedirs(output_folder, exist_ok=True)
+    output_csv_file = output_folder + "/" + pathlib.Path(input_srt_file).stem + "." + 'csv'
+    result = None
+    if pathlib.Path(input_srt_file).suffix == '.srt':
+        lines = read_srt(input_srt_file)
+        result = internalise(lines)     
+    elif pathlib.Path(input_srt_file).suffix == '.ass':
+        result = parse_ass(input_srt_file)
+    render_csv(result, output_csv_file)
     return output_csv_file
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        description='convert srt to CSV',
+        description='convert srt/ass to CSV',
         epilog='author:LengYue(https://github.com/zealot52099)'
     )
     parser.add_argument("verbose", type=bool, action="store")
-    parser.add_argument('--input_video', default='input_file', type=str, required=False, help="video path")
-    parser.add_argument('--srt_folder', default='out_folder', type=str, required=True, help="srt path")
-    parser.add_argument('--csv_folder', default='csv_folder', type=str, required=False, help="csv output path")
-    parser.add_argument('--input_srt', default='input_srt', type=str, required=True, help="srt file path")
+    parser.add_argument('--srt_folder', default='out_folder', type=str, required=True, help="folder to output .csv files")
+    parser.add_argument('--input_srt', default='input_srt', type=str, required=True, help="path of input .srt/.ass file")
     args = parser.parse_args()
     parser.print_help()
     srt2csv(args)
 
-#python srt2csv.py --srt_folder srt_result --input_srt news_20s.srt verbose=True
+#python srt2csv.py --srt_folder srt_result --input_srt ./test_data/news_20s.srt1 verbose=True
+#python srt2csv.py --srt_folder srt_result --input_srt ./test_data/news_20s.srt verbose=True
+#python srt2csv.py --srt_folder srt_result --input_srt ./test_data/assdemo.ass verbose=True
