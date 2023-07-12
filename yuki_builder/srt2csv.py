@@ -15,13 +15,13 @@ def srt2csv(args):
         print('create folder', args.srt_folder)
 
     # checking if input_srt is a file
-    input_srt_file = args.srt_folder + "/" + args.input_srt
+    input_srt_file = args.input_srt
     if not os.path.isfile(input_srt_file):
         print('input_srt is not exist')
         return
     
     # checking if input_srt is a srt_file
-    if not pathlib.Path(args.input_srt).suffix == '.srt':
+    if not (pathlib.Path(args.input_srt).suffix == '.srt' or pathlib.Path(args.input_srt).suffix == '.ass'):
         print('input must be a srt file')
         return
   
