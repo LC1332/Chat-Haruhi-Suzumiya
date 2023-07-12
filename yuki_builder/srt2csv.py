@@ -26,14 +26,14 @@ def srt2csv(args):
         return
   
 
-    # checking if csv_folder is a folder
-    if not os.path.isdir(args.csv_folder):
-        print('warning csv_folder is not exist')
-        # create csv_folder
-        os.mkdir(args.csv_folder)
-        print('create folder', args.csv_folder)
+    # # checking if csv_folder is a folder
+    # if not os.path.isdir(args.csv_folder):
+    #     print('warning csv_folder is not exist')
+    #     # create csv_folder
+    #     os.mkdir(args.csv_folder)
+    #     print('create folder', args.csv_folder)
     
-    convert(input_srt_file, args.csv_folder)
+    convert(input_srt_file, args.srt_folder)
 
 #create csv file
 def render_csv(final_result, csv_file):
