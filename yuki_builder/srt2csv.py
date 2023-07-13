@@ -13,9 +13,9 @@ def srt2csv(args):
 
     # checking if srt_folder is a folder
     if not os.path.isdir(args.srt_folder):
-        print('warning srt_folder is not exist')
+        print('warning: the folder{} is not exist'.format(args.srt_folder))
         # create srt_folder
-        os.mkdir(args.srt_folder)
+        os.makedirs(args.srt_folder)
         print('create folder', args.srt_folder)
 
     # checking if input_srt is a file
@@ -127,7 +127,7 @@ if __name__ == '__main__':
         epilog='author:LengYue(https://github.com/zealot52099)'
     )
     parser.add_argument("verbose", type=bool, action="store")
-    parser.add_argument('--srt_folder', default='out_folder', type=str, required=True, help="folder to output .csv files")
+    parser.add_argument('--srt_folder', default='srt_folder', type=str, required=True, help="folder to output .csv files")
     parser.add_argument('--input_srt', default='input_srt', type=str, required=True, help="path of input .srt/.ass file")
     args = parser.parse_args()
     parser.print_help()
