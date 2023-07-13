@@ -1,0 +1,12 @@
+1. 支持在gradio上输入key，通过配置文件进行？
+2. 前端支持对已载入的角色进行切换
+3. 像stable diffusion一样，把当前单一人物的对话放在一个分页中，复杂的功能留到另一个分页中
+4. stable diffusion gradio代码阅读
+5. 做一个额外的tab作为角色浏览和创作，这个tab会保证角色folder的合法性，这个tab载入的时候支持没有
+pkl，这个tab会生成新的合法的pkl
+6. 语音总是默认在界面上，但是没有GPU时会变为invalid
+7.使用一个统一的界面，没有图片和语音的时候功能不可用
+
+todolist
+1. 文件缓存到本地还是到服务器？
+3. 刷新后怎么办？, 利用cookie，然后将gen visible=False, chat visible=True

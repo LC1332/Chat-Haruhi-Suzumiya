@@ -1,0 +1,50 @@
+read_text: 抽取及预存文件
+    - 抽取title_to_texts, title以及对应的texts
+    - 抽取text_embedding
+    - 抽取 maps 暂时不用
+
+store:
+    - 以pkl格式存储相应文件
+
+load(load_texts=False, load_maps=False, load_dict_text=False,
+             load_text_image=False, load_title_to_text=False)
+    - 加载指定的预存pkl文件
+
+text_to_image(text, save_dict_text=False):
+    - 文生图，如果没有预存，可指定save_dict_text=True预存
+
+text_to_text(text):
+    - 没用，可以删掉了
+
+get_completion_from_messages:
+    - 传入messages，得到回复
+
+get_embedding(texts):
+    - 传入texts，texts可以是单个字符串，也可以是列表
+    - 相应的返回值可以是单个embedding，也可以embedding列表
+
+get_cosine_similarity(texts, get_image=False, get_texts=False)
+    - texts=query_texts, 第一个是query_text, 其余是待计算相似度的text，
+      如果剩余的text是已经预存的，则可以指定get_image/texts, 不然重新计算embedding
+    - get_image 和 get_texts 对应于加载不同的pkl文件，提取embedding进而计算相似度
+
+retrieve_title:
+    - 抽取k个和query_text相关的title
+
+organize_story_with_maxlen(k_top_title):
+    - 根据k个title组织story
+
+organize_message:
+    - 根据story，history_chat, history_response, new_query组织成messages
+
+keep_tail:
+    - 限制history_chat 和 history_response的长度
+
+organize_message_langchain:
+    - 使用langchain 组合messages
+
+get_response:
+    - 根据 user_message 和 chat_history_tuple获取回复
+
+save_response:
+    - 保存信息

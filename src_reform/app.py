@@ -1,5 +1,6 @@
 import configparser
-from ChatGPT import ChatGPT
+from ChatGPT2 import ChatGPT
+from checkCharacter import checkCharacter
 
 class ChatPerson:
     def __init__(self, **params):
@@ -8,15 +9,24 @@ class ChatPerson:
         if not params.keys():
             print("载入默认角色")
             self.readConfig()
-            self.checkCharacter()
+            check_result, error_code, error_msg = self.checkCharacter()
+            if not check_result:
+                print(error_msg)
+                # return error_code
+                # raise EOFError(error_msg)
             self.loadCharacter()
         else:
             print("载入新建角色")
-            checkCharacter()
+            check_result, error_code, error_msg = self.checkCharacter()
+            if not check_result:
+                print(error_msg)
+                # return error_code
+                # raise Error
 
     def checkCharacter(self):
         pass
-        print("检查角色文件是否缺失")
+        return checkCharacter(self.configuration)
+        
         
     def readConfig(self, character="DEFAULT"):
         pass
@@ -45,7 +55,9 @@ class ChatPerson:
     def initGPT(self):
         pass
         print("正在载入角色GPT所需资源")
+        # print(self.configuration)
         self.ChatGPT = ChatGPT(self.configuration)
+        self.ChatGPT.preload()
 
     def getResponse(self, user_message, chat_history_tuple):
         pass
@@ -54,6 +66,18 @@ class ChatPerson:
             response = self.ChatGPT.get_response(user_message, chat_history_tuple)
             print("获取回复完毕")
             return response
-            
         
-# ChatPerson()
+    def switchCharacter(self, characterName):
+        pass
+        print("正在切换角色")
+        self.readConfig(character=characterName)
+        check_result, error_code, error_msg = self.checkCharacter()
+        if not check_result:
+                print(error_msg)
+                return error_code
+        self.loadCharacter()
+        print("角色切换完成")
+
+# person = ChatPerson()
+# person.switchCharacter("liyunlong")
+# print(person.configuration)

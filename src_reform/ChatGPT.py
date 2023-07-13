@@ -38,13 +38,12 @@ class ChatGPT:
     def __init__(self, configuration):
         pass
         self.folder = configuration["folder"]
-        with open(configuration["system_prompt"], 'r') as f:
-                    self.system_prompt = f.read()
+        with open(configuration["system_prompt"], 'r', encoding='utf-8') as f:
+            self.system_prompt = f.read()
         self.max_len_story = int(configuration["max_len_story"])
         self.max_len_history = int(configuration["max_len_history"])
         self.model = download_models()
         self.enc = tiktoken.get_encoding("cl100k_base")
-
         self.titles, self.title_to_text = self.read_prompt_data()
         self.embeddings, self.embed_to_title = self.title_text_embedding(self.titles, self.title_to_text)
         openai.api_key = configuration["openai_key_1"] + configuration["openai_key_2"]
@@ -70,7 +69,7 @@ class ChatGPT:
                 title_name = file[:-4]
                 titles.append(title_name)
 
-                with open(os.path.join(self.folder, file), 'r') as f:
+                with open(os.path.join(self.folder, file), 'r', encoding='utf-8') as f:
                     title_to_text[title_name] = f.read()
 
         return titles, title_to_text

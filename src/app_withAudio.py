@@ -33,16 +33,16 @@ def download_models():
     return model
 
 # OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY2")
-# openai.api_key = 'sk-DfFyRKch'  # 在这里输入你的OpenAI API Token
+openai.api_key = 'dff'  # 在这里输入你的OpenAI API Token
 
-# os.environ["OPENAI_API_KEY"] = openai.api_key
+os.environ["OPENAI_API_KEY"] = openai.api_key
 
 folder_name = "Suzumiya"
 current_directory = os.getcwd()
 new_directory = os.path.join(current_directory, folder_name)
 
 
-pkl_path = './pkl/texts.pkl'
+pkl_path = './pkl/texts_source.pkl'
 text_image_pkl_path='./pkl/text_image.pkl'
 dict_path = "../characters/haruhi/text_image_dict.txt"
 dict_text_pkl_path = './pkl/dict_text.pkl'
@@ -369,7 +369,7 @@ class Run:
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="-----[Chat凉宫春日]-----")
-    parser.add_argument("--folder", default="../characters/haruhi/texts", help="text folder")
+    parser.add_argument("--folder", default="../characters/haruhi/texts_source", help="text folder")
     parser.add_argument("--system_prompt", default="../characters/haruhi/system_prompt.txt", help="store system_prompt")
     parser.add_argument("--max_len_story", default=1500, type=int)
     parser.add_argument("--max_len_history", default=1200, type=int)

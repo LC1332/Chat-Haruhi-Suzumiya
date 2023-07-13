@@ -1,0 +1,16 @@
+ffmpeg_python
+gradio
+langchain
+matplotlib
+numpy
+openai
+pysrt
+pysubs2
+scipy
+tiktoken
+torch
+torchaudio
+torchvision
+tqdm
+transformers
+whisper
