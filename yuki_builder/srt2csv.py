@@ -133,6 +133,3 @@ if __name__ == '__main__':
     parser.print_help()
     srt2csv(args)
 
-#python srt2csv.py --srt_folder srt_result --input_srt ./test_data/news_20s.srt1 verbose=True
-#python srt2csv.py --srt_folder srt_result --input_srt ./test_data/news_20s.srt verbose=True
-#python srt2csv.py --srt_folder srt_result --input_srt ./test_data/assdemo.ass verbose=True
