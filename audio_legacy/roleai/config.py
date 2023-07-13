@@ -3,7 +3,8 @@ video_config = {"video_lis_pth": "/mnt/sda/baidu_disk/凉宫春日/lg_video/vide
                 }
 audio_config = {
                 "audio_model_pth":'/mnt/sda/huggingface_weight/voicemodel/',  # **模型权重路径 需要下载模型→ git clone https://huggingface.co/scixing/voicemodel
-                "audio_roles_dir":'/mnt/sda/baidu_disk/lg/scixing/roles', # **分类好的角色音频路径 需要手动分类
+                "audio_roles_dir":'/mnt/sda/baidu_disk/lg/scixing/roles/voice', # **分类好的角色音频路径 需要手动分类
+                "audio_feature_dir":'/mnt/sda/baidu_disk/lg/scixing/roles/feature', # **分类好的角色音频路径 需要手动分类
                 "audio_out_dir": "/mnt/sda/baidu_disk/凉宫春日/lg_video/audio",  # 视频切割输出的音频路径
                 }
 
