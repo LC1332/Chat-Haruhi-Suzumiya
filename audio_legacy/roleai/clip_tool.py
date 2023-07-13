@@ -6,8 +6,9 @@ from collections import Counter
 import chardet
 import pysrt
 import pysubs2
-from tool import get_filename,read_bigone
+from tool import get_filename
 from tqdm import tqdm
+from read import read_bigone
 
 def detect_encoding(file_name):
     with open(file_name, 'rb') as file:
@@ -42,6 +43,7 @@ class VideoSegmentation:
         style = ''
         sub_format = ''
         voice_dir = 'voice'
+        new_dic = read_bigone('/mnt/sda/github/6yue/Chat-Haruhi-Suzumiya/roleai/srt_out_lj/dic.txt')
         for file, pth in tqdm(video_lis[1:2], desc='Processing Videos'):
             name = file.split('.')[0]
             filename, format = os.path.splitext(file)

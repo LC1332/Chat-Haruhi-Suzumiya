@@ -6,9 +6,9 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import cross_val_score
 import random
 from scipy.spatial.distance import cosine
-from audio_legacy.roleai.tool import get_first_subdir,get_subdir,get_filelist
-from audio_legacy.roleai.tool import write_to_file
-import shutil
+from roleai.tool import get_first_subdir
+from roleai.tool import write_to_file
+
 """
 feature是一个N*D的numpy矩阵，每行存储了一个D维特征 labels是一个python的list of string，表示每行对应的数据的标签。
 
@@ -99,16 +99,15 @@ class KNN_Classifier:
 
 
 class AudioClassification:
-    def __init__(self,audio_feature_dir, audio_roles_dir,srt_out_dir,audio_out_dir):
-        self.audio_feature_dir = audio_feature_dir
+    def __init__(self, audio_roles_dir,srt_out_dir,audio_out_dir):
         self.audio_roles_dir = audio_roles_dir
         self.srt_out_dir = srt_out_dir
 
         self.audio_first_dir = get_first_subdir(audio_out_dir)
 
         self.candidate_path = self.audio_first_dir[:]
-        # self.roles, self.roles_list = self.get_roles_list()
-        # self.features, self.labels = self.get_features()
+        self.roles, self.roles_list = self.get_roles_list()
+        self.features, self.labels = self.get_features()
 
     def get_roles_list(self):
         roles = os.listdir(self.audio_roles_dir)
@@ -215,7 +214,7 @@ class AudioClassification:
                 # print(file)
 
                 deal_flag = False
-                # 从切分的视频中找到对应的pkl文件
+
                 for candidate in self.candidate_path:
 
                     candidate_fname = os.path.join(candidate,'voice',file)
@@ -224,11 +223,6 @@ class AudioClassification:
                         # print(candidate_fname,'found')
                         deal_flag = True
                         feature_fname = os.path.join(candidate,'feature',file) + '.pkl'
-                        out_pkl_dir= f'/mnt/sda/baidu_disk/lg/scixing/roles/feature/{role}'
-                        os.makedirs(out_pkl_dir, exist_ok=True)
-                        new_pkl_pth = f'{out_pkl_dir}/{file}.pkl'
-                        if not os.path.exists(new_pkl_pth):
-                            shutil.copy(feature_fname,new_pkl_pth)
                         break
 
                 if deal_flag == False:
@@ -297,57 +291,29 @@ class AudioClassification:
         classifier_class = globals()[class_name](features, labels, n_neighbors)
         return classifier_class
 
-    def get_feature(self,audio_feature_dir):
-        # pinkle load feature_fname
-        features = []
-        labels = []
-        dim = 0
-
-        role_dirs = get_subdir(audio_feature_dir)
-        for role_dir in role_dirs:
-            role = role_dir.split('/')[-1]
-            file_list = get_filelist(role_dir)
-            for feature_fname in file_list:
-                with open(feature_fname, 'rb') as f:
-                    feature = pickle.load(f)
-
-
-
-                # append numpy array feature into numpy matrix features
-                if dim == 0:
-                    features = feature
-                    dim = feature.shape[0]
-                    # print(dim)
-                else:
-                    features = np.vstack((features, feature))
-
-                labels.append(role)
-
-        return features,labels
     def get_pridict(self,class_name,n_neighbors=3,mark=''):
 
-        # self.roles, self.roles_list = self.get_roles_list()
-        # self.feat_sel, self.label_sel = self.get_feat_sel(self.roles, self.roles_list)
-        self.feat_sel, self.label_sel = self.get_feature(self.audio_feature_dir)
+        self.roles, self.roles_list = self.get_roles_list()
+        self.feat_sel, self.label_sel = self.get_feat_sel(self.roles, self.roles_list)
 
         self.my_classifier = self.create_classifier(class_name,self.feat_sel, self.label_sel,n_neighbors)
 
 
 
         threshold_certain = 0.4
-        threshold_doubt = 0.6 # 遍历视频切割的目录
+        threshold_doubt = 0.6
         for idx,feature_folder in enumerate(self.candidate_path[:]):
             name = feature_folder.split('/')[-1]
             if mark:
                 save_name = os.path.join(self.srt_out_dir,f'{name}_{mark}.txt')
             else:
                 save_name = os.path.join(self.srt_out_dir, f'{name}.txt')
-            feature_folder = os.path.join(feature_folder,"feature")  # 遍历特征文件
+            feature_folder = os.path.join(feature_folder,"feature")
 
             file_list = os.listdir(feature_folder)
 
             file_list.sort(key = lambda x: int(x.split('_')[0]))
-            with open(save_name, "w", encoding="utf-8") as f_out:  # 把knn结果写入srt文件
+            with open(save_name, "w", encoding="utf-8") as f_out:
                 for file in file_list:
                     try:
                         id_str = ''.join(file.split('_')[1:])

@@ -6,7 +6,7 @@ import pickle
 
 # from modules.ecapa_tdnn import EcapaTdnn, SpeakerIdetification
 # from data_utils.reader import load_audio, CustomDataset
-from audio_legacy.roleai.tool import get_subdir, get_filename
+from roleai.tool import get_subdir, get_filename
 from .modules.ecapa_tdnn import EcapaTdnn, SpeakerIdetification
 from .data_utils.reader import load_audio, CustomDataset
 
@@ -63,21 +63,6 @@ class AudioFeatureExtraction:
                     continue
         print('音频特征提取完成')
 
-    def extract_pkl_feat(self, root_dir):
-        sub_dirs = get_subdir(root_dir)
-
-        for dir in sub_dirs[:]:
-            voice_files = get_filename(os.path.join(dir, 'voice'))
-            for file, pth in voice_files:
-                new_dir = os.path.join(dir, 'feature')
-                os.makedirs(new_dir, exist_ok=True)
-                try:
-                    feature = self.infer(pth)[0]
-                    with open(f"{new_dir}/{file}.pkl", "wb") as f:
-                        pickle.dump(feature, f)
-                except:
-                    continue
-        print('音频特征提取完成')
 
 if __name__ == '__main__':
     pass
