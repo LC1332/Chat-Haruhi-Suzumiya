@@ -51,6 +51,14 @@ def get_filelisform(directory,format=None):
     return file_list
 
 
+#把一个字典当作文本文件写入
+def read_bigone(file):
+    with open(file,'r',encoding='utf-8') as f:
+        line = f.readline()
+        line = eval(line.strip())
+
+    return line
+
 def get_filename(directory,format=None):
     file_list = []
     for root, dirs, files in os.walk(directory):
