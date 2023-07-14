@@ -162,12 +162,12 @@ def recognize(args):
     # clip audio segement according to the subtile file timestamp ; output: *.wav
     # subtitle files that are not labeled by role
     video_pth_segmentor = video_Segmentation()
-    # video_pth_segmentor.clip_video_bysrt(args.input_video,args.input_srt,args.audio_pkl_out)
+    video_pth_segmentor.clip_video_bysrt(args.input_video,args.input_srt,args.audio_pkl_out)
 
     # 音频提取特征 wav→pkl
     model_pth = '/mnt/sda/huggingface_weight/voicemodel/'
     audio_feature_extractor = AudioFeatureExtraction(model_pth)
-    # video_pth_segmentor.extract_new_pkl_feat(audio_feature_extractor, args.audio_pkl_out)
+    video_pth_segmentor.extract_new_pkl_feat(audio_feature_extractor, args.audio_pkl_out)
 
     # 角色识别
     audio_classification = AudioClassification()
