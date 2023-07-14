@@ -9,7 +9,7 @@ from .modules.ecapa_tdnn import EcapaTdnn, SpeakerIdetification
 from .data_utils.reader import load_audio, CustomDataset
 
 class AudioFeatureExtraction:
-    def __init__(self,model_director='./audio_feature_ext/models', audio_duration=3, feature_method='melspectrogram', ):
+    def __init__(self,model_director='./audio_feature_ext/models', audio_duration=3, feature_method='melspectrogram' ):
         self.use_model = ''
         self.audio_duration = audio_duration
         self.model_director = model_director

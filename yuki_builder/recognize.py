@@ -165,8 +165,8 @@ def recognize(args):
     video_pth_segmentor.clip_video_bysrt(args.input_video,args.input_srt,args.audio_pkl_out)
 
     # 音频提取特征 wav→pkl
-    model_pth = '/mnt/sda/huggingface_weight/voicemodel/'
-    audio_feature_extractor = AudioFeatureExtraction(model_pth)
+
+    audio_feature_extractor = AudioFeatureExtraction()
     video_pth_segmentor.extract_new_pkl_feat(audio_feature_extractor, args.audio_pkl_out)
 
     # 角色识别

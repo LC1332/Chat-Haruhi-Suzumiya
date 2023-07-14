@@ -167,7 +167,7 @@ class video_Segmentation:
                     text = make_filename_safe(subtitle.text)
                     audio_output = f'{audio_pkl_out}/{filename}/{voice_dir}/{index}_{text}.wav'
                     self.ffmpeg_extract(input_video, audio_output, start_time, end_time)
-        exit()
+        # exit()
 
 
 
