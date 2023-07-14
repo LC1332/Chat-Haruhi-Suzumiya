@@ -140,7 +140,7 @@ class video_Segmentation:
         if sub_format == 'srt':
     
             srt_file = pysrt.open(input_srt, encoding=encoding)
-            for index, subtitle in enumerate(tqdm(srt_file[:10], 'video clip by srt file start')):
+            for index, subtitle in enumerate(tqdm(srt_file[:], 'video clip by srt file start')):
                 # 获取开始和结束时间
                 start_time = subtitle.start
                 end_time = subtitle.end
@@ -171,7 +171,7 @@ class video_Segmentation:
                 most_1 = most_common_element(style_lis)
                 style = most_1[0][0]  
             new_subs = [sub for sub in subs if sub.style == style]
-            for index, subtitle in enumerate(new_subs[:10]):
+            for index, subtitle in enumerate(new_subs[:]):
                 # 获取开始和结束时间
                 if subtitle.style == style:
                     text = make_filename_safe(subtitle.text)
