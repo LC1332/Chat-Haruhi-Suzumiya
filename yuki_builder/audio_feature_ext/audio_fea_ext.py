@@ -4,22 +4,33 @@ import torch
 import pickle
 
 
-# from modules.ecapa_tdnn import EcapaTdnn, SpeakerIdetification
-# from data_utils.reader import load_audio, CustomDataset
-from audio_legacy.roleai.tool import get_subdir, get_filename
+import requests
 from .modules.ecapa_tdnn import EcapaTdnn, SpeakerIdetification
 from .data_utils.reader import load_audio, CustomDataset
 
 class AudioFeatureExtraction:
-    def __init__(self, model_local_pth,audio_duration=3, feature_method='melspectrogram', ):
+    def __init__(self,model_director='./audio_feature_ext/models', audio_duration=3, feature_method='melspectrogram' ):
         self.use_model = ''
         self.audio_duration = audio_duration
+        self.model_director = model_director
         self.feature_method = feature_method
-        self.resume = model_local_pth
         self.model = None
         self.device = None
         self.load_model()
 
+    def init_models(self,path):
+        model_urls = ['https://huggingface.co/scixing/voicemodel/resolve/main/model.pth',
+                      'https://huggingface.co/scixing/voicemodel/resolve/main/model.state',
+                      'https://huggingface.co/scixing/voicemodel/resolve/main/optimizer.pth']
+        listdir = os.listdir(path)
+        for url in model_urls:
+            filename = url.split('/')[-1]
+            if filename in listdir:
+                continue
+            r = requests.get(url, allow_redirects=True)
+            print(f'downloading model pth {filename}')
+            open(f'{path}/{filename}', 'wb').write(r.content)
+            print(f'{filename} success download')
     def load_model(self):
         dataset = CustomDataset(data_list_path=None, feature_method=self.feature_method)
         ecapa_tdnn = EcapaTdnn(input_size=dataset.input_size)
@@ -27,8 +38,15 @@ class AudioFeatureExtraction:
         self.device = torch.device("cuda")
         self.model.to(self.device)
 
+        if not os.path.exists(self.model_director):
+            os.makedirs(self.model_director)
+        model_files = ['model.pth', 'model.state', 'optimizer.pth']
+        for file in model_files:
+            if not os.path.exists(f'{self.model_director}/{file}'):
+                self.init_models(self.model_director)
+
         # 加载模型
-        model_path = os.path.join(self.resume, self.use_model, 'model.pth')
+        model_path = os.path.join(self.model_director, 'model.pth')
         model_dict = self.model.state_dict()
         param_state_dict = torch.load(model_path)
         for name, weight in model_dict.items():

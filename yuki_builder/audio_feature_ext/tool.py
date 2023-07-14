@@ -9,14 +9,20 @@ def read_tolist(file,encoding='utf-8'):
     return lines
 
 
+#获取一级子目录
+def get_first_subdir(directory):
+    subdirectories = [os.path.abspath(os.path.join(directory, name)) for name in os.listdir(directory) if
+                      os.path.isdir(os.path.join(directory, name))]
+    return subdirectories
+
+def get_onedir(directory):
+    subdirectories = next(os.walk(directory))[1]
+    subdirectories.sort()
+    return subdirectories
 
 #获取子目录
-def get_subdir(directory):
-    subdirectories = []
-    for dirpath, dirnames, files in os.walk(directory):
-        for dirname in dirnames:
-            subdirectories.append(os.path.join(dirpath, dirname))
-    subdirectories.sort()
+def get_subdir(folder_path):
+    subdirectories = [os.path.abspath(os.path.join(folder_path, name)) for name in os.listdir(folder_path) if os.path.isdir(os.path.join(folder_path, name))]
     return subdirectories
 
 def most_pre_ele(lst,num=1):
@@ -74,16 +80,16 @@ def get_filename(directory,format=None):
     return file_list
 
 
-#获取一级子目录
-def get_first_subdir(directory):
-    subdirectories = []
-    for name in os.listdir(directory):
-        if os.path.isdir(os.path.join(directory, name)):
-            subdirectories.append(os.path.join(directory, name))
-    subdirectories.sort()
-    return subdirectories
+
 
 
 def write_to_file(file,line,mode='w'):
     with open(file,mode=mode,encoding='utf-8') as f:
         f.write(line+'\n')
+
+
+#把一个列表写入到文本文件
+def save_lis2txt(file,lines):
+    with open(file,'w',encoding='utf-8') as f:
+        for line in lines:
+            f.write(str(line)+'\n')

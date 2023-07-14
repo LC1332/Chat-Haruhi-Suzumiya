@@ -10,7 +10,20 @@ from data_utils.reader import load_audio, CustomDataset
 from utils.utility import add_arguments, print_arguments
 
 import pickle
+import requests
 
+
+def init_models(path):
+    model_urls = ['https://huggingface.co/scixing/voicemodel/resolve/main/model.pth',
+               'https://huggingface.co/scixing/voicemodel/resolve/main/model.state',
+               'https://huggingface.co/scixing/voicemodel/resolve/main/optimizer.pth'] 
+    listdir = os.listdir(path)
+    for url in model_urls:
+        filename = url.split('/')[-1]
+        if filename in listdir:
+            continue
+        r = requests.get(url, allow_redirects=True)
+        open(filename, 'wb').write(r.content)
 
 use_model = 'ecapa_tdnn'
 audio_path1 = 'audio/a_1.wav'
@@ -19,7 +32,9 @@ threshold = 0.5
 audio_duration = 3
 feature_method = 'melspectrogram'
 resume = 'models/'
-
+if not os.path.exists(resume):
+    os.makedirs(resume)
+    init_models(resume)
 # 初始化一个已知声音列表
 voice_list = []
 feature_list = []
