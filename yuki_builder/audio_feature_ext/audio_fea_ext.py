@@ -38,6 +38,8 @@ class AudioFeatureExtraction:
         self.device = torch.device("cuda")
         self.model.to(self.device)
 
+        if not os.path.exists(self.model_director):
+            os.makedirs(self.model_director)
         model_files = ['model.pth', 'model.state', 'optimizer.pth']
         for file in model_files:
             if not os.path.exists(f'{self.model_director}/{file}'):
