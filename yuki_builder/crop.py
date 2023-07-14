@@ -12,7 +12,7 @@ import pickle
 from audio_feature_ext.tool import get_filename,get_subdir
 import pandas as pd
 from audio_feature_ext.audio_fea_ext import AudioFeatureExtraction
-
+from tqdm import tqdm
 
 def detect_encoding(file_name):
     with open(file_name, 'rb') as file:
@@ -58,7 +58,7 @@ class video_Segmentation:
         for dir in sub_dirs[:]:
             voice_files = get_filename(dir)
             name = dir.split('/')[-1]
-            for file, pth in voice_files:
+            for file, pth in tqdm(voice_files, f'extract {name} audio features ,convert .wav to .pkl'):
                 new_dir = os.path.join(role_audios, 'feature',name)
                 os.makedirs(new_dir, exist_ok=True)
                 try:
@@ -72,9 +72,9 @@ class video_Segmentation:
     def extract_new_pkl_feat(self, audio_extractor, audio_pkl_out):
         sub_dir = get_subdir(audio_pkl_out)[0]
 
-
+        name = sub_dir.split('/')[-1]
         voice_files = get_filename(f'{sub_dir}/voice')
-        for file, pth in voice_files:
+        for file, pth in tqdm(voice_files,f'extract {name} audio features ,convert .wav to .pkl'):
             new_dir = os.path.join(sub_dir, 'feature')
             os.makedirs(new_dir, exist_ok=True)
             try:
@@ -92,7 +92,7 @@ class video_Segmentation:
         srt_data = pd.read_csv(self.annotate_csv)
         srt_data = srt_data.dropna()
         srt_list = srt_data.values.tolist()
-        for index, (person,subtitle,start_time,end_time) in enumerate(srt_list[:]):
+        for index, (person,subtitle,start_time,end_time) in enumerate(tqdm(srt_list[:], 'video clip by csv file start')):
             audio_output = f'{self.role_audios}/voice/{person}'
             os.makedirs(audio_output, exist_ok=True)
             index = str(index).zfill(4)
@@ -124,7 +124,7 @@ class video_Segmentation:
         if sub_format == 'srt':
     
             srt_file = pysrt.open(input_srt, encoding=encoding)
-            for index, subtitle in enumerate(srt_file[:]):
+            for index, subtitle in enumerate(tqdm(srt_file[:], 'video clip by srt file start')):
                 # 获取开始和结束时间
                 start_time = subtitle.start
                 end_time = subtitle.end
