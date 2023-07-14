@@ -63,12 +63,10 @@ class ChatGPT:
         self.max_len_story = int(configuration['max_len_story'])
         self.max_len_history = int(configuration['max_len_history'])
         self.save_path = configuration['save_path']
-        openai.api_key = configuration["openai_key_1"] + configuration["openai_key_2"]
-        os.environ["OPENAI_API_KEY"] = openai.api_key
         # 预加载jsonl文件
         self.model = utils.download_models()
         self.image_embed = None
-        self.title_text_embed = None
+        self.title_text_embed = None                                                                                                                                                                                                 
         self.title_to_text = None
         self.titles = None
 

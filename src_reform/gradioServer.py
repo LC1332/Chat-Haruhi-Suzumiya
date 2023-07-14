@@ -1,5 +1,6 @@
 from zipfile import ZipFile
-
+import os
+import openai
 import gradio as gr
 from app import ChatPerson
 from text import Text
@@ -9,12 +10,14 @@ from text import Text
 def create_gradio(chat_person):
     # from google.colab import drive
     # drive.mount(drive_path)
-    def respond(role_name, user_message, chat_history):
+    def respond(api_key, role_name, user_message, chat_history):
         print("history is here : ", chat_history)
         input_message = role_name + ':「' + user_message + '」'
         bot_message = chat_person.getResponse(input_message, chat_history)
         chat_history.append((input_message, bot_message))
-        
+        if openai.api_key is None:
+            openai.api_key = api_key
+            os.environ["OPENAI_API_KEY"] = openai.api_key
         # self.save_response(chat_history)
         # time.sleep(1)
         # jp_text = pipe(f'<-zh2ja-> {bot_message}')[0]['translation_text']
@@ -81,9 +84,9 @@ def create_gradio(chat_person):
 
             clear.click(lambda: None, None, chatbot, queue=False)
             # msg.submit(respond, [role_name, msg, chatbot], [msg, chatbot, image_input, japanese_output])
-            msg.submit(respond, [role_name, msg, chatbot], [msg, chatbot, image_input])
+            msg.submit(respond, [api_key, role_name, msg, chatbot], [msg, chatbot, image_input])
             # sub.click(fn=respond, inputs=[role_name, msg, chatbot], outputs=[msg, chatbot, image_input, japanese_output])
-            sub.click(fn=respond, inputs=[role_name, msg, chatbot], outputs=[msg, chatbot, image_input])
+            sub.click(fn=respond, inputs=[api_key, role_name, msg, chatbot], outputs=[msg, chatbot, image_input])
             # audio_btn.click(fn=update_audio, inputs=[audio, japanese_output], outputs=audio)
 
             image_button.click(getImage, inputs=image_input, outputs=image_output)

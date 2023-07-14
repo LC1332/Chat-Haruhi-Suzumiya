@@ -32,7 +32,7 @@ class ChatPerson:
         pass
         print("载入配置文件")
         config = configparser.ConfigParser()
-        config.read('config.ini')
+        config.read('config.ini', encoding='utf-8')
         sections = config.sections()
         items = config.items(character)
         print(f"正在加载: {character} 角色")
