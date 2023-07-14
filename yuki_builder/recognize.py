@@ -5,13 +5,10 @@ import os
 import pickle
 from sklearn.neighbors import KNeighborsClassifier
 import numpy as np
-import random
-from scipy.spatial.distance import cosine
-from audio_feature_ext.tool import get_first_subdir,write_to_file, get_subdir, get_filelist
-from audio_feature_ext import AudioFeatureExtraction
-from sklearn.neighbors import NearestNeighbors
-from sklearn.model_selection import cross_val_score
+from audio_feature_ext.tool import get_subdir, get_filelist
+from audio_feature_ext.audio_fea_ext import AudioFeatureExtraction
 from crop import video_Segmentation
+import csv
 
 class KNN_Classifier_lis:
     def __init__(self, feature, labels,n_neighbors=3):
@@ -84,7 +81,13 @@ class AudioClassification:
                 labels.append(role)
 
         return features,labels
-    def get_pridict(self,role_audios,recog_csv_out,n_neighbors=3,mark=''):
+    def save_to_csv(self,filename,data):
+
+        with open(filename, 'w', newline='') as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerows(data)
+        print('识别结果保存到csv')
+    def get_pridict(self,role_audios,audio_pkl_out,recog_csv_out,n_neighbors=3):
 
         # read the local pkl pth to get features and labels
         self.feat_sel, self.label_sel = self.get_feature(role_audios)
@@ -95,40 +98,40 @@ class AudioClassification:
 
         threshold_certain = 0.4
         threshold_doubt = 0.6 # 遍历视频切割的目录
-        for idx,feature_folder in enumerate(self.candidate_path[:]):
-            name = feature_folder.split('/')[-1]
-            if mark:
-                save_name = os.path.join(recog_csv_out,f'{name}_{mark}.txt')
-            else:
-                save_name = os.path.join(recog_csv_out, f'{name}.txt')
-            feature_folder = os.path.join(feature_folder,"feature")  # 遍历特征文件
+        sub_dir = get_subdir(audio_pkl_out)[0]
+        name = sub_dir.split('/')[-1]
 
-            file_list = os.listdir(feature_folder)
+        save_name = os.path.join(recog_csv_out, f'{name}_recognize.csv')
+        feature_folder = os.path.join(sub_dir,"feature")  # 遍历特征文件
 
-            file_list.sort(key = lambda x: int(x.split('_')[0]))
-            with open(save_name, "w", encoding="utf-8") as f_out:  # 把knn结果写入srt文件
-                for file in file_list:
-                    try:
-                        id_str = ''.join(file.split('_')[1:])
-                        full_file_name = os.path.join(feature_folder, file)
+        file_list = os.listdir(feature_folder)
 
-                        with open(full_file_name, 'rb') as f:
-                            feature = pickle.load(f)
+        file_list.sort(key = lambda x: int(x.split('_')[0]))
+        res_lis = [['人物','人物台词','开始时间','结束时间']]
 
-                        predicted_label, distance = self.my_classifier.predict(feature)
+        for file in file_list[:]:
+            try:
+                id_str = file[:-8]
+                index,start_time, end_time , text= id_str.split('_')
+                full_file_name = os.path.join(feature_folder, file)
 
-                        role_name = ''
+                with open(full_file_name, 'rb') as f:
+                    feature = pickle.load(f)
 
-                        if distance < threshold_certain:
-                            role_name = predicted_label
-                        elif distance < threshold_doubt:
-                            role_name = '(可能)' + predicted_label
+                predicted_label, distance = self.my_classifier.predict(feature)
+                role_name = ''
 
-                        output_str = role_name + ':「' + id_str[:-8] + '」'
-                        f_out.write(output_str + "\n")
-                    except:
-                        continue
+                if distance < threshold_certain:
+                    role_name = predicted_label
+                elif distance < threshold_doubt:
+                    role_name = '(可能)' + predicted_label
 
+                start_time = start_time.replace('.', ':')
+                end_time = end_time.replace('.', ':')
+                res_lis.append([role_name, text, start_time, end_time])
+            except:
+                continue
+        self.save_to_csv(save_name,res_lis)
 def recognize(args):
 
     if args.verbose:
@@ -149,14 +152,15 @@ def recognize(args):
         print('role_audios is not exist')
         return
     
-    # checking if output_folder is a folder
+    # checking if audio_pkl_out is a folder
     if not os.path.isdir(args.audio_pkl_out):
-        print('warning output_folder is not exist')
-        # create output_folder
+        print('warning audio_pkl_out is not exist')
+        # create audio_pkl_out
         os.mkdir(args.audio_pkl_out)
         print('create folder', args.audio_pkl_out)
 
-    # 视频切割
+    # clip audio segement according to the subtile file timestamp ; output: *.wav
+    # subtitle files that are not labeled by role
     video_pth_segmentor = video_Segmentation()
     # video_pth_segmentor.clip_video_bysrt(args.input_video,args.input_srt,args.audio_pkl_out)
 
@@ -167,8 +171,7 @@ def recognize(args):
 
     # 角色识别
     audio_classification = AudioClassification()
-
-    # audio_classification.get_pridict(args.role_audios,args.recog_csv_out)
+    audio_classification.get_pridict(args.role_audios,args.audio_pkl_out,args.recog_csv_out)
 
 
     pass
@@ -181,17 +184,21 @@ if __name__ == '__main__':
     parser.add_argument("verbose", type=bool, action="store")
     parser.add_argument('--input_video', default='input_file', type=str, required=True, help="video path")
     parser.add_argument('--input_srt', default='input_srt', type=str, required=True,help="path of input .srt/.ass file")
-    parser.add_argument('--audio_pkl_out', default='/mnt/sda/baidu_disk/lg/scixing/audio_pkl_out', type=str, required=True, help="directory of the  audios and pkl files  to save")
-    parser.add_argument('--recog_csv_out', default='/mnt/sda/baidu_disk/lg/scixing/recog_csv_out', type=str, required=True, help="the role recoginize csv file")
-    parser.add_argument('--role_audios', default='/mnt/sda/baidu_disk/lg/scixing/roles', type=str, required=True, help= "directory of the role audio to save")
+    parser.add_argument('--audio_pkl_out', default='./data_crop/audio_pkl_out', type=str, required=True, help="directory of the  audios and pkl files  to save") # It is best to change the default directory
+    parser.add_argument('--role_audios', default='./data_crop/role_audios', type=str, required=True, help= "audio directories and feature directories categorized by role") # It is best to change the default directory
+    parser.add_argument('--recog_csv_out', default='./data_crop', type=str, required=False,
+                        help="the role recoginize csv file")
 
     args = parser.parse_args()
     parser.print_help()
+    # print(args.recog_csv_out)
     recognize(args)
 """
-python verbose=True --input_video /mnt/sda/baidu_disk/凉宫春日/lg_video/video/Haruhi_16.mkv  
-        --input_srt /mnt/sda/baidu_disk/lg/zim/Subtitle_SC_SRT/Haruhi_16.srt
-        --audio_pkl_out /mnt/sda/baidu_disk/lg/scixing/audio_pkl_out
-        --recog_csv_out /mnt/sda/baidu_disk/lg/scixing/recog_csv_out
-        --role_audios /mnt/sda/baidu_disk/lg/scixing/roles
+cd yuki_builder/
+python verbose=True 
+        --input_video Haruhi_16.mkv
+        --input_srt Haruhi_16.srt
+        --role_audios ./data_crop/role_audios  # Better change it to your own path
+        --audio_pkl_out ./data_crop/audio_pkl_out  # Better change it to your own path
+        --recog_csv_out ./data_crop  # You can change it to youw own path
 """

@@ -11,11 +11,8 @@ def read_tolist(file,encoding='utf-8'):
 
 #获取一级子目录
 def get_first_subdir(directory):
-    subdirectories = []
-    for name in os.listdir(directory):
-        if os.path.isdir(os.path.join(directory, name)):
-            subdirectories.append(os.path.join(directory, name))
-    subdirectories.sort()
+    subdirectories = [os.path.abspath(os.path.join(directory, name)) for name in os.listdir(directory) if
+                      os.path.isdir(os.path.join(directory, name))]
     return subdirectories
 
 def get_onedir(directory):
