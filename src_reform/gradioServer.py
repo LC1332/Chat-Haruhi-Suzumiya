@@ -11,13 +11,14 @@ def create_gradio(chat_person):
     # from google.colab import drive
     # drive.mount(drive_path)
     def respond(api_key, role_name, user_message, chat_history):
+        if openai.api_key is None:
+            openai.api_key = api_key
+            os.environ["OPENAI_API_KEY"] = openai.api_key
         print("history is here : ", chat_history)
         input_message = role_name + ':「' + user_message + '」'
         bot_message = chat_person.getResponse(input_message, chat_history)
         chat_history.append((input_message, bot_message))
-        if openai.api_key is None:
-            openai.api_key = api_key
-            os.environ["OPENAI_API_KEY"] = openai.api_key
+
         # self.save_response(chat_history)
         # time.sleep(1)
         # jp_text = pipe(f'<-zh2ja-> {bot_message}')[0]['translation_text']
