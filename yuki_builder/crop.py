@@ -69,8 +69,9 @@ class video_Segmentation:
                     continue
         print('音频特征提取完成')
 
-    def extract_new_pkl_feat(self, audio_extractor, audio_pkl_out):
-        sub_dir = get_subdir(audio_pkl_out)[0]
+    def extract_new_pkl_feat(self, audio_extractor, temp_folder):
+
+        sub_dir = get_subdir(temp_folder)[0]
 
         name = sub_dir.split('/')[-1]
         voice_files = get_filename(f'{sub_dir}/voice')
@@ -107,16 +108,31 @@ class video_Segmentation:
             audio_output = f'{audio_output}/{name}.wav'
             self.ffmpeg_extract(self.video_pth,audio_output,start_time,end_time)
 
-    def clip_video_bysrt(self,input_video,input_srt,audio_pkl_out):
+    def srt_format_timestamp(self, seconds):
+        assert seconds >= 0, "non-negative timestamp expected"
+        milliseconds = round(seconds * 1000.0)
+
+        hours = milliseconds // 3_600_000
+        milliseconds -= hours * 3_600_000
+
+        minutes = milliseconds // 60_000
+        milliseconds -= minutes * 60_000
+
+        seconds = milliseconds // 1_000
+        milliseconds -= seconds * 1_000
+
+        return (f"{hours:02d}:") + f"{minutes:02d}:{seconds:02d}.{milliseconds:03d}"
+
+    def clip_video_bysrt(self,input_video,input_srt,temp_folder):
 
         style = ''
         sub_format = input_srt.split('.')[-1]
         voice_dir = 'voice'
         file = input_video.split('/')[-1]
         filename, format = os.path.splitext(file)  # haruhi_01 .mkv
-        
+
         # 创建对应的音频文件夹
-        os.makedirs(f'{audio_pkl_out}/{filename}/{voice_dir}', exist_ok=True)
+        os.makedirs(f'{temp_folder}/{filename}/{voice_dir}', exist_ok=True)
 
         # 检测字幕编码
         encoding = detect_encoding(input_srt)
@@ -124,7 +140,7 @@ class video_Segmentation:
         if sub_format == 'srt':
     
             srt_file = pysrt.open(input_srt, encoding=encoding)
-            for index, subtitle in enumerate(tqdm(srt_file[:], 'video clip by srt file start')):
+            for index, subtitle in enumerate(tqdm(srt_file[:10], 'video clip by srt file start')):
                 # 获取开始和结束时间
                 start_time = subtitle.start
                 end_time = subtitle.end
@@ -145,7 +161,7 @@ class video_Segmentation:
                 name = f'{index}_{ss}_{ee}_{text}'.replace(':', '.')
 
                 # 使用FFmpeg切割视频
-                audio_output = f'{audio_pkl_out}/{filename}/{voice_dir}/{name}.wav'
+                audio_output = f'{temp_folder}/{filename}/{voice_dir}/{name}.wav'
                 self.ffmpeg_extract(input_video, audio_output, start_time, end_time)
     
         elif sub_format == 'ass':
@@ -155,17 +171,23 @@ class video_Segmentation:
                 most_1 = most_common_element(style_lis)
                 style = most_1[0][0]  
             new_subs = [sub for sub in subs if sub.style == style]
-            for index, subtitle in enumerate(new_subs[:]):
+            for index, subtitle in enumerate(new_subs[:10]):
                 # 获取开始和结束时间
                 if subtitle.style == style:
+                    text = make_filename_safe(subtitle.text)
                     start_time = subtitle.start
                     end_time = subtitle.end
                     start_time = start_time / 1000
                     end_time = end_time / 1000
-                    # 使用FFmpeg切割视频 
+
+                    ss = self.srt_format_timestamp(start_time)
+                    ee = self.srt_format_timestamp(end_time)
                     index = str(index).zfill(4)
-                    text = make_filename_safe(subtitle.text)
-                    audio_output = f'{audio_pkl_out}/{filename}/{voice_dir}/{index}_{text}.wav'
+                    name = f'{index}_{ss}_{ee}_{text}'.replace(':', '.')
+                    # 使用FFmpeg切割视频
+                    index = str(index).zfill(4)
+
+                    audio_output = f'{temp_folder}/{filename}/{voice_dir}/{name}.wav'
                     self.ffmpeg_extract(input_video, audio_output, start_time, end_time)
         # exit()
 
@@ -206,19 +228,20 @@ if __name__ == '__main__':
     )
     # video_pth, role_audios, annotate_csv
     parser.add_argument("verbose", type=bool, action="store")
-    parser.add_argument('--annotate_map', default='./data_crop/haruhi_EP3_annotate_map.csv', type=str, required=True, help="list of video_pth and subtitle paths")
-    parser.add_argument('--role_audios', default='./data_crop/role_audios', type=str, required=True, help= "audio directories and feature directories categorized by role") # Better change it to your own path
+    parser.add_argument('--annotate_map', default='./input_folder/haruhi_EP3_annotate_map.csv', type=str, required=True, help="list of video_pth and subtitle paths")
+    parser.add_argument('--role_audios', default='./input_folder/role_audios', type=str, required=True, help= "audio directories and feature directories categorized by role") # Better change it to your own path
     parser.add_argument('--model_directory', default='./audio_feature_ext/models', type=str, required=False, help= "huggine face model weight download pth")
 
     args = parser.parse_args()
     parser.print_help()
+    # print(args)
     crop(args)
 
 """
 cd yuki_builder/
 python verbose=True 
         --input_video Haruhi_16.mkv  
-        --annotate_map ./data_crop/haruhi_EP3_annotate_map.csv'
-        --role_audios ./data_crop/role_audios          # Better change it to your own path
+        --annotate_map ./input_folder/haruhi_EP3_annotate_map.csv'
+        --role_audios ./input_folder/role_audios          # Better change it to your own path
         --model_directory ./audio_feature_ext/models   # You can change it to youw own path
 """
