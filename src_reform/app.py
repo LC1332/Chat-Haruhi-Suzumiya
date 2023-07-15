@@ -1,11 +1,12 @@
 import configparser
-from ChatGPT2 import ChatGPT
+from ChatGPT import ChatGPT
 from checkCharacter import checkCharacter
 
 class ChatPerson:
     def __init__(self, **params):
         pass
         self.configuration = {}
+        self.sections = [] # config中的角色区块
         if not params.keys():
             print("载入默认角色")
             self.readConfig()
@@ -30,11 +31,10 @@ class ChatPerson:
         
     def readConfig(self, character="DEFAULT"):
         pass
-        print("载入配置文件")
-        config = configparser.ConfigParser()
-        config.read('config.ini', encoding='utf-8')
-        sections = config.sections()
-        items = config.items(character)
+        self.config = configparser.ConfigParser()
+        self.config.read('config.ini')
+        self.sections = self.config.sections()
+        items = self.config.items(character)
         print(f"正在加载: {character} 角色")
         for key, value in items:
             self.configuration[key]=value
@@ -42,15 +42,27 @@ class ChatPerson:
 
     def loadCharacter(self):
         pass
-        if (self.configuration["gpt"]):
+        if (self.configuration["gpt"].lower == "true"):
             print("选择使用GPT作为语言模型")
             self.initGPT()
+        if (self.configuration["gpt"].lower == "false"):
+            print("选择使用本地模型作为语言模型")
+            self.initLocalLLM()
 
-    def getFunction(self):
+    def getCharacters(self):
         pass
+        r_list = []
+        for character in self.sections:
+            items = self.config.items(character)
+            r_list.append(character)
+            for key, value in items:
+                if key == "local_model" and not bool(value):
+                    r_list.append(f"{character}_local")    
+        return r_list
 
     def initLocalLLM(self):
         pass
+        
 
     def initGPT(self):
         pass
@@ -61,7 +73,7 @@ class ChatPerson:
 
     def getResponse(self, user_message, chat_history_tuple):
         pass
-        if (self.configuration["gpt"]):
+        if (self.configuration["gpt"].lower == "true"):
             print("正在获取GPT回复")
             response = self.ChatGPT.get_response(user_message, chat_history_tuple)
             print("获取回复完毕")
@@ -79,5 +91,6 @@ class ChatPerson:
         print("角色切换完成")
 
 # person = ChatPerson()
+# person.getCharacters()
 # person.switchCharacter("liyunlong")
 # print(person.configuration)
