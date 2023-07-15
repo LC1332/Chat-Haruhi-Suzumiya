@@ -230,7 +230,7 @@ if __name__ == '__main__':
     parser.add_argument("verbose", type=bool, action="store")
     parser.add_argument('--annotate_map', default='./input_folder/haruhi_EP3_annotate_map.csv', type=str, required=True, help="list of video_pth and subtitle paths")
     parser.add_argument('--role_audios', default='./input_folder/role_audios', type=str, required=True, help= "audio directories and feature directories categorized by role") # Better change it to your own path
-    parser.add_argument('--model_directory', default='./audio_feature_ext/models', type=str, required=False, help= "huggine face model weight download pth")
+    # parser.add_argument('--model_directory', default='./audio_feature_ext/models', type=str, required=False, help= "huggine face model weight download pth")
 
     args = parser.parse_args()
     parser.print_help()
@@ -240,8 +240,6 @@ if __name__ == '__main__':
 """
 cd yuki_builder/
 python verbose=True 
-        --input_video Haruhi_16.mkv  
         --annotate_map ./input_folder/haruhi_EP3_annotate_map.csv'
         --role_audios ./input_folder/role_audios          # Better change it to your own path
-        --model_directory ./audio_feature_ext/models   # You can change it to youw own path
 """
