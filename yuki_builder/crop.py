@@ -41,7 +41,7 @@ class video_Segmentation:
         pass
 
 
-    def ffmpeg_extract(self,video_input,audio_output,start_time,end_time):
+    def ffmpeg_extract_audio(self,video_input,audio_output,start_time,end_time):
 
         command = ['ffmpeg', '-ss', str(start_time), '-to', str(end_time), '-i', f'{video_input}', "-vn",
                    '-c:a', 'pcm_s16le','-y',
@@ -88,7 +88,7 @@ class video_Segmentation:
                 continue
         print('音频特征提取完成')
 
-    def clip_video_bycsv(self,annotate_csv,video_pth,role_audios):
+    def clip_audio_bycsv(self,annotate_csv,video_pth,role_audios):
         self.annotate_csv = annotate_csv
         self.video_pth = video_pth
         self.role_audios = role_audios
@@ -108,7 +108,7 @@ class video_Segmentation:
             name = f'{index}_{ss}_{ee}_{text}'.replace(':', '.')
 
             audio_output = f'{audio_output}/{name}.wav'
-            self.ffmpeg_extract(self.video_pth,audio_output,start_time,end_time)
+            self.ffmpeg_extract_audio(self.video_pth,audio_output,start_time,end_time)
 
     def srt_format_timestamp(self, seconds):
         assert seconds >= 0, "non-negative timestamp expected"
@@ -165,7 +165,7 @@ class video_Segmentation:
 
                     # 使用FFmpeg切割视频
                     audio_output = f'{temp_folder}/{filename}/{voice_dir}/{name}.wav'
-                    self.ffmpeg_extract(input_video, audio_output, start_time, end_time)
+                    self.ffmpeg_extract_audio(input_video, audio_output, start_time, end_time)
     
         elif sub_format == 'ass':
             subs = pysubs2.load(input_srt, encoding=encoding)
@@ -192,7 +192,7 @@ class video_Segmentation:
                         index = str(index).zfill(4)
 
                         audio_output = f'{temp_folder}/{filename}/{voice_dir}/{name}.wav'
-                        self.ffmpeg_extract(input_video, audio_output, start_time, end_time)
+                        self.ffmpeg_extract_audio(input_video, audio_output, start_time, end_time)
         # exit()
 
 
@@ -204,24 +204,24 @@ def crop(args):
 
     # checking if annotate_map is a file
     if not os.path.isfile(args.annotate_map):
-        print('annotate_map is not exist')
+        print(f'annotate_map {args.annotate_map} is not exist')
         return
 
     # checking if role_audios is a folder
     if not os.path.isdir(args.role_audios):
-        print('role_audios is not exist')
+        print(f'role_audios {args.role_audios} is not exist')
         # create role_audios folder
         os.mkdir(args.role_audios)
 
     data = pd.read_csv(args.annotate_map)
+    video_pth_segmentor = video_Segmentation()
+    audio_feature_extractor = AudioFeatureExtraction()
     for index, (annotate_csv,video_pth) in data.iterrows():
         # clip audio segement according to the subtile file timestamp ; output: *.wav
         # the subtile file has been labeled by role, here is a .csv format file
-        video_pth_segmentor = video_Segmentation()
-        video_pth_segmentor.clip_video_bycsv(annotate_csv, video_pth, args.role_audios)
+        video_pth_segmentor.clip_audio_bycsv(annotate_csv, video_pth, args.role_audios)
 
         # audio feature extract wav→pkl
-        audio_feature_extractor = AudioFeatureExtraction()
         video_pth_segmentor.extract_pkl_feat(audio_feature_extractor,args.role_audios)
 
 

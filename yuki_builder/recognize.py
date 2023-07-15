@@ -1,7 +1,7 @@
 # coding: utf-8
 
 import argparse
-import os
+import os,re
 import pickle
 from sklearn.neighbors import KNeighborsClassifier
 import numpy as np
@@ -89,6 +89,11 @@ class AudioClassification:
             writer.writerows(data)
         print(f'识别结果保存到csv, {filename}')
 
+    def correct_timestamp_format(self, s):
+        # 使用正则表达式查找匹配的时间戳，并将第3个冒号替换为点
+        corrected_s = re.sub(r'(\d{2}).(\d{2}).(\d{2}).(\d{3})', r'\1:\2:\3.\4', s)
+        return corrected_s
+
     def save_lis2txt(self,filename, lines):
         with open(filename, 'w', encoding='utf-8') as f:
             for line in lines:
@@ -134,8 +139,8 @@ class AudioClassification:
                 elif distance < threshold_doubt:
                     role_name = '(可能)' + predicted_label
 
-                start_time = start_time.replace('.', ':')
-                end_time = end_time.replace('.', ':')
+                start_time = self.correct_timestamp_format(start_time)
+                end_time = self.correct_timestamp_format(end_time)
                 res_lis.append([role_name, text, start_time, end_time])
 
                 text_content = role_name + ':「' + text + '」'
