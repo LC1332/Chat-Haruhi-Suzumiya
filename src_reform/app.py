@@ -42,10 +42,10 @@ class ChatPerson:
 
     def loadCharacter(self):
         pass
-        if (self.configuration["gpt"].lower == "true"):
+        if (self.configuration["gpt"]):
             print("选择使用GPT作为语言模型")
             self.initGPT()
-        if (self.configuration["gpt"].lower == "false"):
+        if (not self.configuration["gpt"]):
             print("选择使用本地模型作为语言模型")
             self.initLocalLLM()
 
@@ -73,7 +73,7 @@ class ChatPerson:
 
     def getResponse(self, user_message, chat_history_tuple):
         pass
-        if (self.configuration["gpt"].lower == "true"):
+        if (self.configuration["gpt"]):
             print("正在获取GPT回复")
             response = self.ChatGPT.get_response(user_message, chat_history_tuple)
             print("获取回复完毕")
