@@ -69,13 +69,15 @@ class video_Segmentation:
                     continue
         print('音频特征提取完成')
 
-    def extract_new_pkl_feat(self, audio_extractor, temp_folder):
+    def extract_new_pkl_feat(self, audio_extractor,input_video, temp_folder):
 
-        sub_dir = get_subdir(temp_folder)[0]
+        file = input_video.split('/')[-1]
+        filename, format = os.path.splitext(file)  # haruhi_01 .mkv
 
-        name = sub_dir.split('/')[-1]
+        # 找到对应的音频文件夹
+        sub_dir = f'{temp_folder}/{filename}'
         voice_files = get_filename(f'{sub_dir}/voice')
-        for file, pth in tqdm(voice_files,f'extract {name} audio features ,convert .wav to .pkl'):
+        for file, pth in tqdm(voice_files,f'extract {filename} audio features ,convert .wav to .pkl'):
             new_dir = os.path.join(sub_dir, 'feature')
             os.makedirs(new_dir, exist_ok=True)
             try:
@@ -147,22 +149,23 @@ class video_Segmentation:
                 start_time = start_time.to_time()
                 end_time = end_time.to_time()
                 text = make_filename_safe(subtitle.text)
-                index = str(index).zfill(4)
+                if text:
+                    index = str(index).zfill(4)
 
-                ss = str(start_time)
-                if len(ss) == 8:
-                    ss += '.000'
-                ee = str(end_time)
-                if len(ee) == 8:
-                    ee += '.000'
-                ss = ss.ljust(12, '0')[:12]
-                ee = ee.ljust(12, '0')[:12]
+                    ss = str(start_time)
+                    if len(ss) == 8:
+                        ss += '.000'
+                    ee = str(end_time)
+                    if len(ee) == 8:
+                        ee += '.000'
+                    ss = ss.ljust(12, '0')[:12]
+                    ee = ee.ljust(12, '0')[:12]
 
-                name = f'{index}_{ss}_{ee}_{text}'.replace(':', '.')
+                    name = f'{index}_{ss}_{ee}_{text}'.replace(':', '.')
 
-                # 使用FFmpeg切割视频
-                audio_output = f'{temp_folder}/{filename}/{voice_dir}/{name}.wav'
-                self.ffmpeg_extract(input_video, audio_output, start_time, end_time)
+                    # 使用FFmpeg切割视频
+                    audio_output = f'{temp_folder}/{filename}/{voice_dir}/{name}.wav'
+                    self.ffmpeg_extract(input_video, audio_output, start_time, end_time)
     
         elif sub_format == 'ass':
             subs = pysubs2.load(input_srt, encoding=encoding)
@@ -175,20 +178,21 @@ class video_Segmentation:
                 # 获取开始和结束时间
                 if subtitle.style == style:
                     text = make_filename_safe(subtitle.text)
-                    start_time = subtitle.start
-                    end_time = subtitle.end
-                    start_time = start_time / 1000
-                    end_time = end_time / 1000
+                    if text:
+                        start_time = subtitle.start
+                        end_time = subtitle.end
+                        start_time = start_time / 1000
+                        end_time = end_time / 1000
 
-                    ss = self.srt_format_timestamp(start_time)
-                    ee = self.srt_format_timestamp(end_time)
-                    index = str(index).zfill(4)
-                    name = f'{index}_{ss}_{ee}_{text}'.replace(':', '.')
-                    # 使用FFmpeg切割视频
-                    index = str(index).zfill(4)
+                        ss = self.srt_format_timestamp(start_time)
+                        ee = self.srt_format_timestamp(end_time)
+                        index = str(index).zfill(4)
+                        name = f'{index}_{ss}_{ee}_{text}'.replace(':', '.')
+                        # 使用FFmpeg切割视频
+                        index = str(index).zfill(4)
 
-                    audio_output = f'{temp_folder}/{filename}/{voice_dir}/{name}.wav'
-                    self.ffmpeg_extract(input_video, audio_output, start_time, end_time)
+                        audio_output = f'{temp_folder}/{filename}/{voice_dir}/{name}.wav'
+                        self.ffmpeg_extract(input_video, audio_output, start_time, end_time)
         # exit()
 
 
