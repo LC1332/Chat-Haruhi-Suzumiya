@@ -73,9 +73,12 @@ class video_Segmentation:
 
     def extract_new_pkl_feat(self, audio_extractor,input_video, temp_folder):
 
-        sub_dir = get_subdir(temp_folder)[0]
+        file = os.path.basename(input_video)
+        filename, format = os.path.splitext(file)  # haruhi_01 .mkv
 
-        name = sub_dir.split('/')[-1]
+        # 找到对应的音频文件夹
+        sub_dir = f'{temp_folder}/{filename}'
+
         voice_files = get_filename(f'{sub_dir}/voice')
         for file, pth in tqdm(voice_files,f'extract {filename} audio features ,convert .wav to .pkl'):
             new_dir = os.path.join(sub_dir, 'feature')
@@ -138,7 +141,7 @@ class video_Segmentation:
         print(voice_dir)
         # 创建对应的音频文件夹
         os.makedirs(f'{temp_folder}/{filename}/{voice_dir}', exist_ok=True)
-
+        print(f'{temp_folder}/{filename}/{voice_dir}')
         # 检测字幕编码
         encoding = detect_encoding(input_srt)
 
@@ -171,6 +174,7 @@ class video_Segmentation:
                     self.ffmpeg_extract_audio(input_video, audio_output, start_time, end_time)
     
         elif sub_format == 'ass':
+            # print("this is ass")
             subs = pysubs2.load(input_srt, encoding=encoding)
             if not style:
                 style_lis = [sub.style for sub in subs]
@@ -178,6 +182,7 @@ class video_Segmentation:
                 style = most_1[0][0]  
             new_subs = [sub for sub in subs if sub.style == style]
             for index, subtitle in enumerate(new_subs[:]):
+                # print(index, subtitle)
                 # 获取开始和结束时间
                 if subtitle.style == style:
                     text = make_filename_safe(subtitle.text)
@@ -195,6 +200,7 @@ class video_Segmentation:
                         index = str(index).zfill(4)
 
                         audio_output = f'{temp_folder}/{filename}/{voice_dir}/{name}.wav'
+                        print(audio_output)
                         self.ffmpeg_extract_audio(input_video, audio_output, start_time, end_time)
         # exit()
 
