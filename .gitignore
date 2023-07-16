@@ -186,7 +186,6 @@ pnpm-debug.log*
 *.sln
 *.sw?
 
-data_crop/role_audios/
-data_crop/audio_pkl_out/
-data_crop/
+yuki_builder/input_folder/
+yuki_builder/output_folder/
 

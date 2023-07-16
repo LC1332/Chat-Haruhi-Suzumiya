@@ -86,3 +86,10 @@ def get_filename(directory,format=None):
 def write_to_file(file,line,mode='w'):
     with open(file,mode=mode,encoding='utf-8') as f:
         f.write(line+'\n')
+
+
+#把一个列表写入到文本文件
+def save_lis2txt(file,lines):
+    with open(file,'w',encoding='utf-8') as f:
+        for line in lines:
+            f.write(str(line)+'\n')
