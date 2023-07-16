@@ -1,24 +1,34 @@
-from zipfile import ZipFile
+import json
 import os
-import openai
+from datetime import datetime
+from zipfile import ZipFile
+
 import gradio as gr
 from app import ChatPerson
 from text import Text
 
 
-
 def create_gradio(chat_person):
     # from google.colab import drive
     # drive.mount(drive_path)
-    def respond(api_key, role_name, user_message, chat_history):
-        if openai.api_key is None:
-            openai.api_key = api_key
-            os.environ["OPENAI_API_KEY"] = openai.api_key
+    def save_dialogue(messages):
+        now = datetime.now()
+        path = os.path.join(chat_person.ChatGPT.dialogue_path, f"{now.strftime('%Y-%m-%d')}.jsonl")
+        if os.path.exists(path):
+            f = open(path, 'a', encoding='utf-8')
+        else:
+            f = open(path, 'w+', encoding='utf-8')
+        for msg in messages:
+            json.dump(msg, f, ensure_ascii=False)
+            f.write('\n')
+        f.close()
+
+    def respond(role_name, user_message, chat_history):
         print("history is here : ", chat_history)
         input_message = role_name + ':「' + user_message + '」'
         bot_message = chat_person.getResponse(input_message, chat_history)
         chat_history.append((input_message, bot_message))
-
+        save_dialogue((input_message, bot_message))
         # self.save_response(chat_history)
         # time.sleep(1)
         # jp_text = pipe(f'<-zh2ja-> {bot_message}')[0]['translation_text']
@@ -47,6 +57,7 @@ def create_gradio(chat_person):
     def generate(file):
         return {gen: gr.update(visible=False),
                 chat: gr.update(visible=True)}
+
     with gr.Blocks() as demo:
         gr.Markdown(
             """
@@ -55,9 +66,8 @@ def create_gradio(chat_person):
             """
         )
         with gr.Tab("Chat-Haruhi") as chat:
-            api_key = gr.Textbox(label="输入key")
-            character = gr.Radio(["凉宫春日", "李云龙"], label="选择角色", value='凉宫春日')
-            
+            api_key = gr.Textbox(label="输入key", value="sr-xxxxxxxx")
+            character = gr.Radio(["凉宫春日", "李云龙"], label="Character", value='凉宫春日')
             image_input = gr.Textbox(visible=False)
             japanese_input = gr.Textbox(visible=False)
             with gr.Row():
@@ -74,20 +84,18 @@ def create_gradio(chat_person):
             sub = gr.Button("Submit")
             # audio_store = gr.Textbox(interactive=False)
 
-
             # def update_audio(audio, japanese_output):
             #     japanese_output = japanese_output.split("春日:")[1]
             #     jp_audio_store = vits_haruhi.vits_haruhi(japanese_output, 4)
             #     return gr.update(value=jp_audio_store, visible=True)
 
-
             character.change(fn=switchCharacter, inputs=[character, chatbot], outputs=[chatbot, image_output])
 
             clear.click(lambda: None, None, chatbot, queue=False)
             # msg.submit(respond, [role_name, msg, chatbot], [msg, chatbot, image_input, japanese_output])
-            msg.submit(respond, [api_key, role_name, msg, chatbot], [msg, chatbot, image_input])
+            msg.submit(respond, [role_name, msg, chatbot], [msg, chatbot, image_input])
             # sub.click(fn=respond, inputs=[role_name, msg, chatbot], outputs=[msg, chatbot, image_input, japanese_output])
-            sub.click(fn=respond, inputs=[api_key, role_name, msg, chatbot], outputs=[msg, chatbot, image_input])
+            sub.click(fn=respond, inputs=[role_name, msg, chatbot], outputs=[msg, chatbot, image_input])
             # audio_btn.click(fn=update_audio, inputs=[audio, japanese_output], outputs=audio)
 
             image_button.click(getImage, inputs=image_input, outputs=image_output)
@@ -140,7 +148,8 @@ def create_gradio(chat_person):
                              outputs=[custom_msg, chatbot, image_input])
             # custom_audio_btn.click(fn=update_audio, inputs=[audio, japanese_output], outputs=audio)
             generate_btn.click(generate, role_name, [gen, chat])
-    demo.launch(debug=True,share=True)
+    demo.launch(debug=True, share=True)
+
 
 chat_person = ChatPerson()
 create_gradio(chat_person)
