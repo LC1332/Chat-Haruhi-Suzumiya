@@ -14,6 +14,8 @@ import pandas as pd
 from audio_feature_ext.audio_fea_ext import AudioFeatureExtraction
 from tqdm import tqdm
 
+
+
 def detect_encoding(file_name):
     with open(file_name, 'rb') as file:
         result = chardet.detect(file.read())
@@ -57,7 +59,7 @@ class video_Segmentation:
 
         for dir in sub_dirs[:]:
             voice_files = get_filename(dir)
-            name = dir.split('/')[-1]
+            name = os.path.basename(os.path.normpath(dir))
             for file, pth in tqdm(voice_files, f'extract {name} audio features ,convert .wav to .pkl'):
                 new_dir = os.path.join(role_audios, 'feature',name)
                 os.makedirs(new_dir, exist_ok=True)
@@ -71,9 +73,12 @@ class video_Segmentation:
 
     def extract_new_pkl_feat(self, audio_extractor, temp_folder):
 
-        sub_dir = get_subdir(temp_folder)[0]
+        print("temp_folder: " + temp_folder)
 
-        name = sub_dir.split('/')[-1]
+        sub_dir = get_subdir(temp_folder)[0]
+        print("sub_dir: " + sub_dir)
+        # name = sub_dir.split('/')[-1]
+        name = os.path.basename(os.path.normpath(sub_dir))
         voice_files = get_filename(f'{sub_dir}/voice')
         for file, pth in tqdm(voice_files,f'extract {name} audio features ,convert .wav to .pkl'):
             new_dir = os.path.join(sub_dir, 'feature')
@@ -128,9 +133,12 @@ class video_Segmentation:
         style = ''
         sub_format = input_srt.split('.')[-1]
         voice_dir = 'voice'
-        file = input_video.split('/')[-1]
-        filename, format = os.path.splitext(file)  # haruhi_01 .mkv
+        # 获取filename
 
+        file = os.path.basename(input_video)
+        filename, format = os.path.splitext(file)  # haruhi_01 .mkv
+        print(filename)
+        print(voice_dir)
         # 创建对应的音频文件夹
         os.makedirs(f'{temp_folder}/{filename}/{voice_dir}', exist_ok=True)
 

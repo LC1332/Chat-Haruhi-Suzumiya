@@ -32,9 +32,11 @@ threshold = 0.5
 audio_duration = 3
 feature_method = 'melspectrogram'
 resume = 'models/'
+
 if not os.path.exists(resume):
     os.makedirs(resume)
-    init_models(resume)
+init_models(resume)
+
 # 初始化一个已知声音列表
 voice_list = []
 feature_list = []
