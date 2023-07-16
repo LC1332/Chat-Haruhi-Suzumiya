@@ -67,6 +67,8 @@ def internalise(lines):
     cue = 0	
     current_state = WAITING
     start_time = ""
+    prev_start_time = ""
+    prev_end_time = ""
     end_time = ""
     text = ""
     text_line = 0
@@ -76,14 +78,19 @@ def internalise(lines):
         if "-->" in line:
             cue += 1
             start_time = line[0:12]
-            end_time = line[17:]
+            end_time = line[16:]
+            #del duplicated interval
+            if start_time == prev_start_time and end_time == prev_end_time:
+                continue
+            prev_start_time = start_time
+            prev_end_time = end_time
             current_state = GET_TEXT
             text_line = 0
             current_cue["TimecodeIn"] = start_time
             current_cue["TimecodeOut"] = end_time
             continue
-        # if line == "":
-        if line == "" or is_japenese(line):
+        if line == "":
+        # if line == "" or is_japenese(line):
             current_cue["Text"] = text
             result.append(current_cue)
             current_cue = {}
