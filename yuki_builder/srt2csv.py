@@ -77,8 +77,8 @@ def internalise(lines):
         line = line.strip()
         if "-->" in line:
             cue += 1
-            start_time = line[0:12]
-            end_time = line[16:]
+            start_time = line.split('-->')[0].strip()
+            end_time = line.split('-->')[1].strip()
             #del duplicated interval
             if start_time == prev_start_time and end_time == prev_end_time:
                 continue
