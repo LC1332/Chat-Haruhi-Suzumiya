@@ -15,7 +15,7 @@ import pickle
 from argparse import Namespace
 import torch
 from PIL import Image
-from torch import cosine_similarit
+from torch import cosine_similarity
 from transformers import AutoTokenizer, AutoModel
 from langchain.prompts.chat import (
     ChatPromptTemplate,
