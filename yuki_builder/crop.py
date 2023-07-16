@@ -92,7 +92,7 @@ class video_Segmentation:
         self.annotate_csv = annotate_csv
         self.video_pth = video_pth
         self.role_audios = role_audios
-        srt_data = pd.read_csv(self.annotate_csv)
+        srt_data = pd.read_csv(self.annotate_csv).iloc[:,:4]
         srt_data = srt_data.dropna()
         srt_list = srt_data.values.tolist()
         for index, (person,subtitle,start_time,end_time) in enumerate(tqdm(srt_list[:], 'video clip by csv file start')):

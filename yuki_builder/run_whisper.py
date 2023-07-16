@@ -18,6 +18,7 @@ try:
 except ImportError:
     print("check requirements: yuki_builder/requirements_run_whisper.txt")
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+from hanziconv import HanziConv
 
 
 class Video2Subtitles(object):
@@ -48,10 +49,19 @@ class Video2Subtitles(object):
             count += 1
             print(
                 f"{self.srt_format_timestamp(segment['start'])} --> {self.srt_format_timestamp(segment['end'])}\n"
-                f"{segment['text'].replace('-->', '->').strip()}\n",
+                f"{self.trad2simp(segment['text']).replace('-->', '->').strip()}\n",
                 file=file,
                 flush=True,
             )
+
+    def trad2simp(self,text):
+        """
+        # traditional chinese into simplified chinese
+        :param text: 
+        :return: 
+        """
+        simp = HanziConv.toSimplified(text)
+        return simp
 
     def transcribe(self, input_video: str, srt_folder: str):
         subtitle_format = "srt"
