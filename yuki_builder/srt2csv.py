@@ -40,6 +40,8 @@ def render_csv(final_result, csv_file):
         writer = csv.writer(file)
         writer.writerow(["空白","内容","开始时间","结束时间"])
         for i in final_result:    
+            if not (i["Text"] and i["TimecodeIn"] and i["TimecodeOut"]):
+                continue
             writer.writerow(['',i["Text"],i["TimecodeIn"],i["TimecodeOut"]])
     return
 
@@ -133,3 +135,4 @@ if __name__ == '__main__':
     parser.print_help()
     srt2csv(args)
 
+#python srt2csv.py --srt_folder srt_result --input_srt ./test_data/bad_case.srt verbose=True
