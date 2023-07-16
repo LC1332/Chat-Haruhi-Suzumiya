@@ -15,7 +15,7 @@ import pickle
 from argparse import Namespace
 import torch
 from PIL import Image
-from torch import cosine_similarity
+from torch import cosine_similarit
 from transformers import AutoTokenizer, AutoModel
 from langchain.prompts.chat import (
     ChatPromptTemplate,
@@ -58,6 +58,7 @@ class ChatGPT:
         self.max_len_story = int(configuration['max_len_story'])
         self.max_len_history = int(configuration['max_len_history'])
         self.save_path = configuration['save_path']
+        self.dialogue_path = configuration['dialogue_path']
         openai.api_key = configuration["openai_key_1"] + configuration["openai_key_2"]
         os.environ["OPENAI_API_KEY"] = openai.api_key
         self.enc = tiktoken.get_encoding("cl100k_base")
