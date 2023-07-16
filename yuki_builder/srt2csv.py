@@ -6,6 +6,7 @@ import os
 import pathlib
 import csv
 import ass
+import re
 
 def srt2csv(args):
     if args.verbose:
@@ -41,10 +42,23 @@ def render_csv(final_result, csv_file):
         writer.writerow(["空白","内容","开始时间","结束时间"])
         for i in final_result:    
             if not (i["Text"] and i["TimecodeIn"] and i["TimecodeOut"]):
+                #print(i)
                 continue
             writer.writerow(['',i["Text"],i["TimecodeIn"],i["TimecodeOut"]])
     return
 
+def is_japenese(line):
+    #unicode japanese katakana 
+    re_words_1 = re.compile(u"[\u30a0-\u30ff]+") 
+    #unicode japanese hiragana 
+    re_words_2 = re.compile(u"[\u3040-\u309f]+") 
+    m_1 = re_words_1.search(line, 0) 
+    m_2 = re_words_2.search(line, 0) 
+    if m_1 or m_2:
+        # print(line)
+        return True
+    return False
+ 
 #parse srt
 def internalise(lines):
     result = []
@@ -68,7 +82,8 @@ def internalise(lines):
             current_cue["TimecodeIn"] = start_time
             current_cue["TimecodeOut"] = end_time
             continue
-        if line == "":
+        # if line == "":
+        if line == "" or is_japenese(line):
             current_cue["Text"] = text
             result.append(current_cue)
             current_cue = {}
