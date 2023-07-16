@@ -189,3 +189,17 @@ pnpm-debug.log*
 yuki_builder/input_folder/
 yuki_builder/output_folder/
 
+yuki_builder/audio_feature_ext/models/model.pth
+yuki_builder/audio_feature_ext/models/model.state
+yuki_builder/audio_feature_ext/models/optimizer.pth
+yuki_builder/testWhisper/[Sakurato] Oshi no Ko [11][AVC-8bit 1080p AAC][CHS&JPN].csv
+yuki_builder/testWhisper/[Sakurato] Oshi no Ko [11][AVC-8bit 1080p AAC][CHS&JPN].srt
+yuki_builder/testWhisper/Oshi.no.Ko.S01E11.Idol.1080p.NF.WEB-DL.AAC2.0.H.264-ZigZag.cht&jp.csv
+yuki_builder/testWhisper/[Sakurato] Oshi no Ko [11][AVC-8bit 1080p AAC][CHS&JPN].csv
+yuki_builder/testWhisper/[Sakurato] Oshi no Ko [11][AVC-8bit 1080p AAC][CHS&JPN].srt
+yuki_builder/testWhisper/[Sakurato] Oshi no Ko [11][AVC-8bit 1080p AAC][CHS&JPN].csv
+yuki_builder/testWhisper/[Sakurato] Oshi no Ko [11][AVC-8bit 1080p AAC][CHS&JPN].srt
+yuki_builder/testAudio/*
+yuki_builder/testWhisper/*
+
+
