@@ -8,6 +8,7 @@ import csv
 import ass
 import re
 
+HAS_CHINESE = False
 def srt2csv(args):
     if args.verbose:
         print('runing srt2csv')
@@ -30,8 +31,7 @@ def srt2csv(args):
     if not (pathlib.Path(input_srt_file).suffix == '.srt' or pathlib.Path(input_srt_file).suffix == '.ass'):
         print('Error: The input file {} must be a .srt or .ass file'.format(input_srt_file))
         return
-    
-    convert(input_srt_file, output_folder)
+    convert(input_srt_file, output_folder, True)
 
 #create csv file
 def render_csv(final_result, csv_file):
@@ -60,7 +60,7 @@ def is_japenese(line):
     return False
  
 #parse srt
-def internalise(lines):
+def internalise(lines, keep_japanese):
     result = []
     GET_TEXT = 1
     WAITING = 2
@@ -80,17 +80,16 @@ def internalise(lines):
             start_time = line.split('-->')[0].strip()
             end_time = line.split('-->')[1].strip()
             #del duplicated interval
-            if start_time == prev_start_time and end_time == prev_end_time:
-                continue
-            prev_start_time = start_time
-            prev_end_time = end_time
+            # if start_time == prev_start_time and end_time == prev_end_time:
+            #     continue
+            # prev_start_time = start_time
+            # prev_end_time = end_time
             current_state = GET_TEXT
             text_line = 0
             current_cue["TimecodeIn"] = start_time
             current_cue["TimecodeOut"] = end_time
             continue
-        if line == "":
-        # if line == "" or is_japenese(line):
+        if line == "" or (is_japenese(line) and not keep_japanese): 
             current_cue["Text"] = text
             result.append(current_cue)
             current_cue = {}
@@ -132,13 +131,13 @@ def parse_ass(input_file):
         })
     return result
 
-def convert(input_srt_file, output_folder):
+def convert(input_srt_file, output_folder, keep_japanese):
     os.makedirs(output_folder, exist_ok=True)
     output_csv_file = output_folder + "/" + pathlib.Path(input_srt_file).stem + "." + 'csv'
     result = None
     if pathlib.Path(input_srt_file).suffix == '.srt':
         lines = read_srt(input_srt_file)
-        result = internalise(lines)     
+        result = internalise(lines, keep_japanese)     
     elif pathlib.Path(input_srt_file).suffix == '.ass':
         result = parse_ass(input_srt_file)
     render_csv(result, output_csv_file)
