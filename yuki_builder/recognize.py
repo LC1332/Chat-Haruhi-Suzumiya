@@ -120,13 +120,13 @@ class AudioClassification:
         txt_save_name = os.path.join(output_folder, f'{name}_output.txt')
         feature_folder = os.path.join(sub_dir,"feature")  # 遍历特征文件
 
-        file_list = os.listdir(feature_folder)
 
-        file_list.sort(key = lambda x: int(x.split('_')[0]))
+        file_list = get_filelist(feature_folder)
         res_lis = [['人物','人物台词','开始时间','结束时间']]
         txt_lis = []
         for file in file_list[:]:
             try:
+                file = os.path.basename(file)
                 id_str = file[:-8]
                 index,start_time, end_time , text= id_str.split('_')
                 full_file_name = os.path.join(feature_folder, file)
