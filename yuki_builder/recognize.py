@@ -67,7 +67,8 @@ class AudioClassification:
         dim = 0
         role_dirs = get_subdir(audio_feature_dir+'/feature')
         for role_dir in role_dirs:
-            role = role_dir.split('/')[-1]
+            # role = role_dir.split('/')[-1]
+            role = os.path.basename(os.path.normpath(role_dir))
             file_list = get_filelist(role_dir)
             for feature_fname in file_list:
                 with open(feature_fname, 'rb') as f:
@@ -111,7 +112,9 @@ class AudioClassification:
         threshold_certain = 0.4
         threshold_doubt = 0.6 # 遍历视频切割的目录
         sub_dir = get_subdir(temp_folder)[0]
-        name = sub_dir.split('/')[-1]
+        # name = sub_dir.split('/')[-1]
+
+        name = os.path.basename(os.path.normpath(sub_dir))
 
         csv_save_name = os.path.join(output_folder, f'{name}_output.csv')
         txt_save_name = os.path.join(output_folder, f'{name}_output.txt')
@@ -191,14 +194,14 @@ def recognize(args):
 
     # audio features extract wav→pkl
     audio_feature_extractor = AudioFeatureExtraction()
-    video_pth_segmentor.extract_new_pkl_feat(audio_feature_extractor,temp_folder)
+    video_pth_segmentor.extract_new_pkl_feat(audio_feature_extractor, args.input_video,temp_folder)
 
     # role classify
     audio_classification = AudioClassification()
     audio_classification.get_pridict(args.role_audios,args.output_folder,temp_folder)
 
     # delete the temp folder
-    shutil.rmtree(temp_folder)
+    # shutil.rmtree(temp_folder)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(

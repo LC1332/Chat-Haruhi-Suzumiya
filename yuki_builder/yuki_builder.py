@@ -33,10 +33,13 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     if args.subcommand == 'whisper':
+        # 自动识别，输出字幕
         run_whisper(args)
     elif args.subcommand == 'srt2csv':
+        # 将字幕转换为csv
         srt2csv(args)
     elif args.subcommand == 'crop':
+        # 手动分类，输出标注文件
         crop(args)
     elif args.subcommand == 'recognize':
         recognize(args)

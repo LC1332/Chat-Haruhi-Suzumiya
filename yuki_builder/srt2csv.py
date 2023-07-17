@@ -6,6 +6,7 @@ import os
 import pathlib
 import csv
 import ass
+import re
 
 def srt2csv(args):
     if args.verbose:
@@ -41,10 +42,23 @@ def render_csv(final_result, csv_file):
         writer.writerow(["空白","内容","开始时间","结束时间"])
         for i in final_result:    
             if not (i["Text"] and i["TimecodeIn"] and i["TimecodeOut"]):
+                #print(i)
                 continue
             writer.writerow(['',i["Text"],i["TimecodeIn"],i["TimecodeOut"]])
     return
 
+def is_japenese(line):
+    #unicode japanese katakana 
+    re_words_1 = re.compile(u"[\u30a0-\u30ff]+") 
+    #unicode japanese hiragana 
+    re_words_2 = re.compile(u"[\u3040-\u309f]+") 
+    m_1 = re_words_1.search(line, 0) 
+    m_2 = re_words_2.search(line, 0) 
+    if m_1 or m_2:
+        # print(line)
+        return True
+    return False
+ 
 #parse srt
 def internalise(lines):
     result = []
@@ -53,6 +67,8 @@ def internalise(lines):
     cue = 0	
     current_state = WAITING
     start_time = ""
+    prev_start_time = ""
+    prev_end_time = ""
     end_time = ""
     text = ""
     text_line = 0
@@ -61,14 +77,20 @@ def internalise(lines):
         line = line.strip()
         if "-->" in line:
             cue += 1
-            start_time = line[0:12]
-            end_time = line[17:]
+            start_time = line.split('-->')[0].strip()
+            end_time = line.split('-->')[1].strip()
+            #del duplicated interval
+            if start_time == prev_start_time and end_time == prev_end_time:
+                continue
+            prev_start_time = start_time
+            prev_end_time = end_time
             current_state = GET_TEXT
             text_line = 0
             current_cue["TimecodeIn"] = start_time
             current_cue["TimecodeOut"] = end_time
             continue
         if line == "":
+        # if line == "" or is_japenese(line):
             current_cue["Text"] = text
             result.append(current_cue)
             current_cue = {}
