@@ -5,3 +5,6 @@ ass==0.5.4
 pysubs2==1.6.1
 librosa==0.10.0.post2
 hanziconv==0.3.2
+chardet==5.1.0
+pysrt==1.1.2
+pandas==2.0.3

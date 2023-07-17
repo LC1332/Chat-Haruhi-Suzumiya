@@ -33,7 +33,7 @@ pip3 install -r requirements.txt
 ### 从视频中提取字幕
 支持从视频中提取字幕，输出为srt格式
 ```ps
-python yuki_builder.py whisper <input_video> -srt_folder <srt_folder>
+python yuki_builder.py whisper -input_video <input_video> -srt_folder <srt_folder>
 ```
 **input_video**: 输入视频文件路径
 **srt_folder**: 输出字幕文件夹路径
