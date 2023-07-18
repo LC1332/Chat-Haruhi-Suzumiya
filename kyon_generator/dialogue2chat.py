@@ -8,7 +8,7 @@ import argparse
 # 用法：python dialogue2chat.py -input <input_file> -output <output_file> -role <role_name> -other_names <other_names>
 # 其中，input_file是聊天记录文件，output_file是输出文件，如果不指定，则默认为input_file_one_line_chat.jsonl
 # role_name是主角的名字，如果不指定，则默认为春日
-# other_names是其他角色的名字，如果不指定，则默认为空
+# other_names是主角的其他名字（对于凉宫春日来说，有凉宫春日，凉宫），如果不指定，则默认为空
 
 def process_dialogue(input_file, output_file, role, other_names):
     """
