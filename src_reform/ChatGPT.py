@@ -30,6 +30,7 @@ from langchain.schema import (
 )
 import utils
 
+
 # OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY2")
 # openai.proxy = "http://127.0.0.1:7890"
 
@@ -180,26 +181,6 @@ class ChatGPT:
             final_selected.append(sample_topic)
 
         return story, final_selected
-
-    def organize_message(self, story, history_chat, history_response, new_query):
-        messages = [{'role': 'system', 'content': self.system_prompt},
-                    {'role': 'user', 'content': story}]
-
-        n = len(history_chat)
-        if n != len(history_response):
-            print('warning, unmatched history_char length, clean and start new chat')
-            # clean all
-            history_chat = []
-            history_response = []
-            n = 0
-
-        for i in range(n):
-            messages.append({'role': 'user', 'content': history_chat[i]})
-            messages.append({'role': 'user', 'content': history_response[i]})
-
-        messages.append({'role': 'user', 'content': new_query})
-
-        return messages
 
     def keep_tail(self, history_chat, history_response):
         n = len(history_chat)

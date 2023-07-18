@@ -1,3 +1,4 @@
+import hashlib
 import json
 import os
 from datetime import datetime
@@ -11,24 +12,31 @@ from text import Text
 def create_gradio(chat_person):
     # from google.colab import drive
     # drive.mount(drive_path)
-    def save_dialogue(messages):
-        now = datetime.now()
-        path = os.path.join(chat_person.ChatGPT.dialogue_path, f"{now.strftime('%Y-%m-%d')}.jsonl")
+    def generate_user_id(ip_address):
+        hash_object = hashlib.sha256(ip_address.encode())
+        return hash_object.hexdigest()
+
+    def save_dialogue(host, messages):
+        hash_value = generate_user_id(host)
+        path = os.path.join(chat_person.ChatGPT.dialogue_path, f"{hash_value}.jsonl")
         if os.path.exists(path):
             f = open(path, 'a', encoding='utf-8')
         else:
             f = open(path, 'w+', encoding='utf-8')
         for msg in messages:
-            json.dump(msg, f, ensure_ascii=False)
+            # "阿虚:「你好」" -->  {"role": "阿虚", "text": "你好","source":"user"}
+            res = msg.split(':')
+            item = {"role": res[0], "text": res[1][1:-1], "source": "user"}
+            json.dump(item, f, ensure_ascii=False)
             f.write('\n')
         f.close()
 
-    def respond(role_name, user_message, chat_history):
+    def respond(role_name, user_message, chat_history, request: gr.Request):
         print("history is here : ", chat_history)
         input_message = role_name + ':「' + user_message + '」'
         bot_message = chat_person.getResponse(input_message, chat_history)
         chat_history.append((input_message, bot_message))
-        save_dialogue((input_message, bot_message))
+        save_dialogue(request.client.host, (input_message, bot_message))
         # self.save_response(chat_history)
         # time.sleep(1)
         # jp_text = pipe(f'<-zh2ja-> {bot_message}')[0]['translation_text']
