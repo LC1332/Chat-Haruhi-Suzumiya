@@ -77,6 +77,15 @@ class ChatGPT:
         self.title_to_text = None
         self.titles = None
 
+        self.is_train_generating = False
+        self.role_name = ""
+        self.other_names = []
+
+    def set_training(self, role_name, other_names):
+        self.is_train_generating = True
+        self.role_name = role_name
+        self.other_names = other_names
+
     def preload(self):
         self.image_embed = self.load(load_image_embed=True)
         self.title_text_embed, self.title_to_text, self.titles = self.load(load_title_text_embed=True)
@@ -163,6 +172,27 @@ class ChatGPT:
             if len(top_k_title) == k:
                 break
         return top_k_title
+    
+    def organize_stories_with_maxlen_for_training(self, selected_sample):
+        stories = []
+
+        count = 0
+
+        for sample_topic in selected_sample:
+            # find sample_answer in dictionary
+            sample_story = self.title_to_text[sample_topic]
+
+            sample_len = len(self.enc.encode(sample_story))
+            # print(sample_topic, ' ' , sample_len)
+            if sample_len + count > self.max_len_story:
+                break
+
+            stories.append(sample_story)
+
+            count += sample_len
+
+        return stories
+
 
     def organize_story_with_maxlen(self, selected_sample):
         story = "\n"
@@ -233,6 +263,37 @@ class ChatGPT:
             keep_k += 1
 
         return history_chat[-keep_k:], history_response[-keep_k:]
+    
+    def divide_story(self, story):
+        # TODO divide story follow the instruction in the document
+        pass
+    
+    def organize_message_langchain_for_training(self, storys, history_chat, history_response, new_query):
+        messages = [
+            SystemMessage(content=self.system_prompt)
+        ]
+
+        for story in storys:
+            ai_message, human_message = self.divide_story(story)
+            messages.append(AIMessage(content=ai_message))
+            messages.append(HumanMessage(content=human_message))
+
+        n = len(history_chat)
+        if n != len(history_response):
+            print('warning, unmatched history_char length, clean and start new chat')
+            # clean all
+            history_chat = []
+            history_response = []
+            n = 0
+
+        for i in range(n):
+            messages.append(HumanMessage(content=history_chat[i]))
+            messages.append(AIMessage(content=history_response[i]))
+
+        # messages.append( {'role':'user', 'content':new_query })
+        messages.append(HumanMessage(content=new_query))
+        print(messages)
+        return messages
 
     def organize_message_langchain(self, story, history_chat, history_response, new_query):
         # messages =  [{'role':'system', 'content':SYSTEM_PROMPT}, {'role':'user', 'content':story}]
@@ -275,14 +336,24 @@ class ChatGPT:
 
         new_query = user_message
 
-        selected_sample = self.retrieve_title(new_query, 7)
-        print("备选辅助：", selected_sample)
-        story, selected_sample = self.organize_story_with_maxlen(selected_sample)
+        if (self.is_train_generating == False) or (self.role_name == ""):
 
-        ## TODO: visualize seletected sample later
-        print('当前辅助sample:', selected_sample)
+            selected_sample = self.retrieve_title(new_query, 7)
+            print("备选辅助：", selected_sample)
+            story, selected_sample = self.organize_story_with_maxlen(selected_sample)
 
-        messages = self.organize_message_langchain(story, history_chat, history_response, new_query)
+            ## TODO: visualize seletected sample later
+            print('当前辅助sample:', selected_sample)
+            messages = self.organize_message_langchain(story, history_chat, history_response, new_query)
+        else:
+            selected_sample = self.retrieve_title(new_query, 7)
+            print("备选辅助：", selected_sample)
+            stories = self.organize_stories_with_maxlen_for_training(selected_sample)
+            
+            messages = self.organize_message_langchain_for_training(stories, history_chat, history_response, new_query)
+
+
+
         chat = ChatOpenAI(temperature=0)
         return_msg = chat(messages)
 
