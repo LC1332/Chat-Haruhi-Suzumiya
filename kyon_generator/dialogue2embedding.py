@@ -4,14 +4,14 @@ First Edition
 Edited by 睡觉鱼, Jul 18 2023
 '''
 
-from datasets import load_dataset,concatenate_datasets,Dataset
+import json
 import torch
 import torch.nn as nn
 from argparse import Namespace
 from transformers import AutoTokenizer, AutoModel
 
 def dialogue2embedding(dialogues,tokenizer,model):
-    texts = dialogues['train']['context'][0]
+    texts = dialogues['context']
     embeddings = []
 
     for text in texts:
@@ -27,12 +27,9 @@ def dialogue2embedding(dialogues,tokenizer,model):
                         return_dict=True,
                         sent_emb=True).pooler_output    
                 
-        embeddings.append(embed)
+        embeddings.append(embed.numpy().tolist())
     
-    embed_dict = {'embedding':[embeddings]}
-    embed_dict = Dataset.from_dict(embed_dict)
-
-    dialogues['train'] = concatenate_datasets([dialogues['train'], embed_dict], axis=1)
+    dialogues['embedding'] = embeddings
     return dialogues
 
 if __name__ == '__main__':
@@ -41,6 +38,10 @@ if __name__ == '__main__':
     model_args = Namespace(do_mlm=None, pooler_type="cls", temp=0.05, mlp_only_train=False, init_embeddings_model=None)
     luotuo_model = AutoModel.from_pretrained("silk-road/luotuo-bert", trust_remote_code=True, model_args=model_args)
 
-    dialogues = load_dataset("json", data_files= DATA_PATH)
+    with open ('dialogue.json') as f:
+        dialogues = json.load(f)
+
     dialogue_embeddings = dialogue2embedding(dialogues,luotuo_tokenizer,luotuo_model)
-    dialogue_embeddings['train'].to_json("dataset.json")
+    with open("myfile.json", "w") as o:
+        json.dump(dialogue_embeddings,o)
+    
