@@ -24,9 +24,9 @@ def create_gradio(chat_person):
         else:
             f = open(path, 'w+', encoding='utf-8')
         for msg in messages:
-            # "阿虚:「你好」" -->  {"role": "阿虚", "text": "你好","source":"user"}
+            # "阿虚:「你好」" -->  {"role": "阿虚", "text": "你好"}
             res = msg.split(':')
-            item = {"role": res[0], "text": res[1][1:-1], "source": "user"}
+            item = {"role": res[0], "text": res[1][1:-1]}
             json.dump(item, f, ensure_ascii=False)
             f.write('\n')
         f.close()
