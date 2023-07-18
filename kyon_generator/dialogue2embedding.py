@@ -10,30 +10,9 @@ import torch.nn as nn
 from argparse import Namespace
 from transformers import AutoTokenizer, AutoModel
 
-def get_embedding(texts,tokenizer,model,max_len= 512):
-    if len(text) > max_len:
-        text = text[:max_len]
-    input = [text]
-    # Tokenize the text
-    inputs = tokenizer(input,
-                    padding=True,
-                    truncation=True,
-                    return_tensors='pt')
-    # Extract the embeddings
-    with torch.no_grad():
-        embeddings = model(**inputs,
-                        output_hidden_states=True,
-                        return_dict=True,
-                        sent_emb=True).pooler_output
-                        
-    return embeddings[0]
-
-
 def dialogue2embedding(dialogues,tokenizer,model):
     texts = dialogues['train']['context'][0]
     embeddings = []
-
-    print(texts)
 
     for text in texts:
         input = [text]
