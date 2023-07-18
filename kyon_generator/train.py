@@ -1,8 +1,9 @@
 '''
 FILE_NAME: Train.py
-First Edition
+GLM2-LoRA Edition
 Edited by 睡觉鱼, Jul 18 2023
 '''
+
 %pip install -qU protobuf transformers==4.30.2 cpm_kernels torch>=2.0 mdtex2html sentencepiece accelerate
 %pip install -qU datasets loralib
 %pip install -qU jupyter
