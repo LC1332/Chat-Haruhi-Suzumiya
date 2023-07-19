@@ -36,6 +36,7 @@ from langchain.schema import (
     SystemMessage
 )
 import utils
+import re
 
 # OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY2")
 # openai.proxy = "http://127.0.0.1:7890"
@@ -54,6 +55,7 @@ import utils
 class ChatGPT:
     def __init__(self, configuration):
         self.configuration = configuration
+        self.in_training_generating = configuration.getboolean('in_training_generating', False)
         self.image_embed_jsonl_path = configuration['image_embed_jsonl_path']
         self.title_text_embed_jsonl_path = configuration['title_text_embed_jsonl_path']
         self.images_folder = configuration['images_folder']
@@ -265,8 +267,16 @@ class ChatGPT:
         return history_chat[-keep_k:], history_response[-keep_k:]
     
     def divide_story(self, story):
-        # TODO divide story follow the instruction in the document
-        pass
+        storys = re.split(r'\n{2,}', story.trim())
+        res = []
+        for s in storys:
+            lines = s.split('\n')
+            
+            for i in range(len(lines)):
+                if lines[i].startswith(self.role_name) or any([lines[i].startswith(name) for name in self.other_names]):
+                    res.append(['\n'.join(lines[:i]), '\n'.join(lines[i:])])
+                    break
+        return res
     
     def organize_message_langchain_for_training(self, storys, history_chat, history_response, new_query):
         messages = [
@@ -293,8 +303,36 @@ class ChatGPT:
         # messages.append( {'role':'user', 'content':new_query })
         messages.append(HumanMessage(content=new_query))
         print(messages)
-        return messages
+        return messages        
 
+    def organize_message_for_generator(self, story, history_chat, history_response, new_query):
+
+        raw_messages = self.divide_story(story)
+
+        messages = [
+            SystemMessage(content=self.system_prompt),
+        ]
+        for raw_message in raw_messages:
+            messages.append(AIMessage(content=raw_message[0]))
+            messages.append(HumanMessage(content=raw_message[1]))
+
+        n = len(history_chat)
+        if n != len(history_response):
+            print('warning, unmatched history_char length, clean and start new chat')
+            # clean all
+            history_chat = []
+            history_response = []
+            n = 0
+
+        for i in range(n):
+            messages.append(HumanMessage(content=history_chat[i]))
+            messages.append(AIMessage(content=history_response[i]))
+
+        # messages.append( {'role':'user', 'content':new_query })
+        messages.append(HumanMessage(content=new_query))
+        print(messages)
+        return messages
+    
     def organize_message_langchain(self, story, history_chat, history_response, new_query):
         # messages =  [{'role':'system', 'content':SYSTEM_PROMPT}, {'role':'user', 'content':story}]
 
