@@ -46,7 +46,7 @@ class StoreData:
 configuration = {}
 config = configparser.ConfigParser()
 character = "李云龙"
-config.read('config.ini')
+config.read('config.ini', encoding='utf-8')
 sections = config.sections()
 items = config.items(character)
 print(f"正在加载: {character} 角色")
