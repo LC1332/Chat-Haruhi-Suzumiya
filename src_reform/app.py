@@ -32,7 +32,7 @@ class ChatPerson:
     def readConfig(self, character="DEFAULT"):
         pass
         self.config = configparser.ConfigParser()
-        self.config.read('config.ini')
+        self.config.read('config.ini', encoding='utf-8')
         self.sections = self.config.sections()
         items = self.config.items(character)
         print(f"正在加载: {character} 角色")

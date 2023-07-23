@@ -22,7 +22,7 @@ class StoreData:
                     with open(os.path.join(self.output_folder, f"{file[:-4]}_{i}.txt"), 'w+', encoding='utf-8') as fw:
                         fw.write(dialogue.strip())
 
-    def preload(self, store_image=False):
+    def preload(self):
         title_text_embed = []
         title_text = []
         for file in os.listdir(self.texts_folder):
@@ -34,7 +34,7 @@ class StoreData:
             title_text_embed.append({title_text: embed.cpu().numpy().tolist()})
         self.store(self.title_text_embed_jsonl_path, title_text_embed)
 
-        if store_image:
+        if len(os.listdir(configuration['images_folder'])) != 0:
             image_embed = []
             images = []
             for file in os.listdir(self.images_folder):
@@ -50,17 +50,18 @@ class StoreData:
                 f.write('\n')
 
 
-configuration = {}
-config = configparser.ConfigParser()
-character = "神里绫华"  # 指定1
-config.read('config.ini', encoding='utf-8')
-sections = config.sections()
-items = config.items(character)
-print(f"正在加载: {character} 角色")
-for key, value in items:
-    configuration[key] = value
-input_folder = "../src/ycx/yuqian"  # 指定2
-output_folder = "../characters/yuqian/texts"  # 指定3
-run = StoreData(configuration, input_folder=input_folder, output_folder=output_folder)
-# run.split_text()
-run.preload()
+if __name__ == '__main__':
+    configuration = {}
+    config = configparser.ConfigParser()
+    character = "神里绫华"  # 指定1
+    config.read('config.ini', encoding='utf-8')
+    sections = config.sections()
+    items = config.items(character)
+    print(f"正在加载: {character} 角色")
+    for key, value in items:
+        configuration[key] = value
+    input_folder = "../src/ycx/yuqian"  # 指定2
+    output_folder = "../characters/yuqian/texts"  # 指定3
+    run = StoreData(configuration, input_folder=input_folder, output_folder=output_folder)
+    # run.split_text()
+    run.preload()
