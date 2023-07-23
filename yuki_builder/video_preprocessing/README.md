@@ -1,0 +1,1 @@
+# video preprocessing before whisper
