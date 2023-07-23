@@ -90,6 +90,8 @@ class ChatGPT:
             return text_embed, title_to_text, list(title_to_text.keys())
 
         elif load_image_embed:
+            if not os.path.exists(self.image_embed_jsonl_path):
+                return None
             image_embed = {}
             with open(self.image_embed_jsonl_path, 'r', encoding='utf-8') as f:
                 for line in f:

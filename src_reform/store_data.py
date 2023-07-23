@@ -52,7 +52,7 @@ class StoreData:
 
 configuration = {}
 config = configparser.ConfigParser()
-character = "于谦"  # 指定1
+character = "神里绫华"  # 指定1
 config.read('config.ini', encoding='utf-8')
 sections = config.sections()
 items = config.items(character)
