@@ -70,8 +70,8 @@ def create_gradio(chat_person):
         gr.Markdown(
             """
             ## Chat凉宫春日 ChatHaruhi
-            - 项目地址 [https://github.com/LC1332/Chat-Haruhi-Suzumiya](https:// github.com/LC1332/Chat-Haruhi-Suzumiya)
-            - 骆驼项目地址 [https://github.com/LC1332/Luotuo-Chinese-LLM](https:// github.com/LC1332/Luotuo-Chinese-LLM) 
+            - 项目地址 [https://github.com/LC1332/Chat-Haruhi-Suzumiya](https://github.com/LC1332/Chat-Haruhi-Suzumiya)
+            - 骆驼项目地址 [https://github.com/LC1332/Luotuo-Chinese-LLM](https://github.com/LC1332/Luotuo-Chinese-LLM) 
             - 此版本为图文版本，完整功能（+语音）的demo见项目 角色名建议输入 阿虚 或者影视剧中有的人物。或者也可以是新学生或者老师。
             """
         )
