@@ -1,0 +1,614 @@
+{{需要帮助角色语音}}
+{{面包屑|神里绫华|角色语音}}{{语音tab样式}}__notoc__
+<div class="resp-tabs" style="border-spacing: 0px;">
+<ul class="resp-tabs-list clearfix">
+<li class="active bili-list-style"><span class="tab-panel">角色语音</span></li>
+<li class="bili-list-style"><span class="tab-panel">元素战技</span></li>
+<li class="bili-list-style"><span class="tab-panel">元素爆发</span></li>
+<li class="bili-list-style"><span class="tab-panel">打开宝箱</span></li>
+<li class="bili-list-style"><span class="tab-panel">生命值低</span></li>
+<li class="bili-list-style"><span class="tab-panel">同伴生命值低</span></li>
+<li class="bili-list-style"><span class="tab-panel">倒下</span></li>
+<li class="bili-list-style"><span class="tab-panel">受击</span></li>
+<li class="bili-list-style"><span class="tab-panel">加入队伍</span></li>
+</ul>
+{{角色语音表头
+|汉语CV=小N
+|日语CV=早见沙织
+|英语CV=艾丽卡·门德斯
+|韩语CV=李侑俐
+}}
+<div class="resp-tabs-container">
+<div class="resp-tab-content" style="display:block;">
+{{角色/语音1
+|语音类型=初次见面…
+|语音文件=player1-神里绫华_初次见面
+|语音内容=稻妻神里流太刀术皆传——神里绫华，参上！<br>请多指教哦。
+|语音内容日语=稲妻神里流太刀術免許皆伝――神里綾華、参ります！<br>よろしくお願いします。
+|语音内容英语=Master of Inazuma Kamisato Art Tachi Jutsu — Kamisato Ayaka, present!<br>Delighted to make your acquaintance.
+|语音内容韩语=이나즈마의 카미사토류 태도술 계승자——카미사토 아야카, 참전!<br>잘 부탁드려요
+}}
+{{角色/语音1
+|语音类型=闲聊·安定
+|语音文件=player1-神里绫华_闲聊·安定
+|语音内容=像这样悠闲安稳的时光，如果再多一点就好了…我真贪心啊。
+|语音内容日语=この長閑な時間がもっと増えると嬉しいのですが…ふふ、私って欲張りですね。
+|语音内容英语=I only wish life could be as leisurely as this a little more often... How greedy of me.
+|语音内容韩语=이렇게 여유롭고 평화로운 시간이 더 많았다면 좋을 텐데…. 전 욕심이 너무 많은가 봐요
+}}
+{{角色/语音1
+|语音类型=闲聊·剑
+|语音文件=player1-神里绫华_闲聊·剑
+|语音内容=剑，就和茶一样，细细品味才能理解其中风雅。
+|语音内容日语=刀は茶と同じく、丁寧に味わってこそ、本来の趣が分かるものです。
+|语音内容英语=A blade is like a tea-leaf. Only those who sample it many times can appreciate its true qualities.
+|语音内容韩语=검은 차와 같이, 천천히 음미해야만 그 운치를 느낄 수 있어요
+}}
+{{角色/语音1
+|语音类型=闲聊·出神
+|语音文件=player1-神里绫华_闲聊·出神
+|语音内容=这就是旅行者平日里的生活么，呵，感觉又多了解了你一些。
+|语音内容日语=これが旅人さんの普段の暮らしですか。ふふ、また貴方に少し近づけた気がします。
+|语音内容英语=So this is a day in the life of the Traveler... Hehe, I'm learning more about you all the time.
+|语音内容韩语=이게 여행자님의 일상생활이군요. 후후, 당신에 대해 조금 더 알게 된 거 같아요
+}}
+{{角色/语音1
+|语音类型=闲聊·名刀
+|语音文件=player1-神里绫华_闲聊·名刀
+|语音内容=刀剑抱业，名工怀宝。
+|语音内容日语=刀は業を支え、匠は宝を有す。
+|语音内容英语=A blade embraces its duty as a jeweler cherishes their gems.
+|语音内容韩语=도검은 명장이 자신의 작품을 아끼는 것처럼 그 공예를 중시하죠
+}}
+{{角色/语音1
+|语音类型=下雨的时候…
+|语音文件=player1-神里绫华_下雨的时候
+|语音内容=请随我一同避雨吧。
+|语音内容日语=私と共に雨宿りをしましょう。
+|语音内容英语=Come with me, let us find shelter from the rain.
+|语音内容韩语=저랑 같이 비를 피하러 가요
+}}
+{{角色/语音1
+|语音类型=打雷的时候…
+|语音文件=player1-神里绫华_打雷的时候
+|语音内容=大御所大人…是在诉说什么吗？
+|语音内容日语=将軍様…何か訴えているのでしょうか？
+|语音内容英语=Her Excellency... What is she trying to communicate?
+|语音内容韩语=쇼군께서… 무언갈 하소연하고 있는 게 아닐까요?
+}}
+{{角色/语音1
+|语音类型=下雪的时候…
+|语音文件=player1-神里绫华_下雪的时候
+|语音内容=「雪霁银妆素，桔高映琼枝。」<ref name="下雪的时候">万叶集4226</ref><br>嗯…美景当前，只差一壶茶与之相衬呢。
+|语音内容日语=「この雪の 消残る時に いざ行かな<br>山橘の 実の照るも見む」<ref name="下雪的时候" /><br>…美しい景色には、やはりお茶がなくてはいけませんね。
+|语音内容英语="Snow that once adorned the world in silver, thaws to reveal the gleam of the fruit upon frost-laden branches." *sigh* How picturesque! Only some tea would make this setting more complete.
+|语音内容韩语=「이 눈이 쌓였을 때 가야지, 산귤 열매가 눈에 비치는 모습을 보려면」…. 아, 이 아름다운 경치에 어울리는 차가 없어서 아쉽네요
+}}
+{{角色/语音1
+|语音类型=阳光很好…
+|语音文件=player1-神里绫华_阳光很好
+|语音内容=风和日丽，要去哪边走走么？
+|语音内容日语=麗らかな日和です。どこかへ行きませんか？
+|语音内容英语=There's a pleasant breeze and glorious sunshine... So, where shall we go for a walk?
+|语音内容韩语=포근한 바람, 따스한 햇살. 같이 산책할래요?
+}}
+{{角色/语音1
+|语音类型=起风的时候…
+|语音文件=player1-神里绫华_起风的时候
+|语音内容=闭上眼睛，向着风吹来的方向…怎么样，很舒服吧？
+|语音内容日语=目を閉じ、風を感じてみてください…どうですか？気持ちいいでしょう？
+|语音内容英语=Close your eyes and face the wind... It feels wonderful, doesn't it?
+|语音内容韩语=눈을 감고 바람이 불어오는 방향을 느껴봐요…. 기분 좋죠?
+}}
+{{角色/语音1
+|语音类型=早上好…
+|语音文件=player1-神里绫华_早上好
+|语音内容=早安，旅行者。能像这样在清晨见你一面，我会忍不住觉得…接下来将是顺利的一天。
+|语音内容日语=おはようございます、旅人さん。こうして朝の時間に貴方とお会いできると…良い一日を送れるような気がします。
+|语音内容英语=Oh, good morning, Traveler. ...Whenever I see you in the morning, somehow, it makes me feel like... today is going to be a good day.
+|语音内容韩语=좋은 아침이에요, 여행자님. 아침부터 이렇게 만나다니… 오늘은 모든 일이 잘 풀리겠어요
+}}
+{{角色/语音1
+|语音类型=中午好…
+|语音文件=player1-神里绫华_中午好
+|语音内容=午安。茶饭之后，难免略有困倦。是否有兴致下盘棋提神呢？
+|语音内容日语=こんにちは。昼食の後はどうしても眠くなってしまいますね。眠気を覚ますために、将棋などいかがでしょうか？
+|语音内容英语=Good afternoon. It is normal to feel drowsy after lunch, might I interest you in a game of Go to stimulate the mind?
+|语音内容韩语=즐거운 오후에요. 점심을 먹고 난 후의 식곤증은 어쩔 수 없죠. 바둑을 두면서 졸음을 쫓는 건 어때요?
+}}
+{{角色/语音1
+|语音类型=晚上好…
+|语音文件=player1-神里绫华_晚上好
+|语音内容=晚上好。夜风舒畅，会是一个良宵呢。
+|语音内容日语=こんばんは。夜風が気持ちよく、とてもいい夜ですね。
+|语音内容英语=Greetings. An auspicious breeze blows this evening. Tonight will be peaceful.
+|语音内容韩语=좋은 저녁이에요. 밤바람이 포근하니 아름다운 밤이 될 것 같네요
+}}
+{{角色/语音1
+|语音类型=晚安…
+|语音文件=player1-神里绫华_晚安
+|语音内容=「若知是梦何须醒，不比真如一相会。」<ref name="晚安">源于对古今和歌集·恋歌二第一首的错译，原文：「思ひつつ 寝ればや人の 見えつらむ 夢と知りせば 覚めざらましを」。</ref>
+|语音内容日语=「夢と知っていれば目覚めぬものを、もう少し一緒にいさせてほしいのに。」<ref name="晚安" />
+|语音内容英语="Was it one's thoughts that drew him to my dreams? Had I known it a dream, one would not have awakened." Hehe, I love that poem.
+|语音内容韩语=「꿈인 줄 알았다면 깨지 않았을 것을, 실제 만남보다 낫지 아니한가」
+}}
+{{角色/语音1
+|语音类型=关于绫华自己·社奉行
+|语音文件=player1-神里绫华_关于绫华自己·社奉行
+|语音内容=「稻妻幕府社奉行神里家」，位于稻妻名门中的笔头之格位。作为三奉行之一，掌管祭祀活动与人文艺术。自从双亲过世之后，族内的大小事务，便由兄长和我承担了。
+|语音内容日语=「稲妻幕府社奉行神里家」、稲妻の名門にして筆頭。三奉行の一つとして、祭祀活動や人道、芸術などの管理を担っています。両親が亡くなってからは、私とお兄様が一族の業務を受け継ぎました。
+|语音内容英语="Inazuma Shogunate, Yashiro Commission, Kamisato Clan." Widely known as one of the most distinguished clans in all of Inazuma, it is the branch of the Tri-Commission that manages ceremonial and cultural affairs. Since my parents passed, Brother and I assumed responsibility for all clan matters, big and small.
+|语音内容韩语=「이나즈마 막부 야시로 봉행 카미사토 가문」은 이나즈마 최고의 명문이에요. 삼봉행 중 하나로 제사와 문화 예술적인 부분을 주관하죠. 부모님이 돌아가신 후 가문의 모든 일은 오빠와 제가 담당하고 있어요
+}}
+{{角色/语音1
+|语音类型=关于绫华自己·地位
+|语音文件=player1-神里绫华_关于绫华自己·地位
+|语音内容=很多人因为我是「白鹭公主」，是社奉行神里家的大小姐而敬重我。他们所敬重的，只是我所身处的地位，与绫华我是怎样的人并无关系…<br>所以我想，能真正走近我的，或许只有…
+|语音内容日语=多くの方々が私を敬重してくださるのは、私を「白鷺の姫君」や社奉行神里家の令嬢として見ているからです。彼らが敬重しているのは私の立場であって、綾華という一個人とは関係ございません…<br>ですので、私と本当に近しい関係になれるお方は、おそらく…
+|语音内容英语=Many look up to me as the Shirasagi Himegimi and as the daughter of the Kamisato Clan. But the object of their respect has everything to do with my position, and nothing at all to do with me, Ayaka. It makes me think that... maybe, there is only one person I know who is truly able to get close to me...
+|语音内容韩语=사람들은 제가 「백로공주」이자 야시로 봉행 카미사토 가문의 장녀이기 때문에 절 존경해요. 그들이 존경하는 건 제 신분과 지위일 뿐이지, 제가 어떤 사람인지랑은 아무런 상관도 없죠…. 그래서 제게 진심으로 다가올 수 있는 사람은 어쩌면…
+}}
+{{角色/语音1
+|语音类型=关于绫华自己·愿望
+|语音文件=player1-神里绫华_关于绫华自己·愿望
+|语音内容=如今的我，依旧想成为值得大家信任的人。不过，鼓舞我的原因，已不再是肩上的责任或他人的期待。而是因为，你也是这样的人啊。
+|语音内容日语=今の私は、皆さんから信頼される人になりたいと思っています。その気持ちを鼓舞するものは、肩にのしかかる重責でも他人からの期待でもございません。貴方がすでにそのようなお方だからです。
+|语音内容英语=Today, as in the past, I aspire to be somebody whom everyone can trust. But what motivates me is no longer the responsibilities I shoulder, or the expectations of other people. Rather, it is the fact that you are this kind of person, too.
+|语音内容韩语=전 모두가 믿을 수 있는 사람이 되고 싶어요. 하지만 저를 나아가게 하는 건 더 이상 책임감이나 타인의 기대가 아니라, 당신 역시 저와 같은 사람이란 걸 알았기 때문이죠
+}}
+{{角色/语音1
+|语音类型=关于我们·茶室
+|语音文件=player1-神里绫华_关于我们·茶室
+|语音内容=如你有空，我们移步木漏茶室如何？在这样恬静的日子，略加交流茶艺心得，想来是颇具雅趣的。
+|语音内容日语=時間が空いていらしたら、共に木漏茶屋に行ってみませんか？こんな穏やかな日は、茶道の心得を通じて交流するのもまた一興かもしれませんよ。
+|语音内容英语=If you've got time, shall we take a walk to Komore Teahouse? To chat about the art of tea on a pleasant day like this seems like the sophisticated thing to do.
+|语音内容韩语=시간 있으시면 코모레 찻집으로 갈까요? 이렇게 평온한 날에 다도에 대해 이야기하는 것도 아주 재밌을 거예요
+}}
+{{角色/语音1
+|语音类型=关于我们·节日
+|语音文件=player1-神里绫华_关于我们·节日
+|语音内容=如果有机会的话，我想试着和你共度异国的节日。需要遵循的当地风俗、礼仪规范，还有伴手礼的推荐，可以麻烦你…一一指导我吗？
+|语音内容日语=機会がございましたら、貴方と共に異国のお祭りを過ごしてみたいです。その地の風習、礼儀作法、お勧めのお土産など…それらすべてをこの私に…ご教授いただけませんでしょうか？
+|语音内容英语=If I ever have the chance, I would very much like to experience the festivities of another nation with you one day. Though, I will need some guidance on local customs and etiquette, and advice on what gifts to bring... Could I trouble you to give me some guidance?
+|语音内容韩语=기회가 된다면, 당신과 함께 이국의 명절을 보내고 싶어요. 꼭 지켜야 하는 현지 풍습, 예절과 규칙, 그리고 추천할만한 기념품 같은 것들을… 저한테 알려주실 수 있나요?
+}}
+{{角色/语音1
+|语音类型=关于「神之眼」…
+|语音文件=player1-神里绫华_关于「神之眼」
+|语音内容=「神之眼」，即是胸怀大志之人所获的印绶。如果问我有什么志向的话…这个还是保密吧，只是一个微不足道的梦想罢了。
+|语音内容日语=「神の目」、それは大志を抱く者に与えられる証です。私の志ですか…？それは…いえ、やはり秘密にさせてください。些細な夢に過ぎませんので。
+|语音内容英语=Visions are a seal of approval for those who are most ambitious. As for my own ambitions, they shall remain private for now. It is nothing more than an insignificant dream.
+|语音内容韩语=「신의 눈」은 큰 뜻을 품은 자만이 얻을 수 있는 증표죠. 제가 품은 뜻을 물으신다면… 그건 비밀이에요. 아주 보잘것없는 꿈이거든요
+}}
+{{角色/语音1
+|语音类型=有什么想要分享…
+|语音文件=player1-神里绫华_有什么想要分享
+|语音内容=试问，常说「禅茶一味」，又说「剑禅一如」，那么剑和茶，又是什么关系呢？
+|语音内容日语=よく「茶禅一味」、「剣禅一如」と言いますが、刀とお茶にどのような関係があるのでしょうか？
+|语音内容英语=It is said that "the flavor of Zen is that of tea," and it is also said that "the power of Zen is that of the blade." One might then ask: What does that say about the relationship between tea and the blade?
+|语音内容韩语=질문하나 할게요. 흔히 「선차일미(禪茶一味)」, 「검선일여(劍禪一如)」라고 하던데. 검과 차는 어떤 관계인가요?
+}}
+{{角色/语音
+|语音类型=感兴趣的见闻…
+|语音文件={{player1|神里绫华_感兴趣的见闻01}}
+|语音文件日语={{player1|日_神里绫华_感兴趣的见闻}}
+|语音文件英语={{player1|英_神里绫华_感兴趣的见闻}}
+|语音文件韩语={{player1|韩_神里绫华_感兴趣的见闻}}
+|语音内容=你在城中，见过枯萎的樱花树么？这种「枯」之美，让我想到春天盛开之景。不过别人似乎并不这么想，不再开花的樱树会被移走…就算一次也好，真想看到它再次开放。
+|语音内容日语=城内で枯れた櫻を見たことはございますか？この「枯れる」という美があるからこそ、春に咲き誇る姿を想像できるのです。しかし、他の方はそう思っていません。枯れた櫻はすぐに取り除かれてしまいます。一度でもいいので、それらがまた咲く姿を見てみたいものですね。
+|语音内容英语=Have you ever noticed the withering sakura tree in the city? For me, there is a beauty to the withering, it brings back fond memories of the spring. Most people don't agree — sakura trees that will never bloom again are removed. But when I look at a tree, all I want is to see it blossom again... just one more time...
+|语音内容韩语=성안에서 메마른 벚나무를 보신 적 있나요? 「메마른 것」의 아름다움은 벚꽃이 만개한 아름다운 봄 풍경을 떠올리게 하죠. 하지만 다른 사람들의 생각은 다른가 봐요. 꽃이 피지 않는 벚나무는 바로 베어 버리더군요. 단 한 번이라도 그 꽃이 다시 피는 걸 보고 싶어요
+}}
+{{角色/语音1
+|语音类型=关于托马…
+|语音文件=player1-神里绫华_关于托马
+|语音内容=托马是我很重要的朋友，他的开朗和阳光总是感染着我。某种意义上来说，他就像是我的另一个兄长一样，已经成为了「神里家」的一员。
+|语音内容日语=トーマは私の大切な友人です。彼の明るさと陽気さにはいつも感化されてきました。ある意味、彼はもう一人の兄のような存在で、すでに「神里家」の一員だとも思っています。
+|语音内容英语=Thoma is a dear friend. He always lifts my spirits with his sunny disposition. In a sense, I think of him as another brother, and as a full member of the Kamisato Clan.
+|语音内容韩语=토마는 제 소중한 친구예요. 그의 햇살 같은 명랑함은 항상 절 행복하게 해주죠. 어떤 의미에서 그는 제 또 다른 오빠이자, 「카미사토 가문」의 일원이라고 할 수 있어요
+}}
+{{角色/语音1
+|语音类型=关于九条裟罗…
+|语音文件=player1-神里绫华_关于九条裟罗
+|语音内容=为「天领奉行」工作的九条裟罗…她总是一脸严肃。我和她曾经起过几次争端，不过她本质是忠义之士，这点无可否认。
+|语音内容日语=「天領奉行」に付き従う九条裟羅…彼女はいつも真剣な顔をしていますね。私も彼女と幾度か口論になったことがございます。しかし、彼女の本質は忠義によるもの、その点だけは否定できません。
+|语音内容英语=Kujou Sara of the Tenryou Commission is... not known to smile, and I have had my fair share of disputes with her. She is, however, a loyal servant to Inazuma, there is no question about that.
+|语音内容韩语=「텐료 봉행」을 위해 일하는 쿠죠 사라는… 늘 근엄함을 유지하죠. 그녀와 다툰 적도 있지만, 그녀의 충성심을 부정할 순 없어요
+}}
+{{角色/语音1
+|语音类型=关于鹿野院平藏…
+|语音文件=player1-神里绫华_关于鹿野院平藏
+|语音内容=鹿野院先生？他和九条小姐一样，是「天领奉行」的人。他…也是一个很有原则的人。对于这些「原则」的坚持，甚至比九条小姐更执着。只不过，什么事应该被算在这些「原则」之内，我想，或许只有鹿野院先生自己知道吧。
+|语音内容日语=鹿野院さんですか？彼は九条さんと同じように、「天領奉行」の人間です。彼も…自分の信条を持っているお方です。その「信条」を守る執着心は、九条さんよりも強いかもしれません。ただ、何を以って「信条」というべきかは、鹿野院さんのみが知ることでしょう…
+|语音内容英语=Mr. Shikanoin belongs to the Tenryou Commission, just like Miss Kujou. He is very... principled, sometimes even more determinedly so than Miss Kujou. The only thing is, when it comes to the question of which matters should be governed by his principles, I believe only Mr. Shikanoin himself knows the answer...
+|语音内容韩语=시카노인 씨요? 그분도 쿠죠 씨처럼 「텐료 봉행」의 일원이에요. 그분도… 원칙을 매우 중요시하죠. 「원칙」에 대한 집념이 쿠죠 씨보다도 강하답니다. 하지만 이런 「원칙」에 어떤 일들이 포함돼야 하는지는 오직 시카노인 씨만 알고 계시겠죠…
+}}
+{{角色/语音1
+|语音类型=关于早柚…
+|语音文件=player1-神里绫华_关于早柚
+|语音内容=早柚这孩子，最近有没有给你添什么麻烦呢？如果看见她偷懒，可以直接告诉我。
+|语音内容日语=この所、早柚ちゃんは貴方に迷惑をかけていないでしょうか？ふふ、彼女がサボっているところを見かけたら、私に言ってくださいね。
+|语音内容英语=Ah, little Sayu. She hasn't been causing you any trouble lately, has she? Hehe, if you ever notice her slacking off, please let me know.
+|语音内容韩语=요새 사유가 당신께 폐를 끼치진 않았나요? 후후, 만약 그 아이가 게으름 피우는 걸 보시면 꼭 저한테 알려주세요
+}}
+{{角色/语音1
+|语音类型=关于雷电将军·猜测
+|语音文件=player1-神里绫华_关于雷电将军·猜测
+|语音内容=对大御所大人的看法吗？这并不该由我等下属随意议论。但…将军大人她，在追求「永恒」之路上，可能也很孤独吧。
+|语音内容日语=将軍様のお考え？それは私ども配下が議論できることではございません。ただ…「永遠」を追い求める道において、孤独を感じることもあるかもしれませんね。
+|语音内容英语=The Almighty Shogun? It would be improper of me to comment, given that I am one of her subjects. All I will say is that... I think that Her Excellency must get lonely on the road to eternity.
+|语音内容韩语=쇼군에 대한 제 생각이요? 그건 저 같은 아랫사람이 함부로 얘기할 수 없는 부분이지만… 「영원」을 추구하는 과정에서 분명 외로우실 거라고 생각해요
+}}
+{{角色/语音1
+|语音类型=关于雷电将军·立场
+|语音文件=player1-神里绫华_关于雷电将军·立场
+|语音内容=见证了「无想的一刀」并且活了下来，该说是堪称伟业的经历了吧。虽然对我来说，她是真正的神明，一念之间可以更改稻妻的命运，但如果是和你起了冲突的话…我一定会站在你这一边的。
+|语音内容日语=「無想の一太刀」を見ても生き延びられたこと、それだけでも偉業と言えるでしょう。私にとってあのお方は本物の神であり、稲妻の命運を一瞬にして変えることのできる存在です。しかし、もしあのお方と貴方が衝突した場合…私は必ず貴方を選びます。
+|语音内容英语=To witness the Musou no Hitotachi and live to tell the tale is quite a remarkable feat. Even though I recognize her as our true deity with the power to change Inazuma's fate at will, if there is conflict between the two of you, then... I shall choose to side with you.
+|语音内容韩语=「무상의 일태도」를 목격하고도 살아남았다는 건 위대한 경험이라고 할 만하죠. 저에게 있어 그분은 이나즈마의 운명을 한순간에 바꿔 버릴 수 있는 진정한 신이지만, 만약 당신과 충돌이 생긴다면… 전 당신 편에 설 거에요
+}}
+{{角色/语音1
+|语音类型=关于八重神子…
+|语音文件=player1-神里绫华_关于八重神子
+|语音内容=我和八重宫司大人的合作向来很愉快。你看，操办节庆庆典非常劳神费力，营收多半也不好看。但是八重宫司大人操办的产业，真的既风雅又有收成。
+|语音内容日语=私と八重宮司様はかねてより協力関係を続けてきました。お祭りの開催は非常に手間がかかる上、収益もそれほど良いものではございません。しかし八重宮司様が仕切られた事業は、優雅さを保ちながら収益化にも成功されています。
+|语音内容英语=I have always greatly enjoyed working with Guuji Yae. Organizing festival affairs generally takes a lot of effort and doesn't generate much income, but Guuji Yae's events always come off both elegant and profitable.
+|语音内容韩语=야에 궁사님과 일하는 건 언제나 즐거워요. 축제를 준비하는 건 매우 힘들고 이익도 얼마 안 되지만, 야에 궁사님이 맡으신 사업은 고상하고 멋있으면서 수익성도 좋거든요
+}}
+{{角色/语音1
+|语音类型=关于神里绫人…
+|语音文件=player1-神里绫华_关于神里绫人
+|语音内容=作为神里家的家主，兄长平日需要出面诸多场合。我虽尽力分担兄长肩上所负担的责任，却也无法缓和他常年积压在身的疲倦。唉，就当是为了妹妹着想，希望你能劝言，让兄长多多注意身体啊。
+|语音内容日语=神里家の当主として、お兄様は平素より数々の場所に出向いています。私もお兄様の重荷を負担しようと尽力しているのですが、それでも長年蓄積した疲労を緩和させてあげることはできませんでした。はぁ…妹のためだと思って、体には気を付けてと貴方からもお兄様に言ってください。
+|语音内容英语=As the head of the Kamisato Clan, brother always has a full schedule of places he needs to be. I do try my best to share his load, but there is no changing the pressure he is subjected to all year round, and the toll it takes upon him. *sigh* If you see him, remind him to take care of himself, for his sister's sake...
+|语音内容韩语=오빠는 카미사토 가문의 가주로서 평소에 여러 곳에 얼굴을 비춰야 하죠. 제가 부담을 최대한 덜어주려고 노력하지만, 오빠의 오랜 피로를 완화시킬 순 없었어요. 휴, 동생을 생각해서라도 건강 좀 잘 챙기라고 말 좀 해주세요
+}}
+{{角色/语音1
+|语音类型=关于宵宫…
+|语音文件=player1-神里绫华_关于宵宫
+|语音内容=操办节庆庆典是社奉行和巫女众的责任，那位烟火专家也的确能让气氛热烈起来，彼此合作多了，因而渐渐熟络。<br>嗯？治安和消防问题吗？我们也会一并纳入预先规划的。因为这些原因而看不到烟花，才会让人们心中留下缺憾吧。
+|语音内容日语=お祭りの開催は社奉行と巫女の役目ですが、あの花火師の方もお祭りの雰囲気に貢献しています。度重なる協同から、今ではお互いをよく知る関係になりました。<br>…なんでしょう？治安と消防の問題？もちろん事前に対策を立てていますよ。そのような理由で花火が見られなくなってしまっては、皆さん残念がるでしょうから。
+|语音内容英语=The Yashiro Commission and the shrine maidens are responsible for festival affairs, and Yoimiya, as a fireworks expert, knows how to create an atmosphere. So we have become well acquainted with her over the years.<br>Hmm? Public order and fire prevention? We factor these concerns in well in advance during the planning stage. To deny people the chance to see fireworks simply for these reasons would leave them feeling very disappointed.
+|语音内容韩语=축제를 운영하는 건 야시로 봉행과 무녀의 역할이지만, 그 폭죽 전문가도 축제를 떠들썩하게 만드는 데 일조한 셈이죠. 같이 일할 기회가 많아지다 보니 점점 친해졌어요.<br>네? 치안과 소방 문제요? 사전 기획에 다 포함되어 있답니다. 이런 문제 때문에 불꽃놀이를 볼 수 없다면 사람들이 아쉬워할 거예요
+}}
+{{角色/语音1
+|语音类型=想要了解绫华·其一
+|语音文件=player1-神里绫华_想要了解绫华·其一
+|语音内容=你的请求，对我来说很特别呢。既然把你当做朋友，我也应坦诚以待。不过，事关神里家的秘密，还希望你能守口如瓶。
+|语音内容日语=貴方の要求は私にとって特別なものです。貴方を友人と見なした以上、私も真摯に向き合う必要がございます。しかし、神里家の秘密については…どうか他言しないようお願いします。
+|语音内容英语=Your request is quite unusual for me. Since I see you as a friend, it would only be fair to be open and honest with you, but if this means sharing secrets of the Kamisato Clan... I would ask that you keep anything I tell you in strict confidence.
+|语音内容韩语=당신의 부탁은 제게 아주 특별해요. 당신을 친구로 여긴 이상 저도 당신에게 솔직해져야겠죠. 하지만 카미사토 가문의 비밀은… 부디 누설하지 말아 주세요
+「무념무상, 포영의 절멸」 스토리 클리어
+}}
+{{角色/语音1
+|语音类型=想要了解绫华·其二
+|语音文件=player1-神里绫华_想要了解绫华·其二
+|语音内容=曾经，神里家因为没能保护好国宝级别的刀工，遭受了不小的冲击。受愚人众阴谋算计，我们折损了诸多臣下，受到许多责罚。父亲甚至因之早衰，神里家在幕府中的地位也一落千丈…好在兄长继任后力挽狂澜。不过，家门虽已复兴，社奉行一系也上下齐心，但大事要事方面，仍靠兄长定夺。
+|语音内容日语=かつて、神里家は国宝級の刀工を守れなかったことで大打撃を受けました。ファデュイの奸計にかかり、多くの臣下を失い、数多の罰を受けたのです。お父様はその重圧のせいで急激に衰え、神里家の幕府においての地位も急落していきました…幸いお兄様が家業を継いでから挽回することができましたが、一族が復興して一致団結を保っている今も、重要な場面は未だにお兄様に頼るしかございません。
+|语音内容英语=The Kamisato Clan once suffered a major blow when we failed to protect a swordsmith of national significance. We were harassed by the Fatui, we lost many of our people, and we received a great deal of criticism. It all aged Father greatly, and severely damaged the Kamisato Clan's standing within the Shogunate. Brother has worked tirelessly to reverse the trend since he assumed leadership, but although our clan's position is now restored and the Yashiro Commission is unified once more, we still rely on Brother to make the decisions on all matters of any importance.
+|语音内容韩语=과거 카미사토 가문은 국보급의 도공을 지키지 못해서 큰 충격을 받은 적이 있어요. 우인단의 계략에 빠져 많은 가신을 잃고 처벌도 많이 받았죠. 그 일로 아버지가 일찍이 쇠약해지시면서 카미사토 가문은 한순간에 막부에서의 지위를 잃었어요…. 다행히 오빠가 자리를 즉시 이어받으면서 위기를 벗어날 수 있었죠. 가문이 다시 힘을 되찾고 야시로 봉행도 한 마음이 되었지만, 여전히 중대사는 오빠의 결정을 따르고 있어요
+}}
+{{角色/语音1
+|语音类型=想要了解绫华·其三
+|语音文件=player1-神里绫华_想要了解绫华·其三
+|语音内容=将军所传的锻刀之术，也因星象、用途、矿质、炉火环境、人之性格、元素变化的不同，而有所区分。即是刀工之间所说的「雷电五传」。能锻造名刀的刀工，也被算作是本领通神的神事相关人员，归属统筹文化、艺术、祭祀的社奉行一派管理。因此，出现了刀工背叛的事情，自然就是神里家的督办不力了。
+|语音内容日语=将軍様が伝授した刀の鍛造技法は、星の有り様、用途、鉱石の質、炉火の環境、人の性格、異なる元素変化、それぞれの違いによって差が生まれます。即ち、刀工の間で語り継がれている「雷電五箇伝」。名刀を鍛造できる刀工は神の領域に触れると言われることから、神事にまつわる人員と見なされます。ですので刀工も、文化や芸術、祭祀などを司る社奉行の管轄下に入っています。刀工から裏切りが出たということは、自ずと神里家の監督不行き届きとなるのです。
+|语音内容英语=The art of blade forging taught by the Shogun varies based on astrology, application, materials used, the furnace conditions, individual personalities, and elemental changes. These differences between smiths is what gave rise to the Raiden Gokaden. Swordsmiths capable of forging renowned blades are seen as spiritual personnel with sacred abilities, and as such they should be managed by the Yashiro Commission, which oversees all cultural, artistic, and ceremonial affairs. So naturally, the swordsmith's betrayal is the fault of ineffectual management by the Kamisato Clan.
+|语音内容韩语=쇼군께서 전수하신 검을 단조하는 기술은 별의 형상, 용도, 광석의 질, 용광로의 환경, 사람의 성격, 원소 변화 등에 따라 달라져요. 이게 바로 도공들이 말하는 「뇌전오전」이죠. 훌륭한 도를 만들 수 있는 도공도 신통력이 있다고 여겨져서 문화와 예술, 제사를 담당하는 야시로 봉행 일파의 관리를 받아요. 그러다 보니 도공이 배신하는 일이 생기면 자연스레 카미사토 가문의 감독 소홀이 되는 거죠
+}}
+{{角色/语音1
+|语音类型=想要了解绫华·其四
+|语音文件=player1-神里绫华_想要了解绫华·其四
+|语音内容=对我来说，母亲是意义非凡的存在。端庄、优雅，无论遇到怎样的局面都会露出沉静的笑容，以从容不迫的态度，操持着神里家大大小小的事务，说母亲是完美的化身也不为过。但自从她离世的那一刻起，我就深切地意识到，我已经不是那个可以躲在母亲身后的小绫华了。
+|语音内容日语=私にとって、お母様はとても大きな存在でした。どのような局面に陥ろうと落ち着いた笑顔を見せ、神里家の業務を淡々と取り仕切る端正で優雅な姿。完璧という概念の化身といっても過言ではございません…お母様が去ったあの瞬間から、私は感じたのです――もうお母様の後ろに隠れているだけの子供ではいられないと。
+|语音内容英语=My mother was the most incredible person. She was always so dignified and elegant, always smiling, no matter what situation she might be facing. She had so much to deal with in the clan on so many levels, but she took it all in stride — it was like nothing could ever faze her. Everything about her was perfect, and I say that without exaggerating. *sigh* But the moment she passed away, I realized... I couldn't hide behind my mother any longer. I wasn't little Ayaka any more.
+|语音内容韩语=어머니는 제게 아주 남다른 의미가 있는 분이세요. 단정하고 우아한 태도로 어떤 상황에서도 차분하게 웃으시며 카미사토 가문의 일을 모두 도맡아 하셨죠. 어머니는 그야말로 완벽하다고 해도 과언이 아니었지만… 그분이 세상을 떠나던 그 순간 깨달았어요, 전 더 이상 어머니 뒤에 숨어 있을 수 있는 어린아이가 아니라는 걸요
+}}
+{{角色/语音1
+|语音类型=想要了解绫华·其五
+|语音文件=player1-神里绫华_想要了解绫华·其五
+|语音内容=接下来要说的话，可能不太符合「稻妻幕府社奉行神里家」的身份。不过，就我的判断，你应该能容许我小小的任性吧？<br>…稍微有点累了…可以让我靠一下你的肩膀吗？一下就好。
+|语音内容日语=今から言うことは、「稲妻幕府社奉行神里家」の肩書きにふさわしくないものかもしれません。ですが、貴方は私のワガママを受け入れてくださる方だと信じています。<br>…少々疲れてしまいました…貴方の肩に寄りかかってもよろしいでしょうか？少しだけで…いいので。
+|语音内容英语=What I want to say next is perhaps not befitting of a member of the Inazuma Shogunate, Yashiro Commission, Kamisato Clan, but... unless I am mistaken, I trust that you will not take issue with this slight departure from convention on my part...<br>That is to say... I'm a little tired, may I rest my head on your shoulder? Just for a moment.
+|语音内容韩语=「이나즈마 막부 야시로 봉행 카미사토 가문」의 신분으로 이런 말 하기 껄끄럽지만… 당신은 이렇게 제멋대로인 저의 모습도 받아줄 것 같은 느낌이 들어요.<br>…살짝 피곤하네요…. 어깨 좀 빌려줄래요? 아주 잠깐이면 돼요
+}}
+{{角色/语音1
+|语音类型=绫华的爱好…
+|语音文件=player1-神里绫华_绫华的爱好
+|语音内容=风雅之物我都很喜欢：雅乐诗词、棋艺与舞蹈。你也感兴趣吗？
+|语音内容日语=趣を感じられるものは何でも好きです。雅楽の詩、囲碁将棋や踊り。貴方も興味ございますでしょうか？
+|语音内容英语=I have great affection for the arts: music, song, poetry, shougi, and dancing. And you?
+|语音内容韩语=고상하고 멋이 있는 건 전부 좋아해요. 아악, 시, 바둑, 춤 모두요. 당신도 좋아하시나요?
+}}
+{{角色/语音1
+|语音类型=绫华的烦恼·忧虑
+|语音文件=player1-神里绫华_绫华的烦恼·忧虑
+|语音内容=烦恼吗？啊，是啊。只要生活在这个世界上，就难免遇到种种不如意的事情。但如果是因为自己的事情，就让周遭的人担心的话…果然，我还是不能说…
+|语音内容日语=悩みですか？そうですね、この世に生きる以上、必然的に数々の不満に遭遇するでしょう。しかし、自分のことで周囲の方を心配させるのは…やはり私にはできません…
+|语音内容英语=Troubles? Well, I mean... that's life, isn't it? There will always be things that don't go one's way. But I do not wish to worry those around me on account of things that are my concern alone... so, it is best if I keep them to myself.
+|语音内容韩语=고민이요? 음, 그렇죠. 살다 보면 마음대로 할 수 없는 일들이 생길 수밖에 없죠. 하지만 제 일로 주변 사람들에게 걱정을 끼친다면… 역시, 전 말 못 하겠어요…
+}}
+{{角色/语音1
+|语音类型=绫华的烦恼·心意
+|语音文件=player1-神里绫华_绫华的烦恼·心意
+|语音内容=「坦率」，真的是一件很难的事情。我必须不断告诫自己是神里家的大小姐，在无数双眼睛，无数人的期盼之下摆出完美无缺的姿态。这样的我，是否也该追求自己的愿望呢，是否也该…让你理解我的心意呢…
+|语音内容日语=「素直」になるというのは、非常に難しいことです。私は神里家の長女として、無数の注目と期待を浴びせられています。それに応えるため、常に完璧な姿勢で居続けることを自分に戒めてきました。そんな私が、自分の願いを追求してしまってもいいのでしょうか…私の気持ちを、貴方に理解してもらっても…いいのでしょうか…
+|语音内容英语=Openness is something I find very difficult. I constantly have to remind myself that as a lady of the Kamisato Clan, there are countless people watching and countless expectations to live up to. I must be a model of exemplary conduct at all times. But even so, shouldn't I still follow my dreams? Shouldn't I... share my true feelings with you?
+|语音内容韩语=솔직해지는 건 정말 어려워요. 전 수많은 사람의 주목과 기대를 받는 카미사토 가문의 장녀로서 완벽한 모습을 보여줘야 한다고 끊임없이 다짐해 왔어요. 이런 제가 소망을 쫓아도 되는 걸까요? 당신에게… 제 마음을 보여줘도 되는 걸까요…?
+}}
+{{角色/语音1
+|语音类型=喜欢的食物…
+|语音文件=player1-神里绫华_喜欢的食物
+|语音内容=我对异国料理很有兴趣，虽然很少有尝试的机会。嗯…如果是要局限在稻妻料理内的话…应该是「茶泡饭」吧。不过，不能给一般客人看见，我也是偷偷告诉你的。
+|语音内容日语=食べられる機会は少ないのですが…私は異国料理に興味がございます。稲妻料理に限定するなら…「お茶漬け」が好きです。しかし、一般のお客さまにお茶漬けをすする姿はお見せできません…貴方に教えたのも内緒ですよ。
+|语音内容英语=I'm fascinated by food from overseas. Though I don't get to try it very often... So, if I had to choose something from Inazuma, then probably... Chazuke. But not when anybody else is watching... So I tell you that in confidence.
+|语音内容韩语=전 이국적인 요리에 관심이 많아요. 먹어볼 기회는 거의 없지만…. 이나즈마 요리 중에서라면… 아마 「오차즈케」겠죠. 하지만 다른 사람한테 들키면 안 돼요…. 당신에게만 몰래 알려드리는 거거든요
+}}
+{{角色/语音1
+|语音类型=讨厌的食物…
+|语音文件=player1-神里绫华_讨厌的食物
+|语音内容=虽然不是不能吃，但我对动物脂肪或内脏大概会有点…
+|语音内容日语=食べられないわけではございませんが、動物の脂肪や内臓はちょっと…
+|语音内容英语=Though I do not eschew animal fat and organs entirely, they are far from my first choice.
+|语音内容韩语=못 먹는 건 아니지만, 동물 지방이나 내장은 좀…
+}}
+{{角色/语音1
+|语音类型=收到赠礼·其一
+|语音文件=player1-神里绫华_收到赠礼·其一
+|语音内容=嗯…我真是太幸福了…
+|语音内容日语=ふふっ…私は本当に幸せ者ですね…
+|语音内容英语=Mmm... Yes, I am truly fortunate...
+|语音内容韩语=음… 저 정말 행복해요…
+}}
+{{角色/语音1
+|语音类型=收到赠礼·其二
+|语音文件=player1-神里绫华_收到赠礼·其二
+|语音内容=谢谢你让我有机会尝试这道菜，我会把它的味道记在心里的。
+|语音内容日语=このような料理を味わわせていただき、ありがとうございます。この味を心に留めておきます。
+|语音内容英语=Thank you for the opportunity to try this dish. I will always savor it.
+|语音内容韩语=이런 요리를 맛볼 기회를 주셔서 감사해요. 이 맛은 평생 기억할게요
+}}
+{{角色/语音1
+|语音类型=收到赠礼·其三
+|语音文件=player1-神里绫华_收到赠礼·其三
+|语音内容=啊…稍微有点油腻了呢。
+|语音内容日语=おや…少し油が多いようですね。
+|语音内容英语=Hmm... It's a bit greasy for my taste.
+|语音内容韩语=아… 조금 기름지네요
+}}
+{{角色/语音1
+|语音类型=生日…
+|语音文件=player1-神里绫华_生日
+|语音内容=请随我来！只要走一小段路，不会耽搁你太长时间的哦。<br>打听到你的生日之后，我就提前了一段时间开始筹备。比起名贵的礼物，我妄自猜测…或许这样的礼物会更合我们的情谊。此次，就请让我以扇舞为礼吧。<br>那么，失礼了。
+|语音内容日语=私についてきてくれますか。そう遠くありませんので、それほどお時間は取らせません。<br>貴方の誕生日を知ってから、事前に準備をしていたのです。私の勝手な想像ですが、どんなに高貴な贈り物よりも、この方が私たちの関係に合っていると考えました。今回は、私の剣扇舞を貴方へ贈ります。<br>では、参ります。
+|语音内容英语=Come with me! We're not going far away — I promise it won't delay you too much.<br>I managed to find out when your birthday was well in advance, so I could prepare in good time. Hopefully this wasn't assuming too much, but I guessed you might prefer this to an expensive gift.<br>In honor of your birthday, please allow me to perform a fan dance for you.
+|语音内容韩语=절 따라오세요! 조금만 걸으면 되니까, 오래 걸리진 않을 거예요.<br>당신의 생일을 알고 난 후부터 계속 준비했죠. 제 생각이긴 하지만… 비싼 선물보다 이런 게 저희 우정에 더 잘 맞을 것 같아요. 그래서 이번엔 부채춤을 준비했어요.<br>그럼, 시작할게요
+}}
+{{角色/语音1
+|语音类型=突破的感受·起
+|语音文件=player1-神里绫华_突破的感受·起
+|语音内容=非常感谢。与你切磋使我受益良多，相信在剑术上也能更进一步。
+|语音内容日语=感謝いたします。貴方との手合わせから色々なものが学べました。剣術においてもさらに上達することができると思います。
+|语音内容英语=Thank you very much. It has been richly rewarding to learn from you so far, and I believe my skills with the blade can go even further still.
+|语音内容韩语=정말 감사해요. 당신과 겨루면서 많은 걸 깨달았어요. 검술에도 분명 큰 도움이 될 거예요
+}}
+{{角色/语音1
+|语音类型=突破的感受·承
+|语音文件=player1-神里绫华_突破的感受·承
+|语音内容=多亏你的点拨。有你相助，我对自己的能力也理解得更透彻了。
+|语音内容日语=ご指導ありがとうございます。貴方のおかげで、私は自分の能力への理解をより深めることができました。
+|语音内容英语=Thank you for your guidance. With your assistance, I am gaining a more thorough understanding of my capabilities.
+|语音内容韩语=당신의 조언과 도움 덕분에 제 능력을 더 정확하게 이해할 수 있게 됐어요
+}}
+{{角色/语音1
+|语音类型=突破的感受·转
+|语音文件=player1-神里绫华_突破的感受·转
+|语音内容=感觉更加游刃有余了。处理社奉行事务之余，甚至有空尝试一些新的事情。要来试试最近学做的点心吗？
+|语音内容日语=ますます余裕を感じられるようになりました。社奉行の事務を片付ける傍ら、新しいことにも挑戦できるほどです。最近作ってみたお菓子を試食してみていただけませんか？
+|语音内容英语=I feel more competent now than ever before. I even have the time outside my work for the Yashiro Commission to try some new things. Would you like to try one of my home-made snacks? I just learned how to make them recently.
+|语音内容韩语=훨씬 여유로워진 것 같아요. 야시로 봉행 일을 처리하면서 남은 시간에 새로운 일에 도전할 수 있을 정도예요. 최근에 새로 배운 디저트 드셔보실래요?
+}}
+{{角色/语音1
+|语音类型=突破的感受·合
+|语音文件=player1-神里绫华_突破的感受·合
+|语音内容=「尝有所思，斯世如磐；孰料浮世事，留驻难。」<ref name="突破的感受·合">万叶集805</ref><br>…抱歉，明明是值得高兴的时候，我却想起了那么悲伤的诗歌。和你相处的时间过于畅怀，竟然让我害怕再次失去。真是…失态了呀。
+|语音内容日语=「常磐なす かくしもがもと 思へども 世の事なれば 留みかねつも」<ref name="突破的感受·合" /><br>
+申し訳ございません、喜ばしいと思うべきこの時に、こんなに悲しい歌を思い出してしまいました。貴方と過ごす時間があまりにも心地よく、失うのが怖いと感じてしまったのです。本当に…失態ですね。
+|语音内容英语="Though I cling to that which has given me the strength to hold on, the weight of letting go is ever-foreboding."<br>My apologies, it should be a happy occasion, and yet it is such a sad phrase that comes to mind. Our time together has been so pleasant that I am fearful of losing what I have gained. I'm sorry, I must compose myself.
+|语音内容韩语=「반석처럼 영원하고 싶지만, 변해가는 세상은 아무도 붙잡을 수가 없네.」<br>…죄송해요, 분명 기뻐해야 할 일인데 이렇게 슬픈 시가 떠올랐네요. 당신과 함께 지낸 시간이 너무 즐거워서 잃게 될까 봐 두려워하다니…. 부끄러운 모습을 보였군요
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=元素战技·其一
+|语音文件=player1-神里绫华_元素战技·其一
+|语音内容=起舞吧。
+|语音内容日语=踊りなさい。
+|语音内容英语=Take flight.
+|语音内容韩语=춤추거라
+}}
+{{角色/语音1
+|语音类型=元素战技·其二
+|语音文件=player1-神里绫华_元素战技·其二
+|语音内容=失礼了。
+|语音内容日语=失礼。
+|语音内容英语=My apologies.
+|语音内容韩语=실례할게
+}}
+{{角色/语音1
+|语音类型=元素战技·其三
+|语音文件=player1-神里绫华_元素战技·其三
+|语音内容=雪纷飞。
+|语音内容日语=雪よ、舞え。
+|语音内容英语=Whirling snow.
+|语音内容韩语=흩날려라
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=元素爆发·其一
+|语音文件=player1-神里绫华_元素爆发·其一
+|语音内容=…拿下了！
+|语音内容日语=…取った！
+|语音内容英语=Embrace the ice.
+|语音内容韩语=도망칠 수 없어!
+}}
+{{角色/语音1
+|语音类型=元素爆发·其二
+|语音文件=player1-神里绫华_元素爆发·其二
+|语音内容=樱吹雪。
+|语音内容日语=桜吹雪。
+|语音内容英语=Sakura swirl.
+|语音内容韩语=벚꽃 눈보라
+}}
+{{角色/语音1
+|语音类型=元素爆发·其三
+|语音文件=player1-神里绫华_元素爆发·其三
+|语音内容=神里流…霜灭！
+|语音内容日语=神里流…霜滅！
+|语音内容英语=Kamisato Art: Soumetsu!
+|语音内容韩语=카미사토류… 멸망의 서리!
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=打开宝箱·其一
+|语音文件=player1-神里绫华_打开宝箱·其一
+|语音内容=寻珍觅奇…也算得一种雅趣。
+|语音内容日语=宝探し…これもまた一興です。
+|语音内容英语=Collecting rare and exquisite treasures... Yes, this seems suitably sophisticated.
+|语音内容韩语=진기한 물건을 찾는 것도… 고상한 취미라 할 수 있죠
+}}
+{{角色/语音1
+|语音类型=打开宝箱·其二
+|语音文件=player1-神里绫华_打开宝箱·其二
+|语音内容=呵呵…今日运势不错。
+|语音内容日语=ふふ…本日は運がいいようです。
+|语音内容英语=Hehe... Today is a lucky day.
+|语音内容韩语=후후… 오늘은 운이 좋네요
+}}
+{{角色/语音1
+|语音类型=打开宝箱·其三
+|语音文件=player1-神里绫华_打开宝箱·其三
+|语音内容=我会珍惜这一份幸运。
+|语音内容日语=この幸運を大切に。
+|语音内容英语=I shall treasure this good fortune.
+|语音内容韩语=이 행운, 소중히 간직할게요
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=生命值低·其一
+|语音文件=player1-神里绫华_生命值低·其一
+|语音内容=不容小觑呢。
+|语音内容日语=油断できませんね。
+|语音内容英语=I will not stand for this.
+|语音内容韩语=얕보면 안 되겠군요
+}}
+{{角色/语音1
+|语音类型=生命值低·其二
+|语音文件=player1-神里绫华_生命值低·其二
+|语音内容=久违的对手…
+|语音内容日语=久方ぶりの相手ですね…
+|语音内容英语=A worthy opponent...
+|语音内容韩语=오랫동안 기다렸던 상대로군요…
+}}
+{{角色/语音1
+|语音类型=生命值低·其三
+|语音文件=player1-神里绫华_生命值低·其三
+|语音内容=该决断了…
+|语音内容日语=決断しなければ…
+|语音内容英语=We ought to end this!
+|语音内容韩语=결정을 내릴 때인가…
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=同伴生命值低·其一
+|语音文件=player1-神里绫华_同伴生命值低·其一
+|语音内容=不可大意。
+|语音内容日语=油断してはいけません。
+|语音内容英语=Do not overdo it.
+|语音内容韩语=방심하면 안 됩니다
+}}
+{{角色/语音1
+|语音类型=同伴生命值低·其二
+|语音文件=player1-神里绫华_同伴生命值低·其二
+|语音内容=阁下务必小心。
+|语音内容日语=お気を付けください。
+|语音内容英语=Take care!
+|语音内容韩语=반드시 조심해 주세요
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=倒下·其一
+|语音文件=player1-神里绫华_倒下·其一
+|语音内容=失态了…
+|语音内容日语=失態です…
+|语音内容英语=Pardon my indiscretion...
+|语音内容韩语=추한 모습을 보였군요…
+}}
+{{角色/语音1
+|语音类型=倒下·其二
+|语音文件=player1-神里绫华_倒下·其二
+|语音内容=我还有…未尽之事…
+|语音内容日语=まだ…やり残したことが…
+|语音内容英语=Much remains... unfinished...
+|语音内容韩语=아직… 끝내지 못한 일이…
+}}
+{{角色/语音1
+|语音类型=倒下·其三
+|语音文件=player1-神里绫华_倒下·其三
+|语音内容=让家族…蒙羞了…
+|语音内容日语=一族の名に…泥を塗ってしまいました…
+|语音内容英语=I have dishonored... our clan...
+|语音内容韩语=가문에… 수치를 안겨드렸네요…
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=重受击·其一
+|语音文件=player1-神里绫华_重受击·其一
+|语音内容=无礼的家伙…
+|语音内容日语=無礼者…
+|语音内容英语=So rude!
+|语音内容韩语=무례한 녀석…
+}}
+{{角色/语音1
+|语音类型=重受击·其二
+|语音文件=player1-神里绫华_重受击·其二
+|语音内容=怎么会…
+|语音内容日语=まさか…
+|语音内容英语=Unthinkable...
+|语音内容韩语=어떻게…
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=加入队伍·其一
+|语音文件=player1-神里绫华_加入队伍·其一
+|语音内容=神里绫华，参上。
+|语音内容日语=神里綾華、参ります。
+|语音内容英语=Kamisato Ayaka, present.
+|语音内容韩语=카미사토 아야카, 참전
+}}
+{{角色/语音1
+|语音类型=加入队伍·其二
+|语音文件=player1-神里绫华_加入队伍·其二
+|语音内容=烦请赐教。
+|语音内容日语=ご指導お願い致します。
+|语音内容英语=I await your instruction.
+|语音内容韩语=한 수 가르쳐 주세요
+}}
+{{角色/语音1
+|语音类型=加入队伍·其三
+|语音文件=player1-神里绫华_加入队伍·其三
+|语音内容=呵呵，请多关照。
+|语音内容日语=ふふ、よろしくお願い致します。
+|语音内容英语=A pleasure to be working with you.
+|语音内容韩语=후후, 잘 부탁드려요
+}}
+</div>
+</div>
+</div>
