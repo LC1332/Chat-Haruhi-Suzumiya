@@ -4,6 +4,7 @@
 
 """
 __ToDo："transcribe video to srt via OpenAI Whisper "
+__info:"ASR + simplied chinese + noise reduced"
 __author: "Aria:(https://github.com/ariafyy)"
 """
 
@@ -19,6 +20,10 @@ except ImportError:
     print("check requirements: yuki_builder/requirements_run_whisper.txt")
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 from hanziconv import HanziConv
+from subprocess import CalledProcessError, run
+import numpy as np
+SAMPLE_RATE = 16000
+TRANSCRIBE_MODE = ' '  # TRANSCRIBE_MODE = 'noisereduce'
 
 
 class Video2Subtitles(object):
@@ -70,8 +75,12 @@ class Video2Subtitles(object):
         DEVICE = torch.cuda.is_available()
         model = self.model
         input_video_ = input_video if isinstance(input_video, str) else input_video.name
+        if TRANSCRIBE_MODE == 'noisereduce':
+            audio = self.audio_denoise(input_video_)
+        else:
+            audio = input_video_
         result = model.transcribe(
-            input_video_,
+            audio=audio,
             task="transcribe",
             language=lang,
             verbose=verbose,
@@ -87,6 +96,43 @@ class Video2Subtitles(object):
                 self.write_srt(result["segments"], file=srt)
         print("\nsubtitle_file:", subtitle_file, "\n")
         return subtitle_file
+
+    def load_audio(self, file: str, sr: int = SAMPLE_RATE):
+        """
+        Requires the ffmpeg CLI in PATH.
+        fmt: off
+        """
+        cmd = [
+            "ffmpeg",
+            "-nostdin",
+            "-threads", "0",
+            "-i", file,
+            "-f", "s16le",
+            "-ac", "1",
+            "-acodec", "pcm_s16le",
+            "-ar", str(sr),
+            "-"
+        ]
+        # fmt: on
+        try:
+            out = run(cmd, capture_output=True, check=True).stdout
+        except CalledProcessError as e:
+            raise RuntimeError(f"Failed to load audio: {e.stderr.decode()}") from e
+        data = np.frombuffer(out, np.int16).flatten().astype(np.float32) / 32768.0
+        return data
+
+    def audio_denoise(self, input_audio: str, ):
+        """
+        # reduce noise
+        """
+        try:
+            import noisereduce as nr
+        except ImportError:
+            print("pip install noisereduce")
+        rate = SAMPLE_RATE
+        data = self.load_audio(input_audio)
+        reduced_audio = nr.reduce_noise(y=data, sr=rate)
+        return reduced_audio
 
 
 def run_whisper(args):
