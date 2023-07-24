@@ -85,7 +85,7 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 
 |名称|colab链接|说明|
 |---|---|---|
-|带图版本|<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 能够根据台词搜索图片的gradio版本 |
+|Gradio客户端|<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 能够支持角色切换的功能整合客户端 |
 |万恶之源|<a href="https://colab.research.google.com/github/LC1332/Prophet-Andrew-Ng/blob/main/prophet-code/haruhiLangChain.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 李鲁鲁最早开发的gradio Chat凉宫春日 |
 |百度Studio版本| [百度Studio版本](https://aistudio.baidu.com/aistudio/projectdetail/6386896) | 由DataWhale助教-马琦钧开发的百度Studio简化版本 |
 |HuggingFace版本| [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi) | HuggingFace版本，如果key用完了麻烦提醒我们一下 |
@@ -178,6 +178,7 @@ I want you to act like {character} from {series}. I want you to respond and answ
 - [x] 增加神里绫华
 - [ ] 原神的人物还考虑增加 八重神子，胡桃，钟离，流浪者，雷电将军
 - [ ] 增加一些经典武侠人物
+- [ ] 预计增加一个项目问答的李鲁鲁人物
 - [ ] 重构训练工具 kyon_generator
 - [ ] 重新训练Haruhi的ChatGLM2模型
 - [ ] 测试端和GLM2整合
