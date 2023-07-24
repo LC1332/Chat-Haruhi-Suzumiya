@@ -59,8 +59,8 @@ class ChatGPT:
         self.max_len_story = int(configuration['max_len_story'])
         self.max_len_history = int(configuration['max_len_history'])
         self.dialogue_path = configuration['dialogue_path']
-        openai.api_key = configuration["openai_key_1"] + configuration["openai_key_2"]
-        os.environ["OPENAI_API_KEY"] = openai.api_key
+        self.api_key = configuration["openai_key_1"] + configuration["openai_key_2"]
+        # os.environ["OPENAI_API_KEY"] = openai.api_key
         self.enc = tiktoken.get_encoding("cl100k_base")
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         # 预加载jsonl文件
@@ -114,6 +114,8 @@ class ChatGPT:
 
     # 一个封装 OpenAI 接口的函数，参数为 Prompt，返回对应结果
     def get_completion_from_messages(self, messages, model="gpt-3.5-turbo", temperature=0):
+        # openai.api_key = self.api_key
+        # print(openai.api_key)
         response = openai.ChatCompletion.create(
             model=model,
             messages=messages,
@@ -258,9 +260,13 @@ class ChatGPT:
         print('当前辅助sample:', selected_sample)
 
         messages = self.organize_message_langchain(story, history_chat, history_response, new_query)
-        chat = ChatOpenAI(temperature=0)
+        # print("this is os.environment:  ", os.environ["OPENAI_API_KEY"])
+        # print("OPENAI_API_KEY" in os.environ.keys())
+        if not "OPENAI_API_KEY" in os.environ.keys():
+            chat = ChatOpenAI(temperature=0,openai_api_key=self.api_key)
+        else:
+            chat = ChatOpenAI(temperature=0)
         return_msg = chat(messages)
-
         response = return_msg.content
 
         return response
