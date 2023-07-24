@@ -33,11 +33,8 @@ Aria(Yaying Fei)对接了whisper到台本工具。即将继续参加台本工具
 
 </details>
 
-本项目是一个在建项目，本项目中的代码和工具，也支持其他动漫人物的建立。在初步完成Haruhi预计的功能后，我们会开始尝试其他角色。
+本项目是一个[在建项目](#TODO和计划Feature)，本项目中的代码和工具，也支持其他动漫人物的建立。目前初步支持凉宫春日、李云龙、于谦和神里绫华，正在增加更多角色。
 
-在魔搭社区主办、阿里云和NVIDIA作为联合发起方，天池协办的Create@AI黑客马拉松中，Chat凉宫春日获得二等奖(top3)
-
-在中科院心理所中，项目获得二等奖(top3)，详情请见[链接](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
 
 <table>
   <tr>
@@ -51,7 +48,8 @@ Aria(Yaying Fei)对接了whisper到台本工具。即将继续参加台本工具
         <li><a href="#快速开始">快速开始</a></li>
         <li><a href="#DemoVideo">DemoVideo</a></li>
         <li><a href="#ChatBot核心的构造">ChatBot核心的构造</a></li>
-        <li><a href="#计划Feature">计划Feature</a></li>
+        <li><a href="#TODO和计划Feature">TODO和计划Feature</a></li>
+        <li><a href="#获奖">获奖</a></li>
         <li><a href="#赞助">赞助 | SponsorShip </a></li>
         <li><a href="#人员">人员 </a></li>
         <li><a href="#Citation引用">Citation引用</a></li>
@@ -74,6 +72,8 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 
 ## News
 
+[2023-06-24] 增加李云龙、于谦、神里绫华角色数据，更新TODO。
+
 [2023-06-07] 在魔搭社区主办、阿里云和NVIDIA作为联合发起方，天池协办的Create@AI黑客马拉松中，Chat凉宫春日获得二等奖(top3), [讲解视频](https://www.bilibili.com/video/BV1Xh411A7kC/)
 
 [2023-06-03] 在中科院心理所中，项目获得二等奖(top3)，详情请见[链接](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
@@ -86,15 +86,15 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 |名称|colab链接|说明|
 |---|---|---|
 |带图版本|<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 能够根据台词搜索图片的gradio版本 |
-|Chat加藤惠|<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/gradio_megumi.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 根据群友收集的语料实现的Chat加藤惠 |
 |万恶之源|<a href="https://colab.research.google.com/github/LC1332/Prophet-Andrew-Ng/blob/main/prophet-code/haruhiLangChain.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 李鲁鲁最早开发的gradio Chat凉宫春日 |
 |百度Studio版本| [百度Studio版本](https://aistudio.baidu.com/aistudio/projectdetail/6386896) | 由DataWhale助教-马琦钧开发的百度Studio简化版本 |
 |HuggingFace版本| [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi) | HuggingFace版本，如果key用完了麻烦提醒我们一下 |
 |人格-高考作文 | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/College_essays_gradio.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | 高/低开放性人格对应的高考作文题生成器，[详细报告](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) |
 |人格-Chatbot | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/PersonalityChatbot.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | 高/低开放性人格对应的Chatbot，[详细报告](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) |
-|[Hackathon](https://www.bilibili.com/video/BV1ho4y1P75H)| |DataWhale作业时候的讲解视频|
-|[Hackathon](https://www.bilibili.com/video/BV1Xh411A7kC/)| |黑客马拉松B站讲解视频|
-
+|[5分钟讲解](https://www.bilibili.com/video/BV1Xh411A7kC/)| |黑客马拉松B站讲解视频|
+|[DataWhale](https://www.bilibili.com/video/BV1ho4y1P75H)| |DataWhale作业时候的讲解视频|
+|[台本工具](https://www.bilibili.com/video/BV1V8411S7eT)| | 台本工具使用说明 |
+|Chat加藤惠|<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/gradio_megumi.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 根据群友收集的语料实现的Chat加藤惠 |
 
   
 ## DemoVideo
@@ -168,7 +168,20 @@ I want you to act like {character} from {series}. I want you to respond and answ
 
 关于每个部分更详细的解释见[项目的report](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/report.md)
 
-## 计划Feature
+## TODO和计划Feature
+
+最近的TODO:
+
+- [x] 重构台本工具yuki_builder
+- [x] 增加李云龙
+- [x] 增加于谦
+- [x] 增加神里绫华
+- [ ] 原神的人物还考虑增加 八重神子，胡桃，钟离，流浪者，雷电将军
+- [ ] 增加一些经典武侠人物
+- [ ] 重构训练工具 kyon_generator
+- [ ] 重新训练Haruhi的ChatGLM2模型
+- [ ] 测试端和GLM2整合
+- [ ] 集齐多人人物之后上线多人模型
 
 本项目完整的开发计划如下图所示:
 
@@ -219,6 +232,13 @@ I want you to act like {character} from {series}. I want you to respond and answ
     - 构思合理的定量化User Study
 
     - 争取写一个TechReport挂到arxiv
+
+
+## 获奖
+
+在魔搭社区主办、阿里云和NVIDIA作为联合发起方，天池协办的Create@AI黑客马拉松中，Chat凉宫春日获得二等奖(top3)
+
+在中科院心理所中，项目获得二等奖(top3)，详情请见[链接](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
 
 
 ## 赞助
