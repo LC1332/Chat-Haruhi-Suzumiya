@@ -4,7 +4,7 @@ from run_whisper import run_whisper
 from srt2csv import srt2csv
 from crop import crop
 from recognize import recognize
-from video_preprocessing.video_process import run_uvr5
+from video_preprocessing.video_process import run_bgm_remover
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='YukiBuilder')
@@ -31,16 +31,16 @@ if __name__ == '__main__':
     recognize_parser.add_argument('-role_audios', required=True)
     recognize_parser.add_argument('-output_folder', required=True)
 
-    uvr5_parser = subparsers.add_parser('uvr5')
-    uvr5_parser.add_argument('--input_file', default='input_file', type=str, required=True, help="source path")
-    uvr5_parser.add_argument('--opt_vocal_root', default='out_folder', type=str, required=True, help="vocal path")
-    uvr5_parser.add_argument('--opt_ins_root', default='out_folder', type=str, required=True, help="instrument path")
+    bgm_remover_parser = subparsers.add_parser('bgm_remover')
+    bgm_remover_parser.add_argument('--input_file', default='input_file', type=str, required=True)
+    bgm_remover_parser.add_argument('--opt_vocal_root', default='out_folder', type=str,  help="vocal path")
+    bgm_remover_parser.add_argument('--opt_ins_root', default='out_folder', type=str, help="instrument path")
 
     args = parser.parse_args()
 
-    if args.subcommand == 'uvr5':
-        # 人声伴奏分离处理
-        run_uvr5(args)
+    if args.subcommand == 'bgm_remover':
+        # 人声伴奏分离处理 uvr5
+        run_bgm_remover(args)
     if args.subcommand == 'whisper':
         # 自动识别，输出字幕
         run_whisper(args)
