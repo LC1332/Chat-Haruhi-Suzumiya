@@ -206,26 +206,31 @@ class Predictor:
         mix = mix.T
         sources = self.demix(mix.T)
         opt = sources[0].T
+        vocal_path = None
+        others_path = None
+
         if format in ["wav", "flac"]:
-            sf.write(
-                "%s/%s_main_vocal.%s" % (vocal_root, basename, format), mix - opt, rate
-            )
-            sf.write("%s/%s_others.%s" % (others_root, basename, format), opt, rate)
+            vocal_path = "%s/%s_main_vocal.%s" % (vocal_root, basename, format)
+            others_path = "%s/%s_others.%s" % (others_root, basename, format)
+            sf.write(vocal_path, mix - opt, rate)
+            sf.write(others_path, opt, rate)
         else:
-            path_vocal = "%s/%s_main_vocal.wav" % (vocal_root, basename)
-            path_other = "%s/%s_others.wav" % (others_root, basename)
-            sf.write(path_vocal, mix - opt, rate)
-            sf.write(path_other, opt, rate)
-            if os.path.exists(path_vocal):
+            vocal_path = "%s/%s_main_vocal.wav" % (vocal_root, basename)
+            others_path = "%s/%s_others.wav" % (others_root, basename)
+            sf.write(vocal_path, mix - opt, rate)
+            sf.write(others_path, opt, rate)
+            if os.path.exists(vocal_path):
                 os.system(
                     "ffmpeg -i %s -vn %s -q:a 2 -y"
-                    % (path_vocal, path_vocal[:-4] + ".%s" % format)
+                    % (vocal_path, vocal_path[:-4] + ".%s" % format)
                 )
-            if os.path.exists(path_other):
+            if os.path.exists(others_path):
                 os.system(
                     "ffmpeg -i %s -vn %s -q:a 2 -y"
-                    % (path_other, path_other[:-4] + ".%s" % format)
+                    % (others_path, others_path[:-4] + ".%s" % format)
                 )
+
+        return vocal_path, others_path
 
 
 class MDXNetDereverb:
@@ -242,7 +247,16 @@ class MDXNetDereverb:
         self.pred = Predictor(self)
 
     def _path_audio_(self, input, vocal_root, others_root, format):
-        self.pred.prediction(input, vocal_root, others_root, format)
+        """
+        处理音频
+        :param input:
+        :param vocal_root:
+        :param others_root:
+        :param format:
+        :return:
+        """
+        vocal_path, others_path = self.pred.prediction(input, vocal_root, others_root, format)
+        return vocal_path, others_path
 
 
 if __name__ == "__main__":
