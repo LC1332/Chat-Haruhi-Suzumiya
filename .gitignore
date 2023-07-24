@@ -201,7 +201,7 @@ yuki_builder/testWhisper/[Sakurato] Oshi no Ko [11][AVC-8bit 1080p AAC][CHS&JPN]
 yuki_builder/testWhisper/[Sakurato] Oshi no Ko [11][AVC-8bit 1080p AAC][CHS&JPN].srt
 yuki_builder/testAudio/*
 yuki_builder/testWhisper/*
-audio_legacy/uvr5/TEMP
-audio_legacy/uvr5/uvr5_weights
+yuki_builder/video_preprocessing/uvr5/TEMP
+yuki_builder/video_preprocessing/uvr5/uvr5_weights
 
 

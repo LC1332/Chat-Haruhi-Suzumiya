@@ -1,8 +1,0 @@
-numpy==1.23.5
-audioread
-onnxruntime-gpu
-tqdm>=4.63.1
-json5
-librosa==0.9.1
-soundfile>=0.12.1
-ffmpeg-python>=0.2.0

@@ -32,7 +32,7 @@ from process import uvr
 ```
 - 整理入参
 ```python
-from process import uvr,uvr5_names
+from process import uvr_prediction, uvr5_names
 import os
 import traceback, pdb
 import ffmpeg
@@ -74,13 +74,13 @@ format0 = ["wav", "flac", "mp3", "m4a"]
 - 调用函数运行
 ```python
 
-generator = uvr(uvr5_names[5], dir_wav_input,
-                opt_vocal_root,
-                opt_ins_root,
-                agg,
-                format0[0]
-                )
-
-for i in generator:
-    print(i)
+wav_input = '/media/checkpoint/speech_data/video/audio/test/voice/0003_0.00.56.1800_00.00.58.980_为了逃避狼群.wav'
+vocal_path, others_path = uvr_prediction(uvr5_names[5], wav_input,
+                                         opt_vocal_root,
+                                         opt_ins_root,
+                                         agg,
+                                         format0[0]
+                                         )
+print(vocal_path)
+print(others_path)
 ```
