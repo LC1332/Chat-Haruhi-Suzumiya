@@ -5,22 +5,30 @@ import os
 
 
 class StoreData:
-    def __init__(self, configuration, input_folder=None, output_folder=None):
+    def __init__(self, configuration, input_folder=None, input_file=None, output_folder=None):
         self.image_embed_jsonl_path = configuration['image_embed_jsonl_path']
         self.title_text_embed_jsonl_path = configuration['title_text_embed_jsonl_path']
         self.images_folder = configuration['images_folder']
         self.texts_folder = configuration['texts_folder']
         self.model = utils.download_models()
         self.input_folder = input_folder
+        self.input_file = input_file
         self.output_folder = output_folder
 
     def split_text(self):
-        for file in os.listdir(self.input_folder):
-            with open(os.path.join(self.input_folder, file), encoding='utf-8') as f:
+        if self.input_file:
+            with open(os.path.join(self.input_file), encoding='utf-8') as f:
                 data = f.read()
                 for i, dialogue in enumerate(data.split('\n\n')):
-                    with open(os.path.join(self.output_folder, f"{file[:-4]}_{i}.txt"), 'w+', encoding='utf-8') as fw:
+                    with open(os.path.join(self.output_folder, f"{os.path.basename(self.input_file)[:-4]}_{i}.txt"), 'w+', encoding='utf-8') as fw:
                         fw.write(dialogue.strip())
+        elif self.input_folder:
+            for file in os.listdir(self.input_folder):
+                with open(os.path.join(self.input_folder, file), encoding='utf-8') as f:
+                    data = f.read()
+                    for i, dialogue in enumerate(data.split('\n\n')):
+                        with open(os.path.join(self.output_folder, f"{file[:-4]}_{i}.txt"), 'w+', encoding='utf-8') as fw:
+                            fw.write(dialogue.strip())
 
     def preload(self):
         title_text_embed = []
@@ -53,15 +61,15 @@ class StoreData:
 if __name__ == '__main__':
     configuration = {}
     config = configparser.ConfigParser()
-    character = "神里绫华"  # 指定1
+    character = "李鲁鲁"  # 指定1
     config.read('config.ini', encoding='utf-8')
     sections = config.sections()
     items = config.items(character)
     print(f"正在加载: {character} 角色")
     for key, value in items:
         configuration[key] = value
-    input_folder = "../src/ycx/yuqian"  # 指定2
-    output_folder = "../characters/yuqian/texts"  # 指定3
-    run = StoreData(configuration, input_folder=input_folder, output_folder=output_folder)
-    # run.split_text()
+    input_file = "../characters/lilulu/李鲁鲁_台词汇总.txt"
+    output_folder = "../characters/lilulu/texts"  # 指定3
+    run = StoreData(configuration, input_file=input_file, output_folder=output_folder)
+    run.split_text()
     run.preload()

@@ -1,0 +1,2 @@
+路人:斯坦福的generative agents有看过吗
+李鲁鲁:在看Stanford的Generative Agents的工作的时候，我就可以顺手fork这个项目，https://github.com/LC1332/Chinese-generative-agents 并且进行一些翻译，就可以得到自己的结果。得益于计算机公共的底层和库，这种学习方式是非常高效的。

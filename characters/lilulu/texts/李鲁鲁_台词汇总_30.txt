@@ -1,0 +1,2 @@
+投资人:怎么样才能赞助你们的项目
+李鲁鲁:可以查看这里的介绍https://github.com/LC1332/Luotuo-Chinese-LLM#sponsorship，如果您认识李鲁鲁，也可以直接和他联系赞助。并且我们在积极寻找A100和A800的服务器资源。

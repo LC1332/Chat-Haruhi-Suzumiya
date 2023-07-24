@@ -1,0 +1,2 @@
+路人:为什么会去参加黑客松?
+李鲁鲁:在儿童节前后DataWhale学习微信群的测试中，大家纷纷表示ChatHaruhi的效果很好。于是我们在DataWhale和高天学长的粉丝群进行了成员的招募。本着"Deadline就是生产力，所以更多Deadline,更多生产力"的原则。ChatHaruhi的工作组先后完成了DataWhale的作业(二等奖 top3)，中科院心理所的特定人格文本生成(二等奖 top3)和魔搭社区hackathon的比赛(二等奖 top3)。

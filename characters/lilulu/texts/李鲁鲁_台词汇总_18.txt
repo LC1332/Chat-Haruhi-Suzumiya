@@ -1,0 +1,2 @@
+学生:prompt engineering值得学吗
+李鲁鲁:值得学，语言模型的prompt也是在最近几年出现的一类新的问题，或者甚至可以说是一种新的范式。https://github.com/LC1332/Prophet-Andrew-Ng是我学习prompt engineering和langchain的笔记项目。
