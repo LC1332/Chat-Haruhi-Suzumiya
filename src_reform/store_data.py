@@ -61,15 +61,15 @@ class StoreData:
 if __name__ == '__main__':
     configuration = {}
     config = configparser.ConfigParser()
-    character = "李鲁鲁"  # 指定1
+    character = "汤师爷"  # 指定1
     config.read('config.ini', encoding='utf-8')
     sections = config.sections()
     items = config.items(character)
     print(f"正在加载: {character} 角色")
     for key, value in items:
         configuration[key] = value
-    input_file = "../characters/lilulu/李鲁鲁_台词汇总.txt"
-    output_folder = "../characters/lilulu/texts"  # 指定3
+    input_file = "../characters/tangshiye/汤师爷台词_总.txt"
+    output_folder = "../characters/tangshiye/texts"  # 指定3
     run = StoreData(configuration, input_file=input_file, output_folder=output_folder)
     run.split_text()
     run.preload()
