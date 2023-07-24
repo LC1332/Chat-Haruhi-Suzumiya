@@ -4,7 +4,7 @@ import os
 import shutil
 import argparse
 
-def run_uvr5(args: Namespace):
+def run_bgm_remover(args: Namespace):
 
     # checking if input_file is a file
     if not os.path.isfile(args.input_file):
@@ -45,8 +45,8 @@ if __name__ == '__main__':
         description='uvr5 processing of vocal accompaniment separation'
     )
     parser.add_argument('--input_file', default='input_file', type=str, required=True, help="source path")
-    parser.add_argument('--opt_vocal_root', default='out_folder', type=str, required=True, help="vocal path")
-    parser.add_argument('--opt_ins_root', default='out_folder', type=str, required=True, help="instrument path")
+    parser.add_argument('--opt_vocal_root', default='out_folder', type=str,  help="vocal path")
+    parser.add_argument('--opt_ins_root', default='out_folder', type=str,  help="instrument path")
     args = parser.parse_args()
     parser.print_help()
-    run_uvr5(args)
+    run_bgm_remover(args)

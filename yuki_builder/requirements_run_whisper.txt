@@ -1,7 +1,0 @@
-﻿# py 3.9 required
-openai-whisper==20230314
-torch
-ffmpeg
-hanziconv
-numpy
-noisereduce
