@@ -263,10 +263,10 @@ class ChatGPT:
         # print("this is os.environment:  ", os.environ["OPENAI_API_KEY"])
         # print("OPENAI_API_KEY" in os.environ.keys())
         if not "OPENAI_API_KEY" in os.environ.keys():
-            chat = ChatOpenAI(temperature=0,openai_api_key=self.api_key)
+            chat = ChatOpenAI(temperature=0, openai_api_key=self.api_key, model_kwargs={"stop": ["\n", "」"]})
         else:
-            chat = ChatOpenAI(temperature=0)
+            chat = ChatOpenAI(temperature=0, model_kwargs={"stop": ["\n", "」"]})
         return_msg = chat(messages)
-        response = return_msg.content
+        response = return_msg.content + "」"
 
         return response
