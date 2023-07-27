@@ -1,0 +1,652 @@
+{{需要帮助角色语音}}
+{{面包屑|雷电将军|角色语音}}{{语音tab样式}}__notoc__
+<div class="resp-tabs" style="border-spacing: 0px;">
+<ul class="resp-tabs-list clearfix">
+<li class="active bili-list-style"><span class="tab-panel">角色语音</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >元素战技</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >元素爆发</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >打开宝箱</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >生命值低</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >同伴生命值低</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >倒下</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >受击</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >加入队伍</span></li>
+</ul>
+{{角色语音表头
+|汉语CV=菊花花
+|日语CV=泽城美雪
+|英语CV=安妮·雅科
+|韩语CV=朴志胤
+}}
+<div class="resp-tabs-container">
+<div class="resp-tab-content" style="display:block;">
+{{角色/语音1
+|语音类型=初次见面…
+|语音文件=player1-雷电将军_初次见面
+|语音内容=无须行礼，此身虽然尊贵殊胜，不过此般前来，是想要做些微服游历民间的事。我看上了你的身手，现在你就是我的御侧保镖了。不用担心，遇到危险，我会出手的。
+|语音内容日语=かしこまらないでください。この身は高貴なものですが、ここへ来たのは身分を隠し世を渡り歩くため。あなたの腕を見込んで頼みがあります。今から私の護衛になっていただけませんか。心配しないでください、危機が訪れれば、私も手を貸しますので。
+|语音内容英语=No salutations needed. My exalted status shall not be disclosed as we travel among the common folk. I acknowledge that you are a person of superior ability. Henceforth, you will be my guard. Worry not. Should any danger arise, I shall dispose of it.
+|语音内容韩语=예의 차릴 것 없다. 내가 존귀한 몸이긴 하나, 이건 백성들을 살피기 위한 미복잠행이니라. 네 실력이 마음에 드니 널 내 측근 호위로 임명하겠다. 허나 걱정 말거라, 위험한 상황이 닥치면 이 몸이 직접 나설 테니
+}}
+{{角色/语音1
+|语音类型=闲聊·徒然
+|语音文件=player1-雷电将军_闲聊·徒然
+|语音内容=徒然无事，对砚枯坐。哼。
+|语音内容日语=つれづれなるままに、日くらし、硯にむかひて。ふん。
+|语音内容英语=Inactivity serves no purpose whatsoever. Hmph.
+|语音内容韩语=할 일도 없이 괜히 벼루만 쳐다보고 있네, 흠
+}}
+{{角色/语音1
+|语音类型=闲聊·浮世
+|语音文件=player1-雷电将军_闲聊·浮世
+|语音内容=浮世景色百千年依旧，人之在世却如白露与泡影。虚无。
+|语音内容日语=浮世の風景は幾千年も変わらないというのに、人の世とはこうも白露と泡のように…儚い。
+|语音内容英语=The world remains constant over the centuries. But human life is like the dew at dawn or a bubble rising through water. Transitory.
+|语音内容韩语=속세의 풍경은 항상 그대로인데, 인간의 일생은 이슬처럼 덧없구나
+}}
+{{角色/语音1
+|语音类型=闲聊·花鸟余情
+|语音文件=player1-雷电将军_花鸟余情
+|语音内容=无人相陪，此般花鸟余情，也不过衬托我身不移不变的背景罢了。
+|语音内容日语=この美しい風景も、そばに誰もいない以上、私の不変を引き立たせるだけ…
+|语音内容英语=All the world holds dear is but a backdrop of constant motion. I stand before it alone and unchanging.
+|语音内容韩语=함께 하는 이 없이는 이 아름다운 자연의 운치도 날 돋보이게 하는 배경에 불과하다
+}}
+{{角色/语音1
+|语音类型=下雨的时候…
+|语音文件=player1-雷电将军_下雨的时候
+|语音内容=只是雨滴有什么麻烦的。这还没有打雷呢。
+|语音内容日语=雨なんて大したことありません。まだ雷も鳴っていないのですから。
+|语音内容英语=Rainfall alone does not constitute a storm. Thunder is required.
+|语音内容韩语=고작 빗방울로 호들갑은, 아직 번개도 치지 않았는데
+}}
+{{角色/语音1
+|语音类型=打雷的时候…
+|语音文件=player1-雷电将军_打雷的时候
+|语音内容=哎呀，你不会怕了吧。明明此世最为殊胜最为恐怖的雷霆化身就站在你身边。
+|语音内容日语=あら、雷が怖いのですか？この世で唯一無二の高貴なる者であり、最も恐ろしい雷霆の化身が、あなたのそばにいるというのに。
+|语音内容英语=Dear me, that didn't frighten you, did it? After all, you are in the presence of the most supreme and terrifying incarnation of lightning in the whole of Teyvat.
+|语音内容韩语=흐음, 설마 겁먹은 거야? 이상하네, 세상에서 가장 뛰어나고 무시무시한 뇌정의 화신이 지금 네 곁에 있다고
+}}
+{{角色/语音1
+|语音类型=下雪的时候…
+|语音文件=player1-雷电将军_下雪的时候
+|语音内容=冬将军也来了。
+|语音内容日语=冬将軍も来たのでしょうか。
+|语音内容英语=The Winter Shogun approaches.
+|语音内容韩语=동장군도 왔군
+}}
+{{角色/语音1
+|语音类型=晴天的时候…
+|语音文件=player1-雷电将军_晴天的时候
+|语音内容=天晴也并不能掩盖雷霆的威光。不下雨也可以降下神雷，看到那棵树了吗？你说你懂了，叫我停手。好吧。
+|语音内容日语=晴天でさえ、雷霆の光を遮ることはできません。雨が降らずとも、神雷を下せます、あの木を見ていてください。ん？わかったからもうやめて？そうですか…
+|语音内容英语=Clear skies can do nothing to hide the brilliance of lightning. Divine bolts can strike even in the absence of rain. Do you see that tree? Wait... you understand? So... demonstration is not required? Good.
+|语音内容韩语=하늘이 맑다고 번개는 숨길 수 없고, 비가 내리지 않아도 신의 번개를 내릴 수 있다. 저 나무가 보이느냐? 알겠으니 그만하라고? 흠, 그래
+}}
+{{角色/语音1
+|语音类型=早上好…
+|语音文件=player1-雷电将军_早上好
+|语音内容=道完早安就打呵欠，太懈怠了。我这次就赦免你的无礼了。早安。
+|语音内容日语=朝のあいさつをしたそばからあくびをするなんて、たるんでいる証拠かと。ですが、今回はその無礼を許しましょう。おはようございます。
+|语音内容英语=Yawning without covering your mouth? Uncouth. I will pardon your rudeness this time. Good morning to you, too.
+|语音内容韩语=문안 인사가 끝나자마자 하품이라니, 기강이 해이해졌군. 이번 한 번만 봐주지. 좋은 아침이구나
+}}
+{{角色/语音1
+|语音类型=中午好…
+|语音文件=player1-雷电将军_中午好
+|语音内容=啊，想吃甜点心。嗯，为什么不行？什么叫「哪有这个时间吃甜品的」。之前是因为他们看我是将军所以惯着我的？这样啊。
+|语音内容日语=甘味が食べたいですね。へぇっ、いけませんか？「こんな時間に甘い物なんて」とはいったい…以前は将軍の身分によって甘やかされていた、と。そうだったのですね…
+|语音内容英语=Time for dessert. What? Why not? What do you mean, "Entrées come first"? ...They were only indulging me because I am the Shogun? Huh, interesting.
+|语音内容韩语=아, 디저트가 먹고 싶어. 응? 안 된다고? 「이 시간에 디저트를 먹는 사람이 어디 있어요」라니, 그게 무슨 소리야? 저번엔 내가 쇼군이라서 아무도 얘기 못 했던 거라고? 흠, 그랬구나
+}}
+{{角色/语音1
+|语音类型=晚上好…
+|语音文件=player1-雷电将军_晚上好
+|语音内容=你想知道夜晚流星的真相吗？哈哈，真相就是缥缈须臾的一瞬天光罢了。嗯，你说其实是你？你也是天狗吗？
+|语音内容日语=夜の流れ星について知りたいのですか？ふふ、瞬く間に流れゆく天の光です。えっ、実はあなたが流れ星？空を翔ける者は「天狗」だという言い伝えがあります、あなたも天狗だったのでしょうか？
+|语音内容英语=Do you wish to know the truth about the shooting stars at night? Haha, they are but fleeting moments of luminosity. Uh, you used to be one of them? Are you a tengu warrior?
+|语音内容韩语=유성의 실체에 대해 알고 있어? 하하, 실은 아득한 찰나의 빛일 뿐이야. 음? 그게 실은 너라고? 그럼 너도 텐구였던 건가?
+}}
+{{角色/语音1
+|语音类型=晚安…
+|语音文件=player1-雷电将军_晚安
+|语音内容=我命十方世界雷鸣平息，愿你今晚得享安睡。
+|语音内容日语=私の命により、この世のすべての雷鳴を静めました。今夜はゆっくりと眠れることを願います。
+|语音内容英语=I command the thunder in all corners of the world to cease. Rest well tonight.
+|语音内容韩语=천하의 뇌명을 잠재울 터이니 오늘 밤 편히 자길
+}}
+{{角色/语音1
+|语音类型=关于雷电将军自己·须臾
+|语音文件=player1-雷电将军_关于雷电将军自己·须臾
+|语音内容=雷鸣闪电，一瞬即逝。正因如此，才会想要撷取「永恒」。不，才必须掌握「永恒」。
+|语音内容日语=雷霆と稲妻は、刹那に去りゆく。だからこそ、「永遠」を望むのです。いえ、望むだけでは足りません、必ず「永遠」をこの手に。
+|语音内容英语=Thunder's roar and lightning's flash. So ephemeral. This is why reaching Eternity is desirable. ...Actually, this is why reaching Eternity is necessary.
+|语音内容韩语=뇌명과 번개는 찰나에 사라지지. 그래서 「영원함」을 취하고 싶구나. 아니, 「영원함」을 반드시 손에 넣어야만 해
+}}
+{{角色/语音1
+|语音类型=关于雷电将军自己·永恒
+|语音文件=player1-雷电将军_关于雷电将军自己·永恒
+|语音内容=「磨损」是一件很可怕的事情。此身诞生的意义，就是承受磨损。这样，或许「内在」就可以触及永恒了吧。
+|语音内容日语=「摩耗」とは、とても恐ろしいもの。この身が誕生した意義も、摩耗に耐えるためです。そしていつか、「内なる存在」は「永遠」に触れることができるでしょう。
+|语音内容英语=Erosion is a terrible thing. This body's purpose is to withstand wear and tear, that the one within might achieve Eternity.
+|语音内容韩语=「마모」는 실로 두려운 일이야. 이 몸이 탄생한 이유는 바로 마모를 감내하기 위해서다. 어쩌면 「내적」으로 영원함에 닿을 수 있을지도 모르지
+}}
+{{角色/语音1
+|语音类型=关于我们·奥诘众
+|语音文件=player1-雷电将军_关于我们·奥诘众
+|语音内容=现在你是我的侧用人，换言之，依我判断，你是对幕府有用，对我忠诚的人。
+|语音内容日语=あなたは今や私の側用人です。言い換えれば、幕府に対して有益で、私に忠誠を誓う者であると判断しています。
+|语音内容英语=I declare you my chamberlain. In other words, according to my judgment, you are useful to the Shogunate and loyal to me.
+|语音内容韩语=너는 지금 내 측근이다. 달리 말하면, 이 몸이 너를 막부에 도움이 될, 나에게 충성을 다할 사람이라고 판단했다는 뜻이다
+}}
+{{角色/语音1
+|语音类型=关于我们·用心棒
+|语音文件=player1-雷电将军_关于我们·用心棒
+|语音内容=虽然是微服出访的保镖，但是我遇到危险不用替我挡刀了。将军她构造还挺结实的，坏了还能替换呢。所以遇到危险把将军她推到前面就好了。
+|语音内容日语=護衛とは言いましたが、私が危険に陥った時にかばう必要はありません。将軍の作りは丈夫で、壊れた時は替えも利きます。ですので、身の危険を感じた時には、この将軍を前に突き出してもらって構いません。
+|语音内容英语=Despite serving as my guard during this journey, you need not shield me from danger. The Shogun's constitution is rather robust, and in the event she does break down, we can simply get a replacement. In an emergency, just send her into the fray.
+|语音内容韩语=네가 이번 미복잠행의 호위라고는 하나, 위험한 상황에서 굳이 대신 나설 필요는 없어. 쇼군의 몸은 꽤 단단하고 망가지면 교체할 수도 있고. 그러니까 위험한 상황이 닥치면 쇼군을 앞세우면 돼
+}}
+{{角色/语音1
+|语音类型=关于我们·直传
+|语音文件=player1-雷电将军_关于我们·直传
+|语音内容=稻妻的薙刀术和剑术以及锻刀技法，基本都是由我直接传下的，随后因人资质不同而分枝开花、各自结果。
+如何，再接我一刀？还能无事的话，许可你在稻妻开宗立派哦。啊，武艺的精进真是叫人欲罢不能。
+|语音内容日语=稲妻の薙刀術と剣術、それに刀の鍛造技法は基本的に私が伝授したものです。そこから、人々の個性によって枝分かれしていきました。どうでしょう、私の一太刀をもう一度受けてみませんか？それでもまだ無事であれば、あなたに稲妻で流派を開く許可を与えましょう。はぁ…武道の精進とはどうしてこうも人を惹きつけるのでしょうか。
+|语音内容英语=The Inazuman arts of polearm and sword combat, as well as the blade-forging process itself, primarily originated with me. Since then, they have branched out and blossomed into a variety of techniques according to each master's individual aptitude. 
+What would you say to another sparring session? If you emerge unscathed again, I'll let you found your own martial arts tradition in Inazuma. Ah, the drive to advance and evolve in the martial arts is truly unstoppable.
+|语音内容韩语=이나즈마의 체도술, 검술 그리고 단조 기법 중 대부분은 내가 직접 전수한 거야. 그 후 개인의 자질에 따라 갈래가 나뉘어 제각기 성과를 맺었지.
+어때, 내 공격을 한 번 더 받아 볼래? 그러고도 무사하다면, 이나즈마에서 새로운 유파를 창설해도 좋아. 아아, 무예를 갈고닦는 수련은 정말 짜릿하고 황홀해
+
+}}
+{{角色/语音1
+|语音类型=关于「神之眼」…
+|语音文件=player1-雷电将军_关于「神之眼」
+|语音内容=外面的世界居然已经这么久没有出现过雷元素的神之眼了吗？虽然我因为一些制约无法说明…赐予神之眼这件事，和我的意志无关。重要的，还是人的「渴望」，以及…
+|语音内容日语=外の世界では、そんなにも長い間雷元素の神の目が現れていないのですか？私にはいくつかの制約があるため、細かいことは言えませんが…神の目を授けることは、私の意志とは無関係です。重要なのは、人々の「願望」、そして…
+|语音内容英语=Really? So in all this time, no new Electro Visions have appeared in the outside world? Well, what I can say on this topic is subject to certain constraints, but... it is not by my will that Visions are granted or denied. The key is people's desire, and... well, there's another side to it too.
+|语音内容韩语=바깥 세계에 그렇게 오랫동안 번개 원소 신의 눈이 나타나지 않았다고? 제약 때문에 깊게 설명해줄 순 없지만… 신의 눈을 하사하는 건 내 의지로 가능한 일이 아니야. 중요한 건 인간의 「갈망」, 그리고…
+}}
+{{角色/语音1
+|语音类型=有什么想要分享…
+|语音文件=player1-雷电将军_有什么想要分享
+|语音内容=有什么想要分享的？没有。倒是你，为什么没有神之眼却能使用元素之力。和我说说。
+|语音内容日语=共有したいこと？特にありません。それよりも、なぜ神の目を持たないあなたが、元素力を使えるのか気になります。話してくれますか。
+|语音内容英语=No, I have nothing to share with you at this time. But you... You use elemental energy without the aid of a Vision. How is this possible? Please enlighten me.
+|语音内容韩语=나에 대해서 할 얘기 있냐고? 없다. 너야말로 신의 눈도 없이 어찌 원소의 힘을 다룰 수 있는 건지 소상히 설명해 봐라
+}}
+{{角色/语音1
+|语音类型=感兴趣的见闻…
+|语音文件=player1-雷电将军_感兴趣的见闻
+|语音内容=虽然身消梦陨，但是她化作了神樱。这，也是「永恒」。
+|语音内容日语=体は消え、夢も失いましたけど、彼女は神櫻となりました。それもまた「永遠」です。
+|语音内容英语=Her body may have perished, but she became the Sacred Sakura. This, too, is a form of Eternity.
+|语音内容韩语=비록 몸과 꿈은 사라졌어도, 그녀는 결국 신성한 벚나무가 되었다. 그것도 「영원함」이지
+}}
+{{角色/语音1
+|语音类型=关于八重神子…
+|语音文件=player1-雷电将军_关于八重神子
+|语音内容=那家伙啊，最初她就是个会被油豆腐引诱的家伙。现在居然这么工于谋略了，让人欣慰。不过被她算计了，还是有些不愉快。虽说是为了我好，下次见到她恐怕会被她嘲笑的…那就先发制人，斩她一刀好了。反正她也能躲掉。
+|语音内容日语=あの人ですか。最初は油揚げに誘惑されるような方でしたが、まさかこんなにも策略に秀でるようになるなんて、実に喜ばしいことです。しかし私のためとはいえ、彼女に謀られたのはやはり少し気に入りません。今度会った時、きっと笑われてしまいます…であれば先手必勝、先に彼女に一太刀浴びせるとしましょう。どうせ彼女なら躱せますし。
+|语音内容英语=Ah, that girl... She used to be the kind of person who could easily be swayed with some Fried Tofu. It's a relief to see how shrewd and resourceful she's now become. Still, I have to admit that I was a little upset to become the target of her scheming myself. I know it was for my own good, but I'm afraid she will mock me next time we meet... Perhaps I should take the initiative and strike her first? Hmm, she'll dodge it anyway.
+|语音内容韩语=그 녀석? 처음엔 유부 하나에도 홀랑 넘어가는 녀석이었는데, 지금은 이렇게 뛰어난 지략을 갖추게 되었다니, 기특하지. 다만 이 몸이 한 수 당한 건 좀 괘씸해. 나를 위해서라곤 하나, 다음에 만나면 분명 비웃을 거란 말이지…. 흠, 그럼 차라리 먼저 베어버려야겠다. 어차피 녀석도 피할 테니
+}}
+{{角色/语音1
+|语音类型=关于神里绫人…
+|语音文件=player1-雷电将军_关于神里绫人
+|语音内容=神里一门，无愧于稻妻名门笔头之格。绫人虽然此前在三奉行事务中，耍了不少手段，但是本身忠心可鉴。既往不咎了。
+|语音内容日语=神里家の者であり、稲妻名門の筆頭をゆくに相応しい人物です。綾人は以前、三奉行事務中に様々な手段を講じていましたが、その忠誠心に一点の曇りもありません。咎めずともいいでしょう。
+|语音内容英语=Kamisato... One of the most distinguished clans in all of Inazuma. Despite Ayato's trickery in regard to the Tri-Commission's affairs, he is nevertheless a loyal subject. His past misdeeds shall be excused.
+|语音内容韩语=카미사토 일가는 명실상부한 이나즈마의 명문가야. 전에 삼봉행 사건에서 료지가 술수를 꽤나 부리긴 했지만, 그 충심이 가상해서 과거의 잘못은 더 이상 추궁하지 않겠다
+}}
+{{角色/语音1
+|语音类型=关于神里绫华…
+|语音文件=player1-雷电将军_关于神里绫华
+|语音内容=神里一门，无愧于稻妻名门笔头之格。欸，你说我和将军的评价一模一样。那，绫华她，她剑术也很好。
+|语音内容日语=神里家の者であり、稲妻名門の筆頭をゆくに相応しい人物です。えっ、将軍と評価がまったく同じ？で、では、これならどうでしょう…綾華は剣術にも秀でています。
+|语音内容英语=Kamisato... One of the most distinguished clans in all of Inazuma. Eh? That's exactly what the Shogun said? Well, A—Ayaka's also well-versed in the art of the sword.
+|语音内容韩语=카미사토 일가는 명실상부한 이나즈마의 명문가지. 음, 나와 쇼군의 평가가 같단 말이지. 흠, 아야카는 검술도 뛰어난 편이야
+
+}}
+{{角色/语音1
+|语音类型=关于九条裟罗…
+|语音文件=player1-雷电将军_关于九条裟罗
+|语音内容=忠义之士，武艺精湛，可担「豪杰」二字。有此麟儿，九条家应该还能兴盛下去吧。
+|语音内容日语=忠実な志士であり、優れた武芸を有し、「豪傑」の二文字を背負うに相応しい者です。あの者がいれば、九条家もまだまだ栄えるでしょう。
+|语音内容英语=A loyal and righteous subject, and an accomplished warrior. She is worthy to be called a hero. With an heir of such great promise, the future prosperity of the Kujou Clan is assured.
+|语音内容韩语=무예가 뛰어난 충신이자, 「호걸」이라는 호칭에 걸맞는 인물이지. 이토록 뛰어난 인물이 있으니 쿠죠 가문의 미래가 밝겠어
+}}
+{{角色/语音1
+|语音类型=关于宵宫…
+|语音文件=player1-雷电将军_关于宵宫
+|语音内容=是谁来着？啊，做烟火的。制造须臾幻象的人，沉醉于夏日幻觉的人，虽说如此，亦为我之臣民。
+嗯，在天领奉行属地里炸烟花？谁啊，她吗？
+|语音内容日语=どなたのことでしょうか…ああ、花火職人の。刹那の幻像を創り、夏の幻想に酔いしれる人。彼女も我が民の一人です。
+ん？天領奉行の領地で花火が上がっている？まさか彼女が？
+|语音内容英语=Who? Ah, the firework maker. A manufacturer of fleeting illusions, enamored with the realm of fantasy and imagination, but a subject of mine nonetheless. 
+Hmm? Fireworks were released on Tenryou Commission property? By whom... her?
+|语音内容韩语=누구라고? 아, 그 폭죽 장인. 찰나의 환상을 만들어내는 자, 한 여름날 밤의 환각에 취해 살아가는 자. 허나 그렇다 한들 모두 이 몸의 백성인 것을.
+응, 텐료 봉행 영지에서 폭죽놀이를 한다고? 누가, 그 여인이?
+}}
+{{角色/语音1
+|语音类型=关于托马…
+|语音文件=player1-雷电将军_关于托马
+|语音内容=虽然差点夺走他神之眼这件事，我也不能说是完全没有责任。但要说道歉的话，还是应该让将军她去比较好吧…好吧，我也会好好反省的。
+|语音内容日语=彼の神の目を奪いそうになったことは、私に責任がまったくないというわけではありません。しかし、謝罪でしたら、やはり将軍に行かせたほうがいいでしょう…まあ、私も反省はしますが。
+|语音内容英语=I can't deny that I am somewhat culpable in the events that led to him being almost stripped of his Vision, but I rather think the Shogun should be the one to extend a formal apology to him... Okay, fine. I'll give it some more thought.
+|语音内容韩语=그의 신의 눈을 빼앗을 뻔한 일은 사실 내게도 어느 정도의 책임이 있어. 하지만 사과는 쇼군이 하는 게 좋지 않을까…? 알겠어. 나도 반성할게
+}}
+{{角色/语音1
+|语音类型=关于珊瑚宫心海…
+|语音文件=player1-雷电将军_关于珊瑚宫心海
+|语音内容=奥罗巴斯确为此身所斩。但是我也许可了珊瑚宫之民，以海祇大御神之名继续祭祀，让它得享牲醴。现在珊瑚宫捣毁鸣神分社，反叛幕府。她作为海祇大御神的现人神巫女，必须要承担责任。
+|语音内容日语=オロバシはたしかに私が斬り伏せました。しかし私は珊瑚宮の民に、それを海祇大御神として祭り上げることを許可しました。 今の珊瑚宮は鳴神分社を破壊し、幕府を裏切ろうとしています。彼女は海祇大御神の現人神の巫女として、責任を取らなければなりません。
+|语音内容英语=Indeed. It was I who slew Orobaxi. But I also allowed the people of Sangonomiya to continue worshiping it as the Watatsumi Omikami, so that it might enjoy their offerings. Now, Sangonomiya has destroyed the local Narukami Shrine and rebels against the Shogunate. As the Divine Priestess representing the Watatsumi Omikami, she must be held accountable.
+|语音内容韩语=이 몸이 오로바스를 베어버린 건 사실이다. 하지만 그와 동시에 산호궁 백성들이 와타츠미 신의 이름으로 그의 희생을 기리는 제사를 지내는 걸 허락해주었지. 현재 산고노미야는 나루카미 분샤를 파괴하고 막부에 반기를 들고 있어. 와타츠미 신의 아라히토가미 무녀로서 그녀는 반드시 책임을 져야만 해
+}}
+{{角色/语音1
+|语音类型=关于国崩…
+|语音文件=player1-雷电将军_关于国崩
+|语音内容=那小子是制造将军的副产物。对他不加以管束，应该是因为我内心还是觉得对他有所亏欠吧。
+|语音内容日语=あの子は将軍を作る時にできた副産物です。彼を制御しないのは、私の心の中で彼に対して借りを覚えているからでしょう。
+|语音内容英语=He came about as a byproduct of creating the Shogun. Perhaps it's because I feel like I owe him something, but I do not wish to assert control over him.
+|语音内容韩语=녀석은 쇼군을 만들 때 나온 부산물이야. 그 녀석을 제멋대로 날뛰게 내버려두는 건 미안한 마음이 들어서랄까
+}}
+{{角色/语音1
+|语音类型=关于荒泷一斗…
+|语音文件=player1-雷电将军_关于荒泷一斗
+|语音内容=谁？
+|语音内容日语=誰だ？
+|语音内容英语=Who's that?
+|语音内容韩语=누구?
+
+}}
+{{角色/语音1
+|语音类型=关于摩拉克斯…
+|语音文件=player1-雷电将军_关于摩拉克斯
+|语音内容=曾经与他共饮之时，我还只是一介影武者，敬陪众神末席。他做出了这样的选择是吗？不过，我想他在下一个时代，仍然会继续和更多的人相遇吧。
+|语音内容日语=かつて彼と酒席を共にした時、私はただの影武者で、神々の末席に属していました。彼はそのような選択をしたのですね…しかし、これからの時代も、彼は多くの人と縁を結んでいくことでしょう。
+|语音内容英语=I had an opportunity to feast with him once, back when I was just a kagemusha attending a gathering of the gods. So he's made his choice. Be that as it may, I don't believe his story is anywhere near finished yet.
+|语音内容韩语=전에 그와 잔을 기울일 때까지만 해도 나는 신들의 말석에 자리한 일개 그림자 무사에 불과했어. 그가 그러한 선택을 했단 말이지. 허나, 다음 세대에서도 그는 분명 계속해서 많은 사람을 만나게 되겠군
+}}
+{{角色/语音1
+|语音类型=关于温迪…
+|语音文件=player1-雷电将军_关于温迪
+|语音内容=风神的化身现在还叫这个名字吗？说实话，第一次见他就感觉他浑身透着和我一定相处不来的气质。然后就是，他的确很能喝酒。
+|语音内容日语=風神の化身は今もその名前を名乗っているのですか？正直、初めて彼と会った時から相性が合わない感じがしていました。それ以外の印象は…お酒が強いことくらいですね。
+|语音内容英语=That's still the name the Anemo Archon takes among mortals these days, is it? Truth be told, from the very first moment I met him, I could somehow sense that we were not going to get along. Also, he sure can drink a lot.
+|语音内容韩语=바람 신의 화신은 아직도 그 이름으로 불리고 있는 건가? 솔직히, 처음 만났을 때부터 어쩐지 나와는 절대 맞지 않을 것 같은 느낌이 들더란 말이지. 그리고 확실히 술을 잘 마시더라고
+}}
+{{角色/语音1
+|语音类型=关于布耶尔…
+|语音文件=player1-雷电将军_关于布耶尔
+|语音内容=我很欣赏她的谦逊，谦逊也的确是智者的美德。她的权能理应可以做到许多超乎想象的事，但布耶尔只是将它用在「纠正与守护」之上…真是个温柔的神明。
+|语音内容日语=私は彼女の謙虚さを高く評価しています。謙虚さも確かに、智者の美徳ですから。ブエルの権能をもってすれば、想像を超えたようなこともできるのに、彼女はそれをただ「是正と守護」のためにしか使いません…本当に優しい神です。
+|语音内容英语=I admire her humility; it is a sign of true wisdom. With the power she holds, Buer is capable of doing many things beyond our wildest imaginations... and yet, she uses her power only to right wrongs and to protect. She is a truly gentle god.
+|语音内容韩语=난 그 겸손함을 존경해. 겸손도 지혜의 미덕이긴 하지만. 그 권능으로 상상을 초월하는 일을 할 수 있을 텐데도, 부에르는 그걸 「바로잡음과 수호」에만 쓰니까… 정말 온유한 신이지
+}}
+{{角色/语音1
+|语音类型=想要了解雷电将军·其一
+|语音文件=player1-雷电将军_想要了解雷电将军·其一
+|语音内容=有什么事情，说来便是。
+|语音内容日语=何かあるなら、言ってください。
+|语音内容英语=State your query. To the point.
+|语音内容韩语=무슨 일이냐, 말해 봐라
+}}
+{{角色/语音1
+|语音类型=想要了解雷电将军·其二
+|语音文件=player1-雷电将军_想要了解雷电将军·其二
+|语音内容=民间都相信，雷雨天口念「桑原桑原」，便可以无恙。如是因我一念而起的雷暴，必不会加害于你。但是自然天气形成的雷雨就难说了。
+|语音内容日语=雷の日に「くわばら、くわばら」と言えば大事には至らない、そう人々は信じています。もし私が起こした雷であれば、あなたに害はなしません。ですが、自然現象の雷の場合、そうもいかないでしょう。
+|语音内容英语=On stormy days, the people of Inazuma chant "kuwabara, kuwabara," believing that this will protect themselves from being struck by lightning. You need not worry about any storm summoned by my own hand — they will bring you no harm. Lightning storms that occur naturally, however, can be more unpredictable.
+|语音内容韩语=민간에서는 뇌우가 내리는 날 「쿠와바라 쿠와바라」라는 주문을 외우면 폭풍우에도 무사하다고 굳게 믿고 있지. 내 변덕으로 인한 뇌폭이라면 절대 너를 해치지 않을 것이다. 하지만 자연적으로 생성된 뇌우라면 얘기가 달라
+}}
+{{角色/语音1
+|语音类型=想要了解影·其三
+|语音文件=player1-雷电将军_想要了解影·其三
+|语音内容=《珍说》一书所言大致都是真的。那时她正忙于周旋岛内之事，于是我作为影武者，假托她名出现在了平定海祇的军阵中。但是后面的剧情，就只是人们的一厢情愿罢了。我原本只是醉心剑技的武人，没有那种感化万民的德行。
+|语音内容日语=『珍説』という本に書いてあるのは事実です。あれは彼女が島のことで忙しくしていた頃のこと。私は影武者として、彼女の名を借り、軍陣に現れました。しかし、そのあとの物語は人々の憶測にすぎません。私は元々剣術に魅了された武人、民を感化させる美徳など持ち合わせていません。
+|语音内容英语=The account given in the book "Treasured Tales" is largely an accurate one. At that time, she was preoccupied with various domestic matters within the island, so as her kagemusha, I assumed her identity and joined the troops dispatched to pacify Watatsumi. After this point, however, the story turns into mere wishful thinking. Back then, I was just a martial artist wrapped up in all the fighting, not a social reformer or moral leader.
+|语音内容韩语=《진설》이라는 책에 쓰인 건 대부분 사실이야. 그때 그녀는 섬의 일로 눈코 뜰 새 없이 바빴고 그림자 무사로서 난 그녀의 이름으로 와타츠미를 평정하는 진영에 나타났었어. 하지만 그 후의 스토리는 사람들이 멋대로 지어낸 거야. 본디 나는 검술에 심취한 무인일 뿐, 백성을 감화시키는 덕행은 행한 적이 없어
+}}
+{{角色/语音1
+|语音类型=想要了解影·其四
+|语音文件=player1-雷电将军_想要了解影·其四
+|语音内容=追求「永恒」可能也只是一种逃避罢了。最后我采取的方法也和缩壳乌龟一样。不过乌龟本来就是长寿的象征，说不定追求永恒就是会变成这样的形态。
+|语音内容日语=「永遠」の追求は、一種の逃避にすぎません。私が最後に取った方法も、甲羅にうずくまる亀のようなものでした。しかし亀とはもともと長寿の象徴、永遠を追求すれば必然的にそのような形になるのかもしれませんね。
+|语音内容英语=Perhaps my pursuit of Eternity is nothing more than a form of escapism. In the end, the path I took was like that of a turtle who hides in its shell. Still, turtles have always been a symbol of longevity. Perhaps in order to reach Eternity, one has to follow their example.
+|语音内容韩语=「영원함」을 좇는 건 어쩌면 일종의 도피일지도 몰라. 결국 내가 택한 것도 목을 잔뜩 움츠린 겁쟁이 거북이 같은 방법이지. 하지만 거북이는 본디 장수의 상징, 영원함을 좇는다는 건 점점 이렇게 되어가는 게 아닐까
+}}
+{{角色/语音1
+|语音类型=想要了解影·其五
+|语音文件=player1-雷电将军_想要了解影·其五
+|语音内容=恐惧是因为我在五百年前目睹了她的消亡和「那个事物」。但，如果…如果是你的话，一定可以拯救所有人的。如果是你的话，一定会拯救世界的。就像是我记得稻妻的一切一样，只要你记得我，我就能永远地活着。
+|语音内容日语=恐怖の由来、それは私が500年前に彼女の死と「あの出来事」を目撃したから。しかし…あなたでしたら、きっとすべての人を救えるでしょう。あなたでしたら…きっと世界をも救えます。私が稲妻のすべてを覚えているように、あなたが私を覚えている限り、私は永遠に生き続けることができます。
+|语音内容英语=I'm fearful because of what I witnessed five hundred years ago — her demise and that thing. But, if... If it were you, everyone would be safe. You would've saved the world. Just like I cherish the memories of everything in Inazuma, if you remember me, I'll live forever.
+|语音内容韩语=내가 두려운 이유는 500년 전 그녀의 소멸과 「그것」을 직접 목격했기 때문이야. 하지만 만약… 만약 너였다면, 분명 모두 구할 수 있었을 거야. 만약 너였다면, 분명 세상을 구해낼 수 있었겠지. 내가 이나즈마의 모든 걸 전부 기억하는 것처럼, 네가 나를 기억해준다면 난 영원히 살아있을 수 있어
+}}
+{{角色/语音1
+|语音类型=雷电将军的爱好…
+|语音文件=player1-雷电将军_雷电将军的爱好
+|语音内容=愚问。只有必须要做的事情，和一定不能做的事情。
+|语音内容日语=愚問です。この世にはやらなければならないこと、そしてやってはならないことの二種類のみが存在します。
+|语音内容英语=Foolish question. There are only two kinds of things — those that must be done and those that must not.
+|语音内容韩语=어리석은 질문이군. 반드시 해야 할 일과 절대 해서는 안 될 일, 두 가지뿐이야
+}}
+{{角色/语音1
+|语音类型=影的烦恼…
+|语音文件=player1-雷电将军_影的烦恼
+|语音内容=你不要让我做饭啦。我什么都能办到，但是真的不会做饭。
+|语音内容日语=私に料理を作らせないでください。基本的に私はなんでもできますが、料理だけは本当にだめなんです…
+|语音内容英语=Don't try and get me to cook. I can take care of anything else, but not that.
+|语音内容韩语=요리해달란 말만 하지 마. 난 뭐든 해낼 수 있지만, 요리는 영 아니라서
+}}
+{{角色/语音1
+|语音类型=喜欢的食物…
+|语音文件=player1-雷电将军_喜欢的食物
+|语音内容=你别听将军她的。甜点心！蛀牙什么的，换一套就好了。这怎么会影响对永恒的追求呢。
+|语音内容日语=将軍の言ったことは無視してください。甘いお菓子が好きです！虫歯になったら換えればいいだけのこと。永遠の追求に影響するわけがありません。
+|语音内容英语=Oh, don't listen to the Shogun. Desserts! Cavities are no big deal — you can just replace your teeth. Anyway, I just don't see how desserts can pose a serious obstacle to my pursuit of Eternity.
+|语音内容韩语=쇼군 말 안 들어도 돼. 제일 좋아하는 건 화과자! 이가 썩으면 갈면 될 거 아냐. 화과자가 영원함을 좇는 일에 방해가 될 리 없어
+}}
+{{角色/语音1
+|语音类型=讨厌的食物…
+|语音文件=player1-雷电将军_讨厌的食物
+|语音内容=愚问。只有维持身体营养必须吃的，和会损害身体的。
+|语音内容日语=愚問です。この世には身体を維持するための栄養素と、そして身体に害をもたらす物の二種類のみが存在します。
+|语音内容英语=Foolish question. There are only two kinds of foods — those that must be consumed to nourish the body and those that harm it.
+|语音内容韩语=의미 없는 질문이군. 인체의 영양소를 유지하기 위해 반드시 섭취해야 하는 것과 인체에 해로운 것만 있을 뿐이지
+}}
+{{角色/语音1
+|语音类型=生辰…
+|语音文件=player1-雷电将军_生辰
+|语音内容=今日是你的生辰之日吗？随我回城，我来对全体旗本众宣读祝词吧。嗯？「太丢人别这样。」…好吧。
+|语音内容日语=今日はあなたの生誕の日でしたか。私と城へ戻り、全旗本の前で祝辞を読みましょう。「恥ずかしいからやめてほしい」と？…そうですか。
+|语音内容英语=Is today the day of your creation? Return to the city with me. I will read out a speech for you in front of all my attendants. "Embarrassing"? ...Understood.
+|语音内容韩语=오늘이 네 생일인가? 같이 성으로 가자꾸나, 전인원을 소집해 축사를 읽어줄 테니. 「부끄러우니 그러지 말라」고? …알겠어
+}}
+{{角色/语音1
+|语音类型=收到赠礼·其一
+|语音文件=player1-雷电将军_收到赠礼·其一
+|语音内容=熟悉的味道。不坏。
+|语音内容日语=よく知っている味です。悪くありません。
+|语音内容英语=A familiar flavor... Acceptable.
+|语音内容韩语=익숙한 맛이야. 나쁘지 않군
+}}
+{{角色/语音1
+|语音类型=收到赠礼·其二
+|语音文件=player1-雷电将军_收到赠礼·其二
+|语音内容=放在这里吧，我会尝的。
+|语音内容日语=後ほど食べますので、そこに置いておいてください。
+|语音内容英语=Leave it here, and I shall sample it.
+|语音内容韩语=이곳에 둬, 먹어볼게
+}}
+{{角色/语音1
+|语音类型=收到赠礼·其三
+|语音文件=player1-雷电将军_收到赠礼·其三
+|语音内容=会损害身体机能，拿走。
+|语音内容日语=体の機能に支障が生じます、下げてください。
+|语音内容英语=Consuming this would be physically detrimental. Remove it from my presence.
+|语音内容韩语=신체 기능이 저하 되니, 도로 가져가도록 해
+}}
+{{角色/语音1
+|语音类型=收到赠礼·其四
+|语音文件=player1-雷电将军_收到赠礼·其四
+|语音内容=好吃。心情也放松了不少，谢谢你。
+|语音内容日语=美味しいですね。心も穏やかになっていくのを感じます、ありがとうございます。
+|语音内容英语=Delicious. I feel much better after that. Thank you.
+|语音内容韩语=맛있네. 기분도 많이 좋아졌어, 고마워
+}}
+{{角色/语音1
+|语音类型=收到赠礼·其五
+|语音文件=player1-雷电将军_收到赠礼·其五
+|语音内容=看起来不错，是怎么做出来的？
+|语音内容日语=美味しいですね。心も穏やかになっていくのを感じます、ありがとうございます。
+|语音内容英语=Doesn't look too bad, how did you make it?
+|语音内容韩语=괜찮아 보이네, 어떻게 만든 거야?
+}}
+{{角色/语音1
+|语音类型=收到赠礼·其六
+|语音文件=player1-雷电将军_收到赠礼·其六
+|语音内容=恕我谢绝。
+|语音内容日语=すみませんが、お断りいたします。
+|语音内容英语=Allow me to decline.
+|语音内容韩语=미안, 사양할게
+}}
+{{角色/语音1
+|语音类型=生日…
+|语音文件=player1-雷电将军_生日
+|语音内容=生日快乐！那今日就一起庆祝吧，使之成为可以铭记一年的美好瞬间。然后等到来年今日，便继续庆祝。如是便可得「永恒」的快乐。
+|语音内容日语=誕生日おめでとうございます。今日は一緒にお祝いをして、一年で最も印象に残る素敵な日にしましょう。そして、来年の今日もまたお祝いを。こうやって続けていけば、「永遠」の幸せを手に入れることができます。
+|语音内容英语=Happy birthday! Let's celebrate together and make it a moment to remember for the whole year until your next birthday celebration, and so on and so forth. Then, you shall have an eternity of happiness.
+|语音内容韩语=생일 축하해! 그럼 오늘은 같이 네 생일을 축하하자. 일 년 중 가장 기억에 남는 날로 만들어야지. 그리고 내년 오늘이 되면 또 계속해서 축하하자고. 그런 게 「영원함」의 즐거움을 얻는 거잖아
+}}
+{{角色/语音1
+|语音类型=突破的感受·起
+|语音文件=player1-雷电将军_突破的感受·起
+|语音内容=我之流派里，「初传」之位，可以学习太刀的九向剑路之势，以及薙刀术的基本。与其他流派并无大差异。应该说，其他流派与我之流派并无差异。
+|语音内容日语=我が流派、「初伝」の位では太刀の九向剣路之勢、それと薙刀の基礎が学べます。他の流派と大差はありません。いや、正しくは他の流派が私のと大差がない、ですね。
+|语音内容英语=The initial stage of my journey, or Shoden, involves learning the nine-way sword slash and the foundations of the art of the polearm. There is no great variation from other traditions at this point. Or rather, it is the other traditions that do not differ from mine.
+|语音内容韩语=이 몸의 유파 중, 「초전(初傳)」의 자리는 태도의 아홉 가지 검의 길과 기본적인 체도술을 배울 수 있다. 다른 유파와 별다른 점이 없지. 다른 유파가 내 유파와 별다른 점이 없다고 해야 하나
+}}
+{{角色/语音1
+|语音类型=突破的感受·承
+|语音文件=player1-雷电将军_突破的感受·承
+|语音内容=我之流派里，「中传」之位，太刀术需要研习各种「构」位与变化，薙刀术则需熟练诸「切」与「返」之理。
+|语音内容=我之流派里，「中传」之位，太刀术需要研习各种「构」位与变化，薙刀术则需熟练诸「切」与「返」之理。
+|语音内容日语=我が流派、「中伝」の位では剣術に必要な「構え」の変化を学び、薙刀術に必要な「斬り」と「返し」の理を理解する必要があります。
+|语音内容英语=At the intermediate stage of my journey, or Chuuden, the art of the sword focuses on the study of various stances and transitions. The art of the polearm — slashes and backslashes.
+|语音内容韩语=이 몸의 유파 중, 「중전(中傳)」의 자리에서 태도술은 각종 「구조」와 변화를 연마해야 하고, 체도술은 「절」과 「반」의 이치를 터득해야 해
+}}
+{{角色/语音1
+|语音类型=突破的感受·转
+|语音文件=player1-雷电将军_突破的感受·转
+|语音内容=我之流派里，「皆传」之位，需要研习诸般奥义。无奈大部分都需要配合元素之力，对凡人来说可能有些太难了。世间其余流派大多都无法触及此境。
+|语音内容日语=我が流派、「皆伝」の位では奥義を学ぶ必要があります。しかし、そのほとんどが元素力を使うため、ただの人間には難しいでしょう。世に出回る大半の流派は、この境地に触れることさえできません。
+|语音内容英语=The final stage of my journey, or Kaiden, is the study of the most profound techniques. Unavoidably, these draw heavily on elemental power, rendering them beyond the capabilities of most mortals. Most practitioners of other traditions are unable to ever reach this level.
+|语音内容韩语=이 몸의 유파 중, 「개전(皆傳)」의 자리에서는 여러 오의를 부단히 연마해야 한다. 허나 아쉽게도 그중 대부분은 원소의 힘을 필요로 하는지라 평범한 사람에게는 무척이나 어려운 일이야. 세간의 유파 중 거의 대부분은 이 경지에 다다르지 못하지
+}}
+{{角色/语音1
+|语音类型=突破的感受·合
+|语音文件=player1-雷电将军_突破的感受·合
+|语音内容=奥义中的奥义，也就是「无想」又无双的一刀。有你作为陪练之宾，我好像能挥出更强更快的一剑。
+|语音内容日语=奥義中の奥義、「無想」であり、無双の一太刀。あなたが練習に付き合ってくれるのなら、私はより速くて強い一太刀を繰り出せる気がします。
+|语音内容英语=The profoundest of the profound is the Musou no Hitotachi. A sword art without parallel in all the world. With you as my sparring partner, I can perfect that technique even further.
+|语音内容韩语=오의 중의 오의, 그러니까 「무상」과 무쌍이 어우러진 일격을 뜻하는 말이야. 네가 대련 상대가 되어주니 어쩐지 검이 더 빨라질 것 같은 느낌인데?
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=元素战技·其一
+|语音文件=player1-雷电将军_元素战技·其一
+|语音内容=威光无赦！
+|语音内容日语=裁きの雷。
+|语音内容英语=Shine down!
+|语音内容韩语=징벌의 빛!
+}}
+{{角色/语音1
+|语音类型=元素战技·其二
+|语音文件=player1-雷电将军_元素战技·其二
+|语音内容=无处遁逃！
+|语音内容日语=逃げ道はありません。
+|语音内容英语=There is no escape!
+|语音内容韩语=도망칠 수 없다!
+}}
+{{角色/语音1
+|语音类型=元素战技·其三
+|语音文件=player1-雷电将军_元素战技·其三
+|语音内容=泡影看破！
+|语音内容日语=見切りました。
+|语音内容英语=Illusion shattered!
+|语音内容韩语=포영 간파!
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=元素爆发·其一
+|语音文件=player1-雷电将军_元素爆发·其一
+|语音内容=无念，断绝！
+|语音内容日语=無我の境地へ。
+|语音内容英语=Torn to oblivion!
+|语音内容韩语=무념, 단절!
+
+}}
+{{角色/语音1
+|语音类型=元素爆发·其二
+|语音文件=player1-雷电将军_元素爆发·其二
+|语音内容=此刻，寂灭之时！
+|语音内容日语=ここより、寂滅の時！
+|语音内容英语=Now, you shall perish!
+|语音内容韩语=지금이, 적멸의 시간!
+}}
+{{角色/语音1
+|语音类型=元素爆发·其三
+|语音文件=player1-雷电将军_元素爆发·其三
+|语音内容=稻光，亦是永恒！
+|语音内容日语=稲光、すなわち永遠なり。
+|语音内容英语=Inazuma shines eternal!
+|语音内容韩语=번개는 영원히 빛나리!
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=打开宝箱·其一
+|语音文件=player1-雷电将军_打开宝箱·其一
+|语音内容=收下吧，于我无用。
+|语音内容日语=受け取りなさい。私には無用の長物です。
+|语音内容英语=Take them. I have no need.
+|语音内容韩语=내겐 쓸모없는 물건이니 받거라
+}}
+{{角色/语音1
+|语音类型=打开宝箱·其二
+|语音文件=player1-雷电将军_打开宝箱·其二
+|语音内容=…不过须臾之梦。
+|语音内容日语=須臾の夢に過ぎません。
+|语音内容英语=...But a momentary distraction.
+|语音内容韩语=…단지 찰나의 꿈일 뿐이다
+}}
+{{角色/语音1
+|语音类型=打开宝箱·其三
+|语音文件=player1-雷电将军_打开宝箱·其三
+|语音内容=嗯？
+|语音内容日语=なんだ？
+|语音内容英语=Hmm?
+|语音内容韩语=응?
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=生命值低·其一
+|语音文件=player1-雷电将军_生命值低·其一
+|语音内容=…枷锁当断。
+|语音内容日语=鎖を…断ち切る…
+|语音内容英语=...Transcend all constraints.
+|语音内容韩语=…족쇄는 풀어야 하지
+}}
+{{角色/语音1
+|语音类型=生命值低·其二
+|语音文件=player1-雷电将军_生命值低·其二
+|语音内容=…诸恶当斩。
+|语音内容日语=悪を…斬らねば…
+|语音内容英语=...Erase all threats.
+|语音内容韩语=…모든 악을 베겠노라
+}}
+{{角色/语音1
+|语音类型=生命值低·其三
+|语音文件=player1-雷电将军_生命值低·其三
+|语音内容=…肃清阻碍。
+|语音内容日语=邪魔者の…粛清を…
+|语音内容英语=...Remove all obstacles.
+|语音内容韩语=…방해는 전부 숙청한다
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=同伴生命值低·其一
+|语音文件=player1-雷电将军_同伴生命值低·其一
+|语音内容=至我后方待命。
+|语音内容日语=私の後ろへ。
+|语音内容英语=Fall back and await my orders.
+|语音内容韩语=내 뒤에서 대기하도록
+}}
+{{角色/语音1
+|语音类型=同伴生命值低·其二
+|语音文件=player1-雷电将军_同伴生命值低·其二
+|语音内容=退下。
+|语音内容日语=下がりなさい。
+|语音内容英语=Step aside.
+|语音内容韩语=물러나라
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=倒下·其一
+|语音文件=player1-雷电将军_倒下·其一
+|语音内容=浮世一梦…
+|语音内容日语=浮世の夢のごとし…
+|语音内容英语=The mortal plane... A fleeting dream...
+|语音内容韩语=속세는 한바탕 덧없는 꿈…
+}}
+{{角色/语音1
+|语音类型=倒下·其二
+|语音文件=player1-雷电将军_倒下·其二
+|语音内容=无念，无执…
+|语音内容日语=無念…無執…
+|语音内容英语=Detached from the world...
+|语音内容韩语=무념, 무상…
+}}
+{{角色/语音1
+|语音类型=倒下·其三
+|语音文件=player1-雷电将军_倒下·其三
+|语音内容=雷鸣，将歇…
+|语音内容日语=雷鳴が…止んでしまいます…
+|语音内容英语=The thunder falls silent...
+|语音内容韩语=뇌명이 곧 그치리…
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=重受击·其一
+|语音文件=player1-雷电将军_受重击·其一
+|语音内容=无礼…
+|语音内容日语=無礼者…
+|语音内容英语=Insolent!
+|语音内容韩语=무례하군…
+}}
+{{角色/语音1
+|语音类型=重受击·其二
+|语音文件=player1-雷电将军_受重击·其二
+|语音内容=荒谬…
+|语音内容日语=愚かな…
+|语音内容英语=Absurd!
+|语音内容韩语=터무니없군…
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=加入队伍·其一
+|语音文件=player1-雷电将军_加入队伍·其一
+|语音内容=有什么事
+|语音内容日语=なに？
+|语音内容英语=About what?
+|语音内容韩语=무슨 일이죠?
+}}
+{{角色/语音1
+|语音类型=加入队伍·其二
+|语音文件=player1-雷电将军_加入队伍·其二
+|语音内容=随我左右即可
+|语音内容日语=私についてきてください。
+|语音内容英语=Stay close and you will live.
+|语音内容韩语=내 곁을 따르거라
+}}
+{{角色/语音1
+|语音类型=加入队伍·其三
+|语音文件=player1-雷电将军_加入队伍·其三
+|语音内容=出征之时已至。
+|语音内容日语=今こそ出陣の時。
+|语音内容英语=The campaign begins.
+|语音内容韩语=출정할 시간이다
+}}
+</div>
+</div>

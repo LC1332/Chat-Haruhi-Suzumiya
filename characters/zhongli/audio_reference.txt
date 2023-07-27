@@ -1,0 +1,823 @@
+{{面包屑|钟离|角色语音}}{{语音tab样式}}__notoc__
+<div class="resp-tabs" style="border-spacing: 0px;">
+<ul class="resp-tabs-list clearfix">
+<li class="active bili-list-style"><span class="tab-panel">角色语音</span></li>
+<li class="bili-list-style"><span class="tab-panel">元素战技</span></li>
+<li class="bili-list-style"><span class="tab-panel">元素爆发</span></li>
+<li class="bili-list-style"><span class="tab-panel">打开宝箱</span></li>
+<li class="bili-list-style"><span class="tab-panel">生命值低</span></li>
+<li class="bili-list-style"><span class="tab-panel">同伴生命值低</span></li>
+<li class="bili-list-style"><span class="tab-panel">倒下</span></li>
+<li class="bili-list-style"><span class="tab-panel">受击</span></li>
+<li class="bili-list-style"><span class="tab-panel">加入队伍</span></li>
+</ul>
+{{角色语音表头
+|汉语CV=彭博
+|日语CV=前野智昭
+|英语CV=基思·西尔弗斯坦
+|韩语CV=表永宰
+}}
+<div class="resp-tabs-container">
+<div class="resp-tab-content" style="display:block;">
+{{角色/语音
+|语音类型=初次见面…
+|语音文件={{player|钟离_初次见面···}}
+|语音文件日语={{player|日_钟离_初次见面···}}
+|语音文件英语={{player|英_钟离_初次见面···}}
+|语音文件韩语={{player|韩_钟离_初次见面···}}
+|语音内容=一份新的「契约」？好吧…虽然我还在度假，但也可以陪你走一趟。契约书上，该签什么名字呢？我有许多名字，度假期间的话，我会自称「钟离」。你呢，旅行者？你会签下什么名字？
+|语音内容日语=新しい「契約」か？…分かった、休暇中だが、付き合ってもいいぞ。契約書はどの名にすればいい？名はたくさんあるのだが、今は…「鍾離」と名乗っている。お前はどうだ？旅人。お前はどの名で契約する？
+|语音内容英语=A new contract? Okay. I'm still on leave, but I can accompany you for a while. What name should I use on the contract? I have a great many names, though when on leave I tend to go by Zhongli. And you, Traveler? What name will you be signing on this contract?
+|语音内容韩语=새로운 「계약」? 좋아… 아직 휴가 기간이지만 함께 가주지. 계약서에 무슨 이름으로 서명해야 하지? 이름이 여러 개인데. 휴가 기간이라면… 난 「종려」야. 넌 여행자? 넌 무슨 이름으로 서명할 건가?
+}}
+{{角色/语音
+|语音类型=闲聊·旅程
+|语音文件={{player|钟离_闲聊·旅程}}
+|语音文件日语={{player|日_钟离_闲聊·旅程}}
+|语音文件英语={{player|英_钟离_闲聊·旅程}}
+|语音文件韩语={{player|韩_钟离_闲聊·旅程}}
+|语音内容=旅程总有一天会迎来终点，不必匆忙。
+|语音内容日语=旅はいつか終わりを迎える、慌てる必要はない。
+|语音内容英语=Every journey has its final day. Don't rush.
+|语音内容韩语=여정은 언젠가 끝나게 돼. 그러니 서두를 필요 없어
+}}
+{{角色/语音
+|语音类型=闲聊·游览
+|语音文件={{player|钟离_闲聊·游览}}
+|语音文件日语={{player|日_钟离_闲聊·游览}}
+|语音文件英语={{player|英_钟离_闲聊·游览}}
+|语音文件韩语={{player|韩_钟离_闲聊·游览}}
+|语音内容=接下来想去哪里？如果想游历璃月名胜的话，我有一些不错的参考方案。
+|语音内容日语=次はどこに行くんだ？璃月の名所を巡りたいなら、いい案がいくつかあるぞ。
+|语音内容英语=Where do you want to go next? If you'd like to see Liyue's tourist spots, I have a few references.
+|语音内容韩语=이제 어디 가고 싶어? 리월의 명승 고지를 둘러보고 싶다면 괜찮은 방법이 있어
+}}
+{{角色/语音
+|语音类型=闲聊·璃月
+|语音文件={{player|钟离_闲聊·璃月}}
+|语音文件日语={{player|日_钟离_闲聊·璃月}}
+|语音文件英语={{player|英_钟离_闲聊·璃月}}
+|语音文件韩语={{player|韩_钟离_闲聊·璃月}}
+|语音内容=为「流通」而造的船，遇到港口也会停泊，所以璃月是一切财富「沉淀」的地方。
+|语音内容日语=「流通」のために作られた船は港に止まる、だから璃月はあらゆる富が「沈着」する場所だ。
+|语音内容英语=Boats are made for transferring commodities back and forth, and those that come across Liyue tend to stay a while, so it is where many things come to settle.
+|语音内容韩语=「유통」을 위해 지은 배는 항구에 정박하지. 그러니 리월은 모든 재물이 「모이는」 곳이야
+}}
+{{角色/语音
+|语音类型=闲聊·怀旧
+|语音文件={{player|钟离_闲聊·怀旧}}
+|语音文件日语={{player|日_钟离_闲聊·怀旧}}
+|语音文件英语={{player|英_钟离_闲聊·怀旧}}
+|语音文件韩语={{player|韩_钟离_闲聊·怀旧}}
+|语音内容=欲买桂花同载酒…只可惜故人，何日再见呢？
+|语音内容日语=花を買い、酒を持ち、船の上から璃月の景色を堪能しようとしたが、共に過ごした旧友はもう居ない。
+あの古き友との再会は、いつ叶うだろうか？
+|语音内容英语=Osmanthus wine tastes the same as I remember... But where are those who share the memory?
+|语音内容韩语=계화꽃을 사서 좋은 술을 가지고 옛 친구와 함께 뱃놀이를 가고 싶으나…. 옛 친구는 언제 다시 만날 수 있으려나?
+}}
+{{角色/语音
+|语音类型=雨过天晴…
+|语音文件={{player|钟离_雨过天晴···}}
+|语音文件日语={{player|日_钟离_雨过天晴···}}
+|语音文件英语={{player|英_钟离_雨过天晴···}}
+|语音文件韩语={{player|韩_钟离_雨过天晴···}}
+|语音内容=「琉璃袋」这种植物，它偏爱潮湿的环境，最适合雨后采摘。如果发现的话，适当储备些吧。
+|语音内容日语=「琉璃袋」という植物は湿っぽい環境を好むため、雨上がりに摘むのがおすすめだ。見かけたら、適切な時に摘むといい。
+|语音内容英语=Violetgrass is a plant that enjoys a moist environment and is best picked after it rains. If you should choose to pick any, be sure to store them appropriately.
+|语音内容韩语=「유리주머니」 같은 식물은 습한 환경을 좋아해서 비가 온 후 따는 게 좋아. 찾아낸다면 적당히 저장해 둬
+}}
+{{角色/语音
+|语音类型=下雪的时候…
+|语音文件={{player|钟离_下雪的时候···}}
+|语音文件日语={{player|日_钟离_下雪的时候···}}
+|语音文件英语={{player|英_钟离_下雪的时候···}}
+|语音文件韩语={{player|韩_钟离_下雪的时候···}}
+|语音内容=找个地方避避雪吧。我不会有事，但你可能着凉。
+|语音内容日语=雪が止むまで場所を移動しよう。俺は問題ないが、お前が風邪を引くかもしれない。
+|语音内容英语=We should look for a place to take shelter. I'll be fine, but we don't want you catching a cold.
+|语音内容韩语=어디 가서 눈을 피하지. 난 괜찮은데, 넌 감기 걸릴지도 모르니
+}}
+{{角色/语音
+|语音类型=刮大风了…
+|语音文件={{player|钟离_刮大风了···}}
+|语音文件日语={{player|日_钟离_刮大风了···}}
+|语音文件英语={{player|英_钟离_刮大风了···}}
+|语音文件韩语={{player|韩_钟离_刮大风了···}}
+|语音内容=嗯…不适合度假的天气。去听听戏吧。
+|语音内容日语=休暇に向いていない天気だ。芝居でも見に行くか。
+|语音内容英语=This weather is no good for being on vacation. We should go and take in an opera.
+|语音内容韩语=휴가를 보내기엔 좋지 않은 날씨군. 가서 경극이나 감상하자고
+}}
+{{角色/语音
+|语音类型=早上好…
+|语音文件={{player|钟离_早上好···}}
+|语音文件日语={{player|日_钟离_早上好···}}
+|语音文件英语={{player|英_钟离_早上好···}}
+|语音文件韩语={{player|韩_钟离_早上好···}}
+|语音内容=希望今日也有好景气。
+|语音内容日语=今日も好景気になることを願っている。
+|语音内容英语=I hope today too shall be prosperous.
+|语音内容韩语=오늘도 경치가 근사하면 좋겠군
+}}
+{{角色/语音
+|语音类型=中午好…
+|语音文件={{player|钟离_中午好···}}
+|语音文件日语={{player|日_钟离_中午好···}}
+|语音文件英语={{player|英_钟离_中午好···}}
+|语音文件韩语={{player|韩_钟离_中午好···}}
+|语音内容=想要吃点提神的？嗯，吃虎岩倒是有爿不错的店…
+|语音内容日语=元気になるもの？チ虎岩にあるいい店を知っているが…
+|语音内容英语=Want a quick meal to pick us back up? I know a good place in Chihu Rock.
+|语音内容韩语=기운이 나는 걸 먹고 싶어? 음… 흘호암에 괜찮은 식당이 있어
+}}
+{{角色/语音
+|语音类型=晚上好…
+|语音文件={{player|钟离_晚上好···}}
+|语音文件日语={{player|日_钟离_晚上好···}}
+|语音文件英语={{player|英_钟离_晚上好···}}
+|语音文件韩语={{player|韩_钟离_晚上好···}}
+|语音内容=虽然这种时候已经错过了云先生的戏，但夜晚的璃月仍有许多好去处。
+|语音内容日语=もう雲殿の芝居に間に合わないが、夜の璃月はまだまだいいところがたくさんあるぞ。
+|语音内容英语=By this time of night, we will have already missed Ms. Yun's play, but Liyue is full of interesting places to explore, even at night.
+|语音内容韩语=운 선생의 경극을 놓쳤지만, 밤의 리월에는 가볼 만한 곳이 많아                    
+}}
+{{角色/语音
+|语音类型=晚安…
+|语音文件={{player|钟离_晚安···}}
+|语音文件日语={{player|日_钟离_晚安···}}
+|语音文件英语={{player|英_钟离_晚安···}}
+|语音文件韩语={{player|韩_钟离_晚安···}}
+|语音内容=集市已收，喧闹的码头也已沉睡。去休息吧。
+|语音内容日语=市場が終わり、賑やかな港も眠りについた。お前も休むといい。
+|语音内容英语=The market is closed and the port has settled. Go get some rest.
+|语音内容韩语=시장은 문을 닫았고 떠들썩한 부두도 깊은 잠에 빠졌구나. 가서 쉬어
+}}
+{{角色/语音
+|语音类型=关于钟离自己…
+|语音文件={{player|钟离_关于钟离自己···}}
+|语音文件日语={{player|日_钟离_关于钟离自己···}}
+|语音文件英语={{player|英_钟离_关于钟离自己···}}
+|语音文件韩语={{player|韩_钟离_关于钟离自己···}}
+|语音内容=不以规矩，不能成方圆。不管是常人还是仙人，惟有各司其职，方能保璃月长久太平。
+|语音内容日语=規則がなければ、円を成すことはできない。常人でも仙人でも、それぞれの役割を果たすことで、璃月の平和が保たれる。
+|语音内容英语=Nothing can be accomplished without rules or standards. No matter if it is mortals or adepti, everyone has their place. This rule is what keeps Liyue in peace.
+|语音内容韩语=규칙이 없다면 일을 이룰 수 없어. 평범한 사람이나 선인이나 각자의 임무를 다해야 리월이 계속 평화롭지
+}}
+{{角色/语音
+|语音类型=关于我们·黄金
+|语音文件={{player|钟离_关于我们·黄金}}
+|语音文件日语={{player|日_钟离_关于我们·黄金}}
+|语音文件英语={{player|英_钟离_关于我们·黄金}}
+|语音文件韩语={{player|韩_钟离_关于我们·黄金}}
+|语音内容=黄金是璃月的财富，是令璃月的心脏搏动的血液。你是否拥有黄金般闪耀的心，就让我拭目以待吧。
+|语音内容日语=黄金は璃月の富、璃月の心臓を動かす血だ。お前に黄金のように輝く心があるかどうか、見極めさせてもらうぞ。
+|语音内容英语=Gold is Liyue's treasure. It is the blood that runs through her heart. As for whether your own heart shines like gold — we will have to wait and see.
+|语音内容韩语=황금은 리월의 재물이자 리월의 심장을 뛰게 하는 피야. 네가 황금처럼 빛나는 마음이 있는지 기대해 보겠어
+}}
+{{角色/语音
+|语音类型=关于我们·契约
+|语音文件={{player|钟离_关于我们·契约}}
+|语音文件日语={{player|日_钟离_关于我们·契约}}
+|语音文件英语={{player|英_钟离_关于我们·契约}}
+|语音文件韩语={{player|韩_钟离_关于我们·契约}}
+|语音内容=你我既有「契约」之交——那么凡在契约范围内的事，都可同我商量。
+|语音内容日语=俺達には「契約」がある——だから契約内のことは、何でも相談していいぞ。
+|语音内容英语=You and I have a contract, so feel free to discuss anything at all within the scope of said contract.
+|语音内容韩语=너와 나와 「계약」으로 맺어진 벗——그럼 계약 범위 안의 일이라면 나와 상의할 수 있어
+}}
+{{角色/语音
+|语音类型=关于我们·公平
+|语音文件={{player|钟离_关于我们·公平}}
+|语音文件日语={{player|日_钟离_关于我们·公平}}
+|语音文件英语={{player|英_钟离_关于我们·公平}}
+|语音文件韩语={{player|韩_钟离_关于我们·公平}}
+|语音内容=「契约」之外的事也可与我相谈。毕竟我在这片土地上活了这么久，凡事都略通一二。哦，虽说如此，我也有希望你能为我做的事情。毕竟，这样才符合「公平」嘛。
+|语音内容日语=「契約」外のことでも俺に相談していいぞ。この土地で長く生きてきたから、大体のことは知っている。とはいえ、お前にやってもらいたいこともある。そうしないと「公平」じゃないからな。
+|语音内容英语=We can discuss matters that fall outside of our contract, too. After all, I have been on this land for a time, and have come to know a thing or two. Of course, I do hope you can do some things for me as well. That would only be fair.
+|语音内容韩语=「계약」 밖의 일을 상의해도 돼. 이 땅에서 이렇게 오래 살았으니 웬만한 일은 대략 알지. 물론 네가 날 위해 해주었으면 하는 일이 있긴 해. 그래야 「공평」한 셈이니까
+}}
+{{角色/语音
+|语音类型=关于我们·困惑
+|语音文件={{player|钟离_关于我们·困惑}}
+|语音文件日语={{player|日_钟离_关于我们·困惑}}
+|语音文件英语={{player|英_钟离_关于我们·困惑}}
+|语音文件韩语={{player|韩_钟离_关于我们·困惑}}
+|语音内容=「契约」无法界定「友谊」、无法丈量「情谊」，那到底用什么才能称量你我之间情感的重量呢？「朋友」，你知道答案吗？
+|语音内容日语=「契約」は「友情」の深さを測ることができない。では、何を使えば俺たちの友情の重さを測ることができるのだろう？「友」よ、お前は答えを知っているか？
+|语音内容英语=Contracts cannot be used to define friendship, nor measure sentiment. So just what can we use to measure the weight of our emotions? Do you know the answer, friend?
+|语音内容韩语=「계약」은 「우정」과 「정」을 구분하고 측정할 수 없어. 그럼 대체 어떻게 해야 우리 우정의 무게를 잴 수 있을까? 「친구」, 너는 답을 아는가?
+}}
+{{角色/语音
+|语音类型=关于「神之眼」…
+|语音文件={{player|钟离_关于「神之眼」···}}
+|语音文件日语={{player|日_钟离_关于「神之眼」···}}
+|语音文件英语={{player|英_钟离_关于「神之眼」···}}
+|语音文件韩语={{player|韩_钟离_关于「神之眼」···}}
+|语音内容=「神之眼」…也是一种「契约」。须知一切力量皆有其代价，一千种权力伴随着一千种责任。
+|语音内容日语=「神の目」…それも一つの「契約」だ。あらゆる力を知るには代価が必要だ。千の権力には千の責任が伴う。
+|语音内容英语=Visions... are also a type of contract. You should know that all power comes at a price. For every bit of power you gain, so too do you gain more responsibility.
+|语音内容韩语=「신의 눈」… 역시 일종의 「계약」이야. 모든 힘에는 대가가 따른다는 걸 알아야 해. 천 개의 권력에는 천 개의 책임이 따라
+}}
+{{角色/语音
+|语音类型=有什么想要分享…
+|语音文件={{player|钟离_有什么想要分享···}}
+|语音文件日语={{player|日_钟离_有什么想要分享···}}
+|语音文件英语={{player|英_钟离_有什么想要分享···}}
+|语音文件韩语={{player|韩_钟离_有什么想要分享···}}
+|语音内容=「交易」的规矩是「契约」，准则是「公平」。这是订立、遵循「契约」者绝不可忘却之事：倘若失了公平，那契约便成了欺瞒的凭据。
+|语音内容日语=「取引」の決まりは「契約」、その規準は「公平」。それは「契約」を作って、守る者が忘れてはならないことだ。公平が失われたら、契約は嘘の証拠となる。
+|语音内容英语=Trade relies on both contracts and fairness. There is one thing you must never forget when making and abiding by a contract: if fairness is lost, then the contract shall become proof of one's deception.
+|语音内容韩语=「거래」의 규칙은 「계약」이고 준칙은 「공평」이지. 「계약」을 맺고 준수하는 자는 절대 잊어선 안 돼. 공평함을 잃게 되면 계약은 기만의 근거가 되지
+}}
+{{角色/语音
+|语音类型=感兴趣的见闻…
+|语音文件={{player|钟离_感兴趣的见闻···}}
+|语音文件日语={{player|日_钟离_感兴趣的见闻···}}
+|语音文件英语={{player|英_钟离_感兴趣的见闻···}}
+|语音文件韩语={{player|韩_钟离_感兴趣的见闻···}}
+|语音内容=你若去往「绝云间」，便替我采来一束「清心」吧。一束就好。此行的旅费…啊，差些忘了，「契约」生效期间，旅费由你代为垫付。那就有劳了。
+|语音内容日语=「絶雲の間」に行く機会があったら、「清心」を一束取ってきてくれ。一束でいいんだ。旅費は…ああっ、忘れるところだった。「契約」の有効期間中の旅費はお前が持ってくれ。では、頼んだぞ。
+|语音内容英语=If you're heading to Jueyun Karst, please bring me back a bunch of Qingxin. Just one bunch is enough. Travel expenses...? Ah, I almost forgot. During the effective period of our contract, travel expenses are to be paid for by yourself. Sorry to bother you.
+|语音内容韩语=「절운간」에 가면 「청심」을 한 묶음 따다 줘. 한 묶음이면 돼. 여비는… 아, 잊을 뻔했네, 「계약」 기간에 여비는 네가 대신 지불해. 그럼 수고하도록
+}}
+{{角色/语音
+|语音类型=关于魈…
+|语音文件={{player|钟离_关于魈···}}
+|语音文件日语={{player|日_钟离_关于魈···}}
+|语音文件英语={{player|英_钟离_关于魈···}}
+|语音文件韩语={{player|韩_钟离_关于魈···}}
+|语音内容=你说，归离原的少年仙人…啊…时至今日，他仍在履行他的职责…哦，这副「连理镇心散」，请替我带给他。对了，可千万不能让小派蒙偷吃了去，这里的药力…绝非常人所能承受。
+|语音内容日语=帰離原の少年仙人か…ふむ…今日になっても彼はその責務を果たしている…この「連理鎮心散」を彼に渡してくれるか。そうだ、パイモンが食わないように注意するんだ。この薬は…常人が耐えられるものではない。
+|语音内容英语=You speak of the young adeptus of Guili Plains... *sigh* Still fulfilling his duty to this very day. Please, give this Remedium Tertiorum to him on my behalf. Oh, yes... be sure not to let Paimon eat them. Nothing of this world can withstand the power of this medicine.
+|语音内容韩语=귀리 평원의 어린 선인…. 아… 지금까지 그는 자신의 직책을 이행하고 있어…. 이 「열리진심산」을 그에게 전해줘. 맞다, 페이몬이 훔쳐 먹지 못하게 해. 이것의 약효는… 아무나 감당할 수 있는 게 아니야
+}}
+{{角色/语音
+|语音类型=关于温迪…
+|语音文件={{player|钟离_关于温迪···}}
+|语音文件日语={{player|日_钟离_关于温迪···}}
+|语音文件英语={{player|英_钟离_关于温迪···}}
+|语音文件韩语={{player|韩_钟离_关于温迪···}}
+|语音内容=嘶...好浓的酒气。那个诗人刚刚来过吧，那个和风雅二字搭不上一点关系的酒鬼诗人！你这里…唔，被他诱骗着灌了酒，话也说不清了么…你等一下，我去沏一壶「醒神茶」，只需三个时辰便好。你等一下…
+|语音内容日语=っ…。あの詩人が来ただろう、あの風流の分からない呑兵衛詩人が！お前…むっ、ヤツに変な飲み物を飲まされて、うっとりしているのか…少し待て、眠気覚ましの茶を淹れよう。6時間あればできるんだ、少し待ってくれ…
+|语音内容英语=*sniff* Tsk... It reeks of wine. That bard has just been through here, hasn't he? That drunkard is a disgrace to the arts. Oh... Has he tricked you into getting drunk? You're slurring a little. Wait a moment, I'll brew a pot of sobering tea. It'll be ready in only six hours, so just wait a moment.
+|语音内容韩语=으… 진한 술 냄새. 그 시인이 방금 왔었군, 고상한 구석은 하나도 없는 주정뱅이 시인 같으니라고! 자네… 으, 그의 유혹에 넘어가 진탕 마셨군. 말도 제대로 못하고… 기다려 내가 「정신 드는 차」를 끓여오지. 6시간이면 되니 잠깐 기다려…
+}}
+{{角色/语音
+|语音类型=关于凝光…
+|语音文件={{player|钟离_关于凝光···}}
+|语音文件日语={{player|日_钟离_关于凝光···}}
+|语音文件英语={{player|英_钟离_关于凝光···}}
+|语音文件韩语={{player|韩_钟离_关于凝光···}}
+|语音内容=即便每日经手的事务千条万缕，她仍不失进取之心，实属难得。让我想起，彼时的她赤着脚从瑶光滩走到南码头，一路叫卖货品的样子。时间对于常人，真是残酷…
+|语音内容日语=多忙を極めていても、彼女は奮迅の心を持っている。あの頃、彼女が裸足で瑶光の浜から南埠頭まで歩きながら商いをしていた姿を思い出す。時間は人にとって残酷なものだな…
+|语音内容英语=Despite the multitude of affairs that she deals with in a day, Ningguang always continues to press on. A rare gem indeed. I'm reminded of the time that she used to walk barefoot from Yaoguang Shoal to the south wharf, trying to sell her wares as she went. Time is cruel to humans.
+|语音内容韩语=매일 처리하는 일이 아무리 많아도 그녀는 진취적인 마음을 잃지 않아. 정말 대단하지. 그 당시 그녀가 맨발로 요광 해안에서 남쪽 마을로 향하며 물건을 팔던 생각이 나는군. 시간은 평범한 사람에겐 너무 잔혹해…
+}}
+{{角色/语音
+|语音类型=关于胡桃…
+|语音文件={{player|钟离_关于胡桃···}}
+|语音文件日语={{player|日_钟离_关于胡桃···}}
+|语音文件英语={{player|英_钟离_关于胡桃···}}
+|语音文件韩语={{player|韩_钟离_关于胡桃···}}
+|语音内容=当代堂主？嗯…那孩子，我应付不来。
+|语音内容日语=今の堂主？コホン、あの子は苦手だ。
+|语音内容英语=The current overseer of the funeral parlor? Ahem. I cannot deal with that child.
+|语音内容韩语=지금의 당주? 크흠… 나 그 아이는 상대 못 해
+}}
+{{角色/语音
+|语音类型=关于达达利亚·沉着
+|语音文件={{player|钟离_关于达达利亚·沉着}}
+|语音文件日语={{player|日_钟离_关于达达利亚·沉着}}
+|语音文件英语={{player|英_钟离_关于达达利亚·沉着}}
+|语音文件韩语={{player|韩_钟离_关于达达利亚·沉着}}
+|语音内容=那位来自至冬的武人，还没离开璃月吗？没关系，要是他找你麻烦，你可以唤我去应付他。
+|语音内容日语=あのスネージナヤの武人はまだ璃月にいるのか？ハハッ、構わない、彼がお前にちょっかいをかけてきたら、その時は俺を呼ぶといい。
+|语音内容英语=That rascal from Snezhnaya has yet to depart from Liyue? Heh, no matter. Just let me know if he gives you any trouble. I shall deal with the matter swiftly.
+|语音内容韩语=스네즈나야에서 온 그 무사는 아직도 리월에 있는 건가? 흐흠, 괜찮아, 만약 그가 널 해코지하면 날 불러
+}}
+{{角色/语音
+|语音类型=关于达达利亚·酒桌
+|语音文件={{player|钟离_关于达达利亚·酒桌}}
+|语音文件日语={{player|日_钟离_关于达达利亚·酒桌}}
+|语音文件英语={{player|英_钟离_关于达达利亚·酒桌}}
+|语音文件韩语={{player|韩_钟离_关于达达利亚·酒桌}}
+|语音内容=听说「公子」在愚人众的风评又变糟了不少。但像他这样的人，一定会用积极的行动去扫清那些对他的怨言吧。嗯…这样想来，下回酒桌上又有不少的趣事可以听了。旅者，你也一起来吗？
+|语音内容日语=近頃、「公子」のファデュイでの評価がまた下がったらしい。しかし、悪評を一掃するためであれば、彼は積極的に動くだろう。ふむ…そう考えると、今度彼との宴席でまた面白い話が聞けそうだ。旅人、お前も一緒に来るか？
+|语音内容英语=It's said that Childe and his reputation have yet again stirred up waves among the inner ranks of the Fatui. Knowing his type, he will be sure to swiftly depose anyone who dares to challenge his actions. Hmm... Come to think of it, there will be a lot of interesting news to be heard the next time we gather for drinks. Care to join me when the time comes, Traveler?
+|语音内容韩语=우인단 내에서 「타르탈리아」의 소문이 또 안 좋아진 모양이야. 하지만 그와 같은 자라면 분명 자신에 대한 불만을 없애버리기 위해 적극적으로 나서겠지. 흠… 다음번 술자리에서 또 재밌는 얘기를 많이 들을 수 있겠군. 여행자, 너도 올래?
+}}
+{{角色/语音
+|语音类型=关于甘雨…
+|语音文件={{player|钟离_关于甘雨···}}
+|语音文件日语={{player|日_钟离_关于甘雨···}}
+|语音文件英语={{player|英_钟离_关于甘雨···}}
+|语音文件韩语={{player|韩_钟离_关于甘雨···}}
+|语音内容=璃月这个国度的繁荣，靠的绝不仅是「岩王帝君」的神谕，而是无数响应「契约」的岩神子民。在这之中，甘雨已是就职时间最长的一位了。关于她的往事…我怕她怪罪，让她自己和你说吧。
+|语音内容日语=璃月の繁栄は「岩王帝君」のお告げのおかげだけではなく、「契約」に応えた無数の岩神の民のおかげだ。その中で、最も長く職務についたのが甘雨だ。彼女の過去に関しては…ハハッ、彼女の気を悪くしたくないからな、彼女本人に聞いてくれ。
+|语音内容英语=Liyue's prosperity has not merely been built on Rex Lapis' oracles or wisdom. It is also thanks to the countless servants of the Geo Archon who have honored their end of the contract. Of them, Ganyu is the one who has served for the longest time. If you want to know about her past... You should ask her about it. I fear my wording would not be delicate enough to receive her approval.
+|语音内容韩语=리월의 번영은 절대 「암왕제군」의 신탁에 의해서만 완성된 게 아니다. 「계약」에 응답한 무수한 바위 신의 백성들이 있었기에 가능했지. 그중에서도 감우는 취임한 지 가장 오래됐어. 그녀의 과거라면… 그녀가 날 원망할 수도 있으니, 가서 직접 물어보게
+}}
+{{角色/语音
+|语音类型=关于刻晴…
+|语音文件={{player|钟离_关于刻晴···}}
+|语音文件日语={{player|日_钟离_关于刻晴···}}
+|语音文件英语={{player|英_钟离_关于刻晴···}}
+|语音文件韩语={{player|韩_钟离_关于刻晴···}}
+|语音内容=她是当代七星中最「不敬神」的，但我还挺欣赏这样的人。「觉得自己是正确的，就大声地说出来、坚决的去行动」——就是因为璃月有这样的人，我才会考虑退休一事。
+|语音内容日语=彼女は当代七星の中で最も神を敬わない人だが、俺は結構気に入っている。「自分が正しいと思うなら、声を大きく、動揺せずに行動する」——こういう人間が璃月に現れたから、俺は引退を考えたんだ。
+|语音内容英语=She is the most impious of the Qixing — but I actually find the conviction of such people quite endearing. The only reason I was able to consider taking a step back from such overarching management of Liyue was because there are people like her. People who speak up when they believe themselves to be right, and then go and do something decisive about it.
+|语音内容韩语=그녀는 현재 칠성 중에서 가장 「신을 공경하지 않는 사람」이야. 하지만 난 이런 사람이 꽤 마음에 들어. 「자신이 맞다고 생각하는 걸 과감히 이야기하고 행동으로 옮기는 것」——리월에 이런 사람이 있기에 나도 은퇴를 생각할 수 있었지
+}}
+{{角色/语音
+|语音类型=关于烟绯…
+|语音文件={{player|钟离_关于烟绯···}}
+|语音文件日语={{player|日_钟离_关于烟绯···}}
+|语音文件英语={{player|英_钟离_关于烟绯···}}
+|语音文件韩语={{player|韩_钟离_关于烟绯···}}
+|语音内容=她未曾与我签订「契约」，却在以自己的方式维护璃月各界的规矩，并将有失偏颇的观念纠正。倘若某天，她的父亲远游归来，想来会比我更欣慰吧。
+|语音内容日语=彼女は俺と「契約」をしていないが、自らの方法で璃月の規律を守り、偏った思想を正している…いつの日か、彼女の父親が戻ってきて、彼女の成長を目にしたら、ほっとするだろう。
+|语音内容英语=Despite never having signed a contract with me, she upholds order within many strata of Liyue society in her own way, dispelling misconceptions and correcting biases... Should her father one day return from his travels, I imagine that he would be even more delighted than I.
+|语音内容韩语=그녀는 나와 「계약」을 맺지 않았지만, 자신만의 방식으로 리월 각 분야의 규칙을 지키며 편파적인 관념을 바로잡고 있어. 언젠가 그녀의 아버지가 먼 여행에서 돌아오면 나보다 더 뿌듯해하겠지
+}}
+{{角色/语音
+|语音类型=关于巴尔…
+|语音文件={{player|钟离_关于巴尔···}}
+|语音文件日语={{player|日_钟离_关于巴尔···}}
+|语音文件英语={{player|英_钟离_关于巴尔···}}
+|语音文件韩语={{player|韩_钟离_关于巴尔···}}
+|语音内容=时间会淬炼一切意志。而她，恰好是会为信念付出所有的人。或许正因如此，她才能走到这一步。如有机会，我也想见识一下她为之倾尽一切的「永恒」。
+|语音内容日语=すべての意志は時によって磨かれる。彼女は信念のためならば、自らのすべてを捧げることさえ厭わない。だからこそ、ここまで歩んでこられたのかもしれない…機会があれば、俺も彼女がすべてを費やした「永遠」を見てみたいものだ。
+|语音内容英语=Time tempers all volition. Yet she would give up everyone for her beliefs. Perhaps it is for this very reason that she has come to where she stands today... Should the chance come by me, I too would like to learn of the Eternity for which she so earnestly endeavors.
+|语音内容韩语=시간은 모든 의지를 단련해. 그리고 그녀는 신념을 위해 모든 걸 내던질 사람이고. 어쩌면 그래서 여기까지 왔는지도 모르지. 기회 되면 나도 그녀가 모든 걸 바쳐서 이루고자 하는 「영원」을 보고 싶군
+}}
+{{角色/语音
+|语音类型=关于布耶尔…
+|语音文件={{player|钟离_关于布耶尔···}}
+|语音文件日语={{player|日_钟离_关于布耶尔···}}
+|语音文件英语={{player|英_钟离_关于布耶尔···}}
+|语音文件韩语={{player|韩_钟离_关于布耶尔···}}
+|语音内容=智慧之神布耶尔，不仅统管整个须弥，还肩负着守护世界树的职责。若非有大智慧，的确难以司掌这些。拯救世界树一事，整个提瓦特的生灵都理应向她致谢。
+|语音内容英语=
+|语音内容日语=
+|语音内容韩语=
+}}
+{{角色/语音
+|语音类型=想要了解钟离·其一
+|语音文件={{player|钟离_想要了解钟离·其一}}
+|语音文件日语={{player|日_钟离_想要了解钟离·其一}}
+|语音文件英语={{player|英_钟离_想要了解钟离·其一}}
+|语音文件韩语={{player|韩_钟离_想要了解钟离·其一}}
+|语音内容=怎么，难得闲暇，不好好休息却反来找我。是想听我讲故事吗？
+|语音内容日语=どうした？せっかくの休暇なのに休まずに俺のところに来るとは。俺の話が聞きたいのか？
+|语音内容英语=Why is it that once you finally get a break, rather than taking a rest, you instead come to me? Is it that you want to hear one of my stories?
+|语音内容韩语=간만에 시간이 났는데 쉬지 않고 왜 날 찾았나? 내 이야기가 듣고 싶은 겐가?
+}}
+{{角色/语音
+|语音类型=想要了解钟离·其二
+|语音文件={{player|钟离_想要了解钟离·其二}}
+|语音文件日语={{player|日_钟离_想要了解钟离·其二}}
+|语音文件英语={{player|英_钟离_想要了解钟离·其二}}
+|语音文件韩语={{player|韩_钟离_想要了解钟离·其二}}
+|语音内容=「黑岩厂」的起源，听说过吗？<br>在过去，人们一边将天衡山中的矿脉挖空，一边在里面修建工场设施，渐渐建成了东大陆最大的工厂。山中黯道四通八达，一些甚至能通往大地深处的古遗迹。能掌握其中一切通路的人，如今大概没有了吧。
+|语音内容日语=「黒岩場」の起源を聞いたことがあるか？<br>昔、人々は天衡山の鉱脈を採掘しながら、中で工場施設を作っていて、そしてそれが東大陸最大の工場になった。中の道路は四方八方に通じている、大地の深部にある古い遺跡に通じるものもあったが、その全てを記憶している人は今はもういないだろう。
+|语音内容英语=Have you heard of the origin of the Blackcliff Forge? In the past, they would mine the ore veins of Mt. Tianheng, and then replace the cavities with factory equipment. Tunnels run in all directions throughout the mountain — some even run to the ruins deep within the earth. I doubt there is a person today who could map out all the tunnels.
+|语音内容韩语=「흑암 공장」의 기원에 대해 들어봤어?<br>옛날에 사람들은 천형산에서 광맥을 캐면서 안에 공장 시설을 지었어. 그러다 점점 동대륙 최대의 공장이 되었지. 산속의 비밀 통로는 거미줄처럼 퍼져있어서 땅속 깊은 곳의 고대 유적과도 연결돼. 그 통로를 다 알고 있는 사람은 아마 없을 거야
+}}
+{{角色/语音
+|语音类型=想要了解钟离·其三
+|语音文件={{player|钟离_想要了解钟离·其三}}
+|语音文件日语={{player|日_钟离_想要了解钟离·其三}}
+|语音文件英语={{player|英_钟离_想要了解钟离·其三}}
+|语音文件韩语={{player|韩_钟离_想要了解钟离·其三}}
+|语音内容=「海灯节」的起源，听说过吗？<br>在很久以前的战争中，璃月人会在夜里放飞明亮的灯，让厮杀的战士不迷失回家的方向，不迷失自己的心。这种事情，如今大概已经没有人记得了。
+|语音内容日语=「海灯祭」の起源を聞いたことがあるか？<br>昔、璃月は戦をしていてな、戦地へと赴いた人たちが故郷に帰る方向と自分の初心を見失わないよう、人々が夜に提燈を飛ばしたんだ。今はもうそんなこと誰も覚えていないだろうがな。
+|语音内容英语=Have you heard of the origins of the Lantern Rite? In a war, long ago, the people of Liyue would release lanterns to remind their soldiers of the way home, and to never lose sight of themselves. Though in this day and age, I doubt there are any that remember.
+|语音内容韩语=「해등절」의 기원에 대해 들어봤어?<br>아주 오래전 전쟁에서 리월 사람은 전사들이 집에 오는 길을 헤매지 않고 마음을 잃지 않도록 밤에 빛나는 등을 물에 띄웠다고 해. 이런 일을 기억하는 사람은 이제 없겠지만
+}}
+{{角色/语音
+|语音类型=想要了解钟离·其四
+|语音文件={{player|钟离_想要了解钟离·其四}}
+|语音文件日语={{player|日_钟离_想要了解钟离·其四}}
+|语音文件英语={{player|英_钟离_想要了解钟离·其四}}
+|语音文件韩语={{player|韩_钟离_想要了解钟离·其四}}
+|语音内容=「契约之神」的事情，听说过吗？<br>他的记性很好。每位对手的名字，璃港船局建成以来制造的每一艘船起航的日子，都不曾忘却。毕竟有这样的记忆力，才能铭记一切「契约」。<br>然而，记性很好有时是令人不快的事。
+|语音内容日语=「契約の神」について聞いたことがあるか？<br>彼は記憶力がとてもいいんだ。宿敵の名前を、璃月船舶局が設立してから船が出港した全ての日を、彼が忘れたことは一度もない。それほどの記憶力があるからこそ、あらゆる「契約」を覚えられる。<br>しかし、記憶力がいいということはたまに不快になるきっかけにもなる。
+|语音内容英语=The God of Contracts. Have you heard of him? He has an impressive memory. He remembers the name of every person he comes across, and the date that every ship built in Liyue sets sail. After all, only in being able to do so can he memorize all of the contracts he holds. With that said, not every memory is a happy one...
+|语音内容韩语=「계약의 신」의 일에 대해 들어봤어?<br>그는 기억력이 뛰어나. 라이벌의 이름, 리월항 선박 부처가 세워지고 나서 건조한 선박의 기항 일자를 잊은 적이 없어. 어쨌든 기억력이 그렇게 좋으니 모든 「계약」을 기억할 수 있지.<br>하지만 기억력이 좋다는 건 때론 불쾌한 일이기도 해
+}}
+{{角色/语音
+|语音类型=想要了解钟离·其五
+|语音文件={{player|钟离_想要了解钟离·其五}}
+|语音文件日语={{player|日_钟离_想要了解钟离·其五}}
+|语音文件英语={{player|英_钟离_想要了解钟离·其五}}
+|语音文件韩语={{player|韩_钟离_想要了解钟离·其五}}
+|语音内容=活得太久的人，只能在记忆中寻访往昔的战友、过去的景色。<br>即使如此我也不后悔与你相识，「朋友」。假使有一日不得不同你相别，你在我的记忆中也会如黄金般闪耀。
+|语音内容日语=長く生きすぎた人は記憶の中でのみ、昔の戦友や過去の景色を訪ねられる。<br>それでも、お前との出会いを後悔していない、「友」よ。たとえいつかお前と別れる日が来るとしても、お前は俺の記憶の中で輝き続ける。
+|语音内容英语=For those that live too long, the friends of days gone by and scenes from their adventures live on in their memories. As such, I have no regrets in meeting you, friend. Should the day ever come that we are not together, you will continue to shine like gold in my memories.
+|语音内容韩语=너무 오래 산 사람은 기억 속에서만 옛 전우, 과거의 풍경을 찾을 수 있어.<br>그렇다고 해도 난 너와 만난 걸 후회하지 않아 「친구」. 이별하는 날이 온다고 해도 자넨 내 기억 속에 황금처럼 반짝일 거야
+}}
+{{角色/语音
+|语音类型=钟离的爱好…
+|语音文件={{player|钟离_钟离的爱好···}}
+|语音文件日语={{player|日_钟离_钟离的爱好···}}
+|语音文件英语={{player|英_钟离_钟离的爱好···}}
+|语音文件韩语={{player|韩_钟离_钟离的爱好···}}
+|语音内容=得闲时在城内散步，就能让我心安不少。嗯…这种心情，是从何时开始…？
+|语音内容日语=時間がある時、城内を散歩すると気分が落ち着くな。うん…こんな気持ちはいつからだろうな…？
+|语音内容英语=I enjoy partaking in walks through the city — when time permits. I find it very calming. Yes... Just when did this feeling begin...?
+|语音内容韩语=짬이 날 때 성안을 산책하면 마음이 많이 진정돼. 어… 언제부터 이런 기분이 들었더라?
+}}
+{{角色/语音
+|语音类型=钟离的烦恼…
+|语音文件={{player|钟离_钟离的烦恼···}}
+|语音文件日语={{player|日_钟离_钟离的烦恼···}}
+|语音文件英语={{player|英_钟离_钟离的烦恼···}}
+|语音文件韩语={{player|韩_钟离_钟离的烦恼···}}
+|语音内容=让人们遵循「契约」，依照契约的规矩行事，其实是希望人们能遵循「公平」。只是这一点，总有人意识不到。
+|语音内容日语=人々に「契約」を守らせ、ルールに従って行動してもらうのは、「公平」を守ってほしいからだ。しかし、そのことに気付かない人はどうしてもいる。
+|语音内容英语=To get people to abide by a contract and act in accordance with the guidelines set out within is simply to ask them to respect the concept of fairness. It is not a large request. How are there those who still do not understand such simplicity?
+|语音内容韩语=사람들이 「계약」을 준수하고 계약의 규칙에 따라 행동하는 것은 「공평」하길 원해서야. 다만 이 점을 의식하지 못할 뿐이지
+}}
+{{角色/语音
+|语音类型=喜欢的食物…
+|语音文件={{player|钟离_喜欢的食物···}}
+|语音文件日语={{player|日_钟离_喜欢的食物···}}
+|语音文件英语={{player|英_钟离_喜欢的食物···}}
+|语音文件韩语={{player|韩_钟离_喜欢的食物···}}
+|语音内容=很久以前，与朋友共饮的酒。是因为气候变了吗？唉，过去的滋味，或许再也不能重现了吧。
+|语音内容日语=遠い昔に友と共に飲んだ酒だ。気候が変わったせいか、過去の味はもう再現できそうにない。
+|语音内容英语=There was once a drink I used to enjoy with friends — long ago... Is it because the climate has changed? A shame I will never be able to relish in its smooth flavor again.
+|语音内容韩语=오래전에 친구와 함께 마신 술이라고 할 수 있겠지. 기후가 변해서 그런가? 흐흠, 그때의 운치를 다시 느낄 순 없을 것 같군
+}}
+{{角色/语音
+|语音类型=讨厌的食物…
+|语音文件={{player|钟离_讨厌的食物···}}
+|语音文件日语={{player|日_钟离_讨厌的食物···}}
+|语音文件英语={{player|英_钟离_讨厌的食物···}}
+|语音文件韩语={{player|韩_钟离_讨厌的食物···}}
+|语音内容=我不喜欢海鲜。仅仅是看到海鲜，就会想到那种…该怎么说呢，滑溜溜的触感，洗不掉的腥味。哦，原因的话…
+唉，说来话长，就当是因为我记性太好了吧。
+|语音内容日语=海産物は嫌いだ。見るだけで、ああいう…何というか、つるつると滑るような感覚と洗っても消えない生臭さを思い出す。原因は…
+はぁ、話すと長くなる。記憶力が良すぎるからということにしてくれ。
+|语音内容英语=There was once a drink I used to enjoy with friends — long ago... Is it because the climate has changed? A shame I will never be able to relish in its smooth flavor again.
+|语音内容韩语=난 해산물이 싫어. 해산물을 보기만 해도 어떻게 말해야 하나…. 미끌미끌한 촉감, 지워지지 않는 비린내가 떠올라. 이유는…
+아, 말하자면 길어. 그냥 내 기억력이 너무 좋아서 기억하고 있다고 생각하라고
+}}	
+{{角色/语音1
+|语音类型=收到赠礼·其一
+|语音文件=player1-钟离_收到赠礼·其一
+|语音内容=用料讲究，做法地道。属实不易。
+|语音内容日语=本格的な調理法で、素材にまでこだわっている。大したものだ。
+|语音内容英语=The finest ingredients cooked with true expertise. This is no small feat.
+|语音内容韩语=재료도 신경 써서 골랐고 조리법도 제대로야. 대단하군
+}}	
+{{角色/语音1
+|语音类型=收到赠礼·其二
+|语音文件=player1-钟离_收到赠礼·其二
+|语音内容=烹饪是一件饶有趣味的事，想来对你而言也是如此。
+|语音内容日语=料理とは、実に趣のあるもの。それはお前にとっても同じことだろう。
+|语音内容英语=The art of gastronomy is a fascinating one. That it appeals to you comes as no surprise.
+|语音内容韩语=요리는 아주 재밌는 일이야. 너도 그렇게 느낄 테지
+}}	
+{{角色/语音1
+|语音类型=收到赠礼·其三
+|语音文件=player1-钟离_收到赠礼·其三
+|语音内容=既有闲暇，不如找一处庭院，和你说一段故事吧。
+|语音内容日语=時間があれば、どこかの庭園でお前に物語を聞かせてやろう。
+|语音内容英语=Since you seem to have some time on your hands, why don't we find a quiet place and I'll share one of my stories with you.
+|语音内容韩语=시간도 많은데, 정원에서 내 이야기나 듣지 않겠나?
+}}
+{{角色/语音
+|语音类型=生日…
+|语音文件={{player|钟离_生日}}
+|语音文件日语={{player|日_钟离_生日}}
+|语音文件英语={{player|英_钟离_生日}}
+|语音文件韩语={{player|韩_钟离_生日}}
+|语音内容=生日快乐。这是曾在你出生那天盛开的，「琉璃百合」的干花。
+很久以前的璃月人会说，这种花承载着大地中的美好记忆与祈愿而盛开，我愿意相信，你的诞生也是同样的道理。
+|语音内容日语=誕生日おめでとう。これはお前が生まれた日に咲いた「琉璃百合」のドライフラワーだ。
+昔の璃月の人々は、大地の美しい記憶と祈りのためにこの花が咲くと言っていた。きっと、お前の誕生もそうだと俺は信じている。
+|语音内容英语=Happy birthday. This is a dried Glaze Lily that came into bloom on the day of your birth. Long ago, the people of Liyue would say that this flower blooms bearing the weight of the beautiful memories and prayers of the land. I believe this to have applied on the day you were born as well.
+|语音内容韩语=생일 축하해. 이건 네가 태어날 때 핀 「유리백합」을 말린 거야.
+아주 오래전 리월 사람들은 이 꽃이 대지의 아름다운 기억과 기원을 담아 피웠다고 말했어. 네가 태어난 것도 이 꽃과 마찬가지라고 믿고 싶어
+}}
+{{角色/语音
+|语音类型=突破的感受·起
+|语音文件={{player|钟离_突破的感受·起}}
+|语音文件日语={{player|日_钟离_突破的感受·起}}
+|语音文件英语={{player|英_钟离_突破的感受·起}}
+|语音文件韩语={{player|韩_钟离_突破的感受·起}}
+|语音内容=力量似乎渐渐回来了。不多，但有用。
+|语音内容日语=力が戻ってきたようだ。多くはないが、役に立つ。
+|语音内容英语=It seems my strength is returning. Not a lot, but enough.
+|语音内容韩语=힘이 점점 돌아오는 것 같군. 많지는 않지만, 쓸모 있어
+}}
+{{角色/语音
+|语音类型=突破的感受·承
+|语音文件={{player|钟离_突破的感受·承}}
+|语音文件日语={{player|日_钟离_突破的感受·承}}
+|语音文件英语={{player|英_钟离_突破的感受·承}}
+|语音文件韩语={{player|韩_钟离_突破的感受·承}}
+|语音内容=力量增长了，身体的负担随之剧增…哦，我没事，我的构造不同常人，请不用担心。
+|语音内容日语=力が増した分、体への負担も増えた…大丈夫だ、俺の体は普通の人とは違う、心配いらない。
+|语音内容英语=My power is growing, and so with it grows the burden on my body... I'm okay. My structure is not the same as that of normal people. Please, do not worry yourself.
+|语音内容韩语=힘이 커지니 몸의 부담도 급격히 증가하는군. 난 괜찮아. 내 몸의 구조는 일반인과 다르니 걱정할 것 없어
+}}
+{{角色/语音
+|语音类型=突破的感受·转
+|语音文件={{player|钟离_突破的感受·转}}
+|语音文件日语={{player|日_钟离_突破的感受·转}}
+|语音文件英语={{player|英_钟离_突破的感受·转}}
+|语音文件韩语={{player|韩_钟离_突破的感受·转}}
+|语音内容=原来如此，驱动「神之眼」驾驭元素力，对于常人而言不啻伟业。哦，原来如此…那时的他们，是抱着这样的觉悟站在我身旁啊…
+|语音内容日语=なるほど、「神の目」を使って元素の力を操ることは常人にとって単なる偉業ではないんだな。ふん…あの時の彼らは、こんな覚悟を持って俺の傍にいたのか…
+|语音内容英语=I see. Using a Vision harnesses elements. As far as the common folk are concerned, this is no small feat. So... back then... they were aware of this as they stood beside me...
+|语音内容韩语=신의 눈으로 원소의 힘을 쓰는 것은 평범한 사람에게는 대단한 일이었군. 그랬어, 그때 그들이 이런 각오로 내 옆에 섰던 거였어
+}}
+{{角色/语音
+|语音类型=突破的感受·合
+|语音文件={{player|钟离_突破的感受·合}}
+|语音文件日语={{player|日_钟离_突破的感受·合}}
+|语音文件英语={{player|英_钟离_突破的感受·合}}
+|语音文件韩语={{player|韩_钟离_突破的感受·合}}
+|语音内容=不曾料想，放下「神之心」后，还能看到这种景色——感谢你，「朋友」...对了，我这里有一份新的「契约」，不一起来看看么？
+|语音内容日语=「神の心」を手放した後、こんな景色が見れると思っていなかった——「友」よ、感謝するぞ…そうだ、ここに新しい「契約」があるが、一緒に確認しないか？
+|语音内容英语=After letting go of my Gnosis, I never expected to see a day like this again. Thank you, friend. Ah, yes, I have a new contract here. Care to take a look at it together?
+|语音内容韩语=신의 심장을 내려놓고 나서도 이런 경치를 볼 수 있을지는 몰랐네, 고마워 「친구」…. 참, 내게 새로운 계약이 있는데 같이 보겠나?
+}}	
+</div>
+<div class="resp-tab-content">
+{{角色/语音
+|语音类型=元素战技·其一
+|语音文件={{player1|钟离_元素战技·一}}
+|语音文件日语={{player|日_钟离_元素战技·其一}}
+|语音文件英语={{player|英_钟离_元素战技·其一}}
+|语音文件韩语={{player|韩_钟离_元素战技·其一}}
+|语音内容=壁立千仞。
+|语音内容日语=壁立千仞。
+|语音内容英语=Rise!
+|语音内容韩语=벽립천인
+}}
+{{角色/语音
+|语音类型=元素战技·其二
+|语音文件={{player1|钟离_元素战技·二}}
+|语音文件日语={{player|日_钟离_元素战技·其二}}
+|语音文件英语={{player|英_钟离_元素战技·其二}}
+|语音文件韩语={{player|韩_钟离_元素战技·其二}}
+|语音内容=震天撼地。
+|语音内容日语=震天動地。
+|语音内容英语=Quake!
+|语音内容韩语=경천동지
+}}
+{{角色/语音
+|语音类型=元素战技·其三
+|语音文件={{player1|钟离_元素战技·三}}
+|语音文件日语={{player|日_钟离_元素战技·其三}}
+|语音文件英语={{player|英_钟离_元素战技·其三}}
+|语音文件韩语={{player|韩_钟离_元素战技·其三}}
+|语音内容=靡坚不摧。
+|语音内容日语=揺らぐことなし。
+|语音内容英语=Crumble!
+|语音内容韩语=미견불최
+}}
+{{角色/语音
+|语音类型=元素战技·其四
+|语音文件={{player1|钟离_元素战技·六}}
+|语音文件日语={{player|日_钟离_元素战技·其四}}
+|语音文件英语={{player|英_钟离_元素战技·其四}}
+|语音文件韩语={{player|韩_钟离_元素战技·其四}}
+|语音内容=俱收并蓄。
+|语音内容日语=岩山破蓄。
+|语音内容英语=Gather.
+|语音内容韩语=구수병축
+}}
+{{角色/语音
+|语音类型=元素战技·其五
+|语音文件={{player1|钟离_元素战技·四}}
+|语音文件日语={{player|日_钟离_元素战技·其五}}
+|语音文件英语={{player|英_钟离_元素战技·其五}}
+|语音文件韩语={{player|韩_钟离_元素战技·其五}}
+|语音内容=安如磐石。
+|语音内容日语=堅如磐石。
+|语音内容英语=Stabilize.
+|语音内容韩语=안여반석
+}}
+{{角色/语音
+|语音类型=元素战技·其六
+|语音文件={{player1|钟离_元素战技·五}}
+|语音文件日语={{player|日_钟离_元素战技·其六}}
+|语音文件英语={{player|英_钟离_元素战技·其六}}
+|语音文件韩语={{player|韩_钟离_元素战技·其六}}
+|语音内容=固若金汤。
+|语音内容日语=難攻不落。
+|语音内容英语=Solidify.
+|语音内容韩语=난공불락
+}}	
+</div>
+<div class="resp-tab-content">
+{{角色/语音
+|语音类型=元素爆发·其一
+|语音文件={{player|钟离_元素爆发·其一}}
+|语音文件日语={{player|日_钟离_元素爆发·其一}}
+|语音文件英语={{player|英_钟离_元素爆发·其一}}
+|语音文件韩语={{player|韩_钟离_元素爆发·其一}}
+|语音内容=天理长驱。
+|语音内容日语=天理長駆。
+|语音内容英语=Order guide you.
+|语音内容韩语=하늘의 이치가 진군한다
+}}
+{{角色/语音
+|语音类型=元素爆发·其二
+|语音文件={{player|钟离_元素爆发·其二}}
+|语音文件日语={{player|日_钟离_元素爆发·其二}}
+|语音文件英语={{player|英_钟离_元素爆发·其二}}
+|语音文件韩语={{player|韩_钟离_元素爆发·其二}}
+|语音内容=此乃天道。
+|语音内容日语=天道、ここにあり。
+|语音内容英语=This is order.
+|语音内容韩语=이게 하늘의 이치다
+}}
+{{角色/语音
+|语音类型=元素爆发·其三
+|语音文件={{player|钟离_元素爆发·其三}}
+|语音文件日语={{player|日_钟离_元素爆发·其三}}
+|语音文件英语={{player|英_钟离_元素爆发·其三}}
+|语音文件韩语={{player|韩_钟离_元素爆发·其三}}
+|语音内容=天动万象。
+|语音内容日语=天動万象。
+|语音内容英语=I will have order!
+|语音内容韩语=하늘은 만물을 움직인다
+}}	
+</div>
+<div class="resp-tab-content">
+{{角色/语音
+|语音类型=打开宝箱·其一
+|语音内容=遗珠弃璧，吉光片裘…
+|语音内容日语=いにしえの宝物、実に貴重だ…
+|语音内容英语=One man's stone is another man's gem...
+|语音内容韩语=누군가에게 버려진 진귀한 보물…
+}}
+{{角色/语音
+|语音类型=打开宝箱·其二
+|语音内容=偶遇之物，亦有风雅。
+|语音内容日语=偶然の出会いには、おもむきがある。
+|语音内容英语=Unsolicited... and all the more valuable for it.
+|语音内容韩语=우연히 얻은 물건도 나름 운치가 있지
+}}
+{{角色/语音
+|语音类型=打开宝箱·其三
+|语音内容=不虚此行。
+|语音内容日语=来た甲斐があった。
+|语音内容英语=Certainly worth the extra mile.
+|语音内容韩语=헛걸음은 아니군
+}}	
+</div>
+<div class="resp-tab-content">
+{{角色/语音
+|语音类型=生命值低·其一
+|语音文件={{player|钟离_生命值低·其一}}
+|语音文件日语={{player|日_钟离_生命值低·其一}}
+|语音文件英语={{player|英_钟离_生命值低·其一}}
+|语音文件韩语={{player|韩_钟离_生命值低·其一}}
+|语音内容=你的实力我姑且认可。
+|语音内容日语=その実力、認めてやらなくもない。
+|语音内容英语=I see your power.
+|语音内容韩语=네 실력을 인정해주지
+}}
+{{角色/语音
+|语音类型=生命值低·其二
+|语音文件={{player|钟离_生命值低·其二}}
+|语音文件日语={{player|日_钟离_生命值低·其二}}
+|语音文件英语={{player|英_钟离_生命值低·其二}}
+|语音文件韩语={{player|韩_钟离_生命值低·其二}}
+|语音内容=哈，有点意思。
+|语音内容日语=ははっ、面白い。
+|语音内容英语=Ha, this is getting interesting.
+|语音内容韩语=아하, 재미있군
+}}
+{{角色/语音
+|语音类型=生命值低·其三
+|语音文件={{player|钟离_生命值低·其三}}
+|语音文件日语={{player|日_钟离_生命值低·其三}}
+|语音文件英语={{player|英_钟离_生命值低·其三}}
+|语音文件韩语={{player|韩_钟离_生命值低·其三}}
+|语音内容=不太擅长危机应对啊。
+|语音内容日语=危機に陥った時の対応は得意ではない。
+|语音内容英语=Emergency countermeasures aren't my thing.
+|语音内容韩语=위기 대처에는 자신 없어
+}}	
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=同伴生命值低·其一
+|语音文件=player-钟离_同伴生命值低·其一
+|语音内容=不可贸然进攻。
+|语音内容日语=迂闊に攻めるな。
+|语音内容英语=Don't try to rush your enemy.
+|语音内容韩语=섣불리 진공하면 안 돼
+}}
+{{角色/语音1
+|语音类型=同伴生命值低·其二
+|语音文件=player-钟离_同伴生命值低·其二
+|语音内容=下去休息。这里交给我。
+|语音内容日语=下がれ、ここは俺に任せるんだ。
+|语音内容英语=Take a rest. Leave it to me.
+|语音内容韩语=여긴 내게 맡기고 가서 쉬어
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音
+|语音类型=倒下·其一
+|语音文件={{player|钟离_倒下·其一}}
+|语音文件日语={{player|日_钟离_倒下·其一}}
+|语音文件英语={{player|英_钟离_倒下·其一}}
+|语音文件韩语={{player|韩_钟离_倒下·其一}}
+|语音内容=啊，略感疲惫…
+|语音内容日语=ああ、少し疲れた…
+|语音内容英语=Ugh... I'm feeling a little... off...
+|语音内容韩语=하아… 좀 피곤하군
+}}
+{{角色/语音
+|语音类型=倒下·其二
+|语音文件={{player|钟离_倒下·其二}}
+|语音文件日语={{player|日_钟离_倒下·其二}}
+|语音文件英语={{player|英_钟离_倒下·其二}}
+|语音文件韩语={{player|韩_钟离_倒下·其二}}
+|语音内容=让你看到，难堪的一面了啊。
+|语音内容日语=見苦しいところを見せたな。
+|语音内容英语=You shouldn't see me like this...
+|语音内容韩语=꼴사나운 모습을 보였군
+}}
+{{角色/语音
+|语音类型=倒下·其三
+|语音文件={{player|钟离_倒下·其三}}
+|语音文件日语={{player|日_钟离_倒下·其三}}
+|语音文件英语={{player|英_钟离_倒下·其三}}
+|语音文件韩语={{player|韩_钟离_倒下·其三}}
+|语音内容=磐石…也会归于尘土…
+|语音内容日语=磐石も…いつか土に還る…
+|语音内容英语=Even bedrock can be turned to dust...
+|语音内容韩语=반석도 먼지로 돌아가기 마련이지…
+}}	
+</div>
+<div class="resp-tab-content">
+{{角色/语音
+|语音类型=重受击·其一
+|语音文件={{player|钟离_重受击·其一}}
+|语音文件日语={{player|日_钟离_重受击·其一}}
+|语音文件英语={{player|英_钟离_重受击·其一}}
+|语音文件韩语={{player|韩_钟离_重受击·其一}}
+|语音内容=大意了吗。
+|语音内容日语=油断したか。
+|语音内容英语=Careless...
+|语音内容韩语=방심했나
+}}
+{{角色/语音
+|语音类型=重受击·其二
+|语音文件={{player|钟离_重受击·其二}}
+|语音文件日语={{player|日_钟离_重受击·其二}}
+|语音文件英语={{player|英_钟离_重受击·其二}}
+|语音文件韩语={{player|韩_钟离_重受击·其二}}
+|语音内容=不足为惧。
+|语音内容日语=恐るるに足らず。
+|语音内容英语=Nothing to fear.
+|语音内容韩语=두려울 것 없지
+}}	
+</div>
+<div class="resp-tab-content">
+{{角色/语音
+|语音类型=加入队伍·其一
+|语音文件={{player|钟离_加入队伍·其一}}
+|语音文件日语={{player|日_钟离_加入队伍·其一}}
+|语音文件英语={{player|英_钟离_加入队伍·其一}}
+|语音文件韩语={{player|韩_钟离_加入队伍·其一}}
+|语音内容=也好。
+|语音内容日语=いいだろう。
+|语音内容英语=Sure.
+|语音内容韩语=그러지, 뭐
+}}
+{{角色/语音
+|语音类型=加入队伍·其二
+|语音文件={{player|钟离_加入队伍·其二}}
+|语音文件日语={{player|日_钟离_加入队伍·其二}}
+|语音文件英语={{player|英_钟离_加入队伍·其二}}
+|语音文件韩语={{player|韩_钟离_加入队伍·其二}}
+|语音内容=就当是散心了。
+|语音内容日语=気晴らしになるな。
+|语音内容英语=A walk would be nice.
+|语音内容韩语=기분 전환이라고 치자
+}}
+{{角色/语音
+|语音类型=加入队伍·其三
+|语音文件={{player|钟离_加入队伍·其三}}
+|语音文件日语={{player|日_钟离_加入队伍·其三}}
+|语音文件英语={{player|英_钟离_加入队伍·其三}}
+|语音文件韩语={{player|韩_钟离_加入队伍·其三}}
+|语音内容=做些什么好呢…
+|语音内容日语=何をすればいい…
+|语音内容英语=What shall we do?
+|语音内容韩语=난 뭘 하면 되지…?
+}}	
+</div>
+</div>
+</div>

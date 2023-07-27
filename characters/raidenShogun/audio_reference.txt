@@ -1,0 +1,651 @@
+{{需要帮助角色语音}}
+{{面包屑|胡桃|角色语音}}{{语音tab样式}}__notoc__
+<div class="resp-tabs" style="border-spacing: 0px;">
+<ul class="resp-tabs-list clearfix">
+<li class="active bili-list-style"><span class="tab-panel">角色语音</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >元素战技</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >元素爆发</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >打开宝箱</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >生命值低</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >同伴生命值低</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >倒下</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >受击</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >加入队伍</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >其他</span></li>
+</ul>
+{{角色语音表头
+|汉语CV=陶典
+|日语CV=高桥李依
+|英语CV=布丽安娜·尼克博克
+|韩语CV=金贺娄
+}}
+<div class="resp-tabs-container">
+<div class="resp-tab-content" style="display:block;">
+{{角色/语音1
+|语音类型=初次见面…
+|语音文件=player1-胡桃_初次见面…
+|语音内容=唷，找本堂主有何贵干呀？嗯？你不知道吗，往生堂第七十七代堂主就是胡桃我啦！嘶，不过瞧你的模样，容光焕发，身体健康，嗯…想必是为了工作以外的事来找我，对吧？
+|语音内容日语=堂主の私に何か用かな？あれ、知らなかった？私が往生堂七十七代目堂主、胡桃だよ！でもあなた、ツヤのある髪に健康そうな体してる…そっか！仕事以外で私に用があるってことだね？
+|语音内容英语=Yoh, now (just) why might you be looking for me, hm? Oh, you didn't know? I'm the 77th Director of the Wangsheng Funeral Parlor, Hu Tao. Though by the looks of you... Radiant glow, healthy posture... Yes, you're definitely here for something other than that which falls within my regular line of work, aren't you?
+|语音内容韩语=안녕, 이 당주님한텐 무슨 볼일이야? 응? 몰랐어? 왕생당의 77대 당주가 바로 나 호두라고! 하지만 혈색도 좋고 건강한 걸 보니 왕생당 일로 온 건 아닌가 보네, 그렇지?
+}}
+{{角色/语音1
+|语音类型=闲聊·往生堂
+|语音文件=player1-胡桃_闲聊·往生堂
+|语音内容=不如去我那儿喝杯茶？嘿~
+|语音内容日语=私とお茶しない？えへへ
+|语音内容英语=Wanna come over for tea?
+|语音内容韩语=차나 한잔 하러 갈래? 헤헤~
+}}
+{{角色/语音1
+|语音类型=闲聊·客户
+|语音文件=player1-胡桃_闲聊·客户
+|语音内容=一个客户，两个客户，三个客户…
+|语音内容日语=お客さんが一人、二人、三人…
+|语音内容英语=One client, two clients, three clients!
+|语音内容韩语=손님 하나, 손님 둘, 손님 셋…
+}}
+{{角色/语音1
+|语音类型=闲聊·偷懒
+|语音文件=player1-胡桃_闲聊·偷懒
+|语音内容=咳咳…太阳出来我晒太阳，月亮出来我晒月亮咯~
+|语音内容日语=お日様が出たら日光浴、お月様が出たら月光浴～
+|语音内容英语=When the sun's out, bathe in sunlight. But when the moon's out, bathe in moonlight~
+|语音内容韩语=해가 뜨면 볕을 쬐고, 달이 뜨면 달을 쬐고~
+}}
+{{角色/语音1
+|语音类型=下雨的时候…
+|语音文件=player1-胡桃_下雨的时候…
+|语音内容=哎呀…麻烦喽。
+|语音内容日语=うう…めんどくさいな～
+|语音内容英语=*sigh* What a bummer...
+|语音内容韩语=에휴… 귀찮아라~
+}}
+{{角色/语音1
+|语音类型=打雷的时候…
+|语音文件=player1-胡桃_打雷的时候…
+|语音内容=打雷啦，起身啦。
+|语音内容日语=雷だよ！気をつけて！
+|语音内容英语=Lightning! Let's bolt!
+|语音内容韩语=천둥이 쳤어, 일어나!
+}}
+{{角色/语音1
+|语音类型=下雪的时候…
+|语音文件=player1-胡桃_下雪的时候…
+|语音内容=哇，是雪！
+|语音内容日语=わぁ！雪だ！
+|语音内容英语=Snow!
+|语音内容韩语=와아~ 눈이다!
+}}
+{{角色/语音1
+|语音类型=起风的时候…
+|语音文件=player1-胡桃_起风的时候…
+|语音内容=嗯，真舒服。
+|语音内容日语=ふぅ～気持ちいい～
+|语音内容英语=Ahhhh~ What a nice breeze~
+|语音内容韩语=휴~ 산뜻해
+}}
+{{角色/语音1
+|语音类型=刮大风了…
+|语音文件=player1-胡桃_刮大风了…
+|语音内容=欸？…唉，帽子都要吹飞了。
+|语音内容日语=帽子が飛んじゃうよ！
+|语音内容英语=My hat's gonna get blown away!
+|语音内容韩语=어?, 모자가 날아가겠어
+}}
+{{角色/语音1
+|语音类型=早上好…
+|语音文件=player1-胡桃_早上好…
+|语音内容=嗯~早起身体好，晚睡人会飘。
+|语音内容日语=早寝早起きは体に良いね～
+|语音内容英语=Well are those who rise in the early morn, while those late to bed I shall forewarn~
+|语音内容韩语=일찍 자고 일찍 일어나야 몸에 좋아~
+}}
+{{角色/语音1
+|语音类型=中午好…
+|语音文件=player1-胡桃_中午好…
+|语音内容=哟！中午好呀，吃了吗？
+|语音内容日语=よっ！お昼だね、ご飯食べた？
+|语音内容英语=Yo! Afternoon! Had lunch?
+|语音内容韩语=여어! 안녕, 점심은 먹었어?
+}}
+{{角色/语音1
+|语音类型=晚上好…
+|语音文件=player1-胡桃_晚上好…
+|语音内容=嘻嘻，月亮出来喽~咱也出门吧。
+|语音内容日语=へへへ、お月様が出てきたよ～外で見よう！
+|语音内容英语=Hee-hee, moon's out, and so am I!
+|语音内容韩语=히히, 달이 떴어~ 우리도 나가자!
+}}
+{{角色/语音1
+|语音类型=晚安…
+|语音文件=player1-胡桃_晚安…
+|语音内容=哦，困了吗？那你好好休息，我一个人四处转转。
+|语音内容日语=眠いの？じゃあ先に休んで、私はもう少し起きてるから。
+|语音内容英语=Oh, you sleepy? Get some rest, I'm gonna take a walk by myself...
+|语音内容韩语=어, 졸려? 그럼 편히 쉬어. 난 혼자 돌아다녀 볼게
+}}
+{{角色/语音1
+|语音类型=关于胡桃自己·名字
+|语音文件=player1-胡桃_关于胡桃自己·名字
+|语音内容=胡桃的胡是胡吃海喝的胡，胡桃的桃却不是淘气的淘！嘿嘿…不、不好笑吗？
+|语音内容日语=胡桃の「ふ」はおふざけの「ふ」、胡桃の「た」はぐーたらの「た」！…え、面白くない？
+|语音内容英语=Hu as in "Who put me in this coffin?" and Tao as in "I can't geT OUt!" Hehe... No, not funny?
+|语音内容韩语=호두의 '호'는 호의호식의 '호', '두'는 두루치기의 '두'! …안, 안 웃겨?
+}}
+{{角色/语音1
+|语音类型=关于胡桃自己·拿手好戏
+|语音文件=player1-胡桃_关于胡桃自己·拿手好戏
+|语音内容=变个戏法给你看，瞧好了哦…火！然后…嚯！火蝴蝶！呼，飞啦——哈哈。
+|语音内容日语=ほら見てて…火の玉！そして～ほい！火の蝶々！やった！飛んでる～
+|语音内容英语=Lemme show you some fire tricks. First... Fire! And then... Whoosh! Fire butterfly! Be free!
+|语音内容韩语=재밌는 거 보여줄게. 잘 봐…. 불! 그다음엔… 얍! 불나비! 호잇! 날아라——
+}}
+{{角色/语音1
+|语音类型=关于我们·好奇心
+|语音文件=player1-胡桃_关于我们·好奇心
+|语音内容=你到处旅行，一定见多识广。有空也给我讲讲你自己的故事吧。
+|语音内容日语=色んな所を旅してきたんでしょ。時間があったら私に色々聞かせて。
+|语音内容英语=You've been all over, so you must've seen a lot. When you've got the time, tell me your story, yea?
+|语音内容韩语=넌 이곳저곳 여행했으니 분명 아는 것도 많겠지? 시간 나면 나한테도 들려줘
+}}
+{{角色/语音1
+|语音类型=关于我们·夜晚
+|语音文件=player1-胡桃_关于我们·夜晚
+|语音内容=白天你尽管到处跑，晚上可得小心点。我不在的时候，务必谨慎行动。
+|语音内容日语=昼間はどこに行っても大丈夫だけど、夜になったら気を付けて。と・く・に、私がいない時。
+|语音内容英语=Run around all you like during the day, but you should be careful during the night. When I'm not around, best keep your wits about you.
+|语音内容韩语=낮엔 마음껏 돌아다녀도 되지만, 밤엔 조심해. 내가 없을 땐 특히 더
+}}
+{{角色/语音1
+|语音类型=关于我们·帮手
+|语音文件=player1-胡桃_关于我们·帮手
+|语音内容=需要帮手吗？需要帮手吗？我来啦！若你需要帮助，胡桃我定当全力以赴，绝不推辞。
+|语音内容日语=手伝ってほしい？私が必要？了解！あなたが困ってるなら、どこにいても全力で駆け付けるよ！
+|语音内容英语=Need a hand, need a hand? I'm here! If you need some assistance, I'm here to give it my all to the very end! Hee-hee...
+|语音内容韩语=혹시… 도움이 필요해…? 내가 있잖아! 네가 도와달라고 하면 언제든 최선을 다할게
+}}
+{{角色/语音1
+|语音类型=关于我们·战斗
+|语音文件=player1-胡桃_关于我们·战斗
+|语音内容=战斗是件麻烦事，对我来说，它不是目的而是手段。用手段来达到目的，用战斗来维护不愿让步的东西。就这方面而言，我和你是一样的。
+|语音内容日语=私にとって、戦いは目的じゃなくて手段。戦いという手段で大切なものを守るのが目的なの。この点に関しては、あなたと一緒だね。
+|语音内容英语=Fighting's a pain. For me, it's not an objective so much as a means to an end. Using the means to reach the end, to fight for that which I will not compromise on — it's in this way that you and I are the same.
+|语音内容韩语=싸우는 건 귀찮아. 나한테 전투는 목적이 아니라 수단이야. 전투라는 수단을 통해 포기할 수 없는 것들을 지키는 거지. 이런 점에서 우린 닮은 것 같아
+}}
+{{角色/语音1
+|语音类型=关于「神之眼」…
+|语音文件=player1-胡桃_关于「神之眼」…
+|语音内容=「神之眼」…「神之眼」？唔，这东西，随缘就好。
+|语音内容日语=「神の目」？「神の目」…うーん、その辺は縁次第ってところかな。
+|语音内容英语=Vision... Vision...? Oh, this thing? Yeah, whatever...
+|语音内容韩语=「신의 눈」… 「신의 눈」? 음, 그건 그냥 운명에 맡기면 돼
+}}
+{{角色/语音1
+|语音类型=有什么想要分享…
+|语音文件=player1-胡桃_有什么想要分享…
+|语音内容=受人之托，忠人之事。我们往生堂性质特殊，肩负着双倍责任，所以，一定要让两个世界的人都满意才行。
+|语音内容日语=私たち往生堂には、二つの世界の人を満足させる責任がある。だから、依頼を受けたら必ず最後までやり遂げるの。
+|语音内容英语=We are entrusted by the people to loyally see out their wishes. Wangsheng Funeral Parlor is special, in that it carries a dual responsibility, to those both of this realm, and the next.
+|语音内容韩语=부탁을 받았으면 성의를 다 해야 하지. 우리 왕생당은 특별히 두 배의 책임을 짊어져. 이승과 저승 사람 모두를 만족시켜야 하거든
+}}
+{{角色/语音1
+|语音类型=感兴趣的见闻…
+|语音文件=player1-胡桃_感兴趣的见闻…
+|语音内容=有些花草只长在阴气重月光多的地方，你见过吗？没有？那下次带你见识见识。
+|语音内容日语=陰気な場所に月光が差し込むことで生える花があるの。見たことない？じゃあ、今度見せてあげるね。
+|语音内容英语=Some plants only grow in gloomier spots with ample moonlight. You ever seen any? Oh, no? Well, I'll have to show you next time.
+|语音内容韩语=어떤 화초는 음기 넘치고 달빛이 비치는 곳에서만 자라. 본 적 있어? 없다구? 그럼 다음에 한번 보여줄게
+}}
+{{角色/语音1
+|语音类型=关于钟离…
+|语音文件=player1-胡桃_关于钟离…
+|语音内容=钟离长得那么年轻，性格倒像是个老古董，什么都懂，却什么都不关心，他该不会…？嘻嘻…<br>唉，算了，随他去吧。
+|语音内容日语=鍾離さんはあんなに若いのに、性格は老人だね。何でも知ってるけど何に対しても興味がない…もしかして彼…ふふ、何でもない！
+|语音内容英语=Zhongli looks young, but his personality is a bit dusty. Knows everything, but doesn't fret over anything. Hmm... Couldn't be that he's a...Hehe, forget it, whatever.
+|语音内容韩语=종려 씨는 생긴 건 젊은데 성격은 아재 같다니까. 아는 것도 많으면서 관심 있는 건 없나 봐…. 설마… 히히 뭐, 알아서 하겠지!
+}}
+{{角色/语音1
+|语音类型=关于七七…
+|语音文件=player1-胡桃_关于七七…
+|语音内容=看到七七了吗？快告诉我她在哪，我要把她藏起来，嘿！
+|语音内容日语=七七ちゃんを見かけた？どこにいるか教えて！あの子をどこかに隠してそれから……えへへへへ！
+|语音内容英语=Have you seen Qiqi? Tell me where she is, quickly. I need to go seal her away, hee-hee!
+|语音内容韩语=혹시 치치 못 봤니? 빨리 어디 있는지 말해줘. 치치를 숨겨야 한단 말이야. 흐흐!
+}}
+{{角色/语音1
+|语音类型=关于白术…
+|语音文件=player1-胡桃_关于白术…
+|语音内容=白术？哼，麻烦的家伙。
+|语音内容日语=白朮？…はぁ、面倒くさい奴。
+|语音内容英语=Baizhu? Ugh, that guy...
+|语音内容韩语=백출? 흥, 귀찮은 사람이야
+}}
+{{角色/语音1
+|语音类型=关于凝光…
+|语音文件=player1-胡桃_关于凝光…
+|语音内容=天权凝光，富甲一方；明眸善睐，桃羞杏让；目达耳通，百了千当！
+|语音内容日语=「天権」凝光、地位と富の頂点にいながら、美しく賢く、万物を見据えている。すっっっごくかっこいいよ！
+|语音内容英语=Tianquan Ningguang... Well-off, a radiant gaze, exquisite face, in the know and capable of anything!
+|语音内容韩语=천권 응광은 최고의 갑부야. 아름답고 매력적인 데다가, 똑똑하고 수완도 좋다니까!
+}}
+{{角色/语音1
+|语音类型=关于北斗…
+|语音文件=player1-胡桃_关于北斗…
+|语音内容=北斗姐可是璃月名人，她不认识我没关系，我认识她就行。啊~真想和她交个朋友啊。
+|语音内容日语=北斗姉は璃月の有名人よ。彼女は私を知らないけど、私は彼女を知ってる。あ～友達になりたいな。
+|语音内容英语=Beidou is well-known in Liyue. She doesn't know me, but that's cool, me just knowing about her is enough. Aw man... I really do wanna make friends with her.
+|语音内容韩语=북두 언니는 리월의 유명 인사야. 언니는 날 모르지만 난 언니를 잘 안다고. 아~ 북두 언니랑 친구하고 싶다
+}}
+{{角色/语音1
+|语音类型=关于行秋…
+|语音文件=player1-胡桃_关于行秋…
+|语音内容=听说行秋少爷在写书？话本还是怪谈呢？好想把平日遇见的杂事说给他听，写成书一定很好看吧。
+|语音内容日语=行秋坊ちゃまは本を書いてるらしいよ。どんな内容なんだろう？周りであった事を教えたら、面白い物語を書いてくれるかな。
+|语音内容英语=I hear master Xingqiu is writing a book? Standard novella, or a ghost story? I think I should go tell him about all the things I run into — that'd make for a really good read!
+|语音内容韩语=행추 도령이 책을 쓰고 있다던데? 이야기책인가? 아니면 괴담? 내 시시콜콜한 경험담을 다 들려주고 싶네. 그걸 책으로 엮으면 재밌을 텐데
+}}
+{{角色/语音1
+|语音类型=关于重云…
+|语音文件=player1-胡桃_关于重云…
+|语音内容=纯阳正气，阴阳合一？啧啧，嘶…没想到世上真有这种体质的人。
+|语音内容日语=純陽の体…まさかこんな体質の人がこの世にいるなんてね。
+|语音内容英语=All yang and no yin? Who knew such people existed in this world.<br>(Positive energies is unity between yin and yang... Who knew such people existed in this world.)
+|语音内容韩语=순수한 양의 체질로 음과 양이 하나가 되다니?음… 세상에 진짜 이런 체질이 있을 줄이야
+}}
+{{角色/语音1
+|语音类型=关于魈…
+|语音文件=player1-胡桃_关于魈…
+|语音内容=仙家的事，我怎么知道？哎呀呀，天机不可泄露。你就别问我啦。
+|语音内容日语=仙人のこと？し、知らないよ？あわわ、お願いだから何も聞かないで！
+|语音内容英语=What would I know of the adepti? Ai-yai-yai, that kind of stuff is top-secret! Don't come asking me about it!
+|语音内容韩语=선인의 일을 내가 어떻게 알겠어? 어머머, 천기누설은 금물이라구! 나한테 묻지 마!
+}}
+{{角色/语音1
+|语音类型=关于刻晴…
+|语音文件=player1-胡桃_关于刻晴…
+|语音内容=「玉衡」刻晴啊，嘶…是个很难打交道的人呢。嘿嘿，瞧那一本正经的样子，真想逗逗她。哎呦，她应该不会用剑敲我头吧？不会的吧？
+|语音内容日语=「玉衡」刻晴…大分話しづらい人ね。ほら、あの生真面目な感じ、からかったらどうなるのかな。まさか剣で叩かれないよね？…ね？
+|语音内容英语=The Yuheng, Keqing... she's quite hard to talk to. She's so uptight, hehe... Really makes me wanna mess with her. She wouldn't knock me in the head with her sword though, right? Or would she...?
+|语音内容韩语=「옥형」각청… 친해지기 힘든 사람이야. 헤헤, 그 진지한 모습은 진짜 놀리고 싶다니까~ 설마 검으로 내 머릴 내려치진 않겠지? …그치?
+}}
+{{角色/语音1
+|语音类型=关于香菱…
+|语音文件=player1-胡桃_关于香菱…
+|语音内容=香菱可好玩了，一碰就跳，特别容易被唬住。做我们这行，最喜欢这种人喽。不过也得注意分寸，毕竟，锅巴会替香菱出头呢。
+|语音内容日语=香菱ったら面白いんだよ！ちょっと触っただけでビックリして飛び跳ねるの！ああいう子大好きよ！でもやりすぎに注意しなきゃね、グゥオパァーに怒られちゃう…
+|语音内容英语=Xiangling's a riot! Only a little "boo" and she jumps, she's so easy to scare! Being in the industry that I am, I just love these kinds of people the most. Gotta keep it in check though, in case Guoba ends up toasting me instead.
+|语音内容韩语=향릉은 정말 재밌어! 살짝 건드리기만 해도 깜짝깜짝 놀란다니까! 이쪽 사람들은 향릉 같은 애를 제일 좋아해~ 그래도 수위 조절은 필수야. 안 그럼 누룽지한테 혼나거든
+}}
+{{角色/语音1
+|语音类型=关于云堇…
+|语音文件=player-胡桃 关于云堇…
+|语音内容=云堇她在正式场合很优雅，私底下却非常容易亲近哦！上次我跟她打了个赌，输的人要用自己习惯的唱法唱对方填的词。哎呀呀，戏腔版的丘丘谣，你真该听一次！
+|语音内容日语=雲菫は正式な場ではとても優雅だけど、私生活ではすごく親しみやすいよ！この前彼女と賭けをしたの。負けた人が自分の得意とする歌い方で相手の書いた歌詞を歌うんだ。璃月劇版のヒルチャー夢、んもぉ～あなたも絶対聞いた方がいいって！
+|语音内容英语=Yun Jin always appears so graceful on formal occassions, but you'd be surprised how friendly she is in private! I made a bet with her once, and the loser had to sing lyrics of the winner's choice in their own singing style. My my, I wish you could have heard her operatic version of the Hilitune!
+|语音内容韩语=운근은 정식적인 자리에서 되게 우아한데, 사적인 자리에선 정말 쉽게 친해질 수 있어! 전에 그녀와 내기를 했는데, 진 사람이 자기만의 창법으로 상대방이 적은 가사를 부르는 거였어. 후후, 연극 톤의 츄츄가는 꼭 한번 들어봐야 한다니까!
+}}
+{{角色/语音1
+|语音类型=关于申鹤…
+|语音文件=player-胡桃_关于申鹤…
+|语音内容=她可真是个有意思的人呐，跟别人都不一样。你说，要是我从现在开始天天吃仙草、喝山露，会不会也变成她那么不染红尘的样子？嘿嘿…
+|语音内容日语=彼女は本当に面白い人だよ。他の誰とも違うの。ねぇ、私もこれから毎日、仙草を食べて山露を飲めば、彼女のように浮世離れした人になれるかな？えへへ…
+|语音内容英语=She is quite the fascinating individual, completely different from anyone else I've encountered. Do you think if I started eating divine herbs and drinking the dew of the mountains every single day, I'd be able to look as pure and pristine as she does? Hehe...
+|语音内容韩语=그녀는 참 재밌는 사람이야, 다른 사람들과는 다르지. 있지, 내가 지금부터 매일 선인초와 산 이슬을 먹고 마시면, 그녀처럼 속세에 물들지 않을 듯한 사람이 될 수 있을까? 헤헤…
+}}
+{{角色/语音1
+|语音类型=想要了解胡桃·其一
+|语音文件=player1-胡桃_想要了解胡桃·其一
+|语音内容=大丘丘病了，二丘丘瞧；三丘丘采药，四丘丘熬；五丘丘死了，六丘丘抬~<br>欸…呼。
+|语音内容日语=ヒルチャールのお兄さんが病気になった♪…ヒルチャールのお姉さんが看病して♪…ヒルチャールのお兄さんが薬を飲んでも治らない♪…
+|语音内容英语=♪Silly-churl, billy-churl, silly-billy hilichurl. Frilly-churl, willy-churl, frilly-willy hilichurl♪ Ah, hehe...
+|语音内容韩语=첫째 츄츄는 아프고, 둘째 츄츄는 병을 봐주네, 셋째 츄츄는 약초를 캐고, 넷째 츄츄는 달이네, 다섯째 츄츄는 죽고, 여섯째 츄츄는 들어 올렸네~ …헤헤
+}}
+{{角色/语音1
+|语音类型=想要了解胡桃·其二
+|语音文件=player1-胡桃_想要了解胡桃·其二
+|语音内容=小巷派暗黑打油诗人，正是本人！
+|语音内容日语=路地裏に潜む漆黒の詩人とは、私のことよ！
+|语音内容英语=Versemonger of the darkest alleys — that's me!
+|语音内容韩语=골목에 숨어있는 어둠의 시인, 그게 바로 나야!
+}}
+{{角色/语音1
+|语音类型=想要了解胡桃·其三
+|语音文件=player1-胡桃_想要了解胡桃·其三
+|语音内容=若要我说，往生堂的工作既不困难也不可怕，只是麻烦而已。可惜旁人理解不了，见到咱们夜里出工，总是有些惧怕。唉，是他们不懂啊。
+|语音内容日语=「往生堂」の仕事は別に難しくも怖くもない、少し面倒なだけ。私たちを見かけたら怖がる人がいるから、何だか悲しいな。もう～そんなんじゃないのに！
+|语音内容英语=If you ask me, there's nothing hard or scary about working at Wangsheng Funeral Parlor, it's just a pain is all. It's a shame — others see us going out to work at night and just don't understand — and that's what scares them. *sigh* You all just don't understand!
+|语音内容韩语=나한테 「왕생당」 일은 별로 어렵지도, 무섭지도 않아. 그냥 좀 번거로울 뿐이지. 근데 사람들은 밤에 우리가 일하는 것만 봐도 벌벌 떨어대니. 휴~ 그 사람들은 뭘 몰라!
+}}
+{{角色/语音1
+|语音类型=想要了解胡桃·其四
+|语音文件=player1-胡桃_想要了解胡桃·其四
+|语音内容=我是「往生堂」第七十七代堂主，我爷爷是第七十五代。我经手的第一份工作，就是替爷爷办葬礼。是不是很意外啊？哎呀，不知不觉就在这行做了好些年，时间过得可真快。
+|语音内容日语=私は「往生堂」七十七代目堂主、おじいちゃんが七十五代目よ。私が初めて引き受けた仕事は、おじいちゃんの葬儀だったの。うん？意外だった？知らないうちに何年もやってきた…時間が経つのって早いね。
+|语音内容英语=I'm Wangsheng Funeral Parlor's 77th Funeral Director, my grandfather was the 75th. First thing I took over was funeral affairs. Haha, surprising huh? And just like that, it's already been a few years... Time really does go by so quickly.
+|语音内容韩语=난 「왕생당」의 77대 당주고 우리 할아버지는 75대 당주셨어. 내 첫 업무는 바로 할아버지의 장례를 치르는 거였지. 하하, 의외지? 이 일을 한 지도 꽤 됐네…. 시간 참 빨라
+}}
+{{角色/语音1
+|语音类型=想要了解胡桃·其五
+|语音文件=player1-胡桃_想要了解胡桃·其五
+|语音内容=阴阳有序，命运无常。死亡难以预测，却也有它的规矩。记住了，无论何时何地，无论有何原因，人都不该轻易挑衅「死」之一事。唯有认识它、尊重它，才能明白活着的价值。
+|语音内容日语=陰陽は整然、運命は無常。死は予測できないけど、規則はある。覚えておいて、いつどんな時も、死を軽く扱っちゃだめ。死を理解し尊重してこそ、生きる価値を理解できるのよ。
+|语音内容英语=Balance must be maintained, and yet destinies remain variable. Death has its own rules, and yet is still hard to predict. Remember — no matter where, no matter when, no matter what the reason — one should never poke fun at death. Only once you know and respect death can you truly understand the value of life.
+|语音内容韩语=음양은 질서 정연하고, 운명은 수시로 변하지. 죽음은 예측할 수 없지만, 나름의 규칙이 있어. 언제 어디서나, 어떤 이유에서든 인간은 「죽음」을 경시해선 안 된다는 거 잊지 마. 죽음을 이해하고 존중해야지만 삶의 가치를 깨달을 수 있어
+}}
+{{角色/语音1
+|语音类型=胡桃的爱好…
+|语音文件=player1-胡桃_胡桃的爱好…
+|语音内容=天清海阔，皓月凌空，此情此景，正适合作诗一首。
+|语音内容日语=雲一つない空と、月光に満ちた夜空！こんな絶景、詩を作るにはぴったりね！
+|语音内容英语=A bright moon aloft amid the vast, clear skies... Moments like these are just perfect for writing poetry.
+|语音内容韩语=맑은 하늘, 광활한 바다, 밝은 달이 떠 있는 이 경치엔 시 한 수 읊기 딱이지!
+}}
+{{角色/语音1
+|语音类型=胡桃的烦恼…
+|语音文件=player1-胡桃_胡桃的烦恼…
+|语音内容=唉…真想找些新乐子，无所事事比死亡可怕多了。
+|语音内容日语=はぁ、何か面白いことないかな…何もすることがないのって、死より恐ろしいことだよ。
+|语音内容英语=*sigh* I gotta find something fun to do... Sitting around doing nothing is a fate worse than death.
+|语音内容韩语=휴, 뭐 재밌는 거 없나…. 빈둥대는 건 죽는 것보다 더 끔찍해
+}}
+{{角色/语音1
+|语音类型=喜欢的食物…
+|语音文件=player1-胡桃_喜欢的食物…
+|语音内容=♪啦啦啦啦~吃水煮鱼配虾饺啦~
+|语音内容日语=ららら～♪水煮魚にエビ蒸し餃子～♪
+|语音内容英语=♪La~la~la~ Steamed fish with a side of prawn dumplings~
+|语音内容韩语=♪라라라~ 생선전골이랑 새우만두지롱~
+}}
+{{角色/语音1
+|语音类型=讨厌的食物…
+|语音文件=player1-胡桃_讨厌的食物…
+|语音内容=清心炒史莱姆凝液…呕…这是香菱对我的复仇吗？
+|语音内容日语=清心とスライムの液体炒め…おぇ…香菱…私に対する復讐…？
+|语音内容英语=Qingxin Slime Condensate... Bleugh... Surely this is Xiangling getting payback...
+|语音内容韩语=청심 슬라임 응축액 볶음… 우웩… 향릉이 나한테 복수하는 건가…?
+}}
+{{角色/语音1
+|语音类型=收到赠礼·其一
+|语音文件=player1-胡桃_收到赠礼·其一
+|语音内容=甚好甚好。本堂主现在就来为这道菜肴题诗一首——
+|语音内容日语=よしよし。堂主である私が、この料理に詩を一編書いてあげる——
+|语音内容英语=Splendid, splendid! Now, allow me to compose a poem in loving memory of this dish.
+|语音内容韩语=좋아 좋아. 이 당주님이 이 요리를 위해 시를 한 수 지어주지——
+}}
+{{角色/语音1
+|语音类型=收到赠礼·其二
+|语音文件=player1-胡桃_收到赠礼·其二
+|语音内容=真不用我来帮忙吗？做一道送一道哦！
+|语音内容日语=手伝わなくていいの？一皿作ったら、私がもう一皿おまけで作ってあげるよ！
+|语音内容英语=Sure you don't want my help? C'mon, it's a great deal: cook twice the amount in the same time!
+|语音内容韩语=정말 내가 안 도와줘도 돼? 하나 만들면 하나를 더 준다고~
+}}
+{{角色/语音1
+|语音类型=收到赠礼·其三
+|语音文件=player1-胡桃_收到赠礼·其三
+|语音内容=噫…这是什么东西呀？
+|语音内容日语=うぇ…これ何？
+|语音内容英语=Ugh, I declare this dish dead, rest in peace.
+|语音内容韩语=으익… 이게 뭐야?
+}}
+{{角色/语音1
+|语音类型=生日…
+|语音文件=player1-胡桃_生日
+|语音内容=今夜天星璀璨，月相壮丽，想必是个好日子。嘶，待我一算…嗯~我知道我知道，是你的生辰！哎呀，真是个好日子。
+|语音内容日语=今宵は満天の星に華麗な月、さーぞかしいい日だろうね。うーん？うふふ…うん！知ってるよ、誕生日でしょ！もう、本当にいい日だね。
+|语音内容英语=Tonight the stars are dazzling and the moon majestic, it must be a special day... But just what day could it be... Haha, I know, I know! It's your birthday! It really is a great day.
+|语音内容韩语=오늘 밤은 하늘에 별도 총총하고 달도 아름다운 게 좋은 날이 될 것 같아. 어디 보자… 음~ 알아, 네 생일이잖아! 이야, 정말 좋은 날이야~
+}}
+{{角色/语音1
+|语音类型=突破的感受·起
+|语音文件=player1-胡桃_突破的感受·起
+|语音内容=哦呀？哦呀呀？
+|语音内容日语=おや？おやおや？
+|语音内容英语=O-ya? O-ya-ya-ya?
+|语音内容韩语=어라? 어라라?
+}}
+{{角色/语音1
+|语音类型=突破的感受·承
+|语音文件=player1-胡桃_突破的感受·承
+|语音内容=嗯~真不错，谢啦。
+|语音内容日语=うんうん、良い気持ち、ありがと！
+|语音内容英语=Yeah, this is good, thanks!
+|语音内容韩语=응응, 좋아~ 고마워!
+}}
+{{角色/语音1
+|语音类型=突破的感受·转
+|语音文件=player1-胡桃_突破的感受·转
+|语音内容=没想到没想到，胡桃我现在力如泉涌，心似雄鹰，非常有自信哦。
+|语音内容日语=力に満ち溢れてる、こんなの初めて！何でもできる自信があるよ！
+|语音内容英语=I never imagined that I, Hu Tao, could ever be like this. Energy like a rushing torrent, a heart soaring like a gliding eagle! I feel great!
+|语音内容韩语=이럴 수가! 호두 지금 힘이 막 샘솟는 것 같아. 자신감이 넘쳐!
+}}
+{{角色/语音1
+|语音类型=突破的感受·合
+|语音文件=player1-胡桃_突破的感受·合
+|语音内容=力量若达到极限，接着考验的便是人心。多亏了你，我才能来到这片未曾踏足的领域。在这里，心和灵魂就像一片云彩…生老病死，天地万象，尽在吾辈。
+|语音内容日语=力が限界に達した後に試されるのは心。あなたのおかげで、こんなにも素晴らしい境地にまでこれた。ここは心と魂が交じり合い…生から死、天地から万物、全ての理が集う場所だね。
+|语音内容英语=If I reach my full physical potential, then the next test is of the heart. It's largely thanks to you that I've been able to step foot into this uncharted territory. It is here that heart and soul are as one like clouds. Death is a constant for all among the multitudes that sit beneath the heavens.
+|语音内容韩语=힘이 최고치에 달하면 그때부턴 마음에 대한 시련이 시작되지. 네 덕분에 여기까지 올 수 있었어. 여기선 마음과 영혼이 구름이 돼서… 삶과 죽음, 그리고 천지 만물이 전부 우리 손에 있는 것만 같아
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=元素战技·其一
+|语音文件=player1-胡桃_元素战技·其一
+|语音内容=喝!
+|语音内容日语=喝！
+|语音内容英语=Huh!
+|语音内容韩语=헛!
+}}
+{{角色/语音1
+|语音类型=元素战技·其二
+|语音文件=player1-胡桃_元素战技·其二
+|语音内容=起！
+|语音内容日语=起！
+|语音内容英语=Chi!
+|语音内容韩语=일어나!
+}}
+{{角色/语音1
+|语音类型=元素战技·其三
+|语音文件=player1-胡桃_元素战技·其三
+|语音内容=散!
+|语音内容日语=散！
+|语音内容英语=Suh!
+|语音内容韩语=흩어져!
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=元素爆发·其一
+|语音文件=player1-胡桃_元素爆发·其一
+|语音内容=吃饱喝饱，一路走好！
+|语音内容日语=いってらっしゃい！
+|语音内容英语=Time to go!
+|语音内容韩语=배도 채웠으니 편히 가렴!
+}}
+{{角色/语音1
+|语音类型=元素爆发·其二
+|语音文件=player1-胡桃_元素爆发·其二
+|语音内容=再会啦！
+|语音内容日语=さよなら！
+|语音内容英语=Cross over!
+|语音内容韩语=잘 가!
+}}
+{{角色/语音1
+|语音类型=元素爆发·其三
+|语音文件=player1-胡桃_元素爆发·其三
+|语音内容=蝶火燎原！
+|语音内容日语=燎原の蝶！
+|语音内容英语=Pyre, pyre, pants on fire!
+|语音内容韩语=접화요원!
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=打开宝箱·其一
+|语音文件=player1-胡桃_打开宝箱·其一
+|语音内容=撞大运咯！
+|语音内容日语=当たり！
+|语音内容英语=Jackpot!
+|语音内容韩语=럭키!
+}}
+{{角色/语音1
+|语音类型=打开宝箱·其二
+|语音文件=player1-胡桃_打开宝箱·其二
+|语音内容=让我看看，都有什么好东西。
+|语音内容日语=どれどれ、何が入ってるかな～
+|语音内容英语=What a cute treasure coffin!
+|语音内容韩语=자자, 뭐가 있는지 한번 볼까
+}}
+{{角色/语音1
+|语音类型=打开宝箱·其三
+|语音文件=player1-胡桃_打开宝箱·其三
+|语音内容=快埋进土里，等它长出好多宝箱！
+|语音内容日语=土に埋めたら宝箱がたくさん生えるかも！
+|语音内容英语=If we bury it, maybe it'll spring back to life!
+|语音内容韩语=땅에 묻으면 보물상자가 더 많이 자라날 거야!
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=生命值低·其一
+|语音文件=player1-胡桃_生命值低·其一
+|语音内容=哎哟哎哟！
+|语音内容日语=おやおや！
+|语音内容英语=Ayaya!
+|语音内容韩语=에구에구!
+}}
+{{角色/语音1
+|语音类型=生命值低·其二
+|语音文件=player1-胡桃_生命值低·其二
+|语音内容=噫——！
+|语音内容日语=ひぃっ！
+|语音内容英语=Eeeeeee!
+|语音内容韩语=이익—!
+}}
+{{角色/语音1
+|语音类型=生命值低·其三
+|语音文件=player1-胡桃_生命值低·其三
+|语音内容=糟糕！
+|语音内容日语=やばっ！
+|语音内容英语=This isn't good!
+|语音内容韩语=안돼!
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=同伴生命值低·其一
+|语音文件=player1-胡桃_同伴生命值低·其一
+|语音内容=悠着点！
+|语音内容日语=落ち着いて！
+|语音内容英语=Take it easy!
+|语音内容韩语=살살해!
+}}
+{{角色/语音1
+|语音类型=同伴生命值低·其二
+|语音文件=player1-胡桃_同伴生命值低·其二
+|语音内容=放着我来！
+|语音内容日语=私が！
+|语音内容英语=Lemme have a go!
+|语音内容韩语=내가 할게!
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=倒下·其一
+|语音文件=player1-胡桃_倒下·其一
+|语音内容=到我了吗…
+|语音内容日语=私の番？
+|语音内容英语=Is it... my time?
+|语音内容韩语=내 차롄가…
+}}
+{{角色/语音1
+|语音类型=倒下·其二
+|语音文件=player1-胡桃_倒下·其二
+|语音内容=我记…仇…
+|语音内容日语=うらむわ。
+|语音内容英语=I'll remember that...
+|语音内容韩语=복수… 할 거야…
+}}
+{{角色/语音1
+|语音类型=倒下·其三
+|语音文件=player1-胡桃_倒下·其三
+|语音内容=呃啊——
+|语音内容日语=うわぁ—
+|语音内容英语=Argh...
+|语音内容韩语=으악—
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=重受击·其一
+|语音文件=player1-胡桃_重受击·其一
+|语音内容=干嘛呀！
+|语音内容日语=なにっ！
+|语音内容英语=Quit it!
+|语音内容韩语=뭐야!
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=加入队伍·其一
+|语音文件=player1-胡桃_加入队伍·其一
+|语音内容=哦？该我出马了？
+|语音内容日语=あっ！やっと私の出番？
+|语音内容英语=Oh? Is it time for me to join you?
+|语音内容韩语=응? 내가 나설 차롄가?
+}}
+{{角色/语音1
+|语音类型=加入队伍·其二
+|语音文件=player1-胡桃_加入队伍·其二
+|语音内容=你很有眼光嘛！
+|语音内容日语=見る目ある！
+|语音内容英语=Good eye!
+|语音内容韩语=너 안목 좋은 걸!?
+}}
+{{角色/语音1
+|语音类型=加入队伍·其三
+|语音文件=player1-胡桃_加入队伍·其三
+|语音内容=一波送走，全送走。
+|语音内容日语=全員あの世行き～
+|语音内容英语=Send one, send 'em all!
+|语音内容韩语=전부 한 번에 보내줄게
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=冲刺开始·其一
+|语音文件=player1-胡桃_冲刺开始·其一
+|语音内容=嚯——！
+|语音内容日语=ふぅ～っ！
+|语音内容英语=Huyoh!
+|语音内容韩语=훗——!
+}}
+{{角色/语音1
+|语音类型=冲刺开始·其二
+|语音文件=player1-胡桃_冲刺开始·其二
+|语音内容=走~
+|语音内容日语=いこう！
+|语音内容英语=Go~
+|语音内容韩语=가자~
+}}
+{{角色/语音1
+|语音类型=冲刺开始·其三
+|语音文件=player1-胡桃_冲刺开始·其三
+|语音内容=咻~
+|语音内容日语=ヤッホー！
+|语音内容英语=Hyu~
+|语音内容韩语=야호~
+}}
+{{角色/语音1
+|语音类型=打开风之翼·其一
+|语音文件=player1-胡桃_打开风之翼·其一
+|语音内容=顺风顺水~
+|语音内容日语=気持ちいい～
+|语音内容英语=With the wind~
+|语音内容韩语=바람 타고 슝~
+}}
+</div>
+</div>

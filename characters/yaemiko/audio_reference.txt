@@ -1,0 +1,608 @@
+{{需要帮助角色语音}}
+{{面包屑|八重神子|角色语音}}{{语音tab样式}}__notoc__
+<div class="resp-tabs" style="border-spacing: 0px;">
+<ul class="resp-tabs-list clearfix">
+<li class="active bili-list-style"><span class="tab-panel">角色语音</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >元素战技</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >元素爆发</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >打开宝箱</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >生命值低</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >同伴生命值低</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >倒下</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >受击</span></li>
+<li class="bili-list-style" ><span class="tab-panel" >加入队伍</span></li>
+</ul>
+{{角色语音表头
+|汉语CV=杜冥鸦
+|日语CV=佐仓绫音
+|英语CV=拉塔纳
+|韩语CV=文维贞
+}}
+<div class="resp-tabs-container">
+<div class="resp-tab-content" style="display:block;">
+{{角色/语音1
+|语音类型=初次见面…
+|语音文件=player1-八重神子_初次见面
+|语音内容=我是鸣神大社的宫司，此番造访，自是为了确认你的一举一动，此为大社诏令…呵，不用那么紧张，场面话罢了，这样才有正当理由休沐嘛。快，去做些有趣的事让我看看吧。
+|语音内容日语=妾は鳴神大社の宮司。此度参ったのは、大社の勅令により汝の一挙一動を見定めるためじゃ…ふふ、そう緊張するでない、ただの建前に過ぎぬ。正当な理由で休暇をとるには、これが必要なんじゃ。ほれ、早く妾に面白いことを見せてくれぬか。
+|语音内容英语=I am the Guuji of the Grand Narukami Shrine. The purpose of my visit is to monitor your every move, for such is the order of the shrine... Oh, come on, don't be so nervous. It's only officialese, for goodness' sake. I couldn't just go gallivanting around for no reason at all, could I? Now, come on, do something amusing for me.
+|语音内容韩语=난 나루카미 다이샤의 궁사야. 네 일거수일투족을 확인하고자 방문했지. 이는 다이샤의 명이니… 훗, 그렇게 긴장할 거 없어. 겉치레 말일 뿐이니까. 그래야 쉴 수 있는 정당한 명분이 생기지. 자, 어서 나한테 재밌는 일을 보여줘
+}}	
+{{角色/语音1
+|语音类型=闲聊·创作体裁
+|语音文件=player1-八重神子_闲聊·创作体裁
+|语音内容=最近八重堂穿越异世的小说也太多了，哼，就对自己的世界如此不满吗。
+|语音内容日语=最近の八重堂の小説は、異世界転生ものが多すぎる。ふん、自分たちの世界がそんなにも不満なのじゃろうか。
+|语音内容英语=Traveling to other worlds is all that anyone seems be writing about these days. Huh, goodness knows what they find so disappointing about their own world.
+|语音内容韩语=최근 야에 출판사에 이세계 전이물이 너무 많아. 흥, 자기들이 속한 세계에 그렇게 불만이 많은 건가?
+}}	
+{{角色/语音1
+|语音类型=闲聊·故事
+|语音文件=player1-八重神子_闲聊·故事
+|语音内容=很多人的一生，写于纸上也不过几行，大多都是些无聊的故事啊。
+|语音内容日语=大半の者の一生は、紙に書いても数行にしかならず、そのほとんどが退屈な物語なんじゃ。
+|语音内容英语=Most humans could have the entirety of their fleeting lives chronicled in but a few short lines... Their stories really make for terribly dull reading.
+|语音内容韩语=대다수 사람들의 일생은 글로 적어도 겨우 몇 줄이야. 따분한 이야기들뿐이지
+}}
+{{角色/语音1
+|语音类型=闲聊·尘世
+|语音文件=player1-八重神子_闲聊·尘世
+|语音内容=于我而言，不变也是一种美好，哎呀，可尘世哪是如此不变之物。
+|语音内容日语=妾にとって、不変も一種の美。はぁ…じゃが、俗世とはいつまでも変わらぬまま続くものではない…
+|语音内容英语=Personally, I think the idea of things staying the same forever is quite beautiful. *sigh* But alas, that is simply not the way the world works.
+|语音内容韩语=난 변하지 않는 것도 일종의 아름다움이라고 생각해. 휴, 하지만 속세에 변하지 않는 게 있을까?
+}}
+{{角色/语音1
+|语音类型=下雨的时候…
+|语音文件=player1-八重神子_下雨的时候
+|语音内容=下起雨后，浑身的毛发都会变得湿漉漉的…
+|语音内容日语=雨が降ると、全身の毛髪がびしょ濡れになってしまう…
+|语音内容英语=If this rain keeps up, my fur will be dripping wet...
+|语音内容韩语=비가 내린 후엔 온몸의 털이 다 축축해져…
+}}
+{{角色/语音1
+|语音类型=打雷的时候…
+|语音文件=player1-八重神子_打雷的时候
+|语音内容=很多人会害怕打雷，不过我听到雷声只会觉得亲近。
+|语音内容日语=みな雷を恐れているようじゃが、妾が雷の音を聞いて覚えるのは親近感のみじゃ。
+|语音内容英语=Many people dread the sound of thunder... To me, it sounds fondly familiar.
+|语音内容韩语=천둥을 무서워하는 사람이 많지. 하지만 난 천둥소리가 아주 친근하게 느껴져
+}}
+{{角色/语音1
+|语音类型=下雪的时候…
+|语音文件=player1-八重神子_下雪的时候
+|语音内容=未生灵智的小狐狸，往往会一头栽入雪地来觅食…想看我那样做？哼。
+|语音内容日语=まだ霊智が芽生えておらぬ小狐は、餌を求めて雪の中に飛び込むことがままある…ん？妾がそうしているところを見たい…じゃと？ふっ、たわけ。
+|语音内容英语=I always see these non-sentient kitsune pouncing headfirst into the snow, scavenging for food... Hmm? You'd like to see me do that? Hah! I'm sure you would.
+|语音内容韩语=아직 지혜가 없는 여우는 눈밭에 머리를 묻고 먹이를 찾지… 나의 그런 모습을 보고 싶다고? 훗
+}}
+{{角色/语音1
+|语音类型=早上好…
+|语音文件=player1-八重神子_早上好
+|语音内容=早，嗯？怎么一副无精打采的样子，没有睡好吗？哎呀，昨晚是去做什么坏事了么？
+|语音内容日语=おはよう。なんじゃその元気のない姿は、よう眠れんかったのか？ふむ…よもや昨晩、悪事を働きにでも行っておったのではなかろうのう？
+|语音内容英语=Morning. You look awfully drowsy, didn't you sleep well? Tsk-tsk, come on then, what is it? What mischief were you up to last night, hmm?
+|语音内容韩语=좋은 아침. 기운이 없어 보이네. 어제 잘 못 잤어? 어머, 설마 간밤에 나쁜 짓이라도 하러 갔다 왔니?
+}}
+{{角色/语音1
+|语音类型=中午好…
+|语音文件=player1-八重神子_中午好
+|语音内容=嗯~伤脑筋，中午吃些什么呢？油豆腐吃腻了，想吃点清淡的。话说好久没见到社奉行家的小姑娘了，我们不如就去吃她做的点心吧。
+|语音内容日语=ふむ…困ったのう。昼餉は何を食べるとするか…？近頃はずっと油揚げを食してきたゆえ、たまにはさっぱりとしたものが良いのじゃが。そういえば、社奉行家の娘に久しく会っておらぬ。あそこへ行ってあやつの作った菓子でもいただくとしよう。
+|语音内容英语=Hmm... ugh, what a headache. What should I have for lunch? Not Fried Tofu again, I'm in the mood for something a little lighter today. Ah — I know. I haven't seen the Yashiro Commission girl in a while. Let's get her to make us a little something.
+|语音内容韩语=음~ 고민이야. 점심에 뭐 먹지? 유부는 질렸고 담백한 게 먹고 싶은데. 그러고 보니 야시로 봉행의 아가씨를 못 본 지도 꽤 됐네. 그 애가 만든 디저트를 먹으러 가자
+}}
+{{角色/语音1
+|语音类型=晚上好…
+|语音文件=player1-八重神子_晚上好
+|语音内容=今夜的月光如此清亮，不做些什么真是浪费。随我一同去月下漫步吧，不许拒绝。
+|语音内容日语=今宵の月はなんと明るいことか。このまま何もせぬのは実に惜しい。妾と一緒に月の下を歩かぬか？嫌とは言わせぬぞ。
+|语音内容英语=The moon is simply magnificent tonight. We mustn't squander it. Come, join me for a moonlight stroll — I won't take no for an answer.
+|语音内容韩语=오늘처럼 달빛이 청아한 날을 그냥 보내긴 아깝지. 나랑 같이 달밤의 산책이라도 갈래? 거절은 거절할게
+}}
+{{角色/语音1
+|语音类型=晚安…
+|语音文件=player1-八重神子_晚安
+|语音内容=该入眠了，呵，在夜里不听到连绵的雷声，甚至都会睡不安稳呢。
+|语音内容日语=そろそろ床に就く時間じゃな。ふふっ、雷鳴も聞こえぬ夜では、ぐっすりと眠ることもできぬ。
+|语音内容英语=I suppose I should get some sleep. Hmm, I must say, I do find it hard to doze off peacefully without the soothing sound of thunder booming in the background.
+|语音内容韩语=잠에 들 시간이야. 하, 밤에 천둥소리가 안 들리면 잠도 편하게 못 잔다니까
+}}
+{{角色/语音1
+|语音类型=关于八重神子自己·永恒
+|语音文件=player1-八重神子_关于八重神子自己·永恒
+|语音内容=所谓的永恒，就是不再失去已拥有之物，但从别的角度说，也放弃了得到更多的可能，不过世事总是如此，没人能够得到全部。
+|语音内容日语=永遠とは、己の持っているものを失わぬこと。じゃが別の視点から言えば、さらなる可能性をあきらめることと同じじゃ。この世とは常にそうであり、すべてを手に入れることなど誰にもかなわぬ。
+|语音内容英语=Eternity means never having to let go of what you already have. But on the other hand, it also means giving up on all other possibilities. That's just the way of the world... No one can have everything.
+|语音内容韩语=영원이란 건 지금 갖고 있는 걸 잃지 않는 거야. 다른 관점으로 보면, 더 많은 걸 손에 넣을 가능성도 포기하는 셈이지. 하지만 세상일이 다 그렇듯이, 모든 걸 손에 넣을 순 없어
+}}
+{{角色/语音1
+|语音类型=关于八重神子自己·趣味
+|语音文件=player1-八重神子_关于八重神子自己·趣味
+|语音内容=人类很有趣，所以我才如此喜欢人类。明明生命短暂，却能散发映昼光辉。他们之中，有些人的光芒，即使隔开久远时间长河都不曾黯淡。阅读这样的人生，是一大乐事啊。
+|语音内容日语=人間は実に面白い。じゃからこそ、妾は好きなんじゃ。たとえ須臾に過ぎぬ命であっても、眩い光を放つことができる。中には、長い時を経ようと淀むことなく光を持つ者もおる。そのような人生を読むのは、妾にとって大層楽しみなことなんじゃ。
+|语音内容英语=Humans are just fascinating creatures, that's why I'm so fond of them. They live such short lives, but for the time they're around, they shine as bright as the midday sun. There are some whose light never grows dim, even over great stretches of time... These are the lives that make for real page-turners.
+|语音内容韩语=인간은 재밌어. 그래서 난 인간이 좋아. 짧은 생을 살지만 한낮의 태양처럼 환한 빛을 내잖아. 어떤 빛은 오랜 시간이 흘러도 꺼지지 않지. 그런 인생을 읽는 건 즐거운 일이야
+}}
+{{角色/语音1
+|语音类型=关于我们·作家
+|语音文件=player1-八重神子_关于我们·作家
+|语音内容=无聊，这本也无聊透顶…啊呀，这些人都是为了什么才成为作家的。欸，对了，不如你把自己的经历写下来投给八重堂吧，感觉一定能给我一点乐…一定能大受欢迎吧。
+|语音内容日语=つまらぬ、この本もあの本も、実につまらぬ。はぁ…こやつらは一体どのようにして作家になったのじゃ。そうじゃ、汝の経歴を書き下ろし、八重堂に送ってみてはどうじゃ？きっと妾が楽し…きっとみなに大受けするじゃろう。
+|语音内容英语=Boring. Utterly boring... Ugh, what could have possibly persuaded these people to become authors? Say, why don't you write out your story and submit it to Yae Publishing House? I'm sure that would keep me amused— Ahem, I mean, I'm sure it would be a best-seller.
+|语音内容韩语=재미없어. 이 책도 따분하기 그지없군. 휴, 이 사람들은 대체 왜 작가가 된 거야? 참, 네 경험을 써서 야에 출판사에 투고해 볼래? 나도 재미 좀 볼… 분명 잘 팔리겠지
+}}
+{{角色/语音1
+|语音类型=关于我们·磨损
+|语音文件=player1-八重神子_关于我们·磨损
+|语音内容=将自己封闭起来，或许会更快地遭受「磨损」。只有自己的世界，无他人作镜以对映，可是很可怕的事…你我共处之时，重要的就是互相观照哦。
+|语音内容日语=己を閉じ込めれば、「摩耗」を早めてしまうやもしれぬ。自分一人しかおらぬ世界で、その目に誰も映さぬのは実に恐ろしいことじゃ…じゃから、汝と妾が一緒にいる時は、互いをその眼に映し合うのを忘れてはならぬぞ。
+|语音内容英语=Sealing yourself away from the rest of the world may only serve to accelerate the effects of erosion... Imagine, a world consisting of you and you alone, with no one else to reflect you back at yourself... how awful that would be. Whenever we are together, it is vital that we always shine a light for each other, okay? It's rather difficult to remain enlightened in the dark.
+|语音内容韩语=자신을 가두면 더 빠르게 「마모」될지도 몰라. 거울로 삼을 수 있는 사람 하나 없이 혼자만 있는 세계가 얼마나 끔찍한데… 우리가 함께 있을 때 서로를 비춰주는 건 아주 중요한 일이야
+}}
+{{角色/语音1
+|语音类型=关于「神之眼」…
+|语音文件=player1-八重神子_关于「神之眼」
+|语音内容=你说…你很喜欢我佩戴「神之眼」的方式？真有眼光。那么…要来摸摸看吗？
+|语音内容日语=ん？…妾の「神の目」の付け方が好きじゃと？見る目があるではないか。ほれ…触ってみるか？
+|语音内容英语=You're saying... you like how I wear my Vision? You certainly have an eye for a priceless treasure. Well then, I bet you'd like to pet it.
+|语音内容韩语=내가 「신의 눈」을 착용하는 방식이 맘에 든다고? 보는 눈 있구나. 그럼… 한번 만져볼래?
+}}
+{{角色/语音1
+|语音类型=有什么想要分享…
+|语音文件=player1-八重神子_有什么想要分享
+|语音内容=在油温到八成热时，沿锅下豆腐，再开成小火，等到煎至金黄的时候再夹出来，热乎乎的，这世上没有比油豆腐更好吃的东西了。咦，做法都已经告诉你了，你怎么还愣在这里呢？
+|语音内容日语=油を沸点の八割まで加熱し、豆腐を鍋に沿って入れる。弱火に切り替え、黄金色になるまで揚げてから取り出せば、熱々の油揚げの完成じゃ。この世でこれに勝るものは存在せぬ。ほれ、作り方を教えてやったんじゃ、何を呆けておる？
+|语音内容英语=Heat oil on a medium-high flame in a pot. Add the tofu and reduce the heat to a low flame. Cook until golden-brown, take it out, then serve piping hot. There you have it, Fried Tofu. There is nothing more delicious in this world. Well, I've told you how to make it, have I not? Why are you still standing there?
+|语音内容韩语=기름이 8할 정도 열이 오르면 두부를 넣고 약한 불로 줄여. 그리고 황금빛으로 튀겨질 때까지 기다렸다가 건져내면 돼. 이 세상에 따끈따끈한 유부보다 맛있는 건 없을 거야. 음? 만드는 법은 다 가르쳐줬는데 왜 아직도 멍하니 있어?
+}}
+{{角色/语音1
+|语音类型=感兴趣的见闻…
+|语音文件=player1-八重神子_感兴趣的见闻
+|语音内容=虽然因为在鸣神大社，日日抬头都能得见，有时也会觉得厌烦。不过，那棵神樱毕竟已经是我命运所系之物了啊。
+|语音内容日语=鳴神大社にいると毎日のように視界に入るゆえ、時に目障りに思うこともある。じゃが、あの神櫻はすでに、妾の運命と深く関わっておるのじゃ。
+|语音内容英语=Though I occasionally get a little weary of the sight of it — I can't exactly avoid seeing it at the Grand Narukami Shrine, after all — my fate is intimately intertwined with the Sacred Sakura.
+|语音内容韩语=나루카미 다이샤에선 고개를 들면 언제나 보이니까, 가끔 지겨울 때도 있지. 그 신성한 벚나무는 나와 운명으로 엮였으니 어쩔 수 없어
+}}
+{{角色/语音1
+|语音类型=关于雷电将军…
+|语音文件=player1-八重神子_关于雷电将军
+|语音内容=明明想要出来，却一直把自己关在一心净土里，简直就是自我折磨嘛…从另一个角度来说，也挺可爱的不是吗。
+|语音内容日语=本当は外に出たいのに、いつまでも己を一心浄土の中に閉じ込めるなど、まるで自虐そのもの…まあ、ある意味それが、あやつのかわいいらしいところでもあるのじゃがな。
+|语音内容英语=Locking herself away in the Plane of Euthymia when she clearly wants to be out — it's just willful self-torture, really... On the other hand, it's also rather stubborn-but-cute, don't you think?
+|语音内容韩语=나오고 싶으면서 자기 자신을 일심정토에 가두는 건 고문이나 마찬가지지…. 다른 관점에서 보면 나름 귀엽기도 하지만
+}}
+{{角色/语音1
+|语音类型=关于神里绫人…
+|语音文件=player1-八重神子_关于神里绫人
+|语音内容=社奉行家的那个小子啊，从小就不安分，别看他表面上笑得春风和煦，暗地里可不知道在盘算什么呢，令人讨厌…哼，我可跟他不是一类人，哪来同类相斥的说法。
+|语音内容日语=社奉行家の若造か。幼い頃から我が道を行くような性格じゃった。表向きはいつもニコニコしておったが、内心では何を企んでおるのか分からぬ。癪に障るやつじゃ…ふんっ、妾はやつとは違う、決して同族嫌悪などではないぞ。
+|语音内容英语=The Yashiro rascal... he's always been an unpredictable one, even as a child. Don't be taken in by his warm smile. There's no knowing what devious scheme might be brewing inside his head — it's really quite maddening... What do you mean, "sly as a fox"? Hmph, if you're trying to insinuate that he and I are anything alike, you are sorely mistaken.
+|语音内容韩语=야시로 봉행 가문의 그 녀석은 어렸을 때부터 얌전하지 않았어. 겉으론 친절한 미소를 띠고 있지만, 속으론 무슨 생각을 하는지 모르겠다니까. 정말 짜증 나…. 흥, 우리가 같은 부류라니? 동족 혐오란 말은 당치도 않아
+}}
+{{角色/语音1
+|语音类型=关于神里绫华…
+|语音文件=player1-八重神子_关于神里绫华
+|语音内容=我很喜欢社奉行家的小姑娘，任何事都安排得井井有条。不过社奉行一直都在做些吃力不讨好的活，可怜，如果她不是神里家的人，我早就把她挖到八重堂了。
+|语音内容日语=社奉行家の小娘のことなら、妾は大好きじゃぞ。何事においても理路整然としておるからのう。じゃが、社奉行はいつも損な役回りを演じておる、かわいそうに。あやつが神里家の者でなかったら、とうに八重堂に引き抜いておったところじゃ。
+|语音内容英语=I'm very fond indeed of the Yashiro Commission girl. She adroitly handles every matter that comes before her. Unfortunately, it's often thankless work. Pity. Were she not a member of the Kamisato Clan, I would have long since snatched her up for the Yae Publishing House.
+|语音内容韩语=난 야시로 봉행의 그 소녀가 참 마음에 들어. 무슨 일이든 똑 부러지게 처리하잖아. 근데 야시로 봉행은 항상 고생만 하고 좋은 소리는 못 듣는 일만 해. 가엽기도 하지. 카미사토 가문 사람이 아니었으면 진작 야에 출판사로 데려왔을 텐데
+}}
+{{角色/语音1
+|语音类型=关于九条裟罗…
+|语音文件=player1-八重神子_关于九条裟罗
+|语音内容=这块愚笨的木头啊，远不如她那天狗爹爹心思活络…哎呀，怎么说呢，虽说木讷耿直也有木讷耿直的好处吧，不过还是希望下次不要在神社拦着我，一个劲追问影的事了。
+|语音内容日语=あの頑固頭か…頭の柔軟さでは、あやつの天狗親父と比べて遥かに劣っておる…まあ、なんと言うか、頑固者にも頑固者の良さはあるが…願わくば、神社で妾を呼び止め、影のことをしつこく聞いてくるのはやめてほしいものじゃ。
+|语音内容英语=Not the sharpest tengu in the forest — she certainly didn't inherit the brilliant mind of daddy tengu, that's for sure. *sigh* How shall I put this? I suppose being blunt and dispensing with tact has its own advantages... But I do hope that the next time she visits the shrine, she keeps to herself. I've got better things to do than answer her incessant questions about Ei.
+|语音内容韩语=그 어리석은 텐구는 아버지에 비하면 너무 아둔해… 뭐랄까, 무뚝뚝하고 솔직한 것도 나름의 장점이 있지만… 아무튼 앞으론 신사에서 날 가로막고 에이에 대해 캐묻지 않았으면 좋겠어
+}}
+{{角色/语音1
+|语音类型=关于宵宫…
+|语音文件=player1-八重神子_关于宵宫
+|语音内容=长野原的烟花嘛，也是每年难得的值得期盼之物了。据说前些天她还大闹天领奉行，在敷地大放烟花。呵，九条家的人恐怕气得脸都变青了，真是可惜呀，没能亲眼看到那副场景。
+|语音内容日语=長野原の花火か、妾にとって一年のうちの数少ない楽しみでもある。聞いたところによると、先日、天領奉行で騒ぎを起こし、敷地内で花火を放ったそうじゃ。ふふっ、九条家の者はきっと怒りで顔を引きつらせておったじゃろうな。それをこの目で見ることができなかったのは実に残念じゃ。
+|语音内容英语=Naganohara fireworks are well worth the wait every year. Word is that she caused quite an uproar among the Tenryou Commission recently by setting off fireworks all over the place. Heh, I'm sure the members of the Kujou Clan must've turned purple with rage... A pity that I couldn't be there to see it for myself.
+|语音内容韩语=나가노하라의 폭죽은 일상 속에서 그나마 매년 기대되는 거라고 할 수 있어. 며칠 전에 그 애가 텐료 봉행 부지에서 폭죽을 터트리며 난리를 쳤다지. 후후, 쿠죠 가문 사람은 얼굴이 새빨개질 정도로 화났을 거야. 그 장면을 직접 못 봐서 너무 아쉽네
+}}
+{{角色/语音1
+|语音类型=关于甘雨…
+|语音文件=player1-八重神子_关于甘雨
+|语音内容=这么说来，很久没有见过甘雨姐姐了。稻妻尚未锁国时，璃月与稻妻往来事务都是我与她接洽，真是相当可靠，下次若有机会去璃月，再给她带些新鲜的海灵芝吧。
+|语音内容日语=そういえば、甘雨の姉君には久しく会っておらぬな。稲妻がまだ鎖国をしていなかった頃、璃月と稲妻の間の事務はすべて妾と姉君が受け持っておったんじゃ。姉君は本当に頼りになるお方じゃ。今度璃月へ行く機会があったら、また新鮮なウミレイシを姉君に持っていくとしよう。
+|语音内容英语=Hmm, now that you mention it, it's been a while since I last saw Ganyu. Before the Sakoku Decree came into effect, the two of us would often meet to discuss bilateral relations between our two nations. I always found her quite reliable. The next time you go to Liyue, take her some more fresh Sea Ganoderma for me.
+|语音内容韩语=그러고 보니 감우 언니를 안 본 지도 오래됐네. 이나즈마에 쇄국령이 실시되기 전에 리월과 이나즈마 사이의 교류는 전부 나랑 감우 언니가 만나서 의논하곤 했는데, 어찌나 믿음직하던지. 다음에 리월에 갈 기회가 생기면 신선한 바다 불로초를 더 가져다줘야겠어
+}}
+{{角色/语音1
+|语音类型=关于珊瑚宫心海…
+|语音文件=player1-八重神子_关于珊瑚宫心海
+|语音内容=现在的巫女，一个比一个可爱。不知道这孩子跳起太平神乐之舞会是什么样子，说不好群鱼也会跟着旋转吧。只要她肯叫我一声神子姐姐，呵呵…我倒有些心得愿意分享。
+|语音内容日语=今の巫女は、みなかわゆい容姿をしておる。この娘が太平神楽を踊ったら一体どうなることか、群魚すら一緒に踊り回るやもしれぬな。もし妾を「神子お姉さま」と呼んでくれたならば、ふふ…妾は喜んで心得を教えてやるつもりじゃぞ。
+|语音内容英语=These Divine Priestesses seem to be getting cuter every generation. I wonder how she looks performing the Dance of Divine Peace... Perhaps even little schools of fish swish around her while she spins. If she's ever looking for a more experienced head shrine maiden to learn from, I'd be quite happy to share a few tips with her... Hehe, as long as she asked me nicely, of course.
+|语音内容韩语=지금의 무녀들은 하나같이 귀엽다니까. 그 아이가 태평 신악의 춤을 추면 어떤 모습이려나. 물고기들도 같이 춤출지도 몰라. 미코 언니라고 불러준다면, 후후… 내 노하우를 공유해줄 텐데
+}}
+{{角色/语音1
+|语音类型=关于国崩…
+|语音文件=player1-八重神子_关于国崩
+|语音内容=我当时就觉得那是个麻烦，不过她却说毕竟是自己创造之物不愿出手。早知变成现在这样，还不如当初就瞒着她处理掉算了。现在？呵…现在，已经变麻烦啦。
+|语音内容日语=妾は当時からあれを厄介なやつだと思っておった。じゃがあやつは、自身の創造したものじゃからと手を出したくないと言いおった。こうなると分かっておれば、あやつに黙って処分しておいたというのに。今はもう…ふんっ、まったく厄介な面倒事じゃ。
+|语音内容英语=I thought it was a disaster waiting to happen at the time, but she insisted that she wasn't going to lift a finger against the object of her own creation. Had I known how things would unfold, I would have simply disposed of it without her knowing. Hmm? What about now? Hehe... Well, we're no longer waiting for the disaster to happen, are we?
+|语音内容韩语=그때부터 그게 골치 아프다고 생각했어. 하지만 그녀는 자기가 만든 것이니 건드리고 싶지 않다고 했지. 이렇게 될 줄 알았다면 그때 몰래 처리해버릴걸. 지금? 하하… 지금은 너무 늦었어
+}}
+{{角色/语音1
+|语音类型=关于荒泷一斗…
+|语音文件=player1-八重神子_关于荒泷一斗
+|语音内容=他呀，鬼族的奇怪小子，呵，听说他找了九条家不少的麻烦。天领奉行的人想要以有伤风化为由将他写于街上的留言擦掉，是我找人保留的，呵，这么有趣的小鬼，这些年可是难能一见了。
+|语音内容日语=あやつか、鬼族の妙な若造じゃろ。ふふっ、九条家に迷惑をかけておるらしいな。天領奉行の者は風紀を乱すという理由から、あやつが町に書いた伝言を消そうとしておるが、妾がそれを残すよう頼んだんじゃ。ふふっ、あんなに面白い小鬼、近頃は滅多に見られぬ。
+|语音内容英语=Ah, the oddball oni. Heh, I hear that he's been quite a pain for the Kujou Clan. The Tenryou Commission wanted to remove his messages on the bulletin board, claiming that they were "harmful to public order." I made quite sure they stayed put, haha. He's an entertaining character... you don't often see oni like him in this day and age.
+|语音内容韩语=아~ 오니족의 그 이상한 녀석? 하, 쿠죠 가문에 말썽을 많이 피웠다고 들었어. 텐료 봉행이 풍기를 해친다는 이유로 그가 거리에 적은 글을 지우려고 했지만, 내가 사람을 시켜서 남겨뒀어. 후후, 그렇게 재밌는 녀석은 요즘 보기 드물잖아
+}}
+{{角色/语音1
+|语音类型=关于五郎…
+|语音文件=player1-八重神子_关于五郎
+|语音内容=五郎尾巴的色泽很漂亮，不过…还是我的更柔软一些。呵…
+|语音内容日语=ゴローのしっぽは色艶もとても綺麗じゃが…やはり妾の毛並みのほうが柔らかいな。ふふん…
+|语音内容英语=He certainly has a beautiful tail. Although... mine's a little softer.
+|语音内容韩语=고로의 꼬리는 빛깔이 아주 예뻐. 하지만… 내 꼬리가 더 부드럽단다, 후후…
+}}
+{{角色/语音1
+|语音类型=关于早柚…
+|语音文件=player1-八重神子_关于早柚
+|语音内容=这个子小小的孩子，躲倒是挺会躲的，鹿野奈奈经常向我抱怨，得花很多时间找她，连看小说的时间都变少了。要我说啊，或许是有人在暗中帮助早柚呢？
+|语音内容日语=あの背の小さな子は、隠れるのが得意なようじゃな。探すのが大変で小説を読む時間が減ったと、鹿野奈々がしょっちゅう愚痴をこぼしておった。もしや誰かが、密かに早柚を手助けしておるのやもしれぬな…？
+|语音内容英语=Ah yes, the little ninja child... If there's one thing she can do, it's stay hidden. Kano Nana constantly complains to me about it. Apparently, she now spends so much of her time searching for Sayu that she barely has any time to read anymore. If you ask me, I'd say that Sayu has a secret ally who is helping her hide all the time...
+|语音内容韩语=키 작은 꼬마가 요리조리 잘도 숨던데? 그 아이를 찾는 데 너무 오래 걸려서 소설 볼 시간이 줄었다고 카노 나나가 종종 불평했어. 글쎄, 누가 몰래 사유를 도와주는 게 아닐까?
+}}
+{{角色/语音1
+|语音类型=关于久岐忍…
+|语音文件=player1-八重神子_关于久岐忍
+|语音内容=听说阿幸的这位妹妹很有个性，虽说出自巫女世家，却远离神社，学了许多门手艺，甚至去过璃月留学，最后还加入了荒泷派…如此有趣的女孩子，应该让阿幸帮忙引荐一下，嗯，阿幸肯定不会拒绝我的。
+|语音内容日语=幸の妹であるこの女子はとても個性的だと聞いた。巫女の家系でありながら、神社から離れ、様々な技術を学んだらしい。それだけに留まらず、璃月にも留学したことがあるそうじゃ。そして最後は、荒瀧派へと加わった…こんなにも面白い女子がおるなら、幸に紹介してもらわねばならぬのう。それに、幸なら妾の頼みを断ることはないじゃろう。
+|语音内容英语=I've heard a lot about Miyuki's little sister. Quite the character, I'm told. Although she comes from a family of shrine maidens, she's gone her own way in life — tried her hand at many different trades, studied abroad in Liyue, even ended up joining the Arataki Gang... Fascinating girl. Maybe I should have Miyuki introduce me. Yes, that'll work — Miyuki wouldn't dream of refusing my request.
+|语音内容韩语=미유키한테 개성 넘치는 여동생이 있다고 들었어. 무녀 가문에서 태어났지만, 신사를 떠나 다양한 기술을 배워서 리월에 유학도 갔다가 결국 아라타키파에 들어갔다지…. 이렇게 재밌는 아이는 꼭 미유키한테 소개해달라고 해야지. 응, 미유키는 거절하지 않을 거야
+}}
+{{角色/语音1
+|语音类型=想要了解八重神子·其一
+|语音文件=player1-八重神子_想要了解八重神子·其一
+|语音内容=想知道更多我的事？也不是不行，不过世事都讲究一个互惠互利，想了解我，就拿你自己的事来交换如何？
+|语音内容日语=妾のことがもっと知りたいと？断りはせぬが、相互利益を重んじるのが世の常というもの。妾を知りたいのなら、汝のことと交換するのはどうじゃ？
+|语音内容英语=Oh? You'd like to know more about me? I'm willing to tell, but what will I gain in exchange, hmm? It has to be a fair trade. So you tell me all about you, and I'll tell you all about me. Deal?
+|语音内容韩语=나에 대해 더 많이 알고 싶다고? 안 될 건 없지만, 오는 게 있으면 가는 것도 있어야지. 나에 대해 알고 싶다면, 너의 이야기로 교환하는 게 어때?
+}}
+{{角色/语音1
+|语音类型=想要了解八重神子·其二
+|语音文件=player1-八重神子_想要了解八重神子·其二
+|语音内容=狐斋宫大人啊，说着出一趟远门，就再也没有回来。唉，我那时可一点都不想接手鸣神大社的麻烦事，她对我说，说我要是当了神社的宫司，就可以随心所欲地吃油豆腐了。什么糟糕的理由呀，吵吵闹闹的，令人头疼的女人…
+|语音内容日语=狐斎宮様は遠出をすると言い、それっきり帰ってこんかった。はぁ…当時の妾は、鳴神大社の面倒事なんぞ引き受けるつもりはなかったのじゃが、宮司になれば好きなだけ油揚げが食べられると言われてのう…なんとも酷い理由じゃ。…うるさくて、面倒な女じゃった…
+|语音内容英语=Kitsune Saiguu said that she was going off on a long trip, and she's never been back since. *sigh* At the time, I wasn't the least bit inclined to take on the burden of managing the Grand Narukami Shrine. So she told me that as Guuji, I would be able to eat all the Fried Tofu I desired. As if that would be a convincing reason... That woman spoke so much nonsense, honestly, she could be so insufferable...
+|语音内容韩语=호재궁님은 어디 멀리 좀 다녀오신다면서 다시는 돌아오지 않으셨지. 휴, 그땐 나루카미 다이샤의 귀찮은 일을 넘겨받고 싶지 않았는데, 신사의 궁사가 되면 유부를 마음껏 먹을 수 있다고 하셨어. 그런 이유로 설득당할 리 없잖아. 시끄럽고 골치 아픈 여자라니까…
+}}
+{{角色/语音1
+|语音类型=想要了解八重神子·其三
+|语音文件=player1-八重神子_想要了解八重神子·其三
+|语音内容=最开始建立八重堂的动机当然是为了看有趣的小说，不过到后来乐趣就变成看那些小说家殚精竭虑的样子了。呵，你永远想不出来那些人在拖稿的时候说出的理由，哎呀，比他们自己写的小说要有趣多了。
+|语音内容日语=八重堂を立ち上げた当初の動機は、面白い小説を読むためじゃった。じゃが次第に、小説家の疲弊していく姿を見るのが楽しくなってのう…あやつらが締め切りを先延ばしにしようと言ってくるときの言い訳は、汝では到底思いつかぬものじゃろうな。何よりそれは、あやつらが書く小説よりも遥かに面白いものなんじゃ。
+|语音内容英语=I decided to found Yae Publishing House simply because I wished to read more interesting light novels, that's all. But, it turns out that seeing frazzled authors scraping the bottom of their barrel in a desperate attempt to get their novels finished is where the real amusement comes from. You wouldn't believe some of the excuses they come up with when they're trying to get a deadline extension. Oh, so much more creative than the novels themselves.
+|语音内容韩语=처음 야에 출판사를 세운 이유는 재밌는 소설을 보기 위해서였어. 나중엔 소설가들이 아등바등하는 걸 지켜보는 재미로 변했지만…. 넌 그들이 원고를 미룰 때 어떤 변명을 하는지 상상도 못 할 거야. 자기들이 쓰는 소설보다 재밌다니까?
+}}
+{{角色/语音1
+|语音类型=想要了解八重神子·其四
+|语音文件=player1-八重神子_想要了解八重神子·其四
+|语音内容=无论如何，魔神皆有消亡之时，若是他们的那些故事随时间一起散佚于天地，再无人忆起，那就太可惜了。以及，有资格写他们故事的人，必须得有上乘的文思与笔法…如果世上没有这样的人，那就培养出…培养出足以书写那些故事的作家吧。
+|语音内容日语=いずれにせよ、魔神もいつかは消滅する時が来る。かの者らの物語が時と共にこの世界から消え、二度と人々の記憶に残らないとしたら、それはとても残念なことじゃ。その者たちの物語を書く資格のある者は、優れた思考と執筆力を兼ね備えている必要がある…この世にそのような者がおらぬのならば、育てれば良い…それら物語を書くことのできる作家をな。
+|语音内容英语=Even supernatural beings eventually pass away, including gods. It's a terrible shame when their tales are lost to time along with them, never to be remembered again. The problem is, only those with first-class writing and composition skills are qualified to commit these stories to paper. If there is no qualified writing talent in the world, we must cultivate it... Yes, home-grown writers are what we need, capable of adequately capturing these stories with the written word.
+|语音内容韩语=마신도 언젠가는 사라져. 시간이 흘러 그들의 이야기도 함께 사라져서 아무도 기억을 못 하면 너무 안타깝잖아. 뛰어난 구상과 필력을 가진 자만이 그들의 이야기를 쓸 자격이 있어…. 세상에 그런 사람이 없다면… 그 이야기들을 쓸 수 있는 작가를 키워내야지
+}}
+{{角色/语音1
+|语音类型=想要了解八重神子·其五
+|语音文件=player1-八重神子_想要了解八重神子·其五
+|语音内容=说来，虽然看过许多人写的小说，我自己倒是从未动笔过，写小说毕竟还是很麻烦的事嘛。不过，如果你的冒险结束了，想要有人记录你的故事，而我那时正好有空的话…
+|语音内容日语=そういえば、妾は数々の小説を読んできたが、自分で書いたことは一度もない。小説を書くのは、やはり手間の掛かることじゃからのう。じゃが、汝の旅が終わり、誰かに物語の記録をしてもらいたいと思った時…もし妾の手が空いておったら…
+|语音内容英语=Though I'm an avid reader of novels written by others, I've yet to pick up the pen myself. Writing a novel is quite an undertaking, after all. But, if there comes a day when you reach the end of your adventure and want somebody to record it — and if I happen to have the time when that day comes... We'll see.
+|语音内容韩语=그러고 보니 다른 사람의 소설은 많이 봤지만, 정작 내가 써본 적은 없네. 소설 쓰는 건 꽤 성가신 일이잖아. 그래도 언젠가 네 모험이 끝났을 때 네 이야기를 기록할 사람이 필요한데 마침 내가 시간이 된다면…
+}}
+{{角色/语音1
+|语音类型=八重神子的爱好…
+|语音文件=player1-八重神子_八重神子的爱好
+|语音内容=我第一喜欢的是他人的故事，第二喜欢的就是看他人烦恼的神色，两者若是在一起，哈，那可是相得益彰的有趣啊。
+|语音内容日语=妾がもっとも好きなのは他人の物語を読むこと。次に好きなのは他人の困った顔を見ることじゃ。この二つが合わされば、ふふっ、相まってさらに面白いぞ。
+|语音内容英语=My favorite pastime is reading other people's stories. My second favorite is watching other people squirm... If I could find a way to combine the two, haha... Oh, that would be entertainment in its purest form.
+|语音内容韩语=내가 제일 좋아하는 건 다른 사람들의 이야기고, 두 번째로 좋아하는 건 타인이 고뇌하는 모습을 보는 거야. 둘을 합치면, 하하, 그 재미는 배가 돼
+}}
+{{角色/语音1
+|语音类型=八重神子的烦恼…
+|语音文件=player1-八重神子_八重神子的烦恼
+|语音内容=过度安稳的日子实在是太过无聊了啊…
+|语音内容日语=安定した日々を送るのは実につまらぬ…
+|语音内容英语=Peace and tranquility seems to be all the rage nowadays, but it gets dreadfully boring after a while...
+|语音内容韩语=평화로운 일상은 너무 따분한 것 같아…
+}}
+{{角色/语音1
+|语音类型=喜欢的食物…
+|语音文件=player1-八重神子_喜欢的食物
+|语音内容=你有听说过一物，其名为「狐狸乌冬」吗，其实也就是加了油豆腐的乌冬啦。怎么样，油豆腐加乌冬，听上去就很好吃吧。
+|语音内容日语=「きつねうどん」を聞いたことはあるか？実はただ油揚げをのせただけのうどんなのじゃが…油揚げにうどん、どうじゃ、聞いただけで美味しそうじゃろう？
+|语音内容英语=Have you ever heard of a dish called "Kitsune Udon"? It's quite simple, really... Just Fried Tofu served on top of Udon noodles. What do you think? Noodles and Fried Tofu, that's all. Doesn't it sound heavenly?
+|语音内容韩语=「키츠네 우동」이라고 알아? 사실 그냥 유부를 넣은 우동이야. 어때, 유부를 넣은 우동이라니, 듣기만 해도 맛있을 것 같지?
+}}
+{{角色/语音1
+|语音类型=讨厌的食物…
+|语音文件=player1-八重神子_讨厌的食物
+|语音内容=不行，腌制过的东西不行，不管是花鳉还是腌海雀，不觉得都有一股不能让人接受的臭味吗？本宫身为鸣神大社的宫司，怎么能咽下如此不洁不净之物。
+|语音内容日语=まったくもって、漬物だけは受け入れられぬ。グッピーにしてもキビヤックにしても、酷い臭いじゃ。妾は鳴神大社の宮司として、そのような不潔で不浄なるものを飲み込むことは決してできぬ。
+|语音内容英语=Anything that has been pickled is firmly off-limits for me... I don't care whether it's Medaka or Kiviak, what sort of person can stand that vile stench? I, for one, am Guuji of the Grand Narukami Shrine, and I refuse to defile myself by ingesting such pungent things.
+|语音内容韩语=아니, 절인 음식은 싫어. 절인 구피든 키비악이든 참을 수 없는 악취가 나지 않니? 나루카미 다이샤의 궁사로서 그런 부정한 걸 입에 넣을 순 없어
+}}
+{{角色/语音1
+|语音类型=收到赠礼·其一
+|语音文件=player1-八重神子_收到赠礼·其一
+|语音内容=哎呀，小家伙，你对我的口味了解得很清楚嘛。
+|语音内容日语=ほう…童よ、妾の好みをよく知っておるようじゃな。
+|语音内容英语=My, my! You really know what appeals to my tastes, don't you.
+|语音内容韩语=어머, 꼬마야, 내 취향을 잘 알고 있네?
+}}
+{{角色/语音1
+|语音类型=收到赠礼·其二
+|语音文件=player1-八重神子_收到赠礼·其二
+|语音内容=既然是你亲手做的，我就尝尝看吧，呵呵…
+|语音内容日语=汝の手作りならば、口にしてみるか。ふふっ…
+|语音内容英语=Since you've made it yourself, I guess having a little taste is the least I can do, haha...
+|语音内容韩语=네가 직접 만든 거니까 한번 먹어봐야겠어, 후후…
+}}
+{{角色/语音1
+|语音类型=收到赠礼·其三
+|语音文件=player1-八重神子_收到赠礼·其三
+|语音内容=怎么说呢…小家伙，需要努力的地方还有不少哦？
+|语音内容日语=まったく…童よ、まだまだ努力が必要じゃな。
+|语音内容英语=How should I put this... There's so much room for improvement that the only way is up.
+|语音内容韩语=흠… 꼬마야, 좀 더 분발해야겠는걸?
+}}
+{{角色/语音1
+|语音类型=生日…
+|语音文件=player1-八重神子_生日
+|语音内容=今日是你的生辰啊…<br>「凡御岁之祝礼，以徒名之令，遇其其之所求，遂其其之所愿，正心明神，以受萌荫庇佑。」好了，就这样。祝你这一年能够诸事顺遂，得偿所愿吧。
+|语音内容日语=今日は汝の誕生日じゃったか…<br>「御歳の祝礼を今ここに迎えん。徒桜の命において、汝が求めんとするもの、汝が願わんとするもの、明神のもと正心をもって、その加護を汝に与えん」<br>うむ、こんなところか。これからも、望むものを手に入れ、万事が順調にいく良き一年になることを祈っておるぞ。
+|语音内容英语=Ah, so today is your birthday... "On your ceremonious reckoning of years, I task my kin with seeing to it that that which you seek, you shall surely find, and that that for which your heart longs, you shall surely receive. Remain pure of heart and true of spirit, and their protection shall be bestowed on you." There you go. May all go well in your year ahead, and may all your wishes be fulfilled. Are we done?
+|语音内容韩语=오늘이 네 생일이구나…<br>「그대의 탄생을 축복하며 명하나니, 그대가 구하는 것을 얻고 원하는 것을 이루리라. 올곧은 마음을 가진 자에겐 신의 가호가 있을지니.」 됐어, 올해는 모든 일이 잘 풀리고 원하는 걸 얻길 바라
+}}
+{{角色/语音1
+|语音类型=突破的感受·起
+|语音文件=player1-八重神子_突破的感受·起
+|语音内容=所谓巫女修行阶位，在修习毕业之后，能准确开口念诵祭言即可称为「直阶」。对于人类来说很方便，不过对狐族来说倒是最困难的一步…毕竟是狐狸嘛。
+|语音内容日语=巫女修行の階位では、一連の修行を終えた後に祝詞を正確に暗唱できれば、「直階」を得られる。人間にとっては簡単じゃが、狐族にとってはもっとも困難といえる部分じゃ…なにせ、狐じゃからのう。
+|语音内容英语=When training to become a shrine maiden, the title of "Chokkai" is granted once one has completed their requisite studies and can correctly chant for ceremonies. This might be very straightforward for humans, but it's the most difficult step for the kitsune... We are only foxes, after all.
+|语音内容韩语=무녀의 수행 단계는 수련을 졸업하고 제사의 구절을 정확하게 낭송할 수 있으면 「직계」 단계라고 해. 인간에겐 쉽지만 여우족에겐 가장 어려운 단계지… 그야 여우니까
+}}
+{{角色/语音1
+|语音类型=突破的感受·承
+|语音文件=player1-八重神子_突破的感受·承
+|语音内容=成为宫司代理，也就是「正阶」的修行可是很辛苦的，要受诸多清修戒律，修行的秘诀唯有一条，就是晚上偷偷进食时，不要被人发现。
+|语音内容日语=宮司代理になる、つまり「正階」の修行はとても過酷なものじゃ。数々の試練を乗り越え、戒律を守らねばならぬ。この修行において、秘訣はただ一つのみ。夜こっそり盗み食いをする時、バレないようにすることじゃ。
+|语音内容英语=The training required to become a Guuji's Assistant, or "Seikai," is arduous indeed. You must observe a myriad of harsh restrictions... There is only one way to make it through: snack at night, and make sure you don't get caught.
+|语音内容韩语=궁사 대행, 그러니까 「정계」의 수행은 아주 힘들어. 많은 규율을 지켜야 하거든. 수행의 비결은 오직 하나, 밤에 몰래 뭘 먹을 때 들키지 않는 거야
+}}
+{{角色/语音1
+|语音类型=突破的感受·转
+|语音文件=player1-八重神子_突破的感受·转
+|语音内容=升为「明阶」，即要求进入天地明察的境界，神通宇内，世事洞明。只要进入了这个境界，一般都会受获神之眼，拥有远超一般狐族的悠长寿命了哦。
+|语音内容日语=「明階」にまで上がるには、世を見定めることのできる天地明察の境地に達する必要がある。この境地に達すれば、一般的には神の目が授与され、普通の狐族を遥かに超える寿命を得ることとなる。
+|语音内容英语=Attaining the rank of "Meikai" requires one to decipher the workings of the world, transcend its limitations, and fathom all phenomena within. Usually, any who reach this level are granted a Vision and a lifespan far beyond that of the average kitsune.
+|语音内容韩语=「명계」로 올라가면 천지를 살필 수 있는 경지에 올라 세상만사를 꿰뚫어 볼 수 있어야 돼. 이 경지에 오르면 보통 신의 눈을 받게 되고, 평범한 여우족보다 훨씬 긴 수명을 얻지
+}}
+{{角色/语音1
+|语音类型=突破的感受·合
+|语音文件=player1-八重神子_突破的感受·合
+|语音内容=鸣神大社的「净阶」，历来只有鸣神大社的宫司具有，仅此一位。「净阶」只是类似荣誉职位的东西，跟实力倒没什么关系，不过我若是自称实力最强的「净阶」，倒也无何不可。
+|语音内容日语=鳴神大社の「浄階」は、昔から鳴神大社の宮司のみが持つものじゃ。「浄階」は栄誉称号に似たようなもので、実力とは関係がない。じゃが、実力においても最強の妾が「浄階」を名乗るのは、そう間違ってはおらぬことじゃろう。
+|语音内容英语=Throughout history, only the Guuji of the Grand Narukami Shrine has ever held the rank of "Joukai." It is an honorary title, not related to the capabilities of the holder. But of course, if I were to declare myself the most powerful Joukai in history, I don't see why there'd be anything wrong with that.
+|语音内容韩语=나루카미 다이샤의 「청계」는 예로부터 나루카미 다이샤의 궁사 단 한 명만 얻을 수 있었어. 사실 그냥 명예직 같은 거야. 실력과는 별 상관없어. 하지만 내가 실력이 가장 뛰어난 「청계」라고 해도 안 될 건 없지
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=元素战技·其一
+|语音文件=player1-八重神子_元素战技·其一
+|语音内容=律令。
+|语音内容日语=律令 。
+|语音内容英语=Right here.
+|语音内容韩语=율령
+}}
+{{角色/语音1
+|语音类型=元素战技·其二
+|语音文件=player1-八重神子_元素战技·其二
+|语音内容=咒禁。
+|语音内容日语=呪禁。
+|语音内容英语=Right now.
+|语音内容韩语=주술
+}}
+{{角色/语音1
+|语音类型=元素战技·其三
+|语音文件=player1-八重神子_元素战技·其三
+|语音内容=敕！
+|语音内容日语=敕。
+|语音内容英语=Emerge!
+|语音内容韩语=칙명!
+}}
+{{角色/语音1
+|语音类型=元素战技·其四
+|语音文件=player1-八重神子_元素战技·其四
+|语音内容=显化。
+|语音内容日语=具現化せよ。
+|语音内容英语=Come on out.
+|语音内容韩语=나타나라
+}}
+{{角色/语音1
+|语音类型=元素战技·其五
+|语音文件=player1-八重神子_元素战技·其五
+|语音内容=留形。
+|语音内容日语=姿を残さん。
+|语音内容英语=Show them.
+|语音内容韩语=형상을 남기리
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=元素爆发·其一
+|语音文件=player1-八重神子_元素爆发·其一
+|语音内容=真瞳显现！
+|语音内容日语=真瞳の顕現。
+|语音内容英语=I'm always watching.
+|语音内容韩语=진실의 눈동자!
+}}
+{{角色/语音1
+|语音类型=元素爆发·其二
+|语音文件=player1-八重神子_元素爆发·其二
+|语音内容=雷霆侘寂！
+|语音内容日语=幽玄なる雷霆。
+|语音内容英语=Nothing lasts forever.
+|语音内容韩语=고요한 뇌정!
+}}
+{{角色/语音1
+|语音类型=元素爆发·其三
+|语音文件=player1-八重神子_元素爆发·其三
+|语音内容=雷光凄美啊。
+|语音内容日语=雷光、いと美しきかな。
+|语音内容英语=A sight to behold.
+|语音内容韩语=뇌광이 애처롭구나
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=打开宝箱·其一
+|语音文件=player1-八重神子_打开宝箱·其一
+|语音内容=有什么有趣的东西吗？
+|语音内容日语=何か面白いものはあったか？
+|语音内容英语=Well, what do we have here?
+|语音内容韩语=재미있는 물건이라도 있어?
+}}
+{{角色/语音1
+|语音类型=打开宝箱·其二
+|语音文件=player1-八重神子_打开宝箱·其二
+|语音内容=就只有这些么…
+|语音内容日语=これだけとは…
+|语音内容英语=Don't tell me that's everything...
+|语音内容韩语=이게 다인가…?
+}}
+{{角色/语音1
+|语音类型=打开宝箱·其三
+|语音文件=player1-八重神子_打开宝箱·其三
+|语音内容=快，打开来给我看看。
+|语音内容日语=早く、妾にも見せてくれぬか。
+|语音内容英语=Go on. Open it up, show me what's inside.
+|语音内容韩语=어서 열어봐
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=生命值低·其一
+|语音文件=player1-八重神子_生命值低·其一
+|语音内容=这样下去可不行啊。
+|语音内容日语=このままではいかんのう…
+|语音内容英语=That's quite enough.
+|语音内容韩语=이러면 곤란한데
+}}
+{{角色/语音1
+|语音类型=生命值低·其二
+|语音文件=player1-八重神子_生命值低·其二
+|语音内容=可不能再玩下去了。
+|语音内容日语=遊んではいられぬ。
+|语音内容英语=Ugh, no more games.
+|语音内容韩语=장난은 여기까지
+}}
+{{角色/语音1
+|语音类型=生命值低·其三
+|语音文件=player1-八重神子_生命值低·其三
+|语音内容=好了，要认真一些了哦。
+|语音内容日语=さて、本気を出すとするかのう。
+|语音内容英语Now, you've got my attention.
+|语音内容韩语=좀 진지해져야겠는걸?
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=同伴生命值低·其一
+|语音文件=player1-八重神子_同伴生命值低·其一
+|语音内容=别再勉强了。
+|语音内容日语=無理をするでない。
+|语音内容英语=My, you're cutting it close.
+|语音内容韩语=무리하지 마
+}}
+{{角色/语音1
+|语音类型=同伴生命值低·其二
+|语音文件=player1-八重神子_同伴生命值低·其二
+|语音内容=交给我就好。
+|语音内容日语=妾に任せよ。
+|语音内容英语=I shall handle this.
+|语音内容韩语=나한테 맡겨
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=倒下·其一
+|语音文件=player1-八重神子_倒下·其一
+|语音内容=哎呀，玩过头了…
+|语音内容日语=ふむ、遊びすぎたようじゃな…
+|语音内容英语=The fun's over...
+|语音内容韩语=아, 장난이 좀 과했네…
+}}
+{{角色/语音1
+|语音类型=倒下·其二
+|语音文件=player1-八重神子_倒下·其二
+|语音内容=结局真是糟糕啊…
+|语音内容日语=惨憺たる結末じゃ…
+|语音内容英语=What a dreadful ending...
+|语音内容韩语=처참한 결과야…
+}}
+{{角色/语音1
+|语音类型=倒下·其三
+|语音文件=player1-八重神子_倒下·其三
+|语音内容=止步于此，何谈永恒…
+|语音内容日语=ここで止まれば、永遠は…
+|语音内容英语=So much for "eternity"...
+|语音内容韩语=여기서 멈추면 영원을 논할 자격이 없지…
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=普通受击·其一
+|语音文件=player1-八重神子_普通受击·其一
+|语音内容=就这样？
+|语音内容日语=その程度か？
+|语音内容英语=Is that all?
+|语音内容韩语=이게 다야?
+}}
+{{角色/语音1
+|语音类型=重受击·其一
+|语音文件=player1-八重神子_重受击·其一
+|语音内容=真是麻烦。
+|语音内容日语=面倒じゃのう。
+|语音内容英语=What a nuisance.
+|语音内容韩语=귀찮아 죽겠네…
+}}
+</div>
+<div class="resp-tab-content">
+{{角色/语音1
+|语音类型=加入队伍·其一
+|语音文件=player1-八重神子_加入队伍·其一
+|语音内容=这时候想起我了？
+|语音内容日语=やっと妾のことを思い出したか？
+|语音内容英语=Whatever would you do without me?
+|语音内容韩语=이제야 내가 생각났어?
+}}
+{{角色/语音1
+|语音类型=加入队伍·其二
+|语音文件=player1-八重神子_加入队伍·其二
+|语音内容=去做点有意思的事吧。
+|语音内容日语=面白きことをしにゆくぞ。
+|语音内容英语=Alright, amuse me.
+|语音内容韩语=재미있는 일 하러 가자
+}}
+{{角色/语音1
+|语音类型=加入队伍·其三
+|语音文件=player1-八重神子_加入队伍·其三
+|语音内容=好吧，既然你都来邀请我了…
+|语音内容日语=ふむ、汝からの誘いであれば…よかろう。
+|语音内容英语=Well, since you asked so nicely...
+|语音内容韩语=좋아, 모처럼 네가 날 초대했으니…
+}}
+</div>
+</div>
