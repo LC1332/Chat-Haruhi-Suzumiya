@@ -14,15 +14,53 @@ import glob
 import json
 
 def process_dialogue(input_files, output_file, role, other_names):
+    result = []
+    output_dir = os.path.abspath(os.path.dirname(output_file))
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    cnt = 0
+    for file in input_files:
+        cnt += 1
+        f_read = open(file, 'r',encoding='utf-8')
+        lines = f_read.readlines()
+        last_content = ""
+        for line in lines:
+            current_role = line.split(":")[0]
+            if current_role in other_names + [role]:
+                if not last_content == "": 
+                    result.append(last_content)
+                last_content = ""
+            else:
+                last_content = line
+    return generage_jsonl(result, output_file)
+
+
+
+def generage_jsonl(result, output_file):
+    fw = open(output_file, 'w+', encoding='utf-8')
     """
-    核心函数，用于处理聊天记录，从中抽取非主角的对话
-    TODO: 在这里填写实际的处理逻辑
+    {"role": "阿虚", "text": "「奇特的社团和运动社团有什么不同？」", "source": "synthesized "}
     """
-    pass
+    for content in result:       
+        content = content.strip()
+        if content:
+            if ":" in content:
+                res = content.split(':')
+            elif '：' in content:
+                res = content.split('：')
+            if res[1] != '':
+                json.dump({"role": res[0], "text": res[1][1:-1], "source": "story"}, fw, ensure_ascii=False)
+                fw.write("\n")
+    fw.close()
 
 if __name__ == '__main__':
     # 解析命令行参数
-    parser = argparse.ArgumentParser(description='Process story data for Chat Haruhi Suzumiya project')
+    parser = argparse.ArgumentParser(
+        description='Process story data for Chat Haruhi Suzumiya project',
+        epilog='author:LengYue(https://github.com/zealot52099)'
+    )
+
+
     parser.add_argument('-story_folder', required=True, help='Story folder path')
     parser.add_argument('-output', required=True, help='Output file path')
     parser.add_argument('-role', default='春日', help='Main role name (default: 春日)')
@@ -46,3 +84,6 @@ if __name__ == '__main__':
 
 # if __name__ == '__main__':
 #     main()
+
+
+#python story2chat.py -story_folder "/characters/haruhi/texts" -output ./output/chat_from_story.json -role "春日" -other_names 凉宫 凉宫春日
