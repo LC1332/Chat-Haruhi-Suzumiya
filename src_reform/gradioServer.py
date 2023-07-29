@@ -3,7 +3,7 @@ import json
 import os
 from datetime import datetime
 from zipfile import ZipFile
-
+import time
 import gradio as gr
 from app import ChatPerson
 from text import Text
@@ -16,34 +16,20 @@ def create_gradio(chat_person):
         hash_object = hashlib.sha256(ip_address.encode())
         return hash_object.hexdigest()
 
-    def save_dialogue(host, messages):
-        hash_value = generate_user_id(host)
-        path = os.path.join(chat_person.ChatGPT.dialogue_path, f"{hash_value}.jsonl")
-        if os.path.exists(path):
-            f = open(path, 'a', encoding='utf-8')
-        else:
-            f = open(path, 'w+', encoding='utf-8')
-        for msg in messages:
-            # "阿虚:「你好」" -->  {"role": "阿虚", "text": "你好"}
-            if ':' or "：" not in msg:
-                item = {"role": "", "text": msg}
-            else:
-                if ':' in msg:
-                    ch = ':'
-                elif '：' in msg:
-                    ch = '：'
-                res = msg.split(ch)
-                item = {"role": res[0], "text": res[1][1:-1]}
-            json.dump(item, f, ensure_ascii=False)
-            f.write('\n')
-        f.close()
+    def save_response(chat_history_tuple):
+        with open(f"{chat_person.ChatGPT.dialogue_path}/conversation_{time.time()}.txt", "w", encoding='utf-8') as file:
+            for cha, res in chat_history_tuple:
+                file.write(cha)
+                file.write("\n---\n")
+                file.write(res)
+                file.write("\n---\n")
 
     def respond(role_name, user_message, chat_history, request: gr.Request):
         print("history is here : ", chat_history)
         input_message = role_name + ':「' + user_message + '」'
         bot_message = chat_person.getResponse(input_message, chat_history)
         chat_history.append((input_message, bot_message))
-        save_dialogue(request.client.host, (input_message, bot_message))
+        save_response(chat_history)
         # self.save_response(chat_history)
         # time.sleep(1)
         # jp_text = pipe(f'<-zh2ja-> {bot_message}')[0]['translation_text']
