@@ -149,4 +149,4 @@ class ChatPerson:
 # print(person.configuration)
 
 
-system = ChatSystem()
+# system = ChatSystem()
