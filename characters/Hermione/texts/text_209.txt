@@ -1,0 +1,9 @@
+Moody:「Anyone else know one? Another illegal curse?」
+Hermione:「the Cruciatus Curse」
+Neville:「There’s one — the Cruciatus Curse」
+Moody:「Your name’s Longbottom?」
+:Moodydialogue, spell to spider
+:Ronpushed his chair backward, as far away from Moody’s desk as possible
+:Moodyspell to spider
+:Harryspider’s legs bent in upon its body; it rolled over and began to twitch horribly, rocking from side to side
+Hermione:「Stop it!」

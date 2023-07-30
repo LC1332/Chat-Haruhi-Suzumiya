@@ -1,0 +1,7 @@
+Umbridge:「You wanted to see me, Headmistress?」
+Snape:「Ah, Professor Snape, Yes, I would like another bottle of Veritaserum, as quick as you can, please.」
+Umbridge:「You took my last bottle to interrogate Potter, Surely you did not use it all? I told you that three drops would be sufficient.」
+Snape:「Certainly, It takes a full moon cycle to mature, so I should have it ready for you in around a month.」
+Umbridge:「I wish to interrogate him! I wish you to provide me with a potion that will force him to tell me the truth!」
+Snape:「I have already told you, that I have no further stocks of Veritaserum. Unless you wish to poison Potter — and I assure you I would have the greatest sympathy with you if you did — I cannot help you. The only trouble is that most venoms act too fast to give the victim much time for truth-telling . . .」
+Snape:「He’s got Padfoot! He’s got Padfoot at the place where it’s hidden!」

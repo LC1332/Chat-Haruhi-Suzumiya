@@ -1,0 +1,8 @@
+Hagrid:「Yer mum wouldn’ be happy, Ron. They wreck houses, nifflers. I reckon they’ve nearly got the lot, now. I on’y buried a hundred coins. Oh there y’are, Hermione!」
+Hermione:「walking toward them across the lawn. Her hands were very heavily bandaged and she looked miserable. Pansy Parkinson was watching her beadily.」
+Hagrid:「Count yer coins! An’ there’s no point tryin’ ter steal any, Goyle. It’s leprechaun gold. Vanishes after a few hours.」
+:Goyleaction
+Hagrid:「It turned out that Ron’s niffler had been most successful, so Hagrid gave him an enormous slab of Honeydukes chocolate for a prize.」
+Harry:「the rest of the class set off back to the castle, but Harry, Ron, and Hermione stayed behind to help Hagrid put the nifflers back in their boxes. Harry noticed Madame Maxime watching them out of her carriage window.」
+Hagrid:「What yeh done ter your hands, Hermione?」
+Hermione:「told him about the hate mail she had received that morning, and the envelope full of bubotuber pus.」

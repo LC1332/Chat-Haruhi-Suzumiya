@@ -1,0 +1,11 @@
+Hermione:「Ron! RON! Get up here, quick!」
+Ron:「What’s up? If it’s massive spiders again I want breakfast before I —」
+Ron:「What? That was Sirius’s brother, wasn’t it? Regulus Arcturus . . . Regulus . . . R.A.B.! The locket — you don’t reckon — ?」
+:Harrypushed the door
+:Hermionecrossed the room to examine the newspaper cuttings
+Hermione:「They’re all about Voldemort. Regulus seems to have been a fan for a few years before he joined the Death Eaters. . . .」
+:Harrynoticed another photograph
+Harry:「He played Seeker.」
+:Ronsearching under the wardrobe
+Ron:「Is that it, then? It’s not here?」
+Ron:「How are we supposed to find it then?」

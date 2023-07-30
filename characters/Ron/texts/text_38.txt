@@ -1,0 +1,9 @@
+Hermione:「“Don’t play,”」
+Ron:「“Say you’re ill,”」
+Hermione:「“Pretend to break your leg,”」
+Ron:「“Really break your leg,”」
+:Hermioneaction
+Neville:「“Malfoy,” said Neville shakily. “I met him outside the library. He said he’d been looking for someone to practice that on.”」
+Hermione:「Go to Professor McGonagall! Report him!」
+Neville:「I don’t want more trouble. 」
+Ron:「You’ve got to stand up to him, Neville! He’s used to walking all over people, but that’s no reason to lie down in front of him and make it easier.」

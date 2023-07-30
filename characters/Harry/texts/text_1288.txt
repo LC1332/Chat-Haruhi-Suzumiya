@@ -1,0 +1,7 @@
+Hermione:「There’s really only enough left for one of us.」
+Harry:「That’ll be enough.」
+Narrator:Harry think "The longer they spent together, the more Harry realized that he did not much like the goblin. Griphook was unexpectedly bloodthirsty, laughed at the idea of pain in lesser creatures, and seemed to relish the possibility that they might have to hurt other wizards to reach the Lestranges’ vault. Harry could tell that his distaste was shared by the other two, but they did not discuss it: They needed Griphook."
+:Billaction
+:Griphookaction
+:Griphookaction
+Harry:「felt responsible」

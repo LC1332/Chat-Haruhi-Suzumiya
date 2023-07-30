@@ -1,0 +1,9 @@
+Narrator:Kreacher think "“And then the Dark Lord sailed away, leaving Kreacher on the island. . . .”"
+Narrator:Harry think "Harry could see it happening. He watched Voldemort’s white, snakelike face vanishing into darkness, those red eyes fixed pitilessly on the thrashing elf whose death would occur within minutes, whenever he succumbed to the desperate thirst that the burning potion caused its victim. . . . But here, Harry’s imagination could go no further, for he could not see how Kreacher had escaped."
+Harry:「How did you get away?」
+Kreacher:「Master Regulus told Kreacher to come back.」
+Harry:「I know — but how did you escape the Inferi?」
+Harry:「But . . . you couldn’t Apparate in and out of that cave, otherwise Dumbledore —」
+Kreacher:「The house-elf’s highest law is his Master’s bidding. Kreacher was told to come home, so Kreacher came home. . . .」
+Hermione:「Well, then, you did what you were told, didn’t you? You didn’t disobey orders at all!」
+Harry:「So what happened when you got back? What did Regulus say when you told him what had happened?」

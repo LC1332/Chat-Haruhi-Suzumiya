@@ -1,0 +1,13 @@
+:Harryaction
+Hermione:「Right, we need to sneak over to Hagrid’s. Keep out of sight, Harry.」
+:Harrymade their way silently through the trees, keeping to the very edge of the forest
+:Hermionemade their way silently through the trees, keeping to the very edge of the forest
+:Harryheard a knock upon Hagrid's door
+:Hermioneheard a knock upon Hagrid's door
+Harry:「It’s us. We’re wearing the Invisibility Cloak. Let us in and we can take it off.」
+Hagrid:「Yeh shouldn’ve come!」
+:Hagridstood back, then shut the door quickly
+Harry:「This is the weirdest thing we’ve ever done.」
+Hermione:「Let’s move along a bit. We need to get nearer to Buckbeak!」
+Harry:「Now?」
+Hermione:「No! If we steal him now, those Committee people will think Hagrid set him free! We’ve got to wait until they’ve seen he’s tied outside!」

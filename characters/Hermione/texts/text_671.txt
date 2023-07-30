@@ -1,0 +1,9 @@
+Narrator:Harry think "The singing grew louder as they approached the church. It made Harry’s throat constrict, it reminded him so forcefully of Hogwarts, of Peeves bellowing rude versions of carols from inside suits of armor, of the Great Hall’s twelve Christmas trees, of Dumbledore wearing a bonnet he had won in a cracker, of Ron in a hand-knitted sweater. . . ."
+:Hermioneaction
+Hermione:「“Look at this, it’s an Abbott, could be some long-lost relation of Hannah’s!”」
+Hermione:「“Keep your voice down,”」
+Hermione:「“No, but look!”」
+Harry:「No, let’s keep looking.」
+Harry:「Look at this!」
+Hermione:「Here! Oh no, sorry! I thought it said Potter.」
+Hermione:「Harry, that’s the mark in the book!」

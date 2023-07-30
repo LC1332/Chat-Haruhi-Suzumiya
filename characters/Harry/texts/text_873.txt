@@ -1,0 +1,13 @@
+Neville:「We’ll dake her wid us, I’ll carry her — you’re bedder at fighding dem dan I ab —」
+Harry:「Wait, you’d better take this . . .」
+Neville:「My gran’s going do kill be, dat was by dad’s old wand . . .」
+Harry:「He’s never going to notice us, C’mon . . . keep close behind me . . .」
+Ron:「There you are. . . . Ha ha ha . . . You look funny, Harry. . . . You’re all messed up . . .」
+Harry:「What happened?」
+Ron:「you know who this girl is, Harry? She’s Loony . . . Loony Lovegood . . . ha ha ha . . .」
+Bellatrix:「Get Potter!」
+:Bellatrixaction
+:Harryaction
+Harry:「Ron, get out of the way, get down —」
+Ron:「Harry, come and touch it, bet it’s weird —」
+Harry:「RON, NO!」

@@ -1,0 +1,14 @@
+Harry:「R.A.B. I think I’ve found him.」
+Hermione:「Sirius’s brother?」
+Harry:「He was a Death Eater, Sirius told me about him, he joined up when he was really young and then got cold feet and tried to leave — so they killed him.」
+Hermione:「That fits! If he was a Death Eater he had access to Voldemort, and if he became disenchanted, then he would have wanted to bring Voldemort down!」
+Ron:「What? That was Sirius’s brother, wasn’t it? Regulus Arcturus . . . Regulus . . . R.A.B.! The locket — you don’t reckon — ?」
+Harry:「Let’s find out.」
+:Hermionespell to the door handle
+Hermione:「They’re all about Voldemort. Regulus seems to have been a fan for a few years before he joined the Death Eaters. . . .」
+:Ronsearching under the wardrobe
+:Harryapproached the desk
+:Hermionespell to summon the locket
+Harry:「Like Voldemort put on the stone basin in the cave.」
+Ron:「How are we supposed to find it then?」
+Hermione:「We search manually.」

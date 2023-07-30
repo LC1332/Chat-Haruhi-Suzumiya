@@ -1,0 +1,7 @@
+Harry:「Maybe he agrees with Krum, maybe he thinks Gregorovitch is better . . . or else he thinks Gregorovitch will be able to explain what my wand did when he was chasing me, because Ollivander didn’t know.」
+Hermione:「Harry, you keep talking about what your wand did, but you made it happen! Why are you so determined not to take responsibility for your own power?」
+Harry:「Because I know it wasn’t me! And so does Voldemort, Hermione! We both know what really happened!」
+Ron:「Drop it. It’s up to him. And if we’re going to the Ministry tomorrow, don’t you reckon we should go over the plan?」
+Hermione:「Robes. Polyjuice Potion. Invisibility Cloak. Decoy Detonators. You should each take a couple just in case. Puking Pastilles, Nosebleed Nougat, Extendable Ears.」
+:wizardaction
+Hermione:「You simply can’t go to work like this!」

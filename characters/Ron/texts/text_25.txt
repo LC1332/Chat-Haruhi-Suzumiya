@@ -1,0 +1,8 @@
+Harry:「“He’s just made that rule up,” Harry muttered angrily as Snape limped away. “Wonder what’s wrong with his leg?”」
+Ron:「“Dunno, but I hope it’s really hurting him,” said Ron bitterly.」
+:Harryaction
+:Harryaction
+Snape:「“Blasted thing,” Snape was saying. “How are you supposed to keep your eyes on all three heads at once?”」
+Harry:「tried to shut the door quietly, but — “POTTER!” Snape’s face was twisted with fury as he dropped his robes quickly to hide his leg. Harry gulped. “I just wondered if I could have my book back.” “GET OUT! OUT!”」
+:Harryaction
+Ron:「Did you get it?」

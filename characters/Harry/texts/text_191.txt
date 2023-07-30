@@ -1,0 +1,9 @@
+:Dobbypointing, first to the diary, then to Lucius Malfoy, then punching himself in the head
+Harry:「Don’t you want to know how Ginny got hold of that diary, Mr. Malfoy?」
+Lucius Malfoy:「How should I know how the stupid little girl got hold of it?」
+Harry:「Because you gave it to her. In Flourish and Blotts. You picked up her old Transfiguration book and slipped the diary inside it, didn’t you?」
+:Lucius Malfoystood for a moment
+Harry:「Professor Dumbledore, Can I give that diary back to Mr. Malfoy, please?」
+:Dobbyaction
+:Harryaction
+Harry:「I’ve got something for you —」

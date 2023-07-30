@@ -1,0 +1,15 @@
+Malfoy:「Give that back」
+Harry:「Hand it over, Malfoy」
+Percy:「As a school prefect —」
+:Harryspell to Malfoy
+Malfoy:「I don’t think Potter liked your valentine much!」
+:Ronpulled out his wand
+:Harryaction
+:Ronhaving trouble with his wand
+:Harrywent to bed before anyone else in his dormitory
+:Harrypulled a new bottle out of his bedside cabinet, dipped his quill into it, and dropped a blot onto the first page of the diary
+Harry:「Someone tried to flush it down a toilet.」
+Riddle:「I mean that this diary holds memories of terrible things. Things that were covered up. Things that happened at Hogwarts School of Witchcraft and Wizardry.」
+Harry:「That’s where I am now, I’m at Hogwarts, and horrible stuff’s been happening. Do you know anything about the Chamber of Secrets?」
+Riddle:「I can show you, if you like. You don’t have to take my word for it. I can take you inside my memory of the night when I caught him.」
+Harry:「OK.」

@@ -1,0 +1,6 @@
+:Hermioneaction
+Harry:「What’s wrong? It’s . . . locked . . .」
+Ron:「This is it, then, isn’t it? Bound to be!」
+Hermione:「Get out of the way!」
+:Hermioneaction
+Harry:「Sirius’s knife!」

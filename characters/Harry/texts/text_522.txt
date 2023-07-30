@@ -1,0 +1,7 @@
+Dumbledore:「It is possible. I would say — probable. Harry — did you see Voldemort?」
+Harry:「No, just the back of his chair. But — there wouldn’t have been anything to see, would there? I mean, he hasn’t got a body, has he? But . . . but then how could he have held the wand?」
+:Dumbledoreaction
+Harry:「“Professor,” Harry said at last, “do you think he’s getting stronger?”」
+Dumbledore:「“These disappearances seem to me to be linked. The Ministry disagrees — as you may have heard, while waiting outside my office.”」
+:Harryaction
+Harry:「“Er . . . could I ask you about . . . that court thing I was in . . . in the Pensieve?”」

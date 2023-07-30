@@ -1,0 +1,13 @@
+Umbridge:「I have your responses to the questionnaire that was sent to you here — Mafalda, pass them to me.」
+Hermione:「That’s — that’s pretty, Dolores.」
+Umbridge:「What? Oh yes — an old family heirloom. The S stands for Selwyn. . . . I am related to the Selwyns. . . . Indeed, there are few pure-blood families to whom I am not related. . . . A pity, that the same cannot be said for you. ‘Parents’ professions: greengrocers.’」
+Yaxley:「laughed jeeringly」
+:Harryspell to Umbridge
+:Umbridgecrumpled, hit the edge of the balustrade
+:Harryspell to Yaxley
+:Yaxleyslid to the ground, curled on the floor
+Hermione:「Harry!」
+:dementorsfell back, melted into the dark shadows
+Harry:「Get the Horcrux」
+:Harryspell to chains
+Hermione:「Wait, I’m trying something up here —」

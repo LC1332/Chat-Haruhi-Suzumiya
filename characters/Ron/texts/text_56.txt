@@ -1,0 +1,10 @@
+Hermione:「Yes — of course — but there’s no wood!」
+Ron:「HAVE YOU GONE MAD? ARE YOU A WITCH OR NOT?」
+:Hermioneaction
+Harry:「Lucky you pay attention in Herbology, Hermione,」
+Harry:「Yeah, and lucky Harry doesn’t lose his head in a crisis —‘there’s no wood,’ honestly.」
+:Harrypointing down a stone passageway
+:Harryreminded of Gringotts, remembered the dragons said to be guarding vaults in the wizards’ bank
+Ron:「Can you hear something?」
+Harry:「I don’t know . . . sounds like wings to me.」
+Ron:「There’s light ahead — I can see something moving.」

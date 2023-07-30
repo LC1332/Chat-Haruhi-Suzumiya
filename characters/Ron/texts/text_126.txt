@@ -1,0 +1,9 @@
+Lockhart:「“The danger has passed! The culprit has been taken away —”」
+Ron:「“Oh, yes he would,”」
+Lockhart:「“I flatter myself I know a touch more about Hagrid’s arrest than you do, Mr. Weasley,”」
+:Ronaction
+:Ronaction
+:Ginnyaction
+:Fred, George, and Ginnyaction
+:Harry and Ronaction
+Ron:「said abruptly as they strode across the black grass, “we might get to the forest and find there’s nothing to follow. Those spiders might not’ve been going there at all. I know it looked like they were moving in that sort of general direction, but . . .”」

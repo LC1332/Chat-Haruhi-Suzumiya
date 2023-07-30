@@ -1,0 +1,10 @@
+Dumbledore:「Thank you. Well, Harry, you will be pleased to hear that none of your fellow students are going to suffer lasting damage from the night’s events.」
+Harry:「Good,」
+:Dumbledoreaction
+Harry:「Madam Pomfrey is patching everybody up now, Nymphadora Tonks may need to spend a little time in St. Mungo’s, but it seems that she will make a full recovery.」
+Harry:「No, you don’t,」
+:Dumbledoreaction
+:Harryaction
+Dumbledore:「What don’t I know?」
+:Harryaction
+Harry:「THEN — I — DON’T — WANT — TO — BE — HUMAN!」

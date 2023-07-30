@@ -1,0 +1,8 @@
+Harry:「He’s gone」
+Hermione:「Why don’t we go and have a butterbeer in the Three Broomsticks, it’s a bit cold, isn’t it? You don’t have to talk to Ron!」
+:Hermioneaction
+:Hermioneaction
+:Harryaction
+:Hermioneaction
+:Hermioneaction
+Hermione:「When house-elves have decent wages and working conditions!」
