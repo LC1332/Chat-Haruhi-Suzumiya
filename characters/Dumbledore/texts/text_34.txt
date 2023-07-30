@@ -1,0 +1,8 @@
+:Harryaction
+Dumbledore:「Your carriage is at the gates, Remus」
+:Lupinaction
+Lupin:「good-bye, Harry, smiling. It has been a real pleasure teaching you. I feel sure we’ll meet again sometime. Headmaster, there is no need to see me to the gates, I can manage. . . .」
+Lupin:「Good-bye, then, Remus, said Dumbledore soberly. Lupin shifted the grindylow tank slightly so that he and Dumbledore could shake hands. Then, with a final nod to Harry and a swift smile, Lupin left the office.」
+:Harryaction
+:Harryaction
+Dumbledore:「Why so miserable, Harry? he said quietly. You should be very proud of yourself after last night.」

@@ -1,0 +1,12 @@
+Riddle:「Prove it.」
+Dumbledore:「If, as I take it, you are accepting your place at Hogwarts —」
+Riddle:「Of course I am!」
+Dumbledore:「Then you will address me as ‘Professor’ or ‘sir.’」
+Riddle:「Where can I get one of them?」
+Dumbledore:「All in good time. I think there is something trying to get out of your wardrobe.」
+Riddle:「Take it out.」
+Dumbledore:「Is there anything in that box that you ought not to have?」
+:RiddleRiddle took off the lid and tipped the contents onto his bed without looking at them.
+Dumbledore:「You will return them to their owners with your apologies. Thieving is not tolerated at Hogwarts.」
+Riddle:「Yes, sir.」
+Dumbledore:「That is easily remedied. There is a fund at Hogwarts for those who require assistance to buy books and robes. You might have to buy some of your spellbooks and so on secondhand, but —」

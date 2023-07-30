@@ -1,0 +1,10 @@
+:Hermioneaction
+Harry:「the exams are ages away.」
+Hermione:「Ten weeks, That’s not ages, that’s like a second to Nicolas Flamel.」
+Ron:「But we’re not six hundred years old, Anyway, what are you studying for, you already know it all.」
+Hermione:「What am I studying for? Are you crazy? You realize we need to pass these exams to get into the second year? They’re very important, I should have started studying a month ago, I don’t know what’s gotten into me. . . .」
+:teachersaction
+:Harryaction
+Ron:「Oh, we found out who he is ages ago, And we know what that dog’s guarding, it’s a Sorcerer’s St —」
+Hagrid:「Don’ go shoutin’ about it, what’s the matter with yeh?」
+Harry:「There are a few things we wanted to ask you, as a matter of fact, about what’s guarding the Stone apart from Fluffy —」

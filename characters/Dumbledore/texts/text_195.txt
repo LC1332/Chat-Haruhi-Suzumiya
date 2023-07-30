@@ -1,0 +1,11 @@
+Snape:「Gone . . . dead . . .」
+Dumbledore:「Is this remorse, Severus?」
+Snape:「I wish . . . I wish I were dead. . . .」
+Dumbledore:「And what use would that be to anyone? If you loved Lily Evans, if you truly loved her, then your way forward is clear.」
+Snape:「He does not need protection. The Dark Lord has gone —」
+Dumbledore:「The Dark Lord will return, and Harry Potter will be in terrible danger when he does.」
+:Snapepacing up and down in front of Dumbledore
+Snape:「— mediocre, arrogant as his father, a determined rule-breaker, delighted to find himself famous, attention-seeking and impertinent —」
+Dumbledore:「You see what you expect to see, Severus. Other teachers report that the boy is modest, likable, and reasonably talented. Personally, I find him an engaging child.」
+Snape:「Karkaroff intends to flee if the Mark burns.」
+Dumbledore:「Does he? And are you tempted to join him?」

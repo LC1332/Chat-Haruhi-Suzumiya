@@ -1,0 +1,5 @@
+:Riddlestood stock-still by the door, watching the passage outside
+Harry:「Someone was creeping along the passage. He heard whoever it was pass the dungeon where he and Riddle were hidden.」
+:Riddleaction
+:Harryaction
+Harry:「There was something familiar about that voice. . . .」

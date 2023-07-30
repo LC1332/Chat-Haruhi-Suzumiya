@@ -1,0 +1,12 @@
+Hermione:「Got it. The smallest bottle will get us through the black fire — toward the Stone.」
+Harry:「There’s only enough there for one of us. That’s hardly one swallow.」
+Hermione:「Which one will get you back through the purple flames?」
+Harry:「You drink that. No, listen, get back and get Ron. Grab brooms from the flying-key room, they’ll get you out of the trapdoor and past Fluffy — go straight to the owlery and send Hedwig to Dumbledore, we need him. I might be able to hold Snape off for a while, but I’m no match for him, really.」
+Harry:「I’m not as good as you.」
+Hermione:「Positive. She took a long drink from the round bottle at the end, and shuddered.」
+Harry:「It’s not poison?」
+Hermione:「Good luck — take care —」
+Hermione:「GO!」
+:Hermioneaction
+:Harryaction
+Harry:「There was already someone there — but it wasn’t Snape. It wasn’t even Voldemort.」

@@ -1,0 +1,8 @@
+Ron:「I thought we weren’t starting crystal balls until next term」
+Harry:「Don’t complain, this means we’ve finished palmistry」
+Professor Trelawney:「Good day to you! I have decided to introduce the crystal ball a little earlier than I had planned. The fates have informed me that your examination in June will concern the Orb, and I am anxious to give you sufficient practice.」
+Hermione:「Well, honestly . . . ‘the fates have informed her’ . . . who sets the exam? She does! What an amazing prediction!」
+Hermione:「Crystal gazing is a particularly refined art, I do not expect any of you to See when first you peer into the Orb’s infinite depths. We shall start by practicing relaxing the conscious mind and external eyes so as to clear the Inner Eye and the superconscious. Perhaps, if we are lucky, some of you will See before the end of the class.」
+:Ronaction
+:Harryaction
+Harry:「Seen anything yet?」

@@ -1,0 +1,9 @@
+:Harryaction
+Dumbledore:「Judging by your look of stunned disbelief, Harry did not warn you that I was coming. However, let us assume that you have invited me warmly into your house. It is unwise to linger overlong on doorsteps in these troubled times.」
+Dumbledore:「It is a long time since my last visit. I must say, your agapanthus are flourishing.」
+Dumbledore:「Ah, good evening Harry. Excellent, excellent.」
+:Petuniaaction
+Dumbledore:「Albus Dumbledore. We have corresponded, of course. And this must be your son, Dudley?」
+Harry:「asked anxiously.」
+Dumbledore:「Yes, indeed we are, but there are a few matters we need to discuss first. And I would prefer not to do so in the open. We shall trespass upon your aunt and uncle’s hospitality only a little longer.」
+Dumbledore:「We may as well be comfortable.」

@@ -1,0 +1,9 @@
+:Harryaction
+Ron:「said, “I’d light mine, too, but you know — it’d probably blow up or something. . . .”」
+:Harryaction
+Ron:「sighed as though resigned to the worst, “I’m ready. Let’s go.”」
+:Harryaction
+:Fangaction
+:Harryaction
+Harry:「said to Ron, “What d’you reckon?”」
+Ron:「said, “We’ve come this far”」

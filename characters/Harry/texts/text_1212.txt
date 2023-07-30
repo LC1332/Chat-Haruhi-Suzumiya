@@ -1,0 +1,8 @@
+Hermione:「Salvio Hexia . . . Protego Totalum . . . Repello Muggletum . . . Muffliato . . . You could get out the tent, Harry. . . .」
+Harry:「Tent?」
+Hermione:「In the bag!」
+Harry:「In the . . . of course.」
+:Hermioneaction
+:Hermionespell to protect
+Ron:「Don’t say the name!」
+Harry:「Dumbledore said fear of a name —」

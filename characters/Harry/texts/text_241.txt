@@ -1,0 +1,11 @@
+Lupin:「I assumed that if the boggart faced you, it would assume the shape of Lord Voldemort.」
+Harry:「But then, I — I remembered those dementors.」
+Lupin:「Well, well . . . I’m impressed. That suggests that what you fear most of all is — fear. Very wise, Harry.」
+Harry:「So you’ve been thinking that I didn’t believe you capable of fighting the boggart?」
+:Snapeeyes narrowing
+Lupin:「Thanks very much. Could you leave it here on the desk for me?」
+:Snapelook in his eye Harry didn’t like
+Harry:「Professor Snape has very kindly concocted a potion for me.」
+Harry:「Professor Snape’s very interested in the Dark Arts.」
+Lupin:「Disgusting, Well, Harry, I’d better get back to work. I’ll see you at the feast later.」
+Harry:「Right」

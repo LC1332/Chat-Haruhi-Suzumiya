@@ -1,0 +1,7 @@
+Dumbledore:「“Yes, they were talking about Neville’s parents,” said Dumbledore. “His father, Frank, was an Auror just like Professor Moody. He and his wife were tortured for information about Voldemort’s whereabouts after he lost his powers, as you heard.”」
+Harry:「“So they’re dead?” said Harry quietly.」
+Dumbledore:「“No,” said Dumbledore, his voice full of a bitterness Harry had never heard there before. “They are insane. They are both in St. Mungo’s Hospital for Magical Maladies and Injuries. I believe Neville visits them, with his grandmother, during the holidays. They do not recognize him.”」
+:Harryaction
+:Dumbledoreaction
+:Harryaction
+Harry:「“Right,” said Harry hastily, staring at the contents of the Pensieve again, which were swirling more slowly now that Dumbledore had stopped adding thoughts. “And . . . er . . .”」

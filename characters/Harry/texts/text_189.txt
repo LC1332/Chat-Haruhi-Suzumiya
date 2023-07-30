@@ -1,0 +1,7 @@
+Mr. Weasley:「“W-what’s that?” said Mr. Weasley in a stunned voice. “You-Know-Who? En-enchant Ginny? But Ginny’s not . . . Ginny hasn’t been . . . has she?”」
+Harry:「“It was this diary,” said Harry quickly, picking it up and showing it to Dumbledore. “Riddle wrote it when he was sixteen. . . .”」
+:Dumbledoreaction
+Dumbledore:「“Brilliant,” he said softly. “Of course, he was probably the most brilliant student Hogwarts has ever seen.” He turned around to the Weasleys, who were looking utterly bewildered.」
+Mrs. Weasley:「“What’s our Ginny got to do with — with — him?”」
+Ginny:「“His d-diary!” Ginny sobbed. “I’ve b-been writing in it, and he’s been w-writing back all year —”」
+Harry:「Professor Dumbledore . . . Riddle said I’m like him. Strange likenesses, he said. . . .」

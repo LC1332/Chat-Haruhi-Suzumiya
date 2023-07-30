@@ -1,0 +1,11 @@
+Ron:「Merry Christmas」
+Harry:「Will you look at this? I’ve got some presents!」
+Ron:「What did you expect, turnips?」
+:Harryaction
+:Harryaction
+Harry:「That’s friendly」
+Harry:「Hagrid and my aunt and uncle — so who sent these?」
+:Harryaction
+Harry:「That’s really nice of her」
+:Harryaction
+Harry:「What is it?」

@@ -1,0 +1,8 @@
+Malfoy:「said "Who suspects me? For the last time, I didn’t do it, okay? That Bell girl must’ve had an enemy no one knows about — don’t look at me like that! I know what you’re doing, I’m not stupid, but it won’t work — I can stop you!"」
+Snape:「said "Ah . . . Aunt Bellatrix has been teaching you Occlumency, I see. What thoughts are you trying to conceal from your master, Draco?"」
+Malfoy:「said "I’m not trying to conceal anything from him, I just don’t want you butting in!"」
+:Harryaction
+Malfoy:「said "So put me in detention! Report me to Dumbledore!"」
+Snape:「said "You know perfectly well that I do not wish to do either of those things."」
+Malfoy:「said "Looks like you’ll have to break it, then, because I don’t need your protection! It’s my job, he gave it to me and I’m doing it, I’ve got a plan and it’s going to work, it’s just taking a bit longer than I thought it would!"」
+Snape:「said "What is your plan?"」

@@ -1,0 +1,7 @@
+Narrator:Ron think "I must’ve been mental to do this. Mental."
+Harry:「Don’t be thick. You’re going to be fine. It’s normal to be nervous.」
+Narrator:Ron think "I’m rubbish. I’m lousy. I can’t play to save my life. What was I thinking?"
+Harry:「Get a grip. Look at that save you made with your foot the other day, even Fred and George said it was brilliant —」
+Ginny:「How’re you feeling?」
+:Ronaction
+Harry:「He’s just nervous.」

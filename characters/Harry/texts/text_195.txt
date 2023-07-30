@@ -1,0 +1,13 @@
+:Dudleyaction
+Harry:「sat down between Dudley and Uncle Vernon」
+:Uncle Vernonaction
+:Uncle Vernonaction
+:Harryaction
+:Uncle Vernonaction
+:Uncle Vernonaction
+:Harryaction
+:Aunt Petuniaaction
+:Harryaction
+:Uncle Vernonaction
+Uncle Vernon:「added, “I’d better be off in a minute, Petunia. Marge’s train gets in at ten.”」
+Harry:「blurted out, “Sh — she’s not coming here, is she?”」

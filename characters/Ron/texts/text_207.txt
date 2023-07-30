@@ -1,0 +1,11 @@
+:Lupinsaw another dot, moving fast toward you, labeled Sirius Black. . . . I saw him collide with you; I watched as he pulled two of you into the Whomping Willow —
+Ron:「One of us!」
+Lupin:「No, Ron, Two of you.」
+:Lupinstopped his pacing, his eyes moving over Ron.
+Lupin:「Do you think I could have a look at the rat?」
+Ron:「What? What’s Scabbers got to do with it?」
+:Scabbersaction
+:Ronaction
+Ron:「What? What’s my rat got to do with anything?」
+Lupin:「He’s a wizard. An Animagus, by the name of Peter Pettigrew.」
+Ron:「You’re both mental.」

@@ -1,0 +1,10 @@
+Narcissa:「We . . . we are alone, aren’t we?」
+Severus:「Yes, of course. Well, Wormtail’s here, but we’re not counting vermin, are we?」
+Snape:「As you have clearly realized, Wormtail, we have guests.」
+Wormtail:「Narcissa! And Bellatrix! How charming —」
+Snape:「Wormtail will get us drinks, if you’d like them. And then he will return to his bedroom.」
+Wormtail:「I can speak to him myself if I want to!」
+Snape:「Of course you can. But in the meantime, bring us drinks. Some of the elf-made wine will do.」
+:Snapeaction
+Snape:「My apologies, He has lately taken to listening at doors, I don’t know what he means by it. . . . You were saying, Narcissa?」
+Snape:「‘Present company’? And what am I to understand by that, Bellatrix?」

@@ -1,0 +1,12 @@
+Harry:「Sir, I forgot — about fire — they were coming at me and I panicked —」
+Dumbledore:「Quite understandable.」
+:Harryleapt out, then turned quickly to help Dumbledore
+:Dumbledoreaction
+Harry:「Don’t worry, sir, I’ll get us back. . . . Lean on me, sir. . . .」
+:Harryguided his headmaster back around the lake, bearing most of his weight
+Dumbledore:「The protection was . . . after all . . . well-designed. One alone could not have done it. . . . You did well, very well, Harry. . . .」
+Harry:「There’s no need, I got cut on the rock, Just tell me where. . . .」
+:Harrywiped his grazed forearm upon the stone
+:Harrycrossed the outer cave, and helped Dumbledore back into the icy seawater
+Harry:「It’s going to be all right, sir, We’re nearly there. . . . I can Apparate us both back. . . . Don’t worry. . . .」
+Dumbledore:「I am not worried, Harry, I am with you.」

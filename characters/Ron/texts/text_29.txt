@@ -1,0 +1,9 @@
+Hermione:「I knew it, Snape — look.」
+Ron:「What are you doing?」
+Hermione:「He’s doing something — jinxing the broom.」
+Ron:「What should we do?」
+:Hermioneaction
+:HermioneReaching Snape, she crouched down, pulled out her wand, and whispered a few, well-chosen words. Bright blue flames shot from her wand onto the hem of Snape’s robes.
+:HermioneScooping the fire off him into a little jar in her pocket, she scrambled back along the row — Snape would never know what had happened.
+Harry:「Neville, you can look!」
+Ron:「It was Snape, Hermione and I saw him. He was cursing your broomstick, muttering, he wouldn’t take his eyes off you.」

@@ -1,0 +1,10 @@
+Harry:「」
+Ron:「」
+Malfoy:「Potter, have you split up with your girlfriend? Why was she so upset at breakfast?」
+Hagrid:「These’re nifflers. Yeh find ’em down mines mostly. They like sparkly stuff. . . . There yeh go, look.」
+Pansy:「Potter, have you split up with your girlfriend? Why was she so upset at breakfast?」
+Hagrid:「Useful little treasure detectors. Thought we’d have some fun with ’em today. See over there? I’ve buried some gold coins. I’ve got a prize fer whoever picks the niffler that digs up most. Jus’ take off all yer valuables, an’ choose a niffler, an’ get ready ter set ’em loose.」
+:Harryaction
+Hagrid:「Hang on, there’s a spare niffler here . . . who’s missin’? Where’s Hermione?」
+Ron:「She had to go to the hospital wing.」
+Ron:「Can you buy these as pets, Hagrid?」

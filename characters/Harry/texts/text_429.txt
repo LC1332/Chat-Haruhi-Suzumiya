@@ -1,0 +1,9 @@
+:Hermionepassed by without looking at her
+:Harryaction
+Harry:「She’s staying in the village. I bet she’s coming to watch the first task.」
+:Harryaction
+:Hermioneaction
+Hermione:「Why don’t we go and have a butterbeer in the Three Broomsticks, it’s a bit cold, isn’t it? You don’t have to talk to Ron!」
+:Hermioneaction
+:Hermioneaction
+Harry:「The Three Broomsticks was packed, mainly with Hogwarts students enjoying their free afternoon, but also with a variety of magical people Harry rarely saw anywhere else. Harry supposed that as Hogsmeade was the only all-wizard village in Britain, it was a bit of a haven for creatures like hags, who were not as adept as wizards at disguising themselves.」

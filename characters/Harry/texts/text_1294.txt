@@ -1,0 +1,13 @@
+Hermione:「If we can, Shall we get out now, while we can?」
+Harry:「We’ve got this far, I say we go on, Good! So, we need Bogrod to control the cart; I no longer have the authority. But there will not be room for the wizard.」
+:Harryspell to Travers
+:Bogrodwhistled to summon a little cart
+:Harryclambered into the cart
+:Hermionespell to protect from fall
+:Ronpulling Hermione to her feet
+Griphook:「The Thief’s Downfall! It washes away all enchantment, all magical concealment! They know there are impostors in Gringotts, they have set off defenses against us!」
+:Hermionechecking that she still had the beaded bag
+:Harrythrusting his hand under his jacket to make sure he had not lost the Invisibility Cloak
+:Ronpicking up the leather bag of metal tools
+:Hermionespell to break the flow of enchanted water
+Harry:「Lead the way, Griphook!」
