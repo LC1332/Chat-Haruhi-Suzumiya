@@ -2,33 +2,68 @@ import configparser
 import json
 import utils
 import os
+from checkCharacter import checkCharacter
+
+def split_text(self):
+    if self.input_file:
+        with open(os.path.join(self.input_file), encoding='utf-8') as f:
+            data = f.read()
+            for i, dialogue in enumerate(data.split('\n\n')):
+                with open(os.path.join(self.output_folder, f"{os.path.basename(self.input_file)[:-4]}_{i}.txt"),
+                          'w+', encoding='utf-8') as fw:
+                    fw.write(dialogue.strip())
+    elif self.input_folder:
+        for file in os.listdir(self.input_folder):
+            with open(os.path.join(self.input_folder, file), encoding='utf-8') as f:
+                data = f.read()
+                for i, dialogue in enumerate(data.split('\n\n')):
+                    with open(os.path.join(self.output_folder, f"{file[:-4]}_{i}.txt"), 'w+',
+                              encoding='utf-8') as fw:
+                        fw.write(dialogue.strip())
+
+
+def generate_character(cn_role_name, en_role_name, prompt):
+    # 在config.ini中加添角色信息
+    config = configparser.ConfigParser()
+    # 读取配置文件
+    config.read('config.ini', encoding='utf-8')
+    if cn_role_name in config.sections():
+        print(f"已存在{cn_role_name}角色的配置文件")
+        return
+    # 添加新的配置项
+    config.add_section(cn_role_name)
+    config[cn_role_name]['character_folder'] = f"../characters/{en_role_name}"
+    config[cn_role_name][
+        'image_embed_jsonl_path'] = f"../characters/{en_role_name}/jsonl/image_embed.jsonl"
+    config[cn_role_name][
+        'title_text_embed_jsonl_path'] = f"../characters/{en_role_name}/jsonl/title_text_embed.jsonl"
+    config[cn_role_name]['images_folder'] = f"../characters/{en_role_name}/images"
+    config[cn_role_name]["jsonl_folder"] = f"../characters/{en_role_name}/jsonl"
+    config[cn_role_name]['texts_folder'] = f"../characters/{en_role_name}/texts"
+    config[cn_role_name]['system_prompt'] = f"../characters/{en_role_name}/system_prompt.txt"
+    config[cn_role_name]['dialogue_path'] = f"../characters/{en_role_name}/dialogues/"
+    config[cn_role_name]['max_len_story'] = "1500"
+    config[cn_role_name]['max_len_history'] = "1200"
+    config[cn_role_name]['gpt'] = "True"
+    config[cn_role_name]['local_tokenizer'] = "THUDM/chatglm2-6b"
+    config[cn_role_name]['local_model'] = "THUDM/chatglm2-6b"
+    config[cn_role_name]['local_lora'] = "Jyshen/Chat_Suzumiya_GLM2LoRA"
+
+    # 保存修改后的配置文件
+    with open('config.ini', 'w', encoding='utf-8') as config_file:
+        config.write(config_file)
+
+    with open(os.path.join(f"../characters/{en_role_name}", 'system_prompt.txt'), 'w+', encoding='utf-8') as f:
+        f.write(prompt)
 
 
 class StoreData:
-    def __init__(self, configuration, input_folder=None, input_file=None, output_folder=None):
+    def __init__(self, configuration):
         self.image_embed_jsonl_path = configuration['image_embed_jsonl_path']
         self.title_text_embed_jsonl_path = configuration['title_text_embed_jsonl_path']
         self.images_folder = configuration['images_folder']
         self.texts_folder = configuration['texts_folder']
         self.model = utils.download_models()
-        self.input_folder = input_folder
-        self.input_file = input_file
-        self.output_folder = output_folder
-
-    def split_text(self):
-        if self.input_file:
-            with open(os.path.join(self.input_file), encoding='utf-8') as f:
-                data = f.read()
-                for i, dialogue in enumerate(data.split('\n\n')):
-                    with open(os.path.join(self.output_folder, f"{os.path.basename(self.input_file)[:-4]}_{i}.txt"), 'w+', encoding='utf-8') as fw:
-                        fw.write(dialogue.strip())
-        elif self.input_folder:
-            for file in os.listdir(self.input_folder):
-                with open(os.path.join(self.input_folder, file), encoding='utf-8') as f:
-                    data = f.read()
-                    for i, dialogue in enumerate(data.split('\n\n')):
-                        with open(os.path.join(self.output_folder, f"{file[:-4]}_{i}.txt"), 'w+', encoding='utf-8') as fw:
-                            fw.write(dialogue.strip())
 
     def preload(self):
         title_text_embed = []
@@ -59,17 +94,23 @@ class StoreData:
 
 
 if __name__ == '__main__':
+    # ini 生成角色配置文件
+    prompt = "N"
+    # 雷电将军、加藤惠、流浪者、八重神子、钟离
+    cn_role_name = "韦小宝"
+    en_role_name = "weixiaobao"
+    generate_character(cn_role_name, en_role_name, prompt=prompt)
+    # 读取角色配置文件
     configuration = {}
     config = configparser.ConfigParser()
-    character = "汤师爷"  # 指定1
     config.read('config.ini', encoding='utf-8')
     sections = config.sections()
-    items = config.items(character)
-    print(f"正在加载: {character} 角色")
+    items = config.items(cn_role_name)
+    print(f"正在加载: {cn_role_name} 角色")
     for key, value in items:
         configuration[key] = value
-    input_file = "../characters/tangshiye/汤师爷台词_总.txt"
-    output_folder = "../characters/tangshiye/texts"  # 指定3
-    run = StoreData(configuration, input_file=input_file, output_folder=output_folder)
-    run.split_text()
+    # 检查角色文件夹
+    checkCharacter(configuration)
+    # 存储数据
+    run = StoreData(configuration)
     run.preload()
