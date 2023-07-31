@@ -4,22 +4,15 @@ import utils
 import os
 from checkCharacter import checkCharacter
 
-def split_text(self):
-    if self.input_file:
-        with open(os.path.join(self.input_file), encoding='utf-8') as f:
+
+def split_text(input_file, output_folder):
+    if input_file:
+        with open(os.path.join(input_file), encoding='utf-8') as f:
             data = f.read()
             for i, dialogue in enumerate(data.split('\n\n')):
-                with open(os.path.join(self.output_folder, f"{os.path.basename(self.input_file)[:-4]}_{i}.txt"),
+                with open(os.path.join(output_folder, f"{os.path.basename(input_file)[:-4]}_{i}.txt"),
                           'w+', encoding='utf-8') as fw:
                     fw.write(dialogue.strip())
-    elif self.input_folder:
-        for file in os.listdir(self.input_folder):
-            with open(os.path.join(self.input_folder, file), encoding='utf-8') as f:
-                data = f.read()
-                for i, dialogue in enumerate(data.split('\n\n')):
-                    with open(os.path.join(self.output_folder, f"{file[:-4]}_{i}.txt"), 'w+',
-                              encoding='utf-8') as fw:
-                        fw.write(dialogue.strip())
 
 
 def generate_character(cn_role_name, en_role_name, prompt):
@@ -27,34 +20,42 @@ def generate_character(cn_role_name, en_role_name, prompt):
     config = configparser.ConfigParser()
     # 读取配置文件
     config.read('config.ini', encoding='utf-8')
+    configuration = {}
     if cn_role_name in config.sections():
         print(f"已存在{cn_role_name}角色的配置文件")
-        return
-    # 添加新的配置项
-    config.add_section(cn_role_name)
-    config[cn_role_name]['character_folder'] = f"../characters/{en_role_name}"
-    config[cn_role_name][
-        'image_embed_jsonl_path'] = f"../characters/{en_role_name}/jsonl/image_embed.jsonl"
-    config[cn_role_name][
-        'title_text_embed_jsonl_path'] = f"../characters/{en_role_name}/jsonl/title_text_embed.jsonl"
-    config[cn_role_name]['images_folder'] = f"../characters/{en_role_name}/images"
-    config[cn_role_name]["jsonl_folder"] = f"../characters/{en_role_name}/jsonl"
-    config[cn_role_name]['texts_folder'] = f"../characters/{en_role_name}/texts"
-    config[cn_role_name]['system_prompt'] = f"../characters/{en_role_name}/system_prompt.txt"
-    config[cn_role_name]['dialogue_path'] = f"../characters/{en_role_name}/dialogues/"
-    config[cn_role_name]['max_len_story'] = "1500"
-    config[cn_role_name]['max_len_history'] = "1200"
-    config[cn_role_name]['gpt'] = "True"
-    config[cn_role_name]['local_tokenizer'] = "THUDM/chatglm2-6b"
-    config[cn_role_name]['local_model'] = "THUDM/chatglm2-6b"
-    config[cn_role_name]['local_lora'] = "Jyshen/Chat_Suzumiya_GLM2LoRA"
-
-    # 保存修改后的配置文件
-    with open('config.ini', 'w', encoding='utf-8') as config_file:
-        config.write(config_file)
-
+    else:
+        # 添加新的配置项
+        config.add_section(cn_role_name)
+        config[cn_role_name]['character_folder'] = f"../characters/{en_role_name}"
+        config[cn_role_name][
+            'image_embed_jsonl_path'] = f"../characters/{en_role_name}/jsonl/image_embed.jsonl"
+        config[cn_role_name][
+            'title_text_embed_jsonl_path'] = f"../characters/{en_role_name}/jsonl/title_text_embed.jsonl"
+        config[cn_role_name]['images_folder'] = f"../characters/{en_role_name}/images"
+        config[cn_role_name]["jsonl_folder"] = f"../characters/{en_role_name}/jsonl"
+        config[cn_role_name]['texts_folder'] = f"../characters/{en_role_name}/texts"
+        config[cn_role_name]['system_prompt'] = f"../characters/{en_role_name}/system_prompt.txt"
+        config[cn_role_name]['dialogue_path'] = f"../characters/{en_role_name}/dialogues/"
+        config[cn_role_name]['max_len_story'] = "1500"
+        config[cn_role_name]['max_len_history'] = "1200"
+        config[cn_role_name]['gpt'] = "True"
+        config[cn_role_name]['local_tokenizer'] = "THUDM/chatglm2-6b"
+        config[cn_role_name]['local_model'] = "THUDM/chatglm2-6b"
+        config[cn_role_name]['local_lora'] = "Jyshen/Chat_Suzumiya_GLM2LoRA"
+        # 保存修改后的配置文件
+        with open('config.ini', 'w', encoding='utf-8') as config_file:
+            config.write(config_file)
+        config.read('config.ini', encoding='utf-8')
+    # 检查角色文件夹
+    items = config.items(cn_role_name)
+    print(f"正在加载: {cn_role_name} 角色")
+    for key, value in items:
+        configuration[key] = value
+    print(configuration)
+    checkCharacter(configuration)
     with open(os.path.join(f"../characters/{en_role_name}", 'system_prompt.txt'), 'w+', encoding='utf-8') as f:
         f.write(prompt)
+    return configuration
 
 
 class StoreData:
@@ -94,23 +95,17 @@ class StoreData:
 
 
 if __name__ == '__main__':
-    # ini 生成角色配置文件
     prompt = "N"
-    # 雷电将军、加藤惠、流浪者、八重神子、钟离
-    cn_role_name = "韦小宝"
-    en_role_name = "weixiaobao"
-    generate_character(cn_role_name, en_role_name, prompt=prompt)
-    # 读取角色配置文件
-    configuration = {}
-    config = configparser.ConfigParser()
-    config.read('config.ini', encoding='utf-8')
-    sections = config.sections()
-    items = config.items(cn_role_name)
-    print(f"正在加载: {cn_role_name} 角色")
-    for key, value in items:
-        configuration[key] = value
-    # 检查角色文件夹
-    checkCharacter(configuration)
+    cn_role_name = "坤坤"
+    en_role_name = "kunkun"
+
+    # ini 生成角色配置文件
+    configuration = generate_character(cn_role_name, en_role_name, prompt=prompt)
+    # 分割文件
+    input_file = './kunkun_all.txt'
+    output_folder = f"../characters/{en_role_name}/texts"
+    split_text(input_file, output_folder)
+
     # 存储数据
     run = StoreData(configuration)
     run.preload()
