@@ -5,46 +5,51 @@ from datetime import datetime
 from zipfile import ZipFile
 import time
 import gradio as gr
-from app import ChatPerson
+from app import ChatPerson, ChatSystem
 from text import Text
 
 
-def create_gradio(chat_person):
+def create_gradio(chat_system):
+    character_list = chat_system.getAllCharacters()
     # from google.colab import drive
     # drive.mount(drive_path)
     def generate_user_id(ip_address):
         hash_object = hashlib.sha256(ip_address.encode())
         return hash_object.hexdigest()
 
-    def save_response(chat_history_tuple):
-        with open(f"{chat_person.ChatGPT.dialogue_path}/conversation_{time.time()}.txt", "w", encoding='utf-8') as file:
-            for cha, res in chat_history_tuple:
-                file.write(cha)
-                file.write("\n---\n")
-                file.write(res)
-                file.write("\n---\n")
+    # def save_response(chat_history_tuple):
+    #     with open(f"{chat_person.ChatGPT.dialogue_path}/conversation_{time.time()}.txt", "w", encoding='utf-8') as file:
+    #         for cha, res in chat_history_tuple:
+    #             file.write(cha)
+    #             file.write("\n---\n")
+    #             file.write(res)
+    #             file.write("\n---\n")
 
-    def respond(role_name, user_message, chat_history, request: gr.Request):
-        print("history is here : ", chat_history)
+    def respond(role_name, user_message, chat_history, character, request: gr.Request):
+        # print("history is here : ", chat_history)
+        # character = character.value
+        print("the character is : ", character)
         input_message = role_name + ':「' + user_message + '」'
-        bot_message = chat_person.getResponse(input_message, chat_history)
+        bot_message = chat_system.getResponse(input_message, chat_history, character)
         chat_history.append((input_message, bot_message))
-        save_response(chat_history)
-        # self.save_response(chat_history)
-        # time.sleep(1)
-        # jp_text = pipe(f'<-zh2ja-> {bot_message}')[0]['translation_text']
-        # jp_audio_store = vits_haruhi.vits_haruhi(bot_message, 6)
-        # return "" , chat_history, bot_message, jp_text
+        # chat_system.addChatHistory(character, chat_history)
         return "", chat_history, bot_message
 
-    def getImage(query):
-        return chat_person.ChatGPT.text_to_image(query)
+    def getImage(query, character):
+        pass
+        return chat_system.getImage(query, character)
+        # return chat_person.ChatGPT.text_to_image(query)
 
     def switchCharacter(characterName, chat_history):
+        pass
         chat_history = []
-        chat_person.switchCharacter(characterName)
-        # print(chat_person.ChatGPT.image_path)
+        chat_system.addCharacter(character=characterName)
+        # chat_history = chat_system.getChatHistory(characterName)
         return chat_history, None
+        # chat_history = []
+        # chat_person.switchCharacter(characterName)
+        # # print(chat_person.ChatGPT.image_path)
+        # return chat_history, None
 
     def upload_file(file_obj):
         """上传文件，zipfile解压文件名乱码，单独用filenames保存"""
@@ -70,7 +75,7 @@ def create_gradio(chat_person):
         )
         with gr.Tab("Chat-Haruhi") as chat:
             api_key = gr.Textbox(label="输入key", value="sr-xxxxxxxx")
-            character = gr.Radio(["李鲁鲁", "凉宫春日", "李云龙", "于谦", "神里绫华", "王多鱼", "汤师爷", "韦小宝", "加藤惠", "雷电将军", "流浪者", "八重神子", "钟离"], label="Character", value='凉宫春日')
+            character = gr.Radio(character_list, label="Character", value='凉宫春日')
             image_input = gr.Textbox(visible=False)
             japanese_input = gr.Textbox(visible=False)
             with gr.Row():
@@ -96,12 +101,12 @@ def create_gradio(chat_person):
 
             clear.click(lambda: None, None, chatbot, queue=False)
             # msg.submit(respond, [role_name, msg, chatbot], [msg, chatbot, image_input, japanese_output])
-            msg.submit(respond, [role_name, msg, chatbot], [msg, chatbot, image_input])
+            msg.submit(respond, [role_name, msg, chatbot, character], [msg, chatbot, image_input])
             # sub.click(fn=respond, inputs=[role_name, msg, chatbot], outputs=[msg, chatbot, image_input, japanese_output])
-            sub.click(fn=respond, inputs=[role_name, msg, chatbot], outputs=[msg, chatbot, image_input])
+            sub.click(fn=respond, inputs=[role_name, msg, chatbot, character], outputs=[msg, chatbot, image_input])
             # audio_btn.click(fn=update_audio, inputs=[audio, japanese_output], outputs=audio)
 
-            image_button.click(getImage, inputs=image_input, outputs=image_output)
+            image_button.click(getImage, inputs=[image_input, character], outputs=image_output)
         with gr.Tab("Custom Character"):
             format_rule = """
     台本格式：台本文件夹打包成zip
@@ -154,5 +159,8 @@ def create_gradio(chat_person):
     demo.launch(debug=True, share=True)
 
 
-chat_person = ChatPerson()
-create_gradio(chat_person)
+# chat_person = ChatPerson()
+# create_gradio(chat_person)
+
+chat_system = ChatSystem()
+create_gradio(chat_system)

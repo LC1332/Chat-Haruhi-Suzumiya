@@ -21,8 +21,12 @@ class ChatSystem:
     
     def addCharacter(self,character="DEFAULT"):
         pass
-        # self.characterList.append(ChatPerson(character=character))
-        self.characterList[character] = ChatPerson(character=character)
+        if (character in self.characterList):
+            return
+        chatPerson = ChatPerson(character=character)
+        if (character == "DEFAULT"):
+            character = "凉宫春日"
+        self.characterList[character] = chatPerson
         
     def getAllCharacters(self):
         pass
@@ -47,16 +51,35 @@ class ChatSystem:
 
     def getCharacter(self, character):
         pass
+        return self.characterList[character]
+
+    def addChatHistory(self, character, all_history):
+        #这个部分后面也要看着挪进数据库
+        pass
+        if (character not in self.chatHistory):
+            self.chatHistory[character] = []
+            self.chatHistory[character].append(all_history[-1])
+            return 
+        self.chatHistory[character].append(all_history[-1])
+        return
 
     def getResponse(self, user_message, chat_history_tuple, character):
         pass
         # print("this is chathistory tuple: ", chat_history_tuple)
-        # chatPerson_character = 
-        if (self.configuration["gpt"]):
+        chatPerson_character = self.getCharacter(character)
+        # history = self.getChatHistory(character)
+        # self.addChatHistory(character, chat_history_tuple)
+        if (chatPerson_character.configuration["gpt"]):
             print("正在获取GPT回复")
-            response = self.ChatGPT.get_response(user_message, chat_history_tuple)
+            print("在给入GPT之前, 给入的history: ", chat_history_tuple)
+            response = chatPerson_character.getResponse(user_message, chat_history_tuple)
             print("获取回复完毕")
             return response
+    
+    def getImage(self, query, character):
+        pass
+        chat_person = self.characterList[character]
+        return chat_person.ChatGPT.text_to_image(query)
         
 
 class ChatPerson:
@@ -125,11 +148,11 @@ class ChatPerson:
 
     def getResponse(self, user_message, chat_history_tuple):
         pass
-        print("this is chathistory tuple: ", chat_history_tuple)
+        # print("this is chathistory tuple: ", chat_history_tuple)
         if (self.configuration["gpt"]):
-            print("正在获取GPT回复")
+            # print("正在获取GPT回复")
             response = self.ChatGPT.get_response(user_message, chat_history_tuple)
-            print("获取回复完毕")
+            # print("获取回复完毕")
             return response
         
     def switchCharacter(self, characterName):

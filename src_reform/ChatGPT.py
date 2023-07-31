@@ -258,7 +258,7 @@ class ChatGPT:
 
         ## TODO: visualize seletected sample later
         print('当前辅助sample:', selected_sample)
-
+        
         messages = self.organize_message_langchain(story, history_chat, history_response, new_query)
         # print("this is os.environment:  ", os.environ["OPENAI_API_KEY"])
         # print("OPENAI_API_KEY" in os.environ.keys())
