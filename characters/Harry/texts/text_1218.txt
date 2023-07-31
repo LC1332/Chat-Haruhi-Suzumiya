@@ -1,0 +1,10 @@
+Hermione:「Better? asked Hermione.」
+Harry:「Yeah, loads better!」
+Hermione:「Harry, she said, crouching down in front of him and using the kind of voice he associated with visiting the very sick, you don’t think you’ve been possessed, do you?」
+Harry:「What? No! he said defensively. I remember everything we’ve done while I’ve been wearing it. I wouldn’t know what I’d done if I’d been possessed, would I? Ginny told me there were times when she couldn’t remember anything.」
+Ron:「This is You-Know-Who we’re talking about, right? Not you?」
+:Ronaction
+Hermione:「You told us that You-Know-Who asked Dumbledore to give him a job after he left.」
+Harry:「That’s right.」
+Hermione:「But he didn’t get the job, did he? So he never got the chance to find a founder’s object there and hide it in the school!」
+Harry:「Okay, then. Forget Hogwarts.」

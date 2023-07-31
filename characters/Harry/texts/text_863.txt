@@ -1,0 +1,9 @@
+Umbridge:「agreed but sounded apprehensive」
+Harry:「asked if they can have Umbridge's wand since they're going first」
+Umbridge:「refused and poked Harry in the back with her wand」
+Narrator:Harry think "misgivings increased about walking into the forest without wands"
+Umbridge:「asked if they were going the right way」
+Hermione:「said yes and crashed through the undergrowth with unnecessary noise」
+:Umbridgeaction
+:Hermioneaction
+Harry:「hurried to catch up with Hermione and asked her to keep her voice down」

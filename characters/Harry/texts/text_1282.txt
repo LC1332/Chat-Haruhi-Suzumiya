@@ -1,0 +1,11 @@
+Ollivander:「Hawthorn and unicorn hair. Ten inches precisely. Reasonably springy. This was the wand of Draco Malfoy.」
+Harry:「Was? Isn’t it still his?」
+Ollivander:「Perhaps not. If you took it —」
+Harry:「— I did —」
+Ollivander:「The wand chooses the wizard. That much has always been clear to those of us who have studied wandlore.」
+Harry:「A person can still use a wand that hasn’t chosen them, though?」
+:Ronaction
+Narrator:Ollivander think "Chestnut and dragon heartstring. Nine-and-a-quarter inches. Brittle. I was forced to make this shortly after my kidnapping, for Peter Pettigrew. Yes, if you won it, it is more likely to do your bidding, and do it well, than another wand."
+Harry:「And this holds true for all wands, does it?」
+Ollivander:「Necessary? No, I should not say that it is necessary to kill.」
+Harry:「There are legends, though, Legends about a wand — or wands — that have passed from hand to hand by murder.」

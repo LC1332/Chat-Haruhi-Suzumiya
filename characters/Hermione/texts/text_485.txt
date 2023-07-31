@@ -1,0 +1,16 @@
+Ron:「I’m here, mate.」
+Hermione:「I don’t know, but whatever it was, it was dangerous,」
+:Hermioneaction
+Hermione:「Get out of the way!」
+:Harryaction
+:Harryaction
+Hermione:「Right, we’re leaving that room,」
+:Hermioneaction
+Harry:「This is it!」
+Ginny:「Oh look!」
+:Ginnyaction
+Harry:「Keep going!」
+Ginny:「You dawdled enough by that old arch!」
+Harry:「This is it,」
+Harry:「It’s through here —」
+Hermione:「You said it was row ninety-seven,」

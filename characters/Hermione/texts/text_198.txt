@@ -1,0 +1,6 @@
+Ron:「Either explain what you’re on about or go away, Malfoy.」
+Hermione:「Don’t tell me you don’t know? You’ve got a father and brother at the Ministry and you don’t even know? My God, my father told me about it ages ago . . . heard it from Cornelius Fudge. But then, Father’s always associated with the top people at the Ministry. . . . Maybe your father’s too junior to know about it, Weasley . . . yes . . . they probably don’t talk about important stuff in front of him. . . .」
+:Malfoyaction
+:Ronaction
+Hermione:「Ron!」
+Hermione:「“Of course he does,” said Hermione quietly. “Don’t let Malfoy get to you, Ron —”」

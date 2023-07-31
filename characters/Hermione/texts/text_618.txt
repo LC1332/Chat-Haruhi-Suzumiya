@@ -1,0 +1,6 @@
+Narrator:Harry think "Never once, in six years, had Dumbledore told Harry that they had both lived and lost loved ones in Godric’s Hollow. Why? Were Lily and James buried close to Dumbledore’s mother and sister? Had Dumbledore visited their graves, perhaps walked past Lily’s and James’s to do so? And he had never once told Harry . . . never bothered to say . . ."
+Hermione:「I simply can’t dance anymore. Ron’s gone looking to find more butterbeers. It’s a bit odd, I’ve just seen Viktor storming away from Luna’s father, it looked like they’d been arguing — Harry, are you okay?」
+:Patronusaction
+Narrator:- think "The Ministry has fallen. Scrimgeour is dead. They are coming."
+:Harryaction
+Hermione:「“Ron!” Hermione cried. “Ron, where are you?”」

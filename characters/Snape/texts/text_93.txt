@@ -1,0 +1,13 @@
+Lily:「“It’s not hurting you,” said Lily, but she closed her hand on the blossom and threw it back to the ground.」
+Petunia:「“It’s not right,” said Petunia, but her eyes had followed the flower’s flight to the ground and lingered upon it. “How do you do it?” she added, and there was definite longing in her voice.」
+Snape:「It’s obvious, isn’t it?」
+:Petuniaaction
+:Lilyaction
+:Snapeaction
+Snape:「I know what you are.」
+Lily:「That’s not a very nice thing to say to somebody!」
+:Snapeaction
+:Petuniaaction
+Petunia:「You’re that Snape boy! They live down Spinner’s End by the river」
+Petunia:「Why have you been spying on us?」
+Snape:「Haven’t been spying」

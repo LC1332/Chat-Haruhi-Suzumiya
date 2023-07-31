@@ -1,0 +1,12 @@
+Ernie:「“That Draco Malfoy character, he seems very pleased about all this, doesn’t he? D’you know, I think he might be Slytherin’s heir.”」
+Ron:「“That’s clever of you,”」
+Ernie:「“Do you think it’s Malfoy, Harry?”」
+Harry:「“No,”」
+:Harryaction
+Ron:「“Ouch! What’re you —”」
+:Ernie and Hannahaction
+:Harryaction
+Harry:「“Looks like they’re heading for the Forbidden Forest. . . .”」
+:Ronaction
+Harry:「“We’ll have to use the Invisibility Cloak again. We can take Fang with us. He’s used to going into the forest with Hagrid, he might be some help.”」
+Ron:「“Right,”」

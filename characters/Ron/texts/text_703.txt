@@ -1,0 +1,9 @@
+Hermione:「said "Half-blood."」
+Scabior:「said "Easy enough to check, But the ’ole lot of ’em look like they could still be ’ogwarts age —"」
+Ron:「said "We’b lebt."」
+Scabior:「said "Left, ’ave you, ginger? And you decided to go camping? And you thought, just for a laugh, you’d use the Dark Lord’s name?"」
+Ron:「said "Nod a laugh, Accident?"」
+Hermione:「Well, they don’t show the Dark Lord proper respect, so the name’s been Tabooed. A few Order members have been tracked that way. We’ll see. Bind them up with the other two prisoners!」
+:Unknownaction
+Harry:「Anyone still got a wand?」
+Ron:「No」

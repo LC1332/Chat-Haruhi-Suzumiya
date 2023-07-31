@@ -1,0 +1,8 @@
+Fudge:「Dumbledore, Amos Diggory’s running . . . he’s coming over. . . . Don’t you think you should tell him — before he sees — ?」
+Harry:「Dumbledore said stay,」
+Harry:「It’s all right, son, I’ve got you . . . come on . . . hospital wing . . .」
+:Harryaction
+Mad-Eye Moody:「The Dark Lord was there? What happened then?」
+Harry:「Killed Cedric . . . they killed Cedric. . . .」
+Mad-Eye Moody:「The Dark Lord got his body back? He’s returned?」
+Harry:「And the Death Eaters came . . . and then we dueled. . . .」

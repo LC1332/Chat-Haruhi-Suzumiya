@@ -1,0 +1,9 @@
+:Dumbledoreaction
+Harry:「“Well, Harry, I promised that you could come with me.”」
+:Harryaction
+Harry:「“If I . . .”」
+:Harryaction
+Dumbledore:「“I am not sure which it is — though I think we can rule out the snake — but I believe it to be hidden in a cave on the coast many miles from here, a cave I have been trying to locate for a very long time: the cave in which Tom Riddle once terrorized two children from his orphanage on their annual trip; you remember?”」
+Harry:「“Yes,” said Harry. “How is it protected?”」
+Dumbledore:「“What has happened to you?”」
+Harry:「“Nothing,” lied Harry promptly.」

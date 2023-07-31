@@ -1,0 +1,9 @@
+Ron:「Oh, I’m so glad we know what it’s called, that’s a great help, Shut up, I’m trying to remember how to kill it!」
+Harry:「Well, hurry up, I can’t breathe!」
+Hermione:「Devil’s Snare, Devil’s Snare . . . what did Professor Sprout say? — it likes the dark and the damp —」
+Harry:「So light a fire!」
+:Hermioneaction
+Harry:「Lucky you pay attention in Herbology, Hermione,」
+:Harryreminded of Gringotts, remembered the dragons said to be guarding vaults in the wizards’ bank
+Ron:「Do you think it’s a ghost?」
+Harry:「I don’t know . . . sounds like wings to me.」

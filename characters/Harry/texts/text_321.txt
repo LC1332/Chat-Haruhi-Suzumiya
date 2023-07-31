@@ -1,0 +1,9 @@
+Hagrid:「Leavin’, isn’ he? Resigned firs’ thing this mornin’. Says he can’t risk it happenin’ again.」
+Harry:「I’m going to see him,」
+Harry:「I saw you coming,」
+Harry:「Why? The Ministry of Magic don’t think you were helping Sirius, do they?」
+Lupin:「This time tomorrow, the owls will start arriving from parents. . . . They will not want a werewolf teaching their children, Harry. And after last night, I see their point. I could have bitten any of you. . . . That must never happen again.」
+Harry:「You’re the best Defense Against the Dark Arts teacher we’ve ever had! Don’t go!」
+:Harryaction
+Lupin:「What else could have driven the dementors back?」
+Harry:「told Lupin what had happened」

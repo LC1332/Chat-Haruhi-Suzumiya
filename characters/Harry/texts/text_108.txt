@@ -1,0 +1,9 @@
+Ron:「“Check that no one’s watching,” said Ron, starting the ignition with another tap of his wand. Harry stuck his head out of the window: Traffic was rumbling along the main road ahead, but their street was empty.」
+Harry:「“Okay,” he said.」
+:Ronaction
+Ron:「“Let’s go,” said Ron’s voice from his right.」
+:Harryaction
+:Ronaction
+Ron:「Hold on!」
+Ron:「Now what?」
+Harry:「We need to see the train to know what direction to go in.」

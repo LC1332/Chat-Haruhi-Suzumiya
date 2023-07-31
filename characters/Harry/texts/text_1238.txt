@@ -1,0 +1,9 @@
+:Ronaction
+Harry:「“You can do it,” said Harry, “you can! You’ve just got the sword, I know it’s supposed to be you who uses it. Please, just get rid of it, Ron.”」
+:Ronaction
+Ron:「“Tell me when,” he croaked.」
+Narrator:Harry think "“On three,” said Harry, looking back down at the locket and narrowing his eyes, concentrating on the letter S, imagining a serpent, while the contents of the locket rattled like a trapped cockroach. It would have been easy to pity it, except that the cut around Harry’s neck still burned."
+:Horcruxaction
+Harry:「“Stab,” said Harry, holding the locket steady on the rock.」
+Horcrux:「“I have seen your heart, and it is mine.”」
+Harry:「“Don’t listen to it!” Harry said harshly. “Stab it!”」

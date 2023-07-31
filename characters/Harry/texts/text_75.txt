@@ -1,0 +1,13 @@
+Ron:「Looks like a harp, Snape must have left it there.」
+Harry:「It must wake up the moment you stop playing. Well, here goes . . .」
+:Harryput Hagrid’s flute to his lips and blew
+:Harryslipped out of the Cloak and crept toward the trapdoor
+Hermione:「No, I don’t!」
+:Ronaction
+Hermione:「What can you see?」
+Ron:「Nothing — just black — there’s no way of climbing down, we’ll just have to drop.」
+Harry:「You want to go first? Are you sure? Give the flute to Hermione so she can keep him asleep.」
+Harry:「If anything happens to me, don’t follow. Go straight to the owlery and send Hedwig to Dumbledore, right?」
+:Harryfalling down
+Ron:「What’s this stuff?」
+Harry:「Dunno, some sort of plant thing. I suppose it’s here to break the fall. Come on, Hermione!」

@@ -1,0 +1,9 @@
+:Harryaction
+Hermione:「It’s them!」
+Tonks:「Remus!」
+:Tonksaction
+:Lupinaction
+:Ronaction
+Harry:「You’re okay,」
+:Hermioneflew at Harry and hugged him tightly
+Hermione:「Always the tone of surprise,」

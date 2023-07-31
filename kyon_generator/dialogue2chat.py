@@ -1,4 +1,6 @@
 import argparse
+import os
+import json
 
 # Chat凉宫春日 project (https://github.com/LC1332/Chat-Haruhi-Suzumiya)
 # Chat凉宫春日是模仿凉宫春日等一系列动漫人物，使用近似语气、个性和剧情聊天的语言模型，
@@ -13,12 +15,42 @@ import argparse
 def process_dialogue(input_file, output_file, role, other_names):
     """
     核心函数，用于处理聊天记录，从中抽取非主角的对话
-
-    TODO: 在这里填写实际的处理逻辑
-
-    注意处理主角的其他可能名字
     """
-    pass
+    result = []
+    output_dir = os.path.abspath(os.path.dirname(output_file))
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    cnt = 0
+    
+    f_read = open(input_file, 'r',encoding='utf-8')
+    lines = f_read.readlines()
+    last_item = {}
+    for line in lines:
+        cnt += 1
+        content = json.loads(line)["dialogue"]
+        for item in content:
+            current_role = item["role"]
+            if current_role in other_names + [role]:
+                if last_item and not last_item["text"] == "": 
+                    result.append(last_item)
+                last_item = {}
+            else:
+                last_item = item
+    return generage_jsonl(result, output_file)
+
+
+
+def generage_jsonl(result, output_file):
+    fw = open(output_file, 'w+', encoding='utf-8')
+    for content in result:       
+        if content:
+            content["text"] = content["text"].strip()
+            if content["text"] != '':
+                json.dump({"role": content["role"], "text": content["text"], "source": "dialogue"}, fw, ensure_ascii=False)
+                fw.write("\n")
+    fw.close()
+
+
 
 if __name__ == '__main__':
     # 解析命令行参数
@@ -37,3 +69,7 @@ if __name__ == '__main__':
 
     # 调用核心函数进行处理
     process_dialogue(input_file, output_file, role, other_names)
+
+
+    
+#python dialogue2chat.py -input ./data/Haruhi-Lulu_Dialogues.jsonl -output ./output/chat_from_dialogue.jsonl -role "春日" -other_names 凉宫 凉宫春日

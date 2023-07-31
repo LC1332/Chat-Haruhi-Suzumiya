@@ -1,0 +1,8 @@
+Scrimgeour:「We’ve only looked in for five minutes, so I’ll have a stroll around the yard while you catch up with Percy. No, no, I assure you I don’t want to butt in! Well, if anybody cared to show me your charming garden . . . Ah, that young man’s finished, why doesn’t he take a stroll with me?」
+Harry:「Yeah, all right」
+:Harryaction
+Scrimgeour:「Wonderful! We’ll just take a turn around the garden, and Percy and I’ll be off. Carry on, everyone!」
+Harry:「Charming.」
+Scrimgeour:「The rumors that have flown around! Well, of course, we both know how these stories get distorted . . . all these whispers of a prophecy . . . of you being ‘the Chosen One’ . . .」
+Scrimgeour:「I assume that Dumbledore has discussed these matters with you?」
+Harry:「Yeah, we’ve discussed it.」

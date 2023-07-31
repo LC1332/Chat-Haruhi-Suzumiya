@@ -1,0 +1,9 @@
+Hermione:「What else did you take, what else? ANSWER ME! CRUCIO!」
+Harry:「Help us! We’re in the cellar of Malfoy Manor, help us!」
+Harry:「HERMIONE! HERMIONE!」
+Lucius:「But we can find out easily! Draco, fetch the goblin, he can tell us whether the sword is real or not!」
+Harry:「Griphook, you must tell them that sword’s a fake, they mustn’t know it’s the real one, Griphook, please —」
+:Malfoyaction
+:DobbyApparated into their midst
+Harry:「Dobby has come to rescue you.」
+Harry:「I want you to grab Luna, Dean, and Mr. Ollivander, and take them to Bill and Fleur’s.」

@@ -1,0 +1,6 @@
+:Dumbledoreaction
+Harry:「I — DON’T!」
+:Dumbledoreaction
+Harry:「YOU DON’T KNOW HOW I FEEL!」
+:Harryaction
+Harry:「Let me out,」
