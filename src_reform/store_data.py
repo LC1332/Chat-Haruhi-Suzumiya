@@ -15,7 +15,7 @@ def split_text(input_file, output_folder):
                     fw.write(dialogue.strip())
 
 
-def generate_character(cn_role_name, en_role_name, prompt):
+def generate_character(cn_role_name, en_role_name, prompt=None):
     # 在config.ini中加添角色信息
     config = configparser.ConfigParser()
     # 读取配置文件
@@ -53,8 +53,9 @@ def generate_character(cn_role_name, en_role_name, prompt):
         configuration[key] = value
     print(configuration)
     checkCharacter(configuration)
-    with open(os.path.join(f"../characters/{en_role_name}", 'system_prompt.txt'), 'w+', encoding='utf-8') as f:
-        f.write(prompt)
+    if prompt is not None:
+        with open(os.path.join(f"../characters/{en_role_name}", 'system_prompt.txt'), 'w+', encoding='utf-8') as f:
+            f.write(prompt)
     return configuration
 
 
@@ -95,17 +96,34 @@ class StoreData:
 
 
 if __name__ == '__main__':
-    prompt = "N"
-    cn_role_name = "坤坤"
-    en_role_name = "kunkun"
+    # prompt = "N"
+    cn_role_name = "韦小宝"
+    en_role_name = "weixiaobao"
 
     # ini 生成角色配置文件
-    configuration = generate_character(cn_role_name, en_role_name, prompt=prompt)
+    configuration = generate_character(cn_role_name, en_role_name)
     # 分割文件
-    input_file = './kunkun_all.txt'
-    output_folder = f"../characters/{en_role_name}/texts"
-    split_text(input_file, output_folder)
+    # input_file = './kunkun_all.txt'
+    # output_folder = f"../characters/{en_role_name}/texts"
+    # split_text(input_file, output_folder)
 
     # 存储数据
     run = StoreData(configuration)
     run.preload()
+
+
+"""
+请优化下列代码，整体思路是我需要读取selt.texts_folder 文件夹下的 若干文件并进行一定的操作后将结果写入到
+```
+title_text_embed = []
+        title_text = []
+        for file in os.listdir(self.texts_folder):
+            if file.endswith('.txt'):
+                title_name = file[:-4]
+                with open(os.path.join(self.texts_folder, file), 'r', encoding='utf-8') as fr:
+                    title_text.append(f"{title_name}link{fr.read()}")
+        for title_text, embed in zip(title_text, utils.get_embedding(self.model, title_text)):
+            title_text_embed.append({title_text: embed.cpu().numpy().tolist()})
+        self.store(self.title_text_embed_jsonl_path, title_text_embed)
+```
+"""

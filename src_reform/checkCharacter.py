@@ -1,9 +1,6 @@
 import os
 
 
-
-
-
 def checkCharacter(configuration):
     pass
     character_folder = configuration['character_folder']
@@ -16,7 +13,7 @@ def checkCharacter(configuration):
     elements = os.listdir(character_folder)
     if "system_prompt.txt" not in elements:
         # print("未找到系统提示词，请添加")
-        return False, 1, "未找到系统提示词, 请添加"
+        print("未找到系统提示词, 请添加")
     # print(os.listdir(configuration['character_folder']))
     if "texts" not in elements:
         os.makedirs(configuration["texts_folder"])
@@ -38,5 +35,3 @@ def checkCharacter(configuration):
         os.makedirs(configuration["images_folder"])
         print("iamges文件夹创建成功")
     return True, -1, "角色检查完毕"
-
-
