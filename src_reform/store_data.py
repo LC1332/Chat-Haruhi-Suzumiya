@@ -4,22 +4,15 @@ import utils
 import os
 from checkCharacter import checkCharacter
 
-def split_text(self):
-    if self.input_file:
-        with open(os.path.join(self.input_file), encoding='utf-8') as f:
+
+def split_text(input_file, output_folder):
+    if input_file:
+        with open(os.path.join(input_file), encoding='utf-8') as f:
             data = f.read()
             for i, dialogue in enumerate(data.split('\n\n')):
-                with open(os.path.join(self.output_folder, f"{os.path.basename(self.input_file)[:-4]}_{i}.txt"),
+                with open(os.path.join(output_folder, f"{os.path.basename(input_file)[:-4]}_{i}.txt"),
                           'w+', encoding='utf-8') as fw:
                     fw.write(dialogue.strip())
-    elif self.input_folder:
-        for file in os.listdir(self.input_folder):
-            with open(os.path.join(self.input_folder, file), encoding='utf-8') as f:
-                data = f.read()
-                for i, dialogue in enumerate(data.split('\n\n')):
-                    with open(os.path.join(self.output_folder, f"{file[:-4]}_{i}.txt"), 'w+',
-                              encoding='utf-8') as fw:
-                        fw.write(dialogue.strip())
 
 
 def generate_character(cn_role_name, en_role_name, prompt):
@@ -94,12 +87,17 @@ class StoreData:
 
 
 if __name__ == '__main__':
-    # ini 生成角色配置文件
+
     prompt = "N"
-    # 雷电将军、加藤惠、流浪者、八重神子、钟离
-    cn_role_name = "韦小宝"
-    en_role_name = "weixiaobao"
+    cn_role_name = "汤师爷"
+    en_role_name = "tangshiye"
+
+    # ini 生成角色配置文件
     generate_character(cn_role_name, en_role_name, prompt=prompt)
+    # 分割文件
+    input_file = './汤师爷台词_总.txt'
+    output_folder = f"../characters/{en_role_name}/texts"
+    split_text(input_file, output_folder)
     # 读取角色配置文件
     configuration = {}
     config = configparser.ConfigParser()
