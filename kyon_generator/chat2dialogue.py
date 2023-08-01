@@ -30,6 +30,7 @@ def save_dialogue(filename, dialogue):
             f.write(json.dumps(message) + '\n')
 
 
+
 def parse_args():
     parser = argparse.ArgumentParser(description='Chat to Dialogue Conversion')
     parser.add_argument('-input_chat', type=str, required=True, help='input chat file (jsonl)')
@@ -45,11 +46,16 @@ def main(input_chat, output_dialogue, config_file, role_name, other_names):
     chat_data = load_chat(input_chat)
 
     # Load config
+    configuration = {}
     config = configparser.ConfigParser()
-    config.read(config_file)
+    config.read('config.ini', encoding='utf-8')
+    sections = config.sections()
+    items = config.items(role_name)
+    for key, value in items:
+        configuration[key] = value
 
     # Initialize ChatGPT
-    chatgpt = ChatGPT(config)
+    chatgpt = ChatGPT(configuration)
 
     # Set role training
     chatgpt.set_training(role_name, other_names.split())
@@ -67,8 +73,7 @@ def main(input_chat, output_dialogue, config_file, role_name, other_names):
         response = chatgpt.get_response(user_message, [])
 
         # Append message to dialogue
-        dialogue.append({'role': role, 'message': text})
-        dialogue.append({'role': role_name, 'message': response})
+        dialogue.append({"dialogue": [{"role": role, "text": text}, {"role": role_name, "text": response}]})
 
     # Save dialogue to output file
     if output_dialogue is None:
