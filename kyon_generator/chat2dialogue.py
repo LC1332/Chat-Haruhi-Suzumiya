@@ -102,4 +102,4 @@ if __name__ == '__main__':
                                                                                  output_dialogue_lis,
                                                                                  config_role_name_lis,
                                                                                  text_role_name_lis):
-            main(args.input_chat, args.output_dialogue, args.config, args.role_name, args.other_names)
+            main(input_chat, output_dialogue, config, config_role_name, text_role_name)
