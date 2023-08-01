@@ -52,7 +52,7 @@ def generage_jsonl(result, output_file):
                 text = res[1]
                 if text[0] == "「":
                     text = text[1:]
-                if text[-1] == "」"：
+                if text[-1] == "」":
                     text = text[:-1]
                 json.dump({"role": res[0], "text": text , "source": "story"}, fw, ensure_ascii=False)
                 fw.write("\n")
