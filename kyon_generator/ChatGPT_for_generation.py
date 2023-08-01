@@ -35,9 +35,11 @@ from langchain.schema import (
     SystemMessage
 )
 import sys
+
 sys.path.append("..")
 from src_reform import utils
 import re
+
 
 # OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY2")
 # openai.proxy = "http://127.0.0.1:7890"
@@ -54,9 +56,9 @@ import re
 #     print(f"文件夹 '{folder_name}' 已经存在。")
 
 class ChatGPT:
-    def __init__(self, configuration):
+    def __init__(self, configuration, in_training_generating=False):
         self.configuration = configuration
-        self.in_training_generating = configuration.getboolean('in_training_generating', False)
+        self.in_training_generating = True
         self.image_embed_jsonl_path = configuration['image_embed_jsonl_path']
         self.title_text_embed_jsonl_path = configuration['title_text_embed_jsonl_path']
         self.images_folder = configuration['images_folder']
@@ -67,7 +69,6 @@ class ChatGPT:
         # print(self.system_prompt)
         self.max_len_story = int(configuration['max_len_story'])
         self.max_len_history = int(configuration['max_len_history'])
-        self.save_path = configuration['save_path']
         self.dialogue_path = configuration['dialogue_path']
         openai.api_key = configuration["openai_key_1"] + configuration["openai_key_2"]
         os.environ["OPENAI_API_KEY"] = openai.api_key
@@ -175,7 +176,7 @@ class ChatGPT:
             if len(top_k_title) == k:
                 break
         return top_k_title
-    
+
     def organize_stories_with_maxlen_for_training(self, selected_sample):
         stories = []
 
@@ -195,7 +196,6 @@ class ChatGPT:
             count += sample_len
 
         return stories
-
 
     def organize_story_with_maxlen(self, selected_sample):
         story = "\n"
@@ -266,19 +266,19 @@ class ChatGPT:
             keep_k += 1
 
         return history_chat[-keep_k:], history_response[-keep_k:]
-    
+
     def divide_story(self, story):
-        storys = re.split(r'\n{2,}', story.trim())
-        res = []
+        storys = re.split(r'\n{2,}', story.strip())
         for s in storys:
             lines = s.split('\n')
-            
             for i in range(len(lines)):
                 if lines[i].startswith(self.role_name) or any([lines[i].startswith(name) for name in self.other_names]):
-                    res.append(['\n'.join(lines[:i]), '\n'.join(lines[i:])])
+                    res = '\n'.join(lines[:i]), '\n'.join(lines[i:])
+                    print(res)
+                    return res
                     break
-        return res
-    
+        return "", ""
+
     def organize_message_langchain_for_training(self, storys, history_chat, history_response, new_query):
         messages = [
             SystemMessage(content=self.system_prompt)
@@ -304,7 +304,7 @@ class ChatGPT:
         # messages.append( {'role':'user', 'content':new_query })
         messages.append(HumanMessage(content=new_query))
         print(messages)
-        return messages        
+        return messages
 
     def organize_message_for_generator(self, story, history_chat, history_response, new_query):
 
@@ -333,7 +333,7 @@ class ChatGPT:
         messages.append(HumanMessage(content=new_query))
         print(messages)
         return messages
-    
+
     def organize_message_langchain(self, story, history_chat, history_response, new_query):
         # messages =  [{'role':'system', 'content':SYSTEM_PROMPT}, {'role':'user', 'content':story}]
 
@@ -388,10 +388,8 @@ class ChatGPT:
             selected_sample = self.retrieve_title(new_query, 7)
             print("备选辅助：", selected_sample)
             stories = self.organize_stories_with_maxlen_for_training(selected_sample)
-            
+
             messages = self.organize_message_langchain_for_training(stories, history_chat, history_response, new_query)
-
-
 
         chat = ChatOpenAI(temperature=0)
         return_msg = chat(messages)

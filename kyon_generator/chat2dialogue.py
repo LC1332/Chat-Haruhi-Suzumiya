@@ -12,9 +12,18 @@
 # 现在ChatGPT类中间的divide_story函数还没有实现，应该实现之后就基本能跑了
 # 关于config.ini的配置，请咨询冷子昂和闫晨曦
 
+
+# -*- coding: utf-8 -*-
+# @Time    : 2023/8/1 18:58
+# @Author  : scixing, chenxi
+# @FileName: chat2dialogue.py
+# @Software: PyCharm
+# @github  ：https://github.com/LC1332/Chat-Haruhi-Suzumiya
+
 import json
 import argparse
 import configparser
+
 from ChatGPT_for_generation import ChatGPT
 
 
@@ -25,19 +34,18 @@ def load_chat(filename):
 
 
 def save_dialogue(filename, dialogue):
-    with open(filename, 'w') as f:
+    with open(filename, 'w', encoding='utf-8') as f:
         for message in dialogue:
-            f.write(json.dumps(message) + '\n')
-
+            f.write(json.dumps(message, ensure_ascii=False) + '\n')
 
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Chat to Dialogue Conversion')
-    parser.add_argument('-input_chat', type=str, required=True, help='input chat file (jsonl)')
-    parser.add_argument('-output_dialogue', type=str, default=None, help='output dialogue file (jsonl)')
-    parser.add_argument('-config', type=str, default='config.ini', help='configuration file (ini)')
-    parser.add_argument('-role_name', type=str, required=True, help='role name')
-    parser.add_argument('-other_names', type=str, default='', help='other names')
+    parser.add_argument('-input_chat', nargs="+", type=str, required=True, help='input chat file (jsonl)')
+    parser.add_argument('-output_dialogue', nargs="+", type=str, default=None, help='output dialogue file (jsonl)')
+    parser.add_argument('-config', type=str, default='config.ini', required=True, help='configuration file (ini)')
+    parser.add_argument('-config_role_name', nargs="+", type=str, required=True, help='role name in config.ini')
+    parser.add_argument('-text_role_name', nargs="+", type=str, required=True, help='role name in texts folder')
     return parser.parse_args()
 
 
@@ -48,15 +56,16 @@ def main(input_chat, output_dialogue, config_file, role_name, other_names):
     # Load config
     configuration = {}
     config = configparser.ConfigParser()
-    config.read('config.ini', encoding='utf-8')
+    config.read(config_file, encoding='utf-8')
     sections = config.sections()
+    print(config.items)
     items = config.items(role_name)
     for key, value in items:
         configuration[key] = value
 
     # Initialize ChatGPT
     chatgpt = ChatGPT(configuration)
-
+    chatgpt.preload()
     # Set role training
     chatgpt.set_training(role_name, other_names.split())
 
@@ -77,10 +86,20 @@ def main(input_chat, output_dialogue, config_file, role_name, other_names):
 
     # Save dialogue to output file
     if output_dialogue is None:
-        output_dialogue = f'{input_chat}_to_dialogue.jsonl'
+        output_dialogue = f'{role_name}-{input_chat}_to_dialogue.jsonl'
     save_dialogue(output_dialogue, dialogue)
 
 
 if __name__ == '__main__':
     args = parse_args()
-    main(args.input_chat, args.output_dialogue, args.config, args.role_name, args.other_names)
+    input_chat_lis = args.input_chat
+    output_dialogue_lis = args.output_dialogue
+    config = args.config
+    config_role_name_lis = args.config_role_name
+    text_role_name_lis = args.text_role_name
+    if len(input_chat_lis) == len(config_role_name_lis) == len(text_role_name_lis):
+        for input_chat, output_dialogue, config_role_name, text_role_name in zip(input_chat_lis,
+                                                                                 output_dialogue_lis,
+                                                                                 config_role_name_lis,
+                                                                                 text_role_name_lis):
+            main(args.input_chat, args.output_dialogue, args.config, args.role_name, args.other_names)
