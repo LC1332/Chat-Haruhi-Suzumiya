@@ -8,7 +8,6 @@
 import json
 import os
 import numpy as np
-import utils
 import openai
 import tiktoken
 import torch
@@ -35,7 +34,9 @@ from langchain.schema import (
     HumanMessage,
     SystemMessage
 )
-import utils
+import sys
+sys.path.append("..")
+from src_reform import utils
 import re
 
 # OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY2")
