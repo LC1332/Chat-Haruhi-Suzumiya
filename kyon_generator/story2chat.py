@@ -49,7 +49,12 @@ def generage_jsonl(result, output_file):
             elif '：' in content:
                 res = content.split('：')
             if res[1] != '':
-                json.dump({"role": res[0], "text": res[1][1:-1], "source": "story"}, fw, ensure_ascii=False)
+                text = res[1]
+                if text[0] == "「":
+                    text = text[1:]
+                if text[-1] == "」":
+                    text = text[:-1]
+                json.dump({"role": res[0], "text": text , "source": "story"}, fw, ensure_ascii=False)
                 fw.write("\n")
     fw.close()
 
