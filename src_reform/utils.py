@@ -1,6 +1,7 @@
 from argparse import Namespace
 from transformers import AutoModel, AutoTokenizer
 import torch
+import jsonlines
 import os
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -36,4 +37,11 @@ def get_embedding(model, texts):
     return embeddings
 
 
-
+def merge_jsonl_files(folder_path, output_file):
+    with jsonlines.open(output_file, mode='w') as writer:
+        for filename in os.listdir(folder_path):
+            if filename.endswith('.jsonl'):
+                file_path = os.path.join(folder_path, filename)
+                with jsonlines.open(file_path) as reader:
+                    for item in reader:
+                        writer.write(item)
