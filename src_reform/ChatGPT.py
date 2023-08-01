@@ -64,7 +64,7 @@ class ChatGPT:
         self.enc = tiktoken.get_encoding("cl100k_base")
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         # 预加载jsonl文件
-        self.model = utils.download_models()
+        self.model = utils.model
         self.image_embed = None
         self.title_text_embed = None
         self.title_to_text = None

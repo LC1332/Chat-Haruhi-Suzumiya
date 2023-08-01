@@ -45,3 +45,5 @@ def merge_jsonl_files(folder_path, output_file):
                 with jsonlines.open(file_path) as reader:
                     for item in reader:
                         writer.write(item)
+
+model = download_models()
