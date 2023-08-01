@@ -10,6 +10,7 @@ class ChatSystem:
         self.configuration = {}
         self.chatHistory = {}
         self.readConfig()
+        
         self.addCharacter()
         self.getAllCharacters()
 
