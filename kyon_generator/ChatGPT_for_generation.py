@@ -110,11 +110,14 @@ class ChatGPT:
 
         elif load_image_embed:
             image_embed = {}
-            with open(self.image_embed_jsonl_path, 'r', encoding='utf-8') as f:
-                for line in f:
-                    data = json.loads(line)
-                    image_embed.update(data)
-            return image_embed
+            if os.path.exists(self.image_embed_jsonl_path):
+              with open(self.image_embed_jsonl_path, 'r', encoding='utf-8') as f:
+                  for line in f:
+                      data = json.loads(line)
+                      image_embed.update(data)
+              return image_embed
+            else:
+              return None
         else:
             print("Please specify the loading file！")
 

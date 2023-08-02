@@ -34,7 +34,7 @@ def load_chat(filename):
 
 
 def save_dialogue(filename, dialogue):
-    with open(filename, 'w', encoding='utf-8') as f:
+    with open(filename, 'w+', encoding='utf-8') as f:
         for message in dialogue:
             f.write(json.dumps(message, ensure_ascii=False) + '\n')
 
@@ -49,7 +49,7 @@ def parse_args():
     return parser.parse_args()
 
 
-def main(input_chat, output_dialogue, config_file, role_name, other_names):
+def main(input_chat, config_file, role_name, other_names):
     # Load chat data
     chat_data = load_chat(input_chat)
 
@@ -82,11 +82,10 @@ def main(input_chat, output_dialogue, config_file, role_name, other_names):
         response = chatgpt.get_response(user_message, [])
 
         # Append message to dialogue
-        dialogue.append({"dialogue": [{"role": role, "text": text}, {"role": role_name, "text": response}]})
+        dialogue.append({"dialogue": [{"role": role, "text": text}, {"role": role_name, "text": response}], "source": "synthesized"})
 
     # Save dialogue to output file
-    if output_dialogue is None:
-        output_dialogue = f'{role_name}-{input_chat}_to_dialogue.jsonl'
+    output_dialogue = f'{input_chat[:-4]}_to_dialogue.jsonl'
     save_dialogue(output_dialogue, dialogue)
 
 
@@ -98,8 +97,5 @@ if __name__ == '__main__':
     config_role_name_lis = args.config_role_name
     text_role_name_lis = args.text_role_name
     if len(input_chat_lis) == len(config_role_name_lis) == len(text_role_name_lis):
-        for input_chat, output_dialogue, config_role_name, text_role_name in zip(input_chat_lis,
-                                                                                 output_dialogue_lis,
-                                                                                 config_role_name_lis,
-                                                                                 text_role_name_lis):
-            main(input_chat, output_dialogue, config, config_role_name, text_role_name)
+        for input_chat, config_role_name, text_role_name in zip(input_chat_lis, config_role_name_lis, text_role_name_lis):
+            main(input_chat, config, config_role_name, text_role_name)
