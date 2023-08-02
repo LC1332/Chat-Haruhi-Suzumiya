@@ -23,7 +23,7 @@ scixing实践了VITS语音，完成了台词对应的语音抽取，实现了第
 
 沈骏一实现了使用ChatGLM2 finetune实验
 
-Aria(Yaying Fei)对接了whisper到台本工具。即将继续参加台本工具的开发。
+Aria Fei 对接了whisper到台本工具。即将继续参加台本工具的开发。
 
 米唯实实现了Chat哆啦A梦的分支版本
 
@@ -269,7 +269,7 @@ If you are interested in sponsoring the [Luotuo Project](https://github.com/LC13
 
 [DataWhale助教-马琦钧](https://github.com/Skypow2012) 实现了AI-studio的版本。
 
-[Aria (YayingFei)](https://github.com/ariafyy) 对接了whisper到台本工具。即将继续参加台本工具的开发。
+[Aria Fei](https://github.com/ariafyy) 对接了whisper到台本工具。即将继续参加台本工具的开发。
 
 [沈骏一@浙江大学](https://github.com/J1shen)实现了使用ChatGLM2 finetune实验，即将训练了更多的模型
 
@@ -498,7 +498,7 @@ https://colab.research.google.com/drive/1GNdmBnc5UA7OYBZPtHu244eiAN-0IMZA?usp=sh
 - [ ] （扩充） 假设我们可以在脚本中删除人觉得错误的行，甚至修正一些角色名，这些数据可以作为补充，程序会读取一个人工修正（有删失）的脚本，进一步扩充标定数据
 
 ---
-[Aria](https://github.com/ariafyy) is working on that
+[Aria Fei](https://github.com/ariafyy) is working on that
 
 使用鲁叔标定的数据，测试更多的声纹模型
 
