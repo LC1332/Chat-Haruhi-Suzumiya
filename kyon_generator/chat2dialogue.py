@@ -97,7 +97,7 @@ def main(input_chat, output_dialogue, role_name, other_names):
         chatgpt = ChatGPT(configuration)
         chatgpt.preload()
         # Set role training
-        chatgpt.set_training(role_name, other_names.split())
+        chatgpt.set_training(role_name, other_names)
         dialogue = []
         # Generate dialogue
         for chat in chat_data:
