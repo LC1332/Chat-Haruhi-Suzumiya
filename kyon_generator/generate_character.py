@@ -1,11 +1,14 @@
 import argparse
 import configparser
 import json
+import random
 import sys
 
 sys.path.append('..')
 from src_reform import utils, checkCharacter
 import os
+import openai
+
 
 # TODO
 
@@ -26,6 +29,23 @@ import os
 # on the fly 增加 Hermione和Malfoy这两个人物
 
 # 然后测试通他们对应的jsonl
+def get_embedding_for_english(text, model="text-embedding-ada-002"):
+    text = text.replace("\n", " ")
+    return openai.Embedding.create(input=[text], model=model)['data'][0]['embedding']
+
+
+def get_embedding(model, texts):
+    if isinstance(texts, list):
+        index = random.randint(0, len(texts) - 1)
+        if utils.is_chinese_or_english(texts[index]) == "chinese":
+            return utils.get_embedding(model, texts)
+        else:
+            return [get_embedding_for_english(text) for text in texts]
+    else:
+        if utils.is_chinese_or_english(texts) == "chinese":
+            return utils.get_embedding(model, texts)
+        else:
+            return get_embedding_for_english(texts)
 
 
 def parse_args():
@@ -35,16 +55,6 @@ def parse_args():
     parser.add_argument('-prompt', default=None, type=str, help='prompt file path')
     parser.add_argument('-text_folder', required=True, type=str, help='character texts folder')
     return parser.parse_args()
-
-
-def split_text(input_file, output_folder):
-    if input_file:
-        with open(os.path.join(input_file), encoding='utf-8') as f:
-            data = f.read()
-            for i, dialogue in enumerate(data.split('\n\n')):
-                with open(os.path.join(output_folder, f"{os.path.basename(input_file)[:-4]}_{i}.txt"),
-                          'w+', encoding='utf-8') as fw:
-                    fw.write(dialogue.strip())
 
 
 def generate_character(cn_role_name, en_role_name, prompt=None):
@@ -94,11 +104,11 @@ def generate_character(cn_role_name, en_role_name, prompt=None):
 
 
 class StoreData:
-    def __init__(self, configuration):
+    def __init__(self, configuration, text_folder):
         self.image_embed_jsonl_path = configuration['image_embed_jsonl_path']
         self.title_text_embed_jsonl_path = configuration['title_text_embed_jsonl_path']
         self.images_folder = configuration['images_folder']
-        self.texts_folder = configuration['texts_folder']
+        self.texts_folder = text_folder
         self.model = utils.download_models()
 
     def preload(self):
@@ -109,8 +119,8 @@ class StoreData:
                 title_name = file[:-4]
                 with open(os.path.join(self.texts_folder, file), 'r', encoding='utf-8') as fr:
                     title_text.append(f"{title_name}link{fr.read()}")
-        for title_text, embed in zip(title_text, utils.get_embedding(self.model, title_text)):
-            title_text_embed.append({title_text: embed.cpu().numpy().tolist()})
+        for title_text, embed in zip(title_text, get_embedding(self.model, title_text)):
+            title_text_embed.append({title_text: embed.numpy().tolist()})
         self.store(self.title_text_embed_jsonl_path, title_text_embed)
 
         if len(os.listdir(configuration['images_folder'])) != 0:
@@ -118,8 +128,8 @@ class StoreData:
             images = []
             for file in os.listdir(self.images_folder):
                 images.append(file[:-4])
-            for image, embed in zip(images, utils.get_embedding(self.model, images)):
-                image_embed.append({image: embed.cpu().numpy().tolist()})
+            for image, embed in zip(images, get_embedding(self.model, images)):
+                image_embed.append({image: embed.cpu().tolist()})
             self.store(self.image_embed_jsonl_path, image_embed)
         print(f"{self.texts_folder.split('/')[2]}角色创建成功!")
 
@@ -138,11 +148,8 @@ if __name__ == '__main__':
     text_folder = args.text_folder
 
     # ini 生成角色配置文件
-    configuration = generate_character(cn_role_name, en_role_name, prompt=prompt)
-    # 分割文件
-    output_folder = f"../characters/{en_role_name}/texts"
-    split_text(text_folder, output_folder)
+    configuration = generate_character(cn_role_name, en_role_name,  prompt=prompt)
 
     # 存储数据
-    run = StoreData(configuration)
+    run = StoreData(configuration, text_folder)
     run.preload()

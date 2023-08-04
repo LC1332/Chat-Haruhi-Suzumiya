@@ -1,6 +1,7 @@
 from argparse import Namespace
 from transformers import AutoModel, AutoTokenizer
 import torch
+import random
 import jsonlines
 import os
 
@@ -46,4 +47,19 @@ def merge_jsonl_files(folder_path, output_file):
                     for item in reader:
                         writer.write(item)
 
-model = download_models()
+
+def is_chinese_or_english(text):
+    print(text)
+    text = random.sample(list(text), 5)
+    is_chinese = False
+    for char in text:
+        # 判断字符的Unicode值是否在中文字符的Unicode范围内
+        if '\u4e00' <= char <= '\u9fa5':
+            is_chinese = True
+        # 判断字符是否为英文字符（包括大小写字母和常见标点符号）
+        elif ('\u0041' <= char <= '\u005a') or ('\u0061' <= char <= '\u007a') or ('\u0021' <= char <= '\u007e'):
+            is_chinese = False
+    if is_chinese:
+        return "chinese"
+    else:
+        return "english"
