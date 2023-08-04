@@ -70,8 +70,8 @@ class ChatGPT:
         self.max_len_story = int(configuration['max_len_story'])
         self.max_len_history = int(configuration['max_len_history'])
         self.dialogue_path = configuration['dialogue_path']
-        openai.api_key = configuration["openai_key_1"] + configuration["openai_key_2"]
-        os.environ["OPENAI_API_KEY"] = openai.api_key
+        # openai.api_key = configuration["openai_key_1"] + configuration["openai_key_2"]
+        # os.environ["OPENAI_API_KEY"] = openai.api_key
         self.enc = tiktoken.get_encoding("cl100k_base")
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         # 预加载jsonl文件
