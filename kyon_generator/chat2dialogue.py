@@ -23,6 +23,7 @@
 import json
 import argparse
 import configparser
+import os
 
 from ChatGPT_for_generation import ChatGPT
 
@@ -48,6 +49,10 @@ def parse_args():
     parser.add_argument('-output_dialogue', type=str, default=None, help='output dialogue file (jsonl)')
     parser.add_argument('-role_name', type=str, required=True, help='role name')
     parser.add_argument('-other_names', nargs="+", default="", type=str, help='other names')
+
+    # arugments that figure out temporary saving folder
+    parser.add_argument('-temp_save_folder', default=None, type=str, help='temproray saving file path')
+
     return parser.parse_args()
 
 
@@ -78,7 +83,7 @@ def merge_dialogue(user_message, dialogue_text):
     return {"dialogue": dialogue, "source": "synthesized"}
 
 
-def main(input_chat, output_dialogue, role_name, other_names):
+def main(input_chat, output_dialogue, role_name, other_names, temp_save_folder):
     config = configparser.ConfigParser()
     config.read("../src_reform/config.ini", encoding='utf-8')
     if role_name not in config.sections():
@@ -104,19 +109,41 @@ def main(input_chat, output_dialogue, role_name, other_names):
         # Generate dialogue
         print("Generating dialogue...")
 
+        # if temp_save_folder not exist, create it
+        if not os.path.exists(temp_save_folder):
+            os.mkdir(temp_save_folder)
+            print(f"创建临时文件夹{temp_save_folder}")
+
         for i, chat in enumerate(tqdm(chat_data)):
             role = chat['role']
             text = chat['text']
 
+            file_name = f"{i}_{text[:min(4,len(text))]}.jsonl" # 生成文件名
+            # replace invalid characters
+            file_name = file_name.replace("/", "_")
+
             user_message = f'{role}:「{text}」'
-            
+
             response = chatgpt.get_response(user_message, [])
-            dialogue.append(merge_dialogue(user_message, response))
+            temp_dialogue = [merge_dialogue(user_message, response)] 
+            save_dialogue(os.path.join(temp_save_folder, file_name), temp_dialogue)
+
+            # dialogue.append(merge_dialogue(user_message, response))
 
         # Save dialogue to output file
 
+        # output_dialogue = f'{input_chat[:-4]}_to_dialogue.jsonl' if output_dialogue is None else output_dialogue
+        # save_dialogue(output_dialogue, dialogue)
+        
+        # 合并临时文件
         output_dialogue = f'{input_chat[:-4]}_to_dialogue.jsonl' if output_dialogue is None else output_dialogue
-        save_dialogue(output_dialogue, dialogue)
+        with open(output_dialogue, 'w',encoding= 'utf-8') as outfile:
+            for filename in os.listdir(temp_save_folder):
+                if filename.endswith('.jsonl'): 
+                    filepath = os.path.join(temp_save_folder, filename)
+                    with open(filepath) as infile:
+                        for line in infile:
+                            outfile.write(line)
 
 
 if __name__ == '__main__':
@@ -125,4 +152,11 @@ if __name__ == '__main__':
     output_dialogue = args.output_dialogue
     role_name = args.role_name
     other_names_lis = args.other_names
-    main(input_chat, output_dialogue, role_name, other_names_lis)
+
+    temp_save_folder = args.temp_save_folder
+
+    if temp_save_folder == None:
+        # create output_<role_name>
+        temp_save_folder = f"output_{role_name}"
+
+    main(input_chat, output_dialogue, role_name, other_names_lis, temp_save_folder)
