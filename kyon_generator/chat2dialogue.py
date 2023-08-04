@@ -46,45 +46,71 @@ def parse_args():
     parser.add_argument('-text_role_name', nargs="+", type=str, required=True, help='role name in texts folder')
     return parser.parse_args()
 
+def merge_dialogue(dialogue_text):
+    dialogue_list = dialogue_text.split('\n')  # Split dialogue into lines
+    dialogue = []
+    current_role = ""
+    current_text = ""
+
+    for line in dialogue_list:
+        if line:
+            parts = line.split(':')
+            role = parts[0].strip()
+            text = parts[1].strip()
+
+            if role == current_role:
+                current_text = current_text[:-1]
+                current_text += text[1:]
+            else:
+                if current_role != "":
+                    dialogue.append({"role": current_role, "text": current_text})
+                current_role = role
+                current_text = text
+
+    dialogue.append({"role": current_role, "text": current_text})  # Append the last dialogue
+
+    return {"dialogue": dialogue}
 
 def main(input_chat, role_name, other_names):
-    # Load chat data
-    chat_data = load_chat(input_chat)
-
-    # Load config
-    configuration = {}
     config = configparser.ConfigParser()
     config.read("../src_reform/config.ini", encoding='utf-8')
-    sections = config.sections()
-    print(config.items)
-    items = config.items(role_name)
-    for key, value in items:
-        configuration[key] = value
+    if role_name not in config.sections():
+        print(f"{role_name} 未创建，请创建角色后再使用，")
+    else:
+        sections = config.sections()
+        # Load chat data
+        chat_data = load_chat(input_chat)
 
-    # Initialize ChatGPT
-    chatgpt = ChatGPT(configuration)
-    chatgpt.preload()
-    # Set role training
-    chatgpt.set_training(role_name, other_names.split())
+        # Load config
+        configuration = {}
 
-    # Generate dialogue
-    dialogue = []
-    for chat in chat_data:
-        role = chat['role']
-        text = chat['text']
 
-        # Format user message
-        user_message = f'{role}:「{text}」'
+        print(config.items)
+        items = config.items(role_name)
+        for key, value in items:
+            configuration[key] = value
 
-        # Get response from ChatGPT
-        response = chatgpt.get_response(user_message, [])
+        # Initialize ChatGPT
+        chatgpt = ChatGPT(configuration)
+        chatgpt.preload()
+        # Set role training
+        chatgpt.set_training(role_name, other_names.split())
+        dialogue = []
+        # Generate dialogue
+        for chat in chat_data:
+            role = chat['role']
+            text = chat['text']
 
-        # Append message to dialogue
-        dialogue.append({"dialogue": [{"role": role, "text": text}, {"role": role_name, "text": response}], "source": "synthesized"})
+            # Format user message
+            user_message = f'{role}:「{text}」'
 
-    # Save dialogue to output file
-    output_dialogue = f'{input_chat[:-4]}_to_dialogue.jsonl'
-    save_dialogue(output_dialogue, dialogue)
+            # Get response from ChatGPT
+            response = chatgpt.get_response(user_message, [])
+            dialogue.append(merge_dialogue(response))
+
+        # Save dialogue to output file
+        output_dialogue = f'{input_chat[:-4]}_to_dialogue.jsonl'
+        save_dialogue(output_dialogue, dialogue)
 
 
 if __name__ == '__main__':
