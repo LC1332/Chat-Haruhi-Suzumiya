@@ -7,6 +7,21 @@ sys.path.append('..')
 from src_reform import utils, checkCharacter
 import os
 
+# TODO
+
+# 在这个文件中 重新实现embedding，替换 utils.get_embedding
+
+# 把原来的embedding函数 在这里做一个 镜像
+
+# 这里可以有一个比如叫chinese_embedding 的函数 return utils.get_embedding(model, text)
+# 这个可以
+
+# 你要实现一个if_chinese的函数，判断一个sentence是不是英文为主
+
+# 建立一个combine_embedding函数， 先调用if_chinese然后再调用chinese_embedding或者english_embedding
+
+# 一定要用 openai text-embedding-ada-002
+
 
 def parse_args():
     parser = argparse.ArgumentParser(description='generate character 将台本文件保存成jsonl文件，动态创建新的角色')
