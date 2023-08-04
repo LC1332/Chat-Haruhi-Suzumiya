@@ -26,6 +26,8 @@ import configparser
 
 from ChatGPT_for_generation import ChatGPT
 
+from tqdm import tqdm
+
 
 def load_chat(filename):
     with open(filename, 'r') as f:
@@ -100,14 +102,14 @@ def main(input_chat, output_dialogue, role_name, other_names):
         chatgpt.set_training(role_name, other_names)
         dialogue = []
         # Generate dialogue
-        for chat in chat_data:
+        print("Generating dialogue...")
+
+        for i, chat in enumerate(tqdm(chat_data)):
             role = chat['role']
             text = chat['text']
 
-            # Format user message
             user_message = f'{role}:「{text}」'
-
-            # Get response from ChatGPT
+            
             response = chatgpt.get_response(user_message, [])
             dialogue.append(merge_dialogue(user_message, response))
 
