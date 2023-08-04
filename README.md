@@ -104,7 +104,7 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 | [DataWhale](https://www.bilibili.com/video/BV1ho4y1P75H) | DataWhale作业时候的讲解视频     |
 | [台本工具](https://www.bilibili.com/video/BV1V8411S7eT)      | 台本工具yuki_builder使用说明          |
 | [角色数据格式说明](https://www.bilibili.com/video/BV1nu411H7Sy/)    | | 角色数据格式和如何从txt保存到config的说明                               |
-| [魔搭40分钟tutorial] | 40分钟更基础的tutorial介绍+40分钟讨论 |
+| [魔搭40分钟tutorial](https://www.bilibili.com/video/BV1Wm4y1W7XH) | 40分钟更基础的tutorial介绍+40分钟讨论 |
 
   
 ## DemoVideo
