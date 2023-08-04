@@ -65,9 +65,13 @@ def merge_dialogue(user_message, dialogue_text):
     for line in dialogue_list:
         if line:
             ch = ":" if ":" in line else "："
-            parts = line.split(ch)
-            role = parts[0].strip().replace("凉宫春日", "春日")
-            text = parts[1].strip()
+            if ch in line:
+                parts = line.split(ch)
+                role = parts[0].strip().replace("凉宫春日", "春日")
+                text = parts[1].strip()
+            else:
+                role = ""
+                text = line
 
             if role == current_role:
                 current_text = current_text[:-1]
@@ -125,7 +129,7 @@ def main(input_chat, output_dialogue, role_name, other_names, temp_save_folder):
             # if os.path.join(temp_save_folder, file_name) exists, skip
             if os.path.exists(os.path.join(temp_save_folder, file_name)):
                 continue
-            
+
 
             user_message = f'{role}:「{text}」'
 
