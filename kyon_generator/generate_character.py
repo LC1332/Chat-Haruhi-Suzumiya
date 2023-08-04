@@ -55,7 +55,7 @@ def generate_character(cn_role_name, en_role_name, prompt=None):
         config[cn_role_name]['local_model'] = "THUDM/chatglm2-6b"
         config[cn_role_name]['local_lora'] = "Jyshen/Chat_Suzumiya_GLM2LoRA"
         # 保存修改后的配置文件
-        with open('../src_reform/config.ini', 'w', encoding='utf-8') as config_file:
+        with open('../src_reform/config.ini', 'a+', encoding='utf-8') as config_file:
             config.write(config_file)
         config.read('config.ini', encoding='utf-8')
     # 检查角色文件夹

@@ -40,25 +40,25 @@ def save_dialogue(filename, dialogue):
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='Chat to Dialogue Conversion, output_dialogue 和 input_chat 在同一路径')
+    parser = argparse.ArgumentParser(
+        description='Chat to Dialogue Conversion, output_dialogue 和 input_chat 在同一路径')
     parser.add_argument('-input_chat', type=str, required=True, help='input chat file (jsonl)')
+    parser.add_argument('-output_dialogue', type=str, default=None, help='output dialogue file (jsonl)')
     parser.add_argument('-role_name', type=str, required=True, help='role name')
     parser.add_argument('-other_names', nargs="+", default="", type=str, help='other names')
     return parser.parse_args()
 
 
-def merge_dialogue(dialogue_text):
+def merge_dialogue(user_message, dialogue_text):
     dialogue_list = dialogue_text.split('\n')  # Split dialogue into lines
-    dialogue = []
+    dialogue = [user_message]
     current_role = ""
     current_text = ""
 
     for line in dialogue_list:
         if line:
-            print(line)
             ch = ":" if ":" in line else "："
             parts = line.split(ch)
-            print(parts)
             role = parts[0].strip().replace("凉宫春日", "春日")
             text = parts[1].strip()
 
@@ -76,7 +76,7 @@ def merge_dialogue(dialogue_text):
     return {"dialogue": dialogue, "source": "synthesized"}
 
 
-def main(input_chat, role_name, other_names):
+def main(input_chat, output_dialogue, role_name, other_names):
     config = configparser.ConfigParser()
     config.read("../src_reform/config.ini", encoding='utf-8')
     if role_name not in config.sections():
@@ -109,16 +109,18 @@ def main(input_chat, role_name, other_names):
 
             # Get response from ChatGPT
             response = chatgpt.get_response(user_message, [])
-            dialogue.append(merge_dialogue(response))
+            dialogue.append(merge_dialogue(user_message, response))
 
         # Save dialogue to output file
-        output_dialogue = f'{input_chat[:-4]}_to_dialogue.jsonl'
+
+        output_dialogue = f'{input_chat[:-4]}_to_dialogue.jsonl' if output_dialogue is None else output_dialogue
         save_dialogue(output_dialogue, dialogue)
 
 
 if __name__ == '__main__':
     args = parse_args()
     input_chat = args.input_chat
+    output_dialogue = args.output_dialogue
     role_name = args.role_name
     other_names_lis = args.other_names
-    main(input_chat, role_name, other_names_lis)
+    main(input_chat, output_dialogue, role_name, other_names_lis)
