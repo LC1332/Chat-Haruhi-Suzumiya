@@ -277,7 +277,7 @@ class ChatGPT:
             for i in range(len(lines)):
                 if lines[i].startswith(self.role_name) or any([lines[i].startswith(name) for name in self.other_names]):
                     res = '\n'.join(lines[:i]), '\n'.join(lines[i:])
-                    print(res)
+                    # print(res)
                     return res
                     break
         return "", ""
@@ -334,7 +334,7 @@ class ChatGPT:
 
         # messages.append( {'role':'user', 'content':new_query })
         messages.append(HumanMessage(content=new_query))
-        print(messages)
+        # print(messages)
         return messages
 
     def organize_message_langchain(self, story, history_chat, history_response, new_query):
