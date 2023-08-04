@@ -206,7 +206,7 @@ class ChatGPT:
         count = 0
 
         final_selected = []
-        print(selected_sample)
+        # print(selected_sample)
         for sample_topic in selected_sample:
             # find sample_answer in dictionary
             sample_story = self.title_to_text[sample_topic]
@@ -306,7 +306,7 @@ class ChatGPT:
 
         # messages.append( {'role':'user', 'content':new_query })
         messages.append(HumanMessage(content=new_query))
-        print(messages)
+        # print(messages)
         return messages
 
     def organize_message_for_generator(self, story, history_chat, history_response, new_query):
