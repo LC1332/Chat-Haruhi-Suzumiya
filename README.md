@@ -49,6 +49,7 @@ Aria Fei 对接了whisper到台本工具。即将继续参加台本工具的开�
       <ul>
         <li><a href="#快速开始">快速开始</a></li>
         <li><a href="#DemoVideo">DemoVideo</a></li>
+        <li><a href="#快速开始">讲解视频</a></li>
         <li><a href="#ChatBot核心的构造">ChatBot核心的构造</a></li>
         <li><a href="#TODO和计划Feature">TODO和计划Feature</a></li>
         <li><a href="#获奖">获奖</a></li>
@@ -93,11 +94,16 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 | HuggingFace版本                                            | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi) | HuggingFace版本，如果key用完了麻烦提醒我们一下                                                                                   |
 | 人格-高考作文                                                  | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/College_essays_gradio.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | 高/低开放性人格对应的高考作文题生成器，[详细报告](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) |
 | 人格-Chatbot                                               | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/PersonalityChatbot.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | 高/低开放性人格对应的Chatbot，[详细报告](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)  |
-| [5分钟讲解](https://www.bilibili.com/video/BV1Xh411A7kC/)    | | 黑客马拉松B站讲解视频                                                                                                      |
-| [DataWhale](https://www.bilibili.com/video/BV1ho4y1P75H) | | DataWhale作业时候的讲解视频                                                                                               |
-| [台本工具](https://www.bilibili.com/video/BV1V8411S7eT)      | | 台本工具使用说明                                                                                                         |
-| [角色生成工具](https://www.bilibili.com/video/BV1nu411H7Sy/)    | | 角色生成工具使用说明                                                                                                       |
 | Chat加藤惠                                                  |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/gradio_megumi.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 根据群友收集的语料实现的Chat加藤惠                                                                                              |
+
+## 讲解视频
+
+| 视频 | 说明 |
+| [5分钟讲解](https://www.bilibili.com/video/BV1Xh411A7kC/)    | 魔搭黑客马拉松B站讲解视频，整体介绍       |
+| [DataWhale](https://www.bilibili.com/video/BV1ho4y1P75H) | DataWhale作业时候的讲解视频     |
+| [台本工具](https://www.bilibili.com/video/BV1V8411S7eT)      | 台本工具yuki_builder使用说明          |
+| [角色数据格式说明](https://www.bilibili.com/video/BV1nu411H7Sy/)    | | 角色数据格式和如何从txt保存到config的说明                               |
+| [魔搭40分钟tutorial] | 40分钟更基础的tutorial介绍+40分钟讨论 |
 
   
 ## DemoVideo
