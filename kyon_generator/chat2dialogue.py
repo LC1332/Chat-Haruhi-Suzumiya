@@ -122,6 +122,11 @@ def main(input_chat, output_dialogue, role_name, other_names, temp_save_folder):
             # replace invalid characters
             file_name = file_name.replace("/", "_")
 
+            # if os.path.join(temp_save_folder, file_name) exists, skip
+            if os.path.exists(os.path.join(temp_save_folder, file_name)):
+                continue
+            
+
             user_message = f'{role}:「{text}」'
 
             response = chatgpt.get_response(user_message, [])
@@ -134,7 +139,7 @@ def main(input_chat, output_dialogue, role_name, other_names, temp_save_folder):
 
         # output_dialogue = f'{input_chat[:-4]}_to_dialogue.jsonl' if output_dialogue is None else output_dialogue
         # save_dialogue(output_dialogue, dialogue)
-        
+
         # 合并临时文件
         output_dialogue = f'{input_chat[:-4]}_to_dialogue.jsonl' if output_dialogue is None else output_dialogue
         with open(output_dialogue, 'w',encoding= 'utf-8') as outfile:
