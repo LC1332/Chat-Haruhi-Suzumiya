@@ -41,8 +41,9 @@ def save_dialogue(filename, dialogue):
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Chat to Dialogue Conversion, output_dialogue 和 input_chat 在同一路径')
-    parser.add_argument('-input_chat', nargs="+", type=str, required=True, help='input chat file (jsonl)')
-    parser.add_argument('-role_name', nargs="+", type=str, required=True, help='role name')
+    parser.add_argument('-input_chat', type=str, required=True, help='input chat file (jsonl)')
+    parser.add_argument('-role_name', type=str, required=True, help='role name')
+    parser.add_argument('-other_names', nargs="+", default="", type=str, help='other names')
     return parser.parse_args()
 
 
@@ -54,8 +55,11 @@ def merge_dialogue(dialogue_text):
 
     for line in dialogue_list:
         if line:
-            parts = line.split(':')
-            role = parts[0].strip()
+            print(line)
+            ch = ":" if ":" in line else "："
+            parts = line.split(ch)
+            print(parts)
+            role = parts[0].strip().replace("凉宫春日", "春日")
             text = parts[1].strip()
 
             if role == current_role:
@@ -114,11 +118,7 @@ def main(input_chat, role_name, other_names):
 
 if __name__ == '__main__':
     args = parse_args()
-    input_chat_lis = args.input_chat
-
-    role_name_lis = args.role_name
-    if len(input_chat_lis) == len(role_name_lis):
-        for input_chat, role_name in zip(input_chat_lis, role_name_lis):
-            main(input_chat, role_name)
-    else:
-        print("input_chat 或 role_name 缺失")
+    input_chat = args.input_chat
+    role_name = args.role_name
+    other_names_lis = args.other_names
+    main(input_chat, role_name, other_names_lis)
