@@ -359,7 +359,7 @@ class ChatGPT:
 
         # messages.append( {'role':'user', 'content':new_query })
         messages.append(HumanMessage(content=new_query))
-        print(messages)
+        # print(messages)
         return messages
 
     def get_response(self, user_message, chat_history_tuple):
