@@ -99,6 +99,7 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 ## 讲解视频
 
 | 视频 | 说明 |
+|---|---|
 | [5分钟讲解](https://www.bilibili.com/video/BV1Xh411A7kC/)    | 魔搭黑客马拉松B站讲解视频，整体介绍       |
 | [DataWhale](https://www.bilibili.com/video/BV1ho4y1P75H) | DataWhale作业时候的讲解视频     |
 | [台本工具](https://www.bilibili.com/video/BV1V8411S7eT)      | 台本工具yuki_builder使用说明          |
