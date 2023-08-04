@@ -41,7 +41,15 @@ def generage_jsonl(result, output_file):
     """
     {"role": "阿虚", "text": "「奇特的社团和运动社团有什么不同？」", "source": "synthesized "}
     """
-    for content in result:       
+    # remove duplicate element from result
+    seen = set()
+    new_result = []
+    for item in result:
+        if item not in seen:
+            seen.add(item)
+            new_result.append(item)
+            
+    for content in new_result:       
         content = content.strip()
         if content:
             if ":" in content:
