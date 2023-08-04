@@ -103,7 +103,7 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 | [5分钟讲解](https://www.bilibili.com/video/BV1Xh411A7kC/)    | 魔搭黑客马拉松B站讲解视频，整体介绍       |
 | [DataWhale](https://www.bilibili.com/video/BV1ho4y1P75H) | DataWhale作业时候的讲解视频     |
 | [台本工具](https://www.bilibili.com/video/BV1V8411S7eT)      | 台本工具yuki_builder使用说明          |
-| [角色数据格式说明](https://www.bilibili.com/video/BV1nu411H7Sy/)    | | 角色数据格式和如何从txt保存到config的说明                               |
+| [角色数据格式说明](https://www.bilibili.com/video/BV1nu411H7Sy/)    | 角色数据格式和如何从txt保存到config的说明                               |
 | [魔搭40分钟tutorial](https://www.bilibili.com/video/BV1Wm4y1W7XH) | 40分钟更基础的tutorial介绍+40分钟讨论 |
 
   
@@ -114,6 +114,10 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 https://github.com/LC1332/Chat-Haruhi-Suzumiya/assets/5266090/8b88c8ac-262f-4705-a4e9-489b1ec0ce11
 
 视频中的VITS模型由[凉宫春日应援团](https://space.bilibili.com/201296348)友情提供，具体参数和语速我们还在进一步调优。
+
+## Gradio服务器的启动
+
+## 纯后台版本的说明
 
 ## 引言
 
