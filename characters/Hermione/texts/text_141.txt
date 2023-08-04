@@ -1,7 +1,3 @@
-Harry:「If we only had the Invisibility Cloak. . . .」
-Hermione:「Where is it?」
-Harry:「You — you tap it and say, ‘Dissendium,’ But —」
-Hermione:「Okay, no one there — Cloak on —」
-Hagrid:「I — I took him outside, He’s tethered in me pumpkin patch. Thought he oughta see the trees an’ — an’ smell fresh air — before —」
-:Hagridaction
-Hermione:「I’ll do it, Hagrid,」
+Professor Trelawney:「There is something here! Something moving . . . but what is it?」
+:Harry action
+Hermione:「Not that ridiculous Grim again!」

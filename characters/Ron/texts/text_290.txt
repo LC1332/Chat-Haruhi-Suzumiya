@@ -1,10 +1,2 @@
-Hermione:「“Harry, you were brilliant!” Hermione said squeakily.」
-Ron:「“Harry,” he said, very seriously, “whoever put your name in that goblet — I — I reckon they’re trying to do you in!”」
-Harry:「“Caught on, have you?” said Harry coldly. “Took you long enough.”」
-:Hermioneaction
-:Ronaction
-:Hermioneaction
-Hermione:「“There’s nothing to cry about!” Harry told her, bewildered.」
-Hermione:「“You two are so stupid!” she shouted, stamping her foot on the ground, tears splashing down her front.」
-:Hermioneaction
-Ron:「“Barking mad,” said Ron, shaking his head.」
+Hermione:「Oh no, really?」
+Ron:「Well, that’s lucky.」

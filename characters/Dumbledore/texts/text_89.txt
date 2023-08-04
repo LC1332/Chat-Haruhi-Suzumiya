@@ -1,8 +1,2 @@
-:Harryeat his way steadily through his steak-and-kidney pie, then a large plateful of his favorite treacle tart
-Dumbledore:「When all the students had finished eating and the noise level in the hall was starting to creep upward again, Dumbledore got to his feet once more. Talking ceased immediately as all turned to face the headmaster.」
-Dumbledore:「Well, now that we are all digesting another magnificent feast, I beg a few moments of your attention for the usual start-of-term notices, First years ought to know that the forest in the grounds is out of bounds to students — and a few of our older students ought to know by now too.」
-:Hermioneexchanged smirks
-Dumbledore:「Mr. Filch, the caretaker, has asked me, for what he tells me is the four hundred and sixty-second time, to remind you all that magic is not permitted in corridors between classes, nor are a number of other things, all of which can be checked on the extensive list now fastened to Mr. Filch’s office door.」
-:Ronexchanged slightly panicked looks
-:Hermioneexchanged slightly panicked looks
-Dumbledore:「Tryouts for the House Quidditch teams will take place on the —」
+Fudge:「“YOU SEE?” roared Fudge, gesturing flamboyantly in Harry’s direction. “A house-elf! In a Muggle house! I ask you —”」
+Dumbledore:「“The house-elf in question is currently in the employ of Hogwarts School,” said Dumbledore. “I can summon him here in an instant to give evidence if you wish.”」

@@ -1,4 +1,9 @@
-:Harry and Ronaction
-Hermione:「Did you get them?」
-Harry:「Good. And I sneaked these spare robes out of the laundry. You’ll need bigger sizes once you’re Crabbe and Goyle.」
-Hermione:「I’m sure I’ve done everything right, It looks like the book says it should . . . once we’ve drunk it, we’ll have exactly an hour before we change back into ourselves.」
+Harry:「told Ron and Hermione as they hurried back to Moaning Myrtle’s bathroom, “He knew it was me. I could tell.”」
+:Hermione action
+Hermione:「said happily, “It’ll be ready in two weeks.”」
+Ron:「reassuringly said to Harry, “Snape can’t prove it was you. What can he do?”」
+Harry:「said as the potion frothed and bubbled, “Knowing Snape, something foul.”」
+Seamus Finnigan:「said excitedly, “They’re starting a Dueling Club! First meeting tonight! I wouldn’t mind dueling lessons; they might come in handy one of these days. . . .”」
+Ron:「said, “What, you reckon Slytherin’s monster can duel?”」
+Ron:「said to Harry and Hermione as they went into dinner, “Could be useful. Shall we go?”」
+Hermione:「said as they edged into the chattering crowd, “I wonder who’ll be teaching us? Someone told me Flitwick was a dueling champion when he was young — maybe it’ll be him.”」

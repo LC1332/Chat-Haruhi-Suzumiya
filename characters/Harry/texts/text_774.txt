@@ -1,14 +1,2 @@
-Hermione:「How’re you feeling?」
-Harry:「Fine.」
-Hermione:「Oh, don’t lie, Harry. Ron and Ginny say you’ve been hiding from everyone since you got back from St. Mungo’s.」
-Harry:「They do, do they?」
-Hermione:「Maybe you’re taking it in turns to look and keep missing each other.」
-Harry:「Very funny.」
-Ginny:「We wanted to talk to you, Harry, but as you’ve been hiding ever since we got back —」
-Harry:「I didn’t want anyone to talk to me.」
-Ginny:「Lucky you.」
-Harry:「I’m sorry.」
-Harry:「No.」
-Hermione:「Harry, you’ve had these dreams before. You had flashes of what Voldemort was up to last year.」
-Harry:「This was different. I was inside that snake. It was like I was the snake. . . . What if Voldemort somehow transported me to London — ?」
-Harry:「thinking」
+Hagrid:「Yep, eighty left, an’ there was loads once, musta bin a hundred diff’rent tribes from all over the world. But they’ve bin dyin’ out fer ages. Wizards killed a few, o’ course, but mostly they killed each other, an’ now they’re dyin’ out faster than ever. They’re not made ter live bunched up together like tha’. Dumbledore says it’s our fault, it was the wizards who forced ’em to go an’ made ’em live a good long way from us an’ they had no choice but ter stick together fer their own protection.」
+Harry:「So, you saw them and then what?」

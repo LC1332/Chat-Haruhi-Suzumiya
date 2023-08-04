@@ -1,14 +1,6 @@
-:Nevilleclambered out of the real tunnel, gave a roar of delight, leapt down from the mantelpiece
-Harry:「Neville — what the — how — ?」
-:Nevilleaction
-Harry:「Neville, what’s happened to you?」
-:Nevilleaction
-:Nevilleaction
-Harry:「I don’t know how to thank you. You’ve saved our lives twice.」
-Ron:「How long’s this been here? It isn’t on the Marauder’s Map, is it, Harry? I thought there were only seven passages in and out of school?」
-:Nevilleaction
-:Nevilleaction
-Neville:「asked if it's true that they broke into Gringotts and escaped on a dragon」
-Harry:「Yeah, it’s true」
-Hermione:「Don’t exaggerate, Ron —」
-Harry:「tell us about Hogwarts, Neville, we haven’t heard anything」
+Hermione:「Well, they don’t show the Dark Lord proper respect, so the name’s been Tabooed. A few Order members have been tracked that way. We’ll see. Bind them up with the other two prisoners!」
+:Unknown action
+Harry:「Anyone still got a wand?」
+Ron:「No」
+Hermione:「No」
+Harry:「This is all my fault. I said the name, I’m sorry —」

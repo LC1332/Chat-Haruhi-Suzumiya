@@ -1,14 +1,3 @@
-Bagman:「Damn them!」
-Hermione:「Not exactly on top of things, Mr. Bagman, is he?」
-Ron:「He was a great Beater, though, The Wimbourne Wasps won the league three times in a row while he was with them.」
-:Ronleading the way off the path into a small clearing, and sitting down on a patch of dry grass at the foot of a tree
-Ron:「The others will be fine.」
-Harry:「Imagine if your dad catches Lucius Malfoy, He’s always said he’d like to get something on him.」
-Ron:「That’d wipe the smirk off old Draco’s face, all right.」
-Hermione:「Those poor Muggles, though, What if they can’t get them down?」
-Hermione:「But she broke off abruptly and looked over her shoulder.」
-Unknown:「“MORSMORDRE!”」
-Ron:「What the — ?」
-Harry:「Who’s there?」
-Hermione:「Harry, come on, move!」
-Hermione:「Harry, come on!」
+Bagman:「Dimitrov! Levski! Dimitrov! Ivanova — oh I say!」
+:Krum and Lynch action
+Hermione:「They’re going to crash!」

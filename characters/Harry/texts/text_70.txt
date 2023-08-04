@@ -1,11 +1,11 @@
 Firenze:「This is where I leave you. You are safe now.」
 Harry:「Good luck, Harry Potter. The planets have been read wrongly before now, even by centaurs. I hope this is one of those times.」
 Ron:「shouted something about Quidditch fouls」
-:Harryaction
+:Harry action
 Harry:「Snape wants the Stone for Voldemort . . . and Voldemort’s waiting in the forest . . . and all this time we thought Snape just wanted to get rich. . . .」
 Ron:「Will you stop saying the name!」
 Harry:「So all I’ve got to wait for now is Snape to steal the Stone, then Voldemort will be able to come and finish me off. . . . Well, I suppose Bane’ll be happy.」
-:Harryaction
+:Harry action
 Harry:「Professor Dumbledore is a very great wizard, Potter, he has many demands on his time —」
 Professor McGonagall:「How do you know — ?」
 Harry:「Professor, I think — I know — that someone’s going to try and steal the Stone. I’ve got to talk to Professor Dumbledore.」

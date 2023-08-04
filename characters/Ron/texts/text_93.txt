@@ -1,8 +1,6 @@
-Hermione:「As she spoke, they turned a corner and found themselves at the end of the very corridor where the attack had happened. They stopped and looked. The scene was just as it had been that night, except that there was no stiff cat hanging from the torch bracket, and an empty chair stood against the wall bearing the message “The Chamber of Secrets Has Been Opened.”」
-Ron:「“That’s where Filch has been keeping guard,”」
-Harry:「“Can’t hurt to have a poke around,” said Harry, dropping his bag and getting to his hands and knees so that he could crawl along, searching for clues.」
-Harry:「“Scorch marks!” he said. “Here — and here —”」
-Hermione:「“Come and look at this!” said Hermione. “This is funny. . . .”」
-:Harry
-:“No,” said Harry, “have you, Ron? Ron?”
-Ron:「“I — don’t — like — spiders,” said Ron tensely.」
+Harry:「“It’s going to kill someone!”」
+Ron:「“Harry, what was that all about? I couldn’t hear anything. . . .”」
+:Hermione pointing down the corridor
+Ron:「What’s that thing — hanging underneath?」
+:Mrs. Norris hanging by her tail from the torch bracket, stiff as a board, eyes wide and staring
+Ron:「Let’s get out of here.」

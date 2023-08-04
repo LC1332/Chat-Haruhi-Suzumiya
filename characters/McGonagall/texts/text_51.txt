@@ -1,9 +1,5 @@
-McGonagall:「“Yes?” said Professor McGonagall, turning round, her eyebrows so close together they seemed to form one long, severe line.」
-Professor McGonagall:「I was just wondering, Professor, whether you received my note telling you of the date and time of your inspec —」
-Professor McGonagall:「Obviously I received it, or I would have asked you what you are doing in my classroom. As I was saying, today we shall be practicing the altogether more difficult vanishment of mice. Now, the Vanishing Spell —」
-Professor McGonagall:「I wonder how you expect to gain an idea of my usual teaching methods if you continue to interrupt me? You see, I do not generally permit people to talk when I am talking.」
-Harry:「How she can lecture me about not losing my temper with Umbridge!」
-:Rongrinning
-:Umbridgetake many more notes while she sat in her corner
-Professor McGonagall:「Thirty-nine years this December,」
-Professor McGonagall:「I can hardly wait,」
+Hermione:「Oh, yes, I would」
+:Hermione thrust Fred’s clipboard and the bag of Fancies back into his arms and stalked back to her chair by the fire
+Professor McGonagall:「You cannot pass an O.W.L. without serious application, practice, and study. I see no reason why everybody in this class should not achieve an O.W.L. in Transfiguration as long as they put in the work.」
+Neville:「sad little disbelieving noise」
+Professor McGonagall:「Yes, you too, Longbottom. There’s nothing wrong with your work except lack of confidence.」

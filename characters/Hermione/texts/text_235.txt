@@ -1,8 +1,5 @@
-Narrator:Harry think "Harry thought of Sirius, and the tight, tense knot in his chest seemed to ease slightly. He would be speaking to him in just over twelve hours, for tonight was the night they were meeting at the common room fire — assuming nothing went wrong, as everything else had done lately. . . ."
-Hermione:「Look, it’s Hagrid!」
-Hagrid:「All right, Hermione?」
-Hermione:「Hello.」
-Moody:「Yeah, it can see through Invisibility Cloaks. And it’s come in useful at times, I can tell you.」
-Hagrid:「Harry, meet me tonight at midnight at me cabin. Wear that Cloak.」
-Harry:「Why does Hagrid want me to meet him at midnight?」
-Hermione:「I wonder what he’s up to? I don’t know whether you should go, Harry. . . . It might make you late for Sirius.」
+Ron:「He fancies her! Well, if they end up having children, they’ll be setting a world record — bet any baby of theirs would weigh about a ton.」
+Hermione:「」
+:Hermione action
+Fred:「Hope it’s Angelina,」
+Hermione:「So do I! Well, we’ll soon know!」

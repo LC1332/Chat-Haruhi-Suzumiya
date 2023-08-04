@@ -1,9 +1,2 @@
-Harry:「“There’s a light on in Hagrid’s window,” Harry said suddenly.」
-Hermione:「“I don’t know,” Hermione said slowly, and Harry saw her glance at him.」
-Harry:「“I’m allowed to walk across the grounds,” he said pointedly. “Sirius Black hasn’t got past the dementors here, has he?”」
-:Harryput their things away and headed out of the portrait hole
-:Harryglad not to meet anybody on their way to the front doors
-:HarryThe grass was still wet and looked almost black in the twilight
-:HarryWhen they reached Hagrid’s hut, they knocked, and a voice growled, “C’min.”
-Hagrid:「“’Spect it’s a record,” he said thickly, when he recognized them. “Don’ reckon they’ve ever had a teacher who lasted on’y a day before.”」
-Hermione:「“You haven’t been fired, Hagrid!” gasped Hermione.」
+Professor Trelawney:「The falcon . . . my dear, you have a deadly enemy. But everyone knows that. Well, they do. Everybody knows about Harry and You-Know-Who.」
+Hermione:「But everyone knows that.」

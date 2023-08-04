@@ -1,10 +1,12 @@
-Harry:「Get Fang!」
-Ron:「Follow the spiders. I’ll never forgive Hagrid. We’re lucky to be alive.」
-Harry:「That Hagrid never opened the Chamber of Secrets. He was innocent.」
-Ron:「What was the point of sending us in there? What have we found out, I’d like to know?」
-Percy:「If you’ve finished eating, I’ll take that seat, Ginny. I’m starving, I’ve only just come off patrol duty.」
-:Ginnyjumped up as though her chair had just been electrified, gave Percy a fleeting, frightened look, and scampered away
-:Percysat down and grabbed a mug from the center of the table
-Ron:「She was just about to tell us something important!」
-Percy:「Oh — that — that’s nothing to do with the Chamber of Secrets」
-Ron:「What were you doing, Percy? Go on, tell us, we won’t laugh.」
+Ernie:「“That Draco Malfoy character, he seems very pleased about all this, doesn’t he? D’you know, I think he might be Slytherin’s heir.”」
+Ron:「“That’s clever of you,”」
+Ernie:「“Do you think it’s Malfoy, Harry?”」
+Harry:「“No,”」
+:Harry action
+Ron:「“Ouch! What’re you —”」
+:Ernie and Hannah action
+:Harry action
+Harry:「“Looks like they’re heading for the Forbidden Forest. . . .”」
+:Ron action
+Harry:「“We’ll have to use the Invisibility Cloak again. We can take Fang with us. He’s used to going into the forest with Hagrid, he might be some help.”」
+Ron:「“Right,”」

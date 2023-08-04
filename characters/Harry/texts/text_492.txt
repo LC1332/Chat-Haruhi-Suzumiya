@@ -1,4 +1,5 @@
-Hermione:「“What were you going to do, snore at them?” said Hermione waspishly.」
-Harry:「“He hasn’t come back to Hogsmeade?” said Ron incredulously.」
-Hermione:「“It looks like it, doesn’t it?” said Hermione.」
-Harry:「“I can’t believe him,” said Harry tensely, “if he’s caught . . .”」
+Ron:「Uh-oh.」
+:Hermione action
+Harry:「Trying to ruin someone else’s life?」
+Rita Skeeter:「Harry! How lovely! Why don’t you come and join — ?」
+Harry:「I wouldn’t come near you with a ten-foot broomstick. What did you do that to Hagrid for, eh?」

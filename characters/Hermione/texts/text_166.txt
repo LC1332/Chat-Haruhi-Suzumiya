@@ -1,2 +1,10 @@
-Dumbledore:「“One moment, please, Macnair,” came Dumbledore’s voice. “You need to sign too.”」
-Hermione:「“Harry, hurry!” she mouthed.」
+Harry:「Good luck? Three turns? What’s he talking about? What are we supposed to do?」
+Hermione:「Here — Ready?」
+Harry:「What are we doing?」
+:Hermione action
+Hermione:「In here!」
+Harry:「What — how — Hermione, what happened?」
+Hermione:「We’ve gone back in time, Three hours back . . .」
+Hermione:「Shh! Listen! Someone’s coming! I think — I think it might be us!」
+Harry:「Are you telling me that we’re here in this cupboard and we’re out there too?」
+Hermione:「Yes, I’m sure it’s us. It doesn’t sound like more than three people . . . and we’re walking slowly because we’re under the Invisibility Cloak —」

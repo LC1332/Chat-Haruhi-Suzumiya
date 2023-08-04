@@ -1,8 +1,7 @@
-Ron:「I thought we weren’t starting crystal balls until next term」
-Harry:「Don’t complain, this means we’ve finished palmistry」
-Professor Trelawney:「Good day to you! I have decided to introduce the crystal ball a little earlier than I had planned. The fates have informed me that your examination in June will concern the Orb, and I am anxious to give you sufficient practice.」
-Hermione:「Well, honestly . . . ‘the fates have informed her’ . . . who sets the exam? She does! What an amazing prediction!」
-Hermione:「Crystal gazing is a particularly refined art, I do not expect any of you to See when first you peer into the Orb’s infinite depths. We shall start by practicing relaxing the conscious mind and external eyes so as to clear the Inner Eye and the superconscious. Perhaps, if we are lucky, some of you will See before the end of the class.」
-:Ronaction
-:Harryaction
-Harry:「Seen anything yet?」
+Snape:「And what are you two doing here? An odd place to meet —」
+Harry:「We’re not — meeting here. We just — met here.」
+Snape:「You have a habit of turning up in unexpected places, Potter, and you are very rarely there for no reason. . . . I suggest the pair of you return to Gryffindor Tower, where you belong.」
+:Harry and Neville set off without another word
+:Harry looked back. Snape was running one of his hands over the one-eyed witch’s head, examining it closely.
+:Harry scanned the map carefully and saw, with a leap of relief, that the tiny dot labeled Severus Snape was now back in its office.
+Harry:「It’s me.」

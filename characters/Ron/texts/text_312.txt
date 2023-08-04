@@ -1,2 +1,9 @@
-Hermione:「It’s a lot colder where he comes from, I suppose it feels quite warm to him.」
-Ron:「Yeah, but there’s still the giant squid,」
+Harry:「What’s up, Ron?」
+Ron:「Why did I do it? I don’t know what made me do it!」
+Harry:「What?」
+Ginny:「He — er — just asked Fleur Delacour to go to the ball with him.」
+:Ginny action
+Harry:「You what?」
+Ron:「I don’t know what made me do it! What was I playing at? There were people — all around — I’ve gone mad — everyone watching! I was just walking past her in the entrance hall — she was standing there talking to Diggory — and it sort of came over me — and I asked her!」
+Ron:「I asked her to go with me just now, and she told me.」
+Ron:「Yeah, I know! He told me after Potions! Said she’s always been really nice, helping him out with work and stuff — but she told him she was already going with someone. Ha! As if! She just didn’t want to go with Neville . . . I mean, who would?」

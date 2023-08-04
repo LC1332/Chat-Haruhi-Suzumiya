@@ -1,11 +1,8 @@
-Harry:「You can’t have that, I’m sorry.」
-goblin:「Then, we have a problem.」
-Ron:「We can give you something else, I’ll bet the Lestranges have got loads of stuff, you can take your pick once we get into the vault.」
-Griphook:「I am not a thief, boy! I am not trying to procure treasures to which I have no right!」
-Ron:「The sword’s ours —」
-goblin:「And before it was Gryffindor’s, whose was it?」
-Ron:「No one’s, It was made for him, wasn’t it?」
-Harry:「He’s having a laugh. We can’t let him have that sword.」
-Harry:「It is true? Was the sword stolen by Gryffindor?」
-Hermione:「I don’t know, Wizarding history often skates over what the wizards have done to other magical races, but there’s no account that I know of that says Gryffindor stole the sword.」
-Ron:「It’ll be one of those goblin stories, about how the wizards are always trying to get one over on them. I suppose we should think ourselves lucky he hasn’t asked for one of our wands.」
+Harry:「“Death’s got an Invisibility Cloak?”」
+Ron:「“So he can sneak up on people. Sometimes he gets bored of running at them, flapping his arms and shrieking . . . sorry, Hermione.”」
+Hermione:「“Those are the Deathly Hallows.”」
+Xenophilius:「“The Elder Wand,” “The Resurrection Stone,” “The Cloak of Invisibility,” “Together, the Deathly Hallows.”」
+Hermione:「“But there’s no mention of the words ‘Deathly Hallows’ in the story.”」
+Xenophilius:「“That is a children’s tale, told to amuse rather than to instruct. Those of us who understand these matters, however, recognize that the ancient story refers to three objects, or Hallows, which, if united, will make the possessor master of Death.”」
+Xenophilius:「“Luna ought to have enough Plimpies soon.”」
+Ron:「“When you say ‘master of Death’ —”」

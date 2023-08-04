@@ -1,9 +1,7 @@
-Sirius:「Molly doesn’t approve of Mundungus,」
-Harry:「How come he’s in the Order?」
-Sirius:「He’s useful, Knows all the crooks — well, he would, seeing as he’s one himself. But he’s also very loyal to Dumbledore, who helped him out of a tight spot once. It pays to have someone like Dung around, he hears things we don’t. But Molly thinks inviting him to stay for dinner is going too far. She hasn’t forgiven him for slipping off duty when he was supposed to be tailing you,」
-:Harrylay down his spoon in a lull in the general conversation
-:Ginnysitting cross-legged on the floor, rolling butterbeer corks for him to chase
-Mrs. Weasley:「Nearly time for bed, I think,」
-Sirius:「You know, I’m surprised at you. I thought the first thing you’d do when you got here would be to start asking questions about Voldemort,」
-:Lupinlowered his goblet slowly, looking wary
-Harry:「I asked Ron and Hermione but they said we’re not allowed in the Order, so —」
+Uncle Vernon:「looked from Aunt Petunia to Dudley to Harry as if hoping somebody was going to shout “April Fool!” When nobody did, he opened his mouth yet again, but was spared the struggle to find more words by the arrival of the third owl of the evening, which zoomed through the still-open window like a feathery cannonball and landed with a clatter on the kitchen table, causing all three of the Dursleys to jump with fright.」
+Harry:「tore a second official-looking envelope from the owl’s beak and ripped it open as the owl swooped back out into the night.」
+Narrator:Harry think "read this letter through three times in quick succession. The miserable knot in his chest loosened slightly at the thought that he was not definitely expelled, though his fears were by no means banished. Everything seemed to hang on this hearing on the twelfth of August."
+Uncle Vernon:「“And they’ll sentence you there?”」
+Harry:「“I suppose so.”」
+Uncle Vernon:「“NO, IT RUDDY WELL IS NOT ALL!” bellowed Uncle Vernon. “SIT BACK DOWN!”」
+Harry:「“What now?” said Harry impatiently.」

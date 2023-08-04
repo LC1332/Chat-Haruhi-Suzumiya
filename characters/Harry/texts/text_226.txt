@@ -1,3 +1,8 @@
-Hagrid:「Right — who wants ter go first?」
-:Most of the classbacked farther away
-Harry:「I’ll do it,」
+Narrator:Professor Trelawney think "you have the Grim"
+Harry:「The what?」
+:Everyone action
+Narrator:Professor Trelawney think "The Grim, my dear, the Grim! The giant, spectral dog that haunts churchyards! My dear boy, it is an omen — the worst omen — of death!"
+Hermione:「I don’t think it looks like a Grim」
+Narrator:Professor Trelawney think "You’ll forgive me for saying so, my dear, but I perceive very little aura around you. Very little receptivity to the resonances of the future."
+Seamus Finnigan:「It looks like a Grim if you do this, but it looks more like a donkey from here」
+Harry:「When you’ve all finished deciding whether I’m going to die or not!」

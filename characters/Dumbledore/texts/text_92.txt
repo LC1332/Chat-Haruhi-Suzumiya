@@ -1,2 +1,6 @@
-Professor McGonagall:「“And Dumbledore — what about Molly?”」
-Dumbledore:「“That will be a job for Fawkes when he has finished keeping a lookout for anybody approaching,”」
+Harry:「“I . . . well, I was asleep . . .” said Harry and even in his terror and his desperation to make Dumbledore understand he felt slightly irritated that the headmaster was not looking at him, but examining his own interlocked fingers. “But it wasn’t an ordinary dream . . . it was real. . . . I saw it happen . . .” He took a deep breath, “Ron’s dad — Mr. Weasley — has been attacked by a giant snake.”」
+:Dumbledore action
+Dumbledore:「“How did you see this?” Dumbledore asked quietly, still not looking at Harry.」
+Harry:「“Well . . . I don’t know,” said Harry, rather angrily — what did it matter? “Inside my head, I suppose —”」
+Dumbledore:「“You misunderstand me,” said Dumbledore, still in the same calm tone. “I mean . . . can you remember — er — where you were positioned as you watched this attack happen? Were you perhaps standing beside the victim, or else looking down on the scene from above?”」
+Dumbledore:「Is Arthur seriously injured?」

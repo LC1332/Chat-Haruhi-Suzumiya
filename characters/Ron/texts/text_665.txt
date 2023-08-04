@@ -1,13 +1,3 @@
-Hermione:「I know it was your scar! I can tell by the look on your face! You were looking into Vol —」
-Ron:「Don’t say his name!」
-Hermione:「Fine. You-Know-Who’s mind, then!」
-Harry:「He’s found Gregorovitch, Hermione, and I think he’s killed him, but before he killed him he read Gregorovitch’s mind and I saw —」
-Hermione:「I think I’d better take over the watch if you’re so tired you’re falling asleep.」
-Hermione:「I can finish the watch!」
-:Hermionelooking stubborn
-Harry:「No, you’re obviously exhausted. Go and lie down.」
-:Harrywishing to avoid a row
-:Harryducked back inside
-:Ronstill-pale face was poking out from the lower bunk
-Harry:「He found Gregorovitch. He had him tied up, he was torturing him.」
-Ron:「How’s Gregorovitch supposed to make him a new wand if he’s tied up?」
+Hermione:「“Ron! Ron!” Hermione called, half sobbing as she and Harry were buffeted by terrified guests: Harry seized her hand to make sure they weren’t separated as a streak of light whizzed over their heads, whether a protective charm or something more sinister he did not know —」
+:Ron action
+Ron:「“Where are we?” said Ron’s voice.」

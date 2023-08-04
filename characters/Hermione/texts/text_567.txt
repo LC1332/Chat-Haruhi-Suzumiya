@@ -1,3 +1,12 @@
-Narrator:Harry think "Harry was in a state of great anticipation over breakfast the following morning; he had a free period before Defense Against the Dark Arts and was determined to spend it trying to get into the Room of Requirement."
-Hermione:「Look, I haven’t forgotten about Slughorn, but I haven’t got a clue how to get that memory off him, and until I get a brain wave why shouldn’t I find out what Malfoy’s doing?」
-Hermione:「I’ve already told you, you need to persuade Slughorn. It’s not a question of tricking him or bewitching him, or Dumbledore could have done it in a second. Instead of messing around outside the Room of Requirement, you should go and find Slughorn and start appealing to his better nature.」
+Harry:「Hermione?」
+Hermione:「Oh, hello, Harry. I was just practicing.」
+Harry:「He had no idea what to say to her. He was just wondering whether there was any chance that she had not noticed Ron, that she had merely left the room because the party was a little too rowdy, when she said, in an unnaturally high-pitched voice, “Ron seems to be enjoying the celebrations.” “Er . . . does he?” said Harry.」
+Hermione:「Don’t pretend you didn’t see him. He wasn’t exactly hiding it, was — ?」
+:Hermione spell to Ron
+:Harry frequent nighttime wanderings, navigate mistletoe-free routes between classes
+Ron:「simply roared with laughter」
+:Lavender Brown regarded any moment that she was not kissing Ron as a moment wasted
+:Hermione refused to sit in the common room while Ron was there
+:Hermione went into the girls’ bathroom and saw girls, including Romilda Vane, trying to slip Harry a love potion
+Harry:「There isn’t anyone I want to invite,」
+Hermione:「Well, just be careful what you drink, because Romilda Vane looked like she meant business,」

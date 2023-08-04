@@ -1,8 +1,9 @@
-Dumbledore:「Professor Snape knows much more about the Dark Arts than Madam Pomfrey, Harry. Anyway, the St. Mungo’s staff are sending me hourly reports, and I am hopeful that Katie will make a full recovery in time.」
-Harry:「Where were you this weekend, sir?」
-Dumbledore:「I would rather not say just now. However, I shall tell you in due course.」
-Harry:「You will?」
-Dumbledore:「Ah yes, I am already aware that Mundungus has been treating your inheritance with light-fingered contempt. He has gone to ground since you accosted him outside the Three Broomsticks; I rather think he dreads facing me. However, rest assured that he will not be making away with any more of Sirius’s old possessions.」
-Phineas Nigellus:「That mangy old half-blood has been stealing Black heirlooms?」
-Harry:「did Professor McGonagall tell you what I told her after Katie got hurt? About Draco Malfoy?」
-Harry:「If their lessons were so very important, why had there been such a long gap between the first and second?」
+Ginny:「Did I hear right? You’ve been taking orders from something someone wrote in a book, Harry?」
+Harry:「It’s nothing. It’s not like, you know, Riddle’s diary. It’s just an old textbook someone’s scribbled on.」
+Ginny:「But you’re doing what it says?」
+Hermione:「We ought to check that there’s nothing odd about it. I mean, all these funny instructions, who knows?」
+Harry:「Hey!」
+Hermione:「It seems all right. I mean, it really does seem to be . . . just a textbook.」
+Harry:「Good. Then I’ll have it back,」
+:Hermione was resolutely plowing on with what she called the “official” instructions, but becoming increasingly bad-tempered as they yielded poorer results than the Prince’s
+Harry:「Harry wondered vaguely who the Half-Blood Prince had been. Although the amount of homework they had been given prevented him from reading the whole of his copy of Advanced Potion-Making, he had skimmed through it sufficiently to see that there was barely a page on which the Prince had not made additional notes, not all of them concerned with potion-making. Here and there were directions for what looked like spells that the Prince had made up himself.」

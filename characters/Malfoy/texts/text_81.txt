@@ -1,3 +1,8 @@
-Narrator:Harry think "Crouched in the luggage rack under his Cloak, Harry’s heart began to race. What would Ron and Hermione say about this?"
-:Crabbeswung trunk and hit Harry hard on the side of the head
-Malfoy:「He let out an involuntary gasp of pain, and Malfoy looked up at the luggage rack, frowning.」
+Snape:「said "cannot afford mistakes, Draco, because if you are expelled —"」
+Malfoy:「said "I didn’t have anything to do with it, all right?"」
+Snape:「said "I hope you are telling the truth, because it was both clumsy and foolish. Already you are suspected of having a hand in it."」
+Malfoy:「said "Who suspects me? For the last time, I didn’t do it, okay? That Bell girl must’ve had an enemy no one knows about — don’t look at me like that! I know what you’re doing, I’m not stupid, but it won’t work — I can stop you!"」
+:Harry action
+Malfoy:「said "So put me in detention! Report me to Dumbledore!"」
+Snape:「said "Listen to me, I am trying to help you. I swore to your mother I would protect you. I made the Unbreakable Vow, Draco —"」
+Malfoy:「said "Looks like you’ll have to break it, then, because I don’t need your protection! It’s my job, he gave it to me and I’m doing it, I’ve got a plan and it’s going to work, it’s just taking a bit longer than I thought it would!"」

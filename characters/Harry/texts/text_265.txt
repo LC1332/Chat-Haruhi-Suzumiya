@@ -1,10 +1,7 @@
-Lupin:「The true Patronus does do that. But you’ve achieved a great deal in a very short space of time. If the dementors put in an appearance at your next Quidditch match, you will be able to keep them at bay long enough to get back to the ground.」
-Harry:「You said it’s harder if there are loads of them.」
-Lupin:「I have complete confidence in you. Here — you’ve earned a drink — something from the Three Broomsticks. You won’t have tried it before —」
-:Lupinpulled two bottles out of his briefcase
-Harry:「Butterbeer! Yeah, I like that stuff!」
-Harry:「What’s under a dementor’s hood?」
-Lupin:「They call it the Dementor’s Kiss. It’s what dementors do to those they wish to destroy utterly. I suppose there must be some kind of mouth under there, because they clamp their jaws upon the mouth of the victim and — and suck out his soul.」
-Harry:「What — they kill — ?」
-Harry:「He deserves it.」
-Harry:「Sorry, Professor —」
+Hermione:「No! Harry isn’t supposed to leave the castle, Ron,」
+Harry:「Yeah, let’s go, and I can ask him how come he never mentioned Black when he told me all about my parents!」
+Ron:「Or we could have a game of chess, or Gobstones. Percy left a set —」
+Harry:「No, let’s visit Hagrid,」
+Ron:「There’s a weird noise. Listen — is that Fang?」
+Harry:「Think we’d better go and get someone?」
+Harry:「Hagrid, what is it?」

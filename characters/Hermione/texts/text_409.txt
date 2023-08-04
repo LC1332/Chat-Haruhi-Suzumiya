@@ -1,2 +1,5 @@
-:Hagridaction
-Hermione:「Oh! The only people who can see thestrals are people who have seen death.」
+Harry:「Oh yeah?」
+Hermione:「Hagrid’s back.」
+:Harry action
+:Ron action
+Hermione:「“Well, it’s cold out there!” she said defensively, as Ron clicked his tongue impatiently.」

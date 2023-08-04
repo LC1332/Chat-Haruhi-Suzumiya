@@ -1,14 +1,5 @@
-Fudge:「“You are Harry James Potter, of number four, Privet Drive, Little Whinging, Surrey?” Fudge said, glaring at Harry over the top of his parchment.」
-Harry:「“Yes,” Harry said.」
-Fudge:「“You received an official warning from the Ministry for using illegal magic three years ago, did you not?”」
-Harry:「“Yes, but —”」
-Fudge:「“Knowing that you are not permitted to use magic outside school while you are under the age of seventeen?”」
-Harry:「“Yes, but —”」
-Fudge:「“Fully aware that you were in close proximity to a Muggle at the time?”」
-Harry:「“Yes,” said Harry angrily, “but I only used it because we were —”」
-witch with monocle:「“A corporeal Patronus?”」
-Harry:「“A — what?” said Harry.」
-Madam Bones:「“Always?” boomed Madam Bones. “You have produced a Patronus before now?”」
-Harry:「“Yes,” said Harry, “I’ve been doing it for over a year —”」
-Madam Bones:「“You learned this at school?”」
-Harry:「“Yes, Professor Lupin taught me in my third year, because of the —”」
+Sirius:「Had a good summer so far?」
+Harry:「No, it’s been lousy.」
+Sirius:「Don’t know what you’re complaining about, myself. Personally, I’d have welcomed a dementor attack. A deadly struggle for my soul would have broken the monotony nicely. You think you’ve had it bad, at least you’ve been able to get out and about, stretch your legs, get into a few fights. . . . I’ve been stuck inside for a month.」
+Harry:「How come?」
+Harry:「Oh yeah. Listening to Snape’s reports, having to take all his snide hints that he’s out there risking his life while I’m sat on my backside here having a nice comfortable time . . . asking me how the cleaning’s going —」

@@ -1,2 +1,9 @@
-Narrator:Kreacher think "Kreacher doesn’t think like that, He’s a slave; house-elves are used to bad, even brutal treatment; what Voldemort did to Kreacher wasn’t that far out of the common way. What do wizard wars mean to an elf like Kreacher? He’s loyal to people who are kind to him, and Mrs. Black must have been, and Regulus certainly was, so he served them willingly and parroted their beliefs. I know what you’re going to say, that Regulus changed his mind . . . but he doesn’t seem to have explained that to Kreacher, does he? And I think I know why. Kreacher and Regulus’s family were all safer if they kept to the old pure-blood line. Regulus was trying to protect them all."
-Harry:「Kreacher, when you feel up to it, er . . . please sit up.」
+Ron:「“Harry?”」
+Harry:「“Yeah, you’ve got to stay, mate,” said Ron, thumping Harry on the back.」
+Hermione:「“Are you all right?” Hermione asked, close enough now to look into Harry’s face. “You look awful!”」
+Harry:「“Well,” said Harry shakily, “I probably look better than Ollivander. . . .”」
+:Hermione action
+Hermione:「“Harry, he’s taking over the Ministry and the newspapers and half the Wizarding world! Don’t let him inside your head too!”」
+Ron:「Well, you can’t do anything about the」
+Harry:「till you’re seventeen. You’ve still got the Trace on you. And we can plan here as well as anywhere, can’t we? Or,” he dropped his voice to a whisper, “d’you reckon you already know where the You-Know-Whats are?”」
+Harry:「The Trace’ll break on the thirty-first. That means I only need to stay here four days. Then I can —」

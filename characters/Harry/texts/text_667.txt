@@ -1,8 +1,10 @@
-Cho:「I wonder why he thought you were, then?」
-Harry:「Yeah . . . see you.」
-Ron:「What are you looking so pleased about?」
-Harry:「Erm . . . Quidditch later.」
-:Hermioneaction
-Ron:「“Anything interesting?”」
-Harry:「“No, just some guff about the bass player in the Weird Sisters getting married . . .”」
-Harry:「“What’s happened?”」
+Seamus:「Look . . . what did happen that night when . . . you know, when . . . with Cedric Diggory and all?」
+:Dean bending over his trunk, trying to retrieve a slipper
+Harry:「What are you asking me for? Just read the Daily Prophet like your mother, why don’t you? That’ll tell you all you need to know.」
+Seamus:「Don’t you have a go at my mother」
+Harry:「I’ll have a go at anyone who calls me a liar」
+:Harry action
+:Ron appeared in the doorway
+Ron:「He’s having a go at my mother!」
+Seamus:「Harry wouldn’t do that — we met your mother, we liked her . . .」
+Harry:「That’s before she started believing every word the stinking Daily Prophet writes about me!」

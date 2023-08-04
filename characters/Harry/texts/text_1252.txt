@@ -1,10 +1,13 @@
-Ron:「Probably to show the Poisoning Department at St. Mungo’s.」
-Harry:「What do you think?」
-Hermione:「Oh, Harry, it’s a pile of utter rubbish. This can’t be what the sign really means. This must just be his weird take on it. What a waste of time.」
-Ron:「I s’pose this is the man who brought us Crumple-Horned Snorkacks.」
-Harry:「You don’t believe it either?」
-Ron:「One of those superstitions, isn’t it? ‘May-born witches will marry Muggles.’ ‘Jinx by twilight, undone by midnight.’ ‘Wand of elder, never prosper.’ You must’ve heard them. My mum’s full of them.」
-Hermione:「Harry and I were raised by Muggles. We were taught different superstitions. I think you’re right. It’s just a morality tale, it’s obvious which gift is best, which one you’d choose —」
-Hermione:「The Cloak,」
-Ron:「the wand,」
-Harry:「the stone.」
+Hermione:「Fine. You-Know-Who’s mind, then!」
+Harry:「He’s found Gregorovitch, Hermione, and I think he’s killed him, but before he killed him he read Gregorovitch’s mind and I saw —」
+Hermione:「I think I’d better take over the watch if you’re so tired you’re falling asleep.」
+Hermione:「I can finish the watch!」
+:Hermione looking stubborn
+Harry:「No, you’re obviously exhausted. Go and lie down.」
+:Ron still-pale face was poking out from the lower bunk
+:Harry climbed into the one above him, lay down, and looked up at the dark canvas ceiling
+Ron:「How’s Gregorovitch supposed to make him a new wand if he’s tied up?」
+Harry:「I dunno. . . . It’s weird, isn’t it?」
+:Harry remembered how he, as Voldemort, had seemed to hurtle through Gregorovitch’s eyes, into his memories
+:Harry The theft had happened many years ago, according to Gregorovitch. Why did the young thief look familiar?
+Harry:「No . . . it must’ve been something small.」

@@ -1,9 +1,4 @@
-:Hermioneaction
-:Harryaction
-Harry:「Oh, hello, Harry, Did you know one of your eyebrows is bright yellow?」
-Luna:「Hi, Luna. Hermione, you left your stuff. . . .」
-Hermione:「Oh yes, thank you, Harry. Well, I’d better get going. . . .」
-Luna:「She’s a bit upset, I thought at first it was Moaning Myrtle in there, but it turned out to be Hermione. She said something about that Ron Weasley. . . .」
-Harry:「Yeah, they’ve had a row.」
-Luna:「Oh, it’s been all right, a bit lonely without the D.A. Ginny’s been nice, though. She stopped two boys in our Transfiguration class calling me ‘Loony’ the other day —」
-Harry:「How would you like to come to Slughorn’s party with me tonight?」
+Ron:「Come off it, you’ve ridden him, haven’t you?」
+:Harry action
+:Buckbeak action
+Harry:「How are you? Missing him? But you’re okay here with Hagrid, aren’t you?」

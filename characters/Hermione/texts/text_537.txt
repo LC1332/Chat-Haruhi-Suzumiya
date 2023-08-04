@@ -1,12 +1,7 @@
-Harry:「But he says it’s all important and it’ll help me survive.」
-Hermione:「I think it’s fascinating」
-Hermione:「It makes absolute sense to know as much about Voldemort as possible. How else will you find out his weaknesses?」
-Ron:「The Gwenog Jones? Captain of the Holyhead Harpies?」
-Hermione:「That’s right. Personally, I thought she was a bit full of herself, but —」
-Hermione:「No, we shouldn’t!」
-Hermione:「Pass me a bowl」
-Harry:「groaned」
-Ron:「And this is another party just for Slughorn’s favorites, is it?」
-Hermione:「Just for the Slug Club, yes.」
-Ron:「‘Slug Club.’ It’s pathetic. Well, I hope you enjoy your party. Why don’t you try hooking up with McLaggen, then Slughorn can make you King and Queen Slug —」
-Hermione:「We’re allowed to bring guests, and I was going to ask you to come, but if you think it’s that stupid then I won’t bother!」
+Slughorn:「Now then, I’ve prepared a few potions for you to have a look at, just out of interest, you know. These are the kind of thing you ought to be able to make after completing your N.E.W.T.s. You ought to have heard of ’em, even if you haven’t made ’em yet. Anyone tell me what this one is?」
+Hermione:「It’s Veritaserum, a colorless, odorless potion that forces the drinker to tell the truth.」
+Slughorn:「Very good, very good! Now, this one here is pretty well known. . . . Featured in a few Ministry leaflets lately too . . . Who can — ?」
+Hermione:「It’s Polyjuice Potion, sir.」
+Hermione:「It’s Amortentia!」
+Slughorn:「Quite right! You recognized it, I suppose, by its distinctive mother-of-pearl sheen? And the steam rising in characteristic spirals. . . .」
+Hermione:「and it’s supposed to smell differently to each of us, according to what attracts us, and I can smell freshly mown grass and new parchment and —」

@@ -1,2 +1,9 @@
-Voldemort:「What — ? Dumbledore!」
-Dumbledore:「It was foolish to come here tonight, Tom. The Aurors are on their way —」
+Fudge:「The moment I saw Potter’s name on the list, I knew what we were dealing with,」
+Dumbledore:「Well, the game is up,」
+Fudge:「See what they’ve named themselves? Dumbledore’s Army,」
+Dumbledore:「“Dumbledore’s Army, Cornelius,” said Dumbledore, still smiling as he waved the list of names before Fudge’s face. “Not Potter’s Army. Dumbledore’s Army.”,」
+Fudge:「You recruited these students for — for your army?,」
+Dumbledore:「Tonight was supposed to be the first meeting, Merely to see whether they would be interested in joining me. I see now that it was a mistake to invite Miss Edgecombe, of course,」
+McGonagall:「widened her eyes threateningly,」
+Harry:「No — Professor Dumbledore!,」
+Dumbledore:「Be quiet, Harry, or I am afraid you will have to leave my office.」

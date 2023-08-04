@@ -1,11 +1,8 @@
-Snape:「Gone . . . dead . . .」
-Dumbledore:「Is this remorse, Severus?」
-Snape:「I wish . . . I wish I were dead. . . .」
-Dumbledore:「And what use would that be to anyone? If you loved Lily Evans, if you truly loved her, then your way forward is clear.」
-Snape:「He does not need protection. The Dark Lord has gone —」
-Dumbledore:「The Dark Lord will return, and Harry Potter will be in terrible danger when he does.」
-:Snapepacing up and down in front of Dumbledore
-Snape:「— mediocre, arrogant as his father, a determined rule-breaker, delighted to find himself famous, attention-seeking and impertinent —」
-Dumbledore:「You see what you expect to see, Severus. Other teachers report that the boy is modest, likable, and reasonably talented. Personally, I find him an engaging child.」
-Snape:「Karkaroff intends to flee if the Mark burns.」
-Dumbledore:「Does he? And are you tempted to join him?」
+Greyback:「Am I to take it that you are attacking even without the full moon now? This is most unusual. . . . You have developed a taste for human flesh that cannot be satisfied once a month?」
+Dumbledore:「That’s right, And, yes, I am a little shocked that Draco here invited you, of all people, into the school where his friends live. . . .」
+Malfoy:「I didn’t, I didn’t know he was going to come —」
+Greyback:「I wouldn’t want to miss a trip to Hogwarts, Dumbledore, Not when there are throats to be ripped out . . . Delicious, delicious . . .」
+Greyback:「I could do you for afters, Dumbledore.」
+fourth Death Eater:「We’ve got orders. Draco’s got to do it. Now, Draco, and quickly.」
+Malfoy:「He’s not long for this world anyway, if you ask me! Look at him — what’s happened to you, then, Dumby?」
+Dumbledore:「Oh, weaker resistance, slower reflexes, Amycus, Old age, in short . . . One day, perhaps, it will happen to you . . . if you are lucky. . . .」

@@ -1,7 +1,2 @@
-Harry:「It’s been over a week, Ron, you don’t reckon Sirius has been caught, do you?」
-Ron:「Nah, it would’ve been in the Daily Prophet, The Ministry would want to show they’d caught someone, wouldn’t they?」
-Harry:「Look, here’s the stuff Mum got for you in Diagon Alley. And she’s got some gold out of your vault for you . . . and she’s washed all your socks.」
-:Harryaction
-Ron:「What is that supposed to be?」
-Ron:「“Dress robes!” repeated Mrs. Weasley. “It says on your school list that you’re supposed to have dress robes this year . . . robes for formal occasions.”」
-Ron:「“I’ll go starkers before I put that on,” said Ron stubbornly.」
+Harry:「It definitely didn’t sound like an elf.」
+Ron:「Yeah, it was a human voice,」

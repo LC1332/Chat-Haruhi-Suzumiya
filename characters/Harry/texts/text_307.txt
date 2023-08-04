@@ -1,9 +1,2 @@
-Sirius:「You know what this means? Turning Pettigrew in?」
-Harry:「You’re free.」
-Sirius:「But I’m also — I don’t know if anyone ever told you — I’m your godfather.」
-Harry:「Yeah, I knew that.」
-Sirius:「I’ll understand, of course, if you want to stay with your aunt and uncle. But . . . well . . . think about it. Once my name’s cleared . . . if you wanted a . . . a different home . . .」
-:Harrywaited
-Harry:「Are you insane? Of course I want to leave the Dursleys! Have you got a house? When can I move in?」
-Sirius:「You want to? You mean it?」
-Harry:「Yeah, I mean it!」
+Hermione:「Ridiculous!」
+Harry:「Peter Pettigrew’s dead! He killed him twelve years ago!」

@@ -1,6 +1,11 @@
-Dumbledore:「That’s right, And, yes, I am a little shocked that Draco here invited you, of all people, into the school where his friends live. . . .」
-Malfoy:「I didn’t, I didn’t know he was going to come —」
-Greyback:「I wouldn’t want to miss a trip to Hogwarts, Dumbledore, Not when there are throats to be ripped out . . . Delicious, delicious . . .」
-Greyback:「I could do you for afters, Dumbledore.」
-fourth Death Eater:「We’ve got orders. Draco’s got to do it. Now, Draco, and quickly.」
-Malfoy:「He’s not long for this world anyway, if you ask me! Look at him — what’s happened to you, then, Dumby?」
+Harry:「RUN!」
+Malfoy:「The door, get to the door, the door!」
+Ron:「IF WE DIE FOR THEM, I’LL KILL YOU, HARRY!」
+Malfoy:「What are you doing, what are you doing, the door’s that way!」
+: caught it around his wrist
+:Harry action
+:Ron action
+:Malfoy action
+:Malfoy action
+:Ron action
+Malfoy:「C-Crabbe」

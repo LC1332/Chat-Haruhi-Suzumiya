@@ -1,11 +1,2 @@
-:Harryaction
-Hermione:「eagerly awaiting her Daily Prophet」
-:Harryaction
-:Harryaction
-Ron:「asked in amazement, "What’s going on?"」
-:Hermioneaction
-:Harryaction
-:Harryaction
-Luna:「It’s good, isn’t it? It came out yesterday, I asked Dad to send you a free copy. I expect all these are letters from readers.」
-Hermione:「That’s what I thought, Harry, d’you mind if we — ?」
-Hermione:「This woman recommends you try a good course of Shock Spells at St. Mungo’s.」
+Harry:「Hi」
+Hermione:「We’ll be in the library, Harry」

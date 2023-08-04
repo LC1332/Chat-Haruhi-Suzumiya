@@ -1,12 +1,4 @@
-Hagrid:「Yeh can’ stay here, Harry. . . . Come on, now. . . .」
-Harry:「No.」
-Unknown:「Harry, come on.」
-Ginny:「We’re going to the hospital wing.」
-Harry:「I’m not hurt.」
-Ginny:「Don’t worry, none of us.」
-Harry:「But the Dark Mark — Malfoy said he stepped over a body —」
-Ginny:「Of course I’m sure . . . he’s a — a bit of a mess, that’s all. Greyback attacked him. Madam Pomfrey says he won’t — won’t look the same anymore. . . .」
-Ginny:「We don’t really know what the aftereffects will be — I mean, Greyback being a werewolf, but not transformed at the time.」
-Harry:「But the others . . . There were other bodies on the ground. . . .」
-Unknown:「Nobody answered.」
-Harry:「Can’t you fix them with a charm or something?」
+Hermione:「“Coward,” said Hermione, though she looked amused. “Well, it was a bad night for romance all around. Ginny and Dean split up too, Harry.”」
+Harry:「“How come?” “Oh, something really silly . . . She said he was always trying to help her through the portrait hole, like she couldn’t climb in herself . . . but they’ve been a bit rocky for ages.”」
+Hermione:「“Of course, this puts you in a bit of a dilemma, doesn’t it?” said Hermione.」
+Harry:「“What d’you mean?” said Harry quickly.」

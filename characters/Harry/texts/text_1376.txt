@@ -1,0 +1,5 @@
+:Ron action
+Narrator:Harry think "The Great Hall seemed to fly away, become smaller, shrink, as Harry reeled backward from the doorway. He could not draw breath. He could not bear to look at any of the other bodies, to see who else had died for him. He could not bear to join the Weasleys, could not look into their eyes, when if he had given himself up in the first place, Fred might never have died. . . .He turned away and ran up the marble staircase. Lupin, Tonks . . . He yearned not to feel . . . He wished he could rip out his heart, his innards, everything that was screaming inside him. . . ."
+:Harry action
+Harry:「“Password?”」
+Harry:「“Dumbledore!” said Harry without thinking, because it was he whom he yearned to see, and to his surprise the gargoyle slid aside, revealing the spiral staircase behind.」

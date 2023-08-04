@@ -1,5 +1,7 @@
-Harry:「Voldemort put a bit of himself in me?」
-Dumbledore:「It certainly seems so.」
-Harry:「So I should be in Slytherin, The Sorting Hat could see Slytherin’s power in me, and it —」
-Dumbledore:「Put you in Gryffindor. Listen to me, Harry. You happen to have many qualities Salazar Slytherin prized in his hand-picked students. His own very rare gift, Parseltongue — resourcefulness — determination — a certain disregard for rules, he added, his mustache quivering again. Yet the Sorting Hat placed you in Gryffindor. You know why that was. Think.」
-Dumbledore:「Only a true Gryffindor could have pulled that out of the hat, Harry,」
+Harry:「“It was this diary,” said Harry quickly, picking it up and showing it to Dumbledore. “Riddle wrote it when he was sixteen. . . .”」
+:Dumbledore action
+Dumbledore:「“Brilliant,” he said softly. “Of course, he was probably the most brilliant student Hogwarts has ever seen.” He turned around to the Weasleys, who were looking utterly bewildered.」
+Mrs. Weasley:「“What’s our Ginny got to do with — with — him?”」
+Ginny:「“His d-diary!” Ginny sobbed. “I’ve b-been writing in it, and he’s been w-writing back all year —”」
+Harry:「Professor Dumbledore . . . Riddle said I’m like him. Strange likenesses, he said. . . .」
+Dumbledore:「Did he, now? And what do you think, Harry?」

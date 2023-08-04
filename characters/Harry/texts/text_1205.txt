@@ -1,7 +1,12 @@
-Hermione:「Now wait here, and we’ll be back with some hairs for you.」
-Harry:「We don’t know who he is, but he’s gone home with a dreadful nosebleed! Here, he’s pretty tall, you’ll need bigger robes. . . .」
-Harry:「Blimey, that’s scary.」
-Ron:「Yeah, stupid, isn’t it?」
-Harry:「We have to flush ourselves in?」
-Ron:「If I don’t turn up, my wife — I mean, Cattermole’s wife —」
-Harry:「We’ll come with you, we should stick together —」
+Hermione:「No, I didn’t. And if the Ministry hasn’t found any hidden codes in this book in thirty-one days, I doubt that I will.」
+:Hermione suppressing a sob
+:Ron putting his arm around Hermione’s shoulders
+Harry:「‘To Harry James Potter,’ he read, and Harry’s insides contracted with a sudden excitement, ‘I leave the Snitch he caught in his first Quidditch match at Hogwarts, as a reminder of the rewards of perseverance and skill.’」
+:Scrimgeour pulled out the tiny, walnut-sized golden ball, its silver wings fluttered rather feebly
+Harry:「Why did Dumbledore leave you this Snitch?」
+Harry:「I suppose so, What else could it be?」
+Scrimgeour:「I don’t think there’s anything hidden in the icing, but a Snitch would be a very good hiding place for a small object. You know why, I’m sure?」
+Harry:「Because Snitches have flesh memories,」
+Harry:「Take it,」
+Scrimgeour:「Not quite, Dumbledore left you a second bequest, Potter.」
+Harry:「What is it?」

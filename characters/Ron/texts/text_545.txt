@@ -1,2 +1,4 @@
-Harry:「Harry was angry with the other two for siding with McGonagall; nevertheless, he felt compelled to join in once they started discussing what had happened. So who do you reckon Katie was supposed to give the necklace to?」
-Ron:「So who do you reckon Katie was supposed to give the necklace to?」
+Hermione:「The thing is, that — er — boy who was in here just now, Draco Malfoy, well, he’s a friend of mine, and I want to get him a birthday present, but if he’s already reserved anything, I obviously don’t want to get him the same thing, so . . . um . . .」
+Borgin:「Out, Get out!」
+:Hermione action
+Ron:「Worth a try, but you were a bit obvious —」

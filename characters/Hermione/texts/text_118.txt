@@ -1,6 +1,2 @@
-:Harryaction
-Hermione:「“You really don’t look well, you know,” Hermione said, peering anxiously into his face.」
-Harry:「“I’m fine,” said Harry.」
-Hermione:「“Harry, listen,” said Hermione, exchanging a look with Ron, “you must be really upset about what we heard yesterday. But the thing is, you mustn’t go doing anything stupid.”」
-:Harrydidn’t say anything
-Hermione:「You won’t, will you, Harry?」
+Snape:「Which of you can tell me how we distinguish between the werewolf and the true wolf?」
+Hermione:「Please, sir, the werewolf differs from the true wolf in several small ways. The snout of the werewolf —」

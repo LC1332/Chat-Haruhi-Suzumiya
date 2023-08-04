@@ -1,2 +1,7 @@
-Dumbledore:「That will do to be going on with. Now I have work for each of you. Fudge’s attitude, though not unexpected, changes everything. Sirius, I need you to set off at once. You are to alert Remus Lupin, Arabella Figg, Mundungus Fletcher — the old crowd. Lie low at Lupin’s for a while; I will contact you there.」
-Harry:「But — You’ll see me very soon, Harry, said Sirius, turning to him. I promise you. But I must do what I can, you understand, don’t you?」
+Dumbledore:「“No more has Professor Snape,” he said.」
+:Harry action
+Harry:「What made you think he’d really stopped supporting Voldemort, Professor?」
+Dumbledore:「That, Harry, is a matter between Professor Snape and myself.」
+Harry:「Please do not speak about Neville’s parents to anybody else. He has the right to let people know, when he is ready.」
+Harry:「Everything Harry had seen in the Pensieve, nearly everything Dumbledore had told and shown him afterward, he had now shared with Ron and Hermione — and, of course, with Sirius, to whom Harry had sent an owl the moment he had left Dumbledore’s office. Harry, Ron, and Hermione sat up late in the common room once again that night, talking it all over until Harry’s mind was reeling, until he understood what Dumbledore had meant about a head becoming so full of thoughts that it would have been a relief to siphon them off.」
+Harry:「Yes.」

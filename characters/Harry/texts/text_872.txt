@@ -1,15 +1,5 @@
-Hermione:「What do we do?」
-Harry:「Well, we don’t stand here waiting for them to find us, for a start. Let’s get away from this door . . .」
-Neville:「Get out of the way, Harry!」
-Hermione:「It’s time,」
-Narrator:Death Eater think "bawling loudly, flailing arms dangerously"
-Harry:「RON? GINNY? LUNA?」
-:Hermionespell to Death Eater
-:Harryspell to second Death Eater
-Neville:「Whaddever you do, Harry, don’d gib it to him!」
-:Dolohovtoppled forward across his comrade, rigid as a board
-Harry:「Hermione, wake up . . .」
-Neville:「Dat’s a pulse, Harry, I’b sure id is . . .」
-Harry:「She’s alive?」
-Neville:「And whad are you going do do?」
-Harry:「I’ve got to find the others」
+Professor McGonagall:「said "An owl will be sent to you some time in July"」
+Dean Thomas:「whispered "so we don’t have to worry about it till the holidays . . ."」
+Harry:「imagined sitting in his bedroom in Privet Drive in six weeks’ time, waiting for his O.W.L. results」
+Harry:「thought "at least he would be sure of one bit of post next summer. . . ."」
+Harry:「regretted testing Hermione and handed the book back to her」

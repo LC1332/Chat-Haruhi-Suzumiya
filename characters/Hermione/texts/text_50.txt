@@ -1,2 +1,16 @@
-Ron:「Eat slugs, Malfoy. Look out!」
-Hermione:「Look out!」
+Ron:「She didn’t want us showing off. Doesn’t want people to think it’s clever, arriving by flying car.」
+Hermione:「There you are! Where have you been? The most ridiculous rumors — someone said you’d been expelled for crashing a flying car —」
+Harry:「Well, we haven’t been expelled.」
+Hermione:「You’re not telling me you did fly here?」
+:Hermione action
+Fred and George:「Why couldn’t we’ve come in the car, eh?」
+Ron:「Got to get upstairs — bit tired,」
+Harry:「’Night,」
+Hermione:「’Night,」
+Neville:「Amazing,」
+Harry:「barely grinned once」
+Hermione:「Morning」
+Neville:「Mail’s due any minute — I think Gran’s sending a few things I forgot」
+Harry:「started his porridge」
+Ron:「Errol!」
+Hermione:「It’s all right, he’s still alive」

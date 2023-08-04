@@ -1,7 +1,8 @@
-Dumbledore:「It is possible. I would say — probable. Harry — did you see Voldemort?」
-Harry:「No, just the back of his chair. But — there wouldn’t have been anything to see, would there? I mean, he hasn’t got a body, has he? But . . . but then how could he have held the wand?」
-:Dumbledoreaction
-Harry:「“Professor,” Harry said at last, “do you think he’s getting stronger?”」
-Dumbledore:「“These disappearances seem to me to be linked. The Ministry disagrees — as you may have heard, while waiting outside my office.”」
-:Harryaction
-Harry:「“Er . . . could I ask you about . . . that court thing I was in . . . in the Pensieve?”」
+Hagrid:「It turned out that Ron’s niffler had been most successful, so Hagrid gave him an enormous slab of Honeydukes chocolate for a prize.」
+Harry:「the rest of the class set off back to the castle, but Harry, Ron, and Hermione stayed behind to help Hagrid put the nifflers back in their boxes. Harry noticed Madame Maxime watching them out of her carriage window.」
+Hagrid:「What yeh done ter your hands, Hermione?」
+Hermione:「told him about the hate mail she had received that morning, and the envelope full of bubotuber pus.」
+Hagrid:「Aaah, don’ worry. I got some o’ those letters an’ all, after Rita Skeeter wrote abou’ me mum. ‘Yeh’re a monster an’ yeh should be put down.’ ‘Yer mother killed innocent people an’ if you had any decency you’d jump in a lake.’」
+Hermione:「No!」
+Hagrid:「They’re jus’ nutters, Hermione. Don’ open ’em if yeh get any more. Chuck ’em straigh’ in the fire.」
+Harry:「You missed a really good lesson, They’re good, nifflers, aren’t they, Ron?」

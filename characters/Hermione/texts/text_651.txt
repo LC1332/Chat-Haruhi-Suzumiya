@@ -1,3 +1,5 @@
-Ron:「Water,」
-Hermione:「Harry, if we’re trapped here — !」
-Hermione:「Harry, what are we going to — ?」
+Harry:「“Why didn’t I make sure I had the Invisibility Cloak with me?” said Harry, inwardly cursing his own stupidity. “All last year I kept it on me and —”」
+Hermione:「“It’s okay, I’ve got the Cloak, I’ve got clothes for both of you,” said Hermione. “Just try and act naturally until — this will do.”」
+:Hermione action
+Ron:「“How the ruddy hell — ?”」
+Hermione:「“Undetectable Extension Charm,” said Hermione. “Tricky, but I think I’ve done it okay; anyway, I managed to fit everything we need in here.” She gave the fragile-looking bag a little shake and it echoed like a cargo hold as a number of heavy objects rolled around inside it. “Oh, damn, that’ll be the books,” she said, peering into it, “and I had them all stacked by subject. . . . Oh well. . . . Harry, you’d better take the Invisibility Cloak. Ron, hurry up and change. . . .”」

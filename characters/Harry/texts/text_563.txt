@@ -1,6 +1,4 @@
-Dudley:「Point it somewhere else!」
-Harry:「DO YOU UNDERSTAND ME?」
-Dudley:「GET THAT THING AWAY FROM —」
-Dudley:「W-what are you d-doing? St-stop it!」
-Harry:「I’m not doing anything! Shut up and don’t move!」
-Harry:「I’m trying to lis —」
+Professor McGonagall:「Of course, said Professor McGonagall. She looked slightly nauseous, as though she had just watched someone being sick. However, when she drew out her wand and pointed it at Barty Crouch, her hand was quite steady.」
+:Dumbledore action
+:Dumbledore action
+Harry:「“Professor,” Harry mumbled, “where are Mr. and Mrs. Diggory?” “They are with Professor Sprout,” said Dumbledore. His voice, which had been so calm throughout the interrogation of Barty Crouch, shook very slightly for the first time. “She was Head of Cedric’s House, and knew him best.”」

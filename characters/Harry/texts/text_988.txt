@@ -1,8 +1,4 @@
-Narrator:Narrator think "It seemed as though Gryffindor could do no wrong. Again and again they scored, and again and again, at the other end of the pitch, Ron saved goals with apparent ease. He was actually smiling now, and when the crowd greeted a particularly good save with a rousing chorus of the old favorite “Weasley Is Our King,” he pretended to conduct them from on high."
-snide voice:「Thinks he’s something special today, doesn’t he? Your blood-traitor pal . . .」
-Harry:「And I think Harper of Slytherin’s seen the Snitch! Yes, he’s certainly seen something Potter hasn’t!」
-Harry:「Oi, Harper! How much did Malfoy pay you to come on instead of him?」
-Ginny:「Forgot to brake, Professor, sorry.」
-Harry:「Party up in the common room, Seamus said! C’mon, Ginny, Demelza!」
-Hermione:「You know perfectly well what we’re talking about! You spiked Ron’s juice with lucky potion at breakfast! Felix Felicis!」
-Harry:「No, I didn’t.」
+Hermione:「I hate not talking to Hagrid, We’ll go down after Quidditch,」
+Harry:「But trials might take all morning, the number of people who have applied. I dunno why the team’s this popular all of a sudden.」
+Hermione:「Oh, come on, Harry, It’s not Quidditch that’s popular, it’s you! You’ve never been more interesting, and frankly, you’ve never been more fanciable. Everyone knows you’ve been telling the truth now, don’t they? The whole Wizarding world has had to admit that you were right about Voldemort being back and that you really have fought him twice in the last two years and escaped both times. And now they’re calling you ‘the Chosen One’ — well, come on, can’t you see why people are fascinated by you?」
+Harry:「Harry was finding the Great Hall very hot all of a sudden, even though the ceiling still looked cold and rainy.」

@@ -8,6 +8,6 @@ Harry:「Harry Potter was a wizard — a wizard fresh from his first year at Hog
 Harry:「I’ll be in my bedroom, making no noise and pretending I’m not there.」
 Harry:「What wouldn’t he give now for a message from Hogwarts? From any witch or wizard? He’d almost be glad of a sight of his archenemy, Draco Malfoy, just to be sure it hadn’t all been a dream. . . .」
 Harry:「Well done, So you’ve finally learned the days of the week.」
-:Dudleyaction
+:Dudley action
 Dudley:「Why’re you staring at the hedge?」
 Harry:「I’m trying to decide what would be the best spell to set it on fire.」

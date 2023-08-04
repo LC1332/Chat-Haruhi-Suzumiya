@@ -1,6 +1,4 @@
-Narrator:Dumbledore think "Real, and dangerous, and a lure for fools. And I was such a fool. But you know, don’t you? I have no secrets from you anymore. You know."
-Harry:「What do I know?」
-Narrator:Dumbledore think "Master of death, Harry, master of Death! Was I better, ultimately, than Voldemort?"
-Harry:「Of course you were. Of course — how can you ask that? You never killed if you could avoid it!」
-Narrator:Dumbledore think "Hallows, not Horcruxes. Precisely."
-Harry:「Grindelwald was looking for them too?」
+Hermione:「Don’t exaggerate, Ron —」
+Harry:「tell us about Hogwarts, Neville, we haven’t heard anything」
+:Neville action
+Harry:「Those two Death Eaters who teach here?」

@@ -1,5 +1,2 @@
-Hermione:「Harry, where have you been?」
-Ron:「We won! You won! We won! And I gave Malfoy a black eye, and Neville tried to take on Crabbe and Goyle single-handed! He’s still out cold but Madam Pomfrey says he’ll be all right — talk about showing Slytherin! Everyone’s waiting for you in the common room, we’re having a party, Fred and George stole some cakes and stuff from the kitchens.」
-:Harryaction
-Hermione:「So we were right, it is the Sorcerer’s Stone, and Snape’s trying to force Quirrell to help him get it. He asked if he knew how to get past Fluffy — and he said something about Quirrell’s ‘hocus-pocus’— I reckon there are other things guarding the stone apart from Fluffy, loads of enchantments, probably, and Quirrell would have done some anti-Dark Arts spell that Snape needs to break through —」
-Ron:「So you mean the Stone’s only safe as long as Quirrell stands up to Snape?」
+Hermione:「Ten weeks, That’s not ages, that’s like a second to Nicolas Flamel.」
+Ron:「But we’re not six hundred years old, Anyway, what are you studying for, you already know it all.」

@@ -1,2 +1,5 @@
-:Ronmoaned and glanced up at the ceiling
-Hermione:「What’s that got to do with our homework?」
+Fred:「We’re not going to waste our last year here, though, We’re going to use it to do a bit of market research, find out exactly what the average Hogwarts student requires from his joke shop, carefully evaluate the results of our research, and then produce the products to fit the demand.」
+Hermione:「But where are you going to get the gold to start a joke shop? You’re going to need all the ingredients and materials — and premises too, I suppose . . .」
+:Harry action
+:Fred and George action
+Hermione:「What did that mean? ‘Ask us no questions . . . ’ Does that mean they’ve already got some gold to start a joke shop?」

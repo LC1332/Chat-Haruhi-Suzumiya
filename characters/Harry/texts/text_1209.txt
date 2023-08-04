@@ -1,8 +1,8 @@
-:Hermionespell to chains
-Harry:「You’re going to leave here with us. Go home, grab your children, and get out, get out of the country if you’ve got to. Disguise yourselves and run. You’ve seen how it is, you won’t get anything like a fair hearing here.」
-Hermione:「Harry, how are we going to get out of here with all those dementors outside the door?」
-Harry:「Patronuses. As many as we can muster; do yours, Hermione.」
-Harry:「C’mon,」
-Harry:「Okay, all of you who haven’t got wands need to attach yourself to somebody who has. We’ll need to be fast before they stop us. Come on.」
-Harry:「What’s up, Albert?」
-Harry:「Their blood is pure. Purer than many of yours, I daresay. Off you go,」
+Ron:「That was the one you nearly swallowed!」
+Harry:「Exactly, and with his heart beating fast, he pressed his mouth to the Snitch.」
+Hermione:「Writing! There’s writing on it, quick, look!」
+:Harry lowered the golden sphere
+Hermione:「“I open at the close . . .’ What’s that supposed to mean?”」
+:Ron looking blank
+Ron:「“And the sword, Why did he want Harry to have the sword?”」
+Harry:「“And why couldn’t he just have told me? It was there, it was right there on the wall of his office during all our talks last year! If he wanted me to have it, why didn’t he just give it to me then?”」

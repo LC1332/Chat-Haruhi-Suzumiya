@@ -1,8 +1,9 @@
-Harry:「heard a sob to his left and looked around. Lavender and Parvati were both crying silently, their arms around each other.」
-Professor McGonagall:「There, there, Sybill . . . Calm down. . . . Blow your nose on this. . . . It’s not as bad as you think, now. . . . You are not going to have to leave Hogwarts . . .」
-Umbridge:「And your authority for that statement is . . . ?」
-Dumbledore:「That would be mine」
-Dumbledore:「the power to do that still resides with the headmaster, and it is my wish that Professor Trelawney continue to live at Hogwarts.」
-Professor Trelawney:「No — no, I’ll g-go, Dumbledore! I sh-shall l-leave Hogwarts and s-seek my fortune elsewhere —」
-Dumbledore:「No, It is my wish that you remain, Sybill.」
-Professor McGonagall:「Of course, Up you get, Sybill . . .」
+Neville:「Over here, Professor . . .」
+Professor McGonagall:「What is it, Potter? Where does it hurt?」
+Harry:「It’s Ron’s dad, He’s been attacked by a snake and it’s serious, I saw it happen.」
+Professor McGonagall:「What do you mean, you saw it happen?」
+Professor McGonagall:「I’m not lying, and I’m not mad! I tell you, I saw it happen!」
+Professor McGonagall:「Weasley, you ought to come too,」
+:Professor McGonagall action
+Harry:「“It wasn’t a nightmare,” said Harry quickly.」
+Professor McGonagall:「“Very well, then, Potter, you tell the headmaster about it.”」

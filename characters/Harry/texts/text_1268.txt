@@ -1,5 +1,9 @@
-Greyback:「Interesting. That’s interesting. So you aren’t wanted, then, Vernon? Or are you on that list under a different name? What House were you in at Hogwarts?」
-Harry:「Slytherin」
-Scabior:「Well, well, looks like we really ’ave caught a little Slytherin. Good for you, Vernon, ’cause there ain’t a lot of Mudblood Slytherins. Who’s your father?」
-Harry:「He works at the Ministry. Department of Magical Accidents and Catastrophes.」
-Harry:「But if you just let us —」
+Hermione:「You’re the one who needs sleep. No offense, but you look terrible. I’m fine. I’ll keep watch for a while. Where’s my wand?」
+Harry:「Where’s my wand, Hermione?」
+:Hermione looked at him
+Harry:「Where’s my wand?」
+Harry:「Mend it. Please.」
+:Harry spell to Hermione's wand
+Hermione:「I’m so, so sorry. I think it was me. As we were leaving, you know, the snake was coming for us, and so I cast a Blasting Curse, and it rebounded everywhere, and it must have — must have hit —」
+Harry:「It was an accident. We’ll — we’ll find a way to repair it.」
+Harry:「Well, I’ll just borrow yours for now, then. While I keep watch.」

@@ -1,6 +1,3 @@
-Ron:「Either explain what you’re on about or go away, Malfoy.」
-Hermione:「Don’t tell me you don’t know? You’ve got a father and brother at the Ministry and you don’t even know? My God, my father told me about it ages ago . . . heard it from Cornelius Fudge. But then, Father’s always associated with the top people at the Ministry. . . . Maybe your father’s too junior to know about it, Weasley . . . yes . . . they probably don’t talk about important stuff in front of him. . . .」
-:Malfoyaction
-:Ronaction
-Hermione:「Ron!」
-Hermione:「“Of course he does,” said Hermione quietly. “Don’t let Malfoy get to you, Ron —”」
+Ron:「But if they were the Death Eaters, why did they Disapparate when they saw the Dark Mark? They’d have been pleased to see it, wouldn’t they?」
+Narrator:Bill think "Use your brains, Ron, If they really were Death Eaters, they worked very hard to keep out of Azkaban when You-Know-Who lost power, and told all sorts of lies about him forcing them to kill and torture people. I bet they’d be even more frightened than the rest of us to see him come back. They denied they’d ever been involved with him when he lost his powers, and went back to their daily lives. . . . I don’t reckon he’d be over-pleased with them, do you?"
+Hermione:「So . . . whoever conjured the Dark Mark . . . were they doing it to show support for the Death Eaters, or to scare them away?」

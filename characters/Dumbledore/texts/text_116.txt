@@ -1,9 +1,6 @@
-:Harryaction
-Dumbledore:「Judging by your look of stunned disbelief, Harry did not warn you that I was coming. However, let us assume that you have invited me warmly into your house. It is unwise to linger overlong on doorsteps in these troubled times.」
-Dumbledore:「It is a long time since my last visit. I must say, your agapanthus are flourishing.」
-Dumbledore:「Ah, good evening Harry. Excellent, excellent.」
-:Petuniaaction
-Dumbledore:「Albus Dumbledore. We have corresponded, of course. And this must be your son, Dudley?」
-Harry:「asked anxiously.」
-Dumbledore:「Yes, indeed we are, but there are a few matters we need to discuss first. And I would prefer not to do so in the open. We shall trespass upon your aunt and uncle’s hospitality only a little longer.」
-Dumbledore:「We may as well be comfortable.」
+Harry:「Professor Dumbledore? It . . . did that mean . . . What did that mean?」
+Dumbledore:「that the person who has the only chance of conquering Lord Voldemort for good was born at the end of July, nearly sixteen years ago. This boy would be born to parents who had already defied Voldemort three times.」
+Harry:「It means — me?」
+Dumbledore:「The odd thing is, Harry, that it may not have meant you at all. Sybill’s prophecy could have applied to two wizard boys, both born at the end of July that year, both of whom had parents in the Order of the Phoenix, both sets of parents having narrowly escaped Voldemort three times. One, of course, was you. The other was Neville Longbottom.」
+Harry:「Then — it might not be me?」
+Dumbledore:「I am afraid that there is no doubt that it is you.」

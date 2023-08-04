@@ -1,2 +1,4 @@
-Harry:「Let me go!」
-Malfoy:「What’s going on here?」
+:Harry action
+:Percy Weasley action
+:Malfoy stoop and snatch up something
+Malfoy:「Give that back」

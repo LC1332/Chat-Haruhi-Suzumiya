@@ -1,3 +1,5 @@
-:Moodyaction
-:Harryaction
-Harry:「asked Mad-Eye where St. Mungo’s was hidden」
+Hermione:「“Well, it’s cold out there!” she said defensively, as Ron clicked his tongue impatiently.」
+:Ron action
+:Nearly Headless Nick action
+:Harry action
+Harry:「“Hagrid, it’s us!” Harry called through the keyhole.」

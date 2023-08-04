@@ -1,10 +1,6 @@
-Hermione:「Good one . . . don’t forget the signal . . .」
-Harry:「What’s the signal?」
-Hermione:「A loud chorus of ‘Weasley Is Our King’ if they see Umbridge coming,」
-:Harryinserted the blade of Sirius’s knife in the crack between door and wall. The lock clicked open, and they entered the office.
-:Harrydashed over to the fireplace, seized the pot of Floo powder, and threw a pinch into the grate, causing emerald flames to burst into life there. He knelt down quickly, thrust his head into the dancing fire, and cried, “Number twelve, Grimmauld Place!”
-:Kreachercame creeping into view. He looked highly delighted about something, though he seemed to have recently sustained a nasty injury to both hands, which were heavily bandaged.
-Kreacher:「It’s the Potter boy’s head in the fire, What has he come for, Kreacher wonders?」
-Harry:「Where’s Sirius, Kreacher?」
-Kreacher:「Nobody here but Kreacher!」
-Harry:「What about Lupin? Mad-Eye? Any of them, are any of them here?」
+:Peeves determinedly loosening a crystal chandelier
+:Montague Montague had still not recovered from his sojourn in the toilet. He remained confused and disorientated
+Harry:「Should we say something? About what happened to him? In case it helps Madam Pomfrey cure him?」
+Hermione:「’Course not, he’ll recover,」
+Ron:「Anyway, more trouble for Umbridge, isn’t it?」
+Harry:「Reparo! That’s all very well, but what if Montague’s permanently injured?」

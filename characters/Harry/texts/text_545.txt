@@ -1,7 +1,7 @@
-Fudge:「You’ll forgive me, Dumbledore, but I’ve never heard of a curse scar acting as an alarm bell before. . . .」
-Harry:「Look, I saw Voldemort come back! I saw the Death Eaters! I can give you their names! Lucius Malfoy — Macnair! Avery — Nott — Crabbe — Goyle —」
-:Snapeaction
-Fudge:「Malfoy was cleared! A very old family — donations to excellent causes —」
-Harry:「You are merely repeating the names of those who were acquitted of being Death Eaters thirteen years ago!」
-Fudge:「I see no evidence to the contrary! It seems to me that you are all determined to start a panic that will destabilize everything we have worked for these last thirteen years!」
-Harry:「Voldemort has returned,」
+Dumbledore:「“Yes, they were talking about Neville’s parents,” said Dumbledore. “His father, Frank, was an Auror just like Professor Moody. He and his wife were tortured for information about Voldemort’s whereabouts after he lost his powers, as you heard.”」
+Harry:「“So they’re dead?” said Harry quietly.」
+Dumbledore:「“No,” said Dumbledore, his voice full of a bitterness Harry had never heard there before. “They are insane. They are both in St. Mungo’s Hospital for Magical Maladies and Injuries. I believe Neville visits them, with his grandmother, during the holidays. They do not recognize him.”」
+:Harry action
+:Dumbledore action
+:Harry action
+Harry:「“Right,” said Harry hastily, staring at the contents of the Pensieve again, which were swirling more slowly now that Dumbledore had stopped adding thoughts. “And . . . er . . .”」

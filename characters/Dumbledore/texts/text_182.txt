@@ -1,12 +1,8 @@
-Harry:「Sir, I forgot — about fire — they were coming at me and I panicked —」
-Dumbledore:「Quite understandable.」
-:Harryleapt out, then turned quickly to help Dumbledore
-:Dumbledoreaction
-Harry:「Don’t worry, sir, I’ll get us back. . . . Lean on me, sir. . . .」
-:Harryguided his headmaster back around the lake, bearing most of his weight
-Dumbledore:「The protection was . . . after all . . . well-designed. One alone could not have done it. . . . You did well, very well, Harry. . . .」
-Harry:「There’s no need, I got cut on the rock, Just tell me where. . . .」
-:Harrywiped his grazed forearm upon the stone
-:Harrycrossed the outer cave, and helped Dumbledore back into the icy seawater
-Harry:「It’s going to be all right, sir, We’re nearly there. . . . I can Apparate us both back. . . . Don’t worry. . . .」
-Dumbledore:「I am not worried, Harry, I am with you.」
+Harry:「Do you think we’re going to have to go into the lake?」
+Dumbledore:「Into it? Only if we are very unfortunate.」
+Harry:「You don’t think the Horcrux is at the bottom?」
+Dumbledore:「Oh no . . . I think the Horcrux is in the middle.」
+Dumbledore:「Aha, So sorry, Harry, I should have given warning. Stand back against the wall, please; I think I have found the place.」
+Dumbledore:「Magic always leaves traces, sometimes very distinctive traces. I taught Tom Riddle. I know his style.」
+Harry:「So the things in the water won’t do anything to us if we cross in Voldemort’s boat?」
+Dumbledore:「I think we must resign ourselves to the fact that they will, at some point, realize we are not Lord Voldemort. Thus far, however, we have done well. They have allowed us to raise the boat.」

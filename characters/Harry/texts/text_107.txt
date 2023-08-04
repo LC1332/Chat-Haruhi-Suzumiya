@@ -1,9 +1,7 @@
-Ron:「“We’re going to miss the train,” Ron whispered. “I don’t understand why the gateway’s sealed itself —”」
-Harry:「“Why can’t we get through?” Harry hissed to Ron.」
-Ron:「“I dunno —”」
-Harry:「“It’s gone,” said Ron, sounding stunned. “The train’s left. What if Mum and Dad can’t get back through to us? Have you got any Muggle money?”」
-Harry:「“I think we’d better go and wait by the car,” said Harry. “We’re attracting too much atten —”」
-Ron:「“We can fly the car to Hogwarts!”」
-Harry:「“But I thought —”」
+Ron:「“We’re stuck, right? And we’ve got to get to school, haven’t we? And even underage wizards are allowed to use magic if it’s a real emergency, section nineteen or something of the Restriction of Thingy —”」
+Harry:「“But your mum and dad . . .” said Harry, pushing against the barrier again in the vain hope that it would give way. “How will they get home?”」
 Ron:「“They don’t need the car!” said Ron impatiently. “They know how to Apparate! You know, just vanish and reappear at home! They only bother with Floo powder and the car because we’re all underage and we’re not allowed to Apparate yet. . . .”」
 Harry:「“Can you fly it?”」
+:Ron action
+Ron:「“Check that no one’s watching,” said Ron, starting the ignition with another tap of his wand. Harry stuck his head out of the window: Traffic was rumbling along the main road ahead, but their street was empty.」
+Harry:「“Okay,” he said.」

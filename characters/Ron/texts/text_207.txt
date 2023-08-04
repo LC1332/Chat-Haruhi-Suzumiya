@@ -1,11 +1,6 @@
-:Lupinsaw another dot, moving fast toward you, labeled Sirius Black. . . . I saw him collide with you; I watched as he pulled two of you into the Whomping Willow —
-Ron:「One of us!」
-Lupin:「No, Ron, Two of you.」
-:Lupinstopped his pacing, his eyes moving over Ron.
-Lupin:「Do you think I could have a look at the rat?」
-Ron:「What? What’s Scabbers got to do with it?」
-:Scabbersaction
-:Ronaction
-Ron:「What? What’s my rat got to do with anything?」
-Lupin:「He’s a wizard. An Animagus, by the name of Peter Pettigrew.」
-Ron:「You’re both mental.」
+Harry:「I’m here on an unpleasant mission, Harry. The Committee for the Disposal of Dangerous Creatures required a witness to the execution of a mad hippogriff. As I needed to visit Hogwarts to check on the Black situation, I was asked to step in.」
+Ron:「Does that mean the appeal’s already happened?」
+Fudge:「No, no, it’s scheduled for this afternoon. Then you might not have to witness an execution at all! The hippogriff might get off!」
+Ancient Wizard:「Dear, dear, I’m getting too old for this. . . . Two o’clock, isn’t it, Fudge?」
+:Black-mustached Man fingering something in his belt; running one broad thumb along the blade of a shining axe
+Ron:「Why’d you stop me? Did you see them? They’ve even got the axe ready! This isn’t justice!」

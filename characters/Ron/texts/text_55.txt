@@ -1,11 +1,11 @@
 Hermione:「What can you see?」
 Ron:「Nothing — just black — there’s no way of climbing down, we’ll just have to drop.」
 Harry:「You want to go first? Are you sure? Give the flute to Hermione so she can keep him asleep.」
-:Harryplaying the flute
-:Hermioneaction
+:Harry playing the flute
+:Hermione action
 Harry:「If anything happens to me, don’t follow. Go straight to the owlery and send Hedwig to Dumbledore, right?」
 Ron:「Right.」
-:Harryaction
+:Harry action
 Harry:「It’s okay! it’s a soft landing, you can jump!」
 Ron:「What’s this stuff?」
 Ron:「Lucky this plant thing’s here, really.」

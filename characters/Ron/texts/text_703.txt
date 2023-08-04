@@ -1,9 +1,10 @@
-Hermione:「said "Half-blood."」
-Scabior:「said "Easy enough to check, But the ’ole lot of ’em look like they could still be ’ogwarts age —"」
-Ron:「said "We’b lebt."」
-Scabior:「said "Left, ’ave you, ginger? And you decided to go camping? And you thought, just for a laugh, you’d use the Dark Lord’s name?"」
-Ron:「said "Nod a laugh, Accident?"」
-Hermione:「Well, they don’t show the Dark Lord proper respect, so the name’s been Tabooed. A few Order members have been tracked that way. We’ll see. Bind them up with the other two prisoners!」
-:Unknownaction
-Harry:「Anyone still got a wand?」
-Ron:「No」
+Harry:「Oh, remembered me, have you?」
+Ron:「You two carry on. Don’t let me spoil your fun.」
+Harry:「What’s the problem?」
+Ron:「Problem? There’s no problem,」
+Harry:「I don’t know? I don’t know?」
+Harry:「It’s not like I’m not having the time of my life here, you know, with my arm mangled and nothing to eat and freezing my backside off every night. I just hoped, you know, after we’d been running round a few weeks, we’d have achieved something.」
+Hermione:「Ron,」
+Ron:「I thought you knew what you’d signed up for,」
+Ron:「We thought you knew what you were doing! We thought Dumbledore had told you what to do, we thought you had a real plan!」
+Ron:「Yeah, and we’re about as near getting rid of it as we are to finding the rest of them — nowhere effing near, in other words!」

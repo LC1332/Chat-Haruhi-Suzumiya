@@ -1,2 +1,6 @@
-Hagrid:「Don’ frighten him, now! Jus’ try an’ slip the rope ’round his sting, so he won’ hurt any o’ the others!」
-Ron:「Yeah, we wouldn’t want that!」
+Harry:「And what’s with the hair and the suit?」
+Ron:「Look!」
+:Ron action
+Hermione:「He’s going up to the castle with her! I thought he was waiting for us!」
+:Hagrid trudging off up the grounds with Madame Maxime, the Beauxbatons students following in their wake, jogging to keep up with their enormous strides
+Ron:「He fancies her! Well, if they end up having children, they’ll be setting a world record — bet any baby of theirs would weigh about a ton.」

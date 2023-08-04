@@ -1,8 +1,5 @@
-Dobby:「Winky forgets she is not bound to Mr. Crouch anymore; she is allowed to speak her mind now, but she won’t do it.」
-Harry:「Can’t house-elves speak their minds about their masters, then?」
-Dobby:「’Tis part of the house-elf’s enslavement, sir. We keeps their secrets and our silence, sir. We upholds the family’s honor, and we never speaks ill of them — though Professor Dumbledore told Dobby he does not insist upon this. Professor Dumbledore said we is free to — to —」
-Dobby:「He said we is free to call him a — a barmy old codger if we likes, sir!」
-Dobby:「Dobby likes Professor Dumbledore very much, sir, and is proud to keep his secrets and our silence for him.」
-Harry:「But you can say what you like about the Malfoys now?」
-Narrator:Dobby think "Bad Dobby! Bad Dobby!"
-Harry:「Thank you, Harry Potter, thank you.」
+:Cho action
+:Harry action
+:Harry action
+Harry:「He wouldn’t be wearing the Invisibility Cloak, for one thing. Ron would be sitting with him. The three of them would probably be happily imagining what deadly dangerous task the school champions would be facing on Tuesday. He’d have been really looking forward to it, watching them do whatever it was . . . cheering on Cedric with everyone else, safe in a seat at the back of the stands. . . .」
+Harry:「He wondered how the other champions were feeling. Every time he had seen Cedric lately, he had been surrounded by admirers and looking nervous but excited. Harry glimpsed Fleur Delacour from time to time in the corridors; she looked exactly as she always did, haughty and unruffled. And Krum just sat in the library, poring over books.」

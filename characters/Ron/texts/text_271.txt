@@ -1,2 +1,13 @@
-Hermione:「I don’t think so . . . not from that far away. . . .」
-Ron:「A Portkey? Or they could Apparate — maybe you’re allowed to do it under seventeen wherever they come from?」
+:Hermione action
+Ron:「You know why Snape’s in such a foul mood, don’t you?」
+Harry:「Yeah, Moody.」
+:Snape action
+:Snape action
+:Snape action
+Harry:「I reckon Snape’s a bit scared of him, you know」
+Ron:「Imagine if Moody turned Snape into a horned toad, and bounced him all around his dungeon. . . .」
+:Moody action
+:Ron action
+:Moody action
+:Moody action
+Ron:「What, aren’t you staying?」

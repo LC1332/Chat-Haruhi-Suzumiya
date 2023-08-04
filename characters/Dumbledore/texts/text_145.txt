@@ -1,9 +1,12 @@
-Harry:「He’s not very happy with me.」
-Dumbledore:「He is not very happy with me either. We must try not to sink beneath our anguish, Harry, but battle on.」
-Dumbledore:「It was Fudge’s idea originally, you know. During his last days in office, when he was trying desperately to cling to his post, he sought a meeting with you, hoping that you would give him your support —」
-Harry:「So that’s why you argued! It was in the Daily Prophet.」
-Dumbledore:「The Prophet is bound to report the truth occasionally, if only accidentally. Yes, that was why we argued. Well, it appears that Rufus found a way to corner you at last.」
-Harry:「I told him I was.」
-Dumbledore:「I am very touched, Harry.」
-Harry:「So they still don’t know where you go?」
-Dumbledore:「No, they don’t, and the time is not quite right for you to know either. Now, I suggest we press on, unless there’s anything else — ?」
+Riddle:「Prove it.」
+Dumbledore:「If, as I take it, you are accepting your place at Hogwarts —」
+Riddle:「Of course I am!」
+Dumbledore:「Then you will address me as ‘Professor’ or ‘sir.’」
+Riddle:「Where can I get one of them?」
+Dumbledore:「All in good time. I think there is something trying to get out of your wardrobe.」
+Riddle:「Take it out.」
+Dumbledore:「Is there anything in that box that you ought not to have?」
+:Riddle Riddle took off the lid and tipped the contents onto his bed without looking at them.
+Dumbledore:「You will return them to their owners with your apologies. Thieving is not tolerated at Hogwarts.」
+Riddle:「Yes, sir.」
+Dumbledore:「That is easily remedied. There is a fund at Hogwarts for those who require assistance to buy books and robes. You might have to buy some of your spellbooks and so on secondhand, but —」

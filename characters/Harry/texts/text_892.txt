@@ -1,7 +1,15 @@
-Hermione:「Speaking of centaurs, who’s Divination teacher now? Is Firenze staying?」
-Harry:「He’s got to, the other centaurs won’t take him back, will they?」
-Ginny:「It looks like he and Trelawney are both going to teach.」
-Ron:「Bet Dumbledore wishes he could’ve got rid of Trelawney for good. Mind you, the whole subject’s useless if you ask me, Firenze isn’t a lot better . . .」
-Hermione:「How can you say that? After we’ve just found out that there are real prophecies?」
-Narrator:Harry think "Harry’s heart began to race. He had not told Ron, Hermione, or anyone else what the prophecy had contained. Neville had told them it had smashed while Harry was pulling him up the steps in the Death Room, and Harry had not yet corrected this impression. He was not ready to see their expressions when he told them that he must be either murderer or victim, there was no other way. . . ."
-Harry:「Er — Hagrid’s, You know, he just got back and I promised I’d go down and see him and tell him how you two are . . .」
+Hermione:「Something blibbering, no doubt,」
+Harry:「This is it!」
+Ginny:「Oh look!」
+:Ginny action
+Harry:「Keep going!」
+Harry:「It’s through here —」
+Hermione:「We need to go right, I think. Yes . . . that’s fifty-four. . . .」
+Harry:「Keep your wands out.」
+Harry:「I’d have felt it. I’d already know. . . .」
+Harry:「He’s right down at the end. You can’t see properly from here . . .」
+Hermione:「Harry?」
+Harry:「Somewhere about . . . here . . .」
+:Harry running up the space at the end of the rows, staring down them
+:Ron pointing at one of the dusty glass spheres on the shelves
+Harry:「What?」

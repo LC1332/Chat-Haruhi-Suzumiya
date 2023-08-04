@@ -1,18 +1,10 @@
-James:「Who wants to see me take off Snivelly’s pants?」
-Harry:「What’ve you done to him?」
-:Snapefully grown, adult-sized Snape standing right beside him, white with rage
-Snape:「Having fun?」
-Harry:「N-no . . .」
-Snape:「You will not tell anybody what you saw!」
-Harry:「No, of course I w —」
-:Harryjar of dead cockroaches exploded over his head
-:Harryleaned against the wall, panting, and rubbing his bruised arm
-:Harryfelt horrified and unhappy
-:Harryjudging from what he had just seen, his father had been every bit as arrogant as Snape had always told him
-Hermione:「So you’ve stopped having funny dreams?」
-Harry:「Pretty much.」
-Hermione:「What’s wrong, Harry?」
-Harry:「Nothing . . .」
-Ron:「Yeah, well, I don’t blame you! If it hadn’t been for her . . .」
-Ron:「Rant about Marietta Edgecombe」
-Harry:「Yeah, that’s right.」
+Hermione:「Okay, Harry? Ready to tell the public the truth?」
+Harry:「I suppose.」
+Hermione:「Fire away, then, Rita.」
+:Hermione action
+Luna:「she did not know how soon Rita’s interview with Harry would appear in The Quibbler, her father was expecting a lovely long article on recent sightings of Crumple-Horned Snorkacks」
+Harry:「he had given her everything he could remember, wondering how people would react to the story, confirming a lot of people in the view that he was completely insane」
+Neville:「It must have been . . . tough . . . talking about it. . . . Was it?」
+Harry:「Yeah, but people have got to know what Voldemort’s capable of, haven’t they?」
+Harry:「a complete fiasco, now you mention it.」
+Harry:「Me, tactless? One minute we were getting on fine, next minute she was telling me that Roger Davies asked her out, and how she used to go and snog Cedric in that stupid tea shop — how was I supposed to feel about that?」

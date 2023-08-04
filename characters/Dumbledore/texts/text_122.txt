@@ -1,9 +1,14 @@
-Harry:「Oho!」
-Dumbledore:「This is Harry Potter. Harry, this is an old friend and colleague of mine, Horace Slughorn.」
-Slughorn:「So that’s how you thought you’d persuade me, is it? Well, the answer’s no, Albus.」
-:Slughornpushed past Harry, face turned resolutely away
-Dumbledore:「I suppose we can have a drink, at least? For old time’s sake?」
-Slughorn:「Not so well. Weak chest. Wheezy. Rheumatism too. Can’t move like I used to.」
-Dumbledore:「And yet you must have moved fairly quickly to prepare such a welcome for us at such short notice. You can’t have had more than three minutes’ warning?」
-Narrator:Harry think "He certainly had those, thought Harry, looking around the room. It was stuffy and cluttered, yet nobody could say it was uncomfortable; there were soft chairs and footstools, drinks and books, boxes of chocolates and plump cushions. If Harry had not known who lived there, he would have guessed at a rich, fussy old lady."
-Dumbledore:「You’re not yet as old as I am, Horace.」
+Harry:「Bye.」
+Dumbledore:「We do not want to be encumbered by these just now. I shall send them to the Burrow to await us there. However, I would like you to bring your Invisibility Cloak . . . just in case.」
+:Harry extracted his Cloak from his trunk
+Dumbledore:「And now, Harry, let us step out into the night and pursue that flighty temptress, adventure.」
+Harry:「But I thought I’m not allowed to use magic outside school, sir?」
+Dumbledore:「If there is an attack, I give you permission to use any counterjinx or curse that might occur to you. However, I do not think you need worry about being attacked tonight.」
+Dumbledore:「You have not, of course, passed your Apparition Test.」
+Harry:「Very good. Well, here we go.」
+Harry:「Are you all right?」
+Dumbledore:「The sensation does take some getting used to.」
+Dumbledore:「So tell me, Harry. Your scar . . . has it been hurting at all?」
+Harry:「Well, I’m not complaining.」
+Harry:「Professor?」
+Dumbledore:「Harry?」

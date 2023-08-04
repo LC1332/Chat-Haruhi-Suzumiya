@@ -1,8 +1,7 @@
-:Dumbledoreaction
-:Harryhelped Dumbledore back to his seat
-Harry:「Sir, I forgot — about fire — they were coming at me and I panicked —」
-Dumbledore:「Quite understandable.」
-:Harryleapt out, then turned quickly to help Dumbledore
-Dumbledore:「I am weak. . . .」
-Harry:「Don’t worry, sir, I’ll get us back. . . . Lean on me, sir. . . .」
-Harry:「Don’t talk now, Save your energy, sir. . . . We’ll soon be out of here. . . .」
+Slughorn:「But then . . . my dear boy . . . you’re asking a great deal . . . you’re asking me, in fact, to aid you in your attempt to destroy —」
+Harry:「You don’t want to get rid of the wizard who killed Lily Evans?」
+Harry:「You’re scared he’ll find out you helped me?」
+:Slughorn said nothing; he looked terrified
+Harry:「Be brave like my mother, Professor. . . .」
+Slughorn:「I am not proud . . . I am ashamed of what — of what that memory shows. . . . I think I may have done great damage that day. . . .」
+Harry:「You’d cancel out anything you did by giving me the memory, It would be a very brave and noble thing to do.」

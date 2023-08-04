@@ -1,8 +1,3 @@
-Harry:「I’ve got to go back, haven’t I?」
-Dumbledore:「That is up to you.」
-Harry:「I’ve got a choice?」
-Dumbledore:「Oh yes. We are in King’s Cross, you say? I think that if you decided not to go back, you would be able to . . . let’s say . . . board a train.」
-Harry:「Voldemort’s got the Elder Wand.」
-Dumbledore:「True. Voldemort has the Elder Wand.」
-Harry:「Tell me one last thing. Is this real? Or has this been happening inside my head?」
-Dumbledore:「Of course it is happening inside your head, Harry, but why on earth should that mean that it is not real?」
+Harry:「So it’s true? All of it? The Peverell brothers —」
+Narrator:Dumbledore think "— were the three brothers of the tale. Oh yes, I think so. Whether they met Death on a lonely road . . . I think it more likely that the Peverell brothers were simply gifted, dangerous wizards who succeeded in creating those powerful objects. The story of them being Death’s own Hallows seems to me the sort of legend that might have sprung up around such creations. The Cloak, as you know now, traveled down through the ages, father to son, mother to daughter, right down to Ignotus’s last living descendant, who was born, as Ignotus was, in the village of Godric’s Hollow."
+Dumbledore:「Me?」

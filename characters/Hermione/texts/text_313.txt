@@ -1,7 +1,5 @@
-George:「I’d love to see him try,」
-Hermione:「He could if you don’t watch out!」
-Fred:「We’re going to have to watch our step, George, with these two on our case . . .」
-George:「Yeah, it looks like our law-breaking days are finally over,」
-Hermione:「Those two! Don’t pay any attention to them, Ron, they’re only jealous!」
-:Harryaction
-Hermione:「Harry?」
+Harry:「So what have you two been doing, if you’re not allowed in meetings? You said you’d been busy.」
+Hermione:「We have, We’ve been decontaminating this house, it’s been empty for ages and stuff’s been breeding in here. We’ve managed to clean out the kitchen, most of the bedrooms, and I think we’re doing the drawing room tomo — AARGH!」
+:Fred materialized out of thin air in the middle of the room
+:George materialized out of thin air in the middle of the room
+Hermione:「Stop doing that!」

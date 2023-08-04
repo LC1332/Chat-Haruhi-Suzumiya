@@ -1,8 +1,13 @@
-Hermione:「Pettigrew attacked Ron, it wasn’t Sirius —」
-:Dumbledoreaction
-Dumbledore:「It is your turn to listen, and I beg you will not interrupt me, because there is very little time,」
-Dumbledore:「There is not a shred of proof to support Black’s story, except your word — and the word of two thirteen-year-old wizards will not convince anybody. A street full of eyewitnesses swore they saw Sirius murder Pettigrew. I myself gave evidence to the Ministry that Sirius had been the Potters’ Secret-Keeper.」
-Harry:「But —」
-Dumbledore:「Listen to me, Harry. It is too late, you understand me? You must see that Professor Snape’s version of events is far more convincing than yours.」
-Dumbledore:「But you believe us.」
-Dumbledore:「Now, pay attention, Sirius is locked in Professor Flitwick’s office on the seventh floor. Thirteenth window from the right of the West Tower. If all goes well, you will be able to save more than one innocent life tonight. But remember this, both of you: You must not be seen. Miss Granger, you know the law — you know what is at stake. . . . You — must — not — be — seen.」
+Madam Pomfrey:「Now, please, Minister, these children need care. Please leave —」
+Dumbledore:「Professor Dumbledore, Sirius Black —」
+Madam Pomfrey:「For heaven’s sake! Is this a hospital wing or not? Headmaster, I must insist —」
+Dumbledore:「My apologies, Poppy, but I need a word with Mr. Potter and Miss Granger」
+Snape:「And does my evidence count for nothing? Peter Pettigrew was not in the Shrieking Shack, nor did I see any sign of him on the grounds.」
+Hermione:「That was because you were knocked out, Professor! You didn’t arrive in time to hear —」
+Snape:「Miss Granger, HOLD YOUR TONGUE!」
+Fudge:「Now, Snape, the young lady is disturbed in her mind, we must make allowances —」
+Dumbledore:「I would like to speak to Harry and Hermione alone」
+Madam Pomfrey:「」
+Fudge:「The dementors should have arrived by now, I’ll go and meet them. Dumbledore, I’ll see you upstairs」
+Snape:「You surely don’t believe a word of Black’s story?」
+Dumbledore:「I wish to speak to Harry and Hermione alone」

@@ -1,4 +1,3 @@
-Dean:「“Thanks.”」
-Harry:「“Good-bye, Dobby,” he said. It was all he could manage, but Luna had said it all for him.」
-:Billaction
-Harry:「“D’you mind if I stay here a moment?” he asked the others.」
+Ron:「“Because that thing’s bad for me!” said Ron, backing away from the locket on the rock. “I can’t handle it! I’m not making excuses, Harry, for what I was like, but it affects me worse than it affected you and Hermione, it made me think stuff — stuff I was thinking anyway, but it made everything worse, I can’t explain it, and then I’d take it off and I’d get my head on straight again, and then I’d have to put the effing thing back on — I can’t do it, Harry!”」
+:Ron action
+Harry:「“You can do it,” said Harry, “you can! You’ve just got the sword, I know it’s supposed to be you who uses it. Please, just get rid of it, Ron.”」

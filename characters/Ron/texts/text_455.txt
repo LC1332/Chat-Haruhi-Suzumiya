@@ -1,12 +1,2 @@
-Hermione:「What kept you?」
-Ron:「Are you all right, Harry? What’s up? What’s happened?」
-Harry:「Is it Cho? Did she corner you after the meeting?」
-Harry:「She — er —」
-Hermione:「Did you kiss?」
-Ron:「Well? How was it?」
-Ron:「Are you that bad at kissing?」
-Ron:「looking extremely frightened」
-scared voice:「I’m going for help」
-Ron:「you were just dreaming」
-:Harryaction
-Ron:「you’re not well, Neville’s gone for help . . .」
+Harry:「A highly polished door had appeared in the wall. Ron was staring at it, looking slightly wary. Harry reached out, seized the brass handle, pulled open the door, and led the way into a spacious room lit with flickering torches like those that illuminated the dungeons eight floors below.」
+Ron:「These will be good when we’re practicing Stunning」

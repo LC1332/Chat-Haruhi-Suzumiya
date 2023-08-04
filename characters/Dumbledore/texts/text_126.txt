@@ -1,3 +1,7 @@
-Harry:「But while I was at the Dursleys’ . . . interrupted Harry, his voice growing stronger, I realized I can’t shut myself away or — or crack up. Sirius wouldn’t have wanted that, would he? And anyway, life’s too short. . . . Look at Madam Bones, look at Emmeline Vance. . . . It could be me next, couldn’t it? But if it is, he said fiercely, now looking straight into Dumbledore’s blue eyes gleaming in the wandlight, I’ll make sure I take as many Death Eaters with me as I can, and Voldemort too if I can manage it.」
-Dumbledore:「Spoken both like your mother and father’s son and Sirius’s true godson! said Dumbledore, with an approving pat on Harry’s back. I take my hat off to you — or I would, if I were not afraid of showering you in spiders.」
-Dumbledore:「And now, Harry, on a closely related subject . . . I gather that you have been taking the Daily Prophet over the last two weeks?」
+Slughorn:「Oh, there you are, Albus. You’ve been a very long time. Upset stomach?」
+Dumbledore:「No, I was merely reading the Muggle magazines. I do love knitting patterns. Well, Harry, we have trespassed upon Horace’s hospitality quite long enough; I think it is time for us to leave.」
+Harry:「You’re leaving?」
+Slughorn:「Yes, indeed. I think I know a lost cause when I see one.」
+Slughorn:「Lost . . . ?」
+:Dumbledore action
+Dumbledore:「I hope you will forgive me for mentioning it, Harry, but I am pleased and a little proud at how well you seem to be coping after everything that happened at the Ministry. Permit me to say that I think Sirius would have been proud of you.」

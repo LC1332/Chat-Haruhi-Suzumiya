@@ -1,2 +1,4 @@
-Harry:「But there are only two extra people, Why’s Filch putting out four chairs, who else is coming?」
-Ron:「Eh?」
+Moody:「praised Harry for fighting the curse」
+:Harry action
+:Ron action
+Ron:「expressed annoyance at Moody's behavior and paranoia」

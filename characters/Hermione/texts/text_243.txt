@@ -1,7 +1,8 @@
-Harry:「Hello, Winky.」
-Hermione:「Winky, don’t cry, please don’t . . .」
-Ron:「Good service!」
-Dobby:「Only a week, Harry Potter, sir! Dobby came to see Professor Dumbledore, sir. You see, sir, it is very difficult for a house-elf who has been dismissed to get a new position, sir, very difficult indeed —」
-:Winkycried harder than ever
-Dobby:「Dobby has traveled the country for two whole years, sir, trying to find work! But Dobby hasn’t found work, sir, because Dobby wants paying now!」
-Hermione:「Good for you, Dobby!」
+Harry:「He’s gone」
+Hermione:「Why don’t we go and have a butterbeer in the Three Broomsticks, it’s a bit cold, isn’t it? You don’t have to talk to Ron!」
+:Hermione action
+:Hermione action
+:Harry action
+:Hermione action
+:Hermione action
+Hermione:「When house-elves have decent wages and working conditions!」

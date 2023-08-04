@@ -1,7 +1,7 @@
 Harry:「Ready?」
 Ron:「Ready.」
 Hermione:「Ready.」
-:Harryaction
+:Harry action
 Harry:「Now what do we do?」
 Ron:「It’s obvious, isn’t it? We’ve got to play our way across the room.」
 Ron:「Do we — er — have to join you to get across?」

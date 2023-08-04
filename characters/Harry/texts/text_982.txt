@@ -1,7 +1,3 @@
-:Hermioneaction
-:Harryaction
-Harry:「Ron and Hermione did not seem any different except that they were a little politer to each other than usual」
-Harry:「wait to see what happened under the influence of butterbeer in Slughorn’s dimly lit room on the night of the party」
-:Harryaction
-Narrator:Harry think "With a sinking feeling that had little to do with Quidditch, he cornered Dean Thomas after Transfiguration one day."
-Harry:「“Well then, you’re in,” said Harry. “There’s a practice tonight, seven o’clock.”」
+Gaunt:「All right, all right, all right! Come in the bleeding house, then, and much good it’ll do you!」
+:Morfin crooning softly at the adder in Parseltongue
+Harry:「Slither on the floor, You be good to Morfin Or he’ll nail you to the door.」

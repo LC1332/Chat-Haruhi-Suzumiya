@@ -1,8 +1,9 @@
-Harry:「Couldn’t Percy do that?」
-Ron:「Whatever you do, don’t mention Percy in front of Mum and Dad, Why not?」
-Fred:「Because every time Percy’s name’s mentioned, Dad breaks whatever he’s holding and Mum starts crying.」
-Ginny:「It’s been awful.」
-George:「I think we’re well shut of him.」
-Harry:「What’s happened?」
-Fred:「Percy and Dad had a row, I’ve never seen Dad row with anyone like that. It’s normally Mum who shouts . . .」
-Ron:「It was the first week back after term ended, We were about to come and join the Order. Percy came home and told us he’d been promoted.」
+Dumbledore:「Good luck with the third task.」
+Ron:「Dumbledore reckons You-Know-Who’s getting stronger again as well?」
+Harry:「Everything Harry had seen in the Pensieve, nearly everything Dumbledore had told and shown him afterward, he had now shared with Ron and Hermione — and, of course, with Sirius, to whom Harry had sent an owl the moment he had left Dumbledore’s office. Harry, Ron, and Hermione sat up late in the common room once again that night, talking it all over until Harry’s mind was reeling, until he understood what Dumbledore had meant about a head becoming so full of thoughts that it would have been a relief to siphon them off.」
+:Ron action
+:Hermione action
+Hermione:「Rita Skeeter,」
+Ron:「How can you be worrying about her now?」
+:Hermione action
+Ron:「And Fudge reckons Madame Maxime attacked Crouch?」

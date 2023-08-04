@@ -1,10 +1,3 @@
-Ron:「I dunno, do I? You were the one saying it.」
-Harry:「I think Voldemort’s looking for him.」
-Ron:「Poor bloke.」
-Harry:「I think he’s abroad. Voldemort. I think he’s somewhere abroad, looking for Gregorovitch. It didn’t look like anywhere in Britain.」
-Harry:「I think he’s got something to do with Quidditch. There’s some connection, but I can’t — I can’t think what it is.」
-Ron:「Dragomir Gorgovitch, Chaser, transferred to the Chudley Cannons for a record fee two years ago. Record holder for most Quaffle drops in a season.」
-Harry:「No, I’m definitely not thinking of Gorgovitch.」
-:Harryspell to glasses
-Ron:「Here’s your present. Unwrap it up here, it’s not for my mother’s eyes.」
-Harry:「A book? Bit of a departure from tradition, isn’t it?」
+Voldemort:「Dinner, Nagini」
+:Nagini action
+Harry:「What the — ?」

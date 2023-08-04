@@ -1,4 +1,10 @@
-Dumbledore:「asking you to make your way down to the Quidditch field for the third and final task of the Triwizard Tournament. Will the champions please follow Mr. Bagman down to the stadium now.」
-Harry:「got up. the Gryffindors all along the table were applauding him; the Weasleys and Hermione all wished him good luck, and he headed off out of the Great Hall with Cedric, Fleur, and Viktor.」
-Bagman:「Feeling all right, Harry? Confident?」
-Harry:「I’m okay」
+Hermione:「D’you think it’s too early to go and see Professor Moody?」
+Harry:「Yes, he’d probably blast us through the door if we wake him at the crack of dawn; he’ll think we’re trying to attack him while he’s asleep. Let’s give it till break」
+:Professor Moody looked tired
+:Professor Moody eyelid of his normal eye was drooping
+Harry:「Professor Moody?」
+Moody:「No.」
+Harry:「Did you use the map?」
+Hermione:「There are other ways he could have disappeared, aren’t there, Professor?」
+Moody:「You’re another one who might think about a career as an Auror. Mind works the right way, Granger.」
+Harry:「Well, he wasn’t invisible. The map shows invisible people. He must’ve left the grounds, then.」

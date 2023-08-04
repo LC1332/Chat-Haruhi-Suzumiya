@@ -1,12 +1,7 @@
-Dumbledore:「And now, Harry, on a closely related subject . . . I gather that you have been taking the Daily Prophet over the last two weeks?」
-Harry:「Yes, said Harry, and his heart beat a little faster.」
-Dumbledore:「Then you will have seen that there have been not so much leaks as floods concerning your adventure in the Hall of Prophecy?」
-Harry:「Yes, said Harry again. And now everyone knows that I’m the one —」
-Harry:「No, said Harry.」
-Harry:「said nothing」
-Dumbledore:「Yes. I think it is time that I took a greater hand in your education.」
-Harry:「What will you be teaching me, sir?」
-Dumbledore:「Professor Snape, Harry — and no, you will not.」
-Harry:「Good, because they were a —」
-Dumbledore:「Don’t count your owls before they are delivered.」
-Harry:「Firstly, I wish you to keep your Invisibility Cloak with you at all times from this moment onward. Even within Hogwarts itself. Just in case, you understand me?」
+Phineas Nigellus:「I don’t believe it,」
+Narrator:Harry think "Harry, I owe you an explanation, An explanation of an old man’s mistakes. For I see now that what I have done, and not done, with regard to you, bears all the hallmarks of the failings of age. Youth cannot know how age thinks and feels. But old men are guilty if they forget what it was to be young . . . and I seem to have forgotten lately . . ."
+Narrator:Dumbledore think "I guessed, fifteen years ago, when I saw the scar upon your forehead, what it might mean. I guessed that it might be the sign of a connection forged between you and Voldemort."
+Harry:「You’ve told me this before, Professor,」
+Dumbledore:「Yes,」
+Harry:「And this ability of yours — to detect Voldemort’s presence, even when he is disguised, and to know what he is feeling when his emotions are roused — has become more and more pronounced since Voldemort returned to his own body and his full powers.」
+Harry:「Yeah, Snape told me.」

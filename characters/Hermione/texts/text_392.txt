@@ -1,4 +1,3 @@
-Harry:「“You know what these remind me of?”」
-Hermione:「“No, what’s that?”」
-Harry:「“The Death Eaters’ scars. Voldemort touches one of them, and all their scars burn, and they know they’ve got to join him.”」
-Hermione:「“Well . . . yes,” said Hermione quietly. “That is where I got the idea . . . but you’ll notice I decided to engrave the date on bits of metal rather than on our members’ skin . . .”」
+Umbridge:「Wands away, please . . .」
+:students 
+Hermione:「Please turn to page thirty-four of Defensive Magical Theory and read the third chapter, entitled ‘The Case for Non-Offensive Responses to Magical Attack.’ There will be —」

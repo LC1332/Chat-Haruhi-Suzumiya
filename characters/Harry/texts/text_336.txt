@@ -1,2 +1,3 @@
-Mr. Weasley:「Ah, this is your cousin, is it, Harry?」
-Harry:「Yep, that’s Dudley.」
+:Ron action
+:Harry action
+Harry:「He ripped open the letter, and shouted, “It’s from Sirius!”」

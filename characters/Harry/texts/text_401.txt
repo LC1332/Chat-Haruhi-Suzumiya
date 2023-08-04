@@ -1,2 +1,7 @@
-:Karkaroffaction
-Harry:「“Harry — it’s Krum!”」
+Ron:「You know why Snape’s in such a foul mood, don’t you?」
+Harry:「Yeah, Moody.」
+:Snape action
+:Snape action
+:Snape action
+Harry:「I reckon Snape’s a bit scared of him, you know」
+Harry:「Been in the Library.」

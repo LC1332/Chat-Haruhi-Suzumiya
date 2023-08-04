@@ -1,7 +1,14 @@
-Ron:「She hasn’t been much of a laugh lately. Every time I’ve seen her she’s looked more like Moaning Myrtle.」
-Hermione:「That’s not fair. She still hasn’t got over what happened . . . you know . . . I mean, he was her cousin!」
-Harry:「Tonks and Sirius barely knew each other! Sirius was in Azkaban half her life and before that their families never met —」
-Hermione:「That’s not the point. She thinks it was her fault he died!」
-Ron:「That’s stupid.」
-Hermione:「It’s survivor’s guilt. I know Lupin’s tried to talk her round, but she’s still really down. She’s actually having trouble with her Metamorphosing!」
-Hermione:「Nor did I, but I suppose if you’re really depressed . . .」
+Umbridge:「eagerly asked Hermione if the object is hidden in Hagrid's hut」
+Hermione:「scathingly replied that it is not hidden in Hagrid's hut and that Hagrid might have set it off accidentally」
+Umbridge:「laughed and insulted Hagrid」
+Narrator:Harry think "felt a strong urge to seize Umbridge by the throat but resisted"
+Narrator:Harry think "scar was throbbing but Voldemort had not yet moved in for the kill"
+Umbridge:「asked where the object is」
+Hermione:「pointed into the dark trees and said it had to be somewhere that students weren't going to find it accidentally」
+Umbridge:「refused and poked Harry in the back with her wand」
+Narrator:Harry think "misgivings increased about walking into the forest without wands"
+:Hermione action
+Hermione:「said yes and crashed through the undergrowth with unnecessary noise」
+Harry:「hurried to catch up with Hermione and asked her to keep her voice down」
+Hermione:「answered quietly that she wants them to be heard」
+Hermione:「shouted that it's not far now as they emerged into a dim, dank clearing」

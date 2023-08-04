@@ -1,2 +1,15 @@
-Harry:「Good, Because he’ll just fall apart again, and we’ll lose the next match —」
-Hermione:「Quidditch! Is that all boys care about? Cormac hasn’t asked me one single question about myself, no, I’ve just been treated to ‘A Hundred Great Saves Made by Cormac McLaggen’ nonstop ever since — oh no, here he comes!」
+Hagrid:「Very clever. Very amusin’. That’s me outsmarted, innit? All righ’, come in then, yeh ungrateful little . . .」
+Hermione:「Well?」
+Hagrid:「What’s this? Feelin’ sorry for me? Reckon I’m lonely or summat?」
+Harry:「No, we wanted to see you.」
+Hermione:「We’ve missed you!」
+:Hagrid action
+:Harry action
+Hermione:「Hagrid, we really wanted to carry on with Care of Magical Creatures, you know.」
+Hagrid:「Yeah. Righ’.」
+Hermione:「What are they, Hagrid?」
+Hagrid:「Jus’ giant grubs」
+:Ron action
+Hagrid:「They won’ grow inter nuthin’. I got ’em ter feed ter Aragog.」
+:Hagrid action
+Hermione:「Hagrid! What is it?」

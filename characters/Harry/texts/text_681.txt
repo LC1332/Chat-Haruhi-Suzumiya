@@ -1,10 +1,7 @@
-Sirius:「Yes, but the world isn’t split into good people and Death Eaters. I know she’s a nasty piece of work, though — you should hear Remus talk about her.」
-Harry:「Does Lupin know her?」
-Sirius:「No, but she drafted a bit of anti-werewolf legislation two years ago that makes it almost impossible for him to get a job.」
-Harry:「What’s she got against werewolves?」
-Ron:「laughed」
-Hermione:「upset」
-Hermione:「Sirius! Honestly, if you made a bit of an effort with Kreacher I’m sure he’d respond, after all, you are the only member of his family he’s got left, and Professor Dumbledore said —」
-Sirius:「So what are Umbridge’s lessons like? Is she training you all to kill half-breeds?」
-Harry:「No, she’s not letting us use magic at all!」
-Harry:「Trained in combat? What does he think we’re doing here, forming some sort of wizard army?」
+Malfoy:「Father was talking to the Minister just a couple of days ago, you know, and it sounds as though the Ministry’s really determined to crack down on substandard teaching in this place. So even if that overgrown moron does show up again, he’ll probably be sent packing straight away.」
+Harry:「OUCH!」
+:Crabbe and Goyle action
+Harry:「If he calls Hagrid a moron one more time . . .」
+:Ron action
+Hermione:「I just wish Hagrid would hurry up and get back, that’s all.」
+Harry:「And don’t say that Grubbly-Plank woman’s a better teacher!」

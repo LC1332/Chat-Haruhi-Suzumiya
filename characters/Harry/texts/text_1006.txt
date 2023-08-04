@@ -1,8 +1,8 @@
-Scrimgeour:「We’ve only looked in for five minutes, so I’ll have a stroll around the yard while you catch up with Percy. No, no, I assure you I don’t want to butt in! Well, if anybody cared to show me your charming garden . . . Ah, that young man’s finished, why doesn’t he take a stroll with me?」
-Harry:「Yeah, all right」
-:Harryaction
-Scrimgeour:「Wonderful! We’ll just take a turn around the garden, and Percy and I’ll be off. Carry on, everyone!」
-Harry:「Charming.」
-Scrimgeour:「The rumors that have flown around! Well, of course, we both know how these stories get distorted . . . all these whispers of a prophecy . . . of you being ‘the Chosen One’ . . .」
-Scrimgeour:「I assume that Dumbledore has discussed these matters with you?」
-Harry:「Yeah, we’ve discussed it.」
+Dumbledore:「Professor Snape knows much more about the Dark Arts than Madam Pomfrey, Harry. Anyway, the St. Mungo’s staff are sending me hourly reports, and I am hopeful that Katie will make a full recovery in time.」
+Harry:「Where were you this weekend, sir?」
+Dumbledore:「I would rather not say just now. However, I shall tell you in due course.」
+Harry:「You will?」
+Dumbledore:「Ah yes, I am already aware that Mundungus has been treating your inheritance with light-fingered contempt. He has gone to ground since you accosted him outside the Three Broomsticks; I rather think he dreads facing me. However, rest assured that he will not be making away with any more of Sirius’s old possessions.」
+Phineas Nigellus:「That mangy old half-blood has been stealing Black heirlooms?」
+Harry:「did Professor McGonagall tell you what I told her after Katie got hurt? About Draco Malfoy?」
+Harry:「If their lessons were so very important, why had there been such a long gap between the first and second?」

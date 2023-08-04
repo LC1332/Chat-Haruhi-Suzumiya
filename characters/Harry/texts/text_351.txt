@@ -1,5 +1,3 @@
-Fred:「Oh shut up, Weatherby.」
-Harry:「Been saving my pocket money all summer for this.」
-Ron:「Wow, look at these! Wish I hadn’t bought this now.」
-saleswizard:「Omnioculars. You can replay action . . . slow everything down . . . and they flash up a play-by-play breakdown if you need it. Bargain — ten Galleons each.」
-Harry:「Three pairs.」
+Mr. Weasley:「Harry, go! Just go! I’ll sort this out!」
+:Harry action
+Harry:「Did he eat it?」

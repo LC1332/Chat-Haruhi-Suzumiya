@@ -1,11 +1,13 @@
-Harry:「I’m going to grab the Cloak!」
-Hermione:「Harry, no!」
-Hermione:「See? See what would have happened? We’ve got to keep out of sight! No, Buckbeak!」
-Hermione:「Harry, there’s something I don’t understand. . . . Why didn’t the dementors get Sirius? I remember them coming, and then I think I passed out . . . there were so many of them. . . .」
-Harry:「There’s only one thing it could have been, to make the dementors go. A real Patronus. A powerful one.」
-Hermione:「But who conjured it?」
-Harry:「Yeah, I saw him. But . . . maybe I imagined it. . . . I wasn’t thinking straight. . . . I passed out right afterward. . . .」
-Hermione:「Who did you think it was?」
-Harry:「I know that.」
-Hermione:「You think you saw his ghost?」
-Hermione:「I know it sounds crazy.」
+:Harry action
+Hermione:「Right, we need to sneak over to Hagrid’s. Keep out of sight, Harry.」
+:Harry made their way silently through the trees, keeping to the very edge of the forest
+:Hermione made their way silently through the trees, keeping to the very edge of the forest
+:Harry heard a knock upon Hagrid's door
+:Hermione heard a knock upon Hagrid's door
+Harry:「It’s us. We’re wearing the Invisibility Cloak. Let us in and we can take it off.」
+Hagrid:「Yeh shouldn’ve come!」
+:Hagrid stood back, then shut the door quickly
+Harry:「This is the weirdest thing we’ve ever done.」
+Hermione:「Let’s move along a bit. We need to get nearer to Buckbeak!」
+Harry:「Now?」
+Hermione:「No! If we steal him now, those Committee people will think Hagrid set him free! We’ve got to wait until they’ve seen he’s tied outside!」

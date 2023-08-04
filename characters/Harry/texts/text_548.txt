@@ -1,2 +1,4 @@
-Hagrid:「Yeh did as much as yer father would’ve done, an’ I can’ give yeh no higher praise than that.」
-Harry:「What’s Dumbledore asked you to do, Hagrid? He sent Professor McGonagall to ask you and Madame Maxime to meet him — that night.」
+Hermione:「Of course she doesn’t, said Hermione sharply, looking up. Look what happened to Hagrid when Rita found out about his mother. Look at Fudge, jumping to conclusions about her, just because she’s part giant. Who needs that sort of prejudice? I’d probably say I had big bones if I knew that’s what I’d get for telling the truth.」
+:Hermione action
+:Harry action
+Harry:「It was Voldemort, Harry thought, staring up at the canopy of his bed in the darkness, it all came back to Voldemort. . . . He was the one who had torn these families apart, who had ruined all these lives. . . .」

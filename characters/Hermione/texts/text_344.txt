@@ -1,8 +1,4 @@
-Ron:「“Sturgis Podmore?” said Ron slowly, “but he’s that bloke who looks like his head’s been thatched, isn’t he? He’s one of the Ord —”」
-Hermione:「“Ron, shh!” said Hermione, casting a terrified look around them.」
-Harry:「“Six months in Azkaban!” whispered Harry, shocked. “Just for trying to get through a door!”」
-Hermione:「“Don’t be silly, it wasn’t just for trying to get through a door — what on earth was he doing at the Ministry of Magic at one o’clock in the morning?” breathed Hermione.」
-:Ronaction
-Harry:「“Yeah, he was supposed to be part of our guard going to King’s Cross, remember? And Moody was all annoyed because he didn’t turn up, so that doesn’t seem like he was supposed to be on a job for them, does it?”」
-Hermione:「“Well, maybe they didn’t expect him to get caught,” said Hermione.」
-Hermione:「Hermione, on the other hand, looked rather impressed and said, “Do you know, I wouldn’t be at all surprised if that were true.”She folded up her half of the newspaper thoughtfully.」
+Ron:「“Weasley,” said Ron, thrusting his hand into the air.」
+:Umbridge action
+Hermione:「“Yes, Miss Granger? You wanted to ask something else?”」
+Hermione:「“Surely the whole point of Defense Against the Dark Arts is to practice defensive spells?”」

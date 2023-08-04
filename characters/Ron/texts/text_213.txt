@@ -1,2 +1,12 @@
-Lupin:「Very well, Stand aside, Harry, I’m going to tie him up, That’s all, I swear, Ron, I can’t mend bones nearly as well as Madam Pomfrey, so I think it’s best if we just strap your leg up until we can get you to the hospital wing, There’s nothing seriously wrong with him, You were just a little — overenthusiastic. Still out cold. Er — perhaps it will be best if we don’t revive him until we’re safely back in the castle. We can take him like this. . . .」
-Ron:「That’s better, Thanks, And me」
+Harry:「No one was with us!」
+:Lupin saw another dot, moving fast toward you, labeled Sirius Black. . . . I saw him collide with you; I watched as he pulled two of you into the Whomping Willow —
+Ron:「One of us!」
+Lupin:「No, Ron, Two of you.」
+:Lupin stopped his pacing, his eyes moving over Ron.
+Lupin:「Do you think I could have a look at the rat?」
+Ron:「What? What’s Scabbers got to do with it?」
+:Scabbers action
+:Ron action
+Ron:「What? What’s my rat got to do with anything?」
+Lupin:「He’s a wizard. An Animagus, by the name of Peter Pettigrew.」
+Ron:「You’re both mental.」

@@ -1,5 +1,7 @@
-:Lucius Malfoysaw his right hand twitch as though he was longing to reach for his wand
-Dumbledore:「Oh, no one will be able to do that. Not now that Riddle has vanished from the book. On the other hand, I would advise you, Lucius, not to go giving out any more of Lord Voldemort’s old school things. If any more of them find their way into innocent hands, I think Arthur Weasley, for one, will make sure they are traced back to you. . . .」
-:Lucius Malfoystood for a moment
-Harry:「Professor Dumbledore, Can I give that diary back to Mr. Malfoy, please?」
-Dumbledore:「Certainly, Harry. But hurry. The feast, remember. . . .」
+Lucius Malfoy:「So! You’ve come back. The governors suspended you, but you still saw fit to return to Hogwarts.」
+Dumbledore:「Well, you see, Lucius, the other eleven governors contacted me today. It was something like being caught in a hailstorm of owls, to tell the truth. They’d heard that Arthur Weasley’s daughter had been killed and wanted me back here at once. They seemed to think I was the best man for the job after all. Very strange tales they told me, too. . . . Several of them seemed to think that you had threatened to curse their families if they didn’t agree to suspend me in the first place.」
+Lucius Malfoy:「So — have you stopped the attacks yet? Have you caught the culprit?」
+Dumbledore:「We have.」
+:Dumbledore held up the small black book with the large hole through the center, watching Mr. Malfoy closely
+Lucius Malfoy:「I see . . .」
+Dumbledore:「A clever plan. Because if Harry here and his friend Ron hadn’t discovered this book, why — Ginny Weasley might have taken all the blame. No one would ever have been able to prove she hadn’t acted of her own free will. . . .」

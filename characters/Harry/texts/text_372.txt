@@ -1,21 +1,4 @@
-:Nevilleaction
-Harry:「What’ve you done to him?」
-:Hermionespell to Neville
-:Nevilleaction
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
+Bagman:「Let’s have a really loud hand for the gallant losers — Bulgaria!」
+:Bulgarian players up the stairs into the box
+:Crowd applauding appreciatively
+Harry:「Harry could see thousands and thousands of Omniocular lenses flashing and winking in their direction.」

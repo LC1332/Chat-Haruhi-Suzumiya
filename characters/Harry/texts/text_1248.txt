@@ -1,2 +1,8 @@
-Xenophilius:「I bought it, two weeks ago, from a delightful young wizard who knew of my interest in the exquisite Snorkack. A Christmas surprise for my Luna. Now, why exactly have you come here, Mr. Potter?」
-Harry:「We need some help.」
+Hermione:「Salvio Hexia . . . Protego Totalum . . . Repello Muggletum . . . Muffliato . . . You could get out the tent, Harry. . . .」
+Harry:「Tent?」
+Hermione:「In the bag!」
+Harry:「In the . . . of course.」
+:Hermione action
+:Hermione spell to protect
+Ron:「Don’t say the name!」
+Harry:「Dumbledore said fear of a name —」

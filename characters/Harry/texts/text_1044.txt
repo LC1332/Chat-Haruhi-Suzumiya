@@ -1,7 +1,10 @@
-:Ronaction
-Harry:「Kreacher!」
-Kreacher:「Master said he wanted regular reports on what the Malfoy boy is doing, so Kreacher has come to give —」
-Dobby:「Dobby has been helping too, Harry Potter!」
-Kreacher:「Kreacher ought to tell Dobby when he is coming to see Harry Potter so they can make their reports together!」
-Hermione:「What is this? What’s going on, Harry?」
-Harry:「they’ve been following Malfoy for me」
+Dumbledore:「I told Cornelius there was no chance of it, but the idea did not die when he left office. Within hours of Scrimgeour’s appointment we met and he demanded that I arrange a meeting with you —」
+Harry:「So that’s why you argued! It was in the Daily Prophet.」
+Dumbledore:「The Prophet is bound to report the truth occasionally, if only accidentally. Yes, that was why we argued. Well, it appears that Rufus found a way to corner you at last.」
+Harry:「He accused me of being ‘Dumbledore’s man through and through.’」
+Dumbledore:「I am very touched, Harry.」
+Harry:「Scrimgeour wanted to know where you go when you’re not at Hogwarts.」
+Dumbledore:「No, they don’t, and the time is not quite right for you to know either. Now, I suggest we press on, unless there’s anything else — ?」
+Harry:「There is, actually, sir. It’s about Malfoy and Snape.」
+Dumbledore:「Thank you for telling me this, Harry, but I suggest that you put it out of your mind. I do not think that it is of great importance.」
+Harry:「Not of great importance? Professor, did you understand — ?」

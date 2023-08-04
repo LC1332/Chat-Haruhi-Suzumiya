@@ -1,2 +1,3 @@
-:Percyaction
+Percy:「“Morning, all,” said Percy briskly. “Lovely day.”」
+:Percy action
 Ron:「“Errol!” said Ron, taking the limp owl from Percy and extracting a letter from under its wing. “Finally — he’s got Hermione’s answer. I wrote to her saying we were going to try and rescue you from the Dursleys.”」

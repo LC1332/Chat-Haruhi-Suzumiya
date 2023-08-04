@@ -1,11 +1,7 @@
-Greyback:「said "Oh, I’m not going to bite just yet. We’ll see if she’s a bit quicker at remembering her name than Barny. Who are you, girly?"」
-Hermione:「said "Penelope Clearwater."」
-Scabior:「said "What’s your blood status?"」
-Hermione:「said "Half-blood."」
-Scabior:「said "Left, ’ave you, ginger? And you decided to go camping? And you thought, just for a laugh, you’d use the Dark Lord’s name?"」
-Ron:「said "Nod a laugh, Accident?"」
-Greyback:「said "You know who used to like using the Dark Lord’s name, Weasley? The Order of the Phoenix. Mean anything to you?"」
-Ron:「said "Doh."」
-Hermione:「Well, they don’t show the Dark Lord proper respect, so the name’s been Tabooed. A few Order members have been tracked that way. We’ll see. Bind them up with the other two prisoners!」
-Ron:「No」
-Hermione:「No」
+Harry:「Bathilda must’ve been dead a while. The snake was . . . was inside her. You-Know-Who put it there in Godric’s Hollow, to wait. You were right. He knew I’d go back.」
+Hermione:「The snake was inside her?」
+Harry:「Lupin said there would be magic we’d never imagined, She didn’t want to talk in front of you, because it was Parseltongue, all Parseltongue, and I didn’t realize, but of course I could understand her. Once we were up in the room, the snake sent a message to You-Know-Who, I heard it happen inside my head, I felt him get excited, he said to keep me there . . . and then . . .」
+Harry:「she changed, changed into the snake, and attacked.」
+Harry:「It wasn’t supposed to kill me, just keep me there till You-Know-Who came.」
+Harry:「Sick at heart, he sat up and threw back the covers.」
+Hermione:「Harry, no, I’m sure you ought to rest!」

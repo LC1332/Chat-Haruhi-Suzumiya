@@ -1,2 +1,3 @@
-:Hagridaction
+Hagrid:「Everyone here? You there, still got yer toad?」
+:Hagrid action
 Harry:「The firs’ years, Professor McGonagall.」

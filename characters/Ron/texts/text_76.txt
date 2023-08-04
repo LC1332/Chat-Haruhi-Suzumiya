@@ -1,9 +1,6 @@
-Harry:「Come on, we’d better get up to the school. . . .」
-Ron:「I think the feast’s already started, Hey — Harry — come and look — it’s the Sorting!」
-Harry:「What’ve you done to him?」
-Harry:「Hang on . . . There’s an empty chair at the staff table. . . . Where’s Snape?」
-Ron:「Maybe he’s ill! Maybe he’s left, because he missed out on the Defense Against the Dark Arts job again! Or he might have been sacked! I mean, everyone hates him —」
-Snape:「So, the train isn’t good enough for the famous Harry Potter and his faithful sidekick Weasley. Wanted to arrive with a bang, did we, boys?」
-Ron:「No, sir, it was the barrier at King’s Cross, it —」
-Narrator:Harry think "Harry felt as though he’d just been walloped in the stomach by one of the mad tree’s larger branches. If anyone found out Mr. Weasley had bewitched the car . . . he hadn’t thought of that. . . ."
-Ron:「That tree did more damage to us than we —」
+Harry:「“Okay,” he said.」
+:Ron action
+Ron:「“Let’s go,” said Ron’s voice from his right.」
+:Harry action
+:Ron action
+Ron:「“Uh-oh,” said Ron, jabbing at the Invisibility Booster. “It’s faulty —”」

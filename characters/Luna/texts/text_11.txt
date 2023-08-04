@@ -1,2 +1,3 @@
-:Hermioneaction
+Hermione:「Fire away, then, Rita.」
+:Hermione action
 Luna:「she did not know how soon Rita’s interview with Harry would appear in The Quibbler, her father was expecting a lovely long article on recent sightings of Crumple-Horned Snorkacks」

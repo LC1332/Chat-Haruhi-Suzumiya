@@ -1,4 +1,4 @@
 Narrator:Narrator think "Albus Dumbledore didn’t seem to realize that he had just arrived in a street where everything from his name to his boots was unwelcome. He was busy rummaging in his cloak, looking for something. But he did seem to realize he was being watched, because he looked up suddenly at the cat, which was still staring at him from the other end of the street. For some reason, the sight of the cat seemed to amuse him. He chuckled and muttered, “I should have known.”"
-:Albus Dumbledoreaction
+:Albus Dumbledore action
 Albus Dumbledore:「Fancy seeing you here, Professor McGonagall.」
 Professor McGonagall:「How did you know it was me?」

@@ -1,2 +1,10 @@
-Malfoy:「Well, you’re losing your grip, then! He’s been offering me plenty of help — wanting all the glory for himself — wanting a bit of the action — ‘What are you doing?’ ‘Did you do the necklace, that was stupid, it could have blown everything —’ But I haven’t told him what I’ve been doing in the Room of Requirement, he’s going to wake up tomorrow and it’ll all be over and he won’t be the Dark Lord’s favorite anymore, he’ll be nothing compared to me, nothing!」
-Dumbledore:「Very gratifying. We all like appreciation for our own hard work, of course. But you must have had an accomplice, all the same . . . someone in Hogsmeade, someone who was able to slip Katie the — the — aaaah . . .」
+Madam Rosmerta:「I’ve got a couple behind the bar, Shall I run and fetch — ?」
+:Harry spell to Rosmerta
+Dumbledore:「Rosmerta, please send a message to the Ministry. It might be that nobody within Hogwarts has yet realized anything is wrong. . . . Harry, put on your Invisibility Cloak.」
+Harry:「What does it mean? Is it the real Mark? Has someone definitely been — Professor?」
+Dumbledore:「Go and wake Severus. Tell him what has happened and bring him to me. Do nothing else, speak to nobody else, and do not remove your Cloak. I shall wait here.」
+Malfoy:「Who else is here? A question I might ask you. Or are you acting alone?」
+Harry:「No, I’ve got backup. There are Death Eaters here in your school tonight.」
+Dumbledore:「Very good indeed. You found a way to let them in, did you?」
+Malfoy:「They met some of your guards. They’re having a fight down below. They won’t be long. . . . I came on ahead. I — I’ve got a job to do.」
+Dumbledore:「Well, then, you must get on and do it, my dear boy.」

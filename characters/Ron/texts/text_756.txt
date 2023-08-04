@@ -1,0 +1,9 @@
+:Harry action
+:Ron action
+Ron:「said they got the Horcrux」
+Harry:「said they got the Horcrux」
+:Harry action
+Ron:「said they can't wear the Horcrux this time」
+Ron:「said the dragon can look after itself, they need to worry about themselves」
+Hermione:「asked what they're going to do, You-Know-Who will know they know about his Horcruxes」
+Ron:「said maybe they'll be too scared to tell him, maybe they'll cover up」

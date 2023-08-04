@@ -1,2 +1,11 @@
-Hermione:「Hand over Harry?」
-Ron:「No deal. Get out of the way, we’re leaving.」
+Hermione:「Apparently he didn’t want it back, his lumbago’s so bad, so Ron’s dad said I could borrow it. Erecto!」
+:Hermione action
+:Hermione spell to protect
+Ron:「Don’t say the name!」
+Harry:「Dumbledore said fear of a name —」
+Ron:「Just — just show You-Know-Who some respect, will you?」
+Ron:「What d’you reckon happened to the Cattermoles?」
+Harry:「So, have you got it?」
+Hermione:「Got — got what?」
+Harry:「The locket! Where’s the locket?」
+Ron:「You got it? No one tells me anything! Blimey, you could have mentioned it!」

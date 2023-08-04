@@ -1,9 +1,11 @@
-Hermione:「I knew it, Snape — look.」
-Ron:「What are you doing?」
-Hermione:「He’s doing something — jinxing the broom.」
-Ron:「What should we do?」
-:Hermioneaction
-:HermioneReaching Snape, she crouched down, pulled out her wand, and whispered a few, well-chosen words. Bright blue flames shot from her wand onto the hem of Snape’s robes.
-:HermioneScooping the fire off him into a little jar in her pocket, she scrambled back along the row — Snape would never know what had happened.
-Harry:「Neville, you can look!」
-Ron:「It was Snape, Hermione and I saw him. He was cursing your broomstick, muttering, he wouldn’t take his eyes off you.」
+Hermione:「“Just one, and that reminds me — Harry, Ron, we’ve got half an hour before lunch, we should be in the library.”」
+Ron:「Oh yeah, you’re right,」
+Hagrid:「The library? Just before the holidays? Bit keen, aren’t yeh?」
+Harry:「Oh, we’re not working, Ever since you mentioned Nicolas Flamel we’ve been trying to find out who he is.」
+Hermione:「We just want to know who Nicolas Flamel is, that’s all, Unless you’d like to tell us and save us the trouble?」
+Harry:「We must’ve been through hundreds of books already and we can’t find him anywhere — just give us a hint — I know I’ve read his name somewhere.」
+Hagrid:「I’m sayin’ nothin’」
+Ron:「Just have to find out for ourselves, then」
+Madam Pince:「You’d better get out, then. Go on — out!」
+Hermione:「You will keep looking while I’m away, won’t you? And send me an owl if you find anything.」
+Ron:「And you could ask your parents if they know who Flamel is. It’d be safe to ask them.」

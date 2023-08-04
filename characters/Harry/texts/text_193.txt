@@ -1,5 +1,10 @@
-George:「“Definitely not,”」
-:Harryaction
-Harry:「“This is called a telephone number,” he told Ron, scribbling it twice, tearing the parchment in two, and handing it to them. “I told your dad how to use a telephone last summer — he’ll know. Call me at the Dursleys’, okay? I can’t stand another two months with only Dudley to talk to. . . .”」
-Hermione:「“Your aunt and uncle will be proud, though, won’t they?” said Hermione as they got off the train and joined the crowd thronging toward the enchanted barrier. “When they hear what you did this year?”」
-Harry:「“Proud?” said Harry. “Are you crazy? All those times I could’ve died, and I didn’t manage it? They’ll be furious. . . .”」
+Lucius Malfoy:「Very fortunate.」
+:Dobby pointing, first to the diary, then to Lucius Malfoy, then punching himself in the head
+Harry:「Don’t you want to know how Ginny got hold of that diary, Mr. Malfoy?」
+Lucius Malfoy:「How should I know how the stupid little girl got hold of it?」
+Harry:「Because you gave it to her. In Flourish and Blotts. You picked up her old Transfiguration book and slipped the diary inside it, didn’t you?」
+:Lucius Malfoy stood for a moment
+Harry:「Professor Dumbledore, Can I give that diary back to Mr. Malfoy, please?」
+:Dobby action
+:Harry action
+Harry:「I’ve got something for you —」

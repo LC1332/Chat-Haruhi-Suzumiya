@@ -1,10 +1,6 @@
-Lucius Malfoy:「The prophecy, give me the prophecy, Potter!」
-Harry:「It’s too late, We can still reach him —」
-Lupin:「There’s nothing you can do, Harry . . . nothing. . . . He’s gone.」
-:Harrystruggled hard and viciously
-Harry:「SIRIUS!」
-Lupin:「Harry?」
-Neville:「Was dat man — was Sirius Black a — a friend of yours?」
-Lupin:「Let’s — let’s find the others. Where are they all, Neville?」
-Neville:「Dey’re all back dere, A brain addacked Ron bud I dink he’s all righd — and Herbione’s unconscious, bud we could feel a bulse —」
-Harry:「SHE KILLED SIRIUS! SHE KILLED HIM — I’LL KILL HER!」
+Voldemort:「“Undoubtedly I shall in the end,” said the cold voice. “But you will fetch it for me first, Black. . . . You think you have felt pain thus far? Think again. . . . We have hours ahead of us and nobody to hear you scream . . .”」
+:Voldemort action
+:Harry action
+Harry:「I’m not going. . . . I don’t need the hospital wing. . . . I don’t want . . .」
+Professor Tofty:「Pressure of examinations! It happens, young man, it happens! Now, a cooling drink of water, and perhaps you will be ready to return to the Great Hall? The examination is nearly over, but you may be able to round off your last answer nicely?」
+Harry:「Yes, I mean . . . no . . . I’ve done — done as much as I can, I think . . .」

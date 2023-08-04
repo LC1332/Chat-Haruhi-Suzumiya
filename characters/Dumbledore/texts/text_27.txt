@@ -1,8 +1,3 @@
-:Hermioneaction
-Dumbledore:「Merry Christmas! As there are so few of us, it seemed foolish to use the House tables. . . . Sit down, sit down!」
-Harry:「Crackers!」
-:Snapeaction
-:Ronaction
-:Snapeaction
-Dumbledore:「Dig in!」
-Dumbledore:「this is a pleasant surprise!」
+:Hagrid wiping his eyes on the tablecloth
+Dumbledore:「Well, I think that’s everything of importance」
+Dumbledore:「Let the feast begin!」

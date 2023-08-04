@@ -1,11 +1,2 @@
-:Nevillestaring, apparently entranced, at the veil
-Ron:「I’m here, mate.」
-Hermione:「I don’t know, but whatever it was, it was dangerous,」
-:Hermioneaction
-Harry:「What’s wrong? It’s . . . locked . . .」
-Ron:「This is it, then, isn’t it? Bound to be!」
-Harry:「Sirius’s knife!」
-:Harryaction
-:Harryaction
-Hermione:「Right, we’re leaving that room,」
-Ron:「But what if that’s the one?」
+Firenze:「Because I have agreed to work for Professor Dumbledore. They see this as a betrayal of our kind.」
+Ron:「Blimey!」

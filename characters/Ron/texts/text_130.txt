@@ -1,7 +1,9 @@
-Harry:「I agree, sir」
-Ron:「Why don’t you leave us here, sir, we’ve only got one more corridor to go —」
-Lockhart:「I really should go and prepare my next class —」
-Ron:「Gone to curl his hair, more like.」
-Hermione:「Of course, I realize this has all been hardest on the friends of those who have been . . . I quite understand. Yes, Potter, of course you may visit Miss Granger. I will inform Professor Binns where you’ve gone. Tell Madam Pomfrey I have given my permission.」
-:Harry and Ronwalked away, hardly daring to believe that they’d avoided detention.
-Ron:「That was the best story you’ve ever come up with.」
+Lockhart:「“The danger has passed! The culprit has been taken away —”」
+Ron:「“Oh, yes he would,”」
+Lockhart:「“I flatter myself I know a touch more about Hagrid’s arrest than you do, Mr. Weasley,”」
+:Ron action
+:Ron action
+:Ginny action
+:Fred, George, and Ginny action
+:Harry and Ron action
+Ron:「said abruptly as they strode across the black grass, “we might get to the forest and find there’s nothing to follow. Those spiders might not’ve been going there at all. I know it looked like they were moving in that sort of general direction, but . . .”」

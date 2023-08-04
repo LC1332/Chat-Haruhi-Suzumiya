@@ -1,2 +1,10 @@
-:Harryaction
-Luna:「What’s happened, what’s happened?」
+Harry:「Come on, this way.」
+:Harry crept off
+:Harry action
+Luna:「This way, Harry,」
+:Luna plucking his sleeve and pulling him toward a spiral staircase
+:Harry There was no handle and no keyhole: nothing but a plain expanse of aged wood, and a bronze knocker in the shape of an eagle
+:Luna reached out a pale hand
+Luna:「Hmm . . . What do you think, Harry?」
+Harry:「What if you get it wrong?」
+Luna:「Well, you have to wait for somebody who gets it right,」

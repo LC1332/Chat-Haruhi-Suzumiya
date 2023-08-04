@@ -1,7 +1,10 @@
-Dumbledore:「It is.」
-Harry:「Why did he come back? Did you ever find out?」
-Dumbledore:「I have ideas, but no more than that.」
-Harry:「What ideas, sir?」
-Dumbledore:「Oh, he definitely wanted the Defense Against the Dark Arts job. The aftermath of our little meeting proved that. You see, we have never been able to keep a Defense Against the Dark Arts teacher for longer than a year since I refused the post to Lord Voldemort.」
-Ron:「I won’t, Or maybe I will . . . then she’ll ditch me . . .」
-Harry:「Why don’t you ditch her if you want to finish it?」
+Hermione:「Have you heard of this Fenrir Greyback?」
+Harry:「Yes, I have! And so have you, Harry!」
+Hermione:「When, History of Magic? You know full well I never listened . . .」
+Harry:「No, no, not History of Magic — Malfoy threatened Borgin with him! Back in Knockturn Alley, don’t you remember? He told Borgin that Greyback was an old family friend and that he’d be checking up on Borgin’s progress!」
+Harry:「Oh, come on, you can’t get round this one!」
+:Hermione abusing the Minister of Magic
+Hermione:「The new term started next morning with a pleasant surprise for the sixth years: a large sign had been pinned to the common room notice boards overnight.」
+Notice Board:「APPARITION LESSONS」
+Notice Board:「If you are seventeen years of age, or will turn seventeen on or before the 31st August next, you are eligible for a twelve-week course of Apparition Lessons from a Ministry of Magic Apparition instructor. Please sign below if you would like to participate. Cost: 12 Galleons.」
+Harry:「He’s not very happy with me.」

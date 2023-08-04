@@ -1,6 +1,13 @@
-:Riddleaction
-Harry:「The scene whirled, the darkness became complete; Harry felt himself falling and, with a crash, he landed spread-eagled on his four-poster in the Gryffindor dormitory, Riddle’s diary lying open on his stomach.」
-Ron:「Before he had had time to regain his breath, the dormitory door opened and Ron came in.」
-Ron:「There you are,」
-:Harryaction
-Harry:「Hagrid had an unfortunate liking for large and monstrous creatures.」
+Riddle:「No, sir.」
+Headmaster:「You may go, Tom. . . .」
+:Riddle slid off his chair and slouched out of the room
+Harry:「Riddle, do you mean you know something about these attacks?」
+Riddle:「No, sir.」
+Dumbledore:「I had to see the headmaster, sir.」
+Dumbledore:「Well, hurry off to bed. Best not to roam the corridors these days. Not since . . .」
+:Riddle watched him walk out of sight
+:Riddle moving quickly, headed straight down the stone steps to the dungeons
+:Harry in hot pursuit
+:Riddle action
+:Harry action
+Harry:「There was something familiar about that voice. . . .」

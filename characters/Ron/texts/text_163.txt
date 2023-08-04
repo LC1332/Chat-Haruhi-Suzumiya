@@ -1,6 +1,9 @@
-Hermione:「But then, why would you dread him dying?」
-Ron:「Don’t mind Hermione, Lavender, she doesn’t think other people’s pets matter very much.」
-Professor McGonagall:「One moment, please! As you’re all in my House, you should hand Hogsmeade permission forms to me before Halloween. No form, no visiting the village, so don’t forget!」
-Neville:「Please, Professor, I — I think I’ve lost —」
-Professor McGonagall:「Your grandmother sent yours to me directly, Longbottom. She seemed to think it was safer. Well, that’s all, you may leave.」
-Ron:「Ask her now,」
+Harry:「What did Malfoy mean? Why would I want revenge on Black? He hasn’t done anything to me — yet.」
+Ron:「He’s making it up. He’s trying to make you do something stupid. . . .」
+Snape:「Everyone gather ’round, and watch what happens to Longbottom’s toad. If he has managed to produce a Shrinking Solution, it will shrink to a tadpole. If, as I don’t doubt, he has done it wrong, his toad is likely to be poisoned.」
+:Snape action
+:Trevor gulp
+Snape:「Five points from Gryffindor. I told you not to help him, Miss Granger. Class dismissed.」
+Harry:「Five points from Gryffindor because the potion was all right! Why didn’t you lie, Hermione? You should’ve said Neville did it all by himself!」
+Ron:「Where is she?」
+Ron:「What? One minute you were right behind us, the next moment, you were back at the bottom of the stairs again.」

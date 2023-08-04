@@ -1,2 +1,6 @@
-Hermione:「“Undetectable Extension Charm,” said Hermione. “Tricky, but I think I’ve done it okay; anyway, I managed to fit everything we need in here.” She gave the fragile-looking bag a little shake and it echoed like a cargo hold as a number of heavy objects rolled around inside it. “Oh, damn, that’ll be the books,” she said, peering into it, “and I had them all stacked by subject. . . . Oh well. . . . Harry, you’d better take the Invisibility Cloak. Ron, hurry up and change. . . .”」
-Harry:「“When did you do all this?” Harry asked as Ron stripped off his robes.」
+Hagrid:「Harry, I’m sorry, I’m sorry, I shouldn’ta tried ter repair it meself — yeh’ve got no room —」
+Harry:「It’s not a problem, just keep flying!」
+:Hagrid swerved and zigzagged
+:Harry spell to Death Eater
+Harry:「Hagrid, do the dragon-fire thing again, let’s get out of here!」
+Harry:「Fear lapped at him as he looked left and right for pursuers he was sure would come. . . . Why had they fallen back? One of them had still had a wand. . . . It’s him . . . it’s the real one. . . . They had said it right after he had tried to Disarm Stan. . . .」

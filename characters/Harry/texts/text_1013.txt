@@ -1,2 +1,8 @@
-Dumbledore:「Well, the start of the school year arrived and with it came Tom Riddle, a quiet boy in his secondhand robes, who lined up with the other first years to be sorted. He was placed in Slytherin House almost the moment that the Sorting Hat touched his head, continued Dumbledore, waving his blackened hand toward the shelf over his head where the Sorting Hat sat, ancient and unmoving. How soon Riddle learned that the famous founder of the House could talk to snakes, I do not know — perhaps that very evening. The knowledge can only have excited him and increased his sense of self-importance.」
-Harry:「Didn’t you tell them, sir, what he’d been like when you met him at the orphanage?」
+Ron:「Gotcha!」
+:Hermione action
+:Harry action
+Harry:「Ron and Hermione did not seem any different except that they were a little politer to each other than usual」
+Harry:「wait to see what happened under the influence of butterbeer in Slughorn’s dimly lit room on the night of the party」
+:Harry action
+Narrator:Harry think "With a sinking feeling that had little to do with Quidditch, he cornered Dean Thomas after Transfiguration one day."
+Harry:「“Well then, you’re in,” said Harry. “There’s a practice tonight, seven o’clock.”」

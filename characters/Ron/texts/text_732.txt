@@ -1,8 +1,9 @@
-:Harryaction
-Ron:「How long’s this been here? It isn’t on the Marauder’s Map, is it, Harry? I thought there were only seven passages in and out of school?」
-:Nevilleaction
-:Nevilleaction
-Neville:「asked if it's true that they broke into Gringotts and escaped on a dragon」
-Harry:「Yeah, it’s true」
-:Nevilleaction
-Ron:「Released it into the wild. Hermione was all for keeping it as a pet —」
+Hermione:「said "Half-blood."」
+Scabior:「said "Easy enough to check, But the ’ole lot of ’em look like they could still be ’ogwarts age —"」
+Ron:「said "We’b lebt."」
+Scabior:「said "Left, ’ave you, ginger? And you decided to go camping? And you thought, just for a laugh, you’d use the Dark Lord’s name?"」
+Ron:「said "Nod a laugh, Accident?"」
+Hermione:「Well, they don’t show the Dark Lord proper respect, so the name’s been Tabooed. A few Order members have been tracked that way. We’ll see. Bind them up with the other two prisoners!」
+:Unknown action
+Harry:「Anyone still got a wand?」
+Ron:「No」

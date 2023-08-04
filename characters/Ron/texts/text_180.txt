@@ -1,8 +1,11 @@
-Narrator:Harry think "Speechless, carried the Firebolt back upstairs toward Gryffindor Tower."
-Ron:「She gave it to you? Excellent! Listen, can I still have a go on it? Tomorrow?」
-Harry:「Yeah . . . anything . . . You know what — we should make up with Hermione. . . . She was only trying to help. . . .」
-Ron:「Yeah, all right. She’s in the common room now — working, for a change —」
-Sir Cadogan:「A likely tale! Good even, my fine young yeomen! Come clap this loon in irons. He is trying to force entry to the chambers within!」
-Ron:「Oh, shut up. I’ve lost the passwords! I made him tell me what passwords he was going to use this week, because he keeps changing them, and now I don’t know what I’ve done with them!」
-Harry:「I got it back. See, Hermione? There wasn’t anything wrong with it!」
-Ron:「Well — there might have been! I mean, at least you know now that it’s safe!」
+Harry:「Malfoy knows. Remember what he said to me in Potions? ‘If it was me, I’d hunt him down myself. . . . I’d want revenge.’」
+Ron:「You’re going to take Malfoy’s advice instead of ours?」
+:Harry ignoring Ron
+Harry:「— so obviously, the Malfoys knew Black was working for Voldemort —」
+Ron:「— and Malfoy’d love to see you blown into about a million pieces, like Pettigrew! Get a grip. Malfoy’s just hoping you’ll get yourself killed before he has to play you at Quidditch.」
+:Crookshanks stretched luxuriously, flexing his claws
+:Ron pocket quivered
+Harry:「Yeah, let’s go, and I can ask him how come he never mentioned Black when he told me all about my parents!」
+Ron:「Or we could have a game of chess, or Gobstones. Percy left a set —」
+Hermione:「He’s not out, is he?」
+Ron:「There’s a weird noise. Listen — is that Fang?」

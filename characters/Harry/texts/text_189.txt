@@ -1,7 +1,13 @@
-Mr. Weasley:「“W-what’s that?” said Mr. Weasley in a stunned voice. “You-Know-Who? En-enchant Ginny? But Ginny’s not . . . Ginny hasn’t been . . . has she?”」
-Harry:「“It was this diary,” said Harry quickly, picking it up and showing it to Dumbledore. “Riddle wrote it when he was sixteen. . . .”」
-:Dumbledoreaction
-Dumbledore:「“Brilliant,” he said softly. “Of course, he was probably the most brilliant student Hogwarts has ever seen.” He turned around to the Weasleys, who were looking utterly bewildered.」
-Mrs. Weasley:「“What’s our Ginny got to do with — with — him?”」
-Ginny:「“His d-diary!” Ginny sobbed. “I’ve b-been writing in it, and he’s been w-writing back all year —”」
-Harry:「Professor Dumbledore . . . Riddle said I’m like him. Strange likenesses, he said. . . .」
+Ron:「You’re alive! I don’t believe it! What happened? How — what — where did that bird come from?」
+Harry:「He’s Dumbledore’s, said Harry, squeezing through himself.」
+Ron:「How come you’ve got a sword?」
+Harry:「I’ll explain when we get out of here, said Harry with a sideways glance at Ginny, who was crying harder than ever.」
+Ron:「Back there, He’s in a bad way. Come and see.」
+:Fawkes led the way
+Gilderoy Lockhart:「His memory’s gone. The Memory Charm backfired. Hit him instead of us. Hasn’t got a clue who he is, or where he is, or who we are. I told him to come and wait here. He’s a danger to himself.」
+Ron:「Hello. Odd sort of place, this, isn’t it? Do you live here?」
+Harry:「Have you thought how we’re going to get back up this?」
+:Harry tucked the sword and the Sorting Hat into his belt
+Lockhart:「Amazing! Amazing! This is just like magic!」
+:Harry heard Lockhart dangling below him
+Harry:「There’s no need to sound so disappointed.」

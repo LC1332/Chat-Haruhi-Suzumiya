@@ -1,8 +1,7 @@
-Dumbledore:「The diary, as you have said yourself, was proof that he was the Heir of Slytherin; I am sure that Voldemort considered it of stupendous importance.」
-Harry:「So, the other Horcruxes? Do you think you know what they are, sir?」
-Dumbledore:「I can only guess. For the reasons I have already given, I believe that Lord Voldemort would prefer objects that, in themselves, have a certain grandeur. I have therefore trawled back through Voldemort’s past to see if I can find evidence that such artifacts have disappeared around him.」
-Harry:「The locket! Hufflepuff’s cup!」
-Harry:「My thoughts precisely. But unfortunately, that does not advance us much further, for he was turned away, or so I believe, without the chance to search the school. I am forced to conclude that he never fulfilled his ambition of collecting four founders’ objects. He definitely had two — he may have found three — that is the best we can do for now.」
-Harry:「The snake? You can use animals as Horcruxes?」
-Dumbledore:「An admirably succinct and accurate summary, yes.」
-Harry:「So . . . are you still looking for them, sir? Is that where you’ve been going when you’ve been leaving the school?」
+Dumbledore:「At Borgin and Burkes.」
+Narrator:Dumbledore think "I think you will see what attractions the place held for him when we have entered Hokey’s memory. But this was not Voldemort’s first choice of job. Hardly anyone knew of it at the time — I was one of the few in whom the then headmaster confided — but Voldemort first approached Professor Dippet and asked whether he could remain at Hogwarts as a teacher."
+Harry:「He wanted to stay here? Why?」
+Narrator:Dumbledore think "I believe he had several reasons, though he confided none of them to Professor Dippet. Firstly, and very importantly, Voldemort was, I believe, more attached to this school than he has ever been to a person. Hogwarts was where he had been happiest; the first and only place he had felt at home."
+Harry:「Secondly, the castle is a stronghold of ancient magic. Undoubtedly Voldemort had penetrated many more of its secrets than most of the students who pass through the place, but he may have felt that there were still mysteries to unravel, stores of magic to tap.」
+Narrator:Dumbledore think "No, he did not. Professor Dippet told him that he was too young at eighteen, but invited him to reapply in a few years, if he still wished to teach."
+Harry:「How did you feel about that, sir?」

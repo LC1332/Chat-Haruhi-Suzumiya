@@ -1,9 +1,3 @@
-Hermione:「Oh, Harry, it’s you. . . . Good about Ron, isn’t it? she said blearily. I’m just so — so — so tired, she yawned. I was up until one o’clock making more hats. They’re disappearing like mad!」
-Harry:「Great, said Harry distractedly; if he did not tell somebody soon, he would burst. Listen, Hermione, I was just up in Umbridge’s office and she touched my arm . . .」
-:Hermionelistened closely
-Harry:「You’re worried that You-Know-Who’s controlling her like he controlled Quirrell?」
-:Harrywatched Fred, George, and Lee Jordan juggling empty butterbeer bottles for a moment
-Hermione:「She’s horrible, yes, but . . . Harry, I think you ought to tell Dumbledore your scar hurt.」
-Harry:「I’m not bothering him with this. Like you just said, it’s not a big deal. It’s been hurting on and off all summer — it was just a bit worse tonight, that’s all —」
-Hermione:「Don’t say that, it’s not true!」
-Harry:「I think I’ll write and tell Sirius about it, see what he thinks —」
+Umbridge:「The Ministry of Magic has always considered the education of young witches and wizards to be of vital importance. The rare gifts with which you were born may come to nothing if not nurtured and honed by careful instruction. The ancient skills unique to the Wizarding community must be passed down through the generations lest we lose them forever. The treasure trove of magical knowledge amassed by our ancestors must be guarded, replenished, and polished by those who have been called to the noble profession of teaching.」
+:Umbridge action
+Harry:「his attentiveness ebbing, slipping in and out of tune」

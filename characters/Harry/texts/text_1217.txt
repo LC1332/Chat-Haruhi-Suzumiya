@@ -1,2 +1,6 @@
-Hermione:「Shut up, Ron, snapped Hermione. Harry, what happened? Why do you think you couldn’t make your Patronus? You managed perfectly yesterday!」
-Harry:「I don’t know.」
+Hermione:「“Thank you,” said Hermione, managing a small smile as she pushed the robes into the bag. “Please, Harry, get that Cloak on!”」
+:Harry action
+Harry:「“The others — everyone at the wedding —”」
+Hermione:「We can’t worry about that now, It’s you they’re after, Harry, and we’ll just put everyone in even more danger by going back.」
+Ron:「She’s right, Most of the Order was there, they’ll look after everyone.」
+Harry:「Yeah.」

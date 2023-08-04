@@ -1,4 +1,5 @@
-:Snapeaction
+Harry:「What on earth were you thinking of? You’re lucky you weren’t killed. Why aren’t you in your dormitory?」
+:Snape action
 Hermione:「Please, Professor McGonagall — they were looking for me.」
 Professor McGonagall:「Miss Granger!」
 Hermione:「I went looking for the troll because I — I thought I could deal with it on my own — you know, because I’ve read all about them.」

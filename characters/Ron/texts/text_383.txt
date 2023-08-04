@@ -1,11 +1,2 @@
-Hermione:「Maybe he didn’t want to draw attention to Hagrid not being here.」
-Ron:「What d’you mean, draw attention to it? How could we not notice?」
-Angelina:「Hi, Angelina.」
-Harry:「Hi, good summer? Listen, I’ve been made Gryffindor Quidditch Captain.」
-Harry:「Nice one.」
-Angelina:「Yeah, well, we need a new Keeper now Oliver’s left. Tryouts are on Friday at five o’clock and I want the whole team there, all right? Then we can see how the new person’ll fit in.」
-Harry:「Okay.」
-Hermione:「I’d forgotten Wood had left. I suppose that will make quite a difference to the team?」
-Ron:「I s’pose. He was a good Keeper . . . Still, it won’t hurt to have some new blood, will it?」
-Hermione:「Nothing.」
-Ron:「Look at today! History of Magic, double Potions, Divination, and double Defense Against the Dark Arts . . . Binns, Snape, Trelawney, and that Umbridge woman all in one day! I wish Fred and George’d hurry up and get those Skiving Snackboxes sorted . . .」
+Narrator:Harry think "Though members of the Order of the Phoenix came and went regularly, sometimes staying for meals, sometimes only for a few minutes’ whispered conversation, Mrs. Weasley made sure that Harry and the others were kept well out of earshot (whether Extendable or normal) and nobody, not even Sirius, seemed to feel that Harry needed to know anything more than he had heard on the night of his arrival."
+Ron:「Booklists have arrived, About time, I thought they’d forgotten, they usually come much earlier than this . . .」

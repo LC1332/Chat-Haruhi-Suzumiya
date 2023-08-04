@@ -1,10 +1,8 @@
-Madam Rosmerta:「— and stay out!」
-Albus:「Good evening, Rosmerta, good evening . . . forgive me, I’m off to the Hog’s Head. . . . No offense, but I feel like a quieter atmosphere tonight. . . .」
-Dumbledore:「It will not be necessary for us to enter, As long as nobody sees us go . . . now place your hand upon my arm, Harry. There is no need to grip too hard, I am merely guiding you. On the count of three . . . One . . . two . . . three . . .」
-:Harryturned
-:Harrythere was that horrible sensation that he was being squeezed through a thick rubber tube; he could not draw breath, every part of him was being compressed almost past endurance and then, just when he thought he must suffocate, the invisible bands seemed to burst open, and he was standing in cool darkness, breathing in lungfuls of fresh, salty air.
-Harry:「What do you think?」
-Dumbledore:「They brought the kids from the orphanage here?」
-:Dumbledorespell to illuminate the dark surface of the water
-Harry:「No.」
-Dumbledore:「Then take off your Invisibility Cloak — there is no need for it now — and let us take the plunge.」
+Harry:「“I’m coming,” said Harry, almost before Dumbledore had finished speaking. Boiling with anger at Snape, his desire to do something desperate and risky had increased tenfold in the last few minutes. This seemed to show on Harry’s face, for Dumbledore moved away from the window and looked more closely at Harry, a slight crease between his silver eyebrows.」
+Dumbledore:「“What has happened to you?”」
+Harry:「“Nothing,” lied Harry promptly.」
+Dumbledore:「“What has upset you?”」
+:Harry action
+Harry:「“Snape!” he said, very loudly, and Fawkes gave a soft squawk behind them. “Snape’s what’s happened! He told Voldemort about the prophecy, it was him, he listened outside the door, Trelawney told me!”」
+Dumbledore:「Dumbledore’s expression did not change, but Harry thought his face whitened under the bloody tinge cast by the setting sun. For a long moment, Dumbledore said nothing. “When did you find out about this?” he asked at last.」
+Dumbledore:「“Harry,” said Dumbledore quietly. “Please listen to me.”」

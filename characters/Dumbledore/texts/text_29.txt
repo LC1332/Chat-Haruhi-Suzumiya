@@ -1,13 +1,9 @@
-Madam Pomfrey:「Now, please, Minister, these children need care. Please leave —」
-Dumbledore:「Professor Dumbledore, Sirius Black —」
-Madam Pomfrey:「For heaven’s sake! Is this a hospital wing or not? Headmaster, I must insist —」
-Dumbledore:「My apologies, Poppy, but I need a word with Mr. Potter and Miss Granger」
-Snape:「And does my evidence count for nothing? Peter Pettigrew was not in the Shrieking Shack, nor did I see any sign of him on the grounds.」
-Hermione:「That was because you were knocked out, Professor! You didn’t arrive in time to hear —」
-Snape:「Miss Granger, HOLD YOUR TONGUE!」
-Fudge:「Now, Snape, the young lady is disturbed in her mind, we must make allowances —」
-Dumbledore:「I would like to speak to Harry and Hermione alone」
-Madam Pomfrey:「」
-Fudge:「The dementors should have arrived by now, I’ll go and meet them. Dumbledore, I’ll see you upstairs」
-Snape:「You surely don’t believe a word of Black’s story?」
-Dumbledore:「I wish to speak to Harry and Hermione alone」
+McGonagall:「We’ll risk it, Sybill. Do sit down, the turkey’s getting stone cold.」
+Trelawney:「But where is dear Professor Lupin?」
+Dumbledore:「I’m afraid the poor fellow is ill again. Most unfortunate that it should happen on Christmas Day.」
+McGonagall:「surely you already knew that, Sybill?」
+Professor Trelawney:「Certainly I knew, Minerva, But one does not parade the fact that one is All-Knowing. I frequently act as though I am not possessed of the Inner Eye, so as not to make others nervous.」
+Professor McGonagall:「That explains a great deal.」
+Professor Trelawney:「If you must know, Minerva, I have seen that poor Professor Lupin will not be with us for very long. He seems aware, himself, that his time is short. He positively fled when I offered to crystal gaze for him —」
+Professor McGonagall:「Imagine that.」
+Dumbledore:「I doubt that Professor Lupin is in any immediate danger. Severus, you’ve made the potion for him again?」

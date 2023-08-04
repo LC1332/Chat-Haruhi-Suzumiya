@@ -1,2 +1,8 @@
-Ron:「Some day Hermione’s having, eh?」
-Harry:「Yeah . . .」
+Malfoy:「It came from over there!」
+:Crabbe blundered forward, his long arms outstretched like a zombie.
+:Harry action
+:Ron stumbling forward and staring hopelessly at the point where Harry had disappeared, you’d better run for it! If Malfoy tells anyone — you’d better get back to the castle, quick —
+Harry:「See you later, and without another word, he tore back down the path toward Hogsmeade.」
+:Malfoy action
+:Harry action
+Harry:「Would Malfoy believe what he had seen? Would anyone believe Malfoy? Nobody knew about the Invisibility Cloak — nobody except Dumbledore. Harry’s stomach turned over — Dumbledore would know exactly what had happened, if Malfoy said anything —」

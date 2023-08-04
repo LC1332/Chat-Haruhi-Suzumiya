@@ -1,7 +1,5 @@
-Harry:「She’s just never got over you outperforming her in Potions.」
-Ron:「You don’t think I’m mad, wanting that book back, do you?」
-Ron:「’Course not. He was a genius, the Prince. Anyway . . . without his bezoar tip . . . I wouldn’t be here to discuss it, would I? I mean, I’m not saying that spell you used on Malfoy was great —」
-Harry:「Yeah. Thanks to Snape . . .」
-Ron:「You still got detention with Snape this Saturday?」
-Harry:「Nor am I.」
-Ron:「But he healed all right, didn’t he? Back on his feet in no time.」
+Slughorn:「I’d have thought you could have whipped him up a remedy, Harry, an expert potioneer like you? Er, well, I’ve never mixed an antidote for a love potion, sir, and by the time I get it right, Ron might’ve done something serious — Was this potion within date? They can strengthen, you know, the longer they’re kept. That would explain a lot. It’s his birthday, Professor.」
+Ron:「She didn’t see that, did she?」
+Harry:「She’s not here yet.」
+Slughorn:「Now drink that up, it’s a tonic for the nerves, keep you calm when she arrives, you know.」
+Ron:「Brilliant.」

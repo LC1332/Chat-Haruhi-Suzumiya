@@ -1,6 +1,7 @@
-Harry:「He’s a foreign wandmaker. He made Krum’s wand and Krum reckons he’s brilliant.」
-Ron:「But according to you, Voldemort’s got Ollivander locked up somewhere. If he’s already got a wandmaker, what does he need another one for?」
-Harry:「Maybe he agrees with Krum, maybe he thinks Gregorovitch is better . . . or else he thinks Gregorovitch will be able to explain what my wand did when he was chasing me, because Ollivander didn’t know.」
-Hermione:「Harry, you keep talking about what your wand did, but you made it happen! Why are you so determined not to take responsibility for your own power?」
-Harry:「Because I know it wasn’t me! And so does Voldemort, Hermione! We both know what really happened!」
-Ron:「Drop it. It’s up to him. And if we’re going to the Ministry tomorrow, don’t you reckon we should go over the plan?」
+Scrimgeour:「Would you say you were close to Dumbledore, Ronald?」
+Ron:「Me? Not — not really . . . It was always Harry who . . .」
+:Hermione giving him a stop-talking-now! sort of look
+Scrimgeour:「If you were not very close to Dumbledore, how do you account for the fact that he remembered you in his will? He made exceptionally few personal bequests. The vast majority of his possessions — his private library, his magical instruments, and other personal effects — were left to Hogwarts. Why do you think you were singled out?」
+Ron:「I . . . dunno. I . . . when I say we weren’t close . . . I mean, I think he liked me. . . .」
+Scrimgeour:「That is a valuable object. It may even be unique. Certainly it is of Dumbledore’s own design. Why would he have left you an item so rare?」
+Ron:「Dumbledore must have taught thousands of students. Yet the only ones he remembered in his will are you three. Why is that? To what use did he think you would put his Deluminator, Mr. Weasley?」

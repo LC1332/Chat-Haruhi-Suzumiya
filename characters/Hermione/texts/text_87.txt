@@ -1,3 +1,5 @@
-Ron:「Professor R. J. Lupin,」
-Hermione:「How d’you know that?」
-Hermione:「It’s on his case, Wonder what he teaches? That’s obvious, There’s only one vacancy, isn’t there? Defense Against the Dark Arts.」
+:Professor McGonagall action
+Hermione:「Oh, no!」
+:Dumbledore action
+:Ron action
+Hermione:「Defense Against the Dark Arts classes were canceled (“but we’ve had plenty of practice at that anyway,” Ron told a disgruntled Hermione)」

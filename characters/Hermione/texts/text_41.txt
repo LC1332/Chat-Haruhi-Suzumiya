@@ -1,2 +1,6 @@
-Ron:「Now what?」
-Hermione:「These birds . . . they can’t be here just for decoration.」
+Harry:「Dunno, some sort of plant thing. I suppose it’s here to break the fall. Come on, Hermione!」
+Hermione:「We must be miles under the school.」
+Ron:「Lucky this plant thing’s here, really.」
+:Hermione action
+Harry:「Well, hurry up, I can’t breathe!」
+Hermione:「Devil’s Snare, Devil’s Snare . . . what did Professor Sprout say? — it likes the dark and the damp —」

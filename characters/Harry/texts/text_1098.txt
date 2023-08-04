@@ -1,11 +1,2 @@
-Dumbledore:「Voldemort’s mistake, Harry, Voldemort’s mistake . . . Age is foolish and forgetful when it underestimates youth. . . . Now, you first this time, and be careful not to touch the water.」
-Harry:「Professor! I think I saw a hand in the water — a human hand!」
-Dumbledore:「Yes, I am sure you did.」
-Harry:「So that thing that jumped out of the water — ? There are bodies in here!」
-Dumbledore:「Not while they are merely drifting peacefully below us. There is nothing to be feared from a body, Harry, any more than there is anything to be feared from the darkness. Lord Voldemort, who of course secretly fears both, disagrees. But once again he reveals his own lack of wisdom. It is the unknown we fear when we look upon death and darkness, nothing more.」
-Harry:「But one of them jumped. When I tried to Summon the Horcrux, a body leapt out of the lake.」
-Dumbledore:「Careful not to touch the water.」
-Harry:「What is it?」
-Dumbledore:「I cannot touch. See? I cannot approach any nearer than this. You try.」
-Harry:「Out of the way, please, Harry.」
-Harry:「“No!”」
+Slughorn:「“Of course, it’s difficult for you, who knew him best,” said Slughorn, who like Harry could reach no higher than Hagrid’s elbow, but patted it all the same. “Why don’t I say a few words?”」
+Harry:「He must have got a lot of good quality venom from Aragog, Harry thought, for Slughorn wore a satisfied smirk as he stepped up to the rim of the pit and said, in a slow, impressive voice, “Farewell, Aragog, king of arachnids, whose long and faithful friendship those who knew you won’t forget! Though your body will decay, your spirit lingers on in the quiet, web-spun places of your forest home. May your many-eyed descendants ever flourish and your human friends find solace for the loss they have sustained.”」

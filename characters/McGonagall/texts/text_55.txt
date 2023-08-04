@@ -1,9 +1,2 @@
-Neville:「Over here, Professor . . .」
-Professor McGonagall:「What is it, Potter? Where does it hurt?」
-Harry:「It’s Ron’s dad, He’s been attacked by a snake and it’s serious, I saw it happen.」
-Professor McGonagall:「What do you mean, you saw it happen?」
-Professor McGonagall:「I’m not lying, and I’m not mad! I tell you, I saw it happen!」
-Professor McGonagall:「Weasley, you ought to come too,」
-:Professor McGonagallaction
-Harry:「“It wasn’t a nightmare,” said Harry quickly.」
-Professor McGonagall:「“Very well, then, Potter, you tell the headmaster about it.”」
+Angelina:「insisted on almost daily practices」
+Professor McGonagall:「I think you’ve got enough to be getting on with at the moment. I’ve become accustomed to seeing the Quidditch Cup in my study, boys, and I really don’t want to have to hand it over to Professor Snape, so use the extra time to practice, won’t you?」

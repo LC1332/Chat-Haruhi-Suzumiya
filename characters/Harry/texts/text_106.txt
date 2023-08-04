@@ -1,4 +1,9 @@
-Hagrid:「See yer at Hogwarts!」
-Harry:「Guess who I saw in Borgin and Burkes? Malfoy and his father.」
-Mr. Weasley:「Did Lucius Malfoy buy anything?」
-Harry:「No, he was selling —」
+:Ron action
+:Harry action
+Guard:「“What in blazes d’you think you’re doing?”」
+Harry:「“Lost control of the trolley,” Harry gasped, clutching his ribs as he got up.」
+Ron:「“We’re going to miss the train,” Ron whispered. “I don’t understand why the gateway’s sealed itself —”」
+Harry:「“Why can’t we get through?” Harry hissed to Ron.」
+Harry:「Harry gave a hollow laugh. “The Dursleys haven’t given me pocket money for about six years.”」
+Ron:「“Harry!” said Ron, his eyes gleaming. “The car!”」
+Harry:「“What about it?”」

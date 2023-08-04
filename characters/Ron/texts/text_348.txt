@@ -1,2 +1,5 @@
-Mrs. Weasley:「Sirius Black!」
-Ron:「Mum, shut up! It’s okay!」
+Hermione:「All those substitutes for magic Muggles use — electricity, computers, and radar, and all those things — they all go haywire around Hogwarts, there’s too much magic in the air. No, Rita’s using magic to eavesdrop, she must be. . . . If I could just find out what it is . . . ooh, if it’s illegal, I’ll have her . . .」
+Ron:「Haven’t we got enough to worry about? Do we have to start a vendetta against Rita Skeeter as well?」
+Hermione:「I’m not asking you to help! I’ll do it on my own!」
+:Hermione action
+Ron:「“What’s the betting she comes back with a box of I Hate Rita Skeeter badges?” said Ron.」

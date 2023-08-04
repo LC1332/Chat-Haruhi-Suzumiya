@@ -1,2 +1,7 @@
-:Dumbledoreaction
-Harry:「There was a soft rush of wings. Fawkes the phoenix had left his perch, flown across the office, and landed on Harry’s knee. “’Lo, Fawkes,” said Harry quietly. He stroked the phoenix’s beautiful scarlet-and-gold plumage. Fawkes blinked peacefully up at him. There was something comforting about his warm weight.」
+:Dumbledore motioned for Harry to follow
+Harry:「I know I shouldn’t’ve — I didn’t mean — the cabinet door was sort of open and —」
+Dumbledore:「I quite understand」
+Dumbledore:「What is it?」
+Dumbledore:「This? It is called a Pensieve」
+Narrator:Dumbledore think "At these times, I use the Pensieve. One simply siphons the excess thoughts from one’s mind, pours them into the basin, and examines them at one’s leisure. It becomes easier to spot patterns and links, you understand, when they are in this form"
+Harry:「You mean . . . that stuff’s your thoughts?」

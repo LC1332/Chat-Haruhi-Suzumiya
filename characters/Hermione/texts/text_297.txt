@@ -1,2 +1,5 @@
-:Harrycrossed the dingy landing, turned the bedroom doorknob, which was shaped like a serpent’s head, and opened the door.
-Hermione:「HARRY! Ron, he’s here, Harry’s here! We didn’t hear you arrive! Oh, how are you? Are you all right? Have you been furious with us? I bet you have, I know our letters were useless — but we couldn’t tell you anything, Dumbledore made us swear we wouldn’t, oh, we’ve got so much to tell you, and you’ve got to tell us — the dementors! When we heard — and that Ministry hearing — it’s just outrageous, I’ve looked it all up, they can’t expel you, they just can’t, there’s provision in the Decree for the Restriction of Underage Sorcery for the use of magic in life-threatening situations —」
+Harry:「Yes.」
+:Hermione action
+Hermione:「Rita Skeeter,」
+Ron:「How can you be worrying about her now?」
+Hermione:「I’m not worrying about her, Hermione said to her knees. I’m just thinking . . . remember what she said to me in the Three Broomsticks? ‘I know things about Ludo Bagman that would make your hair curl.’ This is what she meant, isn’t it? She reported his trial, she knew he’d passed information to the Death Eaters. And Winky too, remember . . . ‘Ludo Bagman’s a bad wizard.’ Mr. Crouch would have been furious he got off, he would have talked about it at home.」

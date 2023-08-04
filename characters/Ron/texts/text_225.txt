@@ -1,2 +1,3 @@
-Fred:「’S’ time already?」
-Ron:「Ron muttered indistinctly as his mother roused him.」
+Fred:「Yeah. What was it?」
+:Fred action
+Ron:「How’re you doing, Harry?」

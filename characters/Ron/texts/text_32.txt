@@ -1,12 +1,2 @@
-Harry:「Will you look at this? I’ve got some presents!」
-Ron:「What did you expect, turnips?」
-:Harryaction
-:Harryaction
-:Harryaction
-:Harryaction
-:Harryaction
-:Harryaction
-Harry:「That’s friendly」
-Ron:「fascinated by the fifty pence」
-Ron:「I think I know who that one’s from」
-Ron:「Every year she makes us a sweater」
+:Harry action
+Ron:「admiring the Cloak」

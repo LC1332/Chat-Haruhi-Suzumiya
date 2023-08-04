@@ -1,2 +1,7 @@
-Harry:「Lead the way, Griphook!」
-Ron:「How are we going to get out again?」
+Hermione:「I’d feel so sorry for Xenophilius if —」
+Ron:「— if he hadn’t just tried to sell us to the Death Eaters, yeah」
+:Hermione action
+:Ron action
+Ron:「It’s a damn sight harder making stuff up when you’re under stress than you’d think. I found that out when the Snatchers caught me. It was much easier pretending to be Stan, because I knew a bit about him, than inventing a whole new person. Old Lovegood was under loads of pressure, trying to make sure we stayed put. I reckon he told us the truth, or what he thinks is the truth, just to keep us talking.」
+Ron:「Hang on, though」
+Ron:「You keep saying that, but one of them can」

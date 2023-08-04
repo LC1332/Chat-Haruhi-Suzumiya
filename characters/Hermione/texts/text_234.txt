@@ -1,8 +1,9 @@
-Harry:「He’s gone」
-Hermione:「Why don’t we go and have a butterbeer in the Three Broomsticks, it’s a bit cold, isn’t it? You don’t have to talk to Ron!」
-:Hermioneaction
-:Hermioneaction
-:Harryaction
-:Hermioneaction
-:Hermioneaction
-Hermione:「When house-elves have decent wages and working conditions!」
+Hagrid:「It’d be doin’ ’em an unkindness, Hermione, It’s in their nature ter look after humans, that’s what they like, see? Yeh’d be makin’ ’em unhappy ter take away their work, an’ insultin’ ’em if yeh tried ter pay ’em.」
+Hermione:「But Harry set Dobby free, and he was over the moon about it! And we heard he’s asking for wages now!」
+Hagrid:「Yeah, well, yeh get weirdos in every breed. I’m not sayin’ there isn’t the odd elf who’d take freedom, but yeh’ll never persuade most of ’em ter do it — no, nothin’ doin’, Hermione.」
+:Ron arguing with Hermione about house-elves
+Hagrid:「I’ll come with yeh, Jus’ give us a sec.」
+Ron:「Hagrid, what’s that?」
+Hagrid:「Don’ yeh like it?」
+Hermione:「Is that aftershave?」
+Hermione:「Eau de cologne? Hagrid?」

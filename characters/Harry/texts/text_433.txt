@@ -1,6 +1,3 @@
-Sirius:「Dragons we can deal with, Harry, but we’ll get to that in a minute — I haven’t got long here . . . I’ve broken into a Wizarding house to use the fire, but they could be back at any time. There are things I need to warn you about.」
-Harry:「What?」
-Sirius:「Karkaroff, Harry, he was a Death Eater. You know what Death Eaters are, don’t you?」
-Harry:「Yes — he — what?」
-Sirius:「He did a deal with the Ministry of Magic, he said he’d seen the error of his ways, and then he named names . . . he put a load of other people into Azkaban in his place. . . . He’s not very popular in there, I can tell you. And since he got out, from what I can tell, he’s been teaching the Dark Arts to every student who passes through that school of his. So watch out for the Durmstrang champion as well.」
-Harry:「Okay, but . . . are you saying Karkaroff put my name in the goblet? Because if he did, he’s a really good actor. He seemed furious about it. He wanted to stop me from competing.」
+Snape:「I see no difference.」
+:Hermione no dialogue, reaction to Snape's comment
+Harry:「Let’s see. Fifty points from Gryffindor and a detention each for Potter and Weasley. Now get inside, or it’ll be a week’s worth of detentions.」

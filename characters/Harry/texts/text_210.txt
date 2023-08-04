@@ -1,7 +1,6 @@
-Ron:「“’Spect it will,”」
-Harry:「“You’ll have to tell me when you’ve found out.”」
-Ron:「“What d’you mean?”」
-Harry:「“I can’t go. The Dursleys didn’t sign my permission form, and Fudge wouldn’t either.”」
-Hermione:「“Ron!”」
-Hermione:「“I don’t think Harry should be sneaking out of school with Black on the loose —”」
-Harry:「“Yeah, I expect that’s what McGonagall will say when I ask for permission,”」
+Mr. Weasley:「It’s late, Molly, we’d better go up. . . .」
+Narrator:Harry think "So Sirius Black was after him. That explained everything. Fudge had been lenient with him because he was so relieved to find him alive. He’d made Harry promise to stay in Diagon Alley where there were plenty of wizards to keep an eye on him. And he was sending two Ministry cars to take them all to the station tomorrow, so that the Weasleys could look after Harry until he was on the train."
+Narrator:Harry think "Harry lay listening to the muffled shouting next door and wondered why he didn’t feel more scared. Sirius Black had murdered thirteen people with one curse; Mr. and Mrs. Weasley obviously thought Harry would be panic-stricken if he knew the truth. But Harry happened to agree wholeheartedly with Mrs. Weasley that the safest place on earth was wherever Albus Dumbledore happened to be. Didn’t people always say that Dumbledore was the only person Lord Voldemort had ever been afraid of? Surely Black, as Voldemort’s right-hand man, would be just as frightened of him?And then there were these Azkaban guards everyone kept talking about. They seemed to scare most people senseless, and if they were stationed all around the school, Black’s chances of getting inside seemed very remote. No, all in all, the thing that bothered Harry most was the fact that his chances of visiting Hogsmeade now looked like zero. Nobody would want Harry to leave the safety of the castle until Black was caught; in fact, Harry suspected his every move would be carefully watched until the danger had passed. He scowled at the dark ceiling. Did they think he couldn’t look after himself? He’d escaped Lord Voldemort three times; he wasn’t completely useless. . . . Unbidden, the image of the beast in the shadows of Magnolia Crescent crossed his mind. What to do when you know the worst is coming. . . . “I’m not going to be murdered,” Harry said out loud."
+mirror:「That’s the spirit, dear,」
+Tom:「woke Harry the next morning with his usual toothless grin and a cup of tea.」
+Harry:「got dressed and was just persuading a disgruntled Hedwig to get back into her cage」

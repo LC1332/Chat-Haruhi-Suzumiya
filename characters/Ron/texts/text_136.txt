@@ -1,2 +1,6 @@
-:Harry
-Ron:「RON — WEASLEY! I’M — A — FRIEND — OF — HARRY’S — FROM — SCHOOL —」
+Harry:「This is it. This is the answer. The monster in the Chamber’s a basilisk — a giant serpent! That’s why I’ve been hearing that voice all over the place, and nobody else has heard it. It’s because I understand Parseltongue. . . .」
+Narrator:Harry think "“‘The Basilisk flees only from the crowing of the rooster, which is fatal to it’!” he read aloud. “Hagrid’s roosters were killed! The Heir of Slytherin didn’t want one anywhere near the castle once the Chamber was opened! ‘Spiders flee before the Basilisk’! It all fits!”"
+Ron:「“But how’s the basilisk been getting around the place?” said Ron. “A giant snake . . . Someone would’ve seen . . .”」
+Harry:「“Pipes,” he said. “Pipes . . . Ron, it’s been using the plumbing. I’ve been hearing that voice inside the walls. . . .”」
+Ron:「“The entrance to the Chamber of Secrets!” he said hoarsely. “What if it’s a bathroom? What if it’s in —”」
+Ron:「“What’re we going to do?” said Ron, whose eyes were flashing. “Should we go straight to McGonagall?”」

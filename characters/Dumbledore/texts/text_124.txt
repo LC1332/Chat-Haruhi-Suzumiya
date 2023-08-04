@@ -1,7 +1,9 @@
-Slughorn:「Oh, there you are, Albus. You’ve been a very long time. Upset stomach?」
-Dumbledore:「No, I was merely reading the Muggle magazines. I do love knitting patterns. Well, Harry, we have trespassed upon Horace’s hospitality quite long enough; I think it is time for us to leave.」
-Harry:「You’re leaving?」
-Slughorn:「Yes, indeed. I think I know a lost cause when I see one.」
-Slughorn:「Lost . . . ?」
-:Dumbledoreaction
-Dumbledore:「I hope you will forgive me for mentioning it, Harry, but I am pleased and a little proud at how well you seem to be coping after everything that happened at the Ministry. Permit me to say that I think Sirius would have been proud of you.」
+Harry:「Oho!」
+Dumbledore:「This is Harry Potter. Harry, this is an old friend and colleague of mine, Horace Slughorn.」
+Slughorn:「So that’s how you thought you’d persuade me, is it? Well, the answer’s no, Albus.」
+:Slughorn pushed past Harry, face turned resolutely away
+Dumbledore:「I suppose we can have a drink, at least? For old time’s sake?」
+Slughorn:「Not so well. Weak chest. Wheezy. Rheumatism too. Can’t move like I used to.」
+Dumbledore:「And yet you must have moved fairly quickly to prepare such a welcome for us at such short notice. You can’t have had more than three minutes’ warning?」
+Narrator:Harry think "He certainly had those, thought Harry, looking around the room. It was stuffy and cluttered, yet nobody could say it was uncomfortable; there were soft chairs and footstools, drinks and books, boxes of chocolates and plump cushions. If Harry had not known who lived there, he would have guessed at a rich, fussy old lady."
+Dumbledore:「You’re not yet as old as I am, Horace.」

@@ -1,8 +1,14 @@
-Harry:「What? No! he said defensively. I remember everything we’ve done while I’ve been wearing it. I wouldn’t know what I’d done if I’d been possessed, would I? Ginny told me there were times when she couldn’t remember anything.」
-Hermione:「Hmm, said Hermione, looking down at the heavy gold locket. Well, maybe we ought not to wear it. We can just keep it in the tent.」
-Harry:「We are not leaving that Horcrux lying around, Harry stated firmly. If we lose it, if it gets stolen —」
-Ron:「This is You-Know-Who we’re talking about, right? Not you?」
-:Ronaction
-Hermione:「You told us that You-Know-Who asked Dumbledore to give him a job after he left.」
-Harry:「Yeah.」
-Hermione:「But he didn’t get the job, did he? So he never got the chance to find a founder’s object there and hide it in the school!」
+Harry:「R.A.B. I think I’ve found him.」
+Hermione:「Sirius’s brother?」
+Harry:「He was a Death Eater, Sirius told me about him, he joined up when he was really young and then got cold feet and tried to leave — so they killed him.」
+Hermione:「That fits! If he was a Death Eater he had access to Voldemort, and if he became disenchanted, then he would have wanted to bring Voldemort down!」
+Ron:「What? That was Sirius’s brother, wasn’t it? Regulus Arcturus . . . Regulus . . . R.A.B.! The locket — you don’t reckon — ?」
+Harry:「Let’s find out.」
+:Hermione spell to the door handle
+Hermione:「They’re all about Voldemort. Regulus seems to have been a fan for a few years before he joined the Death Eaters. . . .」
+:Ron searching under the wardrobe
+:Harry approached the desk
+:Hermione spell to summon the locket
+Harry:「Like Voldemort put on the stone basin in the cave.」
+Ron:「How are we supposed to find it then?」
+Hermione:「We search manually.」

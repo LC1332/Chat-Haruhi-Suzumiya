@@ -1,3 +1,10 @@
-:Hagridaction
-:classaction
-Harry:「Bits of flesh stripping themselves away from the bones and vanishing into thin air had to look very odd indeed.」
+Hermione:「All in favor of the D.A.? That’s a majority — motion passed!」
+:Hermione action
+Harry:「Right, shall we get practicing then? I was thinking, the first thing we should do is Expelliarmus, you know, the Disarming Charm. I know it’s pretty basic but I’ve found it really useful —」
+Zacharias Smith:「Oh please, I don’t think Expelliarmus is exactly going to help us against You-Know-Who, do you?」
+Harry:「I’ve used it against him, it saved my life last June.」
+:Zacharias Smith action
+Harry:「Okay, I reckon we should all divide into pairs and practice.」
+Harry:「Good one! Listen, Neville, can you take it in turns to practice with Ron and Hermione for a couple of minutes so I can walk around and see how the rest are doing?」
+Harry:「Okay, stop! Stop! STOP!」
+Harry:「Let’s try again . . .」

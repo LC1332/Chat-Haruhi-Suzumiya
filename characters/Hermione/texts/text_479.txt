@@ -1,8 +1,2 @@
-:Umbridgeaction
-Hermione:「Well, he was trying to speak to Professor Dumbledore . . .」
-Umbridge:「Dumbledore? You know where Dumbledore is, then?」
-Hermione:「We’ve tried the Leaky Cauldron in Diagon Alley and the Three Broomsticks and even the Hog’s Head —」
-Umbridge:「What’s ready, girl?」
-Hermione:「The . . . the weapon,」
-Umbridge:「Lead me to the weapon,」
-Hermione:「I’m not showing . . . them,」
+Harry:「Harry and Hermione exchanged miserable looks, Harry uncomfortably aware that he had already promised Hagrid that he would do whatever he asked.」
+Hermione:「“What — what does that involve, exactly?” Hermione inquired.」

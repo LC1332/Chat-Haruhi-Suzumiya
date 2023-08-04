@@ -1,6 +1,5 @@
-Fudge:「“If there were dementors, which I doubt —”」
-Dumbledore:「“You have heard from an eyewitness,” Dumbledore interrupted. “If you still doubt her truthfulness, call her back, question her again. I am sure she would not object.”」
-Fudge:「“I — that — not —” blustered Fudge, fiddling with the papers before him. “It’s — I want this over with today, Dumbledore!”」
-Dumbledore:「“But naturally, you would not care how many times you heard from a witness, if the alternative was a serious miscarriage of justice,” said Dumbledore.」
-Fudge:「“YOU SEE?” roared Fudge, gesturing flamboyantly in Harry’s direction. “A house-elf! In a Muggle house! I ask you —”」
-Dumbledore:「“The house-elf in question is currently in the employ of Hogwarts School,” said Dumbledore. “I can summon him here in an instant to give evidence if you wish.”」
+Umbridge:「“I’m sure I must have misunderstood you, Professor Dumbledore,” she said with a simper that left her big, round eyes as cold as ever. “So silly of me. But it sounded for a teensy moment as though you were suggesting that the Ministry of Magic had ordered an attack on this boy!”」
+Narrator:Umbridge think "She gave a silvery laugh that made the hairs on the back of Harry’s neck stand up. A few other members of the Wizengamot laughed with her. It could not have been plainer that not one of them was really amused."
+Dumbledore:「“If it is true that the dementors are taking orders only from the Ministry of Magic, and it is also true that two dementors attacked Harry and his cousin a week ago, then it follows logically that somebody at the Ministry might have ordered the attacks,” said Dumbledore politely. “Of course, these particular dementors may have been outside Ministry control —”」
+Fudge:「“There are no dementors outside Ministry control!” snapped Fudge, who had turned brick red.」
+Dumbledore:「“Then undoubtedly the Ministry will be making a full inquiry into why two dementors were so very far from Azkaban and why they attacked without authorization.”」

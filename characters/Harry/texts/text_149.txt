@@ -1,9 +1,5 @@
-Hermione:「Did you get them?」
-Harry:「Good. And I sneaked these spare robes out of the laundry. You’ll need bigger sizes once you’re Crabbe and Goyle.」
-Hermione:「I’m sure I’ve done everything right, It looks like the book says it should . . . once we’ve drunk it, we’ll have exactly an hour before we change back into ourselves.」
-Ron:「Now what?」
-Hermione:「We separate it into three glasses and add the hairs.」
-:Hermioneaction
-Harry:「Don’t swing your arms like that.」
-Ron:「How’s this?」
-Harry:「Yeah, that’s better. . . .」
+Hermione:「Wake up. Merry Christmas to you, too. I’ve been up for nearly an hour, adding more lacewings to the potion. It’s ready.」
+Harry:「Are you sure?」
+Hermione:「Positive. If we’re going to do it, I say it should be tonight.」
+:Hedwig swooped into the room, carrying a very small package in her beak
+Harry:「Hello. Are you speaking to me again?」

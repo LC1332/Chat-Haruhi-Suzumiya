@@ -1,9 +1,2 @@
-Harry:「What’s up, Ron?」
-Ron:「Why did I do it? I don’t know what made me do it!」
-Harry:「What?」
-Ginny:「He — er — just asked Fleur Delacour to go to the ball with him.」
-:Ginnyaction
-Harry:「You what?」
-Ron:「I don’t know what made me do it! What was I playing at? There were people — all around — I’ve gone mad — everyone watching! I was just walking past her in the entrance hall — she was standing there talking to Diggory — and it sort of came over me — and I asked her!」
-Ron:「I asked her to go with me just now, and she told me.」
-Ron:「Yeah, I know! He told me after Potions! Said she’s always been really nice, helping him out with work and stuff — but she told him she was already going with someone. Ha! As if! She just didn’t want to go with Neville . . . I mean, who would?」
+Hermione:「“He’s supposed to work out the clue on his own,” Hermione said swiftly. “It’s in the tournament rules. . . .”」
+Ron:「“Fits, doesn’t it?” he said. “Remember what Malfoy said on the train, about his dad being friends with Karkaroff? Now we know where they knew each other. They were probably running around in masks together at the World Cup. . . . I’ll tell you one thing, though, Harry, if it was Karkaroff who put your name in the goblet, he’s going to be feeling really stupid now, isn’t he? Didn’t work, did it? You only got a scratch! Come here — I’ll do it —” “There’s no way any of the other tasks are going to be that dangerous, how could they be?” Ron went on as he carried Pigwidgeon to the window. “You know what? I reckon you could win this tournament, Harry, I’m serious.” Harry knew that Ron was only saying this to make up for his behavior of the last few weeks, but he appreciated it all the same. Hermione, however, leaned against the Owlery wall, folded her arms, and frowned at Ron. “Harry’s got a long way to go before he finishes this tournament,” she said seriously. “If that was the first task, I hate to think what’s coming next.” “Right little ray of sunshine, aren’t you?” said Ron. “You and Professor Trelawney should get together sometime.”」

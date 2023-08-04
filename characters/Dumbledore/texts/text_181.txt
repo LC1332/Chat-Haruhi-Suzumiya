@@ -1,14 +1,12 @@
-Harry:「“Professor, can you hear me?”」
-Dumbledore:「“I don’t want . . . Don’t make me . . .”」
-Dumbledore:「don’t like . . . want to stop . . .」
-Dumbledore:「No . . . I don’t want to. . . . I don’t want to. . . . Let me go. . . .」
-Harry:「Yes . . . yes, this’ll make it stop」
-Dumbledore:「No, no, no, no, I can’t, I can’t, don’t make me, I don’t want to. . . .」
-Harry:「This will make it stop, Professor」
-Dumbledore:「Don’t hurt them, don’t hurt them, please, please, it’s my fault, hurt me instead . . .」
-Harry:「Just drink, Professor, just drink . . .」
-Dumbledore:「No more, please, no more . . .」
-Harry:「Drink this, Professor. Drink this. . . .」
-Dumbledore:「KILL ME!」
-Harry:「No, you’re not dead, you said it wasn’t poison, wake up, wake up — Rennervate!」
-Dumbledore:「Water,」
+Harry:「Professor? Do you think the Horcrux is here?」
+Dumbledore:「Oh yes, Yes, I’m sure it is. The question is, how do we get to it?」
+Harry:「We couldn’t . . . we couldn’t just try a Summoning Charm?」
+:Harry keen on getting out of this place as soon as possible
+Dumbledore:「Certainly we could, Why don’t you do it?」
+:Harry something very large and pale erupted out of the dark water some twenty feet away
+:Harry vanished again with a crashing splash that made great, deep ripples on the mirrored surface
+:Harry leapt backward in shock and hit the wall
+Harry:「What was that?」
+Dumbledore:「Something, I think, that is ready to respond should we attempt to seize the Horcrux.」
+Dumbledore:「I thought something would happen if we made an obvious attempt to get our hands on the Horcrux. That was a very good idea, Harry; much the simplest way of finding out what we are facing.」
+Dumbledore:「What the things are, you mean, I doubt very much that there is only one of them. Shall we walk on?」

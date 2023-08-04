@@ -1,10 +1,7 @@
-Narrator:Ollivander think "No, its history is bloody, but that may be simply due to the fact that it is such a desirable object, and arouses such passions in wizards."
-Harry:「you told You-Know-Who that Gregorovitch had the Elder Wand, didn’t you?」
-Narrator:Ollivander think "It was a rumor, years and years ago, long before you were born! I believe Gregorovitch himself started it."
-Harry:「What do you know about the Deathly Hallows?」
-Narrator:Ollivander think "He was torturing me! The Cruciatus Curse . . . you have no idea. . . ."
-Harry:「Please get some rest. Thank you for telling me all of this.」
-Ron:「Dumbledore had the Elder Wand? But then — where is it now?」
-Harry:「At Hogwarts. But then, let’s go! Harry, let’s go and get it before he does!」
-Harry:「No. Hermione’s right. Dumbledore didn’t want me to have it. He didn’t want me to take it. He wanted me to get the Horcruxes.」
-Harry:「I shall join you in the castle shortly. Leave me now.」
+Ron:「I think Hermione’s right, I think we ought to go and see Lovegood.」
+Harry:「It won’t be like Godric’s Hollow, Lovegood’s on your side, Harry, The Quibbler’s been for you all along, it keeps telling everyone they’ve got to help you!」
+Hermione:「I’m sure this is important!」
+Harry:「But don’t you think if it was, Dumbledore would have told me about it before he died?」
+Hermione:「but I still think we ought to talk to Mr. Lovegood. A symbol that links Dumbledore, Grindelwald, and Godric’s Hollow? Harry, I’m sure we ought to know about this!」
+Ron:「I think we should vote on it, Those in favor of going to see Lovegood —」
+Harry:「Fine, Only, once we’ve seen Lovegood, let’s try and look for some more Horcruxes, shall we? Where do the Lovegoods live, anyway? Do either of you know?」

@@ -1,7 +1,4 @@
-Malfoy:「I haven’t got any options! He told me to do it or he’ll kill me. I’ve got no choice.」
-Dumbledore:「Come over to the right side, Draco, and we can hide you more completely than you can possibly imagine. What is more, I can send members of the Order to your mother tonight to hide her likewise. Your father is safe at the moment in Azkaban. . . . When the time comes, we can protect him too. . . . Come over to the right side, Draco . . . you are not a killer. . . .」
-Malfoy:「But I got this far, didn’t I? They thought I’d die in the attempt, but I’m here . . . and you’re in my power. . . . I’m the one with the wand. . . . You’re at my mercy. . . .」
-Dumbledore:「No, Draco, It is my mercy, and not yours, that matters now.」
-lumpy-looking man:「Dumbledore cornered! Well done, Draco, well done!」
-stocky little woman:「Think your little jokes’ll help you on your deathbed then?」
-Dumbledore:「Good evening, Amycus, And you’ve brought Alecto too. . . . Charming . . .」
+Malfoy:「I had to mend that broken Vanishing Cabinet that no one’s used for years. The one Montague got lost in last year.」
+Dumbledore:「That was clever. . . . There is a pair, I take it?」
+Narrator:Malfoy think "In Borgin and Burkes, and they make a kind of passage between them. Montague told me that when he was stuck in the Hogwarts one, he was trapped in limbo but sometimes he could hear what was going on at school, and sometimes what was going on in the shop, as if the cabinet was traveling between them, but he couldn’t make anyone hear him. . . . In the end, he managed to Apparate out, even though he’d never passed his test. He nearly died doing it. Everyone thought it was a really good story, but I was the only one who realized what it meant — even Borgin didn’t know — I was the one who realized there could be a way into Hogwarts through the cabinets if I fixed the broken one."
+Dumbledore:「Very good. So the Death Eaters were able to pass from Borgin and Burkes into the school to help you. . . . A clever plan, a very clever plan . . . and, as you say, right under my nose.」

@@ -1,2 +1,6 @@
-Lupin:「You’re the cleverest witch of your age I’ve ever met, Hermione.」
-Hermione:「I’m not, If I’d been a bit cleverer, I’d have told everyone what you are!」
+Hagrid:「Dumbledore’s gonna come down while it — while it happens. Wrote me this mornin’. Said he wants ter — ter be with me. Great man, Dumbledore. . . .」
+Hermione:「We’ll stay with you too, Hagrid, she began, but Hagrid shook his shaggy head.」
+Hagrid:「Yeh’re ter go back up ter the castle. I told yeh, I don’ wan’ yeh watchin’. An’ yeh shouldn’ be down here anyway. . . . If Fudge an’ Dumbledore catch yeh out without permission, Harry, yeh’ll be in big trouble.」
+:Hermione action
+Ron:「What are you talking about?」
+Hermione:「Scabbers! said Ron blankly. Scabbers, what are you doing here?」

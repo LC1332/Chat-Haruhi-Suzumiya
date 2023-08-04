@@ -1,16 +1,8 @@
-Ron:「I’m here, mate.」
-Hermione:「I don’t know, but whatever it was, it was dangerous,」
-:Hermioneaction
-Hermione:「Get out of the way!」
-:Harryaction
-:Harryaction
-Hermione:「Right, we’re leaving that room,」
-:Hermioneaction
-Harry:「This is it!」
-Ginny:「Oh look!」
-:Ginnyaction
-Harry:「Keep going!」
-Ginny:「You dawdled enough by that old arch!」
-Harry:「This is it,」
-Harry:「It’s through here —」
-Hermione:「You said it was row ninety-seven,」
+Ron:「shouted "Hermione, we wanted to buy that!"」
+Hermione:「snarled "Don’t be stupid"」
+Ron:「eagerly asked "Dingle’s got powdered dragon claw?"」
+Hermione:「said "Not anymore. I confiscated that too. None of these things actually works you know —"」
+Harry, Ron:「their desire for brain stimulants was taken off」
+Harry, Ron:「received their examination schedules and details of the procedure for O.W.L.s」
+Professor McGonagall:「told the class about the examination schedule and rules」
+Hermione:「asked "when will we find out our results?"」

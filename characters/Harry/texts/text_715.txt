@@ -1,10 +1,5 @@
-Professor Grubbly-Plank:「Hmm, Looks like something’s attacked her. Can’t think what would have done it, though. . . . Thestrals will sometimes go for birds, of course, but Hagrid’s got the Hogwarts thestrals well trained not to touch owls . . .」
-Harry:「Harry neither knew nor cared what thestrals were, he just wanted to know that Hedwig was going to be all right.」
-Professor McGonagall:「Do you know how far this owl’s traveled, Potter?」
-Harry:「From London, I think.」
-Professor Grubbly-Plank:「No problem,」
-Professor McGonagall:「Just a moment, Wilhelmina! Potter’s letter!」
-Harry:「Oh yeah!」
-Ron:「Is Hedwig okay?」
-Hermione:「Where did you take her?」
-Harry:「To Grubbly-Plank, And I met McGonagall . . . Listen . . .」
+Umbridge:「That is enough. Miss Granger, I am going to take five points from Gryffindor House.」
+Harry:「What for?」
+Hermione:「Don’t you get involved!」
+Umbridge:「For disrupting my class with pointless interruptions. I am here to teach you using a Ministry-approved method that does not include inviting students to give their opinions on matters about which they understand very little. Your previous teachers in this subject may have allowed you more license, but as none of them — with the possible exception of Professor Quirrell, who did at least appear to have restricted himself to age-appropriate subjects — would have passed a Ministry inspection —」
+Harry:「Yeah, Quirrell was a great teacher, there was just that minor drawback of him having Lord Voldemort sticking out of the back of his head.」

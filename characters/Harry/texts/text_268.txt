@@ -1,2 +1,7 @@
-:Woodbasking in the reflected glory of the Firebolt
-Harry:「Put it here, Harry, laying the broom in the middle of the table and carefully turning it so that its name faced upward.」
+Ron:「“Can’t you shut that thing up?”」
+Harry:「“He’s not looking too good, is he?”」
+Ron:「“It’s stress!”」
+Narrator:Harry think "remembering what the woman at the Magical Menagerie had said about rats living only three years, couldn’t help feeling that unless Scabbers had powers he had never revealed, he was reaching the end of his life."
+:Ron action
+:Harry action
+Harry:「Crackers!」

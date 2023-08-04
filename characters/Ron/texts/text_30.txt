@@ -1,7 +1,2 @@
-Harry:「It was true that Harry wasn’t going back to Privet Drive for Christmas. Professor McGonagall had come around the week before, making a list of students who would be staying for the holidays, and Harry had signed up at once. He didn’t feel sorry for himself at all; this would probably be the best Christmas he’d ever had. Ron and his brothers were staying, too, because Mr. and Mrs. Weasley were going to Romania to visit Charlie.」
-Ron:「“Hi, Hagrid, want any help?”」
-Hagrid:「“Nah, I’m all right, thanks, Ron.”」
-Malfoy:「“Would you mind moving out of the way? Are you trying to earn some extra money, Weasley? Hoping to be gamekeeper yourself when you leave Hogwarts, I suppose — that hut of Hagrid’s must seem like a palace compared to what your family’s used to.”」
-Ron:「“WEASLEY!”」
-:Malfoyaction
-Ron:「“I’ll get him, one of these days, I’ll get him —”」
+Harry:「Will you look at this? I’ve got some presents!」
+Ron:「What did you expect, turnips?」

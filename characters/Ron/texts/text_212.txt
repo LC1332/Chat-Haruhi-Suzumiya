@@ -1,2 +1,4 @@
-Wormtail:「Ron . . . haven’t I been a good friend . . . a good pet? You won’t let them kill me, Ron, will you . . . you’re on my side, aren’t you?」
-Ron:「I let you sleep in my bed!」
+Lupin:「Not at all up to your usual standard, Hermione, Only one out of three, I’m afraid. I have not been helping Sirius get into the castle and I certainly don’t want Harry dead. . . . But I won’t deny that I am a werewolf.」
+:Ron action
+:Lupin action
+Ron:「Get away from me, werewolf!」

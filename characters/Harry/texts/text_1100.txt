@@ -1,10 +1,11 @@
-Dumbledore:「No, no, no, no, I can’t, I can’t, don’t make me, I don’t want to. . . .」
-Harry:「It’s all right, Professor, it’s all right! Nothing’s happening to you, you’re safe, it isn’t real, I swear it isn’t real — take this, now, take this. . . .」
-Dumbledore:「It’s all my fault, all my fault, Please make it stop, I know I did wrong, oh please make it stop and I’ll never, never again . . .」
-Harry:「This will make it stop, Professor」
-Dumbledore:「Please, please, please, no . . . not that, not that, I’ll do anything . . .」
-Harry:「Just drink, Professor, just drink . . .」
-:Dumbledorescreamed
-Harry:「Drink this, Professor. Drink this. . . .」
-:Dumbledoreshouted
-Harry:「No, you’re not dead, you said it wasn’t poison, wake up, wake up — Rennervate!」
+:Slughorn said with a hiccup
+Harry:「Hagrid wasn’t talking about your singing. He was talking about my mum and dad dying.」
+:Slughorn looked quite at a loss for what to say
+Slughorn:「I don’t — don’t suppose you remember it, Harry?」
+Harry:「No — well, I was only one when they died. But I’ve found out pretty much what happened since. My dad died first. Did you know that?」
+:Slughorn gave a great shudder
+Harry:「She could have . . . she needn’t . . . That’s awful. . . .」
+Slughorn:「Liked her? I don’t imagine anyone who met her wouldn’t have liked her. . . . Very brave . . . Very funny . . . It was the most horrible thing. . . .」
+Harry:「But you won’t help her son, She gave me her life, but you won’t give me a memory.」
+Harry:「It can, Dumbledore needs information. I need information.」
+Harry:「Of course I am.」

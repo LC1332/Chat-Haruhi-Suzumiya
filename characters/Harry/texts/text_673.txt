@@ -1,9 +1,11 @@
-Angelina:「Stop — stop — STOP! Ron — you’re not covering your middle post!」
-Harry:「Oh . . . sorry . . .」
-Angelina:「You keep shifting around while you’re watching the Chasers! Either stay in center position until you have to move to defend a hoop, or else circle the hoops, but don’t drift vaguely off to one side, that’s how you let in the last three goals!」
-Ron:「Sorry . . .」
-Katie:「It’s just getting worse!」
-Harry:「Well, let’s try again.」
-Angelina:「Well, there’s no point continuing with no Beaters and a Chaser gone. Come on, let’s go and get changed.」
-Hermione:「How was practice?」
-Harry:「Completely lousy.」
+Malfoy:「laughed.」
+Harry:「Yes, I can,」
+Harry:「Read the third line of the instructions for me, Potter.」
+Harry:「“No,” said Harry very quietly.」
+:Harry description of potion
+:Harry description of potions
+Hermione:「“That was really unfair,” said Hermione consolingly, sitting down next to Harry and helping herself to shepherd’s pie.」
+Harry:「“Yeah, well,” said Harry, glowering at his plate, “since when has Snape ever been fair to me?”」
+Hermione:「“I think Dumbledore’s probably got plenty of evidence, even if he doesn’t share it with you, Ron,” snapped Hermione.」
+Ron:「I never remember my dreams, You say one.」
+Harry:「You must remember one of them.」

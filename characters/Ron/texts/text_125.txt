@@ -1,12 +1,7 @@
-Ernie:「“That Draco Malfoy character, he seems very pleased about all this, doesn’t he? D’you know, I think he might be Slytherin’s heir.”」
-Ron:「“That’s clever of you,”」
-Ernie:「“Do you think it’s Malfoy, Harry?”」
-Harry:「“No,”」
-:Harryaction
-Ron:「“Ouch! What’re you —”」
-:Ernie and Hannahaction
-:Harryaction
-Harry:「“Looks like they’re heading for the Forbidden Forest. . . .”」
-:Ronaction
-Harry:「“We’ll have to use the Invisibility Cloak again. We can take Fang with us. He’s used to going into the forest with Hagrid, he might be some help.”」
-Ron:「“Right,”」
+Harry:「What does she understand?」
+Ron:「Loads more than I do. But why’s she got to go to the library? Because that’s what Hermione does. When in doubt, go to the library.」
+Harry:「You’d better get moving. It’s nearly eleven — the match —」
+:Harry mind was still in the castle along with the bodiless voice
+Ron:「This match has been canceled. We’ve got to play — the Cup — Gryffindor —」
+Ron:「Yes, perhaps you’d better come, too, Weasley. . . .」
+Ron:「Hermione!」

@@ -1,8 +1,7 @@
-:Professor Trelawneyrevolving, sank back into the silver mass below and vanished
-Harry:「Professor Dumbledore? It . . . did that mean . . . What did that mean?」
-Dumbledore:「that the person who has the only chance of conquering Lord Voldemort for good was born at the end of July, nearly sixteen years ago. This boy would be born to parents who had already defied Voldemort three times.」
-Harry:「It means — me?」
-Dumbledore:「The official record was relabeled after Voldemort’s attack on you as a child. It seemed plain to the keeper of the Hall of Prophecy that Voldemort could only have tried to kill you because he knew you to be the one to whom Sybill was referring.」
-Harry:「Then — it might not be me?」
-Dumbledore:「You are forgetting the next part of the prophecy, the final identifying feature of the boy who could vanquish Voldemort. . . . Voldemort himself would ‘mark him as his equal.’ And so he did, Harry. He chose you, not Neville. He gave you the scar that has proved both blessing and curse.」
-Harry:「But he might have chosen wrong! He might have marked the wrong person!」
+Hermione:「I don’t know, but whatever it was, it was dangerous,」
+:Hermione action
+Harry:「What’s wrong? It’s . . . locked . . .」
+Ron:「This is it, then, isn’t it? Bound to be!」
+Hermione:「Get out of the way!」
+:Hermione action
+Harry:「Sirius’s knife!」

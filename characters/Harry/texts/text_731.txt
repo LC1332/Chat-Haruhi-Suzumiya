@@ -1,9 +1,4 @@
-:Hermioneaction
-Harry:「Right, shall we get practicing then? I was thinking, the first thing we should do is Expelliarmus, you know, the Disarming Charm. I know it’s pretty basic but I’ve found it really useful —」
-Zacharias Smith:「Oh please, I don’t think Expelliarmus is exactly going to help us against You-Know-Who, do you?」
-Harry:「I’ve used it against him, it saved my life last June.」
-:Zacharias Smithaction
-Harry:「Okay, I reckon we should all divide into pairs and practice.」
-Harry:「Good one! Listen, Neville, can you take it in turns to practice with Ron and Hermione for a couple of minutes so I can walk around and see how the rest are doing?」
-Harry:「Okay, stop! Stop! STOP!」
-Harry:「Let’s try again . . .」
+Cho:「all the tasks he had to get through in the Triwizard Tournament last year — getting past dragons and merpeople and acromantulas and things . . .」
+Harry:「Look, I . . . I don’t want to sound like I’m trying to be modest or anything, but . . . I had a lot of help with all that stuff . . .」
+Michael Corner:「That was a seriously cool bit of flying . . .」
+Harry:「Yeah, well —」

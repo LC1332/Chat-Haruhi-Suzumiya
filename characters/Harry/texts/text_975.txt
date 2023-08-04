@@ -1,7 +1,5 @@
-Hermione:「It wasn’t very well thought-out at all.」
-Harry:「But since when has Malfoy been one of the world’s great thinkers?」
-:Rondid not answer
-:Hermionedid not answer
-Katie:「was removed to St. Mungo’s Hospital for Magical Maladies and Injuries the following day」
-Harry:「Oh, and Malfoy knows, of course」
-Harry:「I believe you witnessed Katie’s accident.」
+Slughorn:「cried to the dungeon, “The clear winner! Excellent, excellent, Harry! Good lord, it’s clear you’ve inherited your mother’s talent. She was a dab hand at Potions, Lily was! Here you are, then, here you are — one bottle of Felix Felicis, as promised, and use it well!”」
+:Harry action
+:Harry action
+:Harry whispered to Harry
+Harry:「Got lucky, I suppose,」

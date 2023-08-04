@@ -1,2 +1,8 @@
-:Harryaction
-Dumbledore:「bellowed at Harry to stay where he is」
+Fudge:「Very well, then. Duplicate your notes, Weasley, and send a copy to the Daily Prophet at once. If we send a fast owl we should make the morning edition!」
+Dumbledore:「You will now be escorted back to the Ministry, where you will be formally charged and then sent to Azkaban to await trial!」
+Dumbledore:「Ah, yes. Yes, I thought we might hit that little snag.」
+:Umbridge face growing steadily redder, looked as though she was being filled with boiling water
+Fudge:「Don’t be silly, Dawlish. I’m sure you are an excellent Auror, but if you attempt to bring me in by force, I will have to hurt you.」
+:Dawlish blinked, looking rather foolish
+Fudge:「So, you intend to take on Dawlish, Shacklebolt, Dolores, and myself single-handed, do you, Dumbledore?」
+Dumbledore:「Merlin’s beard, no. Not unless you are foolish enough to force me to.」

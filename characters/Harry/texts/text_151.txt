@@ -1,2 +1,9 @@
-Malfoy:「That’ll give you a laugh.」
-Harry:「saw Ron’s eyes widen in shock」
+Hermione:「Did you get them?」
+Harry:「Good. And I sneaked these spare robes out of the laundry. You’ll need bigger sizes once you’re Crabbe and Goyle.」
+Hermione:「I’m sure I’ve done everything right, It looks like the book says it should . . . once we’ve drunk it, we’ll have exactly an hour before we change back into ourselves.」
+Ron:「Now what?」
+Hermione:「We separate it into three glasses and add the hairs.」
+:Hermione action
+Harry:「Don’t swing your arms like that.」
+Ron:「How’s this?」
+Harry:「Yeah, that’s better. . . .」

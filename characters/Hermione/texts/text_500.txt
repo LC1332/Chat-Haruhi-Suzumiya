@@ -1,11 +1,3 @@
-Harry:「But he knows your dad was right all along now about Voldemort being back —」
-Hermione:「Dumbledore says people find it far easier to forgive others for being wrong than being right. I heard him telling your mum, Ron.」
-Ron:「Sounds like the sort of mental thing Dumbledore would say.」
-Harry:「He’s going to be giving me private lessons this year.」
-Ron:「You kept that quiet!」
-Harry:「I only just remembered. He told me last night in your broom shed.」
-Ron:「Blimey . . . private lessons with Dumbledore! I wonder why he’s . . . ?」
-Harry:「I don’t know exactly why he’s going to be giving me lessons, but I think it must be because of the prophecy.」
-:Ronvoice tailed away
-Harry:「You know, the one they were trying to steal at the Ministry.」
-Hermione:「Nobody knows what it said, though. It got smashed.」
+Umbridge:「That’s right! So be very careful! By the laws laid down by the Department for the Regulation and Control of Magical Creatures, any attack by half-breeds such as yourselves on a human —」
+Bane:「What did you call us?」
+Hermione:「Don’t call them that!」

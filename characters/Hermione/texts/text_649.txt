@@ -1,13 +1,4 @@
-Umbridge:「I have your responses to the questionnaire that was sent to you here — Mafalda, pass them to me.」
-Hermione:「That’s — that’s pretty, Dolores.」
-Umbridge:「What? Oh yes — an old family heirloom. The S stands for Selwyn. . . . I am related to the Selwyns. . . . Indeed, there are few pure-blood families to whom I am not related. . . . A pity, that the same cannot be said for you. ‘Parents’ professions: greengrocers.’」
-Yaxley:「laughed jeeringly」
-:Harryspell to Umbridge
-:Umbridgecrumpled, hit the edge of the balustrade
-:Harryspell to Yaxley
-:Yaxleyslid to the ground, curled on the floor
-Hermione:「Harry!」
-:dementorsfell back, melted into the dark shadows
-Harry:「Get the Horcrux」
-:Harryspell to chains
-Hermione:「Wait, I’m trying something up here —」
+Harry:「The Dumbledores lived in Godric’s Hollow?」
+Auntie Muriel:「Yes, Barry, that’s what I just said.」
+Narrator:Harry think "Never once, in six years, had Dumbledore told Harry that they had both lived and lost loved ones in Godric’s Hollow. Why? Were Lily and James buried close to Dumbledore’s mother and sister? Had Dumbledore visited their graves, perhaps walked past Lily’s and James’s to do so? And he had never once told Harry . . . never bothered to say . . ."
+Hermione:「I simply can’t dance anymore. Ron’s gone looking to find more butterbeers. It’s a bit odd, I’ve just seen Viktor storming away from Luna’s father, it looked like they’d been arguing — Harry, are you okay?」

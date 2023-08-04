@@ -1,7 +1,2 @@
-Harry:「Good luck, Harry Potter. The planets have been read wrongly before now, even by centaurs. I hope this is one of those times.」
-Ron:「shouted something about Quidditch fouls」
-:Harryaction
-:Harryaction
-:Harryaction
-Harry:「Snape wants the Stone for Voldemort . . . and Voldemort’s waiting in the forest . . . and all this time we thought Snape just wanted to get rich. . . .」
-Ron:「Stop saying the name!」
+Harry:「Where’re you going?」
+Ron:「I’ve just thought of something, We’ve got to go and see Hagrid, now.」

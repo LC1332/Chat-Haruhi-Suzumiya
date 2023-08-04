@@ -1,21 +1,2 @@
-:Nevilleaction
-Harry:「What’ve you done to him?」
-:Hermionespell to Neville
-:Nevilleaction
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
-Harry:「What’ve you done to him?」
+Mr. Weasley:「Get up! Ron — Harry — come on now, get up, this is urgent!」
+Harry:「’S’ matter?」

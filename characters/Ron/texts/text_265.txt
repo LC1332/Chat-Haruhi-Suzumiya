@@ -1,15 +1,8 @@
-Hermione:「Hello, I’ve just finished!」
-Ron:「So have I!」
-:Hermionelaid the things she was carrying in an empty armchair, and pulled Ron’s predictions toward her
-Hermione:「Not going to have a very good month, are you?」
-Ron:「Ah well, at least I’m forewarned」
-Hermione:「Don’t you think it’s a bit obvious you’ve made these up?」
-Ron:「How dare you! We’ve been working like house-elves here!」
-Hermione:「Funny you should ask」
-:Hermionetook off the lid and showed them the contents
-:HermioneInside were about fifty badges, all of different colors, but all bearing the same letters: S.P.E.W.
-Harry:「‘Spew’? What’s this about?」
-Hermione:「Not spew, It’s S-P-E-W. Stands for the Society for the Promotion of Elfish Welfare」
-Ron:「Never heard of it」
-Hermione:「Well — if you two join — three」
-Ron:「And you think we want to walk around wearing badges saying ‘spew,’ do you?」
+Hermione:「Just because they’re not very pretty, it doesn’t mean they’re not useful. Dragon blood’s amazingly magical, but you wouldn’t want a dragon for a pet, would you?」
+:Harry action
+:Ron action
+:Hagrid action
+Ron:「at least the skrewts are small」
+Hermione:「once Hagrid’s found out what they eat, I expect they’ll be six feet long」
+Ron:「Well, that won’t matter if they turn out to cure seasickness or something, will it?」
+Ron:「Er — is this the new stand on elf rights? You’re going to make yourself puke instead?」

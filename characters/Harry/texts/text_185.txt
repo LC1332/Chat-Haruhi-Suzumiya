@@ -1,10 +1,2 @@
-Riddle:「LEAVE THE BIRD! LEAVE THE BIRD! THE BOY IS BEHIND YOU! YOU CAN STILL SMELL HIM! KILL HIM!」
-:Fawkescircling the basilisk's head, piping his eerie song, jabbing at its scaly nose
-Harry:「Help me, help me, someone — anyone —」
-:Harrygrabbed the Sorting Hat, rammed it onto his head, threw himself flat onto the floor
-:Harrygrabbed the top of the hat, felt a gleaming silver sword beneath it
-:Harryfelt a searing pain above his elbow, a fang sinking into his arm, wrenched it out, watched his own blood soaking his robes
-Harry:「Fawkes, You were fantastic, Fawkes. . . .」
-:Harryfelt drowsy, everything spinning, the Chamber coming back into focus
-Harry:「Riddle was pointing Harry’s wand at Fawkes; there was a bang like a gun, and Fawkes took flight again in a whirl of gold and scarlet.」
-Harry:「Then, in a rush of wings, Fawkes had soared back overhead and something fell into Harry’s lap — the diary.」
+Riddle:「I decided to leave behind a diary, preserving my sixteen-year-old self in its pages, so that one day, with luck, I would be able to lead another in my footsteps, and finish Salazar Slytherin’s noble work. Well, you haven’t finished it, No one’s died this time, not even the cat. In a few hours the Mandrake Draught will be ready and everyone who was Petrified will be all right again —」
+Harry:「Why do you care how I escaped? Voldemort was after your time. . . .」

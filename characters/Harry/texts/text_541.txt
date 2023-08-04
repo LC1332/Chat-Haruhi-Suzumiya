@@ -1,2 +1,3 @@
-:Dumbledoreaction
-Harry:「“Professor,” Harry mumbled, “where are Mr. and Mrs. Diggory?” “They are with Professor Sprout,” said Dumbledore. His voice, which had been so calm throughout the interrogation of Barty Crouch, shook very slightly for the first time. “She was Head of Cedric’s House, and knew him best.”」
+Mr. Crouch:「Bring them in,」
+:dementors entered this time, flanking a group of four people
+Harry:「The dementors placed each of the four people in the four chairs with chained arms that now stood on the dungeon floor. There was a thickset man who stared blankly up at Crouch; a thinner and more nervous-looking man, whose eyes were darting around the crowd; a woman with thick, shining dark hair and heavily hooded eyes, who was sitting in the chained chair as though it were a throne; and a boy in his late teens, who looked nothing short of petrified. He was shivering, his straw-colored hair all over his face, his freckled skin milk-white. The wispy little witch beside Crouch began to rock backward and forward in her seat, whimpering into her handkerchief.」

@@ -1,4 +1,3 @@
-Dumbledore:「Very good. Now, you will remember, I hope, that I told you at the very outset of these meetings of ours that we would be entering the realms of guesswork and speculation?」
-Harry:「Yes, sir.」
-Dumbledore:「Thus far, as I hope you agree, I have shown you reasonably firm sources of fact for my deductions as to what Voldemort did until the age of seventeen?」
-Harry:「But now, Harry, now things become murkier and stranger. If it was difficult to find evidence about the boy Riddle, it has been almost impossible to find anyone prepared to reminisce about the man Voldemort. In fact, I doubt whether there is a soul alive, apart from himself, who could give us a full account of his life since he left Hogwarts. However, I have two last memories that I would like to share with you. I shall then be glad of your opinion as to whether the conclusions I have drawn from them seem likely.」
+Lupin:「Sometimes . . . a great shock . . . an emotional upheaval . . .」
+:Harry action
+Harry:「Hey . . . it couldn’t be — ?」

@@ -1,9 +1,3 @@
-Luna:「We’re all still here, we’re still fighting. Come on, now. . . .」
-Harry:「Can’t thank you enough, you just saved —」
-Ron:「RUN!」
-Harry:「Let’s get out of range!」
-Ron:「How — how’re we going to get in?」
-Hermione:「Are you a wizard, or what?」
-:Ronspell to the twig
-Hermione:「Perfect! Wait.」
-Harry:「hesitated. Was he leading Ron and Hermione into a trap?」
+Griphook:「urged Harry "Make him press his hand to the door!"」
+:Harry action
+Harry:「said "Search, fast!" as they all hurried inside the vault」

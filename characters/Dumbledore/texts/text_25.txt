@@ -1,9 +1,6 @@
-Harry:「felt really calm for the first time since the dementor had entered the train compartment」
-Dumbledore:「Welcome!」
-:Dumbledorecandlelight shimmering on his beard
-:Dumbledoreget it out of the way before you become befuddled by our excellent feast
-:Dumbledorehere on Ministry of Magic business
-:Dumbledorestationed at every entrance to the grounds
-:Dumbledorewarn each and every one of you to give them no reason to harm you
-:Dumbledorepaused again
-Dumbledore:「On a happier note」
+Harry:「Because you gave it to her. In Flourish and Blotts. You picked up her old Transfiguration book and slipped the diary inside it, didn’t you?」
+:Lucius Malfoy saw his right hand twitch as though he was longing to reach for his wand
+Dumbledore:「Oh, no one will be able to do that. Not now that Riddle has vanished from the book. On the other hand, I would advise you, Lucius, not to go giving out any more of Lord Voldemort’s old school things. If any more of them find their way into innocent hands, I think Arthur Weasley, for one, will make sure they are traced back to you. . . .」
+:Lucius Malfoy stood for a moment
+Harry:「Professor Dumbledore, Can I give that diary back to Mr. Malfoy, please?」
+Dumbledore:「Certainly, Harry. But hurry. The feast, remember. . . .」

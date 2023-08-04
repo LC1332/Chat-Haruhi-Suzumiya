@@ -1,9 +1,4 @@
-Harry:「“Come here,” he said, and he led the way, brushed snow from the rock’s surface, and held out his hand for the Horcrux. When Ron offered the sword, however, Harry shook his head.」
-Ron:「“No, you should do it.”」
-Ron:「“Me?” said Ron, looking shocked. “Why?”」
-Harry:「“I’m going to open it,” said Harry, “and you stab it. Straightaway, okay? Because whatever’s in there will put up a fight. The bit of Riddle in the diary tried to kill me.”」
-Ron:「“How are you going to open it?” asked Ron. He looked terrified.」
-Harry:「“Why not?” asked Harry. “Let’s get rid of the damn thing, it’s been months —”」
-Ron:「“I can’t, Harry, I’m serious — you do it —”」
-:Ronaction
-Ron:「“Tell me when,” he croaked.」
+Kreacher:「Master Regulus told Kreacher to come back.」
+Ron:「Well, it’s obvious, isn’t it, Harry? He Disapparated!」
+Harry:「But . . . you couldn’t Apparate in and out of that cave, otherwise Dumbledore —」
+Ron:「Elf magic isn’t like wizard’s magic, is it? I mean, they can Apparate and Disapparate in and out of Hogwarts when we can’t.」

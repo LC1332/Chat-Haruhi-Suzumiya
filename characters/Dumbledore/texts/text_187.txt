@@ -1,6 +1,8 @@
-Malfoy:「Yeah, yeah, it was!」
-Dumbledore:「But there were times when you were not sure you would succeed in mending the cabinet? And you resorted to crude and badly judged measures such as sending me a cursed necklace that was bound to reach the wrong hands . . . poisoning mead there was only the slightest chance I might drink. . . .」
-Malfoy:「Yeah, well, you still didn’t realize who was behind that stuff, did you?」
-Dumbledore:「As a matter of fact, I did. I was sure it was you.」
-Malfoy:「He hasn’t been doing your orders, he promised my mother —」
-Dumbledore:「Of course that is what he would tell you, Draco, but —」
+Harry:「Sir, are you all right?」
+Dumbledore:「It is . . . Professor Snape whom I need. . . . But I do not think . . . I can walk very far just yet. . . .」
+Harry:「I’m going to knock on a door, find a place you can stay — then I can run and get Madam —」
+:Harry action
+Harry:「I saw you Apparate as I was pulling my bedroom curtains! Thank goodness, thank goodness, I couldn’t think what to — but what’s wrong with Albus?」
+Harry:「Madam Rosmerta, can he come into the Three Broomsticks while I go up to the school and get help for him?」
+Harry:「If you help me support him, I think we can get him inside —」
+Dumbledore:「The — the Dark Mark, Albus.」

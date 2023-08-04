@@ -1,6 +1,8 @@
-Narrator:Harry think "There was no pretending; Harry was sure she was right. It was a serious blow. If Yaxley could now get inside the house, there was no way that they could return. Even now, he could be bringing other Death Eaters in there by Apparition. Gloomy and oppressive though the house was, it had been their one safe refuge: even, now that Kreacher was so much happier and friendlier, a kind of home. With a twinge of regret that had nothing to do with food, Harry imagined the house-elf busying himself over the steak-and-kidney pie that Harry, Ron, and Hermione would never eat."
-Hermione:「Harry, I’m sorry, I’m so sorry!」
-Harry:「Don’t be stupid, it wasn’t your fault! If anything, it was mine. . . .」
-Hermione:「Umbridge had stuck it to her office door, to spy on people. I couldn’t leave it there . . . but that’s how they knew there were intruders.」
-Ron:「Lousy, wincing as he felt his injured arm. Where are we?」
-Hermione:「In the woods where they held the Quidditch World Cup. I wanted somewhere enclosed, undercover, and this was —」
+Ron:「“You’re amazing, you are,” said Ron, handing her his bundled-up robes.」
+Hermione:「“Thank you,” said Hermione, managing a small smile as she pushed the robes into the bag. “Please, Harry, get that Cloak on!”」
+:Harry action
+Harry:「“The others — everyone at the wedding —”」
+Hermione:「We can’t worry about that now, It’s you they’re after, Harry, and we’ll just put everyone in even more danger by going back.」
+Hermione:「Come on, I think we ought to keep moving.」
+Ron:「True, but don’t you feel a bit — exposed?」
+Hermione:「Where else is there? We can hardly book rooms at the Leaky Cauldron, can we? And Grimmauld Place is out if Snape can get in there. . . . I suppose we could try my parents’ house, though I think there’s a chance they might check there. . . . Oh, I wish they’d shut up!」

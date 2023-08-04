@@ -1,9 +1,4 @@
-:Hermionepassed by without looking at her
-:Harryaction
-Harry:「She’s staying in the village. I bet she’s coming to watch the first task.」
-:Harryaction
-:Hermioneaction
-Hermione:「Why don’t we go and have a butterbeer in the Three Broomsticks, it’s a bit cold, isn’t it? You don’t have to talk to Ron!」
-:Hermioneaction
-:Hermioneaction
-Harry:「The Three Broomsticks was packed, mainly with Hogwarts students enjoying their free afternoon, but also with a variety of magical people Harry rarely saw anywhere else. Harry supposed that as Hogsmeade was the only all-wizard village in Britain, it was a bit of a haven for creatures like hags, who were not as adept as wizards at disguising themselves.」
+Cedric:「We’re playing against each other again!」
+Harry:「I s’pose, He really couldn’t think of anything to say. The inside of his head seemed to be in complete disarray, as though his brain had been ransacked.」
+Cedric:「So . . . tell me . . . How did you get your name in?」
+Harry:「I didn’t, I didn’t put it in. I was telling the truth.」

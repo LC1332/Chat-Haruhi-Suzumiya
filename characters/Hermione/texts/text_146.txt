@@ -1,13 +1,7 @@
-:Harryaction
-Hermione:「I DON’T BELIEVE IT!」
-:Lupinaction
-Hermione:「You — you —」
-Lupin:「Hermione, calm down —」
-Hermione:「I didn’t tell anyone! I’ve been covering up for you —」
-Harry:「I trusted you, and all the time you’ve been his friend!」
-Lupin:「You’re wrong, I haven’t been Sirius’s friend, but I am now — Let me explain. . . .」
-Hermione:「NO! Harry, don’t trust him, he’s been helping Black get into the castle, he wants you dead too — he’s a werewolf!」
-:Lupinaction
-Ron:「Get away from me, werewolf!」
-Lupin:「How long have you known?」
-Hermione:「Ages, Since I did Professor Snape’s essay. . . .」
+Harry:「If we only had the Invisibility Cloak. . . .」
+Hermione:「Where is it?」
+Harry:「You — you tap it and say, ‘Dissendium,’ But —」
+Hermione:「Okay, no one there — Cloak on —」
+Hagrid:「I — I took him outside, He’s tethered in me pumpkin patch. Thought he oughta see the trees an’ — an’ smell fresh air — before —」
+:Hagrid action
+Hermione:「I’ll do it, Hagrid,」

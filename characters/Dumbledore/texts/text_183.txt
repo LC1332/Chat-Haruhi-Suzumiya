@@ -1,8 +1,9 @@
-Harry:「Sir, are you all right?」
-Dumbledore:「It is . . . Professor Snape whom I need. . . . But I do not think . . . I can walk very far just yet. . . .」
-Harry:「I’m going to knock on a door, find a place you can stay — then I can run and get Madam —」
-:Harryaction
-Harry:「I saw you Apparate as I was pulling my bedroom curtains! Thank goodness, thank goodness, I couldn’t think what to — but what’s wrong with Albus?」
-Harry:「Madam Rosmerta, can he come into the Three Broomsticks while I go up to the school and get help for him?」
-Harry:「If you help me support him, I think we can get him inside —」
-Dumbledore:「The — the Dark Mark, Albus.」
+Harry:「It doesn’t look like it was built for two people. Will it hold both of us? Will we be too heavy together?」
+Dumbledore:「Voldemort will not have cared about the weight, but about the amount of magical power that crossed his lake. I rather think an enchantment will have been placed upon this boat so that only one wizard at a time will be able to sail in it.」
+Harry:「But then — ?」
+Dumbledore:「I do not think you will count, Harry: You are underage and unqualified. Voldemort would never have expected a sixteen-year-old to reach this place: I think it unlikely that your powers will register compared to mine.」
+Dumbledore:「Yes, I am sure you did.」
+Harry:「At the moment?」
+Dumbledore:「Not while they are merely drifting peacefully below us. There is nothing to be feared from a body, Harry, any more than there is anything to be feared from the darkness. Lord Voldemort, who of course secretly fears both, disagrees. But once again he reveals his own lack of wisdom. It is the unknown we fear when we look upon death and darkness, nothing more.」
+Harry:「Nearly there.」
+Dumbledore:「Careful not to touch the water.」

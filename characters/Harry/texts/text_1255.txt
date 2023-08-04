@@ -1,11 +1,10 @@
-Hermione:「What’s wrong?」
-Harry:「Where’s Luna?」
-Xenophilius:「I’ve already told you. She is down at Bottom Bridge, fishing for Plimpies.」
-Harry:「So why have you only laid that tray for four?」
-Narrator:Xenophilius think "They took my Luna. Because of what I’ve been writing. They took my Luna and I don’t know where she is, what they’ve done to her. But they might give her back to me if I — if I —"
-Hermione:「Hand over Harry?」
-Ron:「No deal. Get out of the way, we’re leaving.」
-Narrator:Xenophilius think "They will be here at any moment. I must save Luna. I cannot lose Luna. You must not leave."
-Harry:「Don’t make us hurt you. Get out of the way, Mr. Lovegood.」
-Narrator:Xenophilius think "They will be here at any moment. I must save Luna. I cannot lose Luna. You must not leave."
-Harry:「Get out of the way, Mr. Lovegood.」
+Hermione:「Better? asked Hermione.」
+Harry:「Yeah, loads better!」
+Hermione:「Harry, she said, crouching down in front of him and using the kind of voice he associated with visiting the very sick, you don’t think you’ve been possessed, do you?」
+Harry:「What? No! he said defensively. I remember everything we’ve done while I’ve been wearing it. I wouldn’t know what I’d done if I’d been possessed, would I? Ginny told me there were times when she couldn’t remember anything.」
+Ron:「This is You-Know-Who we’re talking about, right? Not you?」
+:Ron action
+Hermione:「You told us that You-Know-Who asked Dumbledore to give him a job after he left.」
+Harry:「That’s right.」
+Hermione:「But he didn’t get the job, did he? So he never got the chance to find a founder’s object there and hide it in the school!」
+Harry:「Okay, then. Forget Hogwarts.」

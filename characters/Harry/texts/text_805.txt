@@ -1,11 +1,8 @@
-Ron:「snores died away」
-Harry:「dreamed that Neville and Professor Sprout were waltzing around the Room of Requirement while Professor McGonagall played the bagpipes」
-Harry:「decided to go and find the other members of the D.A . . .」
-:Ronaction
-:Harryaction
-:Harryaction
-:Hermioneaction
-:Harryaction
-:Harryaction
-Harry:「Help yourself.」
-Harry:「This one looks okay, though. Hey, she says she believes me!」
+Sirius:「found Kreacher in the attic, satisfied with the story」
+Harry:「uneasy about Kreacher's behavior」
+Kreacher:「in a better mood, muttering subsided, more docile to orders」
+Harry:「did not mention suspicions to Sirius, Sirius becoming gloomy」
+Harry:「not looking forward to returning to Hogwarts, under the tyranny of Dolores Umbridge」
+:Something happens on the last day of the holidays that makes Harry dread his return to school 
+Mrs. Weasley:「asks Harry to come down to the kitchen, Professor Snape wants to speak with him」
+Harry:「engrossed in wizard chess, asks Mrs. Weasley to repeat what she said」

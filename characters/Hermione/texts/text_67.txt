@@ -1,9 +1,7 @@
-Harry:「told Ron and Hermione as they hurried back to Moaning Myrtle’s bathroom, “He knew it was me. I could tell.”」
-:Hermioneaction
-Hermione:「said happily, “It’ll be ready in two weeks.”」
-Ron:「reassuringly said to Harry, “Snape can’t prove it was you. What can he do?”」
-Harry:「said as the potion frothed and bubbled, “Knowing Snape, something foul.”」
-Seamus Finnigan:「said excitedly, “They’re starting a Dueling Club! First meeting tonight! I wouldn’t mind dueling lessons; they might come in handy one of these days. . . .”」
-Ron:「said, “What, you reckon Slytherin’s monster can duel?”」
-Ron:「said to Harry and Hermione as they went into dinner, “Could be useful. Shall we go?”」
-Hermione:「said as they edged into the chattering crowd, “I wonder who’ll be teaching us? Someone told me Flitwick was a dueling champion when he was young — maybe it’ll be him.”」
+Myrtle:「“I wish people would stop talking behind my back!” said Myrtle, in a voice choked with tears. “I do have feelings, you know, even if I am dead —”」
+Hermione:「“Myrtle, no one wants to upset you,” said Hermione. “Harry only —”」
+Myrtle:「“No one wants to upset me! That’s a good one!” howled Myrtle. “My life was nothing but misery at this place and now people come along ruining my death!”」
+Hermione:「We wanted to ask you if you’ve seen anything funny lately, Because a cat was attacked right outside your front door on Halloween.」
+Ron:「Already dead.」
+:Myrtle rose up in the air, turned over, and dived headfirst into the toilet, splashing water all over them and vanishing from sight, although from the direction of her muffled sobs, she had come to rest somewhere in the U-bend
+Hermione:「Honestly, that was almost cheerful for Myrtle. . . . Come on, let’s go.」

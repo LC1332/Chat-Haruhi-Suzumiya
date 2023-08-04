@@ -1,4 +1,8 @@
-Narrator:Winky think "Oh you is a bad elf, Dobby! My poor Mr. Crouch, what is he doing without Winky? He is needing me, he is needing my help! I is looking after the Crouches all my life, and my mother is doing it before me, and my grandmother is doing it before her . . . oh what is they saying if they knew Winky was freed? Oh the shame, the shame!"
-Hermione:「Winky, I’m quite sure Mr. Crouch is getting along perfectly well without you. We’ve seen him, you know —」
-Winky:「You is seeing my master? You is seeing him here at Hogwarts?」
-Hermione:「Yes, he and Mr. Bagman are judges in the Triwizard Tournament.」
+Harry:「got up on Sunday morning and dressed so inattentively」
+:Hermione action
+Hermione:「told her all about the dragons, and about everything Sirius had said」
+Hermione:「thought that the dragons were the more pressing problem」
+:Harry action
+:Harry action
+:Hermione action
+Hermione:「said, “Come on, Harry, we’ll go back to the common room . . . his fan club’ll be here in a moment, twittering away. . . .”」

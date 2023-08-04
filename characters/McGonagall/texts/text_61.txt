@@ -1,5 +1,4 @@
-:Umbridgeaction
-:Professor McGonagallaction
-Professor McGonagall:「I would also advise Transfiguration, because Aurors frequently need to Transfigure or Untransfigure in their work. And I ought to tell you now, Potter, that I do not accept students into my N.E.W.T. classes unless they have achieved ‘Exceeds Expectations’ or higher at Ordinary Wizarding Level. I’d say you’re averaging ‘Acceptable’ at the moment, so you’ll need to put in some good hard work before the exams to stand a chance of continuing. Then you ought to do Charms, always useful, and Potions. Yes, Potter, Potions, Poisons and antidotes are essential study for Aurors. And I must tell you that Professor Snape absolutely refuses to take students who get anything other than ‘Outstanding’ in their O.W.L.s, so —」
-:Umbridgeaction
-Professor McGonagall:「May I offer you a cough drop, Dolores?」
+Harry:「Are you all right?」
+Professor McGonagall:「Yes!」
+Narrator:Dumbledore think "Unfortunately, I had to hex Kingsley too, or it would have looked very suspicious. He was remarkably quick on the uptake, modifying Miss Edgecombe’s memory like that while everyone was looking the other way — thank him for me, won’t you, Minerva? Now, they will all awake very soon and it will be best if they do not know that we had time to communicate — you must act as though no time has passed, as though they were merely knocked to the ground, they will not remember —"
+Professor McGonagall:「Where will you go, Dumbledore? Grimmauld Place?」

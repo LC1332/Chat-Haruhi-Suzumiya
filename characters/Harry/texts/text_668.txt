@@ -1,7 +1,9 @@
-Hermione:「“. . . ‘Ministry warns Wizarding community that Black is very dangerous . . . killed thirteen people . . . broke out of Azkaban . . .’ the usual rubbish,” Hermione concluded, laying down her half of the paper and looking fearfully at Harry and Ron. “Well, he just won’t be able to leave the house again, that’s all,” she whispered. “Dumbledore did warn him not to.”」
-:Harryaction
-Harry:「“Hey!” he said, flattening it down so Hermione and Ron could both see it. “Look at this!”」
-Ron:「“I’ve got all the robes I want,” said Ron.」
-Harry:「“No,” said Harry, “look . . . this little piece here . . .”」
-Harry:「“Six months in Azkaban!” whispered Harry, shocked. “Just for trying to get through a door!”」
-Harry:「“Wait a moment . . .” said Harry slowly. “Sturgis was supposed to come and see us off, remember?”」
+Neville:「My gran’s always said You-Know-Who would come back one day. She says if Dumbledore says he’s back, he’s back.」
+Harry:「felt a rush of gratitude toward Neville.」
+:Seamus action
+:Dean action
+:Neville action
+:Ron action
+Harry:「felt shaken by the argument with Seamus, whom he had always liked very much. How many more people were going to suggest that he was lying or unhinged?」
+Seamus:「Does he think he’ll turn into a nutter if he stays in a room with me too long?」
+Harry:「Don’t worry about it, Harry」

@@ -1,9 +1,5 @@
-Neville:「My gran’s always said You-Know-Who would come back one day. She says if Dumbledore says he’s back, he’s back.」
-Harry:「felt a rush of gratitude toward Neville.」
-:Seamusaction
-:Deanaction
-:Nevilleaction
-:Ronaction
-Harry:「felt shaken by the argument with Seamus, whom he had always liked very much. How many more people were going to suggest that he was lying or unhinged?」
-Seamus:「Does he think he’ll turn into a nutter if he stays in a room with me too long?」
-Harry:「Don’t worry about it, Harry」
+Mr. Weasley:「Gold, I expect, Malfoy’s been giving generously to all sorts of things for years, Gets him in with the right people, then he can ask favors, delay laws he doesn’t want passed, Oh, he’s very well connected, Lucius Malfoy.」
+Harry:「Mr. Weasley, if Fudge is meeting Death Eaters like Malfoy, if he’s seeing them alone, how do we know they haven’t put the Imperius Curse on him?」
+Mr. Weasley:「Don’t think it hadn’t occurred to us, Harry, But Dumbledore thinks Fudge is acting of his own accord at the moment — which, as Dumbledore says, is not a lot of comfort. . . . Best not talk about it anymore just now, Harry . . .」
+Harry:「Wait . . .」
+Harry:「Everyone seems quite relieved, though, considering they all knew I’d get off」

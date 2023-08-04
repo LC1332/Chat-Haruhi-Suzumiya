@@ -1,7 +1,5 @@
-:Voldemortaction
-:Harryaction
-Harry:「I’m not going. . . . I don’t need the hospital wing. . . . I don’t want . . .」
-Professor Tofty:「Pressure of examinations! It happens, young man, it happens! Now, a cooling drink of water, and perhaps you will be ready to return to the Great Hall? The examination is nearly over, but you may be able to round off your last answer nicely?」
-Harry:「Yes, I mean . . . no . . . I’ve done — done as much as I can, I think . . .」
-Madam Pomfrey:「Potter, what do you think you’re doing?」
-Harry:「I need to see Professor McGonagall. Now . . . It’s urgent . . .」
+Professor McGonagall:「He has achieved high marks in all Defense Against the Dark Arts tests set by a competent teacher」
+:Umbridge action
+:Professor McGonagall action
+Harry:「Any questions, Potter?」
+Harry:「What sort of character and aptitude tests do the Ministry do on you, if you get enough N.E.W.T.s?」

@@ -1,4 +1,9 @@
-Narrator:Ron think "No, I heard you coming out of my pocket. Your voice came out of this."
-Hermione:「And what exactly did I say?」
-Narrator:Ron think "My name. ‘Ron.’ And you said . . . something about a wand. . . ."
-Hermione:「So I took it out and it didn’t seem different or anything, but I was sure I’d heard you. So I clicked it. And the light went out in my room, but another light appeared right outside the window.」
+:Harry spell to Yaxley
+:Yaxley slid to the ground, curled on the floor
+Hermione:「Harry!」
+Hermione:「Harry, Mrs. Cattermole!」
+Harry:「Get the Horcrux」
+:Harry spell to chains
+Hermione:「Wait, I’m trying something up here —」
+Harry:「You’re going to leave here with us. Go home, grab your children, and get out, get out of the country if you’ve got to. Disguise yourselves and run. You’ve seen how it is, you won’t get anything like a fair hearing here.」
+Hermione:「Harry, how are we going to get out of here with all those dementors outside the door?」

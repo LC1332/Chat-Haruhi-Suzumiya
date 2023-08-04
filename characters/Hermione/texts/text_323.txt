@@ -1,8 +1,2 @@
-Narrator:Umbridge think "giving a speech, not noticing the restlessness of the audience"
-:teachersaction
-Hermione:「drinking in every word Umbridge spoke, not enjoying it」
-:Dumbledoreaction
-Ron:「commenting on the speech, finding it dull」
-Hermione:「explaining the hidden meaning in the speech」
-:Dumbledoreaction
-Hermione:「realizing she needs to show the first years where to go」
+Ron:「I knew it! You always get away with stuff!」
+Hermione:「They were bound to clear you, There was no case against you, none at all . . .」

@@ -1,11 +1,2 @@
-Ron:「You’re on the list of Muggle-borns who didn’t present themselves for interrogation!」
-Harry:「And you’re supposed to be dying of spattergroit at the Burrow! If anyone shouldn’t go, it’s Harry, he’s got a ten-thousand-Galleon price on his head —」
-Harry:「Fine, I’ll stay here. Let me know if you ever defeat Voldemort, won’t you?」
-Kreacher:「Master has not finished his soup, would Master prefer the savory stew, or else the treacle tart to which Master is so partial?」
-Harry:「Thanks, Kreacher, but I’ll be back in a minute — er — bathroom.」
-:Harryaction
-Harry:「Where is he?」
-Hermione:「Harry! HARRY!」
-Hermione:「Harry, open up!」
-Hermione:「What were you doing?」
-Harry:「What d’you think I was doing?」
+Mrs. Weasley:「Arthur told me to wish you a happy seventeenth, Harry, He had to leave early for work, but he’ll be back for dinner. That’s our present on top.」
+Harry:「It’s traditional to give a wizard a watch when he comes of age, I’m afraid that one isn’t new like Ron’s, it was actually my brother Fabian’s and he wasn’t terribly careful with his possessions, it’s a bit dented on the back, but —」

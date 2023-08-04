@@ -1,2 +1,4 @@
-Harry:「What has happened? Why are you disturbing these people? Minerva, I’m surprised at you — I asked you to stand guard over Barty Crouch —」
-Professor McGonagall:「There is no need to stand guard over him anymore, Dumbledore! The Minister has seen to that!」
+Dumbledore:「And tonight . . .」
+Narrator:Barty Crouch think "I offered to carry the Triwizard Cup into the maze before dinner. Turned it into a Portkey. My master’s plan worked. He is returned to power and I will be honored by him beyond the dreams of wizards."
+:Dumbledore action
+Professor McGonagall:「Of course, said Professor McGonagall. She looked slightly nauseous, as though she had just watched someone being sick. However, when she drew out her wand and pointed it at Barty Crouch, her hand was quite steady.」

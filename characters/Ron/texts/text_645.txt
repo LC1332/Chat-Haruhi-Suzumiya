@@ -1,4 +1,3 @@
-Kreacher:「Master Regulus told Kreacher to come back.」
-Ron:「Well, it’s obvious, isn’t it, Harry? He Disapparated!」
-Harry:「But . . . you couldn’t Apparate in and out of that cave, otherwise Dumbledore —」
-Ron:「Elf magic isn’t like wizard’s magic, is it? I mean, they can Apparate and Disapparate in and out of Hogwarts when we can’t.」
+Harry:「Yeah, why tell the public the truth?」
+:Harry action
+Ron:「Isn’t anyone at the Ministry prepared to stand up to him?」

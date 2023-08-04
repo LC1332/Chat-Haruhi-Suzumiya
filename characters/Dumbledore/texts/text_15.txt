@@ -1,8 +1,9 @@
-:Harryaction
-Dumbledore:「came in, looking very somber.」
 Harry:「“Professor,” Harry gasped. “Your bird — I couldn’t do anything — he just caught fire —”」
 Dumbledore:「smiled.」
-Harry:「looked down in time to see a tiny, wrinkled, newborn bird poke its head out of the ashes. It was quite as ugly as the old one.」
+Dumbledore:「“About time, too,” he said. “He’s been looking dreadful for days; I’ve been telling him to get a move on.” He chuckled at the stunned look on Harry’s face.」
 Dumbledore:「“It’s a shame you had to see him on a Burning Day,” said Dumbledore, seating himself behind his desk. “He’s really very handsome most of the time, wonderful red and gold plumage. Fascinating creatures, phoenixes. They can carry immensely heavy loads, their tears have healing powers, and they make highly faithful pets.”」
 Hagrid:「It wasn’ Harry, Professor Dumbledore! I was talkin’ ter him seconds before that kid was found, he never had time, sir —」
 Dumbledore:「Hagrid, I —」
+Hagrid:「Right. I’ll wait outside then, Headmaster.」
+Harry:「You don’t think it was me, Professor?」
+Dumbledore:「No, Harry, I don’t. But I still want to talk to you.」

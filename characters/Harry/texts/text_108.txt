@@ -1,9 +1,14 @@
-Ron:「“Check that no one’s watching,” said Ron, starting the ignition with another tap of his wand. Harry stuck his head out of the window: Traffic was rumbling along the main road ahead, but their street was empty.」
-Harry:「“Okay,” he said.」
-:Ronaction
-Ron:「“Let’s go,” said Ron’s voice from his right.」
-:Harryaction
-:Ronaction
-Ron:「Hold on!」
 Ron:「Now what?」
 Harry:「We need to see the train to know what direction to go in.」
+Ron:「Dip back down again — quickly —」
+Harry:「I can see it! Right ahead — there!」
+Narrator:Harry think "This, thought Harry, was surely the only way to travel — past swirls and turrets of snowy cloud, in a car full of hot, bright sunlight, with a fat pack of toffees in the glove compartment, and the prospect of seeing Fred’s and George’s jealous faces when they landed smoothly and spectacularly on the sweeping lawn in front of Hogwarts castle."
+Ron:「It’s probably just tired. It’s never been this far before.」
+Harry:「There! Straight ahead!」
+Ron:「Noooooo!」
+Harry:「WATCH OUT FOR THAT TREE!」
+Ron:「Aaargh!」
+Ron:「We’re done for!」
+Harry:「Reverse!」
+Ron:「Can you believe our luck? Of all the trees we could’ve hit, we had to get one that hits back.」
+Harry:「Come on, we’d better get up to the school. . . .」

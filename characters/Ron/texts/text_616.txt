@@ -1,10 +1,2 @@
-:Harryaction
-Ron:「“Harry?”」
-Harry:「“Yeah, you’ve got to stay, mate,” said Ron, thumping Harry on the back.」
-Hermione:「“Are you all right?” Hermione asked, close enough now to look into Harry’s face. “You look awful!”」
-Harry:「“Well,” said Harry shakily, “I probably look better than Ollivander. . . .”」
-Narrator:Harry think "When he had finished telling them what he had seen, Ron looked appalled, but Hermione downright terrified."
-Hermione:「“But it was supposed to have stopped! Your scar — it wasn’t supposed to do this anymore! You mustn’t let that connection open up again — Dumbledore wanted you to close your mind!”」
-:Hermioneaction
-Hermione:「“Harry, he’s taking over the Ministry and the newspapers and half the Wizarding world! Don’t let him inside your head too!”」
-Ron:「Well, you can’t do anything about the」
+Hermione:「“Ron, you’re making it snow,” said Hermione patiently, grabbing his wrist and redirecting his wand away from the ceiling from which, sure enough, large white flakes had started to fall. Lavender Brown, Harry noticed, glared at Hermione from a neighboring table through very red eyes, and Hermione immediately let go of Ron’s arm.」
+Ron:「“Oh yeah,” said Ron, looking down at his shoulders in vague surprise. “Sorry . . . looks like we’ve all got horrible dandruff now. . . .” He brushed some of the fake snow off Hermione’s shoulder. Lavender burst into tears. Ron looked immensely guilty and turned his back on her. “We split up,” he told Harry out of the corner of his mouth. “Last night. When she saw me coming out of the dormitory with Hermione. Obviously she couldn’t see you, so she thought it had just been the two of us.”」

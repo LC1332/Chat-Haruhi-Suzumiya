@@ -1,9 +1,4 @@
-Dumbledore:「Certainly we could, Why don’t you do it?」
-Harry:「Me? Oh . . . okay . . .」
-:Harrycleared his throat and said loudly, wand aloft, “Accio Horcrux!”
-:Harryleapt backward in shock and hit the wall
-:Harrylooked back at the water. The surface of the lake was once more shining black glass
-Harry:「But we don’t know what the thing was,」
-Harry:「Professor?」
-Dumbledore:「Into it? Only if we are very unfortunate.」
-Harry:「You don’t think the Horcrux is at the bottom?」
+Hagrid:「Blimey, no. The other spiders won’ let me anywhere near their webs now Aragog’s gone. Turns out it was on’y on his orders they didn’ eat me! Can yeh believe that, Harry?」
+Narrator:Harry think "The honest answer was “yes”; Harry recalled with painful ease the scene when he and Ron had come face-to-face with the acromantulas: They had been quite clear that Aragog was the only thing that stopped them from eating Hagrid."
+Narrator:Hagrid think "Never bin an area o’ the forest I couldn’ go before! It wasn’ easy, gettin’ Aragog’s body out o’ there, I can tell yeh — they usually eat their dead, see. . . . But I wanted ter give ’im a nice burial . . . a proper send-off . . ."
+Harry:「Professor Slughorn met me coming down here, Hagrid.」

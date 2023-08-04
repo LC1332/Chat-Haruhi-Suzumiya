@@ -1,8 +1,10 @@
-Hermione:「You do realize, don’t you, that there’s probably no more dangerous place in the whole world for us to be right now than the Ministry of —」
-Harry:「I think we should do it tomorrow.」
-Hermione:「Tomorrow? You aren’t serious, Harry?」
-Harry:「I am, I don’t think we’re going to be much better prepared than we are now even if we skulk around the Ministry entrance for another month. The longer we put it off, the farther away that locket could be. There’s already a good chance Umbridge has chucked it away; the thing doesn’t open.」
-:Hermionebiting her lip, deep in thought.
-Harry:「We know everything important, We know they’ve stopped Apparition in and out of the Ministry. We know only the most senior Ministry members are allowed to connect their homes to the Floo Network now, because Ron heard those two Unspeakables complaining about it. And we know roughly where Umbridge’s office is, because of what you heard that bearded bloke saying to his mate —」
-Hermione:「But we haven’t got any!」
-Harry:「If the plan works, we will have,」
+Ron:「I dunno, do I? You were the one saying it.」
+Harry:「I think Voldemort’s looking for him.」
+Ron:「Poor bloke.」
+Harry:「I think he’s abroad. Voldemort. I think he’s somewhere abroad, looking for Gregorovitch. It didn’t look like anywhere in Britain.」
+Harry:「I think he’s got something to do with Quidditch. There’s some connection, but I can’t — I can’t think what it is.」
+Ron:「Dragomir Gorgovitch, Chaser, transferred to the Chudley Cannons for a record fee two years ago. Record holder for most Quaffle drops in a season.」
+Harry:「No, I’m definitely not thinking of Gorgovitch.」
+:Harry spell to glasses
+Ron:「Here’s your present. Unwrap it up here, it’s not for my mother’s eyes.」
+Harry:「A book? Bit of a departure from tradition, isn’t it?」

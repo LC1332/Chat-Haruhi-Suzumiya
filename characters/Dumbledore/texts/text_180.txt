@@ -1,13 +1,9 @@
-Harry:「Sir, no, don’t touch — !」
-Dumbledore:「I cannot touch. See? I cannot approach any nearer than this. You try.」
-Harry:「Out of the way, please, Harry.」
-Dumbledore:「You think the Horcrux is in there, sir?」
-Dumbledore:「“I can only conclude that this potion is supposed to be drunk.”」
-Harry:「Was this more of Dumbledore’s insane determination to see good in everyone?」
-Harry:「“Sir, this is Voldemort we’re —”」
-Dumbledore:「“He would want to keep them alive long enough to find out how they managed to penetrate so far through his defenses and, most importantly of all, why they were so intent upon emptying the basin. Do not forget that Lord Voldemort believes that he alone knows about his Horcruxes.”」
-Harry:「“But what if — ?”」
-Dumbledore:「“You swore, did you not, to follow any command I gave you?”」
-Dumbledore:「“Well, then, you have my orders.”」
-Harry:「“I — all right, but —”」
-Dumbledore:「“Your word, Harry.”」
+Harry:「How can you tell?」
+Dumbledore:「It has known magic.」
+Dumbledore:「This is merely the antechamber, the entrance hall. We need to penetrate the inner place. . . . Now it is Lord Voldemort’s obstacles that stand in our way, rather than those nature made. . . .」
+Dumbledore:「Here. We go on through here. The entrance is concealed.」
+Dumbledore:「I rather think that we are required to make payment to pass.」
+Dumbledore:「The idea, as I am sure you will have gathered, is that your enemy must weaken him- or herself to enter. Once again, Lord Voldemort fails to grasp that there are much more terrible things than physical injury.」
+Harry:「I’ll do it, I’m —」
+Dumbledore:「You are very kind, Harry.」
+Dumbledore:「Let us walk, Be very careful not to step into the water. Stay close to me.」

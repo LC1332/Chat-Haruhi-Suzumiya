@@ -1,11 +1,7 @@
-Ollivander:「Hawthorn and unicorn hair. Ten inches precisely. Reasonably springy. This was the wand of Draco Malfoy.」
-Harry:「Was? Isn’t it still his?」
-Ollivander:「Perhaps not. If you took it —」
-Harry:「— I did —」
-Ollivander:「The wand chooses the wizard. That much has always been clear to those of us who have studied wandlore.」
-Harry:「A person can still use a wand that hasn’t chosen them, though?」
-:Ronaction
-Narrator:Ollivander think "Chestnut and dragon heartstring. Nine-and-a-quarter inches. Brittle. I was forced to make this shortly after my kidnapping, for Peter Pettigrew. Yes, if you won it, it is more likely to do your bidding, and do it well, than another wand."
-Harry:「And this holds true for all wands, does it?」
-Ollivander:「Necessary? No, I should not say that it is necessary to kill.」
-Harry:「There are legends, though, Legends about a wand — or wands — that have passed from hand to hand by murder.」
+Hermione:「You saw the what?」
+:Ron saw the doe first
+Harry:「They explained what had happened, and as the story of the silver doe and the sword in the pool unfolded, Hermione frowned from one to the other of them, concentrating so hard she forgot to keep her limbs locked together.」
+Hermione:「But it must have been a Patronus! Couldn’t you see who was casting it? Didn’t you see anyone? And it led you to the sword! I can’t believe this! Then what happened?」
+Narrator:Ron think "Ron explained how he had watched Harry jump into the pool and had waited for him to resurface; how he had realized that something was wrong, dived in, and saved Harry, then returned for the sword. He got as far as the opening of the locket, then hesitated, and Harry cut in."
+Harry:「— and Ron stabbed it with the sword.」
+Harry:「Did you just say you got away from the Snatchers with a spare wand?」

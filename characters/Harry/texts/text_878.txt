@@ -1,10 +1,7 @@
-Bellatrix:「disappearing through a door on the other side of the room — beyond her was the corridor leading back to the lifts」
-Harry:「Where’s the exit? Where’s the way out?」
-:Harryaction
-Harry:「I am!」
-Bellatrix:「Never used an Unforgivable Curse before, have you, boy? You need to mean them, Potter! You need to really want to cause pain — to enjoy it — righteous anger won’t hurt me for long — I’ll show you how it is done, shall I? I’ll give you a lesson —」
-:Harryspell to Bellatrix
-:Bellatrixspell to Harry
-Harry:「Potter, I am going to give you one chance! Give me the prophecy — roll it out toward me now — and I may spare your life!」
-she:「The prophecy smashed when I was trying to get Neville up the steps! What do you think Voldemort’ll say about that, then?」
-Harry:「LIAR!」
+Madam Pomfrey:「Potter, what do you think you’re doing?」
+Harry:「I need to see Professor McGonagall. Now . . . It’s urgent . . .」
+Madam Pomfrey:「She’s not here, Potter. She was transferred to St. Mungo’s this morning. Four Stunning Spells straight to the chest at her age? It’s a wonder they didn’t kill her.」
+Harry:「She’s . . . gone?」
+Harry:「I’ve got to tell you something . . .」
+Harry:「Voldemort’s got Sirius.」
+Harry:「Saw it. Just now. When I fell asleep in the exam.」

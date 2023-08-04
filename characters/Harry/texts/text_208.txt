@@ -1,14 +1,8 @@
-:Mr. Weasleyaction
-Harry:「There’s something I’ve got to tell you before you leave —」
-Mr. Weasley:「It’s all right, Mr. Weasley, I already know.」
-Harry:「You know? How could you know?」
-Harry:「No — honestly, it’s okay. This way, you haven’t broken your word to Fudge and I know what’s going on.」
-Mr. Weasley:「Harry, I knew you were, well, made of stronger stuff than Fudge seems to think, and I’m obviously pleased that you’re not scared, but —」
-Mrs. Weasley:「Arthur, what are you doing? It’s about to go!」
-Mr. Weasley:「He’s coming, Molly!」
-Mr. Weasley:「Listen, I want you to give me your word —」
-Harry:「— that I’ll be a good boy and stay in the castle?」
-Mr. Weasley:「Promise me, Harry, that whatever happens —」
-Harry:「Why would I go looking for someone I know wants to kill me?」
-Harry:「I need to talk to you in private,」
-Harry:「Who d’you reckon he is?」
+Hermione:「But it’ll be fascinating to study them from the Wizarding point of view.」
+Harry:「Are you planning to eat or sleep at all this year, Hermione?」
+Hermione:「I’ve still got ten Galleons, It’s my birthday in September, and Mum and Dad gave me some money to get myself an early birthday present.」
+Ron:「How about a nice book?」
+Hermione:「No, I don’t think so, I really want an owl. I mean, Harry’s got Hedwig and you’ve got Errol —」
+Ron:「I haven’t, Errol’s a family owl. All I’ve got is Scabbers. And I want to get him checked over. I don’t think Egypt agreed with him.」
+:Scabbers looking thinner than usual, definite droop to his whiskers
+Harry:「There’s a magical creature shop just over there, You could see if they’ve got anything for Scabbers, and Hermione can get her owl.」

@@ -1,5 +1,10 @@
-:Ronstumbling forward and staring hopelessly at the point where Harry had disappeared, you’d better run for it! If Malfoy tells anyone — you’d better get back to the castle, quick —
-Harry:「See you later, and without another word, he tore back down the path toward Hogsmeade.」
-:Malfoyaction
-:Harryaction
-Harry:「Would Malfoy believe what he had seen? Would anyone believe Malfoy? Nobody knew about the Invisibility Cloak — nobody except Dumbledore. Harry’s stomach turned over — Dumbledore would know exactly what had happened, if Malfoy said anything —」
+Ron:「She gave it to you? Excellent! Listen, can I still have a go on it? Tomorrow?」
+Harry:「Yeah . . . anything . . . You know what — we should make up with Hermione. . . . She was only trying to help. . . .」
+Ron:「Yeah, all right. She’s in the common room now — working, for a change —」
+Narrator:Neville think "pleading with Sir Cadogan, who seemed to be refusing him entrance."
+Narrator:Neville think "I wrote them down! But I must’ve dropped them somewhere!"
+Sir Cadogan:「A likely tale! Good even, my fine young yeomen! Come clap this loon in irons. He is trying to force entry to the chambers within!」
+Ron:「Oh, shut up. I’ve lost the passwords! I made him tell me what passwords he was going to use this week, because he keeps changing them, and now I don’t know what I’ve done with them!」
+:Harry spell to Sir Cadogan
+Ron:「Well — there might have been! I mean, at least you know now that it’s safe!」
+Harry:「Yeah, I suppose so. I’d better put it upstairs —」

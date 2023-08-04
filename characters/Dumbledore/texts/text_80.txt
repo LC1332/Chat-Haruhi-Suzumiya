@@ -1,7 +1,6 @@
-:Fudgeshaking his head, staring at the mark on Snape's arm
-:Dumbledoreturned to look at the group around Harry’s bed
+Fudge:「I don’t know what you and your staff are playing at, Dumbledore, but I have heard enough. I have no more to add. I will be in touch with you tomorrow, Dumbledore, to discuss the running of this school. I must return to the Ministry.」
+:Fudge shaking his head, staring at the mark on Snape's arm
+:Dumbledore turned to look at the group around Harry’s bed
 Dumbledore:「There is work to be done. Molly . . . am I right in thinking that I can count on you and Arthur?」
 Mrs. Weasley:「Of course you can. We know what Fudge is. It’s Arthur’s fondness for Muggles that has held him back at the Ministry all these years. Fudge thinks he lacks proper Wizarding pride.」
 Dumbledore:「Then I need to send a message to Arthur. All those that we can persuade of the truth must be notified immediately, and he is well placed to contact those at the Ministry who are not as shortsighted as Cornelius.」
-Bill:「Leave it to me.」
-Dumbledore:「Minerva, I want to see Hagrid in my office as soon as possible. Also — if she will consent to come — Madame Maxime.」

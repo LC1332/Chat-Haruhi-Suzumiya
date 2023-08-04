@@ -1,6 +1,7 @@
-Hermione:「So it must have been a girl or a woman who gave Katie the necklace, to be in the ladies’ bathroom.」
-Harry:「Or someone who looked like a girl or a woman. Don’t forget, there was a cauldron full of Polyjuice Potion at Hogwarts. We know some of it got stolen. . . .」
-Harry:「I think I’m going to take another swig of Felix and have a go at the Room of Requirement again.」
-Harry:「Blimey, it’s seriously complicated. And it takes six months. You’ve got to let it stew. . . .」
-:Deannot particularly pleased to see Katie Bell back at school
-Harry:「Dean, Katie is back. You won't be required to fill her place as Chaser anymore.」
+Dumbledore:「It is.」
+Harry:「Why did he come back? Did you ever find out?」
+Dumbledore:「I have ideas, but no more than that.」
+Harry:「What ideas, sir?」
+Dumbledore:「Oh, he definitely wanted the Defense Against the Dark Arts job. The aftermath of our little meeting proved that. You see, we have never been able to keep a Defense Against the Dark Arts teacher for longer than a year since I refused the post to Lord Voldemort.」
+Ron:「I won’t, Or maybe I will . . . then she’ll ditch me . . .」
+Harry:「Why don’t you ditch her if you want to finish it?」

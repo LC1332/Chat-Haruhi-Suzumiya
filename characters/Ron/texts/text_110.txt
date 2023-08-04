@@ -1,2 +1,9 @@
-Malfoy:「You’d never know the Weasleys were purebloods, the way they behave」
-Ron:「What’s up with you, Crabbe?」
+Hermione:「I’m sure I’ve done everything right, It looks like the book says it should . . . once we’ve drunk it, we’ll have exactly an hour before we change back into ourselves.」
+Ron:「Now what?」
+Hermione:「We separate it into three glasses and add the hairs.」
+:Hermione action
+Harry:「Don’t swing your arms like that.」
+Ron:「Eh?」
+Harry:「Yeah, that’s better. . . .」
+Harry:「Any ideas?」
+Ron:「The Slytherins always come up to breakfast from over there.」

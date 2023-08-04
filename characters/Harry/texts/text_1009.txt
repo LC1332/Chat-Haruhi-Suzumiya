@@ -1,14 +1,3 @@
-Fat Lady:「Precisely.」
-Harry:「What’s up with her?」
-Hermione:「Overindulged over Christmas, apparently, She and her friend Violet drank their way through all the wine in that picture of drunk monks down by the Charms corridor. Anyway . . .」
-Harry:「Great, I’ve got loads to tell him — and you. Let’s sit down —」
-Hermione:「There’s a table over here. . . . Coming, Ginny?」
-Ginny:「No, thanks, I said I’d meet Dean」
-:Harryled Hermione over to the spare table
-Hermione:「I’ll tell you in a minute. Look, Hermione, can’t you — ?」
-Hermione:「No, I can’t. So don’t even ask.」
-Harry:「I thought maybe, you know, over Christmas —」
-Hermione:「Don’t you think — ?」
-Harry:「— he was pretending to offer help so that he could trick Malfoy into telling him what he’s doing?」
-Hermione:「No, I can’t.」
-Harry:「And he’s acting on Voldemort’s orders, just like I said!」
+Dumbledore:「Yes, indeed; a rare ability, and one supposedly connected with the Dark Arts, although as we know, there are Parselmouths among the great and the good too. In fact, his ability to speak to serpents did not make me nearly as uneasy as his obvious instincts for cruelty, secrecy, and domination.」
+Narrator:Dumbledore think "Time is making fools of us again, But before we part, I want to draw your attention to certain features of the scene we have just witnessed, for they have a great bearing on the matters we shall be discussing in future meetings. Firstly, I hope you noticed Riddle’s reaction when I mentioned that another shared his first name, ‘Tom’? There he showed his contempt for anything that tied him to other people, anything that made him ordinary. Even then, he wished to be different, separate, notorious. He shed his name, as you know, within a few short years of that conversation and created the mask of ‘Lord Voldemort’ behind which he has been hidden for so long. I trust that you also noticed that Tom Riddle was already highly self-sufficient, secretive, and, apparently, friendless? He did not want help or companionship on his trip to Diagon Alley. He preferred to operate alone. The adult Voldemort is the same. You will hear many of his Death Eaters claiming that they are in his confidence, that they alone are close to him, even understand him. They are deluded. Lord Voldemort has never had a friend, nor do I believe that he has ever wanted one. And lastly — I hope you are not too sleepy to pay attention to this, Harry — the young Tom Riddle liked to collect trophies. You saw the box of stolen articles he had hidden in his room. These were taken from victims of his bullying behavior, souvenirs, if you will, of particularly unpleasant bits of magic. Bear in mind this magpie-like tendency, for this, particularly, will be important later. And now, it really is time for bed."
+Harry:「nodded」

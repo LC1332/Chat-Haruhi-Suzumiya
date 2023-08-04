@@ -1,10 +1,7 @@
-:Dumbledoregave the Pensieve an extra-vigorous shake
-:Caractacus Burkedescended back into the swirling mass of memory
-Harry:「He only gave her ten Galleons?」
-Dumbledore:「Caractacus Burke was not famed for his generosity.」
-Dumbledore:「So we know that, near the end of her pregnancy, Merope was alone in London and in desperate need of gold, desperate enough to sell her one and only valuable possession, the locket that was one of Marvolo’s treasured family heirlooms.」
-Harry:「But she could do magic! She could have got food and everything for herself by magic, couldn’t she?」
-Dumbledore:「Could you possibly be feeling sorry for Lord Voldemort?」
-Harry:「No, but she had a choice, didn’t she, not like my mother —」
-Dumbledore:「This time, we are going to enter my memory. I think you will find it both rich in detail and satisfyingly accurate. After you, Harry . . .」
-Harry:「Nice suit, sir.」
+Hermione:「Or herself, It might have been a girl. I think the handwriting looks more like a girl’s than a boy’s.」
+Harry:「The Half-Blood Prince, he was called, How many girls have been Princes?」
+:Hermione scowled and twitched her essay on The Principles of Rematerialization away from Ron, who was trying to read it upside down
+Harry:「It’s five to eight, I’d better go, I’ll be late for Dumbledore.」
+Hermione:「Ooooh! Good luck! We’ll wait up, we want to hear what he teaches you!」
+Ron:「Hope it goes okay」
+Harry:「Harry proceeded through deserted corridors, though he had to step hastily behind a statue when Professor Trelawney appeared around a corner, muttering to herself as she shuffled a pack of dirty-looking playing cards, reading them as she walked.」

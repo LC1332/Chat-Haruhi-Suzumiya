@@ -1,7 +1,9 @@
-Ron:「gaped at him, but Hermione said sadly, I knew you were going to say that. But then what will you do?」
-Harry:「I’m going back to the Dursleys’ once more, because Dumbledore wanted me to, said Harry. But it’ll be a short visit, and then I’ll be gone for good.」
-Hermione:「But where will you go if you don’t come back to school?」
-Harry:「I thought I might go back to Godric’s Hollow. For me, it started there, all of it. I’ve just got a feeling I need to go there. And I can visit my parents’ graves, I’d like that.」
-Ron:「At your aunt and uncle’s house. And then we’ll go with you wherever you’re going.」
-Harry:「No —」
-Harry:「Bill and Fleur’s wedding, remember?」
+:Dumbledore action
+Harry:「“Well, Harry, I promised that you could come with me.”」
+:Harry action
+Harry:「“If I . . .”」
+:Harry action
+Dumbledore:「“I am not sure which it is — though I think we can rule out the snake — but I believe it to be hidden in a cave on the coast many miles from here, a cave I have been trying to locate for a very long time: the cave in which Tom Riddle once terrorized two children from his orphanage on their annual trip; you remember?”」
+Harry:「“Yes,” said Harry. “How is it protected?”」
+Dumbledore:「“What has happened to you?”」
+Harry:「“Nothing,” lied Harry promptly.」

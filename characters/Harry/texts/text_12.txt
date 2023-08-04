@@ -1,9 +1,10 @@
-:Griphookheld the door open for them
+Hagrid:「Can’t tell yeh that, Very secret. Hogwarts business. Dumbledore’s trusted me. More’n my job’s worth ter tell yeh that.」
+:Griphook held the door open for them
 Harry:「what’s the difference between a stalagmite and a stalactite?」
 Hagrid:「Stalagmite’s got an ‘m’ in it, An’ don’ ask me questions just now, I think I’m gonna be sick.」
-:Griphookunlocked the door
-:Hagridlooked very green, and when the cart stopped at last beside a small door in the passage wall, Hagrid got out and had to lean against the wall to stop his knees from trembling
-:Griphookcame billowing out
-:Harrygasped
+:Griphook unlocked the door
+:Hagrid looked very green, and when the cart stopped at last beside a small door in the passage wall, Hagrid got out and had to lean against the wall to stop his knees from trembling
+:Griphook came billowing out
+:Harry gasped
 Harry:「The gold ones are Galleons, Seventeen silver Sickles to a Galleon and twenty-nine Knuts to a Sickle, it’s easy enough. Right, that should be enough fer a couple o’ terms, we’ll keep the rest safe for yeh.」
 Harry:「How often do you check to see if anyone’s inside?」

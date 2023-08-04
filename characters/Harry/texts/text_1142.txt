@@ -1,6 +1,7 @@
-Hagrid:「Harry, I’m sorry, I’m sorry, I shouldn’ta tried ter repair it meself — yeh’ve got no room —」
-Harry:「It’s not a problem, just keep flying!」
-:Hagridswerved and zigzagged
-:Harryspell to Death Eater
-Harry:「Hagrid, do the dragon-fire thing again, let’s get out of here!」
-Harry:「Fear lapped at him as he looked left and right for pursuers he was sure would come. . . . Why had they fallen back? One of them had still had a wand. . . . It’s him . . . it’s the real one. . . . They had said it right after he had tried to Disarm Stan. . . .」
+Dumbledore:「Severus . . . please . . .」
+:Snape spell to Dumbledore
+Harry:「Harry’s scream of horror never left him; silent and unmoving, he was forced to watch as Dumbledore was blasted into the air. For a split second, he seemed to hang suspended beneath the shining skull, and then he fell slowly backward, like a great rag doll, over the battlements and out of sight.」
+Harry:「Out of here, quickly.」
+:squat brother and sister followed Snape and Malfoy
+Harry:「What was now holding him paralyzed against the wall was not magic, but horror and shock.」
+Harry:「Terror tore at Harry’s heart. . . . He had to get to Dumbledore and he had to catch Snape. . . . Somehow the two things were linked. . . . He could reverse what had happened if he had them both together. . . . Dumbledore could not have died. . . .」

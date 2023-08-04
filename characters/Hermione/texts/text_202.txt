@@ -1,2 +1,8 @@
-Dumbledore:「The Triwizard Tournament was first established some seven hundred years ago as a friendly competition between the three largest European schools of wizardry: Hogwarts, Beauxbatons, and Durmstrang. A champion was selected to represent each school, and the three champions competed in three magical tasks. The schools took it in turns to host the tournament once every five years, and it was generally agreed to be a most excellent way of establishing ties between young witches and wizards of different nationalities — until, that is, the death toll mounted so high that the tournament was discontinued.」
-Hermione:「Death toll?」
+Ron:「I think I’ve heard of it, Where is it? What country?」
+Hermione:「Well, nobody knows, do they?」
+Harry:「Er — why not?」
+Hermione:「There’s traditionally been a lot of rivalry between all the magic schools. Durmstrang and Beauxbatons like to conceal their whereabouts so nobody can steal their secrets」
+Ron:「Just you, then, So go on — how d’you hide a place like Hogwarts?」
+Hermione:「It’s bewitched, If a Muggle looks at it, all they see is a moldering old ruin with a sign over the entrance saying DANGER, DO NOT ENTER, UNSAFE.」
+Harry:「Come again?」
+Hermione:「Well, you can enchant a building so it’s impossible to plot on a map, can’t you?」

@@ -1,13 +1,5 @@
-Hermione:「Fine. You-Know-Who’s mind, then!」
-Harry:「He’s found Gregorovitch, Hermione, and I think he’s killed him, but before he killed him he read Gregorovitch’s mind and I saw —」
-Hermione:「I think I’d better take over the watch if you’re so tired you’re falling asleep.」
-Hermione:「I can finish the watch!」
-:Hermionelooking stubborn
-Harry:「No, you’re obviously exhausted. Go and lie down.」
-:Ronstill-pale face was poking out from the lower bunk
-:Harryclimbed into the one above him, lay down, and looked up at the dark canvas ceiling
-Ron:「How’s Gregorovitch supposed to make him a new wand if he’s tied up?」
-Harry:「I dunno. . . . It’s weird, isn’t it?」
-:Harryremembered how he, as Voldemort, had seemed to hurtle through Gregorovitch’s eyes, into his memories
-:HarryThe theft had happened many years ago, according to Gregorovitch. Why did the young thief look familiar?
-Harry:「No . . . it must’ve been something small.」
+Ron:「“Hermione, we haven’t got anything to change into,” Ron told her, as a young woman burst into raucous giggles at the sight of him.」
+Harry:「“Why didn’t I make sure I had the Invisibility Cloak with me?” said Harry, inwardly cursing his own stupidity. “All last year I kept it on me and —”」
+Hermione:「“It’s okay, I’ve got the Cloak, I’ve got clothes for both of you,” said Hermione. “Just try and act naturally until — this will do.”」
+:Hermione action
+Harry:「“When you say you’ve got the Cloak, and clothes . . .” said Harry, frowning at Hermione, who was carrying nothing except her small beaded handbag, in which she was now rummaging.」

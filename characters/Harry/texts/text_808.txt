@@ -1,10 +1,4 @@
-Ron:「Has someone been attacked again? Is it Dad? Is it that snake?」
-Harry:「No — everyone’s fine — Well . . . Avery isn’t. . . . He’s in trouble. . . . He gave him the wrong information. . . . He’s really angry . . .」
-Harry:「But Rookwood’s going to help him now. . . . He’s on the right track again . . .」
-Ron:「Done what?」
-Harry:「Remove something. . . . He said Bode would have known he couldn’t have done it. . . . Bode was under the Imperius Curse. . . . I think he said Malfoy’s dad put it on him . . .」
-:Deanaction
-:Seamusaction
-Ron:「Did you say that you were You-Know-Who?」
-Harry:「Yeah.」
-Harry:「Somewhere, he knew, Avery was being punished. . . .」
+Snape:「Speaking of dogs, did you know that Lucius Malfoy recognized you last time you risked a little jaunt outside? Clever idea, Black, getting yourself seen on a safe station platform . . . gave you a cast-iron excuse not to leave your hidey-hole in future, didn’t it?」
+Harry:「NO! Sirius, don’t —」
+:Sirius roared, trying to push Harry out of the way
+Harry:「Why, yes, I suppose I am.」

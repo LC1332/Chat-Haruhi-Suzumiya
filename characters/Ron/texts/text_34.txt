@@ -1,2 +1,11 @@
-George:「Why aren’t you wearing yours, Ron? Come on, get it on, they’re lovely and warm.」
-Ron:「I hate maroon.」
+Harry:「“You can come tonight, I’m going back, I want to show you the mirror.”」
+Ron:「“I’d like to see your mum and dad,” Ron said eagerly.」
+Harry:「“And I want to see all your family, all the Weasleys, you’ll be able to show me your other brothers and everyone.”」
+Ron:「“You can see them any old time,” said Ron. “Just come round my house this summer. Anyway, maybe it only shows dead people. Shame about not finding Flamel, though. Have some bacon or something, why aren’t you eating anything?”」
+:Harry action
+Ron:「I’m freezing, Let’s forget it and go back.」
+Harry:「See?」
+Ron:「I can’t see anything.」
+Harry:「Look in it properly, go on, stand where I am.」
+Ron:「Look at me! Can you see all your family standing around you?」
+Ron:「Do you think this mirror shows the future?」

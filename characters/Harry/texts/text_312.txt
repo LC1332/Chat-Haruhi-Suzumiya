@@ -1,13 +1,5 @@
-Hermione:「Here — Ready?」
-Harry:「What are we doing?」
-:Hermioneaction
-:Harryaction
-:Hermioneseized Harry’s arm and dragged him across the hall to the door of a broom closet
-:Hermioneopened it, pushed him inside among the buckets and mops, then slammed the door behind them
-Harry:「What — how — Hermione, what happened?」
-Harry:「But —」
-Hermione:「Footsteps across the hall . . . yes, I think it’s us going down to Hagrid’s!」
-Harry:「Are you telling me that we’re here in this cupboard and we’re out there too?」
-Hermione:「We’ve gone down the front steps. . . .」
-:Hermionesat down on an upturned bucket, looking desperately anxious
-Harry:「Where did you get that hourglass thing?」
+Black:「You — you’ve got to hear me out, The rat — look at the rat —」
+:Snape action
+Harry:「Get out of the way, Potter, you’re in enough trouble already.」
+Snape:「If I hadn’t been here to save your skin —」
+Harry:「Professor Lupin could have killed me about a hundred times this year, I’ve been alone with him loads of times, having defense lessons against the dementors. If he was helping Black, why didn’t he just finish me off then?」

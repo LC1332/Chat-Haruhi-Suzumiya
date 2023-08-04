@@ -1,14 +1,14 @@
-:HagridEveryone gather ’round the fence here!
-Malfoy:「said the cold, drawling voice of Draco Malfoy」
-:HagridHow do we open our books?
-:HagridHasn’ — hasn’ anyone bin able ter open their books?
-:HagridYeh’ve got ter stroke ’em
-:Hagridaction
-:Hagridbook tried to bite, but Hagrid ran a giant forefinger down its spine, and the book shivered, and then fell open and lay quiet in his hand
-Malfoy:「said Malfoy」
-:HarryShut up, Malfoy
-:HagridHarry wanted Hagrid’s first lesson to be a success
-Hagrid:「seemed to have lost his thread」
-:Hagridso — so yeh’ve got yer books an’ — an’ — now yeh need the Magical Creatures
-:Hagridaction
-Malfoy:「said Malfoy loudly」
+Hagrid:「angrily」
+Malfoy:「How is it, Draco? Does it hurt much?」
+Pansy Parkinson:「Does it hurt much?」
+Malfoy:「Yeah, But Harry saw him wink at Crabbe and Goyle when Pansy had looked away.」
+:Ron scowled at Harry
+Snape:「Weasley, cut up Malfoy’s roots for him」
+Ron:「There’s nothing wrong with your arm」
+Malfoy:「Weasley, you heard Professor Snape; cut up these roots」
+Snape:「Now」
+:Ron shoved his own beautifully cut roots across the table at Malfoy
+Malfoy:「And, sir, I’ll need this shrivelfig skinned」
+Malfoy:「Seen your pal Hagrid lately?」
+Ron:「Keep talking, Malfoy, and I’ll give you a real injury」
+Malfoy:「Father’s not very happy about my injury —」

@@ -1,6 +1,2 @@
-:Dumbledoreaction
-Ron:「commenting on the speech, finding it dull」
-Hermione:「explaining the hidden meaning in the speech」
-Ron:「impatiently asking for clarification」
-Hermione:「realizing she needs to show the first years where to go」
-Ron:「calling the first years "midgets"」
+Harry:「Wait . . .」
+Ron:「I knew it! You always get away with stuff!」

@@ -1,5 +1,6 @@
-Ron:「“Hermione?” Ron said cautiously, because she was liable to explode when interrupted these days. “Er — are you sure you’ve copied down these times right?”」
-Harry:「“Is there any point asking how you’re going to sit for two exams at once?” said Harry.」
-Hermione:「“No,” said Hermione shortly. “Have either of you seen my copy of Numerology and Grammatica?”」
-Ron:「“Oh, yeah, I borrowed it for a bit of bedtime reading,” said Ron, but very quietly.」
-Harry:「“It’s from Hagrid,” said Harry, ripping the note open. “Buckbeak’s appeal — it’s set for the sixth.”」
+Snape:「And did the headmaster tell you the circumstances in which your father saved my life? Or did he consider the details too unpleasant for precious Potter’s delicate ears?」
+:Harry bit his lip
+:Harry didn’t know what had happened and didn’t want to admit it
+:Snape seemed to have guessed the truth
+Narrator:Snape think "I would hate for you to run away with a false idea of your father, Potter. Have you been imagining some act of glorious heroism? Then let me correct you — your saintly father and his friends played a highly amusing joke on me that would have resulted in my death if your father hadn’t got cold feet at the last moment. There was nothing brave about what he did. He was saving his own skin as much as mine. Had their joke succeeded, he would have been expelled from Hogwarts. Turn out your pockets, Potter! Turn out your pockets, or we go straight to the headmaster! Pull them out, Potter! Surely you don’t need such a very old piece of parchment? Why don’t I just — throw this away? Is this another treasured gift from Mr. Weasley? Or is it — something else? A letter, perhaps, written in invisible ink? Or — instructions to get into Hogsmeade without passing the dementors? Let me see, let me see . . . Reveal your secret! Show yourself! Professor Severus Snape, master of this school, commands you to yield the information you conceal! We’ll see about this. . . . I want a word! I have just asked Potter to empty his pockets. He was carrying this."
+Harry:「No! Spare bit of parchment. Ron gave them to me, He — brought them back from Hogsmeade last time —」

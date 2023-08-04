@@ -1,9 +1,3 @@
-Moody:「Anyone else know one? Another illegal curse?」
-Hermione:「the Cruciatus Curse」
-Neville:「There’s one — the Cruciatus Curse」
-Moody:「Your name’s Longbottom?」
-:Moodydialogue, spell to spider
-:Ronpushed his chair backward, as far away from Moody’s desk as possible
-:Moodyspell to spider
-:Harryspider’s legs bent in upon its body; it rolled over and began to twitch horribly, rocking from side to side
-Hermione:「Stop it!」
+Ron:「Dumbledore knows you’re not of age, though.」
+Fred Weasley:「Yeah, but he’s not the one who decides who the champion is, is he? Sounds to me like once this judge knows who wants to enter, he’ll choose the best from each school and never mind how old they are. Dumbledore’s trying to stop us giving our names.」
+Hermione:「People have died, though!」

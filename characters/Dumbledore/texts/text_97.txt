@@ -1,6 +1,2 @@
-Narrator:Harry think "Harry could have kicked him. Then he saw, to his astonishment, that Dumbledore was smiling gently too."
-Dumbledore:「Cornelius, I do not deny — and nor, I am sure, does Harry — that he was in the Hog’s Head that day, nor that he was trying to recruit students to a Defense Against the Dark Arts group. I am merely pointing out that Dolores is quite wrong to suggest that such a group was, at that time, illegal. If you remember, the Ministry decree banning all student societies was not put into effect until two days after Harry’s Hogsmeade meeting, so he was not breaking any rules in the Hog’s Head at all.」
-Percy Weasley:「Percy looked as though he had been struck in the face by something very heavy.」
-Fudge:「Fudge remained motionless in mid-bounce, his mouth hanging open.」
-Umbridge:「That’s all very fine, Headmaster. But we are now nearly six months on from the introduction of Educational Decree Number Twenty-four. If the first meeting was not illegal, all those that have happened since most certainly are.」
-Dumbledore:「they certainly would be, if they had continued after the decree came into effect. Do you have any evidence that these meetings continued?」
+Fudge:「said "There’s nothing like a good witness, is there, Dumbledore?"」
+Dumbledore:「said "Nothing at all, Cornelius."」

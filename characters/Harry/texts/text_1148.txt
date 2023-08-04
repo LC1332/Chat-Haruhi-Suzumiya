@@ -1,8 +1,12 @@
-Lupin:「Snape’s work.」
-Harry:「You didn’t say —」
-Lupin:「He lost his hood during the chase. Sectumsempra was always a speciality of Snape’s. I wish I could say I’d paid him back in kind, but it was all I could do to keep George on the broom after he was injured, he was losing so much blood.」
-Hagrid:「Harry, give us a hand!」
-:Harryaction
-Harry:「Thank God.」
-Ginny:「Thank goodness.」
-Harry:「I’ll prove who I am, Kingsley, after I’ve seen my son, now back off if you know what’s good for you!」
+Hagrid:「Yeh can’ stay here, Harry. . . . Come on, now. . . .」
+Harry:「No.」
+Unknown:「Harry, come on.」
+Ginny:「We’re going to the hospital wing.」
+Harry:「I’m not hurt.」
+Ginny:「Don’t worry, none of us.」
+Harry:「But the Dark Mark — Malfoy said he stepped over a body —」
+Ginny:「Of course I’m sure . . . he’s a — a bit of a mess, that’s all. Greyback attacked him. Madam Pomfrey says he won’t — won’t look the same anymore. . . .」
+Ginny:「We don’t really know what the aftereffects will be — I mean, Greyback being a werewolf, but not transformed at the time.」
+Harry:「But the others . . . There were other bodies on the ground. . . .」
+Unknown:「Nobody answered.」
+Harry:「Can’t you fix them with a charm or something?」

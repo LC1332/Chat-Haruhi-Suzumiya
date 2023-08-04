@@ -1,15 +1,5 @@
-Hermione:「Something blibbering, no doubt,」
-Harry:「This is it!」
-Ginny:「Oh look!」
-:Ginnyaction
-Harry:「Keep going!」
-Harry:「It’s through here —」
-Hermione:「We need to go right, I think. Yes . . . that’s fifty-four. . . .」
-Harry:「Keep your wands out.」
-Harry:「I’d have felt it. I’d already know. . . .」
-Harry:「He’s right down at the end. You can’t see properly from here . . .」
-Hermione:「Harry?」
-Harry:「Somewhere about . . . here . . .」
-:Harryrunning up the space at the end of the rows, staring down them
-:Ronpointing at one of the dusty glass spheres on the shelves
-Harry:「What?」
+Hagrid:「Had a nice sleep, eh?」
+Harry:「Harry and Hermione retreated as far as they could while still keeping the giant within their sights.」
+:Grawp knelt between two trees he had not yet uprooted
+Harry:「They looked up into his startlingly huge face, which resembled a gray full moon swimming in the gloom of the clearing.」
+Harry:「The small eyes were a muddy greenish-brown and just now were half gummed together with sleep.」

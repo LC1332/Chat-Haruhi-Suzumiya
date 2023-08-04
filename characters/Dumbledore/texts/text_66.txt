@@ -1,6 +1,6 @@
 Harry:「“You know — you know the trial you found me in? The one with Crouch’s son? Well . . . were they talking about Neville’s parents?”」
 Dumbledore:「Dumbledore gave Harry a very sharp look. “Has Neville never told you why he has been brought up by his grandmother?” he said.」
-:Harryaction
+:Harry action
 Dumbledore:「“Yes, they were talking about Neville’s parents,” said Dumbledore. “His father, Frank, was an Auror just like Professor Moody. He and his wife were tortured for information about Voldemort’s whereabouts after he lost his powers, as you heard.”」
-:Harryaction
+:Harry action
 Dumbledore:「“The Longbottoms were very popular,” said Dumbledore. “The attacks on them came after Voldemort’s fall from power, just when everyone thought they were safe. Those attacks caused a wave of fury such as I have never known. The Ministry was under great pressure to catch those who had done it. Unfortunately, the Longbottoms’ evidence was — given their condition — none too reliable.”」

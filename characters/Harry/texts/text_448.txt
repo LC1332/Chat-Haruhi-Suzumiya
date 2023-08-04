@@ -1,4 +1,5 @@
-Professor McGonagall:「Potter, the champions and their partners —」
-Harry:「What partners?」
-Professor McGonagall:「Your partners for the Yule Ball, Potter. Your dance partners.」
-Harry:「Dance partners? I don’t dance.」
+Karkaroff:「Who’s there?」
+:Harry action
+:Harry action
+Harry:「He had no doubt whatsoever what Karkaroff was up to. He had sneaked off his ship to try and find out what the first task was going to be. He might even have spotted Hagrid and Madame Maxime heading off around the forest together — they were hardly difficult to spot at a distance . . . and now all Karkaroff had to do was follow the sound of voices, and he, like Madame Maxime, would know what was in store for the champions.」
+Harry:「By the looks of it, the only champion who would be facing the unknown on Tuesday was Cedric.」

@@ -1,8 +1,2 @@
-Harry:「got up on Sunday morning and dressed so inattentively」
-:Hermioneaction
-Hermione:「told her all about the dragons, and about everything Sirius had said」
-Hermione:「thought that the dragons were the more pressing problem」
-:Harryaction
-:Harryaction
-:Hermioneaction
-Hermione:「said, “Come on, Harry, we’ll go back to the common room . . . his fan club’ll be here in a moment, twittering away. . . .”」
+Harry:「It’s her, Ron!」
+Hermione:「Disappointed was a bit of an understatement.」

@@ -1,2 +1,5 @@
-Griphook:「“You have no chance,” said Griphook flatly. “No chance at all. If you seek beneath our floors, a treasure that was never yours —”」
-Harry:「“Thief, you have been warned, beware — yeah, I know, I remember,” said Harry. “But I’m not trying to get myself any treasure, I’m not trying to take anything for personal gain. Can you believe that?”」
+Narrator:Riddle think "Least loved, always, by the mother who craved a daughter . . . Least loved, now, by the girl who prefers your friend . . . Second best, always, eternally overshadowed . . ."
+:Harry shouted
+Narrator:Riddle-Harry think "Why return? We were better without you, happier without you, glad of your absence. . . . We laughed at your stupidity, your cowardice, your presumption —"
+Narrator:Riddle-Hermione think "Presumption! Who could look at you, who would ever look at you, beside Harry Potter? What have you ever done, compared with the Chosen One? What are you, compared with the Boy Who Lived?"
+Harry:「Ron, stab it, STAB IT!」

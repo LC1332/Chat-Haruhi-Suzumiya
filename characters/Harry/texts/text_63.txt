@@ -1,3 +1,10 @@
-:Hagridaction
-:Allaction
+Hermione:「Hagrid, how fast do Norwegian Ridgebacks grow, exactly?」
+:Hagrid action
+:All action
 Harry:「Malfoy had seen the dragon.」
+:All action
+:All action
+Harry:「Just let him go. Set him free.」
+Hagrid:「I’ve decided to call him Norbert, He really knows me now, watch. Norbert! Norbert! Where’s Mummy?」
+Ron:「He’s lost his marbles」
+Harry:「give it two weeks and Norbert’s going to be as long as your house. Malfoy could go to Dumbledore at any moment.」

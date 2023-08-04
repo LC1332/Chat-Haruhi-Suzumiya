@@ -1,9 +1,13 @@
-:Harryspell to Rosmerta
-Dumbledore:「Rosmerta, please send a message to the Ministry. It might be that nobody within Hogwarts has yet realized anything is wrong. . . . Harry, put on your Invisibility Cloak.」
-Harry:「What does it mean? Is it the real Mark? Has someone definitely been — Professor?」
-Dumbledore:「Go and wake Severus. Tell him what has happened and bring him to me. Do nothing else, speak to nobody else, and do not remove your Cloak. I shall wait here.」
-Malfoy:「Who else is here? A question I might ask you. Or are you acting alone?」
-Harry:「No, I’ve got backup. There are Death Eaters here in your school tonight.」
-Dumbledore:「Very good indeed. You found a way to let them in, did you?」
-Malfoy:「They met some of your guards. They’re having a fight down below. They won’t be long. . . . I came on ahead. I — I’ve got a job to do.」
-Dumbledore:「Well, then, you must get on and do it, my dear boy.」
+Harry:「Sir, no, don’t touch — !」
+Dumbledore:「I cannot touch. See? I cannot approach any nearer than this. You try.」
+Harry:「Out of the way, please, Harry.」
+Dumbledore:「You think the Horcrux is in there, sir?」
+Dumbledore:「“I can only conclude that this potion is supposed to be drunk.”」
+Harry:「Was this more of Dumbledore’s insane determination to see good in everyone?」
+Harry:「“Sir, this is Voldemort we’re —”」
+Dumbledore:「“He would want to keep them alive long enough to find out how they managed to penetrate so far through his defenses and, most importantly of all, why they were so intent upon emptying the basin. Do not forget that Lord Voldemort believes that he alone knows about his Horcruxes.”」
+Harry:「“But what if — ?”」
+Dumbledore:「“You swore, did you not, to follow any command I gave you?”」
+Dumbledore:「“Well, then, you have my orders.”」
+Harry:「“I — all right, but —”」
+Dumbledore:「“Your word, Harry.”」

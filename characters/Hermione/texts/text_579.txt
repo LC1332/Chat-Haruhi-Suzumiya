@@ -1,6 +1,5 @@
-Narrator:Harry think "And he left the bathroom without another word, leaving Harry to stare into the cracked mirror, feeling sicker, he was sure, than Ron had ever felt in his life."
-Hermione:「I won’t say ‘I told you so,’」
-Ron:「Leave it, Hermione,」
-Narrator:Harry think "Harry had never made it to dinner; he had no appetite at all. He had just finished telling Ron, Hermione, and Ginny what had happened, not that there seemed to have been much need. The news had traveled very fast: Apparently Moaning Myrtle had taken it upon herself to pop up in every bathroom in the castle to tell the story; Malfoy had already been visited in the hospital wing by Pansy Parkinson, who had lost no time in vilifying Harry far and wide, and Snape had told the staff precisely what had happened. Harry had already been called out of the common room to endure fifteen highly unpleasant minutes in the company of Professor McGonagall, who had told him he was lucky not to have been expelled and that she supported wholeheartedly Snape’s punishment of detention every Saturday until the end of term."
-Hermione:「I told you there was something wrong with that Prince person. And I was right, wasn’t I?」
-Hermione:「Harry, how can you still stick up for that book when that spell —」
+Slughorn:「called for silence from the front of the room. “Settle down, settle down, please! Quickly, now, lots of work to get through this afternoon! Golpalott’s Third Law . . . who can tell me — ? But Miss Granger can, of course!”」
+Hermione:「recited at top speed: “Golpalott’s-Third-Law-states-that-the-antidote-for-a-blended-poison-will-be-equal-to-more-than-the-sum-of-the-antidotes-for-each-of-the-separate-components.”」
+Slughorn:「beamed and said, “Ten points for Gryffindor! Now, if we accept Golpalott’s Third Law as true . . .”」
+Slughorn:「finished his explanation, “I want each of you to come and take one of these phials from my desk. You are to create an antidote for the poison within it before the end of the lesson. Good luck, and don’t forget your protective gloves!”」
+Hermione:「said brightly as she straightened up. “You have to understand the principles involved this time. No shortcuts or cheats!”」

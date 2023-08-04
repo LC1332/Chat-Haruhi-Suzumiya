@@ -1,9 +1,7 @@
-:Dobbypointing, first to the diary, then to Lucius Malfoy, then punching himself in the head
-Harry:「Don’t you want to know how Ginny got hold of that diary, Mr. Malfoy?」
-Lucius Malfoy:「How should I know how the stupid little girl got hold of it?」
-Harry:「Because you gave it to her. In Flourish and Blotts. You picked up her old Transfiguration book and slipped the diary inside it, didn’t you?」
-:Lucius Malfoystood for a moment
-Harry:「Professor Dumbledore, Can I give that diary back to Mr. Malfoy, please?」
-:Dobbyaction
-:Harryaction
-Harry:「I’ve got something for you —」
+Mr. Weasley:「“W-what’s that?” said Mr. Weasley in a stunned voice. “You-Know-Who? En-enchant Ginny? But Ginny’s not . . . Ginny hasn’t been . . . has she?”」
+Harry:「“It was this diary,” said Harry quickly, picking it up and showing it to Dumbledore. “Riddle wrote it when he was sixteen. . . .”」
+:Dumbledore action
+Dumbledore:「“Brilliant,” he said softly. “Of course, he was probably the most brilliant student Hogwarts has ever seen.” He turned around to the Weasleys, who were looking utterly bewildered.」
+Mrs. Weasley:「“What’s our Ginny got to do with — with — him?”」
+Ginny:「“His d-diary!” Ginny sobbed. “I’ve b-been writing in it, and he’s been w-writing back all year —”」
+Harry:「Professor Dumbledore . . . Riddle said I’m like him. Strange likenesses, he said. . . .」

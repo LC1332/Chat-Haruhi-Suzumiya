@@ -1,2 +1,5 @@
-Ron:「I know, mate, she’s bang out of order.」
-Hermione:「You think McGonagall was right, do you? I wish she hadn’t taken points from you, but I think she’s right to warn you not to lose your temper with Umbridge.」
+Ron:「Listen . . . you don’t fancy going out a bit earlier with me, do you? Just to — er — give me some practice before training? So I can, you know, get my eye in a bit . . .」
+Hermione:「Look, I don’t think you should, you’re both really behind on homework as it —」
+:Hermione action
+:Hermione action
+Hermione:「“‘The Ministry of Magic has received a tip-off from a reliable source that Sirius Black, notorious mass murderer . . . blah blah blah . . . is currently hiding in London!’” Hermione read from her half in an anguished whisper.」

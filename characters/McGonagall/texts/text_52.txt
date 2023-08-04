@@ -1,12 +1,9 @@
-:Harryaction
-Professor McGonagall:「You haven’t been given another detention!」
-Harry:「No, Professor!」
-Professor McGonagall:「Well then, why are you out of class?」
-Professor Grubbly-Plank:「Injured owl, did you say?」
-Harry:「Yes, she turned up after the other post owls and her wing’s all funny, look —」
-Professor Grubbly-Plank:「Hmm, Looks like something’s attacked her. Can’t think what would have done it, though. . . . Thestrals will sometimes go for birds, of course, but Hagrid’s got the Hogwarts thestrals well trained not to touch owls . . .」
-Harry:「Harry neither knew nor cared what thestrals were, he just wanted to know that Hedwig was going to be all right.」
-Professor McGonagall:「Do you know how far this owl’s traveled, Potter?」
-Harry:「Er — right — thanks,」
-Professor Grubbly-Plank:「No problem,」
-Professor McGonagall:「Just a moment, Wilhelmina! Potter’s letter!」
+McGonagall:「“Yes?” said Professor McGonagall, turning round, her eyebrows so close together they seemed to form one long, severe line.」
+Professor McGonagall:「I was just wondering, Professor, whether you received my note telling you of the date and time of your inspec —」
+Professor McGonagall:「Obviously I received it, or I would have asked you what you are doing in my classroom. As I was saying, today we shall be practicing the altogether more difficult vanishment of mice. Now, the Vanishing Spell —」
+Professor McGonagall:「I wonder how you expect to gain an idea of my usual teaching methods if you continue to interrupt me? You see, I do not generally permit people to talk when I am talking.」
+Harry:「How she can lecture me about not losing my temper with Umbridge!」
+:Ron grinning
+:Umbridge take many more notes while she sat in her corner
+Professor McGonagall:「Thirty-nine years this December,」
+Professor McGonagall:「I can hardly wait,」

@@ -1,9 +1,4 @@
-Harry:「Hello, I brought you this. . . . Want to go for a walk?」
-Hermione:「Good idea.」
-Harry:「Well, of course I knew you hadn’t entered yourself. The look on your face when Dumbledore read out your name! But the question is, who did put it in? Because Moody’s right, Harry . . . I don’t think any student could have done it . . . they’d never be able to fool the goblet, or get over Dumbledore’s —」
-Harry:「Have you seen Ron?」
-Hermione:「Erm . . . yes . . . he was at breakfast.」
-Harry:「What’s that supposed to mean, ‘not really’?」
-Hermione:「Oh Harry, isn’t it obvious? He’s jealous!」
-Harry:「Great. Really great. Tell him from me I’ll swap any time he wants. Tell him from me he’s welcome to it. . . . People gawping at my forehead everywhere I go. . . .」
-Hermione:「I’m not telling him anything. Tell him yourself. It’s the only way to sort this out.」
+:Ron examined an odd sort of pale blancmange closely, then moved it carefully a few inches to his right, so that it would be clearly visible from the Ravenclaw table
+Narrator:Unknown think "Finally, I wish to impress upon any of you wishing to compete that this tournament is not to be entered into lightly. Once a champion has been selected by the Goblet of Fire, he or she is obliged to see the tournament through to the end. The placing of your name in the goblet constitutes a binding, magical contract. There can be no change of heart once you have become a champion. Please be very sure, therefore, that you are wholeheartedly prepared to play before you drop your name into the goblet. Now, I think it is time for bed. Good night to you all."
+Fred Weasley:「An Age Line! Well, that should be fooled by an Aging Potion, shouldn’t it? And once your name’s in that goblet, you’re laughing — it can’t tell whether you’re seventeen or not!」
+Hermione:「But I don’t think anyone under seventeen will stand a chance, we just haven’t learned enough . . .」

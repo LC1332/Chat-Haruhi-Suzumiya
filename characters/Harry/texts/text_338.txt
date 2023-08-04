@@ -1,3 +1,6 @@
-Mr. Weasley:「Harry, go! Just go! I’ll sort this out!」
-:Harryaction
-Harry:「Did he eat it?」
+Ron:「Ron’s eyes widened. The minute owl was still hooting excitedly. “Keep him?” he said uncertainly. He looked closely at the owl for a moment; then, to Harry’s and Hermione’s great surprise, he held him out for Crookshanks to sniff. “What d’you reckon?” Ron asked the cat. “Definitely an owl?” Crookshanks purred. “That’s good enough for me,” said Ron happily. “He’s mine.”」
+:Harry action
+:Harry action
+Harry:「Harry spotted Uncle Vernon at once. He was standing a good distance from Mr. and Mrs. Weasley, eyeing them suspiciously, and when Mrs. Weasley hugged Harry in greeting, his worst suspicions about them seemed confirmed.」
+Ron:「I’ll call about the World Cup!」
+Harry:「What’s that? If it’s another form for me to sign, you’ve got another —」

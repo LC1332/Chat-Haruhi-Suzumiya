@@ -1,4 +1,13 @@
-Ron:「I thought you knew what you’d signed up for,」
-Harry:「Yeah, I thought I did too.」
-Harry:「So what part of it isn’t living up to your expectations? Did you think we’d be staying in five-star hotels? Finding a Horcrux every other day? Did you think you’d be back to Mummy by Christmas?」
-Harry:「Well, sorry to let you down, I’ve been straight with you from the start, I told you everything Dumbledore told me. And in case you haven’t noticed, we’ve found one Horcrux —」
+Hermione:「Something wrong?」
+Harry:「There was a locket.」
+Ron:「What?」
+Hermione:「」
+Harry:「In the cabinet in the drawing room. Nobody could open it. And we . . . we . . .」
+Harry:「It’s not over yet.」
+Harry:「I forbid you to call anyone ‘blood traitor’ or ‘Mudblood’.」
+Harry:「Two years ago, there was a big gold locket in the drawing room upstairs. We threw it out. Did you steal it back?」
+Kreacher:「Gone.」
+Harry:「Gone? What do you mean, it’s gone?」
+:Harry action
+Hermione:「“Harry, let him up!” Hermione whispered.」
+Harry:「“So he can beat himself up with the poker?” snorted Harry, kneeling beside the elf. “I don’t think so. Right, Kreacher, I want the truth: How do you know Mundungus Fletcher stole the locket?”」

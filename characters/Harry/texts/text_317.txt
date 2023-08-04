@@ -1,13 +1,5 @@
-Hermione:「Here comes Lupin!」
-Harry:「If he’d only grabbed the Cloak. It’s just lying there. . . .」
-Harry:「If I just dashed out now and grabbed it, Snape’d never be able to get it and —」
-Hermione:「Harry, we mustn’t be seen!」
-Harry:「How can you stand this? Just standing here and watching it happen?」
-Hermione:「Harry, no!」
-Hermione:「See? See what would have happened? We’ve got to keep out of sight! No, Buckbeak!」
-:Harrysnarled under his breath
-Harry:「He explained what he’d seen; how, as the nearest dementor had lowered its mouth to Harry’s, a large silver something had come galloping across the lake and forced the dementors to retreat.」
-Hermione:「But who conjured it?」
-Harry:「No, he wasn’t a teacher.」
-Hermione:「Who did you think it was?」
-Harry:「I think it was my dad.」
+Hermione:「scream」
+:Wormtail dived for Lupin’s dropped wand, transformed, scurrying through the grass
+:Harry spell to Pettigrew, shouted
+:Snape hanging unconscious in midair
+Harry:「We’d better get them up to the castle and tell someone, Come」

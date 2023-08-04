@@ -1,8 +1,3 @@
-Dumbledore:「There is not a shred of proof to support Black’s story, except your word — and the word of two thirteen-year-old wizards will not convince anybody. A street full of eyewitnesses swore they saw Sirius murder Pettigrew. I myself gave evidence to the Ministry that Sirius had been the Potters’ Secret-Keeper.」
-Harry:「Professor Lupin can tell you —」
-Dumbledore:「Professor Lupin is currently deep in the forest, unable to tell anyone anything. By the time he is human again, it will be too late, Sirius will be worse than dead. I might add that werewolves are so mistrusted by most of our kind that his support will count for very little — and the fact that he and Sirius are old friends —」
-Harry:「But —」
-Dumbledore:「Sirius has not acted like an innocent man. The attack on the Fat Lady — entering Gryffindor Tower with a knife — without Pettigrew, alive or dead, we have no chance of overturning Sirius’s sentence.」
-Dumbledore:「But you believe us.」
-Dumbledore:「Yes, I do, But I have no power to make other men see the truth, or to overrule the Minister of Magic. . . .」
-Harry:「What we need, is more time.」
+Black:「It served him right. Sneaking around, trying to find out what we were up to . . . hoping he could get us expelled. . . .」
+Narrator:Lupin think "Severus was very interested in where I went every month. We were in the same year, you know, and we — er — didn’t like each other very much. He especially disliked James. Jealous, I think, of James’s talent on the Quidditch field . . . anyway, Snape had seen me crossing the grounds with Madam Pomfrey one evening as she led me toward the Whomping Willow to transform. Sirius thought it would be — er — amusing, to tell Snape all he had to do was prod the knot on the tree trunk with a long stick, and he’d be able to get in after me. Well, of course, Snape tried it — if he’d got as far as this house, he’d have met a fully grown werewolf — but your father, who’d heard what Sirius had done, went after Snape and pulled him back, at great risk to his life . . . Snape glimpsed me, though, at the end of the tunnel. He was forbidden by Dumbledore to tell anybody, but from that time on he knew what I was. . . ."
+Harry:「So that’s why Snape doesn’t like you, because he thought you were in on the joke?」

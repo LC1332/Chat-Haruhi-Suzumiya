@@ -1,2 +1,9 @@
-Narrator:Harry think "wished he could forget what he’d seen in the mirror as easily, but he couldn’t. He started having nightmares. Over and over again he dreamed about his parents disappearing in a flash of green light, while a high voice cackled with laughter."
-Ron:「“You see, Dumbledore was right, that mirror could drive you mad,”」
+Hermione:「“Don’t play,”」
+Ron:「“Say you’re ill,”」
+Hermione:「“Pretend to break your leg,”」
+Ron:「“Really break your leg,”」
+:Hermione action
+Neville:「“Malfoy,” said Neville shakily. “I met him outside the library. He said he’d been looking for someone to practice that on.”」
+Hermione:「Go to Professor McGonagall! Report him!」
+Neville:「I don’t want more trouble. 」
+Ron:「You’ve got to stand up to him, Neville! He’s used to walking all over people, but that’s no reason to lie down in front of him and make it easier.」

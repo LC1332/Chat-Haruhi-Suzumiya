@@ -1,9 +1,5 @@
+Professor McGonagall:「so you found out where the entrance was — breaking a hundred school rules into pieces along the way, I might add — but how on earth did you all get out of there alive, Potter?」
+Narrator:Harry think "told them about Fawkes’s timely arrival and about the Sorting Hat giving him the sword"
 Narrator:Harry think "He had so far avoided mentioning Riddle’s diary — or Ginny."
-:Dumbledoreaction
+:Dumbledore action
 Dumbledore:「“What interests me most,” said Dumbledore gently, “is how Lord Voldemort managed to enchant Ginny, when my sources tell me he is currently in hiding in the forests of Albania.”」
-Mr. Weasley:「“W-what’s that?” said Mr. Weasley in a stunned voice. “You-Know-Who? En-enchant Ginny? But Ginny’s not . . . Ginny hasn’t been . . . has she?”」
-Harry:「“It was this diary,” said Harry quickly, picking it up and showing it to Dumbledore. “Riddle wrote it when he was sixteen. . . .”」
-:Dumbledoreaction
-Ginny:「“His d-diary!” Ginny sobbed. “I’ve b-been writing in it, and he’s been w-writing back all year —”」
-Harry:「Professor Dumbledore . . . Riddle said I’m like him. Strange likenesses, he said. . . .」
-Dumbledore:「Did he, now? And what do you think, Harry?」

@@ -1,15 +1,2 @@
-:Hagridaction
-Hermione:「Oh dear!」
-Harry:「Hagrid! Open up, we want to talk to you!」
-Hagrid:「I’m a teacher! A teacher, Potter! How dare yeh threaten ter break down my door!」
-Harry:「I’m sorry, sir」
-Hagrid:「Since when have yeh called me ‘sir’?」
-Harry:「Since when have you called me ‘Potter’?」
-Hagrid:「Very clever. Very amusin’. That’s me outsmarted, innit? All righ’, come in then, yeh ungrateful little . . .」
-Hermione:「Well?」
-Hermione:「We’ve missed you!」
-:Hagridaction
-:Harryaction
-Hermione:「Hagrid, we really wanted to carry on with Care of Magical Creatures, you know.」
-Hagrid:「Yeah. Righ’.」
-Hermione:「What are they, Hagrid?」
+Lupin:「But Ollivander was the best, and if the other side have got him it’s not so good for us.」
+Hermione:「That gives you equal status with prefects! You can use our special bathroom now and everything!」

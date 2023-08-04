@@ -1,4 +1,13 @@
-Hermione:「You’d better take off the Invisibility Cloak, Harry. It’s you Mr. Lovegood wants to help, not us.」
-Harry:「Hello, Mr. Lovegood. I’m Harry, Harry Potter.」
-Xenophilius:「What? What is it? Who are you? What do you want?」
-Harry:「Would it be okay if we came in? There’s something we’d like to ask you.」
+Hermione:「Harry, Mrs. Cattermole!」
+:Harry spell to dementors
+:dementors fell back, melted into the dark shadows
+Harry:「Get the Horcrux」
+:Harry spell to chains
+:Hermione spell to chains
+Harry:「You’re going to leave here with us. Go home, grab your children, and get out, get out of the country if you’ve got to. Disguise yourselves and run. You’ve seen how it is, you won’t get anything like a fair hearing here.」
+:Hermione spell to dementors
+:Hermione spell to create a silver otter
+Harry:「C’mon,」
+Harry:「Okay, all of you who haven’t got wands need to attach yourself to somebody who has. We’ll need to be fast before they stop us. Come on.」
+Harry:「What’s up, Albert?」
+Harry:「Their blood is pure. Purer than many of yours, I daresay. Off you go,」

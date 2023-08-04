@@ -1,7 +1,5 @@
-Harry:「Didn’t work that well, though, did it? Had to look after myself after all, didn’t I?」
-Hermione:「He was so angry. Dumbledore. We saw him. When he found out Mundungus had left before his shift had ended. He was scary.」
-Harry:「Well, I’m glad he left. If he hadn’t, I wouldn’t have done magic and Dumbledore would probably have left me at Privet Drive all summer.」
-Hermione:「Aren’t you . . . aren’t you worried about the Ministry of Magic hearing?」
-Ron:「We told Dumbledore we wanted to tell you what was going on. We did, mate. But he’s really busy now, we’ve only seen him twice since we came here and he didn’t have much time, he just made us swear not to tell you important stuff when we wrote, he said the owls might be intercepted —」
-Harry:「He could still’ve kept me informed if he’d wanted to」
-Hermione:「I thought that too. But he didn’t want you to know anything.」
+Ron:「We never thought of her, did we? Mind you, she’s definitely got giant blood, and she doesn’t want to admit it —」
+Hermione:「Of course she doesn’t, said Hermione sharply, looking up. Look what happened to Hagrid when Rita found out about his mother. Look at Fudge, jumping to conclusions about her, just because she’s part giant. Who needs that sort of prejudice? I’d probably say I had big bones if I knew that’s what I’d get for telling the truth.」
+:Hermione action
+:Ron action
+Hermione:「Don’t worry about it, Hermione said shortly when Harry pointed this out to them and said he didn’t mind practicing on his own for a while, at least we’ll get top marks in Defense Against the Dark Arts. We’d never have found out about all these hexes in class.」

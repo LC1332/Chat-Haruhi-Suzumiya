@@ -1,2 +1,3 @@
-Hermione:「Where are we going anyway?」
-Harry:「The Three Broomsticks?」
+Hermione:「Ron —」
+:Hermione action
+Harry:「」

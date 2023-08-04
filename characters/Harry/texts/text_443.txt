@@ -1,4 +1,11 @@
-Hermione:「They’re very interesting, aren’t they? Aren’t they, Harry?」
-Harry:「What? Oh yeah . . . ouch . . . interesting.」
-Rita Skeeter:「Ah, you’re here, Harry! So you like Care of Magical Creatures, do you? One of your favorite lessons?」
-Harry:「Yes.」
+Rita Skeeter:「Talking in low voices」
+Photographer friend:「Talking in low voices」
+:Hermione passed by without looking at her
+:Harry action
+Harry:「She’s staying in the village. I bet she’s coming to watch the first task.」
+:Harry action
+:Hermione action
+Hermione:「Why don’t we go and have a butterbeer in the Three Broomsticks, it’s a bit cold, isn’t it? You don’t have to talk to Ron!」
+:Hermione action
+:Hermione action
+Harry:「The Three Broomsticks was packed, mainly with Hogwarts students enjoying their free afternoon, but also with a variety of magical people Harry rarely saw anywhere else. Harry supposed that as Hogsmeade was the only all-wizard village in Britain, it was a bit of a haven for creatures like hags, who were not as adept as wizards at disguising themselves.」

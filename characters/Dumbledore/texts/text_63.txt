@@ -4,8 +4,3 @@ Dumbledore:「What is it?」
 Harry:「You mean . . . that stuff’s your thoughts?」
 Dumbledore:「Certainly. Let me show you」
 Dumbledore:「Curiosity is not a sin. But we should exercise caution with our curiosity . . . yes, indeed . . .」
-:Unknownaction
-:Unknownaction
-Unknown:「He put a hex on me, Professor Dumbledore, and I was only teasing him, sir, I only said I’d seen him kissing Florence behind the greenhouses last Thursday. . . .」
-Dumbledore:「But why, Bertha, why did you have to follow him in the first place?」
-Dumbledore:「So, Harry, before you got lost in my thoughts, you wanted to tell me something.」

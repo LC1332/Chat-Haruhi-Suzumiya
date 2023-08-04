@@ -1,2 +1,4 @@
-Hermione:「Ridiculous!」
-Harry:「Peter Pettigrew’s dead! He killed him twelve years ago!」
+Ron:「“Yeah, it does,” said Harry slowly. “They can’t!” Ron howled. “I’ve spent ages reading up on stuff for him; they can’t just ignore it all!”」
+Narrator:Harry think "But Harry had a horrible feeling that the Committee for the Disposal of Dangerous Creatures had had its mind made up for it by Mr. Malfoy. Draco, who had been noticeably subdued since Gryffindor’s triumph in the Quidditch final, seemed to regain some of his old swagger over the next few days. From sneering comments Harry overheard, Malfoy was certain Buckbeak was going to be killed, and seemed thoroughly pleased with himself for bringing it about. It was all Harry could do to stop himself imitating Hermione and hitting Malfoy in the face on these occasions. And the worst thing of all was that they had no time or opportunity to go and see Hagrid, because the strict new security measures had not been lifted, and Harry didn’t dare retrieve his Invisibility Cloak from below the one-eyed witch."
+:Hermione action
+Harry:「I’m here on an unpleasant mission, Harry. The Committee for the Disposal of Dangerous Creatures required a witness to the execution of a mad hippogriff. As I needed to visit Hogwarts to check on the Black situation, I was asked to step in.」

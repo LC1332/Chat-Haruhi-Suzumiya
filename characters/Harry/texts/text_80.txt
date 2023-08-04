@@ -7,6 +7,6 @@ Hermione:「Positive. She took a long drink from the round bottle at the end, an
 Harry:「It’s not poison?」
 Hermione:「Good luck — take care —」
 Hermione:「GO!」
-:Hermioneaction
-:Harryaction
+:Hermione action
+:Harry action
 Harry:「There was already someone there — but it wasn’t Snape. It wasn’t even Voldemort.」

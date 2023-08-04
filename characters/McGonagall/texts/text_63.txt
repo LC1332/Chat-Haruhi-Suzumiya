@@ -1,8 +1,5 @@
-Harry:「What sort of character and aptitude tests do the Ministry do on you, if you get enough N.E.W.T.s?」
-Professor McGonagall:「Well, you’ll need to demonstrate the ability to react well to pressure and so forth, perseverance and dedication, because Auror training takes a further three years, not to mention very high skills in practical defense. It will mean a lot more study even after you’ve left school, so unless you’re prepared to —」
-Umbridge:「I think you’ll also find that the Ministry looks into the records of those applying to be Aurors. Their criminal records.」
-Professor McGonagall:「— unless you’re prepared to take even more exams after Hogwarts, you should really look at another —」
-Umbridge:「Potter has a criminal record.」
-Professor McGonagall:「Potter has been cleared of all charges.」
-Umbridge:「The Minister of Magic will never employ Harry Potter!」
-Professor McGonagall:「There may well be a new Minister of Magic by the time Potter is ready to join!」
+:Umbridge action
+:Professor McGonagall action
+Professor McGonagall:「I would also advise Transfiguration, because Aurors frequently need to Transfigure or Untransfigure in their work. And I ought to tell you now, Potter, that I do not accept students into my N.E.W.T. classes unless they have achieved ‘Exceeds Expectations’ or higher at Ordinary Wizarding Level. I’d say you’re averaging ‘Acceptable’ at the moment, so you’ll need to put in some good hard work before the exams to stand a chance of continuing. Then you ought to do Charms, always useful, and Potions. Yes, Potter, Potions, Poisons and antidotes are essential study for Aurors. And I must tell you that Professor Snape absolutely refuses to take students who get anything other than ‘Outstanding’ in their O.W.L.s, so —」
+:Umbridge action
+Professor McGonagall:「May I offer you a cough drop, Dolores?」

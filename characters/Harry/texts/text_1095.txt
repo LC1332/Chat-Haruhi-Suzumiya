@@ -1,8 +1,6 @@
-Dumbledore:「The idea, as I am sure you will have gathered, is that your enemy must weaken him- or herself to enter. Once again, Lord Voldemort fails to grasp that there are much more terrible things than physical injury.」
-Harry:「Yeah, but still, if you can avoid it . . .」
-Dumbledore:「Sometimes, however, it is unavoidable.」
-Harry:「I’ll do it, I’m —」
-Narrator:Dumbledore think "An eerie sight met their eyes: They were standing on the edge of a great black lake, so vast that Harry could not make out the distant banks, in a cavern so high that the ceiling too was out of sight. A misty greenish light shone far away in what looked like the middle of the lake; it was reflected in the completely still water below. The greenish glow and the light from the two wands were the only things that broke the otherwise velvety blackness, though their rays did not penetrate as far as Harry would have expected. The darkness was somehow denser than normal darkness."
-Dumbledore:「Let us walk, Be very careful not to step into the water. Stay close to me.」
-:Dumbledoreset off around the edge of the lake
-Harry:「followed close behind him」
+Slughorn:「seems an awful waste not to collect it . . . might get a hundred Galleons a pint. . . . To be frank, my salary is not large. . . .」
+Harry:「Well, if you wanted to come, Professor, Hagrid would probably be really pleased. . . . Give Aragog a better send-off, you know . . .」
+Slughorn:「Yes, of course. I tell you what, Harry, I’ll meet you down there with a bottle or two. . . . We’ll drink the poor beast’s — well — not health — but we’ll send it off in style, anyway, once it’s buried. And I’ll change my tie, this one is a little exuberant for the occasion. . . .」
+:Harry delighted with himself
+Hagrid:「Don’ — don’ matter . . . He’d’ve bin touched yeh’re here, though, Harry. . . .」
+Harry:「Where are we burying him? The forest?」

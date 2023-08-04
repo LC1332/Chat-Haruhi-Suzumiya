@@ -1,7 +1,8 @@
-Fleur:「You will ’ave to wait, ’Arry. Zey are both ill, tired —」
-Harry:「I’m sorry, but it can’t wait. I need to talk to them now. Privately — and separately. It’s urgent.」
-Bill:「You turn up here with a dead house-elf and a half-conscious goblin, Hermione looks as though she’s been tortured, and Ron’s just refused to tell me anything —」
-Harry:「We can’t tell you what we’re doing, You’re in the Order, Bill, you know Dumbledore left us a mission. We’re not supposed to talk about it to anyone else.」
-Hermione:「“Harry —” said Hermione, but she was cut off by Griphook.」
-Griphook:「“Break into a Gringotts vault?” repeated the goblin, wincing a little as he shifted his position upon the bed. “It is impossible.”」
-Harry:「“Yeah,” said Harry. “The same day I first met you, Griphook. My birthday, seven years ago.”」
+Ron:「“Tell me when,” he croaked.」
+Narrator:Harry think "“On three,” said Harry, looking back down at the locket and narrowing his eyes, concentrating on the letter S, imagining a serpent, while the contents of the locket rattled like a trapped cockroach. It would have been easy to pity it, except that the cut around Harry’s neck still burned."
+Harry:「“One . . . two . . . three . . . open.”」
+:Horcrux action
+:Horcrux action
+Harry:「“Stab,” said Harry, holding the locket steady on the rock.」
+Horcrux:「“I have seen your heart, and it is mine.”」
+Harry:「“Don’t listen to it!” Harry said harshly. “Stab it!”」

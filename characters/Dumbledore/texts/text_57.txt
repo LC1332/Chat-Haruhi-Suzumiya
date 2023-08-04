@@ -1,2 +1,3 @@
-:Hagridaction
+Hermione:「Come back and teach, Hagrid, please come back, we really miss you.」
+:Hagrid action
 Dumbledore:「I refuse to accept your resignation, Hagrid, and I expect you back at work on Monday, You will join me for breakfast at eight-thirty in the Great Hall. No excuses. Good afternoon to you all.」

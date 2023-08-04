@@ -1,10 +1,9 @@
-Hagrid:「O’ — o’ course, Professor. Come in, come in. . . .」
-Harry:「Now what?」
-Hermione:「We’ll have to hide in here. We need to wait until they’ve gone back to the castle. Then we wait until it’s safe to fly Buckbeak up to Sirius’s window. He won’t be there for another couple of hours. . . . Oh, this is going to be difficult. . . .」
-Harry:「We’re going to have to move. We’ve got to be able to see the Whomping Willow, or we won’t know what’s going on.」
-:Hermionegetting a firmer grip on Buckbeak’s rope
-Harry:「There’s Ron!」
-Harry:「Looks even worse from here, doesn’t it? Ouch — look, I just got walloped by the tree — and so did you — this is weird —」
-:HermioneHarry muttered
-Hermione:「Right after we’d gone down into the passage! If only Dumbledore had come with us . . .」
-Harry:「Macnair and Fudge would’ve come too. I bet you anything Fudge would’ve told Macnair to murder Sirius on the spot. . . .」
+Sirius:「You know what this means? Turning Pettigrew in?」
+Harry:「You’re free.」
+Sirius:「But I’m also — I don’t know if anyone ever told you — I’m your godfather.」
+Harry:「Yeah, I knew that.」
+Sirius:「I’ll understand, of course, if you want to stay with your aunt and uncle. But . . . well . . . think about it. Once my name’s cleared . . . if you wanted a . . . a different home . . .」
+:Harry waited
+Harry:「Are you insane? Of course I want to leave the Dursleys! Have you got a house? When can I move in?」
+Sirius:「You want to? You mean it?」
+Harry:「Yeah, I mean it!」

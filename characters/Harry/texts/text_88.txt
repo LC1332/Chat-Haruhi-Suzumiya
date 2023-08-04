@@ -1,8 +1,8 @@
 Dudley:「MUUUUUUM! He’s doing you know what!」
 Harry:「paid dearly for his moment of fun.」
 Aunt Petunia:「knew he hadn’t really done magic」
-:Aunt Petuniaaction
-:Aunt Petuniaaction
-:Dudleyaction
-:Harryaction
+:Aunt Petunia action
+:Aunt Petunia action
+:Dudley action
+:Harry action
 Harry:「Wish they could see famous Harry Potter now」

@@ -1,13 +1,10 @@
-Nearly Headless Nick:「My dear boy! Harry Potter, at my deathday party! And do you think you could possibly mention to Sir Patrick how very frightening and impressive you find me?」
-Hermione:「A deathday party? I bet there aren’t many living people who can say they’ve been to one of those — it’ll be fascinating!」
-Ron:「Why would anyone want to celebrate the day they died? Sounds dead depressing to me. . . .」
-Ron:「Look, food!」
-Hermione:「A promise is a promise. You said you’d go to the deathday party.」
-Harry:「Shall we have a look around?」
-Ron:「Careful not to walk through anyone.」
-Hermione:「Turn back, turn back, I don’t want to talk to Moaning Myrtle —」
-:Harryamazed
-Hermione:「I expect they’ve let it rot to give it a stronger flavor, Can we move? I feel sick」
-Harry:「Can you taste it if you walk through it?」
-ghost:「Almost」
-Hermione:「I expect they’ve let it rot to give it a stronger flavor」
+Hagrid:「Bin wonderin’ when you’d come ter see me — come in, come in — thought you mighta bin Professor Lockhart back again —」
+:Harry and Hermione supported Ron over the threshold into the one-roomed cabin
+:Hagrid cheerful
+Hermione:「I don’t think there’s anything to do except wait for it to stop, That’s a difficult curse to work at the best of times, but with a broken wand —」
+:Hagrid bustling around making them tea
+Harry:「What did Lockhart want with you, Hagrid?」
+Hagrid:「Givin’ me advice on gettin’ kelpies out of a well, Like I don’ know. An’ bangin’ on about some banshee he banished. If one word of it was true, I’ll eat my kettle.」
+Hagrid:「It was most unlike Hagrid to criticize a Hogwarts teacher,」
+Harry:「looked at him in surprise.」
+Hermione:「I think you’re being a bit unfair. Professor Dumbledore obviously thought he was the best man for the job —」

@@ -1,6 +1,8 @@
-Narrator:Hermione think "Your name didn’t get into the Goblet of Fire by accident. If someone’s trying to attack you, they’re on their last chance. Stay close to Ron and Hermione, do not leave Gryffindor Tower after hours, and arm yourself for the third task. Practice Stunning and Disarming. A few hexes wouldn’t go amiss either. There’s nothing you can do about Crouch. Keep your head down and look after yourself. I’m waiting for your letter giving me your word you won’t stray out-of-bounds again."
-Harry:「Who’s he, to lecture me about being out-of-bounds? After all the stuff he did at school!」
-Hermione:「He’s worried about you! Just like Moody and Hagrid! So listen to them!」
-Harry:「No one’s tried to attack me all year. No one’s done anything to me at all —」
-Hermione:「They couldn’t have made it look like an accident if they’d murdered you in the forest! But if you die during a task —」
-Harry:「They didn’t care about attacking Krum, did they? Why didn’t they just polish me off at the same time? They could’ve made it look like Krum and I had a duel or something.」
+Snape:「“So I give you fair warning, Potter,” Snape continued in a softer and more dangerous voice, “pint-sized celebrity or not — if I catch you breaking into my office one more time —”」
+Harry:「“I haven’t been anywhere near your office!” said Harry angrily, forgetting his feigned deafness.」
+Snape:「“Don’t lie to me,” Snape hissed, his fathomless black eyes boring into Harry’s. “Boomslang skin. Gillyweed. Both come from my private stores, and I know who stole them.”」
+Harry:「“I don’t know what you’re talking about,” Harry lied coldly.」
+:Snape action
+Harry:「“Do you know what this is, Potter?” Snape said, his eyes glittering dangerously again.」
+Sirius:「Chicken!」
+Harry:「What’re you doing here, Sirius?」

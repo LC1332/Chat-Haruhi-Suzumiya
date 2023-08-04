@@ -1,2 +1,9 @@
-Hermione:「Let’s go, c’mon, Harry — Ron . . .」
-Harry:「」
+Fat Lady:「“Fairy lights,” he said dully to the Fat Lady — the password had been changed the previous day. “Yes, indeed, dear!” she trilled, straightening her new tinsel hair band as she swung forward to admit him.」
+:Harry action
+:Ginny action
+Harry:「What’s up, Ron?」
+Ron:「Why did I do it? I don’t know what made me do it!」
+Harry:「What?」
+Harry:「You what?」
+Harry:「She’s part veela. You were right — her grandmother was one. It wasn’t your fault, I bet you just walked past when she was turning on the old charm for Diggory and got a blast of it — but she was wasting her time. He’s going with Cho Chang.」
+Harry:「What?」

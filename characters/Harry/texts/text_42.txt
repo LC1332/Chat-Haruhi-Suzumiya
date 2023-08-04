@@ -1,3 +1,5 @@
+Ron:「Can you smell something?」
+Narrator:Narrator think "It was a horrible sight. Twelve feet tall, its skin was a dull, granite gray, its great lumpy body like a boulder with its small bald head perched on top like a coconut. It had short legs thick as tree trunks with flat, horny feet. The smell coming from it was incredible. It was holding a huge wooden club, which dragged along the floor because its arms were so long."
 Narrator:Narrator think "The troll stopped next to a doorway and peered inside. It waggled its long ears, making up its tiny mind, then slouched slowly into the room."
 Harry:「The key’s in the lock. We could lock it in.」
 Ron:「Good idea.」
@@ -5,5 +7,5 @@ Narrator:Narrator think "Flushed with their victory, they started to run back up
 Ron:「Oh, no.」
 Harry:「It’s the girls’ bathroom!」
 Harry:「Confuse it!」
-:Harryspell to troll's club
+:Harry spell to troll's club
 Harry:「I don’t think so, I think it’s just been knocked out.」

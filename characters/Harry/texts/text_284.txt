@@ -1,9 +1,13 @@
-Ron:「You’ve got a Firebolt!」
-Harry:「Yeah . . . , his stomach writhing」
-:Woodaction
-:Harryaction
-:Harryaction
-:Harryaction
-Harry:「Ron! Wake up!」
-Ron:「S’all dark, Harry, What’re you on about?」
-Harry:「Down here —」
+Snape:「Come with me, Potter,」
+Harry:「Sit.」
+:Snape remained standing
+Snape:「Mr. Malfoy has just been to see me with a strange story, Potter.」
+:Harry didn’t say anything
+Snape:「Mr. Malfoy states that he was standing talking to Weasley, when a large amount of mud hit him in the back of the head. How do you think that could have happened?」
+Harry:「I don’t know, Professor.」
+Snape:「Mr. Malfoy then saw an extraordinary apparition. Can you imagine what it might have been, Potter?」
+Harry:「No.」
+:Harry tried to keep his face free of guilt or fear
+:Snape bent down, a hand on each arm of Harry’s chair
+Snape:「If your head was in Hogsmeade, so was the rest of you.」
+Harry:「I’ve been up in Gryffindor Tower, like you told —」

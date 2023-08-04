@@ -1,17 +1,4 @@
-:HarryYou’re not going to go inside? It looks unsafe, it might — oh, Harry, look!
-Hermione:「They shouldn’t have written on the sign!」
-Harry:「It’s brilliant. I’m glad they did. I . . .」
-Harry:「Are you Bathilda?」
-:Bathildanodded
-Harry:「Bathilda?」
-Hermione:「Let’s go.」
-Harry:「I knew she wasn’t all there. Muriel called her ‘gaga.’」
-Bathilda:「Come!」
-Hermione:「It’s okay.」
-Harry:「Who is this?」
-Harry:「Who is this person?」
-Harry:「Do you know who this is? What’s he called?」
-Hermione:「What are you doing?」
-Harry:「I think she wants me to go upstairs with her.」
-Hermione:「Let’s go.」
-Hermione:「Maybe Dumbledore told her to give the sword to me, and only to me?」
+Lupin:「I thought you’d say that. But I might still be of some use to you. You know what I am and what I can do. I could come with you to provide protection. There would be no need to tell me exactly what you were up to.」
+Hermione:「But what about Tonks?」
+Lupin:「Tonks will be perfectly safe. She’ll be at her parents’ house.」
+Hermione:「Remus, is everything all right . . . you know . . . between you and —」

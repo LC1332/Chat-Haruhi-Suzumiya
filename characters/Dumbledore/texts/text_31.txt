@@ -1,7 +1,8 @@
-Harry:「“Buckbeak, move!” Harry hissed.」
-Dumbledore:「“One moment, please, Macnair,” came Dumbledore’s voice. “You need to sign too.”」
-Hermione:「“Harry, hurry!” she mouthed.」
-Harry:「“Quick! Quick!” Hermione moaned, darting out from behind her tree, seizing the rope too and adding her weight to make Buckbeak move faster. Harry looked over his shoulder; they were now blocked from sight; they couldn’t see Hagrid’s garden at all.」
-Committee member:「“Where is it?” said the reedy voice of the Committee member. “Where is the beast?”」
-Executioner:「“It was tied here!” said the executioner furiously. “I saw it! Just here!”」
-Dumbledore:「“How extraordinary,” said Dumbledore. There was a note of amusement in his voice.」
+Hermione:「Pettigrew attacked Ron, it wasn’t Sirius —」
+:Dumbledore action
+Dumbledore:「It is your turn to listen, and I beg you will not interrupt me, because there is very little time,」
+Dumbledore:「There is not a shred of proof to support Black’s story, except your word — and the word of two thirteen-year-old wizards will not convince anybody. A street full of eyewitnesses swore they saw Sirius murder Pettigrew. I myself gave evidence to the Ministry that Sirius had been the Potters’ Secret-Keeper.」
+Harry:「But —」
+Dumbledore:「Listen to me, Harry. It is too late, you understand me? You must see that Professor Snape’s version of events is far more convincing than yours.」
+Dumbledore:「But you believe us.」
+Dumbledore:「Now, pay attention, Sirius is locked in Professor Flitwick’s office on the seventh floor. Thirteenth window from the right of the West Tower. If all goes well, you will be able to save more than one innocent life tonight. But remember this, both of you: You must not be seen. Miss Granger, you know the law — you know what is at stake. . . . You — must — not — be — seen.」

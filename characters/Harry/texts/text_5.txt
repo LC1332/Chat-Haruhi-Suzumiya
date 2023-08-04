@@ -1,3 +1,9 @@
 Uncle Vernon:「Uncle Vernon stopped at last outside a gloomy-looking hotel on the outskirts of a big city.」
 Harry:「Dudley and Harry shared a room with twin beds and damp, musty sheets.」
 Harry:「Dudley snored but Harry stayed awake, sitting on the windowsill, staring down at the lights of passing cars and wondering. . . .」
+Uncle Vernon:「I’ll take them.」
+Aunt Petunia:「Wouldn’t it be better just to go home, dear?」
+:Uncle Vernon action
+Dudley:「Daddy’s gone mad, hasn’t he?」
+Aunt Petunia:「It’s Monday. The Great Humberto’s on tonight. I want to stay somewhere with a television.」
+Harry:「If it was Monday — and you could usually count on Dudley to know the days of the week, because of television — then tomorrow, Tuesday, was Harry’s eleventh birthday.」

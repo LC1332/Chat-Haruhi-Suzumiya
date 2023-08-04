@@ -1,8 +1,6 @@
-Snape:「said "cannot afford mistakes, Draco, because if you are expelled —"」
-Malfoy:「said "I didn’t have anything to do with it, all right?"」
-Snape:「said "I hope you are telling the truth, because it was both clumsy and foolish. Already you are suspected of having a hand in it."」
-Malfoy:「said "Who suspects me? For the last time, I didn’t do it, okay? That Bell girl must’ve had an enemy no one knows about — don’t look at me like that! I know what you’re doing, I’m not stupid, but it won’t work — I can stop you!"」
-:Harryaction
-Malfoy:「said "So put me in detention! Report me to Dumbledore!"」
-Snape:「said "Listen to me, I am trying to help you. I swore to your mother I would protect you. I made the Unbreakable Vow, Draco —"」
-Malfoy:「said "Looks like you’ll have to break it, then, because I don’t need your protection! It’s my job, he gave it to me and I’m doing it, I’ve got a plan and it’s going to work, it’s just taking a bit longer than I thought it would!"」
+Harry:「Where are you going?」
+:Harry action
+Malfoy:「I don’t know how much longer, all right? It’s taking longer than I thought it would.」
+Crabbe:「Look, it’s none of your business what I’m doing, Crabbe, you and Goyle just do as you’re told and keep a lookout!」
+Harry:「I tell my friends what I’m up to, if I want them to keep a lookout for me.」
+Malfoy:「Thank you.」

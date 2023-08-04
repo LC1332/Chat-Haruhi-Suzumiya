@@ -1,2 +1,3 @@
-:Hagridaction
+Hagrid:「Isn’t he beautiful?」
+:Hagrid action
 Hermione:「Hagrid, how fast do Norwegian Ridgebacks grow, exactly?」

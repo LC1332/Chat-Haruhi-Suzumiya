@@ -1,8 +1,8 @@
-Malfoy:「looking angrier than Hermione」
-Harry:「Time to pack up! And an extra ten points to Gryffindor for sheer cheek!」
-Harry:「Sir, I wanted to ask you something.」
-Slughorn:「Dumbledore put you up to this. Dumbledore’s shown you that — that memory. Well? Hasn’t he?」
-Harry:「Yes, of course, well, if you’ve seen that memory, Harry, you’ll know that I don’t know anything — anything — about Horcruxes.」
-Harry:「I had to try and soften him up so I could ask him about Voldemort, didn’t I? Oh, will you get a grip!」
-Hermione:「I haven’t found one single explanation of what Horcruxes do! Not a single one! I’ve been right through the restricted section and even in the most horrible books, where they tell you how to brew the most gruesome potions — nothing! All I could find was this, in the introduction to Magick Moste Evile — listen — ‘Of the Horcrux, wickedest of magical inventions, we shall not speak nor give direction. . . .’ I mean, why mention it then?」
-Harry:「Where are you going?」
+Narrator:Narrator think "It seemed as though Gryffindor could do no wrong. Again and again they scored, and again and again, at the other end of the pitch, Ron saved goals with apparent ease. He was actually smiling now, and when the crowd greeted a particularly good save with a rousing chorus of the old favorite “Weasley Is Our King,” he pretended to conduct them from on high."
+snide voice:「Thinks he’s something special today, doesn’t he? Your blood-traitor pal . . .」
+Harry:「And I think Harper of Slytherin’s seen the Snitch! Yes, he’s certainly seen something Potter hasn’t!」
+Harry:「Oi, Harper! How much did Malfoy pay you to come on instead of him?」
+Ginny:「Forgot to brake, Professor, sorry.」
+Harry:「Party up in the common room, Seamus said! C’mon, Ginny, Demelza!」
+Hermione:「You know perfectly well what we’re talking about! You spiked Ron’s juice with lucky potion at breakfast! Felix Felicis!」
+Harry:「No, I didn’t.」

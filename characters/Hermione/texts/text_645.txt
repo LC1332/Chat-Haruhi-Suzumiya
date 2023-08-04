@@ -1,12 +1,6 @@
-:Harryaction
-Hermione:「Harry! HARRY!」
-Hermione:「Harry, open up!」
-Ron:「You were yelling your head off!」
-Harry:「Oh yeah . . . I must’ve dozed off or —」
-Hermione:「Harry, please don’t insult our intelligence. We know your scar hurt downstairs, and you’re white as a sheet.」
-Harry:「Because it means I know what he’s doing.」
-Hermione:「So you’re not even going to try to shut him out?」
-Harry:「Like it? Would you like it?」
-Hermione:「I — no — I’m sorry, Harry, I didn’t mean —」
-Harry:「Forget Dumbledore. This is my choice, nobody else’s. I want to know why he’s after Gregorovitch.」
-Hermione:「Who?」
+Ron:「“All the old kids’ stories are supposed to be Beedle’s, aren’t they? ‘The Fountain of Fair Fortune’ . . . ‘The Wizard and the Hopping Pot’ . . . ‘Babbitty Rabbitty and her Cackling Stump’ . . .”」
+Hermione:「“What was that last one?”」
+:Ron looking in disbelief from Harry to Hermione
+Hermione:「“We didn’t hear stories like that when we were little, we heard ‘Snow White and the Seven Dwarfs’ and ‘Cinderella’ —”」
+Ron:「“Yeah, I mean, that’s just what you hear, you know, that all these old stories came from Beedle. I dunno what they’re like in the original versions.”」
+Hermione:「“But I wonder why Dumbledore thought I should read them?”」

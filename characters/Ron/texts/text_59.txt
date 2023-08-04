@@ -1,4 +1,6 @@
-:Neville
+Hermione:「I’m not ill, I think it’s a warning . . . it means danger’s coming. . . .」
+:Hermione spell to Neville
+:Neville 
 Ron:「So the Stone’s gone? Flamel’s just going to die?」
 Ron:「That’s what I said, but Dumbledore thinks that — what was it? —‘to the well-organized mind, death is but the next great adventure.’」
 Hermione:「I got back all right, I brought Ron round — that took a while — and we were dashing up to the owlery to contact Dumbledore when we met him in the entrance hall — he already knew — he just said, ‘Harry’s gone after him, hasn’t he?’ and hurtled off to the third floor.」

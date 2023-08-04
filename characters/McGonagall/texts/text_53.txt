@@ -1,2 +1,11 @@
-Angelina:「insisted on almost daily practices」
-Professor McGonagall:「I think you’ve got enough to be getting on with at the moment. I’ve become accustomed to seeing the Quidditch Cup in my study, boys, and I really don’t want to have to hand it over to Professor Snape, so use the extra time to practice, won’t you?」
+Harry:「This is urgent,」
+other gargoyle:「Ooooh, urgent, is it? Well, that’s put us in our place, hasn’t it?」
+:Harry action
+Professor McGonagall:「You haven’t been given another detention!」
+Harry:「No, Professor!」
+Professor McGonagall:「Well then, why are you out of class?」
+Professor Grubbly-Plank:「Injured owl, did you say?」
+Harry:「Yes, she turned up after the other post owls and her wing’s all funny, look —」
+Professor Grubbly-Plank:「Hmm, Looks like something’s attacked her. Can’t think what would have done it, though. . . . Thestrals will sometimes go for birds, of course, but Hagrid’s got the Hogwarts thestrals well trained not to touch owls . . .」
+Harry:「Harry neither knew nor cared what thestrals were, he just wanted to know that Hedwig was going to be all right.」
+Professor McGonagall:「Do you know how far this owl’s traveled, Potter?」

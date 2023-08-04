@@ -1,6 +1,2 @@
-Hagrid:「Dumbledore’s gonna come down while it — while it happens. Wrote me this mornin’. Said he wants ter — ter be with me. Great man, Dumbledore. . . .」
-Hermione:「We’ll stay with you too, Hagrid, she began, but Hagrid shook his shaggy head.」
-Hagrid:「Yeh’re ter go back up ter the castle. I told yeh, I don’ wan’ yeh watchin’. An’ yeh shouldn’ be down here anyway. . . . If Fudge an’ Dumbledore catch yeh out without permission, Harry, yeh’ll be in big trouble.」
-:Hermioneaction
-Ron:「What are you talking about?」
-Hermione:「Scabbers! said Ron blankly. Scabbers, what are you doing here?」
+:Harry action
+Hermione:「You’re going to be fine, though she looked positively terrified」

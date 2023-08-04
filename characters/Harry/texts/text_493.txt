@@ -1,8 +1,2 @@
-Snape:「“So I give you fair warning, Potter,” Snape continued in a softer and more dangerous voice, “pint-sized celebrity or not — if I catch you breaking into my office one more time —”」
-Harry:「“I haven’t been anywhere near your office!” said Harry angrily, forgetting his feigned deafness.」
-Snape:「“Don’t lie to me,” Snape hissed, his fathomless black eyes boring into Harry’s. “Boomslang skin. Gillyweed. Both come from my private stores, and I know who stole them.”」
-Harry:「“I don’t know what you’re talking about,” Harry lied coldly.」
-:Snapeaction
-Harry:「“Do you know what this is, Potter?” Snape said, his eyes glittering dangerously again.」
-Sirius:「Chicken!」
-Harry:「What’re you doing here, Sirius?」
+Hermione:「Let’s go, c’mon, Harry — Ron . . .」
+Harry:「」

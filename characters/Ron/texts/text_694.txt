@@ -1,11 +1,2 @@
-Hermione:「Protego Totalum . . . Salvio Hexia . . .」
-Ron:「That treacherous old bleeder!」
-:Ronaction
-Ron:「Serves him right」
-Hermione:「Oh, I hope they don’t kill him!」
-Hermione:「That’s why I wanted the Death Eaters to get a glimpse of Harry before we left, so they knew Xenophilius hadn’t been lying!」
-Ron:「Why hide me, though?」
-Hermione:「They’re in Australia, They should be all right. They don’t know anything.」
-Ron:「You’re a genius」
-Hermione:「What about Luna?」
-Ron:「Well, if they’re telling the truth and she’s still alive —」
+Hermione:「I know it was your scar! I can tell by the look on your face! You were looking into Vol —」
+Ron:「Don’t say his name!」

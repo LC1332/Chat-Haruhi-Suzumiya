@@ -1,7 +1,4 @@
-Griphook:「“The right to carry a wand,” said the goblin quietly, “has long been contested between wizards and goblins.”」
-Ron:「“Well, goblins can do magic without wands,” said Ron.」
-Griphook:「“That is immaterial! Wizards refuse to share the secrets of wandlore with other magical beings, they deny us the possibility of extending our powers!”」
-Ron:「“Well, goblins won’t share any of their magic either,” said Ron. “You won’t tell us how to make swords and armor the way you do. Goblins know how to work metal in a way wizards have never —”」
-Hermione:「“But it is, it is about precisely that! As the Dark Lord becomes ever more powerful, your race is set still more firmly above mine! Gringotts falls under Wizarding rule, house-elves are slaughtered, and who amongst the wand-carriers protests?”」
-Hermione:「“We do!” said Hermione. She had sat up straight, her eyes bright. “We protest! And I’m hunted quite as much as any goblin or elf, Griphook! I’m a Mudblood!”」
-Ron:「“Don’t call yourself —” Ron muttered.」
+Harry:「You just need to practice, It’s all a matter of confidence, Harry.」
+:Hermione approached them noiselessly from behind
+:Harry action
+Ron:「There’s this one program, that tells the news like it really is. All the others are on You-Know-Who’s side and are following the Ministry line, but this one . . . you wait till you hear it, it’s great. Only they can’t do it every night, they have to keep changing locations in case they’re raided, and you need a password to tune in. . . . Trouble is, I missed the last one. . . .」

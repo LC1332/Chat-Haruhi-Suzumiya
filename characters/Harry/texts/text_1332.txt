@@ -1,6 +1,3 @@
-:Fred
-Narrator:Harry think "The world had ended, so why had the battle not ceased, the castle fallen silent in horror, and every combatant laid down their arms? Harry’s mind was in free fall, spinning out of control, unable to grasp the impossibility, because Fred Weasley could not be dead, the evidence of all his senses must be lying —"
-Harry:「Get down!」
-Harry:「Percy, come on, we’ve got to move!」
-Harry:「Let’s move, NOW!」
-Harry:「We will fight!」
+Hermione:「I miss my wand. I wish Mr. Ollivander could have made me another one too.」
+Narrator:Harry think "He had been surprised, but pleased, to discover that it worked for him at least as well as Hermione’s had done. Remembering what Ollivander had told them of the secret workings of wands, Harry thought he knew what Hermione’s problem was: She had not won the walnut wand’s allegiance by taking it personally from Bellatrix."
+Harry:「We’ve just been checking the last-minute stuff, Griphook. We’ve told Bill and Fleur we’re leaving tomorrow, and we’ve told them not to get up to see us off.」

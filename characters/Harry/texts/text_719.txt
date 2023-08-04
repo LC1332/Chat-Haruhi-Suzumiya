@@ -1,6 +1,11 @@
-Hermione:「Please turn to page thirty-four of Defensive Magical Theory and read the third chapter, entitled ‘The Case for Non-Offensive Responses to Magical Attack.’ There will be —」
-Harry:「— no need to talk,」
-Ron:「— no need to talk,」
-Angelina:「No Quidditch practice,」
-Harry:「But I kept my temper! I didn’t say anything to her, Angelina, I swear, I —」
-Harry:「Well, look on the bright side — at least now you’ll have time to do Snape’s essay!」
+Umbridge:「Only because he was too stupid to listen to what Hagrid told him to do」
+Harry:「Another night’s detention, I think」
+Professor Grubbly-Plank:「Jolly good」
+Umbridge:「thank you very much, Professor Grubbly-Plank, I think that’s all I need here. You will be receiving the results of your inspection within ten days」
+Professor Grubbly-Plank:「Jolly good」
+:Umbridge action
+:Harry action
+:Crookshanks action
+Harry:「Thanks」
+Ron:「McGonagall would go nuts if she knew」
+Harry:「Yeah, she probably would. And how long d’you reckon it’d take Umbridge to pass another Decree saying anyone who complains about the High Inquisitor gets sacked immediately?」

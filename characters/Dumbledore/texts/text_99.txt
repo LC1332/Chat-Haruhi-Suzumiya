@@ -1,9 +1,4 @@
-Umbridge:「I cannot allow you to manhandle my students, Dolores,」
-Dumbledore:「You want to calm yourself, Madam Umbridge,」
-Kingsley:「You don’t want to get yourself into trouble now,」
-Umbridge:「I mean, yes — you’re right, Shacklebolt — I — I forgot myself,」
-:Mariettaneither perturbed by Umbridge’s sudden attack, nor relieved by her release. still clutching her robe up to her oddly blank eyes, staring straight ahead of her
-Fudge:「the meeting tonight — the one we know definitely happened —,」
-Umbridge:「Miss Edgecombe tipped me off and I proceeded at once to the seventh floor, accompanied by certain trustworthy students, so as to catch those in the meeting red-handed. It appears that they were forewarned of my arrival, however, because when we reached the seventh floor they were running in every direction. It does not matter, however. I have all their names here, Miss Parkinson ran into the Room of Requirement for me to see if they had left anything behind. . . . We needed evidence and the room provided . . .,」
-Fudge:「The moment I saw Potter’s name on the list, I knew what we were dealing with,」
-Dumbledore:「Well, the game is up,」
+Fudge:「Oho! Yes, do let’s hear the latest cock-and-bull story designed to pull Potter out of trouble! Go on, then, Dumbledore, go on — Willy Widdershins was lying, was he? Or was it Potter’s identical twin in the Hog’s Head that day? Or is there the usual simple explanation involving a reversal of time, a dead man coming back to life, and a couple of invisible dementors?」
+Percy Weasley:「Oh, very good, Minister, very good!」
+Narrator:Harry think "Harry could have kicked him. Then he saw, to his astonishment, that Dumbledore was smiling gently too."
+Dumbledore:「Cornelius, I do not deny — and nor, I am sure, does Harry — that he was in the Hog’s Head that day, nor that he was trying to recruit students to a Defense Against the Dark Arts group. I am merely pointing out that Dolores is quite wrong to suggest that such a group was, at that time, illegal. If you remember, the Ministry decree banning all student societies was not put into effect until two days after Harry’s Hogsmeade meeting, so he was not breaking any rules in the Hog’s Head at all.」

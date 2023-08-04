@@ -1,3 +1,6 @@
-:Hagridaction
-:Harryaction
-Harry:「Hagrid? Hagrid, talk to me —」
+Neville:「M’all right, Harry . . . Snape ’n’ Malfoy . . . ran past . . .」
+Harry:「I know, I’m on it!」
+:Harry action
+:Harry action
+Ernie Macmillan:「“Harry! We heard a noise, and someone said something about the Dark Mark —” began Ernie Macmillan.」
+Harry:「Out of the way!」

@@ -1,7 +1,10 @@
-Dumbledore:「Well, that simplifies matters. It seems that Sirius knew what he was doing. You are the rightful owner of number twelve, Grimmauld Place and of Kreacher.」
-Harry:「Do I — do I have to keep him with me?」
-Dumbledore:「Not if you don’t want to. If I might make a suggestion, you could send him to Hogwarts to work in the kitchen there. In that way, the other house-elves could keep an eye on him.」
-Harry:「Yeah, yeah, I’ll do that. Er — Kreacher — I want you to go to Hogwarts and work in the kitchens there with the other house-elves.」
-Harry:「No, he can stay with Hagrid. I think Buckbeak would prefer that.」
-Dumbledore:「Doubtful that I would turn up?」
-Harry:「I’ll just go and — er — finish off.」
+Bellatrix:「disappearing through a door on the other side of the room — beyond her was the corridor leading back to the lifts」
+Harry:「Where’s the exit? Where’s the way out?」
+:Harry action
+Harry:「I am!」
+Bellatrix:「Never used an Unforgivable Curse before, have you, boy? You need to mean them, Potter! You need to really want to cause pain — to enjoy it — righteous anger won’t hurt me for long — I’ll show you how it is done, shall I? I’ll give you a lesson —」
+:Harry spell to Bellatrix
+:Bellatrix spell to Harry
+Harry:「Potter, I am going to give you one chance! Give me the prophecy — roll it out toward me now — and I may spare your life!」
+she:「The prophecy smashed when I was trying to get Neville up the steps! What do you think Voldemort’ll say about that, then?」
+Harry:「LIAR!」

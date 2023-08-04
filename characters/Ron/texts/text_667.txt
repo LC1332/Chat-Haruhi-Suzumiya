@@ -1,5 +1,3 @@
-:Harryaction
-Ron:「But you can make a brilliant Patronus! protested Ron, when Harry arrived back at the tent empty-handed, out of breath, and mouthing the single word, dementors.」
-Harry:「I couldn’t . . . make one, he panted, clutching the stitch in his side. Wouldn’t . . . come.」
-:Harryaction
-Ron:「So we still haven’t got any food.」
+Harry:「“When you say you’ve got the Cloak, and clothes . . .” said Harry, frowning at Hermione, who was carrying nothing except her small beaded handbag, in which she was now rummaging.」
+:Hermione action
+Ron:「“How the ruddy hell — ?”」

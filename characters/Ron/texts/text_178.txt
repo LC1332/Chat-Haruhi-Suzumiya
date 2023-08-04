@@ -1,6 +1,5 @@
-Professor Trelawney:「My dears! Which of you left his seat first? Which?」
-Ron:「Dunno.」
-Professor McGonagall:「I doubt it will make much difference, unless a mad axe-man is waiting outside the doors to slaughter the first into the entrance hall.」
-Harry:「Coming?」
-Hermione:「No, I want a quick word with Professor McGonagall.」
-Ron:「Probably trying to see if she can take any more classes.」
+:Harry action
+Ron:「“Harry?” said Ron’s voice uncertainly.」
+:Harry action
+Narrator:Harry think "A hatred such as he had never known before was coursing through Harry like poison. He could see Black laughing at him through the darkness, as though somebody had pasted the picture from the album over his eyes. He watched, as though somebody was playing him a piece of film, Sirius Black blasting Peter Pettigrew (who resembled Neville Longbottom) into a thousand pieces. He could hear (though having no idea what Black’s voice might sound like) a low, excited mutter. “It has happened, my Lord . . . the Potters have made me their Secret-Keeper. . . .” And then came another voice, laughing shrilly, the same laugh that Harry heard inside his head whenever the dementors drew near. . . ."
+Ron:「“Harry, you — you look terrible.”」

@@ -1,6 +1,6 @@
 Harry:「“Er,” he said, “Mr. Bagman . . .”」
 Dumbledore:「“. . . has never been accused of any Dark activity since,” said Dumbledore calmly.」
 Harry:「“Right,” said Harry hastily, staring at the contents of the Pensieve again, which were swirling more slowly now that Dumbledore had stopped adding thoughts. “And . . . er . . .”」
-:Dumbledoreaction
+:Dumbledore action
 Harry:「What made you think he’d really stopped supporting Voldemort, Professor?」
 Dumbledore:「That, Harry, is a matter between Professor Snape and myself.」

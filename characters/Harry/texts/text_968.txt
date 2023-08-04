@@ -1,6 +1,4 @@
-Ron:「Well, as I’m not invited to any parties, I think I’ll go to bed.」
-Harry:「Harry? I’ve got a message for you. From Professor Snape. He says you’re to come to his office at half past eight tonight to do your detention — er — no matter how many party invitations you’ve received. And he wanted you to know you’ll be sorting out rotten flobberworms from good ones, to use in Potions and — and he says there’s no need to bring protective gloves.」
-Demelza:「Right, Thanks a lot, Demelza.」
-Harry:「Where was Dumbledore, and what was he doing?」
-Harry:「Harry had wondered whether these trips would still be allowed, given the increasingly tight security measures around the school, but was pleased to know that they were going ahead; it was always good to get out of the castle grounds for a few hours.」
-Harry:「The more Harry pored over the book, the more he realized how much was in there, not only the handy hints and shortcuts on potions that were earning him such a glowing reputation with Slughorn, but also the imaginative little jinxes and hexes scribbled in the margins, which Harry was sure, judging by the crossings-out and revisions, that the Prince had invented himself.」
+Hermione:「Your adversary has no warning about what kind of magic you’re about to perform, which gives you a split-second advantage.」
+Narrator:Snape think "An answer copied almost word for word from The Standard Book of Spells, Grade Six, but correct in essentials. Yes, those who progress to using magic without shouting incantations gain an element of surprise in their spell-casting. Not all wizards can do this, of course; it is a question of concentration and mind power which some lack."
+:Malfoy sniggered
+Harry:「He refused to drop his gaze, but glowered at Snape until Snape looked away.」

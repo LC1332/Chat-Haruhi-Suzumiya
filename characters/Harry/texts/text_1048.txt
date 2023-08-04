@@ -1,5 +1,6 @@
-Snape:「“If you had actually read the article in question, Mr. Finnigan, you would have known that the so-called Inferius was nothing but a smelly sneak thief by the name of Mundungus Fletcher.”」
-Harry:「“I thought Snape and Mundungus were on the same side,” muttered Harry to Ron and Hermione. “Shouldn’t he be upset Mundungus has been arrest —”」
-Snape:「“But Potter seems to have a lot to say on the subject,” said Snape, pointing suddenly at the back of the room, his black eyes fixed on Harry. “Let us ask Potter how we would tell the difference between an Inferius and a ghost.”」
-Harry:「“Er — well — ghosts are transparent —”」
-Harry:「Yeah, ghosts are transparent, but Inferi are dead bodies, aren’t they? So they’d be solid —」
+Dumbledore:「That’s all there is? Time to go.」
+Harry:「That’s all there is?」
+Dumbledore:「As you might have noticed, that memory has been tampered with.」
+Harry:「Tampered with?」
+Dumbledore:「Because, I think, he is ashamed of what he remembers, He has tried to rework the memory to show himself in a better light, obliterating those parts which he does not wish me to see. It is, as you will have noticed, very crudely done, and that is all to the good, for it shows that the true memory is still there beneath the alterations. And so, for the first time, I am giving you homework, Harry. It will be your job to persuade Professor Slughorn to divulge the real memory, which will undoubtedly be our most crucial piece of information of all.」
+Harry:「But surely, sir, you don’t need me — you could use Legilimency . . . or Veritaserum. . . .」

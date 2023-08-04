@@ -1,2 +1,8 @@
-Professor McGonagall:「Sit, she said, and they both backed into chairs by the fire. Explain, she said, her glasses glinting ominously.」
-Ron:「Ron launched into the story, starting with the barrier at the station refusing to let them through. — so we had no choice, Professor, we couldn’t get on the train.」
+:Harry action
+:Ron action
+Ron:「“Uh-oh,” said Ron, jabbing at the Invisibility Booster. “It’s faulty —”」
+:Ron action
+Ron:「Hold on!」
+Ron:「Now what?」
+Harry:「I can see it! Right ahead — there!」
+Ron:「Due north. Okay, we’ll just have to check on it every half hour or so — hold on —」

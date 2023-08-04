@@ -1,5 +1,3 @@
-Uncle Vernon:「Well, all right then. You can go to this ruddy . . . this stupid . . . this World Cup thing. You write and tell these — these Weasleys they’re to pick you up, mind. I haven’t got time to go dropping you off all over the country. And you can spend the rest of the summer there. And you can tell your — your godfather . . . tell him . . . tell him you’re going.」
-Harry:「Okay then.」
-Harry:「That was an excellent breakfast, wasn’t it? I feel really full, don’t you?」
-Harry:「Feeling up to a long journey?」
-Harry:「I just want to finish it.」
+Lupin:「I brought this from the Shrieking Shack last night, handing Harry back the Invisibility Cloak. And . . . He hesitated, then held out the Marauder’s Map too. I am no longer your teacher, so I don’t feel guilty about giving you this back as well. It’s no use to me, and I daresay you, Ron, and Hermione will find uses for it.」
+:Harry action
+Harry:「You told me Moony, Wormtail, Padfoot, and Prongs would’ve wanted to lure me out of school . . . you said they’d have thought it was funny.」

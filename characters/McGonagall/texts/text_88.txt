@@ -1,4 +1,6 @@
-George:「Sounds like a job for us」
-Professor McGonagall:「Potter, Aren’t you supposed to be looking for something?」
-Harry:「What? Oh, oh yeah!」
-Professor McGonagall:「Then go, Potter, go!」
+Harry:「They must have gone up to the Great Hall already. I didn’t see them pass me. A bathroom? You’re sure they said bath — ?」
+:Harry action
+Narrator:Harry think "looking through the high wrought-iron gates with winged boars on pillars at either side, looking through the dark grounds toward the castle, which was ablaze with lights. Nagini lay draped over his shoulders. He was possessed of that cold, cruel sense of purpose that preceded murder."
+Professor McGonagall:「evacuation will be overseen by Mr. Filch and Madam Pomfrey. Prefects, when I give the word, you will organize your House and take your charges, in an orderly fashion, to the evacuation point.」
+Ernie Macmillan:「And what if we want to stay and fight?」
+Professor McGonagall:「If you are of age, you may stay.」

@@ -1,5 +1,5 @@
-Dumbledore:「“Professor Dumbledore, Potter has had a . . . well, a nightmare,” said Professor McGonagall. “He says . . .”」
-Harry:「“It wasn’t a nightmare,” said Harry quickly.」
-Professor McGonagall:「“Very well, then, Potter, you tell the headmaster about it.”」
-Harry:「“I . . . well, I was asleep . . .” said Harry and even in his terror and his desperation to make Dumbledore understand he felt slightly irritated that the headmaster was not looking at him, but examining his own interlocked fingers. “But it wasn’t an ordinary dream . . . it was real. . . . I saw it happen . . .” He took a deep breath, “Ron’s dad — Mr. Weasley — has been attacked by a giant snake.”」
-Harry:「“Well . . . I don’t know,” said Harry, rather angrily — what did it matter? “Inside my head, I suppose —”」
+Narrator:Ron think "That was an accident. I didn’t mean to do it — I slipped off my broom when none of you were looking and I was trying to get back on and I kicked the Quaffle by accident."
+Harry:「Well, a few more accidents like that and the game’s in the bag, isn’t it?」
+Ginny:「How’re you feeling?」
+:Ron action
+Harry:「He’s just nervous.」

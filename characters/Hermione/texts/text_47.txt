@@ -1,16 +1,2 @@
-Ron:「She didn’t want us showing off. Doesn’t want people to think it’s clever, arriving by flying car.」
-Hermione:「There you are! Where have you been? The most ridiculous rumors — someone said you’d been expelled for crashing a flying car —」
-Harry:「Well, we haven’t been expelled.」
-Hermione:「You’re not telling me you did fly here?」
-:Hermioneaction
-Fred and George:「Why couldn’t we’ve come in the car, eh?」
-Ron:「Got to get upstairs — bit tired,」
-Harry:「’Night,」
-Hermione:「’Night,」
-Neville:「Amazing,」
-Harry:「barely grinned once」
-Hermione:「Morning」
-Neville:「Mail’s due any minute — I think Gran’s sending a few things I forgot」
-Harry:「started his porridge」
-Ron:「Errol!」
-Hermione:「It’s all right, he’s still alive」
+Harry:「They started to haggle. watched nervously as Draco drew nearer and nearer to his hiding place, examining the objects for sale. wiped his forehead on his sleeve as Draco turned away. stared around. emerged into a dingy alleyway that seemed to be made up entirely of shops devoted to the Dark Arts. set off, trying to hold his glasses on straight and hoping against hope he’d be able to find a way out of here. wondered what to do. croaked in relief. was lost — Floo powder — explained. ducking as Hagrid made to brush him off again. “I told you, I was lost — what were you doing down there, anyway?” explained all about Dobby and the Dursleys.」
+Hermione:「“Done,” said Mr. Malfoy at the counter. “Come, Draco —”」

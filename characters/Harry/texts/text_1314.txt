@@ -1,6 +1,6 @@
-:Cholooked disappointed
-Harry:「How do we get out?」
-Neville:「Over here. It comes out somewhere different every day, so they’ve never been able to find it. Only trouble is, we never know exactly where we’re going to end up when we go out. Be careful, Harry, they’re always patrolling the corridors at night.」
-Harry:「No problem. See you in a bit.」
-:Harryaction
-Harry:「We’re up on the fifth floor,」
+Bill:「“. . . lucky that Ginny’s on holiday. If she’d been at Hogwarts, they could have taken her before we reached her. Now we know she’s safe too.”」
+:Harry action
+Harry:「I’ve been getting them all out of the Burrow, Moved them to Muriel’s. The Death Eaters know Ron’s with you now, they’re bound to target the family — don’t apologize, It was always a matter of time, Dad’s been saying so for months. We’re the biggest blood-traitor family there is.」
+Harry:「How are they protected?」
+Harry:「Fidelius Charm. Dad’s Secret-Keeper. And we’ve done it on this cottage too; I’m Secret-Keeper here. None of us can go to work, but that’s hardly the most important thing now. Once Ollivander and Griphook are well enough, we’ll move them to Muriel’s too. There isn’t much room here, but she’s got plenty. Griphook’s legs are on the mend, Fleur’s given him Skele-Gro; we could probably move them in an hour or —」
+Harry:「No, I need both of them here. I need to talk to them. It’s important.」
