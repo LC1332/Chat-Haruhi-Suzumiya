@@ -13,7 +13,7 @@ def checkCharacter(configuration):
     elements = os.listdir(character_folder)
     if "system_prompt.txt" not in elements:
         # print("未找到系统提示词，请添加")
-        print("未找到系统提示词, 请添加")
+        print(f"未找到系统提示词, 请在{character_folder}中手动创建 'system_prompt.txt'文件，并设置你的prompt")
     # print(os.listdir(configuration['character_folder']))
     if "texts" not in elements:
         os.makedirs(configuration["texts_folder"])

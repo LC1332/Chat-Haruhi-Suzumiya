@@ -1,8 +1,20 @@
+import argparse
 import configparser
 import json
-import utils
+import sys
+
+sys.path.append('..')
+from src_reform import utils, checkCharacter
 import os
-from checkCharacter import checkCharacter
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(description='generate character 将台本文件保存成jsonl文件，动态创建新的角色')
+    parser.add_argument('-cn_role_name', type=str, required=True, help='Chinese role name')
+    parser.add_argument('-en_role_name', type=str, required=True, help='English role name')
+    parser.add_argument('-prompt', default=None, type=str, help='prompt file path')
+    parser.add_argument('-text_folder', required=True, type=str, help='character texts folder')
+    return parser.parse_args()
 
 
 def split_text(input_file, output_folder):
@@ -43,7 +55,7 @@ def generate_character(cn_role_name, en_role_name, prompt=None):
         config[cn_role_name]['local_model'] = "THUDM/chatglm2-6b"
         config[cn_role_name]['local_lora'] = "Jyshen/Chat_Suzumiya_GLM2LoRA"
         # 保存修改后的配置文件
-        with open('config.ini', 'w', encoding='utf-8') as config_file:
+        with open('../src_reform/config.ini', 'w', encoding='utf-8') as config_file:
             config.write(config_file)
         config.read('config.ini', encoding='utf-8')
     # 检查角色文件夹
@@ -51,11 +63,13 @@ def generate_character(cn_role_name, en_role_name, prompt=None):
     print(f"正在加载: {cn_role_name} 角色")
     for key, value in items:
         configuration[key] = value
-    print(configuration)
-    checkCharacter(configuration)
+    checkCharacter.checkCharacter(configuration)
     if prompt is not None:
+        fr = open(prompt, 'r')
         with open(os.path.join(f"../characters/{en_role_name}", 'system_prompt.txt'), 'w+', encoding='utf-8') as f:
-            f.write(prompt)
+            f.write(fr.read())
+            print("system_prompt.txt已创建")
+        fr.close()
     return configuration
 
 
@@ -87,6 +101,7 @@ class StoreData:
             for image, embed in zip(images, utils.get_embedding(self.model, images)):
                 image_embed.append({image: embed.cpu().numpy().tolist()})
             self.store(self.image_embed_jsonl_path, image_embed)
+        print(f"{self.texts_folder.split('/')[2]}角色创建成功!")
 
     def store(self, path, data):
         with open(path, 'w+', encoding='utf-8') as f:
@@ -96,34 +111,18 @@ class StoreData:
 
 
 if __name__ == '__main__':
-    # prompt = "N"
-    cn_role_name = "韦小宝"
-    en_role_name = "weixiaobao"
+    args = parse_args()
+    cn_role_name = args.cn_role_name
+    en_role_name = args.en_role_name
+    prompt = args.prompt
+    text_folder = args.text_folder
 
     # ini 生成角色配置文件
-    configuration = generate_character(cn_role_name, en_role_name)
+    configuration = generate_character(cn_role_name, en_role_name, prompt=prompt)
     # 分割文件
-    # input_file = './kunkun_all.txt'
-    # output_folder = f"../characters/{en_role_name}/texts"
-    # split_text(input_file, output_folder)
+    output_folder = f"../characters/{en_role_name}/texts"
+    split_text(text_folder, output_folder)
 
     # 存储数据
     run = StoreData(configuration)
     run.preload()
-
-
-"""
-请优化下列代码，整体思路是我需要读取selt.texts_folder 文件夹下的 若干文件并进行一定的操作后将结果写入到
-```
-title_text_embed = []
-        title_text = []
-        for file in os.listdir(self.texts_folder):
-            if file.endswith('.txt'):
-                title_name = file[:-4]
-                with open(os.path.join(self.texts_folder, file), 'r', encoding='utf-8') as fr:
-                    title_text.append(f"{title_name}link{fr.read()}")
-        for title_text, embed in zip(title_text, utils.get_embedding(self.model, title_text)):
-            title_text_embed.append({title_text: embed.cpu().numpy().tolist()})
-        self.store(self.title_text_embed_jsonl_path, title_text_embed)
-```
-"""

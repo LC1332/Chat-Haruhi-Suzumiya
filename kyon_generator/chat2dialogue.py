@@ -73,14 +73,14 @@ def merge_dialogue(dialogue_text):
 
     dialogue.append({"role": current_role, "text": current_text})  # Append the last dialogue
 
-    return {"dialogue": dialogue}
+    return {"dialogue": dialogue, "source": "synthesized"}
 
 
 def main(input_chat, role_name, other_names):
     config = configparser.ConfigParser()
     config.read("../src_reform/config.ini", encoding='utf-8')
     if role_name not in config.sections():
-        print(f"{role_name} 未创建，请创建角色后再使用，或是与config.ini 中角色一致")
+        print(f"{role_name} 角色未创建，请创建角色后再使用，或是与config.ini 中角色一致")
     else:
         # Load chat data
         chat_data = load_chat(input_chat)
