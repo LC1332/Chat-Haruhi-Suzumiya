@@ -22,6 +22,11 @@ import os
 
 # 一定要用 openai text-embedding-ada-002
 
+# 写完之后，在test_kyon_generator.ipynb中跑通
+# on the fly 增加 Hermione和Malfoy这两个人物
+
+# 然后测试通他们对应的jsonl
+
 
 def parse_args():
     parser = argparse.ArgumentParser(description='generate character 将台本文件保存成jsonl文件，动态创建新的角色')
