@@ -40,11 +40,11 @@ def save_dialogue(filename, dialogue):
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description='Chat to Dialogue Conversion')
+    parser = argparse.ArgumentParser(description='Chat to Dialogue Conversion, output_dialogue 和 input_chat 在同一路径')
     parser.add_argument('-input_chat', nargs="+", type=str, required=True, help='input chat file (jsonl)')
-    parser.add_argument('-config_role_name', nargs="+", type=str, required=True, help='role name in config.ini')
-    parser.add_argument('-text_role_name', nargs="+", type=str, required=True, help='role name in texts folder')
+    parser.add_argument('-role_name', nargs="+", type=str, required=True, help='role name')
     return parser.parse_args()
+
 
 def merge_dialogue(dialogue_text):
     dialogue_list = dialogue_text.split('\n')  # Split dialogue into lines
@@ -71,19 +71,18 @@ def merge_dialogue(dialogue_text):
 
     return {"dialogue": dialogue}
 
+
 def main(input_chat, role_name, other_names):
     config = configparser.ConfigParser()
     config.read("../src_reform/config.ini", encoding='utf-8')
     if role_name not in config.sections():
-        print(f"{role_name} 未创建，请创建角色后再使用，")
+        print(f"{role_name} 未创建，请创建角色后再使用，或是与config.ini 中角色一致")
     else:
-        sections = config.sections()
         # Load chat data
         chat_data = load_chat(input_chat)
 
         # Load config
         configuration = {}
-
 
         print(config.items)
         items = config.items(role_name)
@@ -116,8 +115,10 @@ def main(input_chat, role_name, other_names):
 if __name__ == '__main__':
     args = parse_args()
     input_chat_lis = args.input_chat
-    config_role_name_lis = args.config_role_name
-    text_role_name_lis = args.text_role_name
-    if len(input_chat_lis) == len(config_role_name_lis) == len(text_role_name_lis):
-        for input_chat, config_role_name, text_role_name in zip(input_chat_lis, config_role_name_lis, text_role_name_lis):
-            main(input_chat, config_role_name, text_role_name)
+
+    role_name_lis = args.role_name
+    if len(input_chat_lis) == len(role_name_lis):
+        for input_chat, role_name in zip(input_chat_lis, role_name_lis):
+            main(input_chat, role_name)
+    else:
+        print("input_chat 或 role_name 缺失")
