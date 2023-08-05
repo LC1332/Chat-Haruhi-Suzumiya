@@ -52,3 +52,6 @@ if __name__ == '__main__':
         crop(args)
     elif args.subcommand == 'recognize':
         recognize(args)
+
+#python yuki_builder.py whisper -input_video <input_video> -srt_folder <srt_folder>
+#python yuki_builder.py whisper -input_video /test_data/news_20s.mp4 -srt_folder /srt/result
