@@ -48,10 +48,10 @@ class video_Segmentation:
         command = ['ffmpeg', '-ss', str(start_time), '-to', str(end_time), '-i', f'{video_input}', "-vn",
                    '-c:a', 'pcm_s16le','-y',
                    audio_output, '-loglevel', 'quiet']
-        st =' '.join(command)
-        print("ffmpeg command:", st)
-        # subprocess.run(command)
-        subprocess.run(st)
+
+        subprocess.run(command)
+
+
 
     def extract_pkl_feat(self,audio_extractor, role_audios):
 
@@ -256,5 +256,3 @@ python verbose=True
         --annotate_map ./input_folder/haruhi_EP3_annotate_map.csv'
         --role_audios ./input_folder/role_audios          # Better change it to your own path
 """
-
-#
