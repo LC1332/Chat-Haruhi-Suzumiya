@@ -36,7 +36,6 @@ def get_embedding_for_english(text, model="text-embedding-ada-002"):
 
 def get_embedding(model, texts):
     if isinstance(texts, list):
-        print("len(texts)===", len(texts))
         index = random.randint(0, len(texts) - 1)
         if utils.is_chinese_or_english(texts[index]) == "chinese":
             return utils.get_embedding(model, texts), "chinese"
@@ -160,8 +159,3 @@ if __name__ == '__main__':
     # 存储数据
     run = StoreData(configuration, text_folder)
     run.preload()
-
-''''
-python generate_character.py -cn_role_name 段誉 -en_role_name duanyu -text_folder ../characters/duanyu/texts
-python generate_character.py -cn_role_name 赫敏 -en_role_name Hermione -text_folder ../characters/Hermione/texts
-'''
