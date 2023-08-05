@@ -92,7 +92,8 @@ class Video2Subtitles(object):
         os.makedirs(srt_folder, exist_ok=True)
         subtitle_file = srt_folder + "/" + pathlib.Path(input_video).stem + "." + subtitle_format
         if subtitle_format == "srt":
-            with open(subtitle_file, "w") as srt:
+            # with open(subtitle_file, "w") as srt:
+            with open(subtitle_file, "w", encoding='utf-8') as srt:
                 self.write_srt(result["segments"], file=srt)
         print("\nsubtitle_file:", subtitle_file, "\n")
         return subtitle_file

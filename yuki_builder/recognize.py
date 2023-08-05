@@ -85,7 +85,8 @@ class AudioClassification:
         return features,labels
     def save_to_csv(self,filename,data):
 
-        with open(filename, 'w', newline='') as csvfile:
+        # with open(filename, 'w', newline='') as csvfile:
+        with open(filename, 'w', newline='',encoding='utf-8') as csvfile:
             writer = csv.writer(csvfile)
             writer.writerows(data)
         print(f'识别结果保存到csv, {filename}')
@@ -161,7 +162,7 @@ def recognize(args):
 
     # checking if input_video is a file
     if not os.path.isfile(args.input_video):
-        print('input_video is not exist')
+        print('input_video {} is not exist'.format(args.input_video))
         return
     
     # checking if input_srt is a file
@@ -228,3 +229,6 @@ python verbose=True
         --role_audios ./input_folder/role_audios  # Better change it to your own path
         --output_folder ./data_crop  # You can change it to your own path
 """
+
+#python yuki_builder.py recognize -input_video <input_video> -input_srt <input_srt> -role_audios <role_audios> -output_folder <output_folder>
+#python yuki_builder.py recognize -input_video news_20s_video.mp4 -input_srt E:\projects\Chat-Haruhi-Suzumiya\yuki_builder\srt_result\news_20s.srt -role_audios role_audios -output_folder classify_result

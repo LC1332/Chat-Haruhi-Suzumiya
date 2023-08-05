@@ -219,6 +219,10 @@ class ChatGPT:
             HumanMessage(content=story)
         ]
 
+        # messages = [
+        #     SystemMessage(content=self.system_prompt)
+        # ]
+        # print("HumanMessage(content=story)===", HumanMessage(content=story))
         n = len(history_chat)
         if n != len(history_response):
             print('warning, unmatched history_char length, clean and start new chat')
@@ -233,7 +237,7 @@ class ChatGPT:
 
         # messages.append( {'role':'user', 'content':new_query })
         messages.append(HumanMessage(content=new_query))
-        print(messages)
+        print("chatGPT.py messages:", messages)
         return messages
 
     def get_response(self, user_message, chat_history_tuple):

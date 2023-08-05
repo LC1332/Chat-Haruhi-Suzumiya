@@ -10,6 +10,7 @@ import os
 import openai
 
 
+os.environ["OPENAI_API_KEY"] = "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"
 # TODO
 
 # 在这个文件中 重新实现embedding，替换 utils.get_embedding
@@ -36,6 +37,7 @@ def get_embedding_for_english(text, model="text-embedding-ada-002"):
 
 def get_embedding(model, texts):
     if isinstance(texts, list):
+        print("len(texts)===", len(texts))
         index = random.randint(0, len(texts) - 1)
         if utils.is_chinese_or_english(texts[index]) == "chinese":
             return utils.get_embedding(model, texts), "chinese"
@@ -160,3 +162,7 @@ if __name__ == '__main__':
     run = StoreData(configuration, text_folder)
     run.preload()
 
+''''
+python generate_character.py -cn_role_name 段誉 -en_role_name duanyu -text_folder ../characters/duanyu/texts
+python generate_character.py -cn_role_name 赫敏 -en_role_name Hermione -text_folder ../characters/Hermione/texts
+'''

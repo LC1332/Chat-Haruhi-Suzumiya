@@ -157,3 +157,4 @@ if __name__ == '__main__':
     srt2csv(args)
 
 #python srt2csv.py --srt_folder srt_result --input_srt ./test_data/bad_case.srt verbose=True
+#python yuki_builder.py srt2csv -input_srt ./srt_result/news_20s.srt  -srt_folder ./srt_result

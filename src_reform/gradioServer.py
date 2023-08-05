@@ -7,6 +7,9 @@ import time
 import gradio as gr
 from app import ChatPerson, ChatSystem
 from text import Text
+import os
+
+os.environ["OPENAI_API_KEY"] = "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"
 
 
 def create_gradio(chat_system):
@@ -30,6 +33,9 @@ def create_gradio(chat_system):
         # character = character.value
         print("the character is : ", character)
         input_message = role_name + ':「' + user_message + '」'
+        print("input_message====",input_message)
+        print("chat_history====",chat_history)
+
         bot_message = chat_system.getResponse(input_message, chat_history, character)
         chat_history.append((input_message, bot_message))
         # chat_system.addChatHistory(character, chat_history)
@@ -132,7 +138,7 @@ def create_gradio(chat_system):
                 generate_btn = gr.Button("生成")
 
             with gr.Column(visible=False) as chat:
-                custom_api_key = gr.Textbox(label="输入key", interactive=True, placeholder="sr-xxxxxxxx")
+                custom_api_key = gr.Textbox(label="输入key", interactive=True, placeholder="sr-xxxx")
                 image_input = gr.Textbox(visible=False)
                 japanese_input = gr.Textbox(visible=False)
                 with gr.Row():
