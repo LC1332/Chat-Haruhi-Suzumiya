@@ -28,7 +28,6 @@ def luotuo_embedding(model, texts):
     # Get the embeddings
     with torch.no_grad():
         embeddings = model(**inputs, output_hidden_states=True, return_dict=True, sent_emb=True).pooler_output
-    print(embeddings)
     return embeddings
 
 
@@ -74,4 +73,3 @@ def is_chinese_or_english(text):
         return "chinese"
     else:
         return "english"
-
