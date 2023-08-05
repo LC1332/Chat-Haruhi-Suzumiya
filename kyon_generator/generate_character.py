@@ -38,14 +38,14 @@ def get_embedding(model, texts):
     if isinstance(texts, list):
         index = random.randint(0, len(texts) - 1)
         if utils.is_chinese_or_english(texts[index]) == "chinese":
-            return utils.get_embedding(model, texts)
+            return utils.get_embedding(model, texts), "chinese"
         else:
-            return [get_embedding_for_english(text) for text in texts]
+            return [get_embedding_for_english(text) for text in texts], "english"
     else:
         if utils.is_chinese_or_english(texts) == "chinese":
-            return utils.get_embedding(model, texts)
+            return utils.get_embedding(model, texts), "chinese"
         else:
-            return get_embedding_for_english(texts)
+            return get_embedding_for_english(texts), "english"
 
 
 def parse_args():
@@ -61,7 +61,7 @@ def generate_character(cn_role_name, en_role_name, prompt=None):
     # 在config.ini中加添角色信息
     config = configparser.ConfigParser()
     # 读取配置文件
-    config.read('config.ini', encoding='utf-8')
+    config.read('../src_reform/config.ini', encoding='utf-8')
     configuration = {}
     if cn_role_name in config.sections():
         print(f"已存在{cn_role_name}角色的配置文件")
@@ -85,7 +85,7 @@ def generate_character(cn_role_name, en_role_name, prompt=None):
         config[cn_role_name]['local_model'] = "THUDM/chatglm2-6b"
         config[cn_role_name]['local_lora'] = "Jyshen/Chat_Suzumiya_GLM2LoRA"
         # 保存修改后的配置文件
-        with open('../src_reform/config.ini', 'a+', encoding='utf-8') as config_file:
+        with open('../src_reform/config.ini', 'w+', encoding='utf-8') as config_file:
             config.write(config_file)
         config.read('config.ini', encoding='utf-8')
     # 检查角色文件夹
@@ -119,8 +119,10 @@ class StoreData:
                 title_name = file[:-4]
                 with open(os.path.join(self.texts_folder, file), 'r', encoding='utf-8') as fr:
                     title_text.append(f"{title_name}link{fr.read()}")
-        for title_text, embed in zip(title_text, get_embedding(self.model, title_text)):
-            title_text_embed.append({title_text: embed.numpy().tolist()})
+        embeddings, res = get_embedding(self.model, title_text)
+        embeddings = embeddings if res == "english" else [embed.cpu().tolist() for embed in embeddings]
+        for title_text, embed in zip(title_text, embeddings):
+            title_text_embed.append({title_text: embed})
         self.store(self.title_text_embed_jsonl_path, title_text_embed)
 
         if len(os.listdir(configuration['images_folder'])) != 0:
@@ -128,8 +130,10 @@ class StoreData:
             images = []
             for file in os.listdir(self.images_folder):
                 images.append(file[:-4])
-            for image, embed in zip(images, get_embedding(self.model, images)):
-                image_embed.append({image: embed.cpu().tolist()})
+            embeddings, res = get_embedding(self.model, images)
+            embeddings = embeddings if res == "english" else [embed.cpu().tolist() for embed in embeddings]
+            for image, embed in zip(images, embeddings):
+                image_embed.append({image: embed})
             self.store(self.image_embed_jsonl_path, image_embed)
         print(f"{self.texts_folder.split('/')[2]}角色创建成功!")
 
@@ -141,6 +145,8 @@ class StoreData:
 
 
 if __name__ == '__main__':
+    # res = get_embedding_for_english("hello")
+    # print(type(res), res)
     args = parse_args()
     cn_role_name = args.cn_role_name
     en_role_name = args.en_role_name
@@ -153,3 +159,4 @@ if __name__ == '__main__':
     # 存储数据
     run = StoreData(configuration, text_folder)
     run.preload()
+

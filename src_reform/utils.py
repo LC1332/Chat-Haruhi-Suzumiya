@@ -19,23 +19,35 @@ def download_models():
     return model
 
 
-def get_embedding(model, texts):
-    model = model.to(device)
-    tokenizer = AutoTokenizer.from_pretrained("silk-road/luotuo-bert-medium")
-    # str or strList
-    texts = texts if isinstance(texts, list) else [texts]
-    # 截断
-    for i in range(len(texts)):
-        if len(texts[i]) > 510:
-            texts[i] = texts[i][:510]
+def luotuo_embedding(model, texts):
     # Tokenize the texts_source
+    tokenizer = AutoTokenizer.from_pretrained("silk-road/luotuo-bert-medium")
     inputs = tokenizer(texts, padding=True, truncation=False, return_tensors="pt")
     inputs = inputs.to(device)
     # Extract the embeddings
     # Get the embeddings
     with torch.no_grad():
         embeddings = model(**inputs, output_hidden_states=True, return_dict=True, sent_emb=True).pooler_output
+    print(embeddings)
     return embeddings
+
+
+def get_embedding(model, texts):
+    model = model.to(device)
+    # str or strList
+    texts = texts if isinstance(texts, list) else [texts]
+    # 截断
+    for i in range(len(texts)):
+        if len(texts[i]) > 510:
+            texts[i] = texts[i][:510]
+    if len(texts) >= 64:
+        embeddings = []
+        chunk_size = 64
+        for i in range(0, len(texts), chunk_size):
+            embeddings.append(luotuo_embedding(model, texts[i: i + chunk_size]))
+        return torch.cat(embeddings, dim=0)
+    else:
+        return luotuo_embedding(model, texts)
 
 
 def merge_jsonl_files(folder_path, output_file):
@@ -49,7 +61,6 @@ def merge_jsonl_files(folder_path, output_file):
 
 
 def is_chinese_or_english(text):
-    print(text)
     text = random.sample(list(text), 5)
     is_chinese = False
     for char in text:
@@ -63,3 +74,4 @@ def is_chinese_or_english(text):
         return "chinese"
     else:
         return "english"
+
