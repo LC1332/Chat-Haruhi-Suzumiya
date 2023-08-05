@@ -159,4 +159,3 @@ if __name__ == '__main__':
     # 存储数据
     run = StoreData(configuration, text_folder)
     run.preload()
-
