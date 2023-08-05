@@ -10,7 +10,6 @@ import os
 import openai
 
 
-os.environ["OPENAI_API_KEY"] = "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"
 # TODO
 
 # 在这个文件中 重新实现embedding，替换 utils.get_embedding
