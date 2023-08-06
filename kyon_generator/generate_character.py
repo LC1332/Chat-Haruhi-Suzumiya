@@ -34,10 +34,10 @@ import openai
 
 def parse_args():
     parser = argparse.ArgumentParser(description='generate character 将台本文件保存成jsonl文件，动态创建新的角色')
-    parser.add_argument('-cn_role_name', type=str, required=True, help='Chinese role name')
-    parser.add_argument('-en_role_name', type=str, required=True, help='English role name')
-    parser.add_argument('-prompt', default=None, type=str, help='prompt file path')
-    parser.add_argument('-text_folder', required=True, type=str, help='character texts folder')
+    parser.add_argument('--cn_role_name', type=str, required=True, help='Chinese role name')
+    parser.add_argument('--en_role_name', type=str, required=True, help='English role name')
+    parser.add_argument('--prompt', default=None, type=str, help='prompt file path')
+    parser.add_argument('--text_folder', type=str, help='character texts folder')
     return parser.parse_args()
 
 
@@ -127,20 +127,17 @@ class StoreData:
 
 
 if __name__ == '__main__':
-    # res = get_embedding_for_english("hello")
-    # print(type(res), res)
-    # args = parse_args()
-    # cn_role_name = args.cn_role_name
-    # en_role_name = args.en_role_name
-    # prompt = args.prompt
-    # text_folder = args.text_folder
-    cn_role_name = "邓布利多"
-    en_role_name = "Dumbledore"
-    prompt = f"../characters/{en_role_name}/system_prompt.txt"
-    text_folder = f"../characters/{en_role_name}/texts"
+    args = parse_args()
+
+    cn_role_name = args.cn_role_name
+    en_role_name = args.en_role_name
+    prompt = args.prompt if args.prompt else None
+    text_folder = args.text_folder if args.text_folder else f"../characters/{en_role_name}/texts"
+
     # ini 生成角色配置文件
-    configuration = generate_character(cn_role_name, en_role_name,  prompt=prompt)
+    configuration = generate_character(cn_role_name, en_role_name, prompt=prompt)
 
     # 存储数据
     run = StoreData(configuration, text_folder)
     run.preload()
+
