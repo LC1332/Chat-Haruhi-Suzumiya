@@ -129,7 +129,7 @@ class ChatGPT:
             计算文本列表的相似度避免重复计算query_similarity
             texts[0] = query
         """
-        query_embedding = torch.tensor(utils.get_embedding(self.model, texts)).reshape(1, -1)
+        query_embedding = torch.tensor(utils.get_embedding(self.model, texts)).reshape(1, -1).to(self.device)
         if get_image:
             jsonl = self.image_embed
         elif get_texts:
