@@ -4,8 +4,6 @@ import openai
 from transformers import AutoModel, AutoTokenizer
 import torch
 import random
-import jsonlines
-import os
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
