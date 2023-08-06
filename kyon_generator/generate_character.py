@@ -147,12 +147,15 @@ class StoreData:
 if __name__ == '__main__':
     # res = get_embedding_for_english("hello")
     # print(type(res), res)
-    args = parse_args()
-    cn_role_name = args.cn_role_name
-    en_role_name = args.en_role_name
-    prompt = args.prompt
-    text_folder = args.text_folder
-
+    # args = parse_args()
+    # cn_role_name = args.cn_role_name
+    # en_role_name = args.en_role_name
+    # prompt = args.prompt
+    # text_folder = args.text_folder
+    cn_role_name = "邓布利多"
+    en_role_name = "Dumbledore"
+    prompt = f"../characters/{en_role_name}/system_prompt.txt"
+    text_folder = f"../characters/{en_role_name}/texts"
     # ini 生成角色配置文件
     configuration = generate_character(cn_role_name, en_role_name,  prompt=prompt)
 
