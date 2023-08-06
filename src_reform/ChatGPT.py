@@ -64,7 +64,7 @@ class ChatGPT:
         self.enc = tiktoken.get_encoding("cl100k_base")
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         # 预加载jsonl文件
-        self.model = utils.model
+        self.model = utils.download_models()
         self.image_embed = None
         self.title_text_embed = None
         self.title_to_text = None
@@ -129,7 +129,7 @@ class ChatGPT:
             计算文本列表的相似度避免重复计算query_similarity
             texts[0] = query
         """
-        query_embedding = utils.get_embedding(self.model, texts)[0].reshape(1, -1)
+        query_embedding = torch.tensor(utils.get_embedding(self.model, texts)).reshape(1, -1)
         if get_image:
             jsonl = self.image_embed
         elif get_texts:
