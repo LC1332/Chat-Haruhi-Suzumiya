@@ -25,9 +25,9 @@ def process_dialogue(input_files, output_file, role, other_names):
         lines = f_read.readlines()
         last_content = ""
         for line in lines:
-            if ":" in content:
+            if ":" in line:
                 current_role = line.split(":")[0]
-            elif '：' in content:
+            elif '：' in line:
                 current_role = line.split("：")[0]
             else:
                 current_role = ""
