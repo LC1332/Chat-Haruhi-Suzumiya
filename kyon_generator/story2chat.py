@@ -25,7 +25,13 @@ def process_dialogue(input_files, output_file, role, other_names):
         lines = f_read.readlines()
         last_content = ""
         for line in lines:
-            current_role = line.split(":")[0]
+            if ":" in content:
+                current_role = line.split(":")[0]
+            elif '：' in content:
+                current_role = line.split("：")[0]
+            else:
+                current_role = ""
+            
             if current_role in other_names + [role]:
                 if not last_content == "": 
                     result.append(last_content)
