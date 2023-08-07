@@ -150,9 +150,21 @@ def main(input_chat, output_dialogue, role_name, other_names, temp_save_folder):
             for filename in os.listdir(temp_save_folder):
                 if filename.endswith('.jsonl'): 
                     filepath = os.path.join(temp_save_folder, filename)
-                    with open(filepath) as infile:
-                        for line in infile:
-                            outfile.write(line)
+
+                    # Cheng: 为了防止文件打不开，这里尝试打开三次
+                    for i in range(3):
+                        try:
+                            with open(filepath) as infile:
+                                for line in infile:
+                                    outfile.write(line)
+                            break
+                        except:
+                            if i == 2:
+                                print(f"Warning: Failed to open file {filename} after 3 attempts, skipping...")
+                    
+                    # with open(filepath) as infile:
+                    #     for line in infile:
+                    #         outfile.write(line)
 
 
 if __name__ == '__main__':
