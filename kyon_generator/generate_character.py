@@ -29,31 +29,15 @@ import openai
 # on the fly 增加 Hermione和Malfoy这两个人物
 
 # 然后测试通他们对应的jsonl
-def get_embedding_for_english(text, model="text-embedding-ada-002"):
-    text = text.replace("\n", " ")
-    return openai.Embedding.create(input=[text], model=model)['data'][0]['embedding']
 
-
-def get_embedding(model, texts):
-    if isinstance(texts, list):
-        index = random.randint(0, len(texts) - 1)
-        if utils.is_chinese_or_english(texts[index]) == "chinese":
-            return utils.get_embedding(model, texts), "chinese"
-        else:
-            return [get_embedding_for_english(text) for text in texts], "english"
-    else:
-        if utils.is_chinese_or_english(texts) == "chinese":
-            return utils.get_embedding(model, texts), "chinese"
-        else:
-            return get_embedding_for_english(texts), "english"
 
 
 def parse_args():
     parser = argparse.ArgumentParser(description='generate character 将台本文件保存成jsonl文件，动态创建新的角色')
-    parser.add_argument('-cn_role_name', type=str, required=True, help='Chinese role name')
-    parser.add_argument('-en_role_name', type=str, required=True, help='English role name')
-    parser.add_argument('-prompt', default=None, type=str, help='prompt file path')
-    parser.add_argument('-text_folder', required=True, type=str, help='character texts folder')
+    parser.add_argument('--cn_role_name', type=str, required=True, help='Chinese role name')
+    parser.add_argument('--en_role_name', type=str, required=True, help='English role name')
+    parser.add_argument('--prompt', default=None, type=str, help='prompt file path')
+    parser.add_argument('--text_folder', type=str, help='character texts folder')
     return parser.parse_args()
 
 
@@ -119,8 +103,7 @@ class StoreData:
                 title_name = file[:-4]
                 with open(os.path.join(self.texts_folder, file), 'r', encoding='utf-8') as fr:
                     title_text.append(f"{title_name}link{fr.read()}")
-        embeddings, res = get_embedding(self.model, title_text)
-        embeddings = embeddings if res == "english" else [embed.cpu().tolist() for embed in embeddings]
+        embeddings = utils.get_embedding(self.model, title_text)
         for title_text, embed in zip(title_text, embeddings):
             title_text_embed.append({title_text: embed})
         self.store(self.title_text_embed_jsonl_path, title_text_embed)
@@ -130,12 +113,11 @@ class StoreData:
             images = []
             for file in os.listdir(self.images_folder):
                 images.append(file[:-4])
-            embeddings, res = get_embedding(self.model, images)
-            embeddings = embeddings if res == "english" else [embed.cpu().tolist() for embed in embeddings]
+            embeddings = utils.get_embedding(self.model, images)
             for image, embed in zip(images, embeddings):
                 image_embed.append({image: embed})
             self.store(self.image_embed_jsonl_path, image_embed)
-        print(f"{self.texts_folder.split('/')[2]}角色创建成功!")
+        print("角色创建成功!")
 
     def store(self, path, data):
         with open(path, 'w+', encoding='utf-8') as f:
@@ -145,17 +127,17 @@ class StoreData:
 
 
 if __name__ == '__main__':
-    # res = get_embedding_for_english("hello")
-    # print(type(res), res)
     args = parse_args()
+
     cn_role_name = args.cn_role_name
     en_role_name = args.en_role_name
-    prompt = args.prompt
-    text_folder = args.text_folder
+    prompt = args.prompt if args.prompt else None
+    text_folder = args.text_folder if args.text_folder else f"../characters/{en_role_name}/texts"
 
     # ini 生成角色配置文件
-    configuration = generate_character(cn_role_name, en_role_name,  prompt=prompt)
+    configuration = generate_character(cn_role_name, en_role_name, prompt=prompt)
 
     # 存储数据
     run = StoreData(configuration, text_folder)
     run.preload()
+

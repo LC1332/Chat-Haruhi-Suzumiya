@@ -1,13 +1,8 @@
 import hashlib
-import json
-import os
-from datetime import datetime
 from zipfile import ZipFile
-import time
 import gradio as gr
 from app import ChatPerson, ChatSystem
-from text import Text
-
+import openai
 
 def create_gradio(chat_system):
     character_list = chat_system.getAllCharacters()
