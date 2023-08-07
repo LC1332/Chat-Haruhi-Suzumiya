@@ -4,9 +4,18 @@ import os
 import argparse
 import random 
 import openai
+import json
 
-api_key = "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"
-openai.api_key = api_key
+
+# {"role": "阿虚", "text": "你们相信外星人吗？我听说有五个人见过外星人","source":"synthesized"}
+
+# api_key1 = "sk-V7X5Kq1E91fkKalyQ0yxT"
+# api_key2 = "3BlbkFJSGzqxobu1DqsYGUvlCNa"
+# api_key = api_key1 + api_key2
+# api_key = "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"
+
+
+openai.api_key = "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"
 
 instruction = "You are asked to come up with a set of 10 diverse dialogues. These dialogues will be used to test a ChatBot that plays the role of {role_name} from the {world_name}. We will evaluate how well this ChatBot completes these dialogues. "
 requirements = """
@@ -79,6 +88,40 @@ def generate_examples(my_list, role_index, number):
     example_lst = [[my_list[i-1],my_list[i]] for i in random_elements]
     return example_lst
 
+def find_elements_before_marker(lst, marker):
+    result = []
+    for i in range(len(lst)):
+        if lst[i] == marker:
+            if i > 0:  # Make sure not to access an index before the start of the list
+                result.append(lst[i - 1])
+    return result
+
+def save2json(role_name, mystring, output):
+    pass
+    lines_list = mystring.splitlines()
+    r_list = find_elements_before_marker(lines_list, "ChatBot Answer:")
+    for i in r_list:
+        dialogue = i.split(":")
+        if (role_name not in dialogue[0]):
+            role = dialogue[0]
+            text = dialogue[1].replace("「","").replace("」","")
+            savejson = {"role": f"{role}", "text": f"{text}","source":"synthesized"}
+            json_string = json.dumps(savejson, ensure_ascii=False)
+            with open(output, "a") as file:
+                file.write(json_string + "\n")
+
+def remove_duplicates(file_path):
+    pass
+    seen_texts = set()
+    with open(file_path, encoding='utf-8') as f_in:
+        with open(file_path+"nodup", 'w', encoding='utf-8') as f_out:
+            for line in f_in:
+                obj = json.loads(line)
+                text = obj['text']
+                if text not in seen_texts:
+                    f_out.write(line)
+                    seen_texts.add(text)
+
 def synthesis(**params):
     pass
     if (params.get("role_name")):
@@ -102,7 +145,7 @@ def synthesis(**params):
 
     role_list = find_elements_with_prefix(merged_stories, role_name)
     random_examples = generate_examples(merged_stories, role_list, 5)
-    
+    print(random_examples)
     content = requirements
     for i in random_examples:
         if (len(i[0]) < 10 or len(i[1]) < 10):
@@ -127,10 +170,13 @@ def synthesis(**params):
         messages=[
             {"role": "system", "content": instruction},
             {"role": "user", "content": content},
-        ]
+        ],
+        temperature = 0.1
     )
-    print(result['choices'][0]['message']['content'])
-    
+    # print(result['choices'][0]['message']['content'])
+    save2json(role_name, result['choices'][0]['message']['content'], output)
+    remove_duplicates(output)
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--role_name', type=str)
@@ -140,6 +186,6 @@ if __name__ == '__main__':
     
     args = parser.parse_args()
     params_dict = vars(args)
-    
-    synthesis(**params_dict)
-    
+    for i in range(1000):
+        synthesis(**params_dict)
+    # remove_duplicates(params_dict.get("output"))
