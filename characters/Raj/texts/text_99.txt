@@ -1,0 +1,4 @@
+'''Scene''':「''Sheldon and Leonard’s apartment. Sheldon, Leonard, Howard and Raj are using laptops. All are wearing microphone headsets.''」
+Howard:「Alright, just a few more feet, and.... here we are gentlemen, the Gates of Elzebub.」
+Sheldon:「Good lord!」
+Raj:「Oooh.」

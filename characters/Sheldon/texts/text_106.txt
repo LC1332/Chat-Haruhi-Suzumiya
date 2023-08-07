@@ -1,0 +1,4 @@
+'''Scene''':「[[Apartment 4A]], Leonard is attaching something to a lamp.」
+Leonard:「Okay, the X10s are online.」
+Howard:「Gentlemen, I am now about to send a signal from this laptop through our local ISP, racing down fiber-optic cable at the speed of light to San Francisco, bouncing off a satellite in geosynchronous orbit to Lisbon, Portugal, where the data packets will be handed off to submerged transatlantic cables terminating in Halifax, Nova-Scotia, and transferred across the continent via microwave relays back to our ISP and the X10 receiver attached to this ''(clicks mouse, lamp switches on)'' lamp. ''(The others cheer and clap)''.」
+Sheldon:「Look at me, look at me, I’ve got goosebumps.」

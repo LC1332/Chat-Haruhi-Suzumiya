@@ -1,0 +1,10 @@
+'''Scene''':「''The restaurant.''」
+Raj:「I can't believe I'm sitting here next to little Lalita Gupta.」
+Lalita:「Well, you are.」
+Raj:「Little Lalita. That's kind of fun to say. Little Lalita, Little Lalita, Little Lalita, you should try it.」
+Lalita:「No, it's okay.」
+Raj:「You have lost so much weight! That must have been difficult for you because you were so, so fat! Do you remember?」
+Lalita:「Yes, I do.」
+Raj:「Of course you do. Who could forget being that fat?」
+Lalita:「Well, I’ve been trying.」
+Raj:「So you're a dental student? Hmm, are you aware that dentists have an extremely high suicide rate? Not as high as, say, air traffic controllers, but then there are far more dentists than air traffic controllers, so in pure numbers you're still winning.」

@@ -1,0 +1,16 @@
+'''Scene''':「''Apartment 4A''」
+Penny:「Good afternoon, and welcome to today's physics bowl practice round. I'm Penny, and I'll be your host, because apparently I didn't have anything else to do on a Saturday afternoon, and isn't that just a little sad? Gentlemen, are you ready?」
+Leonard:「Yes.」
+Sheldon:「Of course.」
+Howard:「Fire away. ''(Raj puts his thumb up.)''」
+Penny:「You know, it's none of my business, but isn't a guy who can't speak in front of women going to hold you back a little?」
+Leonard:「Oh, uh, he'll be okay once the women are mixed into the crowd. He only has a problem when they're one on one and smell nice.」
+Penny:「Oh, thanks Raj, it's vanilla oil.」
+Leonard:「I was actually the one who noticed, okay, let's just start.」
+Penny:「Okay, the first question is on the topic of optics. What is the shortest light pulse ever produced? Dr Cooper.」
+Sheldon:「And of course, the answer is 130 adoseconds.」
+Penny:「That is correct.」
+Leonard:「I knew that too.」
+Penny:「Good for you, sweetie. Okay, next question. What is the quantum mechanical effect used to encode data on hard disk drives? Howard.」
+Sheldon:「And of course, the answer is giant magneto resistance.」
+Penny:「Right.」

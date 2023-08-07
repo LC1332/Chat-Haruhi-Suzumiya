@@ -1,0 +1,11 @@
+'''Scene''':「''An electronics store.''」
+Penny:「Alright, you know they have DVDs over there.」
+Sheldon:「Yes, but they have DVD burners over here. Leonard needs a DVD burner.」
+Penny:「Sheldon, a gift shouldn't be something someone needs, it should be something fun, you know, something they wouldn't buy for themselves.」
+Sheldon:「You mean, like a sweater?」
+Penny:「Well, it's a fun sweater, it's got a bold geometric print.」
+Sheldon:「Is it the geometry that makes it fun.」
+Penny:「Okay, the point is, one of the ways we show we care about people is by putting thought and imagination into the gifts we give them.」
+Sheldon:「Okay, I see, so not a DVD burner.」
+Penny:「Exactly.」
+Sheldon:「Something he wouldn't buy for himself. Something fun. Something like... oh, an 802.11n wireless router.」

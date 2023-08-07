@@ -1,0 +1,42 @@
+'''Scene''':「''Leonard’s bedroom. Penny is looking through his closet.''」
+Penny:「So, how's it going with Sheldon, are you guys still not talking to each other?」
+Leonard:「Not only is he still not talking to me, but there's this thing he does where he stares at you and tries to get your brain to explode. You know, like in the classic sci-fi movie Scanners? ''(Put’s fingers to head)'' You know, bzzz-pchew! Never mind. How about this one. It says, “I know my physics, but I’m still a fun guy!”」
+Penny:「Oh, hey, I didn't know they still made corduroy suits!」
+Leonard:「They don't, that's why I saved this one.」
+Penny:「Okay, well, let's just see what else you have. Okay, here, take this, and this, and this, and these.」
+Leonard:「Is this all stuff you want me to try on?」
+Penny:「No, this is stuff I want you to throw out.」
+Leonard:「Oh.」
+Penny:「Seriously, don't even give it to charity, you won't be helping anyone. What's this.」
+Leonard:「Oh, that's the bottled city of Kandor.」
+Penny:「Uh-huh.」
+Leonard:「You see, Kandor was the capital city of the planet Krypton, it was miniaturised by Brainiac before Krypton exploded and then rescued by Superman.」
+Penny:「Oh, nice.」
+Leonard:「It's a lot cooler when girls aren't looking at it.」
+Penny:「Here, why don't you put these on while I find a shirt and sport-coat to match.」
+Leonard:「Great, be right back.」
+Penny:「Well, where you going, just put them on.」
+Leonard:「Here?」
+Penny:「Oh, are you shy?」
+Leonard:「No, I'm not shy.」
+Penny:「Don't worry, I won't look.」
+Leonard:「I know you won't look, why would you look, there's nothing to see, well, not nothing....」
+Penny:「Sweetie, put the pants on.」
+Leonard:「Putting them on.」
+Penny:「So, you know, isn't there maybe some way you and Sheldon could compromise on this whole presentation thing.」
+Leonard:「No. No. Scientists do not compromise. Our minds are trained to synthesize facts and come to inarguable conclusions. Not to mention, Sheldon is batcrap crazy.」
+Penny:「What is this?」
+Leonard:「Oh, careful. That's my original series "[[Battlestar Galatica]]" flight suit.」
+Penny:「Oh, why didn't you wear it at Halloween?」
+Leonard:「Because it's not a costume, it's a flight suit.」
+Penny:「Okay, alright, moving on, oh, wow, a paisley shirt.」
+Leonard:「Uh-huh, it goes with my corduroy suit.」
+Penny:「If you mean it should end up in the same place then, I agree. Is this your... your only tie?」
+Leonard:「Ah. Technically yes, but, if you'll notice, it's reversible. So it works as two.」
+Penny:「Oh, sweetie, I don't think it even works as one. Is this all your clothes?」
+Leonard:「Yeah. Everything since the eighth grade.」
+Penny:「The... the eighth grade?」
+Leonard:「My last growth spurt.」
+Penny:「Okay, well, I guess we’re back to the corduroy suit.」
+Leonard:「Great.」
+Penny:「Yup. ''(Leonard picks up paisley shirt)'' I said no, put it down.」

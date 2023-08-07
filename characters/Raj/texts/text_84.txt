@@ -1,0 +1,5 @@
+'''Scene''':「''A corridor at [[Caltech]].''」
+Leonard:「On the other hand, some physicists are concerned that if the super collider actually works, it will create a black hole and swallow up the Earth ending life as we know it.」
+Raj:「Psh, what a bunch of crybabies. No guts, no glory man.」
+Leonard:「''(Looking at an orange notice on the noticeboard)'' Hey, check it out, the school of pharmacology is looking for volunteers.」
+Raj:「We are testing a new medication for social anxiety, panic attacks, agoraphobia and obsessive compulsive disorder. Why would they be looking for test subjects here?」

@@ -1,0 +1,39 @@
+'''Scene''':「''[[The laundry room]]. Sheldon is folding shirts.''」
+Penny:「''(Entering)'' Hi.」
+Sheldon:「Oh, hi Penny. FYI, the hot water is inadequate on machine 2 so colors only, and 4 is still releasing the fabric softener too early in the cycle so I'd avoid using that for your delicates.」
+Penny:「''(Tipping all her laundry into one machine at once)'' Thanks.」
+Sheldon:「Oh, good Lord. Why don't you just take your clothes down to the river and beat them with a rock?」
+Penny:「Sheldon, may I ask you a question?」
+Sheldon:「I would prefer that you not, but I won't go so far as to forbid it.」
+Penny:「Alright, I heard yes, so... okay, here's my question, has Leonard ever dated, you know, a regular girl.」
+Sheldon:「Well I assume you're not referring to digestive regularity? Because I’ve come to learn that such inquiries are inappropriate.」
+Penny:「No, I meant has he ever been involved with someone who wasn't a braniac?」
+Sheldon:「Oh. Well, a few years ago he did go out with a woman who had a PhD in French Literature.」
+Penny:「How is that not a braniac?」
+Sheldon:「Well, for one thing, she was French. For another, it was literature.」
+Penny:「So, do you think that if Leonard and I keep dating he'll eventually get bored with me.」
+Sheldon:「That depends.」
+Penny:「On what?」
+Sheldon:「Do you have a working knowledge of quantum physics?」
+Penny:「No.」
+Sheldon:「Do you speak Klingon?」
+Penny:「No.」
+Sheldon:「Do you know any card tricks?」
+Penny:「Okay, okay, you know, I get it, Leonard has no business being involved with a waitress slash actress who felt so insecure that she lied to him about finishing community college.」
+Sheldon:「Why would you lie about that?」
+Penny:「Well, he was going on and on about this college and that grad school and I didn't want him to think I was some stupid loser.」
+Sheldon:「You thought the opposite of stupid loser was community college graduate?」
+Penny:「You know, there are a lot of successful people in this country who are community college graduates.」
+Sheldon:「Yeah, but you were neither.」
+Penny:「Right, okay look, this is between you and me, you cannot tell Leonard any of this.」
+Sheldon:「You're asking me to keep a secret?」
+Penny:「Yeah.」
+Sheldon:「Well I'm sorry, but you would have had to express that desire before revealing the secret, so that I could choose whether or not I wanted to accept the covenant of secret keeping. You can't impose a secret on an ex post facto basis.」
+Penny:「What?」
+Sheldon:「Secret keeping is a complicated endeavour. One has to be concerned not only about what one says, but about facial expression, autonomic reflexes, when I try to deceive, I myself have more nervous tics than a lyme disease research facility. ''(Long pause.)'' It's a joke. It relies on the homonymic relationship between “tick”, the blood-sucking arachnid, and “tic”, the involuntary muscular contraction. I made it up myself.」
+Penny:「Okay, look, if Leonard finds out that I lied, I will absolutely die of embarrassment.」
+Sheldon:「Physiologically impossible.」
+Penny:「Oh Sheldon, please, look, I'm asking you as a friend.」
+Sheldon:「So you're saying that friendship contains within it an inherent obligation to maintain confidences?」
+Penny:「Well, yeah.」
+Sheldon:「Interesting. See, one more question, and perhaps I should have led with this, when did we become friends?」

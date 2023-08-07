@@ -1,0 +1,8 @@
+'''Scene''':「''Penny’s apartment. Sheldon and Leonard are trying to construct furniture.''」
+Leonard:「Six two inch dowels.」
+Sheldon:「Check.」
+Leonard:「One package, Phillips head screws.」
+Sheldon:「Check.」
+Penny:「You guys, seriously, I grew up on a farm, okay, I rebuilt a tractor engine when I was like twelve, I think I can put together a cheap Swedish media centre.」
+Leonard:「No, please, we insist, it’s the least we can do considering.」
+Sheldon:「Considering what? How great this place looks?」

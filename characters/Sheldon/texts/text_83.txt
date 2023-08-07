@@ -1,0 +1,12 @@
+'''Scene''':「''A Chinese restaurant.''」
+Sheldon:「I'm sorry, we cannot do this without Wolowitz.」
+Leonard:「We can't order Chinese food without Wolowitz?」
+Sheldon:「Let me walk you through it, our standard is, the steamed dumpling appetizer, General Tso's chicken, beef with broccoli, shrimp with lobster sauce and vegetable lo-mein. Do you see the problem?」
+Leonard:「I see ''a'' problem.」
+Sheldon:「Our entire order is predicated on four dumplings and four entrees divided amongst four people.」
+Leonard:「So, we'll just order three entrees.」
+Sheldon:「Fine, what do you want to eliminate, and who gets the extra dumpling?」
+Raj:「We could cut it into thirds.」
+Sheldon:「Then it is no longer a dumpling. Once you cut it open, it is at best a very small open-faced sandwich.」
+[[Chen]]:「Hi fellas. Oh, where's your annoying little friend who thinks he speaks Mandarin?」
+Sheldon:「He's putting his needs ahead of the collective good. ''(Pointing at waiter)'' Where he comes from, that's punishable by death.」

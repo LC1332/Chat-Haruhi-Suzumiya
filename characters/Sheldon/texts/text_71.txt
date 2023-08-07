@@ -1,0 +1,8 @@
+'''Scene''':「The apartment, there is a knock on the door.」
+Sheldon:「Coming. ''(Opens door to Howard.)''」
+Howard:「Hey, have you seen Koothrapali?」
+Sheldon:「He's not here. Maybe the Avenger summoned him.」
+Howard:「He's not the Marvel comic story, he's the original Norse God.」
+Sheldon:「Thank you for the clarification.」
+Howard:「I'm supposed to give him a ride home.」
+Sheldon:「Well I'm sure he'll be fine. He has his hammer.」

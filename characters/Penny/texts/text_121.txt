@@ -1,0 +1,14 @@
+'''Scene''':「''The stairwell of the apartment building.''」
+Penny:「Are you sure you don't want to go to the emergency room?」
+Leonard:「No, no, I'm okay, it's stopped bleeding.」
+Penny:「I know, but you did throw up. Isn't that a sign of a concussion?」
+Leonard:「Yes, but I get car sick too, so...」
+Penny:「Okay.」
+Leonard:「Sorry about your car, by the way.」
+Penny:「Oh, no, it's fine, you got most of it out the window.」
+Leonard:「The poor guy on the bike. I had a nice time.」
+Penny:「Yeah, me too. Well, um, good night. ''(Leonard turns across hallway.)'' Leonard?」
+Leonard:「Yeah.」
+Penny:「Was this supposed to be a date?」
+Leonard:「This? No. No, of course not, this was just you and me hanging out with a bunch of guys who didn't show up, because of work and a colonoscopy.」
+Penny:「Okay, I was just checking.」

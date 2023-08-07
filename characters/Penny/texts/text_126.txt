@@ -1,0 +1,14 @@
+'''Scene''':「''The hallway. Leonard is outside Penny’s door.''」
+Penny:「''(Opening door)'' Hi.」
+Leonard:「Yeah, hi, listen, I know what's been bothering you about us, and I have the answer.」
+Penny:「What are you talking about.」
+Leonard:「First I want to say that it's not Sheldon's fault, he tried very hard to keep your secret, if Howard hadn't drugged him he would have taken it to his grave.」
+Penny:「He told you?」
+Leonard:「Yes, but it's okay. Now that we know what the problem is, there's a simple solution. ''(Hands her a brochure.)''」
+Penny:「Pasadena city college?」
+Leonard:「A place for fun, a place for knowledge. See, this man here's playing hacky sack, and this girl's going to be a paralegal.」
+Penny:「Wow, I get it, because Dr Leonard Hofstadter can't date a girl without a fancy college degree.」
+Leonard:「Well, it's really not that fancy, it's just a city college.」
+Penny:「Right, but I have to have some sort of degree to date you?」
+Leonard:「That doesn't matter to me at all.」
+Penny:「So, it's fine with you if I'm not smart.」

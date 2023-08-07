@@ -1,0 +1,30 @@
+'''Scene''':「''Outside Leonard’s bedroom.''」
+Sheldon:「''(Knock, knock, knock, knock)'' Leonard, ''(Knock, knock, knock, knock)'' Leonard, ''(Knock, knock, knock, knock)'' Leonard...」
+Leonard:「What?」
+Sheldon:「I need to speak to you.」
+Leonard:「It's two o’clock in the morning」
+Sheldon:「It's important.」
+Leonard:「I highly doubt that. Go away. ''(Long pause)''. Are you still out there?」
+Sheldon:「Yes.」
+Leonard:「''(Opening door)'' What?」
+Sheldon:「You're right, it can wait until morning.」
+Leonard:「''(Following Sheldon into living room)'' What, what, what, what, what?」
+Sheldon:「Never mind. I clearly woke you up in the middle of a REM cycle, you're in no state to talk.」
+Leonard:「Sheldon, what is it?」
+Sheldon:「I'm uncomfortable having been included in your lie to Penny.」
+Leonard:「What was I supposed to say.」
+Sheldon:「You could have told her the truth.」
+Leonard:「That would have hurt her feelings.」
+Sheldon:「Is that a relevant factor?」
+Leonard:「Yes.」
+Sheldon:「Then I suppose you could have agreed to go.」
+Leonard:「And what would I have said afterwards?」
+Sheldon:「I would suggest something to the effect of, singing is neither an appropriate vocation nor avocation for you, and if you disagree, I'd recommend you have a CAT scan, to look for a tumour pressing on the cognitive processing center of your brain.」
+Leonard:「I couldn't say that, I would have to say, you were terrific and I can't wait to hear you sing again.」
+Sheldon:「Why?」
+Leonard:「It's the social protocol, it's what you do when you have a friend who's proud of something they really suck at.」
+Sheldon:「I was not aware of that.」
+Leonard:「Well now you are.」
+Sheldon:「Oh, alright. Leonard.」
+Leonard:「Yes.」
+Sheldon:「When we played chess earlier, you were terrific and I can't wait to play you again. Goodnight.」

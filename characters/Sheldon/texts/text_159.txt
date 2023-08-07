@@ -1,0 +1,26 @@
+'''Scene''':「''The same, later. Sheldon is on his laptop. Leonard enters.''」
+Sheldon:「Leonard, excellent, I want to show you something.」
+Leonard:「Can it wait, I need to talk to you.」
+Sheldon:「Just look. I’ve designed the perfect uniforms for our team. The colors are based on Star Trek, the original series. The three of you will wear support red, and I will wear command gold.」
+Leonard:「Why do they say AA?」
+Sheldon:「Army Ants.」
+Leonard:「Isn't that confusing? AA might mean something else to certain people.」
+Sheldon:「Why would a physics bowl team be called anodised aluminum?」
+Leonard:「No, I meant.... never mind. Hey, check it out. I got you a Batman cookie jar!」
+Sheldon:「Oh neat, what's the occasion?」
+Leonard:「Well, you're a friend, and you like Batman, and cookies, and you're off the team.」
+Sheldon:「What?」
+Leonard:「Howard, Raj and I just had a team meeting.」
+Sheldon:「No you didn't.」
+Leonard:「Yes we did, I just came from it.」
+Sheldon:「Okay, I don't know where you just came from, but it couldn't have been a team meeting because I'm on the team and I wasn't there, ergo the team did not meet.」
+Leonard:「Okay, let me try it this way, uh, I was at a coffee klatch with a couple of friends and one thing led to another and it turns out you're off the team.」
+Sheldon:「Why?」
+Leonard:「Because you're taking all the fun out of it.」
+Sheldon:「Well, I'm sorry, is the winner of the physics bowl the team that has the most fun?」
+Leonard:「Okay, let me try it this way, you're annoying and no-one wants to play with you any more.」
+Sheldon:「I see. Well. At this point I should inform you that I intend to form my own team and destroy the molecular bonds that bind your very matter together, and reduce the resulting particulate chaos to tears.」
+Leonard:「Thanks for the heads up.」
+Sheldon:「You're welcome. One more thing.」
+Leonard:「Yes.」
+Sheldon:「It's on, bitch.」

@@ -1,0 +1,25 @@
+'''Scene''':「''Sheldon and Leonard’s living room, morning. Sheldon enters, singing to himself.''」
+Sheldon:「Morning.」
+Leonard:「Morning.」
+Sheldon:「I have to say, I slept splendidly. Granted, not long, but just deeply and well.」
+Leonard:「I'm not surprised. A well known folk cure for insomnia is to break into your neighbour's apartment and clean.」
+Sheldon:「Sarcasm?」
+Leonard:「You think?」
+Sheldon:「Granted, my methods may have been somewhat unorthodox, but I think the end result will be a measurable enhancement of Penny's quality of life.」
+Leonard:「You know what, you've convinced me, maybe tonight we should sneak in and shampoo her carpet.」
+Sheldon:「You don't think that crosses a line?」
+Leonard:「Yes! For God's sake, Sheldon, do I have to hold up a sarcasm sign every time I open my mouth.」
+Sheldon:「You have a sarcasm sign?」
+Leonard:「No, I do not have a sarcasm sign.」
+Sheldon:「Do you want some cereal. I'm feeling so good today I'm going to choose from the low fibre end of the shelf. Hello, Honey Puffs.」
+Penny:「align="left" |''(Voice off)'' Son of a Bitch!」
+Leonard:「Penny's up.」
+Penny:「''(Voice off)'' You sick, geeky bastards!」
+Leonard:「How did she know it was us?」
+Sheldon:「I may have left a suggested organizational schematic for her bedroom closet.」
+Penny:「align="left" |''(Voice off)'' Leonard!」
+Leonard:「God, this is going to be bad.」
+Sheldon:「Goodbye, Honey Puffs, hello Big Bran.」
+Penny:「''(Entering)'' You came into my apartment last night when I was sleeping?」
+Leonard:「Yes, but, only to clean.」
+Sheldon:「Really more to organize, you're not actually dirty, per se.」
