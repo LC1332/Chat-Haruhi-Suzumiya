@@ -1,0 +1,22 @@
+'''Scene''':「''The same, later that night''」
+Sheldon:「Hey.」
+Leonard:「Hey.」
+Sheldon:「I’ve decided you're right. My career is not over.」
+Leonard:「Great.」
+Sheldon:「But, since the arrival of Dennis Kim has rendered my research pointless, I just have to find something else to focus on.」
+Leonard:「Great.」
+Sheldon:「So I’ve decided, I'm going to collaborate with you.」
+Leonard:「Great.」
+Sheldon:「What exactly is it you do? I know you chatter on about it all the time, but I’ve never really paid attention.」
+Leonard:「Okay, well, right now I'm designing an experiment to study the soft component of cosmic radiation at sea-level, but I really don't need any help.」
+Sheldon:「Oh, sure you do. Now, see, what's this here in the schematic, is that a laser array?」
+Leonard:「Yes.」
+Sheldon:「No. Hmmm. What happens if you use argon lasers instead of helium neon?」
+Leonard:「It would blow up.」
+Sheldon:「Are you sure?」
+Leonard:「Pretty sure.」
+Sheldon:「Pretty sure's not very scientific, is this how you normally work, just hunches and guesses and stuff?」
+Leonard:「Okay, Sheldon, I understand that you're going through a bit of a career crisis, you're searching for some other area where you can feel valuable and productive but I need to tell you something and I want you to listen carefully.」
+Sheldon:「Alright.」
+Leonard:「Go away.」
+Sheldon:「If you're concerned about sharing credit with me, you're name can go first... I'm going.」

@@ -1,0 +1,30 @@
+'''Scene''':「''The hallway, Sheldon scuttles out of apartment door and crosses to Penny’s. Knocks on it urgently.''」
+Penny:「''(Opening door)'' Oh, hey Sheldon, what's going on?」
+Sheldon:「I need your opinion on a matter of semiotics.」
+Penny:「I'm sorry?」
+Sheldon:「Semiotics, the study of signs and symbols &ndash; it's a branch of philosophy related to linguistics.」
+Penny:「Okay, sweetie, I know you think you're explaining yourself, but you're really not.」
+Sheldon:「Just come with me.」
+Sheldon:「Well?」
+Penny:「Well what?」
+Sheldon:「What does it mean?」
+Penny:「Oh, come on, you went to college.」
+Sheldon:「Yes, but I was eleven.」
+Penny:「Alright, look, a tie on the doorknob usually means someone doesn't want to be disturbed because they're, you know, getting busy.」
+Sheldon:「So you're saying Leonard has a girl in there.」
+Penny:「Well, either that or he's lost his tie rack and gotten really into Bryan Adams.」
+Lesley:「''(Voice off)'' Oh Leonard, you magnificent beast.」
+Penny:「We really shouldn't be standing here.」
+Sheldon:「''(Entering living room)'' This is very awkward.」
+Penny:「Oh, come on, you know, Leonard's had girls over before, right?」
+Sheldon:「Oh, yes, but there's usually planning, courtship and advance notice. Last time I was able to book a cruise to the Arctic to see a solar eclipse.」
+Penny:「Wait, you had to leave the state because your roommate was having sex?」
+Sheldon:「I didn't have to, the dates just happened to coincide.」
+Penny:「So, do you know who's in there?」
+Sheldon:「Well, there's Leonard. ''(Picking up violin case)'' And he's either with Lesley Winkle or a 1930s gangster.」
+Penny:「Hmmm. Good for him. Good for Leonard. Okay, night.」
+Sheldon:「No, no, wait, hold on.」
+Penny:「What's the matter?」
+Sheldon:「I don't know what the protocol is here. Do I stay, do I leave? Do I wait to greet them with a refreshing beverage?」
+Penny:「Gee, Sheldon, you're asking the wrong girl. I'm usually on the other side of the tie.」
+Sheldon:「Hi, Leonard. It's me, Sheldon. In the living room. I just, I wanted you to know I saw the tie. Message received. You're welcome. You carry on. Give my best to Lesley.」

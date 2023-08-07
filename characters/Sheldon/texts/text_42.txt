@@ -1,0 +1,7 @@
+'''Scene''':「''The department party. Sheldon, Raj and Leonard are at the buffet table.''」
+Raj:「Oh, God, Look at this buffet. I love America.」
+Leonard:「You don't have buffets in India?」
+Raj:「Of course, but it's all Indian food. You can't find a bagel in Mumbai to save your life. Schmear me.」
+Sheldon:「Well here's an interesting turn of events.」
+Leonard:「What. ''(Sees Howard entering with a statuesque blonde)'' Howard brought a date?」
+Sheldon:「A more plausible explanation is that his work in robotics has made an amazing leap forward.」

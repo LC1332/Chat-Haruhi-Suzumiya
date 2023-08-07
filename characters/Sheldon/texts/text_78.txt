@@ -1,0 +1,7 @@
+'''Scene''':「''The following morning. Sheldon is in the kitchen making breakfast. He crosses to the couch, sees Penny sleeping there, looks lost. He is about to sit down by Penny's head when Leonard enters.''」
+Leonard:「What are you doing?」
+Sheldon:「Every Saturday since we have lived in this apartment, I have awakened at 6:15, poured myself a bowl of cereal, added a quarter cup of 2% milk, sat on this end of this couch, turned on [[BBC America]] and watched Doctor Who.」
+Leonard:「Penny's still sleeping.」
+Sheldon:「Every Saturday since we have lived in this apartment, I have awakened at 6:15, poured myself a bowl of cereal...」
+Leonard:「I know, I know, look, you have a TV in your room, why don't you just have breakfast in bed?」
+Sheldon:「Because I am neither an invalid nor a woman celebrating Mother's Day.」

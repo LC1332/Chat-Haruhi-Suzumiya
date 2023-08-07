@@ -1,0 +1,34 @@
+'''Scene''':「''The ground floor hallway.''」
+Penny:「Hey Sheldon!」
+Sheldon:「''(Unlocking his mailbox)'' Hello Penny.」
+Penny:「Get anything good?」
+Sheldon:「Uh, just the latest copy of Applied Particle Physics Quarterly.」
+Penny:「Oh, you know, that is so weird that yours came and mine didn't. ''(Sheldon looks confused)''. It was a joke. ''(Sheldon gives a fake laugh.)'' Yup, tip your waitresses, I'm here all week.」
+Sheldon:「Penny, just to save you from further awkwardness know that I'm perfectly comfortable with the two of us climbing the stairs in silence.」
+Penny:「Oh yeah, me too. Zip it, lock it. ''(The begin to climb)'' Put it in your pocket. So you and Leonard...」
+Sheldon:「Oh dear God!」
+Penny:「Little misunderstanding, huh.」
+Sheldon:「A little misunder.... Galileo and the Pope had a little misunderstanding.」
+Penny:「Anyway, I was talking to Leonard this morning and I think he feels really bad about it.」
+Sheldon:「Huh.」
+Penny:「Well how do you feel?」
+Sheldon:「I don't understand the question.」
+Penny:「Well I'm just asking if it's difficult to be fighting with your best friend.」
+Sheldon:「Oh. I hadn't thought about it like that. I wonder if I’ve been experiencing physiological manifestations of some sort of unconscious emotional turmoil.」
+Penny:「Wait... what?」
+Sheldon:「I couldn't poop this morning.」
+Penny:「You should just talk to him, I'm sure you guys can work this out.」
+Sheldon:「It's certainly preferable to my plan.」
+Penny:「Which was?」
+Sheldon:「A powerful laxative.」
+Penny:「Okay, so you absolutely should talk to him, look, I know Leonard values you as a friend, and he told me himself that without your little idea there's no way he could have come up with this whole experiment thing.」
+Sheldon:「Excuse me, little idea?」
+Penny:「Yeah, I mean he tried to explain it to me, I didn't really understand it but...」
+Sheldon:「Of course you didn't, he said little idea?」
+Penny:「Uh, well no, no, not in... not in those words.」
+Sheldon:「In what words then, exactly」
+Penny:「Um, gee, the exact words aren't written... it's more the spirit in which it's」
+Sheldon:「What did he say?」
+Penny:「You had a lucky hunch.」
+Leonard:「''(Coming out of apartment)'' Hey, Sheldon, I’ve been thinking, instead of arguing about this why don't....」
+Sheldon:「Don't you ever speak to me again.」

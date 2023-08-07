@@ -1,0 +1,22 @@
+'''Scene''':「The apartment. Leonard is dressed smartly and placing wine on the table. Sheldon enters.」
+Sheldon:「Great news. My mom sent me my old Nintendo 64.」
+Leonard:「Terrific.」
+Sheldon:「You know what this means, don't you? Break out the Red Bull, it's time to rock [[Mario]] old school.」
+Leonard:「I kind of have other plans tonight.」
+Sheldon:「But it's Friday. Friday's always vintage game night. Look, mom included the memory card, we can pick up where I left off in 1999 when I had pernicious anaemia.」
+Leonard:「Well, the thing is, someone's coming over.」
+Sheldon:「Well then, no problem, I have three controllers, the more the merrier.」
+Leonard:「Sheldon, it's a date, I have a date coming over.」
+Sheldon:「Oh, well you can't blame me for not jumping to that conclusion.」
+Leonard:「Why, what's so unusual about me having a date?」
+Sheldon:「Well, statistically speaking...」
+Leonard:「Alright, alright. Well, uh, nevertheless, I have one now and I would appreciate it if you would, you know, make yourself scarce.」
+Sheldon:「Leonard, I am a published theoretical physicist with two doctorates and an IQ which can't be accurately measured by normal tests, how much scarcer could I be?」
+Leonard:「You know what I mean, could you just give us a little privacy?」
+Sheldon:「You want me to leave the apartment?」
+Leonard:「Yes.」
+Sheldon:「You mean just go someplace else and be... someplace else?」
+Leonard:「Yes.」
+Sheldon:「Well, why should I leave, this is my apartment too.」
+Leonard:「I know it is, and if science ever discovers a second member of your species and you two would like some privacy I would be more than happy to get out of your way.」
+Sheldon:「Well alright then.」

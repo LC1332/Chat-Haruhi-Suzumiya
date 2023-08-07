@@ -1,0 +1,5 @@
+'''Scene''':「''Leonard approaches Penny’s door and knocks.''」
+Leonard:「Penny, are you okay?」
+Penny:「''(Voice off)'' I'm fine, Leonard, just go away.」
+Leonard:「Look, I understand that breaking up with someone can be very painful....」
+Penny:「GO AWAY!」

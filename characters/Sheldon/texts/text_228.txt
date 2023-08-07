@@ -1,0 +1,4 @@
+'''Scene''':「''The apartment, Leonard enters.''」
+Sheldon:「So, how was your date?」
+Leonard:「Awesome!」
+Sheldon:「Score one for liquor and poor judgement.」

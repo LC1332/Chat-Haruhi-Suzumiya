@@ -1,0 +1,4 @@
+'''Scene''':「''A corridor at a sperm bank. ''」
+Sheldon:「So if a photon is directed through a plane with two slits in it and either slit is observed, it will not go through both slits. If it's unobserved it will, however, if it's observed after it's left the plane but before it hits its target, it will not have gone through both slits.」
+Leonard:「Agreed, what's your point?」
+Sheldon:「There's no point, I just think it's a good idea for a tee-shirt.」

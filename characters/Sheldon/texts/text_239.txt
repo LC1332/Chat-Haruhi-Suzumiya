@@ -1,0 +1,8 @@
+'''Scene''':「''Howard’s bedroom. Howard is in bed, Sheldon is on a blow up mattress on the floor.''」
+Sheldon:「I’ve never slept on an air mattress before. No lumbar support whatsoever.」
+Howard:「Maybe you'd be happier on a park bench?」
+Sheldon:「I don't see any way to get a park bench in here.」
+Howard:「Do you want to switch?」
+Sheldon:「No, that's fine. I'm perfectly comfortable sleeping on a bouncy castle.」
+Howard:「Get out of bed, we’re switching.」
+Sheldon:「Now, only if you want to.」

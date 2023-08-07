@@ -1,0 +1,16 @@
+'''Scene''':「''A corridor at the conference. Penny is attaching Leonard’s name tag.''」
+Penny:「There you go.」
+Leonard:「You're right, this side does look better.」
+Penny:「No, no, I didn't say better, I said less stained.」
+Howard:「I just checked the house, there's probably twenty, twenty-five people in there.」
+Leonard:「You're kidding.」
+Penny:「Is that all?」
+Leonard:「All? In particle physics, twenty five is Woodstock.」
+Penny:「Oh, well, then good!」
+Leonard:「I wasn't expecting such a crowd, I'm a little nervous.」
+Howard:「It's okay, just open with a joke, you'll be fine.」
+Leonard:「A joke. Okay. How about this, um, okay, uh there's this farmer, and he has these chickens, but they won't lay any eggs. So, he calls a physicist to help. The physicist then does some calculations, and he says, um, I have a solution, but it only works with spherical chickens in a vacuum. ''(Raj and Howard laugh.)'' Right?」
+Penny:「Oh, sorry, I’ve just, I’ve heard it before.」
+Howard:「Let's roll. Hey, nice suit.」
+Leonard:「It's a classic, right?」
+Penny:「I really should have brought my own car.」

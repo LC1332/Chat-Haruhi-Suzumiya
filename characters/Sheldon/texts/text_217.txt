@@ -1,0 +1,52 @@
+'''Scene''':「''The lobby. Sheldon is listening to an iPod.''」
+Sheldon:「Show me your citrus peels. Gei wo kan, ni jud di zi pei. Show me your citrus peels. Gei wo kan, ni jud di zi pei. Show me your...」
+Penny:「''(Tapping him on the shoulder)'' Sheldon.」
+:「''(Jumping in panic)'' Aieee ya! Xia si wo le.」
+Penny:「I'm sorry. Look, do you have a second.」
+Sheldon:「A second what? Pair of underwear?」
+Penny:「I was just wondering if I could talk to you? It's about Leonard.」
+Sheldon:「Why me? Why not Koothrappali or Wolowitz?」
+Penny:「Well, Raj can't talk to me unless he's drunk, and Wolowitz is, you know, disgusting.」
+Sheldon:「Yes, I suppose he is.」
+Penny:「All I'm saying is, you know Leonard the best.」
+Sheldon:「Not necessarily. I'm often surprised by my lack of familiarity with Leonard. Just the other day I discovered, he not only has a loofah, he hides it. Why do you suppose a man would be ashamed of having a loofah? I myself prefer to have my excess epithelial cells slough off naturally, but I don't condemn those who seek to accelerate the process.  ''(Time shift)'' And until recently I had no idea that despite his lactose intolerance, he can tolerate small amounts of non-fat ice cream without producing a noxious gas that I maintain in the right concentration could be weaponized. ''(Begins to unlock apartment door.)''」
+Penny:「Leonard might come home, can we talk in my apartment.」
+Sheldon:「We’re not done?」
+Penny:「No.」
+Sheldon:「Ach, why not? We’re already through the looking glass anyway.」
+Penny:「Okay, so, here's the thing. I guess you're aware that Leonard asked me out.」
+Sheldon:「Well, he didn't actually say anything, but when he came back to the apartment he was doing a dance that brought to mind the happy hippos in Fantasia.」
+Penny:「Oh, that's nice. Anyhow, the thing I wanted to talk to you about is, you know, since Leonard and I have become friends, I was just... want to sit down?」
+Sheldon:「Oh, I wish it were that simple. You see, I don't spend much time here and so I’ve never really chosen a place to sit.」
+Penny:「Well, choose.」
+Sheldon:「There are a number of options and, I'm really not familiar enough with the cushion densities, air flow patterns and dispersion of sunlight to make an informed choice.」
+Penny:「Alright, why don't you just pick one at random, and then if you don't like it you can sit somewhere else next time.」
+Sheldon:「No, no, that's crazy. You go ahead and talk while I figure it out.」
+Penny:「Okay. Um, here's the thing. So, I’ve known for a while now that Leonard has had a little crush on me...」
+Sheldon:「A little crush? Well I suppose so, in the same way Menelaus had a little crush on Helen of Troy.」
+Penny:「Alright, yeah, I don't really know who they are...」
+Sheldon:「Well Menelaus was the brother of Agamemnon...」
+Penny:「Yeah, I don't care, I don't care. The point is Leonard isn't the kind of guy I usually go out with.」
+Sheldon:「Leonard isn't the kind of guy anyone usually goes out with. Would you be open to rotating the couch clockwise thirty degrees?」
+Penny:「No. What I'm saying is, Leonard might be different in a good way. Obviously my usual choices have not worked out so well.」
+Sheldon:「The last one worked out well for Koothrappali. He got a free iPod. Oh, glare!」
+Penny:「But on the other hand, if things don't go well with Leonard, I risk losing a really good friend. I mean, I guess he's not looking for a fling, he's the kind of guy that gets into a relationship for, I don't know, like you would say light years.」
+Sheldon:「I would not say that. No-one would say that, a light year is a unit of distance, not time.」
+Penny:「Thank you for the clarification.」
+Sheldon:「Draft. You see people hear the word year and they think duration. Foot pound has the same problem, that's a unit of work, not of weight.」
+Penny:「Right, thanks.」
+Sheldon:「It's a common mistake.」
+Penny:「Not the first one I’ve made today.」
+Sheldon:「Okay. I think this will be my seat.」
+Penny:「Sheldon, do you have anything to say that has anything to do with, you know, what I'm talking about.」
+Sheldon:「Well, let's see. We might consider Schrödinger's Cat.」
+Penny:「Schrödinger? Is that the woman in 2A?」
+Sheldon:「No. That's Mrs Grossinger. And she doesn't have a cat, she has a Mexican hairless, annoying little animal, yip yip yip yip...」
+Penny:「Sheldon!」
+Sheldon:「Sorry, you diverted me. Anyway, in 1935, Erwin Schrödinger, in an attempt to explain the Copenhagen interpretation of quantum physics, he proposed an experiment where a cat is placed in a box with a sealed vial of poison that will break open at a random time. Now, since no-one knows when or if the poison has been released, until the box is opened, the cat can be thought of as both alive and dead.」
+Penny:「I'm sorry, I don't get the point.」
+Sheldon:「Well of course you don't get it, I haven't made it yet. You'd have to be psychic to get it, and there's no such thing as psychic.」
+Penny:「Sheldon, what's the point?」
+Sheldon:「Just like Schrödinger's Cat, your potential relationship with Leonard right now can be thought of as both good and bad. It is only by opening the box that you'll find out which it is.」
+Penny:「Okay, so you're saying I should go out with Leonard.」
+Sheldon:「No, no, no, no, no, no. Let me start again. In 1935, Erwin Schrödinger...」

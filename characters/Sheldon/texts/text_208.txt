@@ -1,0 +1,28 @@
+'''Scene''':「''The store. Sheldon is looking at two routers.''」
+Sheldon:「What do you think.」
+Penny:「''(Pointing randomly)'' Um, that one.」
+Sheldon:「Because of the two additional Ethernet ports.」
+Penny:「Sure.」
+Sheldon:「He doesn't need them, he's already got a 640 connect switch」
+Penny:「Oh, okay then this one.」
+Sheldon:「Why?」
+Penny:「I don't know, the man on the box looks so happy.」
+Sheldon:「Penny! If I'm going to buy Leonard a gift, I'm going to do it right. I refuse to let him experience the same childhood trauma I did.」
+Penny:「Oh, I know I'm going to regret this but, what trauma?」
+Sheldon:「On my twelfth birthday I really wanted a titanium centrifuge, so, you know, I could separate radioactive isotopes.」
+Penny:「Of course.」
+Sheldon:「Instead of a titanium centrifuge, my parents bought me... wow, this is hard. They got me... a motorised dirt bike.」
+Penny:「No?」
+Sheldon:「What twelve-year-old boy wants a motorised dirt bike?」
+Penny:「All of them.」
+Sheldon:「Really?」
+Penny:「Yeah.」
+Sheldon:「Huh?」
+Penny:「Okay, so we’re getting this one?」
+Sheldon:「Yeah, I suppose.」
+Penny:「Okay, let's go.」
+Random woman:「Excuse me, do you know anything about this stuff?」
+Sheldon:「I know everything about this stuff.」
+Woman:「Okay, I have my own wholesale flower business, and I want to hook up my computer in the front entrance with the one in my refrigerated warehouse.」
+Penny:「Here, buy this one. Look, it's the one we’re getting, see, happy guy available.」
+Sheldon:「No, no, no, no, she doesn't want that, she needs a point to point peer network with a range extender.」

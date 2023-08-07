@@ -1,0 +1,13 @@
+'''Scene''':「''Sheldon and Leonard’s apartment.''」
+Leonard:「Okay, well, make yourself at home.」
+Penny:「Okay, thank you.」
+Leonard:「You're very welcome.」
+Penny:「This looks like some serious stuff, Leonard, did you do this?」
+Sheldon:「Actually that's my work.」
+Penny:「Wow.」
+Sheldon:「Yeah, well, it's just some quantum mechanics, with a little string theory doodling around the edges. That part there, that's just a joke, it's a spoof of the [[Born-Oppenheimer approximation]].」
+Penny:「So you're like, one of those, beautiful mind genius guys.」
+Sheldon:「Yeah.」
+Penny:「This is really impressive.」
+Leonard:「I have a board. If you like boards, this is my board.」
+Penny:「Holy smokes.」

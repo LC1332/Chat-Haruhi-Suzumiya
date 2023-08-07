@@ -1,0 +1,12 @@
+'''Scene''':「''Leonard approaches Penny’s door. He is wearing a suit. He knocks. Penny answers.''」
+Penny:「Hi.」
+Leonard:「Hi.」
+Penny:「Come on in.」
+Leonard:「Thank you. You look very nice.」
+Penny:「Thank you. So do you.」
+Leonard:「I made an eight o’clock reservation.」
+Penny:「Okay, great, listen, um, maybe we should talk first.」
+Leonard:「Oh. Okay. But before you say anything, have you ever heard of Schrödinger's Cat?」
+Penny:「Actually, I’ve heard far too much about Schrödinger's Cat.」
+Leonard:「Good. ''(He grabs her and kisses her.)''」
+Penny:「Alright, the cat's alive. Let's go to dinner.」
