@@ -1,0 +1,7 @@
+'''Scene''':「The university lunch room.」
+Sheldon:「I'm sorry, I am not going back to the Renaissance Fair.」
+Howard:「Come on, Sheldon, there's so few places I can wear my jester costume.」
+Sheldon:「I don't care. There are far too many historical anomalies for my comfort.」
+Raj:「Oh, okay, how about this. You can go dressed as a Star Trek science officer exploring a planet similar to Earth in the 1500s.」
+Sheldon:「You mean like [[Spock]]?」
+Raj:「Sure.」

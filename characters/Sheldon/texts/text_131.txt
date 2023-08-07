@@ -1,0 +1,30 @@
+'''Scene''':「''Sheldon’s bedroom, early morning. Sheldon wakes up and coughs heavily. He picks up an electronic thermometer, sticks it in his ear, and takes his temperature.''」
+Sheldon:「''(Examining the results)'' Oh, dear God. ''(Shouting)'' Leonard! Leonard, I'm sick!」
+:「''Cut to Leonard entering the living room in panic, stumbling and trying to put on a pair of trousers.''」
+Sheldon:「''(Voice off)'' Leonard! Leonard I'm sick!」
+:「''Leonard grabs his jacket and keys and leaves through the front door, closing it as quietly as possible, right before...''」
+Sheldon:「''(Entering, wrapped in his duvet)'' Leonard! Leonard! Leonard. ''(Drops his duvet)'' Leonard, my comforter fell down, and my sinuses hurt when I bend over. Leonard? ''(Bends to get phone)'' Ow!」
+Leonard:「''(Voice on phone)'' Hey.」
+Sheldon:「Leonard, where are you?」
+Leonard:「''(Running down stairs)'' I'm at work.」
+Sheldon:「At six-thirty in the morning?」
+Leonard:「Yes.」
+Sheldon:「On Sunday?」
+Leonard:「Yes.」
+Sheldon:「Why?」
+Leonard:「They asked me to come in.」
+Sheldon:「Well, I didn't hear the phone ring.」
+Leonard:「They texted me.」
+Sheldon:「Well, as I predicted, I am sick. My fever has been tracking up exponentially since 2am, and I am producing sputum at an alarming rate.」
+Leonard:「No kidding?」
+Sheldon:「No. Not only that, it has shifted from clear to milky green.」
+Leonard:「Alright, well, get some rest and drink plenty of fluids.」
+Sheldon:「What else would I drink? Gasses? Solids? Ionised plasma?」
+Leonard:「Drink whatever you want.」
+Sheldon:「I want soup.」
+Leonard:「Then make soup.」
+Sheldon:「We don't have soup.」
+Leonard:「I'm at work, Sheldon. ''(A woman enters the apartment building with a barking dog.)''」
+Sheldon:「Is that a dog?」
+Leonard:「Yes,」
+Sheldon:「In the lab?」

@@ -1,0 +1,24 @@
+'''Scene''':「''The stairwell.''」
+Sheldon:「Thanks for bringing me home.」
+Penny:「Oh, it's okay, I didn't really need to work today, it's not like I have rent or car payments or anything.」
+Sheldon:「Good. Good.」
+Penny:「Okay, well, you feel better.」
+Sheldon:「Wait, where are you going?」
+Penny:「Um, home, to write some bad checks.」
+Sheldon:「You're going to leave me?」
+Penny:「Sheldon, you are a grown man, haven't you ever been sick before?」
+Sheldon:「Well, of course, but, not by myself.」
+Penny:「Really, never?」
+Sheldon:「Well, once. When I was fifteen, and spending the summer at the Heidelberg Institute in Germany.」
+Penny:「Studying abroad?」
+Sheldon:「No, visiting professor. Anyway, the local cuisine was a little more sausage-based than I'm used to, and the result was an internal blitzkrieg with my lower intestine playing the part of Czechoslovakia.」
+Penny:「And there was no-one there to take care of you?」
+Sheldon:「No. No, my mom had to fly back to Texas to help my dad because the house had slipped off the cinderblocks again.」
+Penny:「Again?」
+Sheldon:「It was tornado season. And it was an aluminum house. Anyway, the housekeeper in the faculty residence didn't speak any English, when I finally managed to convince her I was sick, she said “Möchtest Du eine Darmspülung?”」
+Penny:「What does that mean?」
+Sheldon:「Based on what happened next, I assume it means “would you like an enema?”」
+Penny:「Okay, sweetie, I'll take care of you, what do you need?」
+Sheldon:「Well, my mom used to give me sponge baths.」
+Penny:「Okay, ground rules, no sponge baths, and definitely no enemas.」
+Sheldon:「Agreed.」

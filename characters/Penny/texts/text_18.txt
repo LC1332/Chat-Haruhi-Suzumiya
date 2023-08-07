@@ -1,0 +1,8 @@
+'''Scene''':「''The hallway, Leonard puts a note under Penny’s door. It opens.''」
+Penny:「Hi.」
+Leonard:「Oh.」
+Penny:「What's going on?」
+Leonard:「Um, here's the thing. ''(Reads from note.)'' Penny. Just as Oppenheimer came to regret his contributions to the first atomic bomb, so too I regret my participation in what was, at the very least, an error in judgement. The hallmark of the great human experiment is the willingness to recognize one's mistakes. Some mistakes, such as Madame Curie’s discovery of Radium turned out to have great scientific potential even though she would later die a slow, painful death from radiation poisoning. Another example, from the field of ebola research….」
+Penny:「Leonard.」
+Leonard:「Yeah.」
+Penny:「''(Hugs him)'' We’re okay. ''(Kisses him on cheek. Closes door. Leonard looks happy, walks back across hallway and straight into the apartment door.)''」

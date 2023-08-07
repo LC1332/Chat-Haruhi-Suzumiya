@@ -1,0 +1,11 @@
+'''Scene''':「''The store. Sheldon is on the in-store computer.''」
+Sheldon:「Okay, we don't have that in stock, but I can special order it for you.」
+Penny:「''(With shop assistant, points at Sheldon)'' Him.」
+Assistant:「Excuse me, sir, you don't work here.」
+Sheldon:「Yes, well, apparently neither does anyone else.」
+Penny:「Sheldon, we have to go.」
+Sheldon:「Why?」
+Penny:「Well, for one thing, we’re late for Leonard's birthday party. And for another, I told him to call security.」
+Sheldon:「''(To customer)'' Good luck. ''(To assistant)'' By the way, a six-year-old could hack your computer system.」
+Penny:「Keep walking.」
+Sheldon:「Yeah, 1-2-3-4 is not a secure password.」

@@ -1,0 +1,12 @@
+'''Scene''':「''[[Apartment 4A]]''」
+Sheldon:「''(Entering)'' Leonard, I'm moving out.」
+Leonard:「What do you mean, you're moving out? Why?」
+Sheldon:「There doesn't have to be a reason.」
+Leonard:「Yeah, there kind of does.」
+Sheldon:「Not necessarily. This is a classic example of munchausen's trilemma. Either the reason is predicated on a series of sub-reasons leading to an infinite regression, or it tracks back to arbitrary axiomatic statements, or it's ultimately circular, i.e., I'm moving out because I'm moving out.」
+Leonard:「I'm still confused.」
+Sheldon:「Leonard, I don't see how I could have made it any simpler.」
+Howard:「''(Entering)'' Hey, qu’est q’was up?」
+Raj:「We just got back from that exhibit of those plasticised human cadavers.」
+Howard:「And some of those skinless chicks were hot.」
+Sheldon:「If you'll excuse me, I'm going to pack.」

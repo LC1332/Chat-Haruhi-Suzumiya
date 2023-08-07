@@ -1,0 +1,17 @@
+'''Scene''':「''Sheldon and Leonard’s flat. Sheldon, Raj and Howard are playing Jenga.''」
+Howard:「Sheldon, if you were a robot, and I knew and you didn't, would you want me to tell you?」
+Sheldon:「That depends. When I learn that I'm a robot, will I be able to handle it?」
+Howard:「Maybe, although the history of science fiction is not on your side.」
+Sheldon:「Uh, let me ask you this. When I learn that I'm a robot, would I be bound by Asimov's three laws of robotics?」
+Raj:「You might be bound by them right now.」
+Howard:「That's true. Have you ever harmed a human being, or through inaction allowed a human being to come to harm?」
+Sheldon:「Of course not.」
+Howard:「Have you ever harmed yourself, or allowed yourself to be harmed except in cases where a human being would have been endangered?」
+Sheldon:「Well, no.」
+Howard:「I smell robot.」
+Leonard:「''(Entering)'' Hey, what's going on.」
+Sheldon:「The internet's been down for half an hour.」
+Raj:「Also, Sheldon may be a robot.」
+Howard:「So, how did it go with Leslie?」
+Leonard:「Oh, we tried kissing, but the earth didn't move. I mean any more than the 383 miles that it was going to move anyway.」
+Sheldon:「Oh, I’ve seen that look before. This is just going to be two weeks of moping and tedious emo songs, and calling me to come down to pet stores to look at cats. I don't know if I can take it.」

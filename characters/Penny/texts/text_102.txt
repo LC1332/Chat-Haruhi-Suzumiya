@@ -1,0 +1,15 @@
+'''Scene''':「''Howard and Raj sneak up the stairwell carrying presents. Howard knocks on Penny’s door, a combination of two knocks, two knocks, one knock. Nothing happens. He tries again. Sheldon opens the door.''」
+Sheldon:「That's not the secret knock. This is the secret knock. ''(He knocks two, one, two.)''」
+Howard:「What difference does it make?」
+Sheldon:「The whole point of a secret knock is to establish a non-verbal signal to verify the identity of one's co-conspirators.」
+Penny:「Is that Raj and Howard?」
+Sheldon:「Possibly, but unverified.」
+Howard:「Can you just let us in.」
+Sheldon:「Luckily for you this is not a nuclear reactor.」
+Penny:「So, what did you get the birthday boy?」
+Howard:「Well, Raj got him an awesome limited edition Dark Knight sculpture based on Alex Ross's definitive Batman, and I got him this amazing autographed copy of the Feynman lectures on physics.」
+Penny:「Nice. I got him a sweater.」
+Howard:「Okay, well, he might like that, I’ve seen him... chilly.」
+Penny:「Uh, Sheldon, I didn't see your present.」
+Sheldon:「That's because I didn't bring one.」
+Penny:「Well why not?」

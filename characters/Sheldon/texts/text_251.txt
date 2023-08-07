@@ -1,0 +1,14 @@
+'''Scene''':「The university lunch room.」
+Sheldon:「I'm sorry, I am not going back to the Renaissance Fair.」
+Howard:「Come on, Sheldon, there's so few places I can wear my jester costume.」
+Sheldon:「I don't care. There are far too many historical anomalies for my comfort.」
+Raj:「Oh, okay, how about this. You can go dressed as a Star Trek science officer exploring a planet similar to Earth in the 1500s.」
+Sheldon:「You mean like [[Spock]]?」
+Raj:「Sure.」
+Sheldon:「Fascinating.」
+Leslie:「''(Arriving)'' Hey fellow scientists. Sheldon.」
+Leonard:「Hey, why don't we all move over there so Leslie can join us.」
+Howard:「Hmm, let's do it. ''(Sheldon does not move. Leonard looks confused.)''」
+Sheldon:「If you're having trouble deciding where to sit may I suggest one potato two potato, or as I call it the Leslie Winkle experimental methodology.」
+Leonard:「Don't make this hard for me.」
+Sheldon:「It's not hard. It's simple. You can either sit with me, your friend, colleague and roommate, or you can sit with an overrated scientist you might have sex with.」

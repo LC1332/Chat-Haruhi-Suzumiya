@@ -1,0 +1,26 @@
+'''Scene''':「''Later that night, Leonard is sitting in the time machine, turning the lights on and off. Sheldon enters.''」
+Sheldon:「Leonard, it's two in the morning.」
+Leonard:「So?」
+Sheldon:「So it's my turn. Why did you set it for the day before yesterday?」
+Leonard:「Because I want to go back and keep myself from getting a time machine.」
+Sheldon:「You can't. If you were to prevent yourself from buying it in the past, you would not have it available in the present to travel back and stop yourself from buying it, ergo you would still have it. This is a classic rookie time travel mistake.」
+Leonard:「Can I go back and prevent you from explaining that to me?」
+Sheldon:「Same paradox. If you were to travel back in time and, say, knock me unconscious, you would not then have the conversation that irritated you, motivating you to go back and knock me unconscious.」
+Leonard:「What if I knocked you unconscious right now?」
+Sheldon:「It won't change the past.」
+Leonard:「But it would make the present so much nicer.」
+Sheldon:「Are you upset about something?」
+Leonard:「What was your first clue?」
+Sheldon:「Well, it was a number of things. First the late hour, then your demeanour seems very low energy, plus your irritability...」
+Leonard:「Yes I'm upset.」
+Sheldon:「Oh! I don't usually pick up on those things. Good for me.」
+Leonard:「Yeah, good for you.」
+Sheldon:「Oh, wait. Did you want to talk about what's bothering you?」
+Leonard:「I don't know. Maybe.」
+Sheldon:「Wow, I'm on fire tonight.」
+Leonard:「Uh, here's the thing. Girls like Penny never end up with guys who own time machines.」
+Sheldon:「I disagree. Your inability to successfully woo Penny long predates your acquisition of the time machine. That failure clearly stands on its own.」
+Leonard:「Thanks for pointing it out.」
+Sheldon:「In addition, your premise is flawed. In the original film, Rod Taylor got Yvette Mimeaux with that very time machine. In Back to the Future, Marty McFly got the opportunity to hook up with his extremely attractive young mother.」
+Leonard:「Those are movies.」
+Sheldon:「Well of course they're movies. Were you expecting me to come up with an example involving a real life time machine? That's absurd.」

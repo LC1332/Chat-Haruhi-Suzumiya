@@ -1,0 +1,10 @@
+'''Scene''':「''The cafeteria.''」
+Raj:「Okay. First order of physics bowl business. We need a truly kick-ass team name. Suggestions.」
+Howard:「How about the perpetual motion squad? It's beyond the laws of physics, plus a little heads up for the ladies.」
+Leonard:「The ladies?」
+Howard:「Perpetual motion squad, we can go all night.」
+Raj:「I like it.」
+Sheldon:「I don't. Teams are traditionally named after fierce creatures, thus intimidating ones opponent.」
+Raj:「Then we can be the Bengal Tigers.」
+Sheldon:「Poor choice. Gram for gram, no animal exceeds the relative fighting strength of the army ant.」
+Raj:「Maybe so. But you can't incinerate a Bengal Tiger with a magnifying glass.」

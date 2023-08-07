@@ -1,0 +1,20 @@
+'''Scene''':「''[[Apartment 4A]]''」
+Sheldon:「You know, I’ve been thinking about time travel again.」
+Leonard:「Why, did you hit a roadblock with invisibility?」
+Sheldon:「Put it on the back burner. Anyway, it occurs to me, if I ever did perfect a time machine, I'd just go into the past and give it to myself, thus eliminating the need for me to invent it in the first place.」
+Leonard:「Interesting.」
+Sheldon:「Yeah, it really takes the pressure off.」
+Leonard:「Sounds like a breakthrough, should I call the science magazines and tell them to hold the front cover? ''(Exiting the apartment.)''」
+Sheldon:「It's time travel, Leonard, I will have already done that.」
+Leonard:「Then I guess congratulations are in order.」
+Sheldon:「No, congratulations will have been in order. You know, I'm not going to enjoy this party.」
+Leonard:「I know, I'm familiar with you.」
+Sheldon:「At the last department party, Professor Finkleday cornered me and talked about spelunking for 45 minutes.」
+Leonard:「Yes, I was there.」
+Sheldon:「You know what's interesting about caves, Leonard?」
+Leonard:「What?」
+Sheldon:「Nothing.」
+Leonard:「Well then we'll avoid Finkleday, we'll meet the new department head, congratulate him, shake his hand and go.」
+Sheldon:「How's this? Pleased to meet you, Dr. Gablehouser. How fortunate for you that the University has chosen to hire you, despite the fact that you've done no original research in 25 years, and instead have written a series of popular books that reduce the great concepts of science to a series of anecdotes, each one dumbed down to accommodate the duration of an average bowel movement. Mahalo.」
+Leonard:「Mahalo's a nice touch.」
+Sheldon:「Do you know there are only eight consonants in the Hawaiian language.」

@@ -1,0 +1,23 @@
+'''Scene''':「''Living room, Sheldon is sleeping on the sofa, with his head on Lesley’s Violin case.''」
+Sheldon:「Big boy! ''(Wakes up, looks at watch, wraps self in blanket, walks towards kitchen)'' Someone touched my board. Oh God, my board. Leonard! Leonard!」
+Leonard:「''(Entering)'' Hey, what's the matter?」
+Sheldon:「My equations, someone's tampered with my equations.」
+Leonard:「Are you sure?」
+Sheldon:「Of course I'm sure. Look at the beta function of quantum chromodynamics, the sign's been changed.」
+Leonard:「Oh yeah. But doesn't that fix the problem you've been having?」
+Sheldon:「Are you insane? Are you out of your mind? Are you.... hey look, that fixes the problem I’ve been having.」
+Lesley:「''(Entering)'' You're welcome.」
+Sheldon:「You did this?」
+Lesley:「Yeah, I noticed it when I got up to get a glass of water, so I fixed it, now you can show that quarks are asymptotically free at high energies. Pretty cool, huh?」
+Sheldon:「Cool?」
+Lesley:「Listen, I got to hit the lab. Thanks for a great night.」
+Leonard:「Thank you, I'll see you at work.」
+Sheldon:「Uh-duh, hold on, hold on!」
+Lesley:「What?」
+Sheldon:「Who told you you could touch my board?」
+Lesley:「No-one.」
+Sheldon:「I don't come into your house and touch your board.」
+Lesley:「There are no incorrect equations on my board.」
+Sheldon:「Oh, that is so... so...」
+Lesley:「I'm sorry, I’ve got to run, if you come up with an adjective, text me. ''(Leaves)''.」
+Sheldon:「Inconsiderate, that is the adjective, inconsiderate.」

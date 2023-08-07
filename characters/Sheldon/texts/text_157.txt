@@ -1,0 +1,4 @@
+'''Scene''':「''Apartment 4A''」
+Penny:「Good afternoon, and welcome to today's physics bowl practice round. I'm Penny, and I'll be your host, because apparently I didn't have anything else to do on a Saturday afternoon, and isn't that just a little sad? Gentlemen, are you ready?」
+Leonard:「Yes.」
+Sheldon:「Of course.」

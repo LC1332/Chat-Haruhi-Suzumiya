@@ -1,0 +1,22 @@
+'''Scene''':「''The hallway. Leonard knocks on Penny’s door.''」
+Penny:「''(Opening door)'' Ah, hey Leonard.」
+Leonard:「Good afternoon Penny, so hi, hey. Uh... I was wondering if you had plans for dinner.」
+Penny:「Uh, do you mean dinner tonight?」
+Leonard:「There is an inherent ambiguity in the word dinner. Technically it refers to the largest meal of the day whenever it is consumed, so, to clarify here, by dinner I mean supper.」
+Penny:「Supper?」
+Leonard:「Or dinner. I was thinking six thirty, if you can go, or a different time.」
+Penny:「Uh, six thirty's great.」
+Leonard:「Really? Great!」
+Penny:「Yeah, I like hanging out with you guys.」
+Leonard:「Us guys?」
+Penny:「You know, Sheldon, Howard, Raj, who all's coming?」
+Leonard:「They.... might all be there. Or a subset of them might be there, uh, algebraically speaking there are too many unknowns, for example Sheldon had Quiznos for lunch, sometimes he finds that filling, other times he doesn't, it's no fault of Quiznos, they have a varied menu.」
+Penny:「Okay, whatever, it sounds like fun.」
+Leonard:「Great. Did we say a time?」
+Penny:「Six thirty.」
+Leonard:「And that's still good for you.」
+Penny:「It's fine.」
+Leonard:「Cos it's not carved in stone.」
+Penny:「No, six thirty's great.」
+Leonard:「I'll get my chisel.」
+Penny:「Why?」

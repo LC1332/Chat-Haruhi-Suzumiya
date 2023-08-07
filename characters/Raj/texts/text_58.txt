@@ -1,0 +1,13 @@
+'''Scene''':「[[Apartment 4A]]」
+Howard:「''(Entering)'' Is he here?」
+Leonard:「If he were, I wouldn't be.」
+Raj:「Do you know what he did. He watched me work for ten minutes, and then started to design a simple piece of software that could replace me.」
+Leonard:「Is that even possible?」
+Raj:「As it turns out, yes.」
+Howard:「Something's got to be done about him, Leonard.」
+Leonard:「Like what? He'll never be able to cope with the fact that some fifteen year-old kid is smarter and more accomplished than he is.」
+Raj:「Well, what if something were to happen to this boy so he was no longer a threat to Sheldon?」
+Howard:「Then our problem would be solved.」
+Leonard:「Hang on, are we talking about murdering Dennis Kim? I'm not saying no.」
+Howard:「We don't have to go that far, there are other means available.」
+Raj:「We can't send him back to North Korea. He knows how to get out.」

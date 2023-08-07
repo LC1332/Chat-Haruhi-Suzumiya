@@ -1,0 +1,4 @@
+'''Scene''':「The university cafeteria.」
+Sheldon:「You know how I know we’re not in The Matrix?」
+Leonard:「How?」
+Sheldon:「If we were, the food would be better.」

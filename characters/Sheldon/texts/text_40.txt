@@ -1,0 +1,19 @@
+'''Scene''':「''The Cheesecake Factory.''」
+Sheldon:「You know, I think I may have misjudged this restaurant.」
+Leonard:「No kidding.」
+Sheldon:「I won't go out on a limb, but I think we may be looking at my new Tuesday hamburger.」
+Leonard:「Your old Tuesday hamburger will be so broken hearted.」
+Sheldon:「Way ahead of you. I was thinking of moving Big Boy to Thursdays, and just dropping Soup Plantation.」
+Leonard:「Really?」
+Sheldon:「Yeah, the name always confused me anyway, Soup Plantation. You can't grow soup.」
+Penny:「So, how's everything.」
+Sheldon:「Terrific, you'll be happy to know that I plan to come here every Tuesday night for the foreseeable future.」
+Penny:「Really, oh yay!」
+Sheldon:「Who do I speak to about permanently reserving this table?」
+Penny:「Um, I don't know, a psychiatrist? So hey, how are things with you and Lesley?」
+Leonard:「Oh, to be honest, I don't think it's going to work out.」
+Penny:「Oh, oh that's too bad. Well hey, don't worry, I'm sure there is someone out there who is just right for you. ''(Walks away smiling)''.」
+Leonard:「Well what did she mean by that? Was that just a generic platitude or was that a subtle bid for attention?」
+Sheldon:「You know why this hamburger surpasses the Big Boy? This is a single decker hamburger whereas the Big Boy is a double decker. This has a much more satisfying meat to bun to condiment ratio.」
+Leonard:「Are you even listening to me?」
+Sheldon:「Of course I'm listening. Blah blah, hopeless Penny delusion, blah blah blah.」

@@ -1,0 +1,35 @@
+'''Scene''':「''Apartment 4A, clearing up.''」
+Sheldon:「You know, in the future, when we’re disembodied brains in jars, we’re going to look back on this as eight hours well wasted.」
+Raj:「I don't want to be in a jar. I want my brain in an android body. Eight feet tall and ripped.」
+Howard:「I'm with you. I just have to make sure if I'm a synthetic human I'd still be Jewish. I promised my mother.」
+Raj:「I suppose you could have your android penis circumcised. But that's something your Rabbi would have to discuss with the manufacturers.」
+Sheldon:「Not to mention you'd have to power down on Saturdays.」
+Leonard:「Sheldon, why is this letter in the trash?」
+Sheldon:「Well, there's always the possibility that a trash can spontaneously formed around the letter, but Occam's Razor would suggest that someone threw it out.」
+Leonard:「It's from the Institute for Experimental Physics. They want us to present our paper on the properties of super solids at the topical conference on Bowes-Einstein condensates.」
+Sheldon:「I know. I read it before I threw it out.」
+Leonard:「Okay... if I may drill down to the bedrock of my question, why did you throw it out.」
+Sheldon:「Because I have no interest in standing in the Rose Room of the Pasadena Marriott in front of a group of judgmental strangers, who wouldn't recognize true genius if it were standing in front of them giving a speech. Which, if I were there, it would be.」
+Howard:「I don't know, Sheldon, those topical conferences on Bowes-Einstein condensates parties are legendary.」
+Leonard:「Forget the parties.」
+Howard:「Forget the parties? What a nerd.」
+Leonard:「Are there any other honors I’ve gotten that I don't know about? Did UPS drop off a Nobel Prize with my name on it?」
+Sheldon:「Leonard, please don't take this the wrong way, but the day you win a Nobel Prize, is the day I begin my research on the drag co-efficient of tassles on flying carpets.」
+Raj:「Hoo-hoo-hoo. The only thing missing from that insult was “yo mamma.”」
+Howard:「I’ve got one, hey Leonard, your mamma's research methodology is so flawed....」
+Leonard:「Shut up, Howard. Sheldon, we have to do this.」
+Sheldon:「No we don't. We have to take in nourishment, expel waste, and inhale enough oxygen to keep ourselves from dying, everything else is optional.」
+Leonard:「Okay, let me put it this way, I'm doing it.」
+Sheldon:「You can't. I'm the lead author.」
+Leonard:「Oh, come on. The only reason you're the lead author is because we went alphabetically.」
+Sheldon:「I let you think we went alphabetically to spare you the humiliation of dealing with the fact that it was my idea. Not to put too fine a point on it, but I was throwing you a bone. You're welcome.」
+Leonard:「Excuse me, I designed the experiment that proved the hypothesis.」
+Sheldon:「It doesn't need proving.」
+Leonard:「So the entire scientific community is just supposed to take your word?」
+Sheldon:「They're not supposed to, but they should.」
+Leonard:「Alright, I don't care what you say, I'm going to the conference and I'm presenting our findings.」
+Sheldon:「And I forbid it.」
+Leonard:「You forbid it?」
+Sheldon:「If I'm not taking credit for our work then nobody is.」
+Leonard:「Oh, you admit that it's our work.」
+Sheldon:「No, once again, I'm throwing you a bone. And once again, you are welcome.」

@@ -1,0 +1,21 @@
+'''Scene''':「''Penny’s car''」
+Penny:「How come you didn't go into work today.」
+Sheldon:「I'm taking a sabbatical, because I won't kow-tow to mediocre minds.」
+Penny:「So you got canned, huh?」
+Sheldon:「Theoretical physicists do not get canned. But yeah.」
+Penny:「Well, maybe it's all for the best, you know I always say, when one door closes, another one opens.」
+Sheldon:「No it doesn't. Not unless the two doors are connected by relays, or there are motion sensors involved.」
+Penny:「No, no, I meant...」
+Sheldon:「Or the first door closing causes a change of air pressure that acts upon the second door.」
+Penny:「Never mind.」
+Sheldon:「Slow down. Slow down, please slow down.」
+Penny:「We’re fine.」
+Sheldon:「Look, you're not leaving yourself enough space between cars.」
+Penny:「Oh, sure I am.」
+Sheldon:「No, no. Let me do the math for you, this car weighs let's say 4,000lb, now add say 140 for me, 120 for you.」
+Penny:「120?」
+Sheldon:「Oh, I'm sorry, did I insult you? Is your body mass somehow tied into your self worth?」
+Penny:「Well, yeah.」
+Sheldon:「Interesting. Anyway, that gives us a total weight of, let's say, 4,400lb.」
+Penny:「Let's say 4,390.」
+Sheldon:「Fine. We’re travelling forward at, good Lord, 51 miles an hour. Now let's assume that your brakes are new and the callipers are aligned, still, by the time we come to a stop, we'll be occupying the same space as that Buick in front of us, an impossibility that nature will quickly resolve into death, mutilation and... oh look, they built a new put-put course.」
