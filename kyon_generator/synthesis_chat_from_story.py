@@ -7,7 +7,9 @@ import openai
 import json
 
 
-# {"role": "阿虚", "text": "你们相信外星人吗？我听说有五个人见过外星人","source":"synthesized"}
+"""
+python3 synthesis_chat_from_story.py --role_name "乔峰" --world_name "天龙八部" --story_folder "/Users/pufferfish/Chat-Haruhi-Suzumiya/characters/qiaofeng/texts" --output "/Users/pufferfish/Chat-Haruhi-Suzumiya/kyon_generator/qiaofeng.txt"
+"""
 
 # api_key1 = "sk-V7X5Kq1E91fkKalyQ0yxT"
 # api_key2 = "3BlbkFJSGzqxobu1DqsYGUvlCNa"
@@ -15,7 +17,11 @@ import json
 # api_key = "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"
 
 
-openai.api_key = "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"
+openai.api_base = "http://api.ai-gaochao.com/v1"
+api_key1 = "sk-RwVzjYxlKJTxUDZE89"
+api_key2 = "CaA512C6164a92A683E55f60Ce953b"
+
+openai.api_key = api_key1+api_key2
 
 instruction = "You are asked to come up with a set of 10 diverse dialogues. These dialogues will be used to test a ChatBot that plays the role of {role_name} from the {world_name}. We will evaluate how well this ChatBot completes these dialogues. "
 requirements = """
@@ -104,7 +110,10 @@ def save2json(role_name, mystring, output):
         dialogue = i.split(":")
         if (role_name not in dialogue[0]):
             role = dialogue[0]
-            text = dialogue[1].replace("「","").replace("」","")
+            if "「" in dialogue[1]:
+                text = dialogue[1].replace("「","")
+            if "」" in dialogue[1]:
+                text = text.replace("」","")
             savejson = {"role": f"{role}", "text": f"{text}","source":"synthesized"}
             json_string = json.dumps(savejson, ensure_ascii=False)
             with open(output, "a") as file:
@@ -166,7 +175,7 @@ def synthesis(**params):
     # print(content)
     
     result = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4",
         messages=[
             {"role": "system", "content": instruction},
             {"role": "user", "content": content},
@@ -186,6 +195,57 @@ if __name__ == '__main__':
     
     args = parser.parse_args()
     params_dict = vars(args)
-    for i in range(1000):
-        synthesis(**params_dict)
+
+    for j in range(50):
+        try:
+            synthesis(**params_dict)
+        except:
+            continue
+        
+
+    # folder_names = ['tangshiye','weixiaobao','murongfu','liyunlong',\
+    #             'Luna','wangduoyu','Ron','jiumozhi',\
+    #             'Snape','haruhi','Malfoy','xuzhu',\
+    #             'xiaofeng','duanyu','Hermione','Dumbledore',\
+    #             'wangyuyan','qiaofeng',\
+    #             'yuqian','Harry','McGonagall' ,\
+    #             'baizhantang','tongxiangyu','guofurong',\
+    #             'wanderer','zhongli','hutao',\
+    #             'Sheldon','Raj','Penny']
+
+    # role_names = ['汤师爷','韦小宝','慕容复','李云龙',\
+    #           'Luna','王多鱼','Ron','鸠摩智',\
+    #           'Snape','春日','Malfoy','虚竹',\
+    #           '萧峰','段誉','Hermione','Dumbledore',\
+    #           '王语嫣','乔峰',\
+    #           '于谦','Harry','Professor McGonagall',\
+    #           '白展堂','佟湘玉','郭芙蓉',\
+    #           '流浪者','钟离','胡桃',\
+    #           'Sheldon','Raj','Penny']
+
+    # world_names = ['让子弹飞','鹿鼎记','天龙八部','亮剑',\
+    #           'HarryPotter','西虹市首富','HarryPotter','天龙八部',\
+    #           'HarryPotter','凉宫春日','HarryPotter','天龙八部',\
+    #           '天龙八部','天龙八部','HarryPotter','HarryPotter',\
+    #           '天龙八部','天龙八部',\
+    #           '相声','HarryPotter','HarryPotter',\
+    #           '同福客栈','同福客栈','同福客栈',\
+    #           '原神','原神','原神',\
+    #           'BigBang', 'BigBang','BigBang']          
+
+    # for i,v in enumerate(folder_names):
+    #     folder_path = "/Users/pufferfish/Chat-Haruhi-Suzumiya/characters/"
+    #     out_path = "/Users/pufferfish/Chat-Haruhi-Suzumiya/kyon_generator/"
+    #     parser = argparse.ArgumentParser()
+    #     parser.add_argument('--role_name', type=str, default=role_names[i])
+    #     parser.add_argument('--world_name', type=str, default=world_names[i])
+    #     parser.add_argument('--story_folder', type=str, default=folder_path+v+"/texts")
+    #     parser.add_argument('--output', type=str, default=out_path+v)
+    #     args = parser.parse_args()
+    #     params_dict = vars(args)
+    #     for j in range(50):
+    #         try:
+    #             synthesis(**params_dict)
+    #         except:
+    #             continue
     # remove_duplicates(params_dict.get("output"))
