@@ -1,6 +1,6 @@
 '''
 FILE_NAME: dialogue2embedding.py
-Edited by 睡觉鱼, Jul 18 2023
+Edited by 冷子昂, Aug 8 2023
 '''
 
 import json
