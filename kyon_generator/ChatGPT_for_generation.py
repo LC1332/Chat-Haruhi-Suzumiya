@@ -380,7 +380,7 @@ class ChatGPT:
 
         if (self.is_train_generating == False) or (self.role_name == ""):
 
-            selected_sample = self.retrieve_title(new_query, 7)
+            selected_sample = self.retrieve_title(new_query, 13)
             # print("备选辅助：", selected_sample)
             story, selected_sample = self.organize_story_with_maxlen(selected_sample)
 
@@ -388,7 +388,7 @@ class ChatGPT:
             # print('当前辅助sample:', selected_sample)
             messages = self.organize_message_langchain(story, history_chat, history_response, new_query)
         else:
-            selected_sample = self.retrieve_title(new_query, 7)
+            selected_sample = self.retrieve_title(new_query, 13)
             # print("备选辅助：", selected_sample)
             stories = self.organize_stories_with_maxlen_for_training(selected_sample)
 
