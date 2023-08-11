@@ -116,7 +116,7 @@ def save2json(role_name, mystring, output):
                 text = text.replace("」","")
             savejson = {"role": f"{role}", "text": f"{text}","source":"synthesized"}
             json_string = json.dumps(savejson, ensure_ascii=False)
-            with open(output, "a") as file:
+            with open(output, "a", encoding='utf-8') as file:
                 file.write(json_string + "\n")
 
 def remove_duplicates(file_path):
@@ -144,7 +144,7 @@ def synthesis(**params):
     txt_files = glob.glob(os.path.join(story_folder, '*.txt'))
     all_stories = []
     for txt_file in txt_files:
-        with open(txt_file, 'r') as file:
+        with open(txt_file, 'r', encoding='utf-8') as file:
             content = file.readlines()
             all_stories += content
             # print(f"Contents of {txt_file}:")
