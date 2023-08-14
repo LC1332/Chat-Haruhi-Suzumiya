@@ -2,6 +2,7 @@ from BaseLLM import BaseLLM
 # from BaseDB import BaseDB
 from ChromaDB import ChromaDB
 from LangChainGPT import LangChainGPT
+import os
 
 def foo_embedding(text):
     return [0,0,0]
@@ -11,12 +12,19 @@ def foo_tokenizer(text):
 
 class ChatHaruhi:
 
-    def __init__(self, system_prompt, story_db, llm, max_len_story = 1500, max_len_history = 1200):
+    def __init__(self, system_prompt, story_db=None, story_text_folder = None, llm = 'openai', max_len_story = 1500, max_len_history = 1200):
 
         self.system_prompt = system_prompt
 
-        self.db = ChromaDB()
-        self.db.load(story_db)
+        if story_db:
+            self.db = ChromaDB() 
+            self.db.load(story_db)
+        elif story_text_folder:
+            # print("Building story database from texts...")
+            self.db = self.build_story_db(story_text_folder) 
+        else:
+            raise ValueError("Either story_db or story_text_folder must be provided")
+        
 
         if llm == 'openai':
             self.llm = LangChainGPT()
@@ -36,6 +44,20 @@ class ChatHaruhi:
         self.narrator = ['旁白', '', 'scene','Scene','narrator' , 'Narrator']
         
         self.dialogue_history = []
+
+    def build_story_db(self, text_folder):
+        # 实现读取文本文件夹,抽取向量的逻辑
+        db = ChromaDB()
+
+        # scan all txt file from text_folder
+        
+
+
+
+        return db
+    
+    def save_story_db(self, db_path):
+        self.db.save(db_path)
         
     def chat(self, text, role):
         # add system prompt
