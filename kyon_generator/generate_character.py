@@ -102,7 +102,7 @@ class StoreData:
             if file.endswith('.txt'):
                 title_name = file[:-4]
                 with open(os.path.join(self.texts_folder, file), 'r', encoding='utf-8') as fr:
-                    title_text.append(f"{title_name}link{fr.read()}")
+                    title_text.append(f"{title_name}｜｜｜{fr.read()}")
         embeddings = utils.get_embedding(self.model, title_text)
         for title_text, embed in zip(title_text, embeddings):
             title_text_embed.append({title_text: embed})
