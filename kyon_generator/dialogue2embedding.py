@@ -14,7 +14,7 @@ from argparse import Namespace
 # from transformers import AutoTokenizer, AutoModel
 from utils import download_models, get_embedding
 
-# model = download_models()
+model = download_models()
 
 def filter_continuous_sequence(numbers):
     if not numbers:
@@ -105,13 +105,13 @@ def train_json_file(dialogue, index_list, source, out_path):
             query = get_message(dialogue[index-1])
             chat_history = []
             answer = get_message(dialogue[index])
-            # embedding = get_embedding(model, query) # 要填充
+            embedding = get_embedding(model, query) # 要填充
             write_json(query, chat_history, answer, embedding, out_path)
         else:
             query = get_message(dialogue[index-1])
             chat_history = get_history(dialogue[:index-2])
             answer = get_message(dialogue[index])
-            # embedding = get_embedding(model, query) #要填充
+            embedding = get_embedding(model, query) #要填充
             write_json(query, chat_history, answer, embedding, out_path)
             # print(index)
             # print(query)
@@ -144,10 +144,10 @@ def dialogue2embed(file_path, role_names, out_path):
 #         out_path = "/Users/pufferfish/Chat-Haruhi-Suzumiya/kyon_generator/organized_data/"
 #     )
 
-dialogue2embed(
-    file_path = "/Users/pufferfish/Chat-Haruhi-Suzumiya/kyon_generator/organized_data/baizhantang_test_output_dialogue.jsonl", 
-    role_names = "白展堂",
-    out_path = "/Users/pufferfish/Chat-Haruhi-Suzumiya/kyon_generator/training_data/")
+# dialogue2embed(
+#     file_path = "/Users/pufferfish/Chat-Haruhi-Suzumiya/kyon_generator/organized_data/Harry_test_output_dialogue.jsonl", 
+#     role_names = "Harry",
+#     out_path = "/Users/pufferfish/Chat-Haruhi-Suzumiya/kyon_generator/training_data/")
 
 
 # numbers = [1, 2, 3, 6, 8, 9, 10]

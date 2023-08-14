@@ -67,6 +67,7 @@ def is_chinese_or_english(text):
 
 def get_embedding_for_english(text, model="text-embedding-ada-002"):
     text = text.replace("\n", " ")
+    print("over here")
     return openai.Embedding.create(input=[text], model=model)['data'][0]['embedding']
 
 
