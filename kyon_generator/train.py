@@ -23,10 +23,10 @@ from transformers import Trainer, TrainingArguments
 from huggingface_hub import login
 from dataset import CharacterDataset, read_jsonl_file, collate_fn
 
-DATA_PATH = 'train_data.csv'
+# DATA_PATH = 'train_data.csv'
 # HF_TOKEN = 'hflcAlYNF'
-HF_TOKEN = "nPhmtMVuXy"
-login(token=HF_TOKEN)
+# HF_TOKEN = "nPhmtMVuXy"
+# login(token=HF_TOKEN)
 
 tokenizer = AutoTokenizer.from_pretrained("THUDM/chatglm2-6b", trust_remote_code=True)
 model = AutoModel.from_pretrained("THUDM/chatglm2-6b", trust_remote_code=True).half().cuda()
