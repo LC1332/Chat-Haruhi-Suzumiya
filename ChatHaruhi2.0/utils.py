@@ -115,7 +115,11 @@ def luotuo_openai_embedding(texts, is_chinese= None ):
             return get_embedding_for_english(texts)
 
 
+# compute cosine similarity between two vector
+def get_cosine_similarity( v1, v2):
+    v1 = torch.tensor(v1).to(device)
+    v2 = torch.tensor(v2).to(device)
+    return torch.cosine_similarity(v1, v2, dim=0).item()
 
-
-
+    
 
