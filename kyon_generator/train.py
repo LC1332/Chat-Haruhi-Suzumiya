@@ -1,31 +1,73 @@
 '''
 FILE_NAME: Train.py
 GLM2-LoRA Edition
-Edited by 睡觉鱼, Jul 18 2023
+Edited by 冷子昂，睡觉鱼, Aug 14 2023
 '''
 
-%pip install -qU protobuf transformers==4.30.2 cpm_kernels torch>=2.0 mdtex2html sentencepiece accelerate
-%pip install -qU datasets loralib
-%pip install -qU jupyter
-%pip install -qU git+https://github.com/huggingface/peft.git
-
+# %pip install -qU protobuf transformers==4.30.2 cpm_kernels torch>=2.0 mdtex2html sentencepiece accelerate
+# %pip install -qU datasets loralib
+# %pip install -qU jupyter
+# %pip install -qU git+https://github.com/huggingface/peft.git
+import json
+from torch.utils.data import Dataset
+from torch.utils.data import DataLoader
+import os
+import jsonlines
+from torch.utils.data import ConcatDataset
 from transformers import AutoTokenizer, AutoModel
-from datasets import load_dataset
+from datasets import load_dataset,Dataset
 import torch
 import torch.nn as nn
 from peft import LoraConfig, get_peft_model
 from transformers import Trainer, TrainingArguments
 from huggingface_hub import login
+from dataset import CharacterDataset, read_jsonl_file, collate_fn
 
-DATA_PATH = 'train_data.csv'
-HF_TOKEN = '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'
-
-login(token= HF_TOKEN)
+# DATA_PATH = 'train_data.csv'
+# HF_TOKEN = 'hflcAlYNF'
+# HF_TOKEN = "nPhmtMVuXy"
+# login(token=HF_TOKEN)
 
 tokenizer = AutoTokenizer.from_pretrained("THUDM/chatglm2-6b", trust_remote_code=True)
 model = AutoModel.from_pretrained("THUDM/chatglm2-6b", trust_remote_code=True).half().cuda()
 
-train_dataset = load_dataset('csv',data_files= DATA_PATH)
+'''
+这里放你的dataloader
+'''
+# jsonl_file_path = '/Users/pufferfish/Downloads/real_train_data/'
+# character_path = "/Users/pufferfish/Chat-Haruhi-Suzumiya/characters/"
+# file_names = ['xiaofeng_test_output_dialogue.jsonl', 'baizhantang_test_output_dialogue.jsonl', 'wangduoyu_test_output_dialogue.jsonl', 'guofurong_test_output_dialogue.jsonl', 'weixiaobao_test_output_dialogue.jsonl', 'haruhi_synthesis_dialogue.jsonl', 'murongfu_test_output_dialogue.jsonl', 'McGonagall_test_output_dialogue.jsonl', 'Ron_test_output_dialogue.jsonl', 'Sheldon_test_output_dialogue.jsonl', 'yuqian_test_output_dialogue.jsonl', 'duanyu_test_output_dialogue.jsonl', 'xuzhu_test_output_dialogue.jsonl', 'jiumozhi_test_output_dialogue.jsonl', 'liyunlong_synthesis_dialogue.jsonl', 'Malfoy_test_output_dialogue.jsonl', 'tongxiangyu_test_output_dialogue.jsonl', 'ayaka_test_output_dialogue.jsonl', 'Raj_test_output_dialogue.jsonl', 'Harry_test_output_dialogue.jsonl', 'Snape_test_output_dialogue.jsonl', 'Penny_test_output_dialogue.jsonl', 'zhongli_test_output_dialogue.jsonl', 'tangshiye_test_output_dialogue.jsonl', 'Luna_test_output_dialogue.jsonl', 'hutao_test_output_dialogue.jsonl', 'Dumbledore_test_output_dialogue.jsonl', 'Hermione_test_output_dialogue.jsonl', 'qiaofeng_test_output_dialogue.jsonl', 'wangyuyan_test_output_dialogue.jsonl', 'wanderer_test_output_dialogue.jsonl', 'raidenShogun_test_output_dialogue.jsonl']
+# all_datasets = []
+# for file_name in file_names:
+#     character_name = file_name.split("_")[0]
+#     character = os.path.join(character_path, character_name)
+#     jsonl_file = os.path.join(jsonl_file_path, file_name)
+#     jsonl_data = read_jsonl_file(jsonl_file)
+#     c = CharacterDataset(jsonl_data, character, 8, 2000)
+#     all_datasets.append(c)
+
+# combined_dataset = ConcatDataset(all_datasets)
+
+# batch_size = 1
+# data_loader = DataLoader(combined_dataset, batch_size=batch_size, collate_fn=collate_fn)
+
+# # train_dataset = {'train':[]}
+# context = []
+# target = []
+
+# for i,item in enumerate(data_loader):
+#     # print(item[0][0])
+#     context.append(item[0][0])
+#     target.append(item[1][0])
+
+# train_dataset = {"context":context, "target":target}
+# train_dataset = Dataset.from_dict(train_dataset)
+# train_dataset.push_to_hub("silk-road/Chat_Suzumiya_Fusion", private=False)
+
+
+dataset = load_dataset('silk-road/Chat_Suzumiya_Fusion')
+print(dataset)
+
 def preprocess_dialogue(example):
     prompt = example["context"]
     target = example["target"]
@@ -58,7 +100,6 @@ config = LoraConfig(
 
 model = get_peft_model(model, config)
 
-#以下Part还没有完全搞懂，大概是参考作者写的统一字长的手段，大佬们可以尝试修改
 def data_collator(features: list) -> dict:
     len_ids = [len(feature["input_ids"]) for feature in features]
     longest = max(len_ids)
@@ -115,4 +156,4 @@ trainer = ModifiedTrainer(
 )
 trainer.train()
 
-model.push_to_hub("Jyshen/Chat_Suzumiya_GLM2LoRA", use_auth_token=True)
+# model.push_to_hub("Jyshen/Chat_Suzumiya_GLM2LoRA", use_auth_token=True)
