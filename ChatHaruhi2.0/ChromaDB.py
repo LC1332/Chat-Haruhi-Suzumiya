@@ -23,3 +23,4 @@ class ChromaDB(BaseDB):
 
     def init_from_docs(self, vectors, documents):
         self.collection.add(embeddings=vectors, documents=documents)
+        

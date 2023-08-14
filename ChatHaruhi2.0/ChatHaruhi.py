@@ -4,6 +4,8 @@ from ChromaDB import ChromaDB
 from LangChainGPT import LangChainGPT
 import os
 
+from utils import luotuo_openai_embedding, tiktoken
+
 def foo_embedding(text):
     return [0,0,0]
 
@@ -25,7 +27,7 @@ class ChatHaruhi:
         else:
             raise ValueError("Either story_db or story_text_folder must be provided")
         
-
+        
         if llm == 'openai':
             self.llm = LangChainGPT()
         else:
@@ -35,8 +37,8 @@ class ChatHaruhi:
         self.max_len_story = 1500
         self.max_len_history = 1200
 
-        self.embedding = foo_embedding
-        self.tokenizer = foo_tokenizer
+        self.embedding = luotuo_openai_embedding
+        self.tokenizer = tiktoken
 
         self.story_prefix_prompt = "Classic scenes for the role are as follows:"
         self.k_search = 19
@@ -49,10 +51,22 @@ class ChatHaruhi:
         # 实现读取文本文件夹,抽取向量的逻辑
         db = ChromaDB()
 
+        strs = []
+
         # scan all txt file from text_folder
-        
+        for file in os.listdir(text_folder):
+            # if file name end with txt
+            if file.endswith(".txt"):
+                file_path = os.path.join(text_folder, file)
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    strs.append(f.read())
 
+        vecs = []
 
+        for mystr in strs:
+            vecs.append(self.embedding(mystr))
+
+        db.init_from_docs(vecs, strs)
 
         return db
     

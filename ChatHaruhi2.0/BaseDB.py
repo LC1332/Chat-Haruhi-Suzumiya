@@ -23,4 +23,5 @@ class BaseDB(ABC):
     @abstractmethod
     def init_from_docs(self, vectors, documents):
         pass
+
     
