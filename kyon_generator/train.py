@@ -1,7 +1,7 @@
 '''
 FILE_NAME: Train.py
 GLM2-LoRA Edition
-Edited by 睡觉鱼, Jul 18 2023
+Edited by 冷子昂，睡觉鱼, Aug 14 2023
 '''
 
 # %pip install -qU protobuf transformers==4.30.2 cpm_kernels torch>=2.0 mdtex2html sentencepiece accelerate
