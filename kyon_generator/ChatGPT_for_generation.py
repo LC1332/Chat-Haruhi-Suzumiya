@@ -77,7 +77,7 @@ class ChatGPT:
         # 预加载jsonl文件
         self.model = utils.download_models()
         self.image_embed = None
-        self.title_text_embed = None
+        self.text_embed = None
         self.title_to_text = None
         self.titles = None
 
@@ -92,20 +92,22 @@ class ChatGPT:
 
     def preload(self):
         self.image_embed = self.load(load_image_embed=True)
-        self.title_text_embed, self.title_to_text, self.titles = self.load(load_title_text_embed=True)
+        self.text_embed, self.title_to_text, self.titles = self.load(load_title_text_embed=True)
 
     def load(self, load_title_text_embed=False,
              load_image_embed=False):
         if load_title_text_embed:
             text_embed = {}
+            title_text_embed = {}
             title_to_text = {}
             with open(self.title_text_embed_jsonl_path, 'r', encoding='utf-8') as f:
                 for line in f:
                     data = json.loads(line)
-                    text_embed.update(data)
-            for title_text in text_embed.keys():
-                res = title_text.split("link")
+                    title_text_embed.update(data)
+            for title_text, embed in title_text_embed.items():
+                res = title_text.split("｜｜｜")
                 title_to_text[res[0]] = res[1]
+                text_embed[res[1]] = embed
             return text_embed, title_to_text, list(title_to_text.keys())
 
         elif load_image_embed:
@@ -152,7 +154,7 @@ class ChatGPT:
         if get_image:
             jsonl = self.image_embed
         elif get_texts:
-            jsonl = self.title_text_embed
+            jsonl = self.text_embed
         # else:
         #     # 计算query_embed
         #     jsonl = {}
