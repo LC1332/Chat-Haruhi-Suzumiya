@@ -93,6 +93,7 @@ We are refactoring the code for ChatHaruhi 2.0, which will be solve the high mod
  
 The VITS model used in the video was generously provided by the [Haruhi Suzumiya Support Group](https://space.bilibili.com/201296348). We are still refining the perforamnce. Please note this [video](https://github.com/LC1332/Chat-Haruhi-Suzumiya/assets/5266090/8b88c8ac-262f-4705-a4e9-489b1ec0ce11) contains audio.
 
+https://github.com/LC1332/Chat-Haruhi-Suzumiya/assets/5266090/8b88c8ac-262f-4705-a4e9-489b1ec0ce11
 
 ## Content
 
