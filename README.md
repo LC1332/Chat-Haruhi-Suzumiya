@@ -14,33 +14,33 @@
 
 本项目是一个开源项目，项目成员均在DataWhale等开源社区招募。
 
-李鲁鲁( \[Cheng Li@SenseTime\](https://github.com/LC1332) )发起了整个项目,并设计和实现了项目的大多数功能。
+李鲁鲁( [Cheng Li@SenseTime](https://github.com/LC1332) )发起了整个项目,并设计和实现了项目的大多数功能。
 
-冷子昂( \[Ziang Leng@SenseTime\](https://blairleng.github.io) )设计和实现了整体的ChatHaruhi1.0的训练,数据生成和后端架构。 
+冷子昂( [Ziang Leng@SenseTime](https://blairleng.github.io) )设计和实现了整体的ChatHaruhi1.0的训练,数据生成和后端架构。
 
-闫晨曦( \[Chenxi Yan@Chengdu University of Information Technology\](https://github.com/todochenxi) )实现和维护了ChatHaruhi1.0版本的后端。
+闫晨曦( [Chenxi Yan@Chengdu University of Information Technology](https://github.com/todochenxi) )实现和维护了ChatHaruhi1.0版本的后端。
 
-沈骏一( \[Junyi Shen@Zhejiang University\](https://github.com/J1shen) )实现了训练代码,参与了训练数据集生成。
+沈骏一( [Junyi Shen@Zhejiang University](https://github.com/J1shen) )实现了训练代码,参与了训练数据集生成。
 
-王皓( \[Hao Wang\](https://github.com/wanghao07456) )收集了武林外传的台本数据,参与了增广数据的生成。
+王皓( [Hao Wang](https://github.com/wanghao07456) )收集了武林外传的台本数据,参与了增广数据的生成。
 
-米唯实( \[Weishi MI@Tsinghua University\](https://github.com/hhhwmws0117) )参与了增广数据生成。
+米唯实( [Weishi MI@Tsinghua University](https://github.com/hhhwmws0117) )参与了增广数据生成。
 
-Yaying Fei( \[Aria Fei@Beijing University of Technology\](https://ariafyy.github.io/) )实现了台本工具 ASR 功能,参与了Openness-Aware Personality paper分支项目。
+Yaying Fei( [Aria Fei@Beijing University of Technology](https://ariafyy.github.io/) )实现了台本工具 ASR 功能,参与了Openness-Aware Personality paper分支项目。
 
-封小洋( \[Xiaoyang Feng@Nanjing Agricultural University\](https://github.com/fengyunzaidushi) )整合了台本识别工具功能,参与了Openness-Aware Personality paper分支项目。
+封小洋( [Xiaoyang Feng@Nanjing Agricultural University](https://github.com/fengyunzaidushi) )整合了台本识别工具功能,参与了Openness-Aware Personality paper分支项目。
 
-冷月( \[Song Yan\](https://github.com/zealot52099) )收集了big bang thoery的数据。实现了台本格式转换功能。
+冷月( [Song Yan](https://github.com/zealot52099) )收集了big bang thoery的数据。实现了台本格式转换功能。
 
-scixing(汪好盛)( \[HaoSheng Wang\](https://github.com/ssccinng) )实现了台本工具中声纹识别功能,以及tts-vits语音合成功能。
+scixing(汪好盛)( [HaoSheng Wang](https://github.com/ssccinng) )实现了台本工具中声纹识别功能,以及tts-vits语音合成功能。
 
-Linkang Zhan( \[JunityZhan@Case Western Reserve University\](https://github.com/JunityZhan) ) 收集了原神的system prompt和故事数据。
+Linkang Zhan( [JunityZhan@Case Western Reserve University](https://github.com/JunityZhan) ) 收集了原神的system prompt和故事数据。
 
-贾曜恺( \[Yaokai Jia\](https://github.com/KaiJiaBrother) )实现了Vue版本的前端,并且在心理项目中实践了Bert的GPU抽取。
+贾曜恺( [Yaokai Jia](https://github.com/KaiJiaBrother) )实现了Vue版本的前端,并且在心理项目中实践了Bert的GPU抽取。
 
-吴平宇( \[Pingyu Wu@Juncai Shuyun\](https://github.com/wpydcr) )帮助部署了第一版本的训练代码。
+吴平宇( [Pingyu Wu@Juncai Shuyun](https://github.com/wpydcr) )帮助部署了第一版本的训练代码。
 
-孙浩甄( \[Haozhen Sun@Tianjin University\] )绘制了ChatHaruhi角色的拼图。
+孙浩甄( [Haozhen Sun@Tianjin University] )绘制了ChatHaruhi角色的拼图。
 
 
 </details>
