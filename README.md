@@ -10,29 +10,38 @@
 
 
 <details>
-  <summary> 本项目由李鲁鲁，冷子昂，闫晨曦，封小洋，scixing，沈骏一，Aria Fei, 米唯实, 吴平宇, 贾曜恺等开发。 </summary>
+  <summary> 本项目由李鲁鲁, 冷子昂, 闫晨曦, 封小洋, scixing, 沈骏一, Aria Fei, 王皓, 米唯实, 冷月, JunityZhan, 贾曜恺, 吴平宇, 孙浩甄等开发。 </summary>
 
-  李鲁鲁( [Cheng Li@SenseTime](https://github.com/LC1332) )发起了整个项目，并设计和实现了项目的大多数功能。
+本项目是一个开源项目，项目成员均在DataWhale等开源社区招募。
 
-李鲁鲁发起了项目，并完成了最早的版本，在多个微信群实现了测试。完成了训练数据自动生成对话部分，设计了整体的路线，并撰写报告。
+李鲁鲁( \[Cheng Li@SenseTime\](https://github.com/LC1332) )发起了整个项目,并设计和实现了项目的大多数功能。
 
-冷子昂负责了每一个阶段的Gradio开发，以及每个部分的功能整合和架构设计。
+冷子昂( \[Ziang Leng@SenseTime\](https://blairleng.github.io) )设计和实现了整体的ChatHaruhi1.0的训练,数据生成和后端架构。 
 
-闫晨曦一开始将李鲁鲁的notebook重构为app.py，参与了WebUI的embedding部分重构整合。
+闫晨曦( \[Chenxi Yan@Chengdu University of Information Technology\](https://github.com/todochenxi) )实现和维护了ChatHaruhi1.0版本的后端。
 
-封小洋进行了中文转日文模型的选型，完成了针对台词抽取图片的工具。整合了声纹识别。即将继续参加台本工具的开发。
+沈骏一( \[Junyi Shen@Zhejiang University\](https://github.com/J1shen) )实现了训练代码,参与了训练数据集生成。
 
-scixing实践了VITS语音，完成了台词对应的语音抽取，实现了第一个版本的声纹分类。
+王皓( \[Hao Wang\](https://github.com/wanghao07456) )收集了武林外传的台本数据,参与了增广数据的生成。
 
-沈骏一实现了使用ChatGLM2 finetune实验
+米唯实( \[Weishi MI@Tsinghua University\](https://github.com/hhhwmws0117) )参与了增广数据生成。
 
-Aria Fei 对接了whisper到台本工具。即将继续参加台本工具的开发。
+Yaying Fei( \[Aria Fei@Beijing University of Technology\](https://ariafyy.github.io/) )实现了台本工具 ASR 功能,参与了Openness-Aware Personality paper分支项目。
 
-米唯实实现了Chat哆啦A梦的分支版本
+封小洋( \[Xiaoyang Feng@Nanjing Agricultural University\](https://github.com/fengyunzaidushi) )整合了台本识别工具功能,参与了Openness-Aware Personality paper分支项目。
 
-吴平宇部署了ChatGLM2的训练程序，并提供了训练的计算资源。
+冷月( \[Song Yan\](https://github.com/zealot52099) )收集了big bang thoery的数据。实现了台本格式转换功能。
 
-贾曜恺开发了一个Vue前端实现方案
+scixing(汪好盛)( \[HaoSheng Wang\](https://github.com/ssccinng) )实现了台本工具中声纹识别功能,以及tts-vits语音合成功能。
+
+Linkang Zhan( \[JunityZhan@Case Western Reserve University\](https://github.com/JunityZhan) ) 收集了原神的system prompt和故事数据。
+
+贾曜恺( \[Yaokai Jia\](https://github.com/KaiJiaBrother) )实现了Vue版本的前端,并且在心理项目中实践了Bert的GPU抽取。
+
+吴平宇( \[Pingyu Wu@Juncai Shuyun\](https://github.com/wpydcr) )帮助部署了第一版本的训练代码。
+
+孙浩甄( \[Haozhen Sun@Tianjin University\] )绘制了ChatHaruhi角色的拼图。
+
 
 </details>
 
