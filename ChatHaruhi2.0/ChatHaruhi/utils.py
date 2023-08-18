@@ -15,7 +15,7 @@ _luotuo_model = None
 
 _enc_model = None
 
-def tiktoken( text ):
+def tiktokenizer( text ):
     global _enc_model
 
     if _enc_model is None:
@@ -78,7 +78,7 @@ def is_chinese_or_english(text):
     for char in text:
         # 判断字符的Unicode值是否在中文字符的Unicode范围内
         if '\u4e00' <= char <= '\u9fa5':
-            is_chinese += 1
+            is_chinese += 4
         # 判断字符是否为英文字符（包括大小写字母和常见标点符号）
         elif ('\u0041' <= char <= '\u005a') or ('\u0061' <= char <= '\u007a'):
             is_english += 1
@@ -92,6 +92,7 @@ def get_embedding_for_english(text, model="text-embedding-ada-002"):
     text = text.replace("\n", " ")
     return openai.Embedding.create(input=[text], model=model)['data'][0]['embedding']
 
+import os
 
 def luotuo_openai_embedding(texts, is_chinese= None ):
     """
@@ -102,14 +103,16 @@ def luotuo_openai_embedding(texts, is_chinese= None ):
         when texts is a string, return a single embedding
     """
 
+    openai_key = os.environ.get("OPENAI_API_KEY")
+
     if isinstance(texts, list):
         index = random.randint(0, len(texts) - 1)
-        if is_chinese_or_english(texts[index]) == "chinese":
+        if openai_key is None or is_chinese_or_english(texts[index]) == "chinese":
             return [embed.cpu().tolist() for embed in get_embedding_for_chinese(get_luotuo_model(), texts)]
         else:
             return [get_embedding_for_english(text) for text in texts]
     else:
-        if is_chinese_or_english(texts) == "chinese":
+        if openai_key is None or is_chinese_or_english(texts) == "chinese":
             return get_embedding_for_chinese(get_luotuo_model(), texts)[0].cpu().tolist()
         else:
             return get_embedding_for_english(texts)

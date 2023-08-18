@@ -1,5 +1,5 @@
 import chromadb
-from BaseDB import BaseDB
+from .BaseDB import BaseDB
 import random
 import string
 import os
@@ -12,6 +12,10 @@ class ChromaDB(BaseDB):
         self.path = None
     
     def init_db(self):
+
+        if self.client is not None:
+            print('ChromaDB has already been initialized')
+            return
 
         folder_name = ''
 
@@ -31,8 +35,9 @@ class ChromaDB(BaseDB):
             previous_path = self.path
             self.path = file_path
             self.client = chromadb.PersistentClient(path = file_path)
-            # remove previous path
-            os.system("rm -rf " + previous_path)
+            # remove previous path if it start with tempdb
+            if previous_path.startswith("tempdb"):
+                os.system("rm -rf " + previous_path)
                         
 
     def load(self, file_path):
@@ -42,7 +47,7 @@ class ChromaDB(BaseDB):
 
     def search(self, vector, n_results):
         results = self.collection.query(query_embeddings=[vector], n_results=n_results)
-        return results['documents']
+        return results['documents'][0]
 
     def init_from_docs(self, vectors, documents):
         if self.client is None:
