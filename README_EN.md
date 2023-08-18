@@ -198,13 +198,13 @@ TODO:
 
 - 🏆 Chat Haruhi Suzumiya won the second prize in the Create@AI Hackathon hosted by the Modelscope Community, co-sponsored by Alibaba Cloud and NVIDIA, and co-organized by Tianchi(top3) [video](https://www.bilibili.com/video/BV1Xh411A7kC/)
 
-- 🏆 Honored with second prize(top3) and do oral presentation in July 17 for CAAI 8th-Big Data and Social Computing: 8th China National Conference, BDSC 2023, Urumqi, China, July 15–17, 2023 [for more details](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
+- 🏆 Honored with the second prize (top3) and do oral presentation in July 17 for CAAI 8th-Big Data and Social Computing: 8th China National Conference, BDSC 2023, Urumqi, China, July 15–17, 2023 [for more details](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
 
 ## SponsorShip
 
-Because Chat Suzumiya Haruhi adopts a strategy similar to CoT, which is 10-20 times more expensive than usual chat. Currently, API tokens are supported by community donations.
+Due to Chat Haruhi Suzumiya adopts a strategy similar to CoT, which is 10-20 times more expensive than usual. Currently, API tokens are supported by community donations.
 
-In addition, we are actively looking for server resources (A100, A800). If you are willing to donate, please contact us. We greatly appreciate any support to help keep Chat Suzumiya Haruhi running.
+In addition, we are actively looking for GPUs (A100, A800). If you are willing to donate, please contact us. We greatly appreciate any support to help keep Chat Haruhi Suzumiya running.
 
 If you are interested in sponsoring the [Luotuo Project](https://github.com/LC1332/Luotuo-Chinese-LLM#%E8%B5%9E%E5%8A%A9sponsorships), please click on the [major project](https://github.com/LC1332/Luotuo-Chinese-LLM) or view the [sponsorship form](https://github.com/LC1332/Luotuo-Chinese-LLM/blob/main/data/Sponsorship_and_balance.md).
 
