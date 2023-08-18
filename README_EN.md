@@ -91,7 +91,7 @@ We are refactoring the code for ChatHaruhi 2.0, which will be solve the high mod
 
 ## Demo Video
  
-The VITS model used in the video was generously provided by the [Haruhi Suzumiya Support Group](https://space.bilibili.com/201296348). We are still refining the perforamnce. Please note this [video](https://github.com/LC1332/Chat-Haruhi-Suzumiya/assets/5266090/8b88c8ac-262f-4705-a4e9-489b1ec0ce11) contains audio.
+The VITS model used in the video was generously provided by the [Haruhi Suzumiya Support Group](https://space.bilibili.com/201296348). We are still refining the perforamnce. Please note this [video](https://github.com/LC1332/Chat-Haruhi-Suzumiya/assets/5266090/8b88c8ac-262f-4705-a4e9-489b1ec0ce11) contains audio 📢 .
 
 https://github.com/LC1332/Chat-Haruhi-Suzumiya/assets/5266090/8b88c8ac-262f-4705-a4e9-489b1ec0ce11
 
@@ -197,3 +197,14 @@ TODO:
 - 🏆 Honored with second prize(top3) and do oral presentation in July 17 for CAAI 8th-Big Data and Social Computing: 8th China National Conference, BDSC 2023, Urumqi, China, July 15–17, 2023 ，for more details [link](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
 
 ## SponsorShip
+
+Because Chat Suzumiya Haruhi adopts a strategy similar to CoT, which is 10-20 times more expensive than usual chat. Currently, API tokens are supported by community donations.
+
+In addition, we are actively looking for server resources (A100, A800). If you are willing to donate, please contact us. We greatly appreciate any support to help keep Chat Suzumiya Haruhi running.
+
+If you are interested in sponsoring the [Luotuo Project](https://github.com/LC1332/Luotuo-Chinese-LLM#%E8%B5%9E%E5%8A%A9sponsorships), please click on the [major project](https://github.com/LC1332/Luotuo-Chinese-LLM) or view the [sponsorship form](https://github.com/LC1332/Luotuo-Chinese-LLM/blob/main/data/Sponsorship_and_balance.md).
+
+[Back to top](#BigTitle)
+
+
+## Members
