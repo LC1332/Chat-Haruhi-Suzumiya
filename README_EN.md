@@ -1,6 +1,8 @@
 [SponsorShip](#SponsorShip) | [Report](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/report.md) | [Hiring](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/Hiring.md) | [Personality](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
 
-# Chat-Haruhi-Suzumiya
+<h1 id="BigTitle">
+    Chat-Haruhi-Suzumiya
+</h1>
 
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)]()
 [![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)]()
@@ -204,7 +206,7 @@ In addition, we are actively looking for server resources (A100, A800). If you a
 
 If you are interested in sponsoring the [Luotuo Project](https://github.com/LC1332/Luotuo-Chinese-LLM#%E8%B5%9E%E5%8A%A9sponsorships), please click on the [major project](https://github.com/LC1332/Luotuo-Chinese-LLM) or view the [sponsorship form](https://github.com/LC1332/Luotuo-Chinese-LLM/blob/main/data/Sponsorship_and_balance.md).
 
-[Back to top](#BigTitle)
+>[Back to top](#BigTitle)
 
 
 ## Members
