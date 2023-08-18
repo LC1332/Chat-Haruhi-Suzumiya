@@ -15,6 +15,7 @@
     <p>
         <b>English</b> |
         <a href="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/README.md">Chinese简体中文</a> |
+        🤗 <a href="https://huggingface.co/spaces/silk-road/ChatHaruhi" target="_blank">Hugging Face</a> •
     <p>
 </h4>
 
