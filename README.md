@@ -63,6 +63,11 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 | 名称 |colab链接| 说明         |
 |---|---|---|
 | ChatHaruhi1.0                                                |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 能够支持角色切换的功能整合客户端                                                                                                 |
+| ChatHaruhi2.0(EA) | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/ChatHaruhi2.0/notebook/test_LangChainOpenAILLM.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | ChatHaruhi2.0的openAI版本已经能运行了 |
+
+
+
+
 
 由于整理训练代码等原因，1.0的代码各个模块耦合比较严重，ChatHaruhi2.0的代码正在重构中，后者将会以一个可以用pip安装的库的形式发布。
 
