@@ -208,3 +208,19 @@ If you are interested in sponsoring the [Luotuo Project](https://github.com/LC13
 
 
 ## Members
+
+
+### Citation
+
+Please cite the repo if you use the data or code in this repo.
+
+```
+@misc{ChatHaruhi,
+  author = {Cheng Li, Ziang Leng, Chenxi Yan, Yaying Fei, Xiaoyang Feng, SCI xing and Yaokai Jia },
+  title = {ChatHaruhi: Reviving Anime Character in Reality via Large Language Model },
+  year = {2023},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/LC1332/Chat-Haruhi-Suzumiya}},
+}
+```
