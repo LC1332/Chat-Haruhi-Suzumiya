@@ -215,6 +215,34 @@ If you are interested in sponsoring the [Luotuo Project](https://github.com/LC13
 
 ## Members
 
+- [Cheng Li@SenseTime](https://github.com/LC1332)  purposed the entire project and designed and implemented most of the functionality.
+
+- [Ziang Leng@SenseTime](https://blairleng.github.io) designed and implemented the overall training, data generation and backend architecture of ChatHaruhi1.0.
+
+- [Chenxi Yan@Chengdu University of Information Technology](https://github.com/todochenxi) implemented and maintained the backend of ChatHaruhi1.0 version.
+
+- [Junyi Shen@Zhejiang University](https://github.com/J1shen) implemented the training code and participated in the generation of training dataset.
+
+- [Hao Wang](https://github.com/wanghao07456) collected script data from My Own Swordsman and participated in the generation of augmented data.
+
+- [Weishi MI@Tsinghua University](https://github.com/hhhwmws0117) participated in the generation of augmented data.
+
+- [Aria Fei@BJUT](https://ariafyy.github.io/) implemented the ASR function of the script tool and participated in the Openness-Aware Personality paper sub-project.
+
+- [Xiaoyang Feng@Nanjing Agricultural University](https://github.com/fengyunzaidushi) integrated the functions of the script recognition tool and participated in the Openness-Aware Personality paper sub-project.
+
+- [Song Yan](https://github.com/zealot52099) collected data from The Big Bang Theory. Implemented script format conversion functionality.
+
+- [HaoSheng Wang](https://github.com/ssccinng) implemented voiceprint recognition function in script tool, and tts-vits speech synthesis function.
+
+- [Linkang Zhan@Case Western Reserve University](https://github.com/JunityZhan) collected system prompt and story data from Genshin Impact.
+
+- [Yaokai Jia](https://github.com/KaiJiaBrother) implemented the Vue version of the frontend, and practiced GPU extraction of Bert in the psychology project.
+
+- [Pingyu Wu@Juncai Shuyun](https://github.com/wpydcr) helped deploy the first version of the training code.
+
+- [Haozhen Sun@Tianjin University](https://github.com/jcandzero) drew the mosaic of ChatHaruhi characters.
+
 
 ### Citation
 
@@ -230,3 +258,6 @@ Please cite the repo if you use the data or code in this repo.
   howpublished = {\url{https://github.com/LC1332/Chat-Haruhi-Suzumiya}},
 }
 ```
+---
+If you have any suggestions for the project, such as the interface design of ChatHaruhi2.0,
+or want to add references to the future version of this report, please submit the issue.
