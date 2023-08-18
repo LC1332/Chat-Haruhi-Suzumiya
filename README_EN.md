@@ -259,5 +259,5 @@ Please cite the repo if you use the data or code in this repo.
 }
 ```
 ---
-If you have any suggestions for the project, such as the interface design of ChatHaruhi2.0,
-or want to add references to the future version of this report, please submit the issue.
+If you have any suggestions for the project, such as the interface design of **ChatHaruhi2.0**,
+or want to add references to the future version of this report, please submit the [issue](https://github.com/LC1332/Chat-Haruhi-Suzumiya/issues).
