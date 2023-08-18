@@ -41,7 +41,7 @@ Linkang Zhan( [JunityZhan@Case Western Reserve University](https://github.com/Ju
 
 ## Abstract
 
-Role-playing chatbots built on large language models have drawn interest, but better techniques are needed to enable mimicking specific fictional characters. We propose an algorithm that controls language models via an improved prompt and memories of the character extracted from scripts. We construct ChatHaruhi, a dataset covering 32 Chinese/English TV/anime characters with over 52k simulated dialogues. Both automatic and human evaluations show our approach improves role-playing ability over baselines. Code and data are available at https://github.com/LC1332/Chat-Haruhi-Suzumiya.
+Role-playing chatbots built on large language models have drawn interest, but better techniques are needed to enable mimicking specific fictional characters. We propose an algorithm that controls language models via an improved prompt and memories of the character extracted from scripts. We construct ChatHaruhi, a dataset covering 32 Chinese/English TV/anime characters with over 54k simulated dialogues. Both automatic and human evaluations show our approach improves role-playing ability over baselines. Code and data are available at https://github.com/LC1332/Chat-Haruhi-Suzumiya.
 
 本论文首先写作了中文版本，中文版本链接见 [arxiv_paper.md](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/arxiv_paper.md)。我们借助claude对中文版进行翻译后，经过人工修订编写的本英文版论文。
 
@@ -96,7 +96,7 @@ I want you to act like {character} from {series}. I want you to respond and answ
 
 1. 基于大型的语言模型，我们提出了一套完整的角色扮演的算法系统。这套算法可以有效地组织角色的过往记忆，使得语言模型能够模仿特定影视、动漫角色的语气和知识进行对话。这套系统可以使用OpenAI的ChatGPT或者Claude这样的预训练大模型，也可以使用较小的7B规模的本地模型。
 
-2. 我们提出了一个角色扮演的数据集，这个数据集包括了超过30个不同的中文/英文影视角色。通过收集电影、小说、剧本的语料，并进行结构化的抽取，我们收集了超过23000条以上的对话信息。这些对话数据可以用来训练和检验角色扮演的语言模型。同时，使用我们提出的算法，借助GPT3和GPT4，我们为这些角色额外模拟生成了超过27000条以上的对话。合并形成了ChatHaruhi-50k数据集。
+2. 我们提出了一个角色扮演的数据集，这个数据集包括了超过30个不同的中文/英文影视角色。通过收集电影、小说、剧本的语料，并进行结构化的抽取，我们收集了超过23000条以上的对话信息。这些对话数据可以用来训练和检验角色扮演的语言模型。同时，使用我们提出的算法，借助GPT3和GPT4，我们为这些角色额外模拟生成了超过27000条以上的对话。合并形成了ChatHaruhi-54k数据集。
 
 3. 为了检验和比较不同方式形成的角色扮演ChatBot的性能，我们使用自动测评和人工测评两个方式对角色扮演机器人进行了测评。在自动测评中，我们测试角色是否能够对剧本中的经典的剧情进行响应，给出和原剧本近似的回答。在人工测评中，我们提出了两个不同的指标，让被试去评估两个不同的指标: 吻合度: 机器人的回答是否符合角色的原来设定; 回答质量: 机器人的回答的语言质量是否较好。结果发现，在使用同样的基语言模型的情况下，我们的算法可以给出更好的角色扮演的性能。
 
@@ -328,7 +328,7 @@ $d'(q_1) = LLM( s_R, (d^1_M, 1^R_M),  ..., (d^L_M, d^R_M), q_1 )$
 
 ## Question Generating
 
-需要注意的是，有的角色往往只有较少的语料，这个数量往往不满足微调语言模型的需求。因此，我们需要用现有的语料，去增广特定角色对应的问题 $q$ 。幸运的是，在一个最近的研究中，R. Taori等利用不到200个instruction增广到52k时，研究了这个问题。这里我们借鉴并修改了他们的prompt(具体使用的prompt见附录)。
+需要注意的是，有的角色往往只有较少的语料，这个数量往往不满足微调语言模型的需求。因此，我们需要用现有的语料，去增广特定角色对应的问题 $q$ 。幸运的是，在一个最近的研究中，R. Taori等利用不到200个instruction增广到54k时，研究了这个问题。这里我们借鉴并修改了他们的prompt(具体使用的prompt见附录)。
 
 <p align="center">
         <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/generateChatInAlpacaWay.png">
@@ -354,11 +354,11 @@ $d'(q_1) = LLM( s_R, (d^1_M, 1^R_M),  ..., (d^L_M, d^R_M), q_1 )$
 
 ## Language Model Tuning
 
-在整理了完整的ChatHaruhi 52K数据集之后，我们可以对本地的模型进行tuning。由于在52K的数据中，约有15K的数据是英文数据，其余的dialogues为中文。所以我们考虑使用ChatGLM2-6B[引用]来进行tuning。在进行ChatGLM2微调的时候，我们按照前文叙述的 $s-R$ - $D$ - $H$ - $q$ 作为input，$a$ 作为output的形式进行微调(即在 $a$ 上计算GPT的loss)。我们使用了以下三种不同的数据得到了三个不同的模型
+在整理了完整的ChatHaruhi 54K数据集之后，我们可以对本地的模型进行tuning。由于在54K的数据中，约有15K的数据是英文数据，其余的dialogues为中文。所以我们考虑使用ChatGLM2-6B[引用]来进行tuning。在进行ChatGLM2微调的时候，我们按照前文叙述的 $s-R$ - $D$ - $H$ - $q$ 作为input，$a$ 作为output的形式进行微调(即在 $a$ 上计算GPT的loss)。我们使用了以下三种不同的数据得到了三个不同的模型
 
 A. 使用22752个原始语料形成的dialogues。
 
-B. 使用22752个原始语料形成的dialogues，加上30k的模拟问题形成的dialogues，也就是完整的52K数据。
+B. 使用22752个原始语料形成的dialogues，加上31k的模拟问题形成的dialogues，也就是完整的54K数据。
 
 C. 注意到22752个dialogues是我们使用ChatBot进行生成的。原理上，我们也可以使用角色的原句，进行训练。
 
@@ -376,7 +376,7 @@ C. 注意到22752个dialogues是我们使用ChatBot进行生成的。原理上�
 
 4. 使用完整的 $s-R$ - $D$ - $H$ - $q$ 输入到 ChatGLM2 模型
 
-5. 使用与4相同prompt，输入到在ChatHaruhi 52K数据上tuning过的模型中。
+5. 使用与4相同prompt，输入到在ChatHaruhi 54K数据上tuning过的模型中。
 
 <p align="center">
         <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/qualitativeResult.png">
@@ -395,9 +395,9 @@ C. 注意到22752个dialogues是我们使用ChatBot进行生成的。原理上�
 
 # Conclusion, Discussion and Future Work
 
-在这个tech report中，我们尝试构造了一个能够模仿不同的虚拟人物，进行对话的系统。通过利用语言模型的In context learning机制，以及借助更大的语言模型的发展，我们验证了可以借助更合适的系统提示词，加上虚拟人物过往的经典桥段作为例子，来构造一个有个性的聊天机器人的可能性。并且，我们生成了一定52K的模拟数据，验证了可以将多个人物，同时微调到一个7B左右规模的本地模型中。
+在这个tech report中，我们尝试构造了一个能够模仿不同的虚拟人物，进行对话的系统。通过利用语言模型的In context learning机制，以及借助更大的语言模型的发展，我们验证了可以借助更合适的系统提示词，加上虚拟人物过往的经典桥段作为例子，来构造一个有个性的聊天机器人的可能性。并且，我们生成了一定54K的模拟数据，验证了可以将多个人物，同时微调到一个7B左右规模的本地模型中。
 
-因为我们尝试的第一个人物是Haruhi Suzumiya，这也是一个具有鲜明个性的动漫人物。所以我们将我们的项目命名为ChatHaruhi。对应的数据集命名为Haruhi-52K。伴随着本tech report发布的，还有使用23k原始台本训练的模型A，和使用完整52k训练的模型B，Demo on Hugging Face以及完整的ChatHaruhi-52K数据集。
+因为我们尝试的第一个人物是Haruhi Suzumiya，这也是一个具有鲜明个性的动漫人物。所以我们将我们的项目命名为ChatHaruhi。对应的数据集命名为Haruhi-54K。伴随着本tech report发布的，还有使用23k原始台本训练的模型A，和使用完整54k训练的模型B，Demo on Hugging Face以及完整的ChatHaruhi-54K数据集。
 
 在后续的版本中，我们将会重构ChatHaruhi的接口，使其更容易被复用(附录ChatHaruhi2.0)，补充定量实验的部分。
 
@@ -454,7 +454,7 @@ chatbot = ChatHaruhi( system_prompt = 'prompt.txt', \
 response = chatbot.chat(text = 'Can you introduce youself?', role = 'Kyon' )
 ```
 
-使用一个简单的system_prompt参数和一个向量数据库来进行接入。并且开始支持llm的切换，包括本文中训练的本地模型，Claude或者星火API的接入等等。如果使用ChatHaruhi-52K中涉及到的角色，直接使用
+使用一个简单的system_prompt参数和一个向量数据库来进行接入。并且开始支持llm的切换，包括本文中训练的本地模型，Claude或者星火API的接入等等。如果使用ChatHaruhi-54K中涉及到的角色，直接使用
 
 ```python
 from ChatHaruhi import ChatHaruhi
