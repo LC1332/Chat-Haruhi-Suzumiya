@@ -153,3 +153,31 @@ For more things: https://github.com/LC1332/Haruhi-2-Dev
 
 
 ## Quick Start of Each Demo
+
+
+
+| Name |Colab Link| Description         |
+|---|---|---|
+| ChatHaruhi1.0                                                |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| A functionally integrated client capable of supporting role switching                                                                                                 |
+| Genesis                                                     |<a href="https://colab.research.google.com/github/LC1332/Prophet-Andrew-Ng/blob/main/prophet-code/haruhiLangChain.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| the first gradio chat developed by Lulu Li |
+| Baidu Studio Version                                               | [Baidu Studio Version](https://aistudio.baidu.com/aistudio/projectdetail/6386896) | A simplified version of Baidu Studio developed by DataWhale teaching assistant - Qijun Ma |
+| HuggingFace Version                                            | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi) | HuggingFace Version                                                                                    |
+| personality - College entrance exam essay | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/College_essays_gradio.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | College entrance exam essay generator tailored to high or low openness personalities，[link](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) |
+| personality-Chatbot                                               | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/PersonalityChatbot.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | Chatbot corresponding to high/low open personality，[link](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)  |
+| Chat Megumi                                                 |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/gradio_megumi.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| Chat Megumi was created using a corpus collected by community friends. |
+
+## Tutorial Video in Chinese
+
+| Video | Description |
+|---|---|
+| [Roadmap in 5 Minutes](https://www.bilibili.com/video/BV1Xh411A7kC/)    | AI Hackathon of Modelscope in Bilibi       |
+| [DataWhale](https://www.bilibili.com/video/BV1ho4y1P75H) | Instructional video created for a DataWhale assignment |
+| [Script Tool](https://www.bilibili.com/video/BV1V8411S7eT)      |Step-by-step guide to using the yuki_builder scripting tool|
+| [Character data format](https://www.bilibili.com/video/BV1nu411H7Sy/)    |Tutorial on the character data format and converting text files to configuration files. |
+| [Modelscope tutorial in 40 minutes](https://www.bilibili.com/video/BV1Wm4y1W7XH) | 40-tutorial in entry-level, with an additional 40 minutes for discussion and Q&A |
+
+  
+
+## TODO and Feature
+
+TODO:
