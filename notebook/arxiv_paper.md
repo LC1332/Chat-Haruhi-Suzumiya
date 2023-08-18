@@ -88,7 +88,7 @@ I want you to act like {character} from {series}. I want you to respond and answ
 本项目的关键想法，是抽取尽可能多的原剧本，形成角色的记忆数据库。在用户给出新的提问时，系统会搜索相关的经典剧情。并且结合人物设定的prompt，去组合控制语言模型，争取对角色形成更精确的模仿。同时，收到CAMEL和Baize项目的启发，我们设计了一套自动对话语料生成的系统，对于性格鲜明，但是原本对话较少的角色，我们可以进一步生成符合角色性格设定的语料。这样我们可以生成充分的语料使得微调一个本地的模型成为可能。
 
 <p align="center">
-        <img src="https://github.com/LC1332/Paper-Haruhi/blob/main/figures/dataset_statistic.png">
+        <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/dataset_statistic.png">
 </p>
 
 
@@ -224,7 +224,7 @@ $H$的信息也会被输入到语言模型，保证对话的连贯性。实际�
 **李云龙:** 李云龙是我们添加的第一个ChatGPT了解比较少的角色。结果发现通过合适的记忆对话，也可以让ChatBot去有效模仿李云龙团长的行为。在这里我们使用的是TV版本的亮剑，相比于小说版本，前者有大量的台词编写，塑造了一个非常立体而生动的军人角色。
 
 <p align="center">
-        <img src="https://github.com/LC1332/Paper-Haruhi/blob/main/figures/datasetOverview.png">
+        <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/datasetOverview.png">
 </p>
 
 
@@ -292,7 +292,7 @@ Penny | 152 | 879 | 47656|虚竹 | 132 | 197 | 22905
 
 
 <p align="center">
-        <img src="https://github.com/LC1332/Paper-Haruhi/blob/main/figures/roleDataPrepare.png">
+        <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/roleDataPrepare.png">
 </p>
 
 
@@ -317,7 +317,7 @@ Penny | 152 | 879 | 47656|虚竹 | 132 | 197 | 22905
 这里需要注意的是，我们收集的 $D$ 数据并不是严格的成对的 $(q,a)$ 的形式。这使得我们并不能直接微调一个语言模型来学习所有的 $\{D_R}$ 数据。对此，我们对任意的 $d \in D_R$ 。我们取出所有在主角 $R$ 对话之前的某个非主角的对话，以这个对话为 $q$ , 希望以这个 $q$ 为第一个问题 $q_1$ ，去生成一段对话。
 
 <p align="center">
-        <img src="https://github.com/LC1332/Paper-Haruhi/blob/main/figures/question2dialogue.png">
+        <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/question2dialogue.png">
 </p>
 
 在实际过程中，我们发现有的时候语言模型可以输出多次的对话，即在给出一个回答 $a_1$ 后，会产生新的问题 $q_2$ 以及后面的回复。并且这样生成的对话对中，所有的 $a$ 都较符合角色 $R$ 的设定。由此，我们希望修改我们的ChatBot，使得我们可以进一步利用这个特性，生成更多的对话。对于每一个对话 $d$ ，我们都找到角色 $R$ 说话的第一句话。并且在这句对话开始前，将 $d$ 切割为 $d^L$ 和 $d^R$ 左右两段对话。并且我们在 $d^L$ 的两端插入 User Message 的special token，在 $d^R$ 的两端插入 AI Message 的 special token。对所有的 $M$ 个 story我们都进行这样的操作，这样我们希望语言模型会在这 $M$ 个例子的基础上， 在我们给定 $q_1$ 的基础上，去模拟生成对应的对话 $d'$ 。生成后的 $d'$ 会成为语言模型的微调数据。即
@@ -331,7 +331,7 @@ $d'(q_1) = LLM( s_R, (d^1_M, 1^R_M),  ..., (d^L_M, d^R_M), q_1 )$
 需要注意的是，有的角色往往只有较少的语料，这个数量往往不满足微调语言模型的需求。因此，我们需要用现有的语料，去增广特定角色对应的问题 $q$ 。幸运的是，在一个最近的研究中，R. Taori等利用不到200个instruction增广到52k时，研究了这个问题。这里我们借鉴并修改了他们的prompt(具体使用的prompt见附录)。
 
 <p align="center">
-        <img src="https://github.com/LC1332/Paper-Haruhi/blob/main/figures/generateChatInAlpacaWay.png">
+        <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/generateChatInAlpacaWay.png">
 </p>
 
 在使用类似alpaca这样的增广方式的时候，需要输入一个明确的 $(q,a)$ 对。然后模型会给出10个左右的启发式输出。这里我们对于输出只保留 $q_s$ ,然后利用之前提到的技术回到角色所属ChatBot去重新生成训练用的dialogues。我们混合使用ChatGPT, GPT4与Claude去生成问题，后两者生成的问题与角色的关联性要明显好于ChatGPT，当然也对应了更高的生成成本。最终每个角色的生成统计见图\ref{dataset_statistic}。 需要注意的是，在本文的第一个版本中，我们使用了类似Alpaca的方式生成了27k左右的数据。Alpaca方式生成的问题会受到我们给出的例子的影响，也就是实际上他会尽可能生成和原来剧本有一定关系的问题。我们希望在后面的版本中，进一步筛选出真实测试时用户会问到的问题去加入到测试中。
@@ -379,7 +379,7 @@ C. 注意到22752个dialogues是我们使用ChatBot进行生成的。原理上�
 5. 使用与4相同prompt，输入到在ChatHaruhi 52K数据上tuning过的模型中。
 
 <p align="center">
-        <img src="https://github.com/LC1332/Paper-Haruhi/blob/main/figures/qualitativeResult.png">
+        <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/qualitativeResult.png">
 </p>
 
 可以看到，在加入经典对话，以及修正system prompt之后，使用ChatGPT等模型可以有效的使聊天机器人体现特定人物的对话风格。同时，经过微调的7B模型也可以有效的将整个系统的prompt学习到。
