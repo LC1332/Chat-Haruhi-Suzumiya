@@ -121,8 +121,6 @@ https://github.com/LC1332/Chat-Haruhi-Suzumiya/assets/5266090/8b88c8ac-262f-4705
         <li><a href="#SponsorShip">SponsorShip </a></li>
         <li><a href="#Members">Members </a></li>
         <li><a href="#Citation">Citation</a></li>
-        <li><a href="#Current Results">Current Results</a></li>
-        <li><a href="#Openness-Aware Personality Text Generation">Openness-Aware Personality Text Generation</a></li>
       </ul>
     </td>
   </tr>
