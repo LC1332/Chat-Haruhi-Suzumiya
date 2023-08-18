@@ -177,10 +177,10 @@ For more things: https://github.com/LC1332/Haruhi-2-Dev
 | Video | Description |
 |---|---|
 | [Roadmap in 5 minutes](https://www.bilibili.com/video/BV1Xh411A7kC/)    | AI Hackathon of Modelscope in Bilibi       |
-| [DataWhale](https://www.bilibili.com/video/BV1ho4y1P75H) | Instructional video created for a DataWhale assignment |
-| [Script Tool](https://www.bilibili.com/video/BV1V8411S7eT)      |Step-by-step guide to using the yuki_builder scripting tool|
-| [Character data format](https://www.bilibili.com/video/BV1nu411H7Sy/)    |Tutorial on the character data format and converting text files to configuration files. |
-| [Modelscope tutorial in 40 minutes](https://www.bilibili.com/video/BV1Wm4y1W7XH) | 40-tutorial in entry-level, with an additional 40 minutes for discussion and Q&A |
+| [DataWhale Presentation](https://www.bilibili.com/video/BV1ho4y1P75H) | Instructional video created for a DataWhale assignment |
+| [Script Tool Tutorial](https://www.bilibili.com/video/BV1V8411S7eT)      |Step-by-step guide to using the yuki_builder scripting tool|
+| [Character Data Format Tutorial](https://www.bilibili.com/video/BV1nu411H7Sy/)    |Tutorial on the character data format and converting text files to configuration files. |
+| [ModelScope Tutorial in 40 minutes](https://www.bilibili.com/video/BV1Wm4y1W7XH) | 40-tutorial in entry-level, with an additional 40 minutes for discussion and Q&A |
 
   
 
