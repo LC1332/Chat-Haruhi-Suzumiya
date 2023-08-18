@@ -163,7 +163,7 @@ For more things: https://github.com/LC1332/Haruhi-2-Dev
 
 | Name |Colab Link| Description         |
 |---|---|---|
-| ChatHaruhi1.0                                                |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| A functionally integrated client capable of supporting role switching                                                                                                 |
+| ChatHaruhi 1.0                                                |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| A functionally integrated client capable of supporting role switching                                                                                                 |
 | Genesis                                                     |<a href="https://colab.research.google.com/github/LC1332/Prophet-Andrew-Ng/blob/main/prophet-code/haruhiLangChain.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| the first gradio chat developed by Lulu Li |
 | Baidu Studio Version                                               | [Baidu Studio Version](https://aistudio.baidu.com/aistudio/projectdetail/6386896) | A simplified version of Baidu Studio developed by DataWhale teaching assistant - Qijun Ma |
 | HuggingFace Version                                            | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi) | HuggingFace Version                                                                                    |
@@ -175,7 +175,7 @@ For more things: https://github.com/LC1332/Haruhi-2-Dev
 
 | Video | Description |
 |---|---|
-| [Roadmap in 5 Minutes](https://www.bilibili.com/video/BV1Xh411A7kC/)    | AI Hackathon of Modelscope in Bilibi       |
+| [Roadmap in 5 minutes](https://www.bilibili.com/video/BV1Xh411A7kC/)    | AI Hackathon of Modelscope in Bilibi       |
 | [DataWhale](https://www.bilibili.com/video/BV1ho4y1P75H) | Instructional video created for a DataWhale assignment |
 | [Script Tool](https://www.bilibili.com/video/BV1V8411S7eT)      |Step-by-step guide to using the yuki_builder scripting tool|
 | [Character data format](https://www.bilibili.com/video/BV1nu411H7Sy/)    |Tutorial on the character data format and converting text files to configuration files. |
