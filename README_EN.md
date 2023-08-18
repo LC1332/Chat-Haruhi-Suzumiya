@@ -194,9 +194,9 @@ TODO:
 
 ## Honors
 
-- 🏆 Chat Haruhi Suzumiya won the second prize in the Create@AI Hackathon hosted by the Modelscope Community, co-sponsored by Alibaba Cloud and NVIDIA, and co-organized by Tianchi(top3)[video](https://www.bilibili.com/video/BV1Xh411A7kC/)
+- 🏆 Chat Haruhi Suzumiya won the second prize in the Create@AI Hackathon hosted by the Modelscope Community, co-sponsored by Alibaba Cloud and NVIDIA, and co-organized by Tianchi(top3) [video](https://www.bilibili.com/video/BV1Xh411A7kC/)
 
-- 🏆 Honored with second prize(top3) and do oral presentation in July 17 for CAAI 8th-Big Data and Social Computing: 8th China National Conference, BDSC 2023, Urumqi, China, July 15–17, 2023 ，for more details [link](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
+- 🏆 Honored with second prize(top3) and do oral presentation in July 17 for CAAI 8th-Big Data and Social Computing: 8th China National Conference, BDSC 2023, Urumqi, China, July 15–17, 2023 [for more details](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
 
 ## SponsorShip
 
