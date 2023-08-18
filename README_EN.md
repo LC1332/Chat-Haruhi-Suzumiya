@@ -123,3 +123,33 @@ https://github.com/LC1332/Chat-Haruhi-Suzumiya/assets/5266090/8b88c8ac-262f-4705
 </table>
 
 ## ChatHaruhi_2.0_Design
+
+ChatHaruhi started as an open source project with multimodal features like images and voice added to participate in competitions. Developers can now try the Gradio demo in the source code. However, this design isn't ideal for future research goals like adding characters, studying interactions, enhancing memory, or connecting to a Unity game backend.  
+  
+After this arxiv release, we will rebuild ChatHaruhi with the following planned interfaces:
+
+```python
+from ChatHaruhi import ChatHaruhi
+
+chatbot = ChatHaruhi( system_prompt = 'prompt.txt', \
+                      story_db = 'story_chroma_folder', \
+                      llm = 'openai' )
+                      
+response = chatbot.chat(text = 'Can you introduce youself?', role = 'Kyon' )
+```
+
+The system will use a simple system_prompt parameter and vector database for access. It will support switching between LLMs like the locally trained model from this paper, Claude, Spark API, etc. For conversations using the ChatHaruhi-52K characters, you can use them directly out of the box below.
+```python
+from ChatHaruhi import ChatHaruhi
+
+chatbot = ChatHaruhi( role_name = 'Haruhi', \
+                      llm = 'openai' )
+                      
+response = chatbot.chat(text = 'Can you introduce youself?', role = 'Kyon' )
+```
+
+
+For more things: https://github.com/LC1332/Haruhi-2-Dev 
+
+
+## Quick Start of Each Demo
