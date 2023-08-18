@@ -68,7 +68,7 @@ Chat-Haruhi-Suzumiya is one of the subproject of [Luotuo](https://github.com/LC1
 <a id="progress">
     TODO and Feature
 </a>
-This project is a work [in progress](#progress). With the release of the Arxiv version, we will publish a dataset supporting 32 characters and 52K dialogues, along with the corresponding local model and ChatHaruhi1.0 inference code, within a week. We will then begin refactoring the project for [ChatHaruhi2.0](#ChatHaruhi_2.0_Design).
+This project is a work [in progress](#progress). With the release of the Arxiv version, we will publish a dataset supporting 32 characters and 52K dialogues, along with the corresponding local model and ChatHaruhi1.0 inference code, within a week. We will then begin refactoring the project for [ChatHaruhi2.0](#chatharuhi_20_design).
  
 This project is licensed under Apache 2.0, which permits commercial use. However, you still need to comply with other relevant agreements, including:
 
