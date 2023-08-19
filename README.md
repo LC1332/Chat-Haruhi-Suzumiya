@@ -67,8 +67,6 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 
 
 
-
-
 由于整理训练代码等原因，1.0的代码各个模块耦合比较严重，ChatHaruhi2.0的代码正在重构中，后者将会以一个可以用pip安装的库的形式发布。
 
 ## News
@@ -176,7 +174,7 @@ response = chatbot.chat(text = 'Can you introduce youself?', role = 'Kyon' )
 最近的TODO:
 
 - [x] 训练22k故事原本语料的模型
-- [ ] 发布arxiv report
+- [x] 提交arxiv report
 - [ ] 发布本地模型inference代码
 - [ ] 发布52k训练的模型
 - [ ] 支持本地模型和OpenAI的ChatHaruhi2.0，更新到github
