@@ -243,7 +243,7 @@ Please cite the repo if you use the data or code in this repo.
       primaryClass={cs.CL}
 }
 ```
-
+[![Star History Chart](https://api.star-history.com/svg?repos=LC1332/Chat-Haruhi-Suzumiya&type=Date)](https://star-history.com/#LC1332/Chat-Haruhi-Suzumiya&Date)
 
 ## 考虑开放性人格特质的个性化语言生成
 
