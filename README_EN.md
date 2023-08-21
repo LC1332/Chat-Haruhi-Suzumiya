@@ -191,7 +191,7 @@ For more things: https://github.com/LC1332/Haruhi-2-Dev
 TODO:
 
 - [x] train the model of the original corpus of 22k stories
-- [ ] release technical report on arxiv 
+- [x] release technical report on arxiv 
 - [ ] release local inference code
 - [ ] release trained model with 52k data
 - [ ] Support local model and OpenAI's ChatHaruhi2.0, update to github
