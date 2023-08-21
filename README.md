@@ -73,7 +73,7 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 
 ## News
 
-[2023-08-1X] 在arxiv上发布ChatHaruhi的tech report。
+[2023-08-21] 在arxiv上发布ChatHaruhi的[tech report](https://arxiv.org/abs/2308.09597)。
 
 [2023-06-07] 在魔搭社区主办、阿里云和NVIDIA作为联合发起方，天池协办的Create@AI黑客马拉松中，Chat凉宫春日获得二等奖(top3), [讲解视频](https://www.bilibili.com/video/BV1Xh411A7kC/)
 
