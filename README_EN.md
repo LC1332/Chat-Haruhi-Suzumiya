@@ -259,6 +259,7 @@ Please cite the repo if you use the data or code in this repo.
       primaryClass={cs.CL}
 }
 ```
+[![Star History Chart](https://api.star-history.com/svg?repos=LC1332/Chat-Haruhi-Suzumiya&type=Date)](https://star-history.com/#LC1332/Chat-Haruhi-Suzumiya&Date)
 ---
 If you have any suggestions for the project, such as the interface design of **ChatHaruhi2.0**,
 or want to add references to the future version of this report, please submit the [issue](https://github.com/LC1332/Chat-Haruhi-Suzumiya/issues).
