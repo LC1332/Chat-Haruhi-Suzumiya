@@ -35,7 +35,7 @@ class LangChainGPT(BaseLLM):
 
     def get_response(self):
         response = self.chat(self.messages)
-        return response
+        return response.content
     
     def print_prompt(self):
         for message in self.messages:

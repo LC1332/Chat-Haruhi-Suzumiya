@@ -6,7 +6,8 @@ from .utils import luotuo_openai_embedding, tiktokenizer
 
 class ChatHaruhi:
 
-    def __init__(self, system_prompt, \
+    def __init__(self, system_prompt = None, \
+                 role_name = None, \
                  story_db=None, story_text_folder = None, \
                  llm = 'openai', \
                  max_len_story = None, max_len_history = None,
@@ -14,26 +15,57 @@ class ChatHaruhi:
         super(ChatHaruhi, self).__init__()
         self.verbose = verbose
 
-        self.system_prompt = self.check_system_prompt( system_prompt )
+        if system_prompt:
+            self.system_prompt = self.check_system_prompt( system_prompt )
 
-        
+        # TODO: embedding should be the seperately defined, so refactor this part later
         if llm == 'openai':
             # self.llm = LangChainGPT()
             self.llm, self.embedding, self.tokenizer = self.get_models('openai')
         elif llm == 'debug':
             self.llm, self.embedding, self.tokenizer = self.get_models( 'debug')
+        elif llm == 'spark':
+            from .SparkGPT import SparkGPT
+            self.llm, self.embedding, self.tokenizer = self.get_models( 'spark')
         else:
             print(f'warning! undefined llm {llm}, use openai instead.')
             self.llm, self.embedding, self.tokenizer = self.get_models('openai')
 
-        if story_db:
+        if role_name:
+
+            from .role_name_to_file import get_folder_role_name
+            # correct role_name to folder_role_name
+            role_name, url = get_folder_role_name(role_name)
+
+            unzip_folder = f'./temp_character_folder/temp_{role_name}'
+            db_folder = os.path.join(unzip_folder, f'content/{role_name}')
+            system_prompt = os.path.join(unzip_folder, f'content/system_prompt.txt')
+
+            if not os.path.exists(unzip_folder):
+                # not yet downloaded
+                # url = f'https://github.com/LC1332/Haruhi-2-Dev/raw/main/data/character_in_zip/{role_name}.zip'
+                import requests, zipfile, io
+                r = requests.get(url)
+                z = zipfile.ZipFile(io.BytesIO(r.content))
+                z.extractall(unzip_folder)
+
+            if self.verbose:
+                print(f'loading pre-defined character {role_name}...')
+            
+            self.db = ChromaDB()
+            self.db.load(db_folder)
+            self.system_prompt = self.check_system_prompt(system_prompt)
+
+        elif story_db:
             self.db = ChromaDB() 
             self.db.load(story_db)
         elif story_text_folder:
             # print("Building story database from texts...")
             self.db = self.build_story_db(story_text_folder) 
         else:
-            raise ValueError("Either story_db or story_text_folder must be provided")
+            self.db = None
+            print('warning! database not yet figured out, both story_db and story_text_folder are not inputted.')
+            # raise ValueError("Either story_db or story_text_folder must be provided")
         
 
         self.max_len_story, self.max_len_history = self.get_tokenlen_setting('openai')
@@ -67,12 +99,17 @@ class ChatHaruhi:
     
 
     def get_models(self, model_name):
+
+        # TODO: if output only require tokenizer model, no need to initialize llm
+        
         # return the combination of llm, embedding and tokenizer
         if model_name == 'openai':
             return (LangChainGPT(), luotuo_openai_embedding, tiktokenizer)
         elif model_name == 'debug':
             from .PrintLLM import PrintLLM
             return (PrintLLM(), luotuo_openai_embedding, tiktokenizer)
+        elif model_name == 'spark':
+            return (SparkGPT(), luotuo_openai_embedding, tiktokenizer)
         else:
             print(f'warning! undefined model {model_name}, use openai instead.')
             return (LangChainGPT(), luotuo_openai_embedding, tiktokenizer)
@@ -84,6 +121,11 @@ class ChatHaruhi:
         else:
             print(f'warning! undefined model {model_name}, use openai instead.')
             return (1500, 1200)
+        
+    def build_story_db_from_vec( self, texts, vecs ):
+        self.db = ChromaDB()
+
+        self.db.init_from_docs( vecs, texts)
 
     def build_story_db(self, text_folder):
         # 实现读取文本文件夹,抽取向量的逻辑
@@ -136,7 +178,7 @@ class ChatHaruhi:
         self.llm.user_message(query)
         
         # get response
-        response = self.llm.get_response().content
+        response = self.llm.get_response()
 
         # record dialogue history
         self.dialogue_history.append((query, response))
@@ -152,6 +194,10 @@ class ChatHaruhi:
             return f"{role}:{self.dialogue_bra_token}{text}{self.dialogue_ket_token}"
         
     def add_story(self, query):
+
+        if self.db is None:
+            return
+        
         query_vec = self.embedding(query)
 
         stories = self.db.search(query_vec, self.k_search)
@@ -189,8 +235,8 @@ class ChatHaruhi:
             print('warning! no history added. the last dialogue is too long.')
 
         for (query, response) in self.dialogue_history[-flag:]:
-            self.llm.ai_message(query)
-            self.llm.user_message(response)
+            self.llm.user_message(query)
+            self.llm.ai_message(response)
 
         
         
