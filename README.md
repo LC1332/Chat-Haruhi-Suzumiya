@@ -7,7 +7,7 @@
 [![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)]()
 [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi)
 
-临时体验链接: https://2b5275a16c9d6b1c5a.gradio.live/
+临时体验链接: https://e6da3e2c0027ccf6a2.gradio.live
 
 **Chat凉宫春日**是模仿凉宫春日等一系列动漫人物，使用近似语气、个性和剧情聊天的语言模型，
 
