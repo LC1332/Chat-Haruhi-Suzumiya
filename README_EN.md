@@ -10,7 +10,7 @@
 [![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)]()
 [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi)
 
-Temporary experience link: https://2b5275a16c9d6b1c5a.gradio.live/
+Temporary experience link: https://e6da3e2c0027ccf6a2.gradio.live
 
 Temporary experience link2:  https://3a86a62a612c531114.gradio.live
 
@@ -20,7 +20,8 @@ Temporary experience link2:  https://3a86a62a612c531114.gradio.live
         <b>English</b> |
         <a href="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/README.md">Chinese简体中文</a> |
         🤗 <a href="https://huggingface.co/spaces/silk-road/ChatHaruhi" target="_blank">Hugging Face</a>  |
-        📜 <a href="https://paperswithcode.com/paper/chatharuhi-reviving-anime-character-in" target="_blank">Paper</a>  |
+        📜 <a href="https://arxiv.org/pdf/2308.09597.pdf" target="_blank">Paper</a>  |
+        🗃️ <a href="https://huggingface.co/datasets/silk-road/Chat_Suzumiya_Fusion" target="_blank">54k Dataset</a>  |
     <p>
 </h4>
 
@@ -192,7 +193,7 @@ For more things: https://github.com/LC1332/Haruhi-2-Dev
 TODO:
 
 - [x] train the model of the original corpus of 22k stories
-- [ ] release technical report on arxiv 
+- [x] release technical report on arxiv 
 - [ ] release local inference code
 - [ ] release trained model with 52k data
 - [ ] Support local model and OpenAI's ChatHaruhi2.0, update to github
@@ -260,6 +261,7 @@ Please cite the repo if you use the data or code in this repo.
       primaryClass={cs.CL}
 }
 ```
+[![Star History Chart](https://api.star-history.com/svg?repos=LC1332/Chat-Haruhi-Suzumiya&type=Date)](https://star-history.com/#LC1332/Chat-Haruhi-Suzumiya&Date)
 ---
 If you have any suggestions for the project, such as the interface design of **ChatHaruhi2.0**,
 or want to add references to the future version of this report, please submit the [issue](https://github.com/LC1332/Chat-Haruhi-Suzumiya/issues).

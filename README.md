@@ -7,7 +7,7 @@
 [![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)]()
 [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi)
 
-临时体验链接: https://2b5275a16c9d6b1c5a.gradio.live/
+临时体验链接: https://e6da3e2c0027ccf6a2.gradio.live
 
 临时体验链接2: https://3a86a62a612c531114.gradio.live/
 
@@ -245,7 +245,7 @@ Please cite the repo if you use the data or code in this repo.
       primaryClass={cs.CL}
 }
 ```
-
+[![Star History Chart](https://api.star-history.com/svg?repos=LC1332/Chat-Haruhi-Suzumiya&type=Date)](https://star-history.com/#LC1332/Chat-Haruhi-Suzumiya&Date)
 
 ## 考虑开放性人格特质的个性化语言生成
 
