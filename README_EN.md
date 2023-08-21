@@ -18,7 +18,7 @@ Temporary experience link: https://2b5275a16c9d6b1c5a.gradio.live/
         <b>English</b> |
         <a href="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/README.md">Chinese简体中文</a> |
         🤗 <a href="https://huggingface.co/spaces/silk-road/ChatHaruhi" target="_blank">Hugging Face</a>  |
-        📜 <a href="https://paperswithcode.com/paper/chatharuhi-reviving-anime-character-in" target="_blank">Paper</a>  |
+        📜 <a href="https://arxiv.org/pdf/2308.09597.pdf" target="_blank">Paper</a>  |
     <p>
 </h4>
 
