@@ -88,10 +88,10 @@ To get started with the ChatHaruhi1.0 project, you can directly run the followin
 
 | Name |Colab Link| Description         |
 |---|---|---|
-| ChatHaruhi1.0                                                |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| Fully-featured client that allows switching between different character roles. |
-| ChatHaruhi2.0(EA) | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/test_LangChainOpenAILLM.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | ChatHaruhi2.0 with OpenAI LLMs|
+| ChatHaruhi1.0                                                |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 能够支持角色切换的功能整合客户端                                                                                                 |
+| ChatHaruhi2.0(EA) | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/ChatHaruhi2_demo.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | ChatHaruhi2.0的openAI版本已经能运行了 |
 
-We are refactoring the code for ChatHaruhi 2.0, which will be solve the high module coupling problem of version 1.0 - it will be released as a pip-installable library with improved modularity.
+We are refactoring the code for ChatHaruhi 2.0, which will be solve the high module coupling problem of version 1.0 - it will be released as a pip-installable library with improved modularity. But you can still start the gradio demo through the first colab link. If you need a pure python backend, ChatHaruhi 2.0 code can already be installed via pip.
 
 ## News
 
@@ -151,17 +151,16 @@ response = chatbot.chat(text = 'Can you introduce youself?', role = 'Kyon' )
 ```
 
 The system will use a simple system_prompt parameter and vector database for access. It will support switching between LLMs like the locally trained model from this paper, Claude, Spark API, etc. For conversations using the ChatHaruhi-52K characters, you can use them directly out of the box below.
-```python
-from ChatHaruhi import ChatHaruhi
 
-chatbot = ChatHaruhi( role_name = 'Haruhi', \
-                      llm = 'openai' )
-                      
-response = chatbot.chat(text = 'Can you introduce youself?', role = 'Kyon' )
+```python
+from chatharuhi import ChatHaruhi
+
+chatbot = ChatHaruhi( role_name = 'baizhantang', llm = 'openai')
+
+response = chatbot.chat(role='汪捕快',text ='小二，来斤好久，再来两盘羊肉！')
 ```
 
-
-For more things: https://github.com/LC1332/Haruhi-2-Dev 
+chatharuhi has already one version upload to pypi, you can install the preliminary version from pip install chatharuhi. For more things: https://github.com/LC1332/Haruhi-2-Dev 
 
 
 ## Quick Start of Each Demo

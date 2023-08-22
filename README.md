@@ -67,11 +67,10 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 | 名称 |colab链接| 说明         |
 |---|---|---|
 | ChatHaruhi1.0                                                |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 能够支持角色切换的功能整合客户端                                                                                                 |
-| ChatHaruhi2.0(EA) | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/test_LangChainOpenAILLM.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | ChatHaruhi2.0的openAI版本已经能运行了 |
+| ChatHaruhi2.0(EA) | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/ChatHaruhi2_demo.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | ChatHaruhi2.0的openAI版本已经能运行了 |
 
 
-
-由于整理训练代码等原因，1.0的代码各个模块耦合比较严重，ChatHaruhi2.0的代码正在重构中，后者将会以一个可以用pip安装的库的形式发布。
+由于整理训练代码等原因，1.0的代码各个模块耦合比较严重，但是你仍然可以通过第一个colab链接来开启gradio demo。如果你需要一个纯的python后台，ChatHaruhi2.0的代码已经可以通过pip install安装。
 
 ## News
 
@@ -124,7 +123,7 @@ https://github.com/LC1332/Chat-Haruhi-Suzumiya/assets/5266090/8b88c8ac-262f-4705
 ChatHaruhi是一个开源构建的项目。一开始，为了参加很多比赛，增加了很多多模态的图片、语音等特征。现在开发者可以通过项目源代码中的gradio的demo去启动项目。然而，这样的设计不利于后期对多个ChatBot展开研究，包括新增人物, 研究多个人物的交互，进一步升级ChatHaruhi的记忆模式或者把ChatHaruhi作为后端接入到一个Unity游戏中。所以，我们会在这篇arxiv之后，着手开始ChatHaruhi的重构，我们计划重构后的接口如下
 
 ```python
-from ChatHaruhi import ChatHaruhi
+from chatharuhi import ChatHaruhi
 
 chatbot = ChatHaruhi( system_prompt = 'prompt.txt', \
                       story_db = 'story_chroma_folder', \
@@ -136,17 +135,16 @@ response = chatbot.chat(text = 'Can you introduce youself?', role = 'Kyon' )
 使用一个简单的system_prompt参数和一个向量数据库来进行接入。并且开始支持llm的切换，包括本文中训练的本地模型，Claude或者星火API的接入等等。如果使用ChatHaruhi-52K中涉及到的角色，直接使用
 
 ```python
-from ChatHaruhi import ChatHaruhi
+from chatharuhi import ChatHaruhi
 
-chatbot = ChatHaruhi( role_name = 'Haruhi', \
-                      llm = 'openai' )
-                      
-response = chatbot.chat(text = 'Can you introduce youself?', role = 'Kyon' )
+chatbot = ChatHaruhi( role_name = 'baizhantang', llm = 'openai')
+
+response = chatbot.chat(role='汪捕快',text ='小二，来斤好久，再来两盘羊肉！')
 ```
 
 就可以直接使用。
 
-初步的代码已经可以在 https://github.com/LC1332/Haruhi-2-Dev 中看到
+初步的代码已经可以在 https://github.com/LC1332/Haruhi-2-Dev 中看到。目前已经可以通过pip chatharuhi进行安装使用
 
 
 ## 各个demo的快速启动
