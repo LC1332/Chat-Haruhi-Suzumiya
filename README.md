@@ -7,7 +7,7 @@
 [![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)]()
 [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi)
 
-临时体验链接: https://e0c69ba3d762b620f9.gradio.live
+临时体验链接: https://e5e84561f0983e7451.gradio.live/
 
 临时体验链接2: https://3a86a62a612c531114.gradio.live/
 
@@ -182,7 +182,7 @@ response = chatbot.chat(role='汪捕快',text ='小二，来斤好久，再来�
 - [ ] 发布本地模型inference代码
 - [ ] 发布52k训练的模型
 - [ ] 支持本地模型和OpenAI的ChatHaruhi2.0，更新到github
-- [ ] pip支持
+- [x] pip支持
 
 
 ## 获奖

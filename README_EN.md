@@ -10,7 +10,7 @@
 [![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)]()
 [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi)
 
-Temporary experience link: https://e0c69ba3d762b620f9.gradio.live
+Temporary experience link: https://e5e84561f0983e7451.gradio.live/
 
 Temporary experience link2:  https://3a86a62a612c531114.gradio.live
 
@@ -198,7 +198,7 @@ TODO:
 - [ ] release local inference code
 - [ ] release trained model with 52k data
 - [ ] Support local model and OpenAI's ChatHaruhi2.0, update to github
-- [ ] quick install with **pip**
+- [x] quick install with **pip**
 
 
 ## Honors
