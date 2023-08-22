@@ -21,7 +21,7 @@ Temporary experience link2:  https://3a86a62a612c531114.gradio.live
         <a href="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/README.md">Chinese简体中文</a> |
         🤗 <a href="https://huggingface.co/spaces/silk-road/ChatHaruhi" target="_blank">Hugging Face</a>  |
         📜 <a href="https://arxiv.org/pdf/2308.09597.pdf" target="_blank">Paper</a>  |
-        🗃️ <a href="https://huggingface.co/datasets/silk-road/Chat_Suzumiya_Fusion" target="_blank">54k Dataset</a>  |
+        🤗🗃️ <a href="https://huggingface.co/datasets/silk-road/ChatHaruhi-54K-Role-Playing-Dialogue" target="_blank">54k Dataset</a>  |
     <p>
 </h4>
 
