@@ -95,6 +95,8 @@ We are refactoring the code for ChatHaruhi 2.0, which will be solve the high mod
 
 ## News
 
+[2023-08-22] Dataset Released on [Hugging Face](https://huggingface.co/datasets/silk-road/ChatHaruhi-54K-Role-Playing-Dialogue)
+
 [2023-08-21] ChatHaruhi [tech report](https://arxiv.org/abs/2308.09597) on arXiv.
 
 [2023-06-07] Chat Haruhi Suzumiya won the second prize in the Create@AI Hackathon hosted by the Modelscope Community, co-sponsored by Alibaba Cloud and NVIDIA, and co-organized by Tianchi(top3), [video](https://www.bilibili.com/video/BV1Xh411A7kC/)
