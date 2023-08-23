@@ -10,12 +10,18 @@
 [![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)]()
 [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi)
 
+Temporary experience link: https://9a5d53b6c1f4522002.gradio.live
+
+Temporary experience link2:  https://3a86a62a612c531114.gradio.live
+
 
 <h4 align="center">
     <p>
         <b>English</b> |
         <a href="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/README.md">Chinese简体中文</a> |
-        🤗 <a href="https://huggingface.co/spaces/silk-road/ChatHaruhi" target="_blank">Hugging Face</a> •
+        🤗 <a href="https://huggingface.co/spaces/silk-road/ChatHaruhi" target="_blank">Hugging Face</a>  |
+        📜 <a href="https://arxiv.org/pdf/2308.09597.pdf" target="_blank">Paper</a>  |
+        🤗🗃️ <a href="https://huggingface.co/datasets/silk-road/ChatHaruhi-54K-Role-Playing-Dialogue" target="_blank">54k Dataset</a>  |
     <p>
 </h4>
 
@@ -82,14 +88,16 @@ To get started with the ChatHaruhi1.0 project, you can directly run the followin
 
 | Name |Colab Link| Description         |
 |---|---|---|
-| ChatHaruhi1.0                                                |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| Fully-featured client that allows switching between different character roles. |
-| ChatHaruhi2.0(EA) | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/ChatHaruhi2.0/notebook/test_LangChainOpenAILLM.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | ChatHaruhi2.0 with OpenAI LLMs|
+| ChatHaruhi1.0                                                |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 能够支持角色切换的功能整合客户端                                                                                                 |
+| ChatHaruhi2.0(EA) | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/ChatHaruhi2_demo.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | ChatHaruhi2.0的openAI版本已经能运行了 |
 
-We are refactoring the code for ChatHaruhi 2.0, which will be solve the high module coupling problem of version 1.0 - it will be released as a pip-installable library with improved modularity.
+We are refactoring the code for ChatHaruhi 2.0, which will be solve the high module coupling problem of version 1.0 - it will be released as a pip-installable library with improved modularity. But you can still start the gradio demo through the first colab link. If you need a pure python backend, ChatHaruhi 2.0 code can already be installed via pip.
 
 ## News
 
-[2023-08-1X] ChatHaruhi Technical Report on arXiv.
+[2023-08-22] Dataset Released on [Hugging Face](https://huggingface.co/datasets/silk-road/ChatHaruhi-54K-Role-Playing-Dialogue)
+
+[2023-08-21] ChatHaruhi [tech report](https://arxiv.org/abs/2308.09597) on arXiv.
 
 [2023-06-07] Chat Haruhi Suzumiya won the second prize in the Create@AI Hackathon hosted by the Modelscope Community, co-sponsored by Alibaba Cloud and NVIDIA, and co-organized by Tianchi(top3), [video](https://www.bilibili.com/video/BV1Xh411A7kC/)
 
@@ -143,17 +151,16 @@ response = chatbot.chat(text = 'Can you introduce youself?', role = 'Kyon' )
 ```
 
 The system will use a simple system_prompt parameter and vector database for access. It will support switching between LLMs like the locally trained model from this paper, Claude, Spark API, etc. For conversations using the ChatHaruhi-52K characters, you can use them directly out of the box below.
-```python
-from ChatHaruhi import ChatHaruhi
 
-chatbot = ChatHaruhi( role_name = 'Haruhi', \
-                      llm = 'openai' )
-                      
-response = chatbot.chat(text = 'Can you introduce youself?', role = 'Kyon' )
+```python
+from chatharuhi import ChatHaruhi
+
+chatbot = ChatHaruhi( role_name = 'baizhantang', llm = 'openai')
+
+response = chatbot.chat(role='汪捕快',text ='小二，来斤好久，再来两盘羊肉！')
 ```
 
-
-For more things: https://github.com/LC1332/Haruhi-2-Dev 
+chatharuhi has already one version upload to pypi, you can install the preliminary version from pip install chatharuhi. For more things: https://github.com/LC1332/Haruhi-2-Dev 
 
 
 ## Quick Start of Each Demo
@@ -187,11 +194,11 @@ For more things: https://github.com/LC1332/Haruhi-2-Dev
 TODO:
 
 - [x] train the model of the original corpus of 22k stories
-- [ ] release technical report on arxiv 
+- [x] release technical report on arxiv 
 - [ ] release local inference code
 - [ ] release trained model with 52k data
 - [ ] Support local model and OpenAI's ChatHaruhi2.0, update to github
-- [ ] quick install with **pip**
+- [x] quick install with **pip**
 
 
 ## Honors
@@ -246,15 +253,16 @@ If you are interested in sponsoring the [Luotuo Project](https://github.com/LC13
 
 Please cite the repo if you use the data or code in this repo.
 ```
-@misc{ChatHaruhi,
-  author = {Cheng Li, Ziang Leng, Chenxi Yan, Junyi Shen, Hao Wang, Weishi MI, Yaying Fei, Xiaoyang Feng，Song Yan, HaoSheng Wang, Linkang Zhan, Yaokai Jia, Pingyu Wu, Haozhen Sun},
-  title = {ChatHaruhi: Reviving Anime Character in Reality via Large Language Model },
-  year = {2023},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/LC1332/Chat-Haruhi-Suzumiya}},
+@misc{li2023chatharuhi,
+      title={ChatHaruhi: Reviving Anime Character in Reality via Large Language Model}, 
+      author={Cheng Li and Ziang Leng and Chenxi Yan and Junyi Shen and Hao Wang and Weishi MI and Yaying Fei and Xiaoyang Feng and Song Yan and HaoSheng Wang and Linkang Zhan and Yaokai Jia and Pingyu Wu and Haozhen Sun},
+      year={2023},
+      eprint={2308.09597},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
+[![Star History Chart](https://api.star-history.com/svg?repos=LC1332/Chat-Haruhi-Suzumiya&type=Date)](https://star-history.com/#LC1332/Chat-Haruhi-Suzumiya&Date)
 ---
 If you have any suggestions for the project, such as the interface design of **ChatHaruhi2.0**,
 or want to add references to the future version of this report, please submit the [issue](https://github.com/LC1332/Chat-Haruhi-Suzumiya/issues).
