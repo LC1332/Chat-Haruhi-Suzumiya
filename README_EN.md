@@ -1,4 +1,4 @@
-[SponsorShip](#SponsorShip) | [Report](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/report.md) | [Hiring](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/Hiring.md) | [Personality](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
+[SponsorShip](#SponsorShip) | [Report](https://arxiv.org/abs/2308.09597) | [Personality](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) | [SponsorShip](#SponsorShip) | [Contributors](#Contributors)
 
 <h1 id="BigTitle">
     Chat-Haruhi-Suzumiya
@@ -218,7 +218,7 @@ If you are interested in sponsoring the [Luotuo Project](https://github.com/LC13
 >[Back to top](#BigTitle)
 
 
-## Members
+## Contributors
 
 - [Cheng Li@SenseTime](https://github.com/LC1332)  purposed the entire project and designed and implemented most of the functionality.
 
