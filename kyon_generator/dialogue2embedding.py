@@ -153,3 +153,37 @@ def dialogue2embed(file_path, role_names, out_path):
 # numbers = [1, 2, 3, 6, 8, 9, 10]
 # filtered_numbers = filter_continuous_sequence(numbers)
 # print(filtered_numbers)
+
+
+# dic = {"tangshiye":['汤师爷'],
+#        "murongfu":['慕容复'],
+#        "liyunlong":['李云龙'],
+#        "Luna":['Luna'],
+#        "wangduoyu":['王多鱼'],
+#        "Ron":['Ron', '罗恩'],
+#        "jiumozhi":['鸠摩智'],
+#        "Snape":['Snape'],
+#        "haruhi":['春日', '凉宫春日', '涼宮ハルヒ', '涼宮'],
+#        "Malfoy":['Malfoy'],
+#        "xuzhu":['虚竹'],
+#        "xiaofeng":['萧峰'],
+#        "duanyu":['段誉'],
+#        "Hermione":['Hermione', '赫敏'],
+#        "Dumbledore":['Dumbledore', '邓布利多'],
+#        "wangyuyan":['王语嫣'],
+#        "Harry":['Harry', '哈利'],
+#        "McGonagall":['McGonagall', 'Professor McGonagall'],
+#        "baizhantang":['白展堂', '展堂'],
+#        "tongxiangyu":['佟湘玉'],
+#        "guofurong":['郭芙蓉'],
+#        "wanderer":['旅行者', '流浪者'],
+#        "zhongli":['钟离'],
+#        "hutao":['胡桃'],
+#        "Sheldon":['Sheldon'],
+#        "Raj":['Raj'],
+#        "Penny":['Penny'],
+#        "weixiaobao":['韦小宝'],
+#        "qiaofeng":['乔峰'],
+#        "ayaka":['神里绫华'],
+#        "raidenShogun":['雷电将军'],
+#        "yuqian":['于谦']}
