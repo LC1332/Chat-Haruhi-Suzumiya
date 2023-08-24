@@ -4,6 +4,10 @@ from torch.utils.data import Dataset
 import os
 import jsonlines
 from torch.utils.data import ConcatDataset
+from torch.utils.data import DataLoader
+from huggingface_hub import login
+# from datasets import load_dataset,Dataset
+
 
 # file_names = ['xiaofeng_test_output_dialogue.jsonl', 'baizhantang_test_output_dialogue.jsonl', 'wangduoyu_test_output_dialogue.jsonl', 'guofurong_test_output_dialogue.jsonl', 'weixiaobao_test_output_dialogue.jsonl', 'haruhi_synthesis_dialogue.jsonl', 'murongfu_test_output_dialogue.jsonl', 'McGonagall_test_output_dialogue.jsonl', 'Ron_test_output_dialogue.jsonl', 'Sheldon_test_output_dialogue.jsonl', 'yuqian_test_output_dialogue.jsonl', 'duanyu_test_output_dialogue.jsonl', 'xuzhu_test_output_dialogue.jsonl', 'jiumozhi_test_output_dialogue.jsonl', 'liyunlong_synthesis_dialogue.jsonl', 'Malfoy_test_output_dialogue.jsonl', 'tongxiangyu_test_output_dialogue.jsonl', 'ayaka_test_output_dialogue.jsonl', 'Raj_test_output_dialogue.jsonl', 'Harry_test_output_dialogue.jsonl', 'Snape_test_output_dialogue.jsonl', 'Penny_test_output_dialogue.jsonl', 'zhongli_test_output_dialogue.jsonl', 'tangshiye_test_output_dialogue.jsonl', 'Luna_test_output_dialogue.jsonl', 'hutao_test_output_dialogue.jsonl', 'Dumbledore_test_output_dialogue.jsonl', 'Hermione_test_output_dialogue.jsonl', 'qiaofeng_test_output_dialogue.jsonl', 'wangyuyan_test_output_dialogue.jsonl', 'wanderer_test_output_dialogue.jsonl', 'raidenShogun_test_output_dialogue.jsonl']
 def read_jsonl_file(file_path):
@@ -144,12 +148,93 @@ class CharacterDataset(Dataset):
 #         except:
 #             print(line)
 
-
-# path = "/Users/pufferfish/Downloads/training_data/"
+# file_names = os.listdir("/Users/pufferfish/Downloads/training_data_b/")
+# path = "/Users/pufferfish/Downloads/training_data_b/"
 # for file_name in file_names:
 #     with open(path+file_name, 'r') as json_file:
 #         for line in json_file:
 #             new_line = line.replace("}", "}\n")
 #             new_line_list = new_line.split("\n")
-#             with open('/Users/pufferfish/Downloads/real_train_data/'+file_name, "w") as output_file:
+#             with open('/Users/pufferfish/Downloads/real_train_data_b/'+file_name, "w") as output_file:
 #                 output_file.write('\n'.join(new_line_list))
+
+# dic = {"tangshiye":['汤师爷'],
+#        "murongfu":['慕容复'],
+#        "liyunlong":['李云龙'],
+#        "Luna":['Luna'],
+#        "wangduoyu":['王多鱼'],
+#        "Ron":['Ron', '罗恩'],
+#        "jiumozhi":['鸠摩智'],
+#        "Snape":['Snape'],
+#        "haruhi":['春日', '凉宫春日', '涼宮ハルヒ', '涼宮'],
+#        "Malfoy":['Malfoy'],
+#        "xuzhu":['虚竹'],
+#        "xiaofeng":['萧峰'],
+#        "duanyu":['段誉'],
+#        "Hermione":['Hermione', '赫敏'],
+#        "Dumbledore":['Dumbledore', '邓布利多'],
+#        "wangyuyan":['王语嫣'],
+#        "Harry":['Harry', '哈利'],
+#        "McGonagall":['McGonagall', 'Professor McGonagall'],
+#        "baizhantang":['白展堂', '展堂'],
+#        "tongxiangyu":['佟湘玉'],
+#        "guofurong":['郭芙蓉'],
+#        "wanderer":['旅行者', '流浪者'],
+#        "zhongli":['钟离'],
+#        "hutao":['胡桃'],
+#        "Sheldon":['Sheldon'],
+#        "Raj":['Raj'],
+#        "Penny":['Penny'],
+#        "weixiaobao":['韦小宝'],
+#        "qiaofeng":['乔峰'],
+#        "ayaka":['神里绫华'],
+#        "raidenShogun":['雷电将军'],
+#        "yuqian":['于谦']}
+
+# HF_TOKEN = "hf_nPhmtMVuXy"
+# login(token=HF_TOKEN)
+
+# jsonl_file_path = '/Users/pufferfish/Downloads/real_train_data_b/'
+# character_path = "/Users/pufferfish/Chat-Haruhi-Suzumiya/characters/"
+# # file_names = ['xiaofeng_test_output_dialogue.jsonl', 'baizhantang_test_output_dialogue.jsonl', 'wangduoyu_test_output_dialogue.jsonl', 'guofurong_test_output_dialogue.jsonl', 'weixiaobao_test_output_dialogue.jsonl', 'haruhi_synthesis_dialogue.jsonl', 'murongfu_test_output_dialogue.jsonl', 'McGonagall_test_output_dialogue.jsonl', 'Ron_test_output_dialogue.jsonl', 'Sheldon_test_output_dialogue.jsonl', 'yuqian_test_output_dialogue.jsonl', 'duanyu_test_output_dialogue.jsonl', 'xuzhu_test_output_dialogue.jsonl', 'jiumozhi_test_output_dialogue.jsonl', 'liyunlong_synthesis_dialogue.jsonl', 'Malfoy_test_output_dialogue.jsonl', 'tongxiangyu_test_output_dialogue.jsonl', 'ayaka_test_output_dialogue.jsonl', 'Raj_test_output_dialogue.jsonl', 'Harry_test_output_dialogue.jsonl', 'Snape_test_output_dialogue.jsonl', 'Penny_test_output_dialogue.jsonl', 'zhongli_test_output_dialogue.jsonl', 'tangshiye_test_output_dialogue.jsonl', 'Luna_test_output_dialogue.jsonl', 'hutao_test_output_dialogue.jsonl', 'Dumbledore_test_output_dialogue.jsonl', 'Hermione_test_output_dialogue.jsonl', 'qiaofeng_test_output_dialogue.jsonl', 'wangyuyan_test_output_dialogue.jsonl', 'wanderer_test_output_dialogue.jsonl', 'raidenShogun_test_output_dialogue.jsonl']
+# file_names = os.listdir("/Users/pufferfish/Downloads/real_train_data_b/")
+# all_datasets = []
+# for filename in file_names:
+#     filename_list = filename.split("_")
+#     character_name = ""
+#     if filename_list[0] in dic.keys():
+#         character_name = filename_list[0]
+#         # print(dic[filename_list[0]])
+#     if filename_list[1] in dic.keys():
+#         # print(dic[filename_list[1]])
+#         character_name = filename_list[1]
+#     character = os.path.join(character_path, character_name)
+#     jsonl_file = os.path.join(jsonl_file_path, filename)
+#     jsonl_data = read_jsonl_file(jsonl_file)
+#     c = CharacterDataset(jsonl_data, character, 8, 2000)
+#     all_datasets.append(c)
+
+# # for file_name in file_names:
+# #     character_name = file_name.split("_")[0]
+# #     character = os.path.join(character_path, character_name)
+# #     jsonl_file = os.path.join(jsonl_file_path, file_name)
+# #     jsonl_data = read_jsonl_file(jsonl_file)
+# #     c = CharacterDataset(jsonl_data, character, 8, 2000)
+# #     all_datasets.append(c)
+
+# combined_dataset = ConcatDataset(all_datasets)
+
+# batch_size = 1
+# data_loader = DataLoader(combined_dataset, batch_size=batch_size, collate_fn=collate_fn)
+
+# context = []
+# target = []
+
+# for i,item in enumerate(data_loader):
+#     context.append(item[0][0])
+#     target.append(item[1][0])
+
+# train_dataset = {"context":context, "target":target}
+# from datasets import load_dataset,Dataset
+# train_dataset = Dataset.from_dict(train_dataset)
+# train_dataset.push_to_hub("silk-road/Chat_Suzumiya_Fusion_B", private=False)
