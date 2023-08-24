@@ -9,7 +9,7 @@
 
 临时体验链接: https://aaa10b160aed30321f.gradio.live
 
-临时体验链接2:  https://591440473467f8a56c.gradio.live
+临时体验链接2:   https://783716bd2ec1dc3408.gradio.live
 
 **Chat凉宫春日**是模仿凉宫春日等一系列动漫人物，使用近似语气、个性和剧情聊天的语言模型，
 
