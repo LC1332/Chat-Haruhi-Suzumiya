@@ -10,7 +10,7 @@
 [![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)]()
 [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi)
 
-Temporary experience link: https://94acdc6d1acf850c10.gradio.live
+Temporary experience link: https://f82ade76f18009e664.gradio.live
 
 Temporary experience link2:    https://783716bd2ec1dc3408.gradio.live
 
