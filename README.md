@@ -180,7 +180,7 @@ response = chatbot.chat(role='汪捕快',text ='小二，来斤好久，再来�
 - [x] 训练22k故事原本语料的模型
 - [x] 提交arxiv report
 - [ ] 发布本地模型inference代码
-- [ ] 发布52k训练的模型
+- [x] 发布52k训练的模型
 - [ ] 支持本地模型和OpenAI的ChatHaruhi2.0，更新到github
 - [x] pip支持
 
