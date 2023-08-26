@@ -18,14 +18,14 @@ NAME_DICT = {'汤师爷': 'tangshiye', '慕容复': 'murongfu', '李云龙': 'li
              '乔峰': 'qiaofeng', '神里绫华': 'ayaka', '雷电将军': 'raidenShogun', '于谦': 'yuqian'}
 
 
-def get_response(user_name, user_text, role, chatbot):
+def get_response(user_role, user_text, ai_role, chatbot):
     # 下载role zip 并解压
-    role_en = NAME_DICT[role]
+    role_en = NAME_DICT[ai_role]
     if not os.path.exists("characters_zip"):
         os.makedirs("characters_zip")
     if not os.path.exists("characters"):
         os.makedirs("characters")
-    if NAME_DICT[role] not in os.listdir("./characters"):
+    if NAME_DICT[ai_role] not in os.listdir("./characters"):
         file_url = f"https://github.com/LC1332/Haruhi-2-Dev/raw/main/data/character_in_zip/{role_en}.zip"
         os.makedirs(f"characters/{role_en}")
         destination_file = f"characters_zip/{role_en}.zip"
@@ -40,13 +40,13 @@ def get_response(user_name, user_text, role, chatbot):
                         llm="openai",
                         story_db=db_folder,
                         verbose=True)
-    response = haruhi.chat(role=user_name, text=user_text)
-    user_msg = user_name + ':「' + user_text + '」'
+    response = haruhi.chat(role=user_role, text=user_text)
+    user_msg = user_role + ':「' + user_text + '」'
     chatbot.append((user_msg, response))
     return chatbot, None
 
 
-def clear(user_name, user_text, chatbot):
+def clear(user_role, user_text, chatbot):
     return None, None, []
 
 
@@ -74,12 +74,12 @@ with gr.Blocks() as demo:
         chatbot = gr.Chatbot()
         role_image = gr.Image(height=400, value="./images/haruhi.jpg")
     with gr.Row():
-        user_name = gr.Textbox(label="user_role")
+        user_role = gr.Textbox(label="user_role")
         user_text = gr.Textbox(label="user_text")
     with gr.Row():
         submit = gr.Button("Submit")
         clean = gr.ClearButton(value="Clear")
-    role = gr.Radio(['汤师爷', '慕容复', '李云龙',
+    ai_role = gr.Radio(['汤师爷', '慕容复', '李云龙',
                      'Luna', '王多鱼', 'Ron', '鸠摩智',
                      'Snape', '凉宫春日', 'Malfoy', '虚竹',
                      '萧峰', '段誉', 'Hermione', 'Dumbledore',
@@ -90,8 +90,8 @@ with gr.Blocks() as demo:
                      'Sheldon', 'Raj', 'Penny',
                      '韦小宝', '乔峰', '神里绫华',
                      '雷电将军', '于谦'], label="characters", value='凉宫春日')
-    role.change(get_image, role, [role_image, user_name, user_text, chatbot])
-    user_text.submit(fn=get_response, inputs=[user_name, user_text, role, chatbot], outputs=[chatbot, user_text])
-    submit.click(fn=get_response, inputs=[user_name, user_text, role, chatbot], outputs=[chatbot, user_text])
-    clean.click(clear, [user_name, user_text, chatbot], [user_name, user_text, chatbot])
+    ai_role.change(get_image, ai_role, [role_image, user_role, user_text, chatbot])
+    user_text.submit(fn=get_response, inputs=[user_role, user_text, ai_role, chatbot], outputs=[chatbot, user_text])
+    submit.click(fn=get_response, inputs=[user_role, user_text, ai_role, chatbot], outputs=[chatbot, user_text])
+    clean.click(clear, [user_role, user_text, chatbot], [user_role, user_text, chatbot])
 demo.launch(debug=True)
