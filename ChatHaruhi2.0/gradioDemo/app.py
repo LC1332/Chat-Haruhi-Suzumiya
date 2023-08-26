@@ -42,7 +42,7 @@ def get_response(user_name, user_text, role, chatbot):
                         verbose=True)
     response = haruhi.chat(role=user_name, text=user_text)
     chatbot.append((user_text, response))
-    return chatbot
+    return chatbot, None
 
 
 def clear(user_name, user_text, chatbot):
@@ -90,7 +90,7 @@ with gr.Blocks() as demo:
                      '韦小宝', '乔峰', '神里绫华',
                      '雷电将军', '于谦'], label="characters", value='凉宫春日')
     role.change(get_image, role, [role_image, user_name, user_text, chatbot])
-    user_text.submit(fn=get_response, inputs=[user_name, user_text, role, chatbot], outputs=[chatbot])
-    submit.click(fn=get_response, inputs=[user_name, user_text, role, chatbot], outputs=[chatbot])
+    user_text.submit(fn=get_response, inputs=[user_name, user_text, role, chatbot], outputs=[chatbot, user_text])
+    submit.click(fn=get_response, inputs=[user_name, user_text, role, chatbot], outputs=[chatbot, user_text])
     clean.click(clear, [user_name, user_text, chatbot], [user_name, user_text, chatbot])
 demo.launch(debug=True)
