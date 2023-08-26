@@ -41,7 +41,8 @@ def get_response(user_name, user_text, role, chatbot):
                         story_db=db_folder,
                         verbose=True)
     response = haruhi.chat(role=user_name, text=user_text)
-    chatbot.append(({user_name: 「user_text」}, response))
+    user_msg = user_name + ':「' + user_text + '」'
+    chatbot.append((user_msg, response))
     return chatbot, None
 
 
