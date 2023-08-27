@@ -12,7 +12,7 @@
 
 <!-- (https://huggingface.co/spaces/silk-road/ChatHaruhi) -->
 
-The demos based on OpenAI and GLM are already online. The local model has been released, and the demo for the local model is under development.
+The demos based on [OpenAI](https://huggingface.co/spaces/chenxiYan/haruhi) and GLM are already online. The local model has been released, and the demo for the local model is under development.
 
 <h4 align="center">
     <p>

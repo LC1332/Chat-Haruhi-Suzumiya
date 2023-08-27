@@ -9,7 +9,7 @@
 
 <!-- (https://huggingface.co/spaces/silk-road/ChatHaruhi) -->
 
-目前基于OpenAI, GLM的demo已经上线。本地模型已经发布，本地模型的demo正在制作中。
+目前基于[OpenAI](https://huggingface.co/spaces/chenxiYan/haruhi), GLM的demo已经上线。本地模型已经发布，本地模型的demo正在制作中。
 
 **Chat凉宫春日**是模仿凉宫春日等一系列动漫人物，使用近似语气、个性和剧情聊天的语言模型，
 
