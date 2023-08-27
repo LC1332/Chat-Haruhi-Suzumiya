@@ -12,7 +12,7 @@
 
 <!-- (https://huggingface.co/spaces/silk-road/ChatHaruhi) -->
 
-Temporary experience link: https://f3e1e818ced76f92df.gradio.live
+Temporary experience link: https://8a0beb53f3de96a00d.gradio.live/
 
 Temporary experience link2:    https://783716bd2ec1dc3408.gradio.live
 

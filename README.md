@@ -9,7 +9,7 @@
 
 <!-- (https://huggingface.co/spaces/silk-road/ChatHaruhi) -->
 
-临时体验链接: https://f3e1e818ced76f92df.gradio.live
+临时体验链接: https://8a0beb53f3de96a00d.gradio.live/
 
 临时体验链接2:   https://783716bd2ec1dc3408.gradio.live
 
