@@ -12,10 +12,7 @@
 
 <!-- (https://huggingface.co/spaces/silk-road/ChatHaruhi) -->
 
-Temporary experience link: https://8a0beb53f3de96a00d.gradio.live/
-
-Temporary experience link2:    https://783716bd2ec1dc3408.gradio.live
-
+The demos based on OpenAI and GLM are already online. The local model has been released, and the demo for the local model is under development.
 
 <h4 align="center">
     <p>
@@ -88,12 +85,21 @@ This project is licensed under Apache 2.0, which permits commercial use. However
 
 To get started with the ChatHaruhi1.0 project, you can directly run the following Colab notebooks:
 
-| Name |Colab Link| Description         |
-|---|---|---|
-| ChatHaruhi1.0                                                |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 能够支持角色切换的功能整合客户端                                                                                                 |
-| ChatHaruhi2.0(EA) | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/ChatHaruhi2_demo.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | ChatHaruhi2.0的openAI版本已经能运行了 |
+| Name | Colab Link | Description |
+|-|-|-|  
+| ChatHaruhi1.0 | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | Integrated client that supports character switching |
+| ChatHaruhi2.0(code) | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/ChatHaruhi2_demo.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | The openAI version of ChatHaruhi2.0 is already running | 
+| ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/chenxiYan/haruhi) | Hugging Face Demo (openai as LLM) |
+| ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/chenxiYan/haruhi) | Hugging Face Demo (GLMPro as LLM) |
 
 We are refactoring the code for ChatHaruhi 2.0, which will be solve the high module coupling problem of version 1.0 - it will be released as a pip-installable library with improved modularity. But you can still start the gradio demo through the first colab link. If you need a pure python backend, ChatHaruhi 2.0 code can already be installed via pip.
+
+
+ChatHaruhi 1.0 Temporary experience link: https://8a0beb53f3de96a00d.gradio.live/
+
+ChatHaruhi 1.0 Temporary experience link2:    https://783716bd2ec1dc3408.gradio.live
+
+
 
 ## News
 

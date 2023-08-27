@@ -9,9 +9,7 @@
 
 <!-- (https://huggingface.co/spaces/silk-road/ChatHaruhi) -->
 
-临时体验链接: https://8a0beb53f3de96a00d.gradio.live/
-
-临时体验链接2:   https://783716bd2ec1dc3408.gradio.live
+目前基于OpenAI, GLM的demo已经上线。本地模型已经发布，本地模型的demo正在制作中。
 
 **Chat凉宫春日**是模仿凉宫春日等一系列动漫人物，使用近似语气、个性和剧情聊天的语言模型，
 
@@ -69,10 +67,16 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 | 名称 |colab链接| 说明         |
 |---|---|---|
 | ChatHaruhi1.0                                                |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 能够支持角色切换的功能整合客户端                                                                                                 |
-| ChatHaruhi2.0(EA) | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/ChatHaruhi2_demo.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | ChatHaruhi2.0的openAI版本已经能运行了 |
-
+| ChatHaruhi2.0(code) | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/ChatHaruhi2_demo.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | ChatHaruhi2.0的openAI版本已经能运行了 |
+| ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/chenxiYan/haruhi) | Hugging Face Demo (openai as LLM) |
+| ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/chenxiYan/haruhi) | Hugging Face Demo (GLMPro as LLM) |
 
 由于整理训练代码等原因，1.0的代码各个模块耦合比较严重，但是你仍然可以通过第一个colab链接来开启gradio demo。如果你需要一个纯的python后台，ChatHaruhi2.0的代码已经可以通过pip install安装。
+
+1.0 体验链接: https://8a0beb53f3de96a00d.gradio.live/
+
+1.0 体验链接2:   https://783716bd2ec1dc3408.gradio.live
+
 
 ## News
 
