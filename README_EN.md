@@ -12,7 +12,7 @@
 
 <!-- (https://huggingface.co/spaces/silk-road/ChatHaruhi) -->
 
-The demos based on [OpenAI](https://huggingface.co/spaces/chenxiYan/haruhi) and [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) are already online. The local model has been released, and the demo for the local model is under development.
+The demos based on [OpenAI](https://huggingface.co/spaces/chenxiYan/haruhi) and [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) and [讯飞星火](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo)  are already online. The local model has been released, and the demo for the local model is under development.
 
 <h4 align="center">
     <p>
@@ -91,6 +91,7 @@ To get started with the ChatHaruhi1.0 project, you can directly run the followin
 | ChatHaruhi2.0(code) | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/ChatHaruhi2_demo.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | The openAI version of ChatHaruhi2.0 is already running | 
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/chenxiYan/haruhi) | Hugging Face Demo (openai as LLM) |
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) | Hugging Face Demo (GLMPro as LLM) |
+| ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) | Hugging Face Demo (讯飞星火 as LLM) |
 
 We are refactoring the code for ChatHaruhi 2.0, which will be solve the high module coupling problem of version 1.0 - it will be released as a pip-installable library with improved modularity. But you can still start the gradio demo through the first colab link. If you need a pure python backend, ChatHaruhi 2.0 code can already be installed via pip.
 
