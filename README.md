@@ -56,7 +56,7 @@ Linkang Zhan( [JunityZhan@Case Western Reserve University](https://github.com/Ju
 
 Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM)的子项目之一, 后者由李鲁鲁, 冷子昂, 陈启源发起。
 
-本项目是一个[在建项目](#TODO和计划Feature)，随着Arxiv版本的发布，我们正在一周内发布支持32人物，52K的数据集，以及对应的本地模型和ChatHaruhi1.0 inference代码。 并且开始[ChatHaruhi2.0的重构项目](#ChatHaruhi_2.0_Design) 。
+本项目是一个[在建项目](#TODO和计划Feature)，随着Arxiv版本的发布，我们正在一周内发布支持32人物，54K的数据集，以及对应的本地模型和ChatHaruhi1.0 inference代码。 并且开始[ChatHaruhi2.0的重构项目](#ChatHaruhi2) 。
 
 本项目采用Apache 2.0协议，也就是你可以利用项目中的代码进行商用。但是你仍然需要遵守包括 1.角色本身的版权方的协议 2.项目中使用的接口方，比如OpenAI的协议， 3.项目中使用的模型的协议（比如如果我们后期采用了LlaMA或者GLM的模型。）
 
@@ -73,12 +73,12 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 
 由于整理训练代码等原因，1.0的代码各个模块耦合比较严重，但是你仍然可以通过第一个colab链接来开启gradio demo。如果你需要一个纯的python后台，ChatHaruhi2.0的代码已经可以通过pip install安装。
 
-1.0 体验链接: https://8a0beb53f3de96a00d.gradio.live/
-
-1.0 体验链接2:   https://783716bd2ec1dc3408.gradio.live
+1.0 体验链接:   https://783716bd2ec1dc3408.gradio.live
 
 
 ## News
+
+[2023-08-28] ChatHaruhi2.0 openAI，讯飞，GLMPro支持完毕，并上线对应的hugging face demo
 
 [2023-08-22] Dataset Released on [Hugging Face](https://huggingface.co/datasets/silk-road/ChatHaruhi-54K-Role-Playing-Dialogue)
 
@@ -108,7 +108,7 @@ https://github.com/LC1332/Chat-Haruhi-Suzumiya/assets/5266090/8b88c8ac-262f-4705
     </td>
     <td>
       <ul>
-        <li><a href="#ChatHaruhi_2.0_Design">ChatHaruhi 2.0的重构计划 </a></li>
+        <li><a href="#ChatHaruhi2">ChatHaruhi 2.0的接口使用 </a></li>
         <li><a href="#各个demo的快速启动">各个demo的快速启动</a></li>
         <li><a href="#DemoVideo">DemoVideo</a></li>
         <li><a href="#讲解视频">讲解视频</a></li>
@@ -124,33 +124,29 @@ https://github.com/LC1332/Chat-Haruhi-Suzumiya/assets/5266090/8b88c8ac-262f-4705
   </tr>
 </table>
 
-## ChatHaruhi_2.0_Design
+## ChatHaruhi2
 
-ChatHaruhi是一个开源构建的项目。一开始，为了参加很多比赛，增加了很多多模态的图片、语音等特征。现在开发者可以通过项目源代码中的gradio的demo去启动项目。然而，这样的设计不利于后期对多个ChatBot展开研究，包括新增人物, 研究多个人物的交互，进一步升级ChatHaruhi的记忆模式或者把ChatHaruhi作为后端接入到一个Unity游戏中。所以，我们会在这篇arxiv之后，着手开始ChatHaruhi的重构，我们计划重构后的接口如下
+为了方便后续研究，重构后的，ChatHaruhi2.0已经可以通过pip启动。目前2.0移除了图片和声音的设计，这些会在我们的后续研究中去重构。你可以通过下面的方式进行安装
+
+```shell
+pip -q install transformers openai tiktoken langchain chromadb zhipuai chatharuhi
+```
+
+和如下的方式调用
 
 ```python
 from chatharuhi import ChatHaruhi
 
-chatbot = ChatHaruhi( system_prompt = 'prompt.txt', \
-                      story_db = 'story_chroma_folder', \
-                      llm = 'openai' )
-                      
-response = chatbot.chat(text = 'Can you introduce youself?', role = 'Kyon' )
+chatbot = ChatHaruhi( role_name = 'haruhi',\
+                      llm = 'openai')
+
+response = chatbot.chat(role='阿虚', text = '我看新一年的棒球比赛要开始了！我们要去参加吗？')
+print(response)
 ```
 
-使用一个简单的system_prompt参数和一个向量数据库来进行接入。并且开始支持llm的切换，包括本文中训练的本地模型，Claude或者星火API的接入等等。如果使用ChatHaruhi-52K中涉及到的角色，直接使用
+更多文档和代码见 https://github.com/LC1332/Haruhi-2-Dev 预计这两周完成本地ChatGLM2-LoRA模型的合并
 
-```python
-from chatharuhi import ChatHaruhi
-
-chatbot = ChatHaruhi( role_name = 'baizhantang', llm = 'openai')
-
-response = chatbot.chat(role='汪捕快',text ='小二，来斤好久，再来两盘羊肉！')
-```
-
-就可以直接使用。
-
-初步的代码已经可以在 https://github.com/LC1332/Haruhi-2-Dev 中看到。目前已经可以通过pip chatharuhi进行安装使用
+随着ChatHaruhi 2.0 Gradio的发布，过往的1.0 数据和代码 将会迁移到一个legacy repo中
 
 
 ## 各个demo的快速启动
@@ -514,3 +510,31 @@ I want you to act like {character} from {series}. I want you to respond and answ
 </p>
 
 关于每个部分更详细的解释见[项目的report](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/report.md)
+
+
+<!-- ChatHaruhi是一个开源构建的项目。一开始，为了参加很多比赛，增加了很多多模态的图片、语音等特征。现在开发者可以通过项目源代码中的gradio的demo去启动项目。然而，这样的设计不利于后期对多个ChatBot展开研究，包括新增人物, 研究多个人物的交互，进一步升级ChatHaruhi的记忆模式或者把ChatHaruhi作为后端接入到一个Unity游戏中。所以，我们会在这篇arxiv之后，着手开始ChatHaruhi的重构，我们计划重构后的接口如下 -->
+<!-- 
+```python
+from chatharuhi import ChatHaruhi
+
+chatbot = ChatHaruhi( system_prompt = 'prompt.txt', \
+                      story_db = 'story_chroma_folder', \
+                      llm = 'openai' )
+                      
+response = chatbot.chat(text = 'Can you introduce youself?', role = 'Kyon' )
+```
+
+使用一个简单的system_prompt参数和一个向量数据库来进行接入。并且开始支持llm的切换，包括本文中训练的本地模型，Claude或者星火API的接入等等。如果使用ChatHaruhi-52K中涉及到的角色，直接使用
+
+```python
+from chatharuhi import ChatHaruhi
+
+chatbot = ChatHaruhi( role_name = 'baizhantang', llm = 'openai')
+
+response = chatbot.chat(role='汪捕快',text ='小二，来斤好久，再来两盘羊肉！')
+```
+
+就可以直接使用。
+
+初步的代码已经可以在 https://github.com/LC1332/Haruhi-2-Dev 中看到。目前已经可以通过pip chatharuhi进行安装使用
+ -->
