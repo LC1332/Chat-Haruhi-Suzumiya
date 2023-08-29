@@ -75,12 +75,17 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 
 由于整理训练代码等原因，1.0的代码各个模块耦合比较严重，但是你仍然可以通过第一个colab链接来开启gradio demo。如果你需要一个纯的python后台，ChatHaruhi2.0的代码已经可以通过pip install安装。
 
+说书人-openai的临时demo: https://ce08c4cd4484caee2e.gradio.live/
+
+说书人-GLM的临时demo: https://7f3ec8b2bf8a206f2e.gradio.live/
+
 1.0 体验链接:   https://783716bd2ec1dc3408.gradio.live
 
 
 <!-- https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/GLM_LORA.ipynb -->
 
 ## News
+
 
 [2023-08-29] 本地模型的inference代码发布 <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/GLM_LORA.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> 如果找到一个部署的gpu服务器，回头再挂个lora的online demo
 
@@ -206,7 +211,7 @@ print(response)
 
 ## 赞助
 
-因为Chat凉宫春日采用了类似CoT的策略，相比于通常聊天，要贵上10-20倍，目前API token都采用社区捐赠的费用来支持。
+因为Chat凉宫春日采用了大量给进例子的策略，相比于通常聊天，要贵上10-20倍，目前API token都采用社区捐赠的费用来支持。
 
 另外我们在积极寻找服务器资源(A100，A800)，如果您愿意捐助，欢迎联系我们。
 
