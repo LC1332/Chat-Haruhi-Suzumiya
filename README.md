@@ -71,19 +71,20 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/chenxiYan/haruhi) | Hugging Face Demo (openai as LLM) |
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) | Hugging Face Demo (GLMPro as LLM) |
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) | Hugging Face Demo (讯飞星火 as LLM) |
+| ChatGLM2-LoRA Local Model  | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/GLM_LORA.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | ChatGLM2-LoRA trained on ChatHaruhi-54K|
 
 由于整理训练代码等原因，1.0的代码各个模块耦合比较严重，但是你仍然可以通过第一个colab链接来开启gradio demo。如果你需要一个纯的python后台，ChatHaruhi2.0的代码已经可以通过pip install安装。
 
 1.0 体验链接:   https://783716bd2ec1dc3408.gradio.live
 
 
+<!-- https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/GLM_LORA.ipynb -->
+
 ## News
 
+[2023-08-29] 本地模型的inference代码发布 <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/GLM_LORA.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> 如果找到一个部署的gpu服务器，回头再挂个lora的online demo
+
 [2023-08-28] ChatHaruhi2.0 openAI，讯飞，GLMPro支持完毕，并上线对应的hugging face demo
-
-[2023-08-22] Dataset Released on [Hugging Face](https://huggingface.co/datasets/silk-road/ChatHaruhi-54K-Role-Playing-Dialogue)
-
-[2023-08-21] 在arxiv上发布ChatHaruhi的[tech report](https://arxiv.org/abs/2308.09597)。
 
 [2023-06-07] 在魔搭社区主办、阿里云和NVIDIA作为联合发起方，天池协办的Create@AI黑客马拉松中，Chat凉宫春日获得二等奖(top3), [讲解视频](https://www.bilibili.com/video/BV1Xh411A7kC/)
 
@@ -163,6 +164,14 @@ print(response)
 | 人格-高考作文                                                  | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/College_essays_gradio.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | 高/低开放性人格对应的高考作文题生成器，[详细报告](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) |
 | 人格-Chatbot                                               | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/PersonalityChatbot.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | 高/低开放性人格对应的Chatbot，[详细报告](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)  |
 | Chat加藤惠                                                  |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/gradio_megumi.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 根据群友收集的语料实现的Chat加藤惠                                                                                              |
+
+
+## Previous News
+
+[2023-08-22] Dataset Released on [Hugging Face](https://huggingface.co/datasets/silk-road/ChatHaruhi-54K-Role-Playing-Dialogue)
+
+[2023-08-21] 在arxiv上发布ChatHaruhi的[tech report](https://arxiv.org/abs/2308.09597)。
+
 
 ## 讲解视频
 

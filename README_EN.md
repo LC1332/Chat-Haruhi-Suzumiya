@@ -92,6 +92,7 @@ To get started with the ChatHaruhi1.0 project, you can directly run the followin
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/chenxiYan/haruhi) | Hugging Face Demo (openai as LLM) |
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) | Hugging Face Demo (GLMPro as LLM) |
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) | Hugging Face Demo (讯飞星火 as LLM) |
+| ChatGLM2-LoRA Local Model  | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/GLM_LORA.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | ChatGLM2-LoRA trained on ChatHaruhi-54K|
 
 We are refactoring the code for ChatHaruhi 2.0, which will be solve the high module coupling problem of version 1.0 - it will be released as a pip-installable library with improved modularity. But you can still start the gradio demo through the first colab link. If you need a pure python backend, ChatHaruhi 2.0 code can already be installed via pip.
 
@@ -100,11 +101,9 @@ ChatHaruhi 1.0 Temporary experience link:    https://783716bd2ec1dc3408.gradio.l
 
 ## News
 
+[2023-08-29] inference code for ChatGLM2-LoRA released <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/GLM_LORA.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+
 [2023-08-28] Support for ChatHaruhi2.0 with openAI, Xunfei, and GLMPro has been completed, and the corresponding hugging face demos have been launched.
-
-[2023-08-22] Dataset Released on [Hugging Face](https://huggingface.co/datasets/silk-road/ChatHaruhi-54K-Role-Playing-Dialogue)
-
-[2023-08-21] ChatHaruhi [tech report](https://arxiv.org/abs/2308.09597) on arXiv.
 
 [2023-06-07] Chat Haruhi Suzumiya won the second prize in the Create@AI Hackathon hosted by the Modelscope Community, co-sponsored by Alibaba Cloud and NVIDIA, and co-organized by Tianchi(top3), [video](https://www.bilibili.com/video/BV1Xh411A7kC/)
 
@@ -180,6 +179,13 @@ More documentation and code can be found at https://github.com/LC1332/Haruhi-2-D
 | personality - College entrance exam essay | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/College_essays_gradio.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | College entrance exam essay generator tailored to high or low openness personalities，[link](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) |
 | personality-Chatbot                                               | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/PersonalityChatbot.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | Chatbot corresponding to high/low open personality，[link](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)  |
 | Chat Megumi                                                 |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/gradio_megumi.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| Chat Megumi was created using a corpus collected by community friends. |
+
+## Previous News
+
+[2023-08-22] Dataset Released on [Hugging Face](https://huggingface.co/datasets/silk-road/ChatHaruhi-54K-Role-Playing-Dialogue)
+
+[2023-08-21] ChatHaruhi [tech report](https://arxiv.org/abs/2308.09597) on arXiv.
+
 
 ## Tutorial Video in Chinese
 
