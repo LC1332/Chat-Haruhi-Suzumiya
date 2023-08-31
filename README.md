@@ -66,21 +66,21 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 
 | 名称 |colab链接| 说明         |
 |---|---|---|
-| ChatHaruhi1.0                                                |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 能够支持角色切换的功能整合客户端                                                                                                 |
 | ChatHaruhi2.0(code) | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/ChatHaruhi2_demo.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | ChatHaruhi2.0的openAI版本已经能运行了 |
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/chenxiYan/haruhi) | Hugging Face Demo (openai as LLM) |
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) | Hugging Face Demo (GLMPro as LLM) |
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) | Hugging Face Demo (讯飞星火 as LLM) |
 | ChatGLM2-LoRA Local Model  | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/GLM_LORA.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | ChatGLM2-LoRA trained on ChatHaruhi-54K|
 | Prototype of StoryTeller | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/Story-teller) | Prototype of StoryTeller |
-
+| Prototype of StoryTeller | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/Build_Story_Teller_Gradio_exposure_version.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | Prototype of StoryTeller |
+| ChatHaruhi1.0                                                |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 能够支持角色切换的功能整合客户端                                                                                                 |
 
 <!-- https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/GLM_LORA.ipynb -->
 
 ## News
 
+[2023-08-31] 开始将之前的代码移动到 https://github.com/LC1332/Legacy-Haruhi-1.0 只保留ChatHaruhi2.0的部分
 
-[2023-08-29] 本地模型的inference代码发布 <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/GLM_LORA.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> 如果找到一个部署的gpu服务器，回头再挂个lora的online demo
 
 [2023-08-28] ChatHaruhi2.0 openAI，讯飞，GLMPro支持完毕，并上线对应的hugging face demo
 
@@ -165,6 +165,9 @@ print(response)
 
 
 ## Previous News
+
+[2023-08-29] 本地模型的inference代码发布 <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/GLM_LORA.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> 如果找到一个部署的gpu服务器，回头再挂个lora的online demo
+
 
 [2023-08-22] Dataset Released on [Hugging Face](https://huggingface.co/datasets/silk-road/ChatHaruhi-54K-Role-Playing-Dialogue)
 
@@ -395,154 +398,3 @@ Cherrypick了一些有趣的结果，如果你也想测请私下联系我。
 ```
 
 
-
----
-
-## 原本的计划（6月）
-
-
-本项目完整的开发计划如下图所示:
-
-<p align="center">
-        <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/bluePrint.jpg">
-</p>
-
-更详细的模块解释见[项目的report](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/report.md)
-
-我们计划最终产生一个多个前端版本的 Chat凉宫春日，具体特征如下
-
-- Gradio版本
-
-    - 可以在colab启动，方便任何人使用
-
-    - 支持静态图的显示，念白经典台词的时候会同时显示对应的经典画面
-
-    - (opt) 如果Gradio支持语音的话，再做一个合成日文语音的版本
-
-- 本地版本
-
-    - 支持一个Live2D的老婆，口型与语音同步
-
-    - 支持输出的文本转成日文再用合成语音念出来
-
-    - 争取换成haruhi酱的形象
-
-- 后端特征
-
-    - 理论上支持角色更换
-
-    - 日语翻译支持本地/gpt3.5 模型的选择，能不花钱就不花钱呗
-
-    - (后期) 支持使用本地模型去替换gpt3.5，能不花钱就不花钱
-
-- 额外工具
-
-    - 支持从字幕同步的动画片中，抽取特定人物的台词，支持声纹和图片的分类，尽可能抓取到特定人物画面下，这个人的台词。
-
-- (opt)研究部分
-
-    - 研究聊天空间覆盖程度，看看GPT是否能生成更多的聊天
-
-    - 不论用什么方式，把对话数据补充到接近5万条
-
-    - 争取训练自己的Haruhi模型
-
-    - 构思合理的定量化User Study
-
-    - 争取写一个TechReport挂到arxiv
-
-
----
-
-以下为readme待删除的部分
-
-## 引言
-
-
-<details>
-  <summary> 冗长的引言 </summary>
-
-随着ChatGPT的发展，用户们逐渐发现可以让大型语言模型进行角色扮演。越来越多的研究和相应的应用也随之产生。有大量基于GPT或者类似语言模型的APP陆续上线，如character.ai，Glow等陆续上线。社区中，关于使用Prompt进行角色扮演的交流讨论也逐渐发酵，在很多prompt分享网站，或者github中，都可以见到大量的讨论。
-
-<p align="center">
-    <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/figure_sample.jpg">
-</p>
-
-在大多数的应用中，开发者或者用户使用了类似的prompt。将这样的prompt直接输入在ChatGPT的连续对话中，或者作为system whisper接入到turbo的接口中。
-
-```
-Act as 'Character' from 'Movie/Book/Anything'
-
-I want you to act like {character} from {series}. I want you to respond and answer like {character} using the tone, manner and vocabulary {character} would use. Do not write any explanations. Only answer like {character}. You must know all of the knowledge of {character}. My first sentence is "Hi {character}."
-
-```
-
-然而，这样prompting虽然实现起来很简单，却有以下缺点: 1. 这样的prompt使用高度依赖大语言模型本来的记忆。如果大语言模型对于觉得的记忆本身是模糊的，则无法模仿特定的角色。 2. 这里的 `know all of the knowledge of {character}` 的定义也是模糊的，无法很好的防御大语言模型`幻觉`效应的产生。 3. 即使是使用这样的prompt，聊天机器人的对话风格还是会很大程度受到语言模型的影响，调整prompt或许能够缓解这样的问题，但是每一个特定的角色都要非常精细的调整prompt。 这些缺点明显限制了这种角色扮演聊天机器人的使用。
-
-</details>
-
-## 目标
-
-本项目的核心目标，是研究能否能够让自然语言模型在对话中扮演一个动漫或者影视作品中的现实人物。在这个过程中，我们认为一个虚拟人物有三个核心的构成 
-
-<details>
-  <summary> 知识与背景 </summary>
-
-每个虚拟人物都有自己所处在的背景。如《哈利波特》中的人物处在哈利波特的魔法世界。凉宫春日处在一个日本的高中里。其他的动漫人物也有各自的世界设定。所以在ChatBot的构造中，我们希望ChatBot能够了解对应故事的设定。这对于大型语言模型的记忆能力是较大的考验。往往需要通过外部知识库的引入去解决。
-
-</details>
-
-<details>
-  <summary> 人格或性格 </summary>
-
-人物的人格和性格设定也是动漫、影视甚至游戏作品中非常重要的部分。人格和性格的设定在整部作品中需要是一致的。有的文学作品在创作时，甚至先定义人物的人格设定，再进行后续的写作工作。所以我们希望ChatBot所反应的人格和性格，与作品原来的设定也是一致的。在6月8日至6月20日之间，Chat凉宫春日的团队会去参加中科院心理所组织的一个特定人格语言生成的[小比赛](https://mp.weixin.qq.com/s/60Lqcum0Ef9DTxqiWIWtsw)，对这方面展开更细节的研究。
-
-</details>
-
-<details>
-  <summary> 语言习惯 </summary>
-
-语言习惯是最容易被语言模型进行模仿的，对于近两年的大型语言模型，只要在context中给出合适的例子，语言模型往往会进行模仿输出。这里我们希望这样的文学影视作品的爱好者与ChatBot互动时，能够‘复现’文学影视作品的经典桥段，这样一定会让这些作品的爱好者获得更好的体验。
-
-有很多研究者认为实现这些目标必须通过微调语言模型才能够实现这些目标。本项目会分为两个阶段，在第一个阶段，我们仅仅使用外部知识库和prompting的方法，来实现模仿特定影视人物的ChatBot。在第二个阶段中，我们会讨论如何去自动生成更多的语料并进行模型的微调，可以使用一个本地的模型来完成这样一个ChatBot。在下个章节中马上进入整个项目的完整设计。
-
-</details>
-
-## ChatBot核心的构造
-
-这个工作的第一阶段尝试我们均使用便宜又好用的turbo3.5模型进行实验。在每一句对话的时候，都会构造一个较长的prompt，这个prompt由系统提示词、剧情桥段、过往对话记忆和新的用户询问4个部分构成。
-
-
-<p align="center">
-        <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/pipeline.png">
-</p>
-
-关于每个部分更详细的解释见[项目的report](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/report.md)
-
-
-<!-- ChatHaruhi是一个开源构建的项目。一开始，为了参加很多比赛，增加了很多多模态的图片、语音等特征。现在开发者可以通过项目源代码中的gradio的demo去启动项目。然而，这样的设计不利于后期对多个ChatBot展开研究，包括新增人物, 研究多个人物的交互，进一步升级ChatHaruhi的记忆模式或者把ChatHaruhi作为后端接入到一个Unity游戏中。所以，我们会在这篇arxiv之后，着手开始ChatHaruhi的重构，我们计划重构后的接口如下 -->
-<!-- 
-```python
-from chatharuhi import ChatHaruhi
-
-chatbot = ChatHaruhi( system_prompt = 'prompt.txt', \
-                      story_db = 'story_chroma_folder', \
-                      llm = 'openai' )
-                      
-response = chatbot.chat(text = 'Can you introduce youself?', role = 'Kyon' )
-```
-
-使用一个简单的system_prompt参数和一个向量数据库来进行接入。并且开始支持llm的切换，包括本文中训练的本地模型，Claude或者星火API的接入等等。如果使用ChatHaruhi-52K中涉及到的角色，直接使用
-
-```python
-from chatharuhi import ChatHaruhi
-
-chatbot = ChatHaruhi( role_name = 'baizhantang', llm = 'openai')
-
-response = chatbot.chat(role='汪捕快',text ='小二，来斤好久，再来两盘羊肉！')
-```
-
-就可以直接使用。
-
-初步的代码已经可以在 https://github.com/LC1332/Haruhi-2-Dev 中看到。目前已经可以通过pip chatharuhi进行安装使用
- -->
