@@ -1,10 +1,12 @@
 
 
-## 小说数据和ChatBot数据众筹计划
+# ChatHaruhi的小说数据和ChatBot数据众筹计划
 
 以下是Claude编写的广告词（我觉得还行）
 
-# 加入ChatHaruhi - 让我们一起打造中文原创的开源角色扮演聊天机器人! :cn:
+## 加入ChatHaruhi - 让我们一起打造中文原创的开源角色扮演聊天机器人! :cn:
+
+项目链接 [novel_collecting](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/novel_collecting)
 
 <p align="center">
     <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/who_is_next.jpg">
@@ -17,6 +19,8 @@ Character.AI等应用已经以其丰富多样的角色聊天体验吸引了超�
 我们欢迎每一位热情的开发者加入,不管你是资深专家还是新手学习者。在这里,你可以通过技术为中文文学作品注入新生命,并参与构建一个具有影响力的开源项目。
 
 加入我们,见证ChatHaruhi与众不同的崛起!这是一次难得的机遇,让我们共同打造中文原创角色的殿堂,提供更出色的本地化聊天体验。你的每个贡献都将推动它的成长! :muscle:
+
+
 
 ---
 
@@ -58,3 +62,66 @@ chatbot的部分不需要提取，当然，反正小说都抽取了，可以顺�
 数据我都会公开出来，怎么参与到代码工作。我还没想清楚。当然你也可以拿数据自己训了玩。
 
 代码我回头看看我和miweishi加起来够不够 不够的话会加人
+
+# 代码使用介绍
+
+## 抽取工具的介绍
+
+（需要openai key，尽量在colab或者外网ip运行）
+
+抽取工具已经ready，由李鲁鲁实现完成
+
+在  [新小说抽取.ipynb](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/%E6%96%B0%E5%B0%8F%E8%AF%B4%E6%8A%BD%E5%8F%96_release.ipynb)
+
+抽取dialogue有时候会产生一些噪音，另外kor的例子最好换成你的小说的例子
+
+## 小说重写成jsonl的脚本介绍
+
+这个工具由米唯实开发
+
+[对话和摘要重组小说_两种方式.ipynb](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/ChatBot%E6%8A%BD%E5%8F%96.ipynb)
+
+现在能跑，mws还在进一步清理
+
+## 特定角色的Chatbot提取
+
+chatbot的提取工具已经有初步的版本，由李鲁鲁开发
+
+[characters/novel_collecting/ChatBot抽取.ipynb](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/ChatBot%E6%8A%BD%E5%8F%96.ipynb)
+
+## 为角色设计合适的system prompt
+
+（需要openai key，尽量在colab或者外网ip运行）
+
+当然这个脚本其实没有openai的key直接复制prompt到claude也可以
+
+[system_prompt_suggestion.ipynb](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/system_prompt_suggestion.ipynb)
+
+## 抽取embedding之后，上传到hugging face
+我明天写一下这东西的代码
+
+## 重新从ChatHaruhi2.0中载入这个角色，并与之聊天
+我明天写一下这东西的代码
+
+# FAQ
+
+### 为什么要把小说结构化重写
+
+其实我们很容易找到千本以上的小说资源。但是一方面chatbot需要的文本格式是需要重新对小说抽取。另一方面，鲁叔认为把小说重整化之后，更容易用更少的训练数据就获得效果。如果我们有非常大的训练资源，我们可以放更多的小说一起训练。
+
+### 多模态
+多模态准备怎么搞吗？ 鲁叔这边暂时没有什么直接启动的计划，但是冷子昂在收集。你可以联系他
+
+### Scene的数据是怎么来的
+是GPT总结来的，然后scene和dialogue再根据原文把顺序align回去。
+
+### 可以抽取英文小说吗？
+可以的！欢迎！ 但是鲁叔自己不看英文小说，我可能抽一本哈利波特，一本冰与火 抽一本暮光之城就不搞了 哎呀感觉 指环王也值得抽
+### 可以抽取其他语言的小说吗？
+别，主要是本地模型的tokenizer不太支持。。
+### 如果我愿意整理小说运行代码，但是没有openai key
+如果确实能抽取，这边可以考虑赞助给你一些key，这个具体的我和运维同学去讨论一下。
+### 会去支持其他的embedding吗
+我看m3e模型比较小，考虑之后支持一下。我想找个同时支持中英文，模型不大，性能又还可以的embeding模型。
+### 有微信群吗
+懒得管理微信群，如果一定要有一个，我回头就用冷子昂拉的那个群吧。
