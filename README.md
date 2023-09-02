@@ -1,4 +1,4 @@
-中文 | [English](./README_EN.md) | 日本語 | [赞助](#赞助) | [报告](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/arxiv_paper.md) | [英文报告](https://arxiv.org/abs/2308.09597) | [特定人格的生成](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
+中文 | [English](./README_EN.md) | 日本語 | [赞助](#赞助) | [报告](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/arxiv_paper.md) | [英文报告](https://arxiv.org/abs/2308.09597) | [众筹数据抽取](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/novel_collecting) | [特定人格的生成](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
 
 # Chat凉宫春日 Chat-Haruhi-Suzumiya
 ## Reviving Anime Character in Reality via Large Language Model
@@ -78,6 +78,8 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 <!-- https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/GLM_LORA.ipynb -->
 
 ## News
+
+[2023-09-02] 启动众筹数据抽取和StoryTeller分支项目 [数据众筹链接](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/novel_collecting)
 
 [2023-08-31] 开始将之前的代码移动到 https://github.com/LC1332/Legacy-Haruhi-1.0 只保留ChatHaruhi2.0的部分
 
