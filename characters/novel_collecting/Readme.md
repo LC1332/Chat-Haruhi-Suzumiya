@@ -21,6 +21,18 @@ Character.AI等应用已经以其丰富多样的角色聊天体验吸引了超�
 加入我们,见证ChatHaruhi与众不同的崛起!这是一次难得的机遇,让我们共同打造中文原创角色的殿堂,提供更出色的本地化聊天体验。你的每个贡献都将推动它的成长! :muscle:
 
 
+---
+
+- [简介](#简介)
+- [关于StoryTeller](#关于StoryTeller)
+- [代码工具介绍](#代码工具介绍)
+    - [小说中对话抽取工具](#小说中对话抽取工具)
+    - [小说重写成jsonl的脚本介绍](#小说重写成jsonl的脚本介绍)
+    - [特定角色的Chatbot提取](#特定角色的Chatbot提取)
+    - [为角色总结合适的系统提示词](#为角色总结合适的系统提示词)
+    - [抽取embedding之后上传到HuggingFace](#抽取embedding之后上传到HuggingFace)
+    - [重新从ChatHaruhi中载入这个角色并与之聊天](#重新从ChatHaruhi中载入这个角色并与之聊天)
+- [FAQ](#FAQ)
 
 ---
 
@@ -63,9 +75,9 @@ chatbot的部分不需要提取，当然，反正小说都抽取了，可以顺�
 
 代码我回头看看我和miweishi加起来够不够 不够的话会加人
 
-# 代码使用介绍
+# 代码工具介绍
 
-## 抽取工具的介绍
+## 小说中对话抽取工具
 
 （需要openai key，尽量在colab或者外网ip运行）
 
@@ -89,7 +101,7 @@ chatbot的提取工具已经有初步的版本，由李鲁鲁开发
 
 [characters/novel_collecting/ChatBot抽取.ipynb](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/ChatBot%E6%8A%BD%E5%8F%96.ipynb)
 
-## 为角色设计合适的system prompt
+## 为角色总结合适的系统提示词
 
 （需要openai key，尽量在colab或者外网ip运行）
 
@@ -97,10 +109,10 @@ chatbot的提取工具已经有初步的版本，由李鲁鲁开发
 
 [system_prompt_suggestion.ipynb](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/system_prompt_suggestion.ipynb)
 
-## 抽取embedding之后，上传到hugging face
+## 抽取embedding之后上传到HuggingFace
 我明天写一下这东西的代码
 
-## 重新从ChatHaruhi2.0中载入这个角色，并与之聊天
+## 重新从ChatHaruhi中载入这个角色并与之聊天
 我明天写一下这东西的代码
 
 # FAQ
