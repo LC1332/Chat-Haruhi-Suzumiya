@@ -164,6 +164,19 @@ print(response)
 
 随着ChatHaruhi 2.0 Gradio的发布，过往的1.0 数据和代码 将会迁移到一个legacy repo https://github.com/LC1332/Legacy-Haruhi-1.0
 
+# 目前已经抽取的ChatBot
+
+除了ChatHaruhi-54K中支持的32个人物外，我们还在不断添加人物
+
+| 人物 | hf地址 | 来自小说 | 备注 |
+| - | - | - | - |
+| 令狐冲 | chengli-thu/linghuchong | 笑傲江湖 | |
+| 岳不群 | chengli-thu/yuebuqun | 笑傲江湖 | |
+
+你也可以添加你喜欢的人物，整理成满足我们格式要求的dataset。然后merge到表格中。
+
+格式规则见 [众筹数据抽取](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/novel_collecting)
+
 
 ## 各个demo的快速启动
 
