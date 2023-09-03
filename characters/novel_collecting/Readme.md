@@ -101,7 +101,7 @@ chatbot的部分不需要提取，当然，反正小说都抽取了，可以顺�
 
 chatbot的提取工具已经有初步的版本，由李鲁鲁开发
 
-[characters/novel_collecting/ChatBot抽取.ipynb](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/ChatBot%E6%8A%BD%E5%8F%96.ipynb)
+[多ChatBot抽取.ipynb]([Chat-Haruhi-Suzumiya/characters/novel_collecting/多ChatBot抽取.ipynb at main · LC1332/Chat-Haruhi-Suzumiya (github.com)](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/多ChatBot抽取.ipynb))
 
 ## 为角色总结合适的系统提示词
 
@@ -120,6 +120,162 @@ chatbot的提取工具已经有初步的版本，由李鲁鲁开发
 ## 重新从ChatHaruhi中载入这个角色并与之聊天
 
 [test_pull_role_form_hf.ipynb](https://github.com/LC1332/Haruhi-2-Dev/blob/main/notebook/test_pull_role_form_hf.ipynb)
+
+# 抽取-整合-chatbot提取详细说明书
+
+## Step 1 小说抽取
+
+请使用这个文件[新小说抽取_release.ipynb](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/新小说抽取_release.ipynb)
+
+使用说明
+
+1. 配置OpenAI Key
+
+   ```python
+   import os
+   
+   key = 'sk-VvF4' # edit here
+   ```
+
+2. 指定下载小说 wget后面的网址以及文件路径
+
+   ```python
+   !wget https://raw.githubusercontent.com/LC1332/Prophet-Andrew-Ng/main/langchain/%E5%B0%84%E9%9B%95%E8%8B%B1%E9%9B%84%E4%BC%A0.txt
+   
+   input_name = '/content/射雕英雄传.txt'
+   ```
+
+3. 指定保存位置
+
+   ```python
+   # mount google drive
+   from google.colab import drive
+   drive.mount('/content/drive')
+   
+   import os
+   save_folder = "/content/drive/MyDrive/StoryGPT/shediaoyingxiongzhuan_extract"
+   ```
+
+4. 运行至notebook最后一个单元
+
+   ```python
+   import os
+   import json
+   from tqdm import tqdm
+   
+   # save_folder = "/content/drive/MyDrive/GPTData/weixiaobao_extract"
+   
+   for i in tqdm(range(len(chunk_text))):
+      ...
+   ```
+
+## Step 2 抽取后重组
+
+请使用这个文件[对话和摘要重组小说_两种方式.ipynb]([Chat-Haruhi-Suzumiya/characters/novel_collecting/对话和摘要重组小说_两种方式.ipynb at main · LC1332/Chat-Haruhi-Suzumiya (github.com)](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/对话和摘要重组小说_两种方式.ipynb))
+
+使用说明——使用抽取出原chunk做法
+
+1. 必须配置保存路径以及抽取后路径
+
+   ```python
+   # 储存txt和jsonl的文件夹路径。如需修改，请与下方自动化循环保持一致
+   
+   save_folder_path =  "/content/drive/MyDrive/reorganized_story_shediaoyingxiongzhuan"
+   
+   # chunk所在文件夹，请以_raw结尾
+   folder_path = f"/content/drive/MyDrive/shediaoyingxiongzhuan_extract"
+   ```
+
+2. 可选择性配置（一般来说不用改）
+
+   ```python
+   # 故事名字，默认为_raw之前的名字
+   story_name_en = os.path.basename(folder_path).split("_")[0]
+   
+   # 测试ID
+   id = 200
+   
+   # 默认的保存路径
+   save_jsonl_path = f"/content/drive/MyDrive/reorganized_story_{story_name_en}/reorganized_{story_name_en}.jsonl"
+   save_txt_path = f"/content/drive/MyDrive/reorganized_story_{story_name_en}/reorganized_{story_name_en}.txt"
+   
+   # 默认抽取出的dialogue和summary文件位置/如果有不同请在此处和底部自动程序中修改
+   save_folder = f"/content/drive/MyDrive/{story_name_en}_extract"
+   
+   dialoge_file = os.path.join(save_folder, f"{id}_dialogue.txt")
+   summarzie_file = os.path.join(save_folder, f"{id}_sum.txt")
+   ```
+
+3. 运行至保存代码部分
+
+   ```markdown
+   # 运行到此处，txt和jsonl文件已保存在/content/drive/MyDrive/reorganized_story_{story_name_en}下
+   ```
+
+如果重新从原小说抽取，请将
+
+```python
+# 如果你要想从content重新切分，请在开头运行以下代码
+
+!wget https://raw.githubusercontent.com/LC1332/Prophet-Andrew-Ng/main/langchain/%E7%AC%91%E5%82%B2%E6%B1%9F%E6%B9%96.txt
+```
+
+切分代码首先运行，随后运行
+
+```python
+# 手动导入ID，继续向下运行以测试，最后根据ID循环
+raw_text = chunk_text[ id ]
+
+chunk_sum = []
+unique_chunk_sum = []
+```
+
+抽取后匹配代码之后部分
+
+## Step 3 小说chatbot抽取
+
+请使用这个文件[多ChatBot抽取.ipynb]([Chat-Haruhi-Suzumiya/characters/novel_collecting/多ChatBot抽取.ipynb at main · LC1332/Chat-Haruhi-Suzumiya (github.com)](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/多ChatBot抽取.ipynb))
+
+使用说明
+
+1. 配置一些参数
+
+   ```python
+   # 参数设置
+   
+   # 支持跨越多少行寻找目标角色，也即控制段内行间距不超过该值
+   max_find_lines = 10
+   
+   max_token_num = 500
+   #################################以上尽量不修改####################################
+   # target_role支持 空字符串(默认前三个)或者List of string 如果出错默认保存第一个
+   target_role = ['郭靖', "欧阳锋"]
+   
+   # 输入文件路径
+   input_name = '/content/shediaoyingxiongzhuan.jsonl'
+   
+   # 保存路径
+   savepath = '/content/texts'
+   os.system(f"rm -rf {savepath}")
+   os.makedirs(savepath, exist_ok=True)
+   ```
+
+2. 运行至notebook最后一个单元
+
+   ```python
+   for role_cur_name in role_extract :
+     chat_ids, previous_scene_ids = output_scene_chat_id(data, role_cur_name)
+     chat_ids_in_chunk, chat_id2previous_scene_id = divide_chats2chunks(chat_ids, previous_scene_ids)
+     appended_key, final_chunks = id2texts(data, chat_ids_in_chunk, chat_id2previous_scene_id)
+     save_chunk2zip(savepath+"/"+role_cur_name, role_cur_name, final_chunks) #如果你想修改保存的zip名称，请修改本函数的第二个参数save_title
+   ```
+
+3. 从保存/content/{role_cur_name}_text.zip中下载
+
+   ```
+   Zipped folder saved to /content/郭靖_text.zip
+   Zipped folder saved to /content/欧阳锋_text.zip
+   ```
 
 # FAQ
 
