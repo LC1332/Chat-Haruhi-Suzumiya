@@ -171,7 +171,7 @@ chatbot的提取工具已经有初步的版本，由李鲁鲁开发
 
 ## Step 2 抽取后重组
 
-请使用这个文件[对话和摘要重组小说_两种方式.ipynb]([Chat-Haruhi-Suzumiya/characters/novel_collecting/对话和摘要重组小说_两种方式.ipynb at main · LC1332/Chat-Haruhi-Suzumiya (github.com)](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/对话和摘要重组小说_两种方式.ipynb))
+请使用这个文件[对话和摘要重组小说_两种方式.ipynb](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/对话和摘要重组小说_两种方式.ipynb)
 
 使用说明——使用抽取出原chunk做法
 
@@ -234,7 +234,7 @@ unique_chunk_sum = []
 
 ## Step 3 小说chatbot抽取
 
-请使用这个文件[多ChatBot抽取.ipynb]([Chat-Haruhi-Suzumiya/characters/novel_collecting/多ChatBot抽取.ipynb at main · LC1332/Chat-Haruhi-Suzumiya (github.com)](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/多ChatBot抽取.ipynb))
+请使用这个文件[多ChatBot抽取.ipynb](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/多ChatBot抽取.ipynb)
 
 使用说明
 
