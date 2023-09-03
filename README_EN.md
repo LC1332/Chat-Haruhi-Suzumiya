@@ -18,6 +18,7 @@ The demos based on [OpenAI](https://huggingface.co/spaces/chenxiYan/haruhi) and 
     <p>
         <b>English</b> |
         <a href="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/README.md">Chinese简体中文</a> |
+        <a href="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/README_JA.md">Japanese日本語</a> |
         🤗 <a href="https://huggingface.co/spaces/chenxiYan/haruhi" target="_blank">Hugging Face</a>  |
         📜 <a href="https://arxiv.org/pdf/2308.09597.pdf" target="_blank">Paper</a>  |
         🤗🗃️ <a href="https://huggingface.co/datasets/silk-road/ChatHaruhi-54K-Role-Playing-Dialogue" target="_blank">54k Dataset</a>  |
