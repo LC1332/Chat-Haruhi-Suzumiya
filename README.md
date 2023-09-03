@@ -170,8 +170,8 @@ print(response)
 
 | 人物 | hf地址 | 来自小说 | 备注 |
 | - | - | - | - |
-| 令狐冲 | chengli-thu/linghuchong | 笑傲江湖 | |
-| 岳不群 | chengli-thu/yuebuqun | 笑傲江湖 | |
+| 令狐冲 | [chengli-thu/linghuchong](https://huggingface.co/datasets/chengli-thu/linghuchong) | 笑傲江湖 | |
+| 岳不群 | [chengli-thu/yuebuqun](https://huggingface.co/datasets/chengli-thu/yuebuqun) | 笑傲江湖 | |
 
 你也可以添加你喜欢的人物，整理成满足我们格式要求的dataset。然后merge到表格中。
 
