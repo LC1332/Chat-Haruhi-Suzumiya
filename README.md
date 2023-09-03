@@ -79,6 +79,8 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 
 ## News
 
+[2023-09-03] ChatHaruhi 2.0 支持从HuggingFace下载特定人物后进行角色扮演。
+
 [2023-09-02] 启动众筹数据抽取和StoryTeller分支项目 [数据众筹链接](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/novel_collecting)
 
 [2023-08-31] 开始将之前的代码移动到 https://github.com/LC1332/Legacy-Haruhi-1.0 只保留ChatHaruhi2.0的部分
@@ -131,7 +133,7 @@ https://github.com/LC1332/Chat-Haruhi-Suzumiya/assets/5266090/8b88c8ac-262f-4705
 为了方便后续研究，重构后的，ChatHaruhi2.0已经可以通过pip启动。目前2.0移除了图片和声音的设计，这些会在我们的后续研究中去重构。你可以通过下面的方式进行安装
 
 ```shell
-pip -q install transformers openai tiktoken langchain chromadb zhipuai chatharuhi
+pip -q install transformers openai tiktoken langchain chromadb zhipuai chatharuhi datasets
 ```
 
 和如下的方式调用
@@ -146,9 +148,21 @@ response = chatbot.chat(role='阿虚', text = '我看新一年的棒球比赛要
 print(response)
 ```
 
+现在ChatHaruhi支持直接从hugging face上拖取我们规定格式的chatbot的database。
+
+```python
+from chatharuhi import ChatHaruhi
+
+chatbot = ChatHaruhi( role_from_hf = 'chengli-thu/linghuchong', \
+                      llm = 'openai')
+
+response = chatbot.chat(role='小师妹', text = '冲哥。')
+print(response)
+```
+
 更多文档和代码见 https://github.com/LC1332/Haruhi-2-Dev 预计这两周完成本地ChatGLM2-LoRA模型的合并
 
-随着ChatHaruhi 2.0 Gradio的发布，过往的1.0 数据和代码 将会迁移到一个legacy repo中
+随着ChatHaruhi 2.0 Gradio的发布，过往的1.0 数据和代码 将会迁移到一个legacy repo https://github.com/LC1332/Legacy-Haruhi-1.0
 
 
 ## 各个demo的快速启动
