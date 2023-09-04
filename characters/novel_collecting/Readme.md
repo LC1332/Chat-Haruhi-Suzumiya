@@ -329,5 +329,9 @@ unique_chunk_sum = []
 
 | 人物 | hf地址 | 来自小说 | 备注 |
 | - | - | - | - |
-| 令狐冲 | chengli-thu/linghuchong | 笑傲江湖 | |
-| 岳不群 | chengli-thu/yuebuqun | 笑傲江湖 | |
+| 令狐冲 | [chengli-thu/linghuchong](https://huggingface.co/datasets/chengli-thu/linghuchong) | 笑傲江湖 | |
+| 岳不群 | [chengli-thu/yuebuqun](https://huggingface.co/datasets/chengli-thu/yuebuqun) | 笑傲江湖 | |
+| 鸠摩智 | [hhhwmws/jiumozhi](https://huggingface.co/datasets/hhhwmws/jiumozhi) | 天龙八部 | |
+| 萧峰 | [hhhwmws/xiaofeng](https://huggingface.co/datasets/hhhwmws/xiaofeng) | 天龙八部 | |
+| 丁春秋 | [hhhwmws/dingchunqiu](https://huggingface.co/datasets/hhhwmws/dingchunqiu) | 天龙八部 | |
+| 虚竹 | [hhhwmws/xuzhu](https://huggingface.co/datasets/hhhwmws/xuzhu) | 天龙八部 | |
