@@ -77,49 +77,6 @@ chatbot的部分不需要提取，当然，反正小说都抽取了，可以顺�
 
 代码我回头看看我和miweishi加起来够不够 不够的话会加人
 
-# 代码工具介绍
-
-## 小说中对话抽取工具
-
-（需要openai key，尽量在colab或者外网ip运行）
-
-抽取工具已经ready，由李鲁鲁实现完成
-
-在  [新小说抽取.ipynb](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/%E6%96%B0%E5%B0%8F%E8%AF%B4%E6%8A%BD%E5%8F%96_release.ipynb)
-
-抽取dialogue有时候会产生一些噪音，另外kor的例子最好换成你的小说的例子
-
-## 小说重写成jsonl的脚本介绍
-
-这个工具由米唯实开发
-
-[对话和摘要重组小说_两种方式.ipynb](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/ChatBot%E6%8A%BD%E5%8F%96.ipynb)
-
-现在能跑，mws还在进一步清理
-
-## 特定角色的Chatbot提取
-
-chatbot的提取工具已经有初步的版本，由李鲁鲁开发
-
-[多ChatBot抽取.ipynb]([Chat-Haruhi-Suzumiya/characters/novel_collecting/多ChatBot抽取.ipynb at main · LC1332/Chat-Haruhi-Suzumiya (github.com)](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/多ChatBot抽取.ipynb))
-
-## 为角色总结合适的系统提示词
-
-（需要openai key，尽量在colab或者外网ip运行）
-
-当然这个脚本其实没有openai的key直接复制prompt到claude也可以
-
-[system_prompt_suggestion.ipynb](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/system_prompt_suggestion.ipynb)
-
-## 抽取embedding之后上传到HuggingFace
-
-这个需要GPU，不然语料多了有点慢
-
-[chatbot的embedding抽取和jsonl生成.ipynb](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/chatbot%E7%9A%84embedding%E6%8A%BD%E5%8F%96%E5%92%8Cjsonl%E7%94%9F%E6%88%90.ipynb)
-
-## 重新从ChatHaruhi中载入这个角色并与之聊天
-
-[test_pull_role_form_hf.ipynb](https://github.com/LC1332/Haruhi-2-Dev/blob/main/notebook/test_pull_role_form_hf.ipynb)
 
 # 抽取-整合-chatbot提取详细说明书
 
@@ -276,6 +233,67 @@ unique_chunk_sum = []
    Zipped folder saved to /content/郭靖_text.zip
    Zipped folder saved to /content/欧阳锋_text.zip
    ```
+
+## Step 4 根据GPT的建议编写人物的system_prompt
+
+
+当然这个脚本其实没有openai的key直接复制prompt到claude也可以
+
+[system_prompt_suggestion.ipynb](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/system_prompt_suggestion.ipynb)
+
+
+## Step 5 抽取embedding之后上传到HuggingFace
+
+这个需要GPU，不然语料多了有点慢
+
+[chatbot的embedding抽取和jsonl生成.ipynb](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/chatbot%E7%9A%84embedding%E6%8A%BD%E5%8F%96%E5%92%8Cjsonl%E7%94%9F%E6%88%90.ipynb)
+
+
+# 代码工具介绍
+
+## 小说中对话抽取工具
+
+（需要openai key，尽量在colab或者外网ip运行）
+
+抽取工具已经ready，由李鲁鲁实现完成
+
+在  [新小说抽取.ipynb](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/%E6%96%B0%E5%B0%8F%E8%AF%B4%E6%8A%BD%E5%8F%96_release.ipynb)
+
+抽取dialogue有时候会产生一些噪音，另外kor的例子最好换成你的小说的例子
+
+## 小说重写成jsonl的脚本介绍
+
+这个工具由米唯实开发
+
+[对话和摘要重组小说_两种方式.ipynb](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/ChatBot%E6%8A%BD%E5%8F%96.ipynb)
+
+现在能跑，mws还在进一步清理
+
+## 特定角色的Chatbot提取
+
+chatbot的提取工具已经有初步的版本，由李鲁鲁开发
+
+[多ChatBot抽取.ipynb]([Chat-Haruhi-Suzumiya/characters/novel_collecting/多ChatBot抽取.ipynb at main · LC1332/Chat-Haruhi-Suzumiya (github.com)](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/多ChatBot抽取.ipynb))
+
+## 为角色总结合适的系统提示词
+
+（需要openai key，尽量在colab或者外网ip运行）
+
+当然这个脚本其实没有openai的key直接复制prompt到claude也可以
+
+[system_prompt_suggestion.ipynb](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/system_prompt_suggestion.ipynb)
+
+## 抽取embedding之后上传到HuggingFace
+
+这个需要GPU，不然语料多了有点慢
+
+[chatbot的embedding抽取和jsonl生成.ipynb](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/chatbot%E7%9A%84embedding%E6%8A%BD%E5%8F%96%E5%92%8Cjsonl%E7%94%9F%E6%88%90.ipynb)
+
+## 重新从ChatHaruhi中载入这个角色并与之聊天
+
+[test_pull_role_form_hf.ipynb](https://github.com/LC1332/Haruhi-2-Dev/blob/main/notebook/test_pull_role_form_hf.ipynb)
+
+
 
 # FAQ
 
