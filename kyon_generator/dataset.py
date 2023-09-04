@@ -238,3 +238,36 @@ class CharacterDataset(Dataset):
 # from datasets import load_dataset,Dataset
 # train_dataset = Dataset.from_dict(train_dataset)
 # train_dataset.push_to_hub("silk-road/Chat_Suzumiya_Fusion_B", private=False)
+
+
+import json
+from torch.utils.data import Dataset
+from torch.utils.data import DataLoader
+import os
+import jsonlines
+from torch.utils.data import ConcatDataset
+from transformers import AutoTokenizer, AutoModel
+from datasets import load_dataset, concatenate_datasets
+import torch
+import torch.nn as nn
+# from peft import LoraConfig, get_peft_model
+from transformers import Trainer, TrainingArguments
+from huggingface_hub import login
+from dataset import CharacterDataset, read_jsonl_file, collate_fn
+from utils import get_embedding, download_models
+
+HF_TOKEN = "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"
+login(token=HF_TOKEN)
+
+# 加载两个数据集
+train_dataset_dict_A = load_dataset('silk-road/Chat_Suzumiya_Fusion')
+train_dataset_dict_B = load_dataset('silk-road/Chat_Suzumiya_Fusion_B')
+
+# 从DatasetDict中获取具体的数据集
+train_dataset_A = train_dataset_dict_A['train']
+train_dataset_B = train_dataset_dict_B['train']
+
+train_dataset = concatenate_datasets([train_dataset_A, train_dataset_B])
+from datasets import load_dataset,Dataset
+# train_dataset = Dataset(train_dataset)
+train_dataset.push_to_hub("silk-road/Chat-Haruhi-Fusion-A_B")
