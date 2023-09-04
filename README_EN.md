@@ -8,18 +8,18 @@
 
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)]()
 [![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)]()
-[![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi)
+[![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/chenxiYan/haruhi)
 
-Temporary experience link: https://94acdc6d1acf850c10.gradio.live
+<!-- (https://huggingface.co/spaces/silk-road/ChatHaruhi) -->
 
-Temporary experience link2:    https://783716bd2ec1dc3408.gradio.live
-
+The demos based on [OpenAI](https://huggingface.co/spaces/chenxiYan/haruhi) and [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) and [讯飞星火](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo)  are already online. The local model has been released, and the demo for the local model is under development.
 
 <h4 align="center">
     <p>
         <b>English</b> |
         <a href="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/README.md">Chinese简体中文</a> |
-        🤗 <a href="https://huggingface.co/spaces/silk-road/ChatHaruhi" target="_blank">Hugging Face</a>  |
+        <a href="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/README_JA.md">Japanese日本語</a> |
+        🤗 <a href="https://huggingface.co/spaces/chenxiYan/haruhi" target="_blank">Hugging Face</a>  |
         📜 <a href="https://arxiv.org/pdf/2308.09597.pdf" target="_blank">Paper</a>  |
         🤗🗃️ <a href="https://huggingface.co/datasets/silk-road/ChatHaruhi-54K-Role-Playing-Dialogue" target="_blank">54k Dataset</a>  |
     <p>
@@ -86,18 +86,23 @@ This project is licensed under Apache 2.0, which permits commercial use. However
 
 To get started with the ChatHaruhi1.0 project, you can directly run the following Colab notebooks:
 
-| Name |Colab Link| Description         |
-|---|---|---|
-| ChatHaruhi1.0                                                |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 能够支持角色切换的功能整合客户端                                                                                                 |
-| ChatHaruhi2.0(EA) | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/ChatHaruhi2_demo.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | ChatHaruhi2.0的openAI版本已经能运行了 |
+| Name | Colab Link | Description |
+|-|-|-|  
+| ChatHaruhi1.0 | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | Integrated client that supports character switching |
+| ChatHaruhi2.0(code) | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/ChatHaruhi2_demo.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | The openAI version of ChatHaruhi2.0 is already running | 
+| ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/chenxiYan/haruhi) | Hugging Face Demo (openai as LLM) |
+| ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) | Hugging Face Demo (GLMPro as LLM) |
+| ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) | Hugging Face Demo (讯飞星火 as LLM) |
+| Prototype of StoryTeller | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/Story-teller) | Prototype of StoryTeller |
 
-We are refactoring the code for ChatHaruhi 2.0, which will be solve the high module coupling problem of version 1.0 - it will be released as a pip-installable library with improved modularity. But you can still start the gradio demo through the first colab link. If you need a pure python backend, ChatHaruhi 2.0 code can already be installed via pip.
+ChatHaruhi 2.0 code can already be installed via pip.
+
 
 ## News
 
-[2023-08-22] Dataset Released on [Hugging Face](https://huggingface.co/datasets/silk-road/ChatHaruhi-54K-Role-Playing-Dialogue)
+[2023-08-29] inference code for ChatGLM2-LoRA released <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/GLM_LORA.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 
-[2023-08-21] ChatHaruhi [tech report](https://arxiv.org/abs/2308.09597) on arXiv.
+[2023-08-28] Support for ChatHaruhi2.0 with openAI, Xunfei, and GLMPro has been completed, and the corresponding hugging face demos have been launched.
 
 [2023-06-07] Chat Haruhi Suzumiya won the second prize in the Create@AI Hackathon hosted by the Modelscope Community, co-sponsored by Alibaba Cloud and NVIDIA, and co-organized by Tianchi(top3), [video](https://www.bilibili.com/video/BV1Xh411A7kC/)
 
@@ -120,7 +125,7 @@ https://github.com/LC1332/Chat-Haruhi-Suzumiya/assets/5266090/8b88c8ac-262f-4705
     </td>
     <td>
       <ul>
-        <li><a href="#ChatHaruhi_2.0_Design">ChatHaruhi_2.0_Design </a></li>
+        <li><a href="#ChatHaruhi2">ChatHaruhi_2.0_Design </a></li>
         <li><a href="#Quick Start of each demo">Quick Start of Each Demo</a></li>
         <li><a href="#Demo Video">Demo Video</a></li>
         <li><a href="#Tutorial Video in Chinese">Tutorial Video in Chinese</a></li>
@@ -134,33 +139,30 @@ https://github.com/LC1332/Chat-Haruhi-Suzumiya/assets/5266090/8b88c8ac-262f-4705
   </tr>
 </table>
 
-## ChatHaruhi_2.0_Design
+## ChatHaruhi2
 
-ChatHaruhi started as an open source project with multimodal features like images and voice added to participate in competitions. Developers can now try the Gradio demo in the source code. However, this design isn't ideal for future research goals like adding characters, studying interactions, enhancing memory, or connecting to a Unity game backend.  
-  
-After this arxiv release, we will rebuild ChatHaruhi with the following planned interfaces:
+For convenience of future research, the refactored ChatHaruhi2.0 can now be started via pip. Currently 2.0 removes the design of images and sounds, which will be refactored in our follow-up research. You can install it via the following:
 
-```python
-from ChatHaruhi import ChatHaruhi
-
-chatbot = ChatHaruhi( system_prompt = 'prompt.txt', \
-                      story_db = 'story_chroma_folder', \
-                      llm = 'openai' )
-                      
-response = chatbot.chat(text = 'Can you introduce youself?', role = 'Kyon' )
+```shell
+pip -q install transformers openai tiktoken langchain chromadb zhipuai chatharuhi 
 ```
 
-The system will use a simple system_prompt parameter and vector database for access. It will support switching between LLMs like the locally trained model from this paper, Claude, Spark API, etc. For conversations using the ChatHaruhi-52K characters, you can use them directly out of the box below.
+And call it like this:
 
 ```python
 from chatharuhi import ChatHaruhi
 
-chatbot = ChatHaruhi( role_name = 'baizhantang', llm = 'openai')
+chatbot = ChatHaruhi(
+    role_name = 'haruhi',
+    llm = 'openai'
+)
 
-response = chatbot.chat(role='汪捕快',text ='小二，来斤好久，再来两盘羊肉！')
+response = chatbot.chat(role='阿虚', text='I see the new baseball season is about to start! Should we participate?')
+
+print(response)
 ```
 
-chatharuhi has already one version upload to pypi, you can install the preliminary version from pip install chatharuhi. For more things: https://github.com/LC1332/Haruhi-2-Dev 
+More documentation and code can be found at https://github.com/LC1332/Haruhi-2-Dev
 
 
 ## Quick Start of Each Demo
@@ -176,6 +178,13 @@ chatharuhi has already one version upload to pypi, you can install the prelimina
 | personality - College entrance exam essay | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/College_essays_gradio.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | College entrance exam essay generator tailored to high or low openness personalities，[link](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) |
 | personality-Chatbot                                               | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/PersonalityChatbot.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | Chatbot corresponding to high/low open personality，[link](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)  |
 | Chat Megumi                                                 |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/gradio_megumi.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| Chat Megumi was created using a corpus collected by community friends. |
+
+## Previous News
+
+[2023-08-22] Dataset Released on [Hugging Face](https://huggingface.co/datasets/silk-road/ChatHaruhi-54K-Role-Playing-Dialogue)
+
+[2023-08-21] ChatHaruhi [tech report](https://arxiv.org/abs/2308.09597) on arXiv.
+
 
 ## Tutorial Video in Chinese
 
@@ -266,3 +275,35 @@ Please cite the repo if you use the data or code in this repo.
 ---
 If you have any suggestions for the project, such as the interface design of **ChatHaruhi2.0**,
 or want to add references to the future version of this report, please submit the [issue](https://github.com/LC1332/Chat-Haruhi-Suzumiya/issues).
+
+
+<!-- 
+It is expected to complete the merge of the local ChatGLM2-LoRA model in the next two weeks. 
+
+With the release of ChatHaruhi 2.0 Gradio, the previous 1.0 data and code will be migrated to a legacy repo.
+
+ChatHaruhi started as an open source project with multimodal features like images and voice added to participate in competitions. Developers can now try the Gradio demo in the source code. However, this design isn't ideal for future research goals like adding characters, studying interactions, enhancing memory, or connecting to a Unity game backend.  
+  
+After this arxiv release, we will rebuild ChatHaruhi with the following planned interfaces:
+
+```python
+from ChatHaruhi import ChatHaruhi
+
+chatbot = ChatHaruhi( system_prompt = 'prompt.txt', \
+                      story_db = 'story_chroma_folder', \
+                      llm = 'openai' )
+                      
+response = chatbot.chat(text = 'Can you introduce youself?', role = 'Kyon' )
+```
+
+The system will use a simple system_prompt parameter and vector database for access. It will support switching between LLMs like the locally trained model from this paper, Claude, Spark API, etc. For conversations using the ChatHaruhi-52K characters, you can use them directly out of the box below.
+
+```python
+from chatharuhi import ChatHaruhi
+
+chatbot = ChatHaruhi( role_name = 'baizhantang', llm = 'openai')
+
+response = chatbot.chat(role='汪捕快',text ='小二，来斤好久，再来两盘羊肉！')
+```
+
+chatharuhi has already one version upload to pypi, you can install the preliminary version from pip install chatharuhi. For more things: https://github.com/LC1332/Haruhi-2-Dev  -->

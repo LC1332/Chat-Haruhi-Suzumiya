@@ -65,7 +65,8 @@ def create_gradio(chat_system):
             ## Chat凉宫春日 ChatHaruhi
             - 项目地址 [https://github.com/LC1332/Chat-Haruhi-Suzumiya](https://github.com/LC1332/Chat-Haruhi-Suzumiya)
             - 骆驼项目地址 [https://github.com/LC1332/Luotuo-Chinese-LLM](https://github.com/LC1332/Luotuo-Chinese-LLM) 
-            - 此版本为图文版本，完整功能（+语音）的demo见项目 角色名建议输入 阿虚 或者影视剧中有的人物。或者也可以是新学生或者老师。
+            - 此版本ChatHaruhi1.0 实际上2.0已经在hugging face上线，可以去github repo找一下
+            - 如果觉得好玩拜托给我们的github项目点上star，谢谢
             """
         )
         with gr.Tab("Chat-Haruhi") as chat:
