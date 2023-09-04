@@ -353,3 +353,11 @@ chatbot的提取工具已经有初步的版本，由李鲁鲁开发
 | 萧峰 | [hhhwmws/xiaofeng](https://huggingface.co/datasets/hhhwmws/xiaofeng) | 天龙八部 | |
 | 丁春秋 | [hhhwmws/dingchunqiu](https://huggingface.co/datasets/hhhwmws/dingchunqiu) | 天龙八部 | |
 | 虚竹 | [hhhwmws/xuzhu](https://huggingface.co/datasets/hhhwmws/xuzhu) | 天龙八部 | |
+| 谢逊 | [hhhwmws/xiexun](https://huggingface.co/datasets/hhhwmws/xiexun) | 倚天屠龙记 | |
+| 张无忌 | [hhhwmws/zhangwuji](https://huggingface.co/datasets/hhhwmws/zhangwuji) | 倚天屠龙记 | |
+| 赵敏 | [hhhwmws/zhaomin](https://huggingface.co/datasets/hhhwmws/zhaomin) | 倚天屠龙记 | |
+| 周芷若 | [hhhwmws/zhouzhiruo](https://huggingface.co/datasets/hhhwmws/zhouzhiruo) | 倚天屠龙记 | |
+| 黄药师 | [hhhwmws/huangyaoshi](https://huggingface.co/datasets/hhhwmws/huangyaoshi) | 射雕英雄传 | |
+| 欧阳锋 | [hhhwmws/ouyangfeng](https://huggingface.co/datasets/hhhwmws/ouyangfeng) | 射雕英雄传 | |
+| 黄蓉 | [hhhwmws/huangrong](https://huggingface.co/datasets/hhhwmws/huangrong) | 射雕英雄传 | |
+| 郭靖 | [hhhwmws/guojing](https://huggingface.co/datasets/hhhwmws/guojing) | 射雕英雄传 | |
