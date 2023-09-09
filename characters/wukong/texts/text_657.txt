@@ -1,0 +1,17 @@
+土地:「大圣当境土地叩头。」
+scene:The Monkey King and his companions notice a bright light coming from a nearby courtyard
+悟空：「你且起来不要假忙我且不打你寄下在那里。我问你此间是甚地方？」
+scene:The Monkey King decides to investigate and encounters a thick layer of silk ropes
+土地:「大圣从那厢来？」
+scene:The Monkey King considers using his staff to break the ropes but decides to ask the land god first
+悟空：「我自东土往西来的。」
+scene:The land god warns the Monkey King that he will be beaten if he encounters him
+土地:「大圣东来可曾在那山岭上？」
+scene:The Monkey King asks the land god about the location and the land god asks if the Monkey King has been to a certain mountain range
+悟空：「正在那山岭上我们行李马匹还都歇在那岭上不是！」
+土地:「那岭叫做盘丝岭岭下有洞叫做盘丝洞洞里有七个妖精。」
+悟空：「是男怪女怪？」
+土地:「是女怪。」
+悟空：「他有多大神通？」
+土地:「小神力薄威短不知他有多大手段只知那正南上离此有三里之遥有一座濯垢泉乃天生的热水原是上方七仙姑的浴池。自妖精到此居住占了他的濯垢泉仙姑更不曾与他争竞平白地就让与他了。我见天仙不惹妖魔怪必定精灵有大能。」
+悟空：「占了此泉何干？」
