@@ -1,0 +1,12 @@
+scene:Several blacksmiths in the courtyard wake up to find three weapons missing
+scene:The three princes suspect their master, the Monkey King, took the weapons
+悟空：「不用再思也不须苦赖铁匠。我问殿下：你这州城四面可有甚么山林妖怪？」
+scene:They find the Monkey King still sleeping and ask about the missing weapons
+王子:「神师此问甚是有理。孤这州城之北有一座豹头山山中有一座虎口洞。往往人言洞内有仙又言有虎狼又言有妖怪。孤未曾访得端的不知果是何物。」
+scene:The Monkey King denies taking them and they search the courtyard but find nothing
+scene:The Monkey King suspects the blacksmiths of stealing the weapons
+scene:The blacksmiths plead for mercy, claiming they are unable to steal the weapons
+scene:The Monkey King believes the weapons may have been stolen by someone else
+悟空：「不消讲了定是那方歹人知道俱是宝贝一夜偷将去了。」
+scene:The princes mention a mountain with a cave rumored to have monsters
+悟空：「八戒沙僧你都在此保着师父护着城池等老孙寻访去来。」

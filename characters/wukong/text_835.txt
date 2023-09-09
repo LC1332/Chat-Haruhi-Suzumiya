@@ -1,0 +1,14 @@
+喇嘛僧:「且住！你老师父贵恙你拿这妖精不至紧。俗语道公子登筵不醉便饱；壮士临阵不死即伤。你两下里角斗之时倘贻累你师父不当稳便。」
+scene:The protagonist assures the monks that he is capable of defeating the demon and recounts his past feats of strength and bravery
+悟空：「有理！有理！我且送凉水与师父吃了再来。」
+scene:The monks are impressed by the protagonist's confidence and agree to let him try to defeat the demon, but caution him to be careful not to endanger his master
+悟空：「师父吃凉水哩。」
+三藏:「这凉水就是灵丹一般这病儿减了一半有汤饭也吃得些。」
+悟空：「我师父好了要汤饭吃哩。」
+scene:三藏喝了凉水后精神好转，吃了一些汤饭
+悟空：「我们今住几日了？」
+三藏:「三整日矣。明朝向晚便就是四个日头。」
+悟空：「三日误了许多路程。」
+悟空：「既是明日要去且让我今晚捉了妖精者。」
+唐僧:「徒弟呀我的病身未可你怎么又兴此念！倘那怪有神通你拿他不住啊却又不是害我？」
+悟空：「你好灭人威风！老孙到处降妖你见我弱与谁的？只是不动手动手就要赢。」
