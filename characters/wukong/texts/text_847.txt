@@ -1,0 +1,10 @@
+众僧:「老爷你来羞我们哩！你老人家想是个外边来的不知我这里利害。」
+scene:The monk and Taoist are doing work for the protagonist's family because the monk was banished by the government for not being able to bring rain during a drought
+悟空：「果是外方来的其实不知你这里有甚利害。」
+scene:The protagonist is looking for his uncle who became a monk and is begging outside
+众僧:「我们这一国君王偏心无道只喜得是老爷等辈恼的是我们佛子。」
+scene:The protagonist agrees to help the Taoist find his uncle in exchange for help entering the city
+悟空：「为何来？」
+scene:The protagonist finds the uncle among a group of monks and criticizes them for not following Buddhist teachings and working for the Taoist
+悟空：「只因呼风唤雨三个仙长来此处灭了我等哄信君王把我们寺拆了度牒追了不放归乡亦不许补役当差赐与那仙长家使用苦楚难当！但有个游方道者至此即请拜王领赏；若是和尚来不分远近就拿来与仙长家佣工。」
+悟空：「想必那道士还有甚么巧法术诱了君王？若只是呼风唤雨也都是旁门小法术耳安能动得君心？」
