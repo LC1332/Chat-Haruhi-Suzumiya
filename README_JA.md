@@ -8,18 +8,18 @@
 
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)]()
 [![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)]()
-[![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/chenxiYan/haruhi)
+[![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI)
 
 <!-- (https://huggingface.co/spaces/silk-road/ChatHaruhi) -->
 
-[OpenAI](https://huggingface.co/spaces/chenxiYan/haruhi) と [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) と [讯飞星火](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) をベースにしたデモはすでにオンラインで公開されています。現在、ローカルモデルはリリース済みですが、ローカルモデルのデモは開発中となっています。
+[OpenAI](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI) と [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) と [讯飞星火](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) をベースにしたデモはすでにオンラインで公開されています。現在、ローカルモデルはリリース済みですが、ローカルモデルのデモは開発中となっています。
 
 <h4 align="center">
     <p>
         <a href="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/README_EN.md">English</a> |
         <a href="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/README.md">Chinese简体中文</a> |
         <b>日本語</b> |
-        🤗 <a href="https://huggingface.co/spaces/chenxiYan/haruhi" target="_blank">Hugging Face</a>  |
+        🤗 <a href="https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI" target="_blank">Hugging Face</a>  |
         📜 <a href="https://arxiv.org/pdf/2308.09597.pdf" target="_blank">Paper</a>  |
         🤗🗃️ <a href="https://huggingface.co/datasets/silk-road/ChatHaruhi-54K-Role-Playing-Dialogue" target="_blank">54k Dataset</a>  |
     <p>
@@ -89,7 +89,7 @@ ChatHaruhi プロジェクトを開始するには、以下の colab リンク�
 | 名称 | Colab リンク | 説明 |
 |-|-|-|
 | ChatHaruhi2.0(code) | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/ChatHaruhi2_demo.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | OpenAI 版の ChatHaruhi 2.0 が稼働中です |
-| ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/chenxiYan/haruhi) | Hugging Face Demo (openai as LLM) |
+| ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI) | Hugging Face Demo (openai as LLM) |
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) | Hugging Face Demo (GLMPro as LLM) |
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) | Hugging Face Demo (讯飞星火 as LLM) |
 | ChatGLM2-LoRA Local Model  | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/GLM_LORA.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | ChatGLM2-LoRA trained on ChatHaruhi-54K|

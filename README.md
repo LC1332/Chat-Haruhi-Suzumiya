@@ -5,11 +5,11 @@
 
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)]()
 [![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)]()
-[![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/chenxiYan/haruhi)
+[![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI)
 
 <!-- (https://huggingface.co/spaces/silk-road/ChatHaruhi) -->
 
-目前基于[OpenAI](https://huggingface.co/spaces/chenxiYan/haruhi), [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro), [讯飞星火](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) 的demo已经上线。本地模型已经发布，本地模型的demo正在制作中。
+目前基于[OpenAI](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI), [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro), [讯飞星火](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) 的demo已经上线。本地模型已经发布，本地模型的demo正在制作中。
 
 **Chat凉宫春日**是模仿凉宫春日等一系列动漫人物，使用近似语气、个性和剧情聊天的语言模型，
 
@@ -67,7 +67,7 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 | 名称 |colab链接| 说明         |
 |---|---|---|
 | ChatHaruhi2.0(code) | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/ChatHaruhi2_demo.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | ChatHaruhi2.0的openAI版本已经能运行了 |
-| ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/chenxiYan/haruhi) | Hugging Face Demo (openai as LLM) |
+| ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI) | Hugging Face Demo (openai as LLM) |
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) | Hugging Face Demo (GLMPro as LLM) |
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) | Hugging Face Demo (讯飞星火 as LLM) |
 | ChatGLM2-LoRA Local Model  | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/GLM_LORA.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | ChatGLM2-LoRA trained on ChatHaruhi-54K|
