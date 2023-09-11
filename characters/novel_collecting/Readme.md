@@ -248,6 +248,25 @@ unique_chunk_sum = []
 
 [chatbot的embedding抽取和jsonl生成.ipynb](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/novel_collecting/chatbot%E7%9A%84embedding%E6%8A%BD%E5%8F%96%E5%92%8Cjsonl%E7%94%9F%E6%88%90.ipynb)
 
+## Step 6 使用ChatHaruhi2.0载入
+
+这个使用ChatHaruhi2.0
+
+如果你是pip install的代码应该是这样
+
+```python
+from chatharuhi import ChatHaruhi
+
+chatbot = ChatHaruhi( role_from_hf = 'chengli-thu/linghuchong', \
+                      llm = 'openai')
+
+response = chatbot.chat(role='小师妹', text = '冲哥。')
+print(response)
+```
+
+如果你是github clone的，chatharuhi要换成大些ChatHaruhi
+
+具体可以看这个脚本 [test_pull_role_form_hf.ipynb](https://github.com/LC1332/Haruhi-2-Dev/blob/main/notebook/test_pull_role_form_hf.ipynb)
 
 # 代码工具介绍
 
