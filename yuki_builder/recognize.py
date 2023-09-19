@@ -100,7 +100,7 @@ class AudioClassification:
             for line in lines:
                 f.write(str(line) + '\n')
         print(f'识别结果保存到txt, {filename}')
-    def get_pridict(self,role_audios,output_folder,temp_folder,n_neighbors=3):
+    def get_pridict(self,role_audios,input_video,output_folder,temp_folder,n_neighbors=3):
 
         # read the local pkl pth to get features and labels
         self.feat_sel, self.label_sel = self.get_feature(role_audios)
@@ -111,13 +111,17 @@ class AudioClassification:
 
         threshold_certain = 0.4
         threshold_doubt = 0.6 # 遍历视频切割的目录
-        sub_dir = get_subdir(temp_folder)[0]
+
         # name = sub_dir.split('/')[-1]
 
-        name = os.path.basename(os.path.normpath(sub_dir))
+        file = os.path.basename(input_video)
+        filename, format = os.path.splitext(file)  # haruhi_01 .mkv
 
-        csv_save_name = os.path.join(output_folder, f'{name}_output.csv')
-        txt_save_name = os.path.join(output_folder, f'{name}_output.txt')
+        # 找到对应的视频文件夹
+        sub_dir = f'{temp_folder}/{filename}'
+
+        csv_save_name = os.path.join(output_folder, f'{filename}_output.csv')
+        txt_save_name = os.path.join(output_folder, f'{filename}_output.txt')
         feature_folder = os.path.join(sub_dir,"feature")  # 遍历特征文件
 
 
@@ -198,7 +202,7 @@ def recognize(args):
 
     # role classify
     audio_classification = AudioClassification()
-    audio_classification.get_pridict(args.role_audios,args.output_folder,temp_folder)
+    audio_classification.get_pridict(args.role_audios,args.input_video,args.output_folder,temp_folder)
 
     # delete the temp folder
     # shutil.rmtree(temp_folder)
