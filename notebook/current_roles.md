@@ -1,6 +1,6 @@
 # ChatHaruhi目前支持的角色
 
-32个ChatHaruhi本身角色  + 15个网友抽取角色 + 95英文角色(from RoleLLM)
+32个ChatHaruhi本身角色  + 15个网友抽取角色 + 95英文角色(from [RoleLLM](https://github.com/InteractiveNLP-Team/RoleLLM-public))
 
 # 32个ChatHaruhi本身角色
 

@@ -1,4 +1,4 @@
-[SponsorShip](#SponsorShip) | [Report](https://arxiv.org/abs/2308.09597) | [Personality](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) | [SponsorShip](#SponsorShip) | [Contributors](#Contributors)
+[SponsorShip](#SponsorShip) | [Report](https://arxiv.org/abs/2308.09597) | [Personality](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) | [SponsorShip](#SponsorShip) | [Contributors](#Contributors) | [142 Characters](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/notebook/current_roles.md)
 
 <h1 id="BigTitle">
     Chat-Haruhi-Suzumiya
@@ -12,7 +12,9 @@
 
 <!-- (https://huggingface.co/spaces/silk-road/ChatHaruhi) -->
 
-The demos based on [OpenAI](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI) and [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) and [讯飞星火](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo)  are already online. The local model has been released, and the demo for the local model is under development.
+The demos based on [OpenAI](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI) and [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) and [讯飞星火](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo)  are already online. 
+
+Added 95 new English character roles adapted from RoleLLM. The total number of roles reaches 142. Hugging Face demo in progress.
 
 <h4 align="center">
     <p>
@@ -84,21 +86,26 @@ This project is licensed under Apache 2.0, which permits commercial use. However
 
 ## Quick Start
 
-To get started with the ChatHaruhi1.0 project, you can directly run the following Colab notebooks:
+To get started with the ChatHaruhi project, you can directly run the following Colab notebooks:
 
 | Name | Colab Link | Description |
 |-|-|-|  
-| ChatHaruhi1.0 | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | Integrated client that supports character switching |
 | ChatHaruhi2.0(code) | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/ChatHaruhi2_demo.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | The openAI version of ChatHaruhi2.0 is already running | 
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI) | Hugging Face Demo (openai as LLM) |
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) | Hugging Face Demo (GLMPro as LLM) |
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) | Hugging Face Demo (讯飞星火 as LLM) |
 | Prototype of StoryTeller | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/Story-teller) | Prototype of StoryTeller |
+| ChatHaruhi1.0 | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | Integrated client that supports character switching |
 
 ChatHaruhi 2.0 code can already be installed via pip.
 
 
 ## News
+
+
+[2023-10-20] Added support for 95 English character roles adapted from RoleLLM work, planning to train a LlaMA2 version later. ChatHaruhi 2.0's repository also supports Baidu and BaiChuan's APIs, will launch a HF demo for everyone to try later. 
+
+[2023-09-03] ChatHaruhi 2.0 supports role-playing specific characters downloaded from HuggingFace.
 
 [2023-08-29] inference code for ChatGLM2-LoRA released <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/GLM_LORA.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 
@@ -161,6 +168,32 @@ response = chatbot.chat(role='阿虚', text='I see the new baseball season is ab
 
 print(response)
 ```
+
+Here is the English translation:
+
+ChatHaruhi now supports directly dragging and dropping chatbot databases in our specified format from Hugging Face.
+
+```python
+from chatharuhi import ChatHaruhi
+
+chatbot = ChatHaruhi(
+  role_from_hf = 'chengli-thu/linghuchong', 
+  llm = 'openai')
+
+response = chatbot.chat(role='小师妹', text = '冲哥。')
+print(response)
+```
+
+For 95 English characters in [RoleLLM](https://github.com/InteractiveNLP-Team/RoleLLM-public), you can call them like this:
+
+```python 
+chatbot = ChatHaruhi(
+  role_from_hf = 'silk-road/ChatHaruhi-from-RoleLLM/Jack-Sparrow',
+  llm = 'openai', 
+  embedding = 'bge_en')
+```
+
+See more docs and code at https://github.com/LC1332/Haruhi-2-Dev
 
 More documentation and code can be found at https://github.com/LC1332/Haruhi-2-Dev
 

@@ -11,7 +11,7 @@
 
 目前基于[OpenAI](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI), [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro), [讯飞星火](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) 的demo已经上线。
 
-95个英文角色 Adapt From RoleLLM。Hugging Face Demo制作中。
+新增95个英文角色 Adapt From RoleLLM。角色数量达到142个。Hugging Face Demo制作中。
 
 **Chat凉宫春日**是模仿凉宫春日等一系列动漫人物，使用近似语气、个性和剧情聊天的语言模型，
 
@@ -164,7 +164,7 @@ response = chatbot.chat(role='小师妹', text = '冲哥。')
 print(response)
 ```
 
-对于RoleLLM的角色，支持如下方式调用
+对于[RoleLLM](https://github.com/InteractiveNLP-Team/RoleLLM-public)的角色，支持如下方式调用
 
 ```python
 chatbot = ChatHaruhi( role_from_hf = 'silk-road/ChatHaruhi-from-RoleLLM/Jack-Sparrow', \
