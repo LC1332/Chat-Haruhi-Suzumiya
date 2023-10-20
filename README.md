@@ -1,4 +1,4 @@
-中文 | [English](./README_EN.md) | [日本語](./README_JA.md) | [赞助](#赞助) | [报告](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/arxiv_paper.md) | [英文报告](https://arxiv.org/abs/2308.09597) | [众筹数据抽取](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/novel_collecting) | [特定人格的生成](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
+中文 | [English](./README_EN.md) | [日本語](./README_JA.md) | [赞助](#赞助) | [报告](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/arxiv_paper.md) | [英文报告](https://arxiv.org/abs/2308.09597) | [从小说抽取角色](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/novel_collecting) | [特定人格的生成](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) | [142个角色一览](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/notebook/current_roles.md)
 
 # Chat凉宫春日 Chat-Haruhi-Suzumiya
 ## Reviving Anime Character in Reality via Large Language Model
@@ -9,7 +9,9 @@
 
 <!-- (https://huggingface.co/spaces/silk-road/ChatHaruhi) -->
 
-目前基于[OpenAI](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI), [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro), [讯飞星火](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) 的demo已经上线。本地模型已经发布，本地模型的demo正在制作中。
+目前基于[OpenAI](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI), [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro), [讯飞星火](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) 的demo已经上线。
+
+95个英文角色 Adapt From RoleLLM。Hugging Face Demo制作中。
 
 **Chat凉宫春日**是模仿凉宫春日等一系列动漫人物，使用近似语气、个性和剧情聊天的语言模型，
 
@@ -78,6 +80,8 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 <!-- https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/GLM_LORA.ipynb -->
 
 ## News
+
+[2023-10-20] 支持从RoleLLM工作中适配的95个英文角色，打算回头训练一个LlaMA2的版本。目前ChatHaruhi 2.0的库也支持百川和百度的api，回头上线个HF demo给大家试一下。
 
 [2023-09-03] ChatHaruhi 2.0 支持从HuggingFace下载特定人物后进行角色扮演。
 
@@ -160,9 +164,17 @@ response = chatbot.chat(role='小师妹', text = '冲哥。')
 print(response)
 ```
 
-更多文档和代码见 https://github.com/LC1332/Haruhi-2-Dev 预计这两周完成本地ChatGLM2-LoRA模型的合并
+对于RoleLLM的角色，支持如下方式调用
 
-随着ChatHaruhi 2.0 Gradio的发布，过往的1.0 数据和代码 将会迁移到一个legacy repo https://github.com/LC1332/Legacy-Haruhi-1.0
+```python
+chatbot = ChatHaruhi( role_from_hf = 'silk-road/ChatHaruhi-from-RoleLLM/Jack-Sparrow', \
+                      llm = 'openai',
+                      embedding = 'bge_en')
+```
+
+
+更多文档和代码见 https://github.com/LC1332/Haruhi-2-Dev 
+
 
 # 目前已经抽取的ChatBot
 

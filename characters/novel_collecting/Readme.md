@@ -380,3 +380,4 @@ chatbot的提取工具已经有初步的版本，由李鲁鲁开发
 | 欧阳锋 | [hhhwmws/ouyangfeng](https://huggingface.co/datasets/hhhwmws/ouyangfeng) | 射雕英雄传 | |
 | 黄蓉 | [hhhwmws/huangrong](https://huggingface.co/datasets/hhhwmws/huangrong) | 射雕英雄传 | |
 | 郭靖 | [hhhwmws/guojing](https://huggingface.co/datasets/hhhwmws/guojing) | 射雕英雄传 | |
+| 孙悟空 | [sibozhu/wukong](https://huggingface.co/datasets/sibozhu/wukong) | 西游记 | |
