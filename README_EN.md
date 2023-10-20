@@ -14,7 +14,7 @@
 
 The demos based on [OpenAI](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI) and [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) and [讯飞星火](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo)  are already online. 
 
-Added 95 new English character roles adapted from RoleLLM. The total number of roles reaches 142. Hugging Face demo in progress.
+Added 95 new English character roles adapted from RoleLLM. The total number of roles reaches 142. Hugging Face demo Here [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi-RoleLLM-English).
 
 <h4 align="center">
     <p>
@@ -86,12 +86,15 @@ This project is licensed under Apache 2.0, which permits commercial use. However
 
 ## Quick Start
 
+For English User, suggest you try 95 Eng-Character at first.
+
 To get started with the ChatHaruhi project, you can directly run the following Colab notebooks:
 
 | Name | Colab Link | Description |
 |-|-|-|  
 | ChatHaruhi2.0(code) | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/ChatHaruhi2_demo.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | The openAI version of ChatHaruhi2.0 is already running | 
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI) | Hugging Face Demo (openai as LLM) |
+| 95 Eng-Character | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi-RoleLLM-English) | 95 English Chracters Adapted From [RoleLLM](https://github.com/InteractiveNLP-Team/RoleLLM-public) |
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) | Hugging Face Demo (GLMPro as LLM) |
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) | Hugging Face Demo (讯飞星火 as LLM) |
 | Prototype of StoryTeller | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/Story-teller) | Prototype of StoryTeller |
