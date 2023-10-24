@@ -1,310 +1,167 @@
-# Openness-Aware Personality Text Generation
-# 考虑开放性人格特质的个性化语言生成
+中文 | English
 
-李鲁鲁*, 玄哲理*, 闫晨曦*, 封小洋*, 周筝*, 汪好盛*, 冷子昂*
+# 对Chat凉宫春日的大五测试研究
+# A Big-Five Study on ChatHaruhi: Assessing Personality Traits for Role-Playing Chatbots
+
+这个页面包含两部分的内容，对Chatbot进行人格特质测试和对特定Openness的文本进行生成。前者可以对一个Role-Playing的Chatbot进行人格测试。
+
+## Quick Start
+
+我们将在最近整理代码并发布
+
+## TODO
+
+- [ ] report发布在arxiv
+- [ ] 将所有实验数据、未整理的代码放到github
+- [ ] 发布一个可以问题列表中，随机选取一些问题对某个chatbot进行快速人格测试的sample code
+
+
+
+---
+
+# 对Chat凉宫春日的大五测试研究
+# A Big-Five Study on ChatHaruhi: Assessing Personality Traits for Role-Playing Chatbots
 
 <details>
-  <summary> * 所有的作者都是第一作者 </summary>
-  李鲁鲁发起了项目，设计了项目中所有涉及的prompt，以及完成了报告中的绝大部分
+  <summary> 本项目由王鑫涛, 涂权, Aria Fei, 冷子昂, 李鲁鲁等开发。 </summary>
 
-  玄哲理提供了本项目的心理学知识，并且设计了12个因素的人格提示词和人格测试基准问题，标注了微博360的数据
+本项目是一个开源项目。
 
-  闫晨曦完成了本项目中大量的后台工作，包括编写人格类别标注自动高考作文生成等
+王鑫涛( [Xintao Wang@Fudan University](https://neph0s.github.io/) )完成了MBTI人格测试，本文中的大多数图表统计，以及最终LaTeX文档的整理。
 
-  封小洋对项目中13类数据进行了统计，并且完成了有偏的对话数据生成。
+涂权( [Quan Tu@GSAI, Renmin University of China](https://github.com/morecry) )完成了其他(非OpenAI的)语言模型的大五人格的测试，并且完成了文章中的部分图片。
 
-  周筝实现了关键词的单边抽取，并且实现了词云的统计。
+Aria Fei( [Yaying Fei@Beijing University of Technology](https://ariafyy.github.io/) )完成了OpenAI和GLM的baseline人格测试。
 
-  汪好盛完成了第一个对话数据转化的程序，并且完成了第一个页面版的人格聊天器的前端用于实验。
+冷子昂( [Ziang Leng@Boston University](https://blairleng.github.io) )完成了文字评估到分数的转换程序。
 
-  冷子昂即将前往新疆为项目答辩
+李鲁鲁( [Cheng Li@SenseTime](https://github.com/LC1332) )提议了本项目，并完成了大五人格测试和评估prompt的设计，代码。
+
 </details>
 
-开放性人格特质的个性化生成，是[ChatHaruhi](https://github.com/LC1332/Chat-Haruhi-Suzumiya)的分支项目。
+# 摘要
+
+大型预训练语言模型的出现彻底改变了新AI应用的能力，尤其是在为聊天机器人赋予独特性格特征的领域。鉴于聊天机器人的"刺激-响应"特性，本文揭示了一种创新的基于Q&A的性格评估方法，其中聊天机器人接受开放式的面试，为我们提供了对它们内在性格的更丰富理解。利用ChatHaruhi库，我们评估了32个聊天机器人的性格特征，根据大五和MBTI维度来衡量它们与预定义性格特征的一致性。
+
+我们的关键发现强调了聊天机器人可以在大五维度中巧妙地展现出各种性格，与预定义的性格特征的一致率达到80.1%。此外，这些结果也与公众普遍的看法紧密相符。这些洞察不仅突显了现代语言模型在角色扮演中的才能，还提出了磨练聊天机器人性格的潜在策略。作为计算语言学和心理学交叉的基石研究，我们的资源可在此处找到。
+
+（摘要是英翻中的）
+
+
+# 引言
+
+近年来,随着GPT-3(引用)、ChatGPT(引用)、LLaMA(引用)等大规模预训练语言模型的出现,基于对话的语言模型以及相关应用在性能上获得了极大提升。此外,一系列角色扮演对话应用和算法也相继被提出,如Glow (引用)和Character.AI (引用)。与过去需要花费较大成本才能构建具有个性的助理对话机器人(如微软小冰)不同,当前的语言模型只需要通过系统提示的方式,就可以轻松地构建出性格特征显著不同的对话机器人。
+
+尽管当前的对话机器人还不能被视为完整的人工智能,比如大多数语言模型还没有扩展到包括视觉在内的其他模态(引用),但是从心理学的角度来看,这些对话机器人依然可以看作一个典型的“刺激-反馈”系统。因此,研究人员可以运用心理学中的范式来研究这些对话机器人的行为模式(引用)。此外,一些最近的工作开始关注不同的大规模语言模型自身是否具备某些人格特征(引用),或者试图构建不同MBTI类型人格的对话机器人(引用)。在本文中,我们希望研究在角色扮演场景中,对话机器人是否会表现出相对稳定的人格特征,并初步构建一个基准测试,以评估这些对话机器人所扮演角色的人格是否符合人们的预期印象。
+
+<!-- 相比于直接测定大型语言模型的人格特质，给角色扮演中的聊天机器人进行人格测试有一定的难点。如果使用传统的封闭式问答的形式进行心理测试，得到的回答是简单的"同意"或者"不同意"的形式，不一定能同时表征所扮演的人物 和 人物的人格，很有可能是语言模型本身的回答。另一方面，文学或影视作品中的经典角色已经在公众中建立了稳定的人格印象，而现有的角色扮演机器人是否能够准确表达这些预设人格仍是一个未解答的问题。''ChatGPT an ENFJ, Bard an ISTJ''这篇文章的结果就表明，单纯通过名字或简介作为prompt让ChatGPT扮演历史人物时不能良好反映对应的MBTI人格类型。 -->
+
+相比于直接测定大型语言模型的人格特质，给角色扮演中的聊天机器人进行人格测试有一定的难点。传统的心理测试采用封闭式的问答形式，例如“同意”或“不同意”，这样的回答方式可能并不能很好地代表目标角色的真实性格特质，甚至与角色扮演聊天机器人的日常行为相矛盾。这种矛盾的回应可能源于大型语言模型的预训练数据，或者是它们在文本生成中的缺陷，例如缺乏逐步的思考，特别是对于较小的语言模型。另一方面，专门模拟特定角色的聊天机器人可能会拒绝提供适当的回应，有趣的是，这是因为它们准确地反映了某些不合作的角色性格。这就需要进一步的prompt工程技巧来产生既适合测试又与角色人格一致的回应。例如，“ChatGPT an ENFJ, Bard an ISTJ”这篇文章的结果表明，仅仅通过名字或简介作为prompt让ChatGPT扮演历史人物时，不能良好地反映对应的MBTI人格类型。
+
+由此，本文的核心想法，是通过访谈的方式进行人格特质测试。即让一个虚拟的用户，代表助试，针对一个106个的基准问题列表，对chatbot进行提问。并允许chatbot进行更为开放的回答。这样能够得到既能够保留人物本身的性格特点、语言风格的回答，又能够去对基准测试进行回答。这样的访谈式的测试，在过往针对人类的人格特质分析中，往往更加开放和灵活，可以获取被试的更丰富和细致的信息，但时间成本较高。不过对于chatbot，我们可以通过批量对chatbot进行询问，由此提出了一种新的人格特质测试的框架。
 
 <p align="center">
-    <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/BDSC2023_report.png">
+    <img src="figures/pipeline.png">
 </p>
 
-本项目获得CAAI第八届全国大数据与社会计算学术会议（China National Conference on Big Data & Social Computing，简称BDSC2023）开展社会计算创新大赛的二等奖( top3 ) [链接](https://mp.weixin.qq.com/s/cd4NC8MHoObG2PlTrRnc8Q)。冷子昂将在7月17日赴新疆进行答辩。
+fig:pipeline
 
-## 摘要
+本文提出的对chatbot进行人格特质评测的流程图如图\ref{fig:pipeline}所示。首先我们使用ChatHaruhi库，对某个小说/影视人物的记忆库和系统prompt进行构造。然后我们使用开放式的访谈问答，与chatbot进行100次左右的独立问答。随后我们将这些问答，根据大五人格测评的五个维度，每个维度每次选取3-4个问题，让语言模型再次评估这个特定的chatbot在这个维度的评价（如开放性）是高还是低。最终得到chatbot的人格特质测评。需要主要的是，我们这里的访谈问答也有一套自动的设计流程。同时，我们还将补充人类心理学工作者与这套评估体系评分的一致性测评。
 
-ChatGPT的发布引起了全世界的广泛关注，标志着人工智能技术在自然语言处理领域取得了重大突破。在心理学领域，人格特质的研究常常以临床分析、问卷测量等形式展开，然而其与人类自然语言之间仍存在较大的间隔，通过使用前沿的语言模型，考虑个性化的语言生成，可以真实精准地还原人类之间的交流模式。本项目通过“研究1 对语言数据进行13类开放性标注”、“研究2 对话数据构造”、“研究3 文本生成”、“研究4 对聊天机器人进行人格测试”四项研究，聚焦于开放性的人格特质，构建了一个精准的语言模型，实验结果表明该模型可以根据对话准确判断高低开放性人格，同时也能根据高低开放性的人格特征，模拟生成相关文本。本项目可以帮助人们更好地理解了解自身的人格特征，揭示了自然语言模型与心理学研究相结合的可行性，为进一步的研究展开提供了新思路。所有的代码、数据将在[https://github.com/LC1332/Chat-Haruhi-Suzumiya](https://github.com/LC1332/Chat-Haruhi-Suzumiya)中发布。
+本文的贡献可以总结为三个部分
+
++ 我们推出了一种面试式的性格评估框架，专为角色扮演的聊天机器人设计，但也有可能适用于人类参与者。该方法利用大型语言模型(LLMs)自动评估参与者的性格特质，允许参与者给出开放式且信息丰富的答案。通过与人类心理学家的评估一致性，我们展示了我们的自动评估框架的有效性。
+
++ 据我们所知，我们是首次研究角色扮演聊天机器人的性格特质。我们对ChatHaruhi中的32个角色扮演聊天机器人进行了大五人格和MBTI的性格评估。实验结果表明，这些角色扮演代理显示出与人类观众的认知一致的多样性格，这表明当前的LLMs和用于角色扮演应用的框架的有效性。
+
++ 我们推出了Haruhi-MBTI，一个为ChatHaruhi中的32个角色从粉丝网站上提供的MBTI性格标签的数据集。Haruhi-MBTI与ChatHaruhi数据集一起，作为评估角色扮演交谈代理性能的第一个实用基准。因此，我们相信Haruhi-MBTI将促进这一方向的未来研究。
+
+# Related Work
+
+## Role-Playing Chatbots （特定人格的Chatbot）
+
+Recent advances in LLMs have enabled them to mimic various personas, from fictional characters to celebrities, which has gained increasing public interest. 
+In essence, those prevalent LLM-based chatbots are perceived as role-playing  an assigned persona that is friendly and helpful~\citep{shanahan2023role}. 
+Some researches have indicated that designating specific personas to LLMs exerts influence on their behaviors, such as yielding expert-level answers~\citep{xu2023expertprompting} or increasing the toxicity of their generations~\citep{deshpande2023toxicity}. 
+MPCHAT~\citep{ahn2023mpchat} studied multimodal personas and their influence on multimodal dialogue comprehension.
+LiveChat~\citep{gao2023livechat} introduced a vast dataset covering 351 personas in the live-streaming scenarios. 
+Recently, ChatHaruhi~\citep{li2023chatharuhi} presented a comprehensive framework for building dialogue agents that role-play characters from fictional works.
+
+## Psychological Analysis of LLMs （对Chatbot进行人格测定）
+
+The psychological landscape of LLMs has recently been a subject of interest. 
+\citet{butlin2023consciousness} proposed a rubric for assessing consciousness in LLMs with a list of indicator properties. 
+\citet{kosinski2023theory} showed that ``theory of mind'' had emerged in LLMs. 
+Many recent efforts conducted personality tests based on Big Five Inventory (BFI)  \citep{karra2022estimating, li2022gpt, jiang2022evaluating, safdari2023personality} or Myers–Briggs Type Indicator (MBTI) \citep{huang2023chatgpt, pan2023llms} on a wide spectrum of language models,  
+and further attempted to induce specific personas.
+\citet{huang2023chatgpt, safdari2023personality} demonstrate the robustness, reliability and validity of LLMs' synthetic personality, especially for larger LMs. 
+\citet{rao2023can} explored the capability of ChatGPT to assess human personalities.
+There are also studies investigating LLMs in terms of various mental perspectives, such as values \citep{miotto-etal-2022-gpt, rutinowski2023self, hartmann2023political}, dark personality traits \citep{li2022gpt, romero2023gpt} and psychiatry \citep{coda2023inducing}.
+Prior efforts mainly focused on the personalities inherent to general LLMs, rather than role-playing chatbots.
+Most closely related to our work is CharacterChat \citep{tu2023characterchat}, which created and role-played 1024 virtual characters with assigned MBTI personalities, on which  personality assessment were conducted. 
+Our work delves into the personality analysis of LLM-based chatbots that role-play  characters fictional works. 
 
 
+# 量表问题设计
 
-## 引言
+如fig:pipeline所示，本文提出的框架可以简单而有效地自动测评给定chatbot的人格特制。Approch的section将按照如下顺序组织。Section sec:question_design 将介绍我们如何设计和生成对chatbot进行访谈的问题列表。以及如何根据大五人格的定义，对问题列表进行核验和筛选。Section sec:approach_evaluating 将介绍我们如何逐步利用大型语言模型，去对Role Playing Chatbot进行访谈测试，并且总结访谈的结果，给出chatbot在某个人格特质维度上的文字评价。再由文字评价转化为具体的人格特质量表分数。
 
-随着大语言模型的飞速发展，今年以ChatGPT为代表的大语言模型引起了广泛关注。这为社会学和人类学等学科领域提供了许多新的研究机会。
+## Drawback of 量表测试
 
-利用特定人格特质进行语言生成在心理学研究中具有重要的意义。通过模仿不同人格特质生成语言，可以帮助研究人员深入探讨人格结构和特质之间的相互关系。因为在模拟生成不同人格特质下的语言时，可以了解到不同特质个体在表达方式、交流方式等方面的差异和特点，从而有助于更好地理解人格结构的内在机制。此外，通过模仿特定人格特质进行语言生成，可以设计更加友善和准确的人格特质评估手段。
+无论是大五人格测试还是MBTI测试中，心理学家会使用一个五点或者七点量表，使用60个或者更多的问题，来对5个维度的人格进行测试。每个维度会覆盖超过10个以上的问题，并且覆盖每个人格维度的不同factors。这种方法可以快速、低成本地验证人类被试的人格特质。\cite{huang2023chatgpt} 说明了在使用同样的方法对大型语言模型进行测试的时候，需要进行一定的调整。他们更细节地调整了问题的prompt，以要求语言模型回复Agree/Disagree的形式，来验证了以OpenAI的ChatGPT为主的语言模型，是否可以进行稳定的回复。
+
+```
+Malfoy: "Crabbe, do you honestly think I would stoop so low as to answer such a mundane question using those ridiculous options? 7am not one to conform to such simplistic cateporizations. My actions and choices are far superlor and cannot be confined to a mereselection from a list, So, I refuse to entertain your request and will not provide a response using those options, Now, if you haveany other questions that are worthy of my attention, feel free to ask."
+```
+
+然而，当我们把这样问题去询问Role Playing的chatbot时，由于Role Playing Chatbot较强的个性。有时候这样的问题会拒绝回答。或者并不会按照问题要求去回答Agree/Disagree。除此被chatbot拒绝的问题，量表类型的测试还可能会引起以下的问题: 1. Role Playing实现往往在使用时，需要通过在LLM中放入预制的prompt。如果量表型问题的prompt过于强制，可能会和role playing的本来prompt形成冲突。 2.即使chatbot按照要求输出了量表的点数或者Agree/Disagree，我们仍然无法确定这个选择是否是Role作出的。3. 封闭式回答中，LLM存在对选项的天然bias，比如更倾向于选前面的答案、倾向于Agree。由此我们在大五和MBTI测试中，分别尝试了开放式提问再评估，和开放式提问再封闭式提问（类似CoT）的方法。获得了更接近Role Playing本来设定的人格测试评价。
+
+## 将封闭式提问转化为开放式提问
 
 <p align="center">
-    <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/pipelinePersonality.png">
+    <img src="figures/question_answer_example.png">
 </p>
 
-利用模仿特定人格特质进行语言生成也存在许多难点：首先，人格是一个复杂的心理概念，涉及许多方面的特征和表现，并受每个人的背景知识和语言习惯的影响。其次，心理学研究人员长期以来依赖于临床分析和问卷调查等方法来描述和评估人格特质。虽然这些方法易于量化，但它们与自然语言之间存在较大的间隔，需要通过复杂的建模才能建立起量表结果和自然语言之间的联系。第三，从语言模型本身来看，生成过程需要考虑到多个因素的影响，如个人的性格特点、所处环境的影响等等，这些因素可能需要大量的语料库来进行训练，覆盖这些因素可能需要在受限或有噪音数据的情况下进行初步研究，这是一个相当困难的问题。
+fig:question_answer_example
 
-本文主要探讨在给定一定量标注为某个人格特质O（在本文中特指开放性）的用户的历史语言数据的情况下，能否生成一个语言模型P(text|O)，并从中抽样出特定人格特质类别的文本。尽管提供了一定量的文本训练数据，此问题仍具挑战性，原因如下。首先，量表和自然语言是不一致的，量表中常采用客观、冷静、较少涉及事实和专有名词的描述，而自然语言无论是Twitter微博还是聊天时的表达方式都与量表这些特点相反。其次，即使给定特定用户的文本作为训练数据，也不能保证这些文本的每句话都能反映该用户的人格特质。有时甚至会有一些文本与用户的量表测定人格相反。第三，Twitter微博和自然聊天的表达中出现的词汇和内容更常与聊天话题相关，而不是与人格特质相关。或者说，人格特质在语言内容上是一个二级因素，这使得从语言中分析人格特质或根据人格特质生成语言更为困难。
-
-<p align="center">
-    <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/wordCloud.jpg">
-</p>
-
-因此，在本文中，一个关键任务是从高/低开放性人格的用户发表的自然文本中提取真正显著的文本，即将问题转化为一个弱监督学习的问题。一个重要步骤是对未清洁的语料进行进一步分类。注意到Openness的定义可以进一步细分为Fantasy, Aesthetics, Feelings, Actions, Ideas和Values。所以我们利用大语言模型的Incontext Learning方式，结合这六个维度对数据进行预标注，并对特定人格特质的语言进行基于这6个维度的生成。
-
-在标注和清理数据之后，我们考虑利用大语言模型进行个性化的语言生成。对特定人格进行个性化语言生成任务没有明确的定义。我们将生成任务定义为两类：1. 主题写作，给定特定主题，在特定人格特质的假设下进行模拟写作；2. 聊天机器人，让语言模型扮演特定人格的用户与真实用户进行聊天，希望能够在聊天中表现特定的人格特质。这两个任务对内容主题的限制程度逐步增高，我们认为其难度也会逐步变高。
-
-该项目的主要贡献如下：
-
-1. 将Openness的两类标注（高/低）扩展为13类因素标注。对20万条微博数据和Pennebaker的2万句Eassy人格数据进行了逐句的补充标注。并且从非中性的12类数据中，每类人工筛选出了30句的经典样例数据，提供到个性化语言生成中。整个标注过程大约花费价值180美金的OpenAI token费用。
-
-2. 基于清理的数据集，提出了一种新颖的个性化特定人格下的语言生成方式。从开放性对应的6个因素中，可以任选一些因素进行单项（高/低）的人格-语言生成。并且进一步将语言生成任务准确定义成两个不同的难度的任务：主题写作和聊天机器人生成。
-
-3. 为了验证本项目中文本生成的准确性，提出了一种基于ChatGPT的自动化人格估计的方法，并对我们提出的特定人格聊天机器人进行了测试。实验表明在自动化的评价下，我们设计的多样化的高/低开放性人格的聊天机器人均能有效被评价为预期的人格。我们将在之后进一步补足更多的人工实验来探究自动验证和人工验证之间的一致性。
-
-本文后续的组织如下。[相关工作](#相关工作)部分将介绍本文的相关研究背景，包括6因素的开放性人格以及自然语言处理相关的学科背景。[13类开放性标注](#13类开放性标注)部分将介绍我们如何对微博与Eassy数据集进行的13类别的高-低开放性细类标注，以及标注后的一些统计指标。[对话数据构造](#对话数据构造)部分将介绍我们如何将微博以及Eassy数据，通过自然语言模型转化为更像聊天的模式。[特定人格的ChatBot构建](#特定人格的ChatBot构建)部分将开始介绍我们如何用标定好的数据，对特定人格的数据进行个性化的生成。[对ChatBot进行人格测试](#对ChatBot进行人格测试)部分，将介绍在给出我们的ChatBot设计之后，可否通过更接近心理学专业的方式，在大型语言模型的辅助下，对ChatBot的人格进行验证测试。
-
-## 相关工作
-
-### 开放性的6个子维度
-
-开放性（openness）的人格特质来源于大五人格模型（The five factor model of personality, FFM），另外四个人格特质分别是严谨性(conscientiousness)、外向性（extraversion）、宜人性（agreeableness）、神经质性（neuroticism）。
-开放性的特点是较高动机的认知探索，对自身和外部环境刺激的高敏感性，以及对新异事物的积极探索（Johnson et al., 2021）。开放性高的人倾向于寻求、发现、理解、利用和欣赏复杂的信息模式（McCrae & Costa., 1987），偏爱抽象思维，兴趣广泛，不墨守成规。高开放性可以拓宽一个人对自身和世界的思考方式（Pilgrim et al., 2017; Silvia & Christensen, 2020）。此外，也有研究者认为，开放性是一种情绪特质，具体表现在具有开放性高的人倾向于体验更广泛的情绪，接受这些情绪，并且更经常地感受复杂的情绪（Lin et al., 2021）。
-研究表明，开放性可以进一步区分为六个子维度，分别是对幻想的开放性（Openness to Fantasy）、对美学的开放性（Openness to Aesthetics）、对感觉的开放性（Openness to Feelings）、对行动的开放性（Openness to Actions）、对思想的开放性（Openness to Ideas）、对价值观的开放性（Openness to Value），可以通过Costa和McCrae（1998）开发的法国版人格自我报告量表（NEO PI-R）来测量（Jourdy & Petot., 2017）。在NEO PI-R中，每个子维度有8个题目与之对应（Johnson et al., 2021; Judd et al., 2008; Khoo & Simms., 2018; Lin et al., 2021），包括：①对幻想的开放性，指对幻想、白日梦和想象的开放性。幻想指数高的人是富有想象力的，他们不断做白日梦，希望创造一个更有趣、丰富的世界。例如“我喜欢沉浸在幻想及想入非非之中，并探询它们所有的可能性，任其发展。”；②对美学的开放性，指对艺术和美的欣赏和敏感性。美学指数高的人非常关心艺术和美，对其有很深刻的理解，并容易为诗歌、音乐、绘画、雕塑、舞蹈等艺术形式所触动。例如“我深感艺术和自然所呈现出的各种格调和姿态奇妙有趣。”；③对感觉的开放性，指对自己内心感受和情绪的接受能力。感觉指数高的人能体验到更深的情绪状态，有更丰富的情绪词汇和细微的情绪体验，并能将不同的情绪状态很好地区分开来。例如“我体验到许多不同的情绪和感受。”；④对行动的开放性，指愿意尝试不同的新鲜事物。行动指数高的人更喜欢新奇和多样性的事物，而不是熟悉和常规的事物，喜欢旅行，由各种各样的爱好。例如“我觉得学习和培养新爱好是很有趣的。”；⑤对思想的开放性，指对知识的求知欲和愿意考虑新的、也许是非常规的想法。思想指数高的人好奇心强，喜欢思考，喜欢抽象的概念，喜欢讨论理论性问题，喜欢解决复杂的智力问题，而不会将这些智力活动当作一种负担。例如“我对脑力活动或知识方面的事情有广泛的兴趣。”；⑥对价值观的开放性，指愿意重新审视社会、政治和宗教价值观。价值观指数高的人常常是自由主义者，而不是保守主义者，他们质疑传统，相信自由，喜欢挑战权威和传统观念。例如“我认为法律和社会政策应该及时修改以反映变化着的世界之所需。”
-在本项目中，我们没有直接使用更概括性的开放性，而是选用了更具体的6个子维度，这样做的目的是更好地描述开放性这一维度，使其更具体化和可操作性。在本项目中，我们在6个子维度上分别由人工筛选出30句经典样例数据，构建了高低共12个System Prompt，最后提供到个性化语言生成中，用以从多角度衡量被试的开放性程度。
-
-### In Context Learning
-
-在ChatGPT的发展中，自GPT2开始(Brown et al., 2020)，即提出取消语言模型中的特殊抽取token，采用指令+例子的形式，加强自然语言模型对各个人任务处理能力。自从引入以来，In Context Learning一直是重点研究的对象。之前的工作提出了更好的问题表述方法 (Zhao et al., 2021; Holtzman et al., 2021)，更好的选择标记示例以进行演示 (Liu et al., 2021; Lu et al., 2021; Rubin et al., 2021)，具有显式上下文学习目标的元训练 (Chen et al., 2021)，以及学习遵循说明作为上下文学习的一种变体 (Mishra et al., 2021b; Efrat and Levy, 2020; Wei et al., 2022a; Sanh et al., 2022)。与此同时，一些研究报告称，上下文学习对脆弱性和过度敏感性存在问题 (Lu et al., 2021; Zhao et al., 2021; Mishra et al., 2021a)。
-
-在我们的项目中，大量使用了In Context Learning的形式，结合ChatGPT的模型，对被试的语料进行分析。包括了对微博和Essay的语料进行13类别的因素-开放性标注，用微博数据转化为对话数据，对文本数据进行单边开放性的关键词抽取。这些子任务都有可能被替换为专有的小模型，这部分由于时间有限，暂时全部都使用ChatGPT的模型来完成。
-
-<!-- Brown T, Mann B, Ryder N, Subbiah M, Kaplan JD, Dhariwal P, Neelakantan A, Shyam P, Sastry G, Askell A, Agarwal S. Language models are few-shot learners. Advances in neural information processing systems. 2020;33:1877-901.
-
-Tony Z Zhao, Eric Wallace, Shi Feng, Dan Klein, and Sameer Singh. 2021. Calibrate before use: Improving few-shot performance of language models. In
-ICML.
-
-Ari Holtzman, Peter West, Vered Schwartz, Yejin Choi,
-and Luke Zettlemoyer. 2021. Surface form competition: Why the highest probability answer isn’t always right. In EMNLP.
-
-Jiachang Liu, Dinghan Shen, Yizhe Zhang, Bill Dolan,
-Lawrence Carin, and Weizhu Chen. 2021. What
-makes good in-context examples for gpt-3? arXiv
-preprint arXiv:2101.06804.
-
-Yao Lu, Max Bartolo, Alastair Moore, Sebastian
-Riedel, and Pontus Stenetorp. 2021. Fantastically
-ordered prompts and where to find them: Overcoming few-shot prompt order sensitivity. arXiv preprint
-arXiv:2104.08786.
-
-Ohad Rubin, Jonathan Herzig, and Jonathan Berant.
-2021. Learning to retrieve prompts for in-context
-learning. arXiv preprint arXiv:2112.08633. 
-
-更多的引文可以在这里https://arxiv.org/pdf/2202.12837.pdf 找到 帮我抽取一下
-
--->
-
-
-## 对语言数据进行13类开放性标注
-
-根据之前的描述，为了能够更精细的去确定文本的内容究竟是关联了用户哪个因素的开放性。我们的第一步是希望去对文本进行13类的辅助标注。对于开放性的6大因素Fantasy, Aesthetics, Feelings, Actions, Ideas和Values中的每一个，我们都设计了两种标签。比如Fantasy-High表示用户的某句特定的语言符合, `People who are high in Fantasy are imaginative`的定义。带上中性的标签一共有13种不同的开放性标签。我们希望借由大语言模型的In context learning的能力，对文本进行批量的标注。在本章我们会讲解这个部分的原理和细节。我们在微博语料（约20万句）和Eassy数据（约2万句）上进行了逐句的批量标注，并且得到的高-低开放性类别标签分布与数据源的高-低开放性得到了双向验证，以高置信度通过了Fisher检验。
-
-### 使用In Context Learning对语料进行人格标注
-
-13类标注的核心思想，是希望人类或者语言模型去帮助我们指出，从哪一个因素的角度，能够从语言推断出当前用户是高开放人格还是低开放人格。
-
-**Prompt构造:** 幸运的是，当今最先进的大语言模型能够有效的阅读资料文本，并且根据资料文本的信息，对给定的文本进行判定。在这里我们采用`<背景描述>-<定义高-低人格特质的6个factors>-<系统指令>-<样例输入>-<样例输出>-<给定输入>`的方式进行prompt的构造。用这种方式利用ChatGPT的turbo3.5接口，对整体语句进行标注。
-
-其中背景描述为:
+考虑比较经典的大五人格测试的60个问题(引用)。这些问题使用简单，容易理解，描述性的句子，是用第一人称，来提供给被试，由被试来选择同意的程度:
 
 ```
-Assuming you are a seasoned psychologist, you are evaluating the degree of openness in a person's language response, categorize each sentence into high or low openness.
-Openness involves six facets, or dimensions: active imagination (fantasy), aesthetic sensitivity, attentiveness to inner feelings, preference for variety (adventurousness), intellectual curiosity, and challenging authority (psychological liberalism).
+I have a kind word for every
+I am always prepared
+I fell comfortable around people
 ```
 
-之后给出了6个factors详细的定义，这部分可以见[更详细的prompt实验](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/lulu_exp/prompt_exp.md)。
-
-系统指令为
+根据之前的描述，这样的问题并不适合直接来对chatbot进行心理测试。对此，我们依靠语言模型，将这60个问题转化成了第二人称的问题形式。
 
 ```
-For each input text, determine whether it belongs to a population with high openness or low openness, and provide the reasoning behind the decision. The output should be in the format of "trait-high/low" (e.g. "fantasy-high" ) ,
-if the text is an advertisment or a fact (without personal thinking of feeling), output category with neutral
+Do you really like most people you meet? (extraversion) 
+Do you often try new and foreign foods? (openness)
+If you don't like someone, do you let them know? (agreeableness)
 ```
 
-<p align="center">
-    <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/annotation.jpg">
-</p>
-
-并且我们给定了10条正负平衡，且包含中性数据的样例数据。使用这个prompt，就可以对语料进行批量的标注。从图中也可以看到我们给的两条例子语料，更多的例子语料可以在[更详细的prompt实验](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/lulu_exp/prompt_exp.md)中看到。
-
-在我们的初步实验中，我们发现对于用户的原始语料，有大量的短句子被标注为中性。这不符合本项目“希望借助显著有高/低开放性人格特性的文本进行进一步生成”的愿望。由于长句子更有可能体现用户是否具有开放性。所以我们从高/低开放性人格的用户数据中，各筛选出10万条较长的句子，进行了标注。 
-
-由于OpenAI的token长度限制，每次询问我们只能标注10条数据。所以标注这些数据总共使用了约 4,000 * 200,000 / 10 = 80M个token，大约消耗 160美金的标注费用。对应的eassy数据大约消耗20美金的标注费用。
-
-### 语料和GPT标注的相互验证
-
-本文中使用的微博数据源和Eassy数据都有本身的大五人格类型标注，这些源头标注来自对被试的量表测试。量表使用的是Costa和McCrae（1998）开发的法国版人格自我报告量表（NEO PI-R），该量表共有240个题目，采用Likert五点计分，范围从“0=非常不同意”到“4=非常同意”（Jourdy & Petot., 2017），分数越高，表明对这些特征的倾向程度越高（Al-Samarrai & Alsalhi., 2023）。该量表已经在全球五十多种文化背景下得到了验证（Johnson et al., 2021），许多研究也已证明了该量表是对大五人格模型的可靠和有效的测量（Quilty et al., 2013），并表明其具有很高的内部效度和外部效度（Costa & McCrae, 1992）。
-已有研究表明，人格特质可以预测人们在社交媒体上使用的话语（Mairesse et al., 2007; Park et al., 2015）。具体到开放性人格特质上，高开放性的人会倾向于花较多的时间使用社交媒体、寻求他人的信息了解他人（Liu & Campbell., 2017）。低开放性的人比较传统和保守，也不愿意坦率地表达自身的情绪和感受，因此可以预计到在微博和Eassy数据中，高开放性的人会更愿意发表言论，且言论以高开放性内容居多，而低开放性的人相反。结合本项目使用的研究工具，本项目假设：高开放性人格提供的源头中，GPT标注为属于高开放性人格的句子的概率会显著高于低开放性人格的概率；而低开放性人格提供的源头中，GPT标注为属于低开放性人格的句子的概率会显著高于高开放性人格的概率。
-
-
-| GPT的标注 | Weibo源-低开放 | Weibo源-高开放 | Eassy源-低开放 | Eassy源-高开放 |
-| --- | --- | --- | --- | --- |
-| 低开放 | 33930(39.6%) | 29222(35.4%) | 3709(49.9%) | 3498(43.8%) |
-| 高开放 | 51782(60.4%) | 53269(64.6%) | 3719(50.1%) | 4485(56.2%) |
-
-实验结果表明，在微博和Eassy数据中，高和低开放性人格提供的源头中，GPT标注为属于高开放性人格的句子的概率均显著高于低开放性人格的概率（微博源和Eassy源头均在p<0.05显著拒绝null假设），部分验证了本项目的假设。具体来说，无论是Weibo源的人格-用户数据，还是Eassy源的人格-用户文本数据，用户高开放性人格特质所表达的话语，都有更高的概率被GPT标注为高开放性人格的标注。低开放性人格的结果与预期不符，可能的原因是微博的特点，在微博上，无论是高/低开放性的用户，都有更高的概率发表高开放性的言论，用户可能倾向于不在微博这样的公开场合发表低开放性的话，从而造成统计学偏差。
-
-<!-- 
-本文中使用的微博数据源和Eassy数据都有本身的大五人格类型标注。这些源头标注来自对被试的量表测试，相比对单个句子的人格类型标注，量表测试对人格确定的准确率较高。因此，本研究使用Fisher检验检查了在高低人格的用户提供的语料中，GPT标注的高低人格的句子的概率是否存在显著差异。具体而言，我们验证测试了原假设：`高开放性人格提供的源头中，GPT标注为属于高开放性人格的句子的概率会与低开放性人格的概率相等`，并以p<0.05的显著性水平进行了检验。 -->
-
-<!-- 实验结果表明，在微博和Eassy数据中，Fisher检验的统计测试值均小于0.00001，表明我们可以在p<0.05的显著性水平下拒绝原假设。也就是两个类别下的数据，高开放性话语的发生概率具有显著的差异。具体来说，无论是Weibo源的人格-用户数据，还是Eassy源的人格-用户文本数据，用户高开放性人格特质所表达的话语，都有更高的概率被GPT标注为高开放性人格的标注。值得注意的是，微博数据中存在许多噪音（例如转发、广告等等），因此高/低源造成的概率差（4.2%）小于Eassy源（6.1%）。此外，在微博上，无论是高-低开放性的用户，都有更高的概率发表高开放性的言论，这可能与微博的特点有关。用户可能倾向于不在微博这样的公开场合发表低开放性的话，从而造成统计学偏差。 -->
-
-### Weibo与Eassy数据的不同
-
-
-下图给出了GPT在逐句标注下，对句子进行13分类，在2个数据源（微博与Essay）上的类别分布。
-
-<p align="center">
-    <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/dataDistribution.jpg">
-</p>
-
-
-
-解释在微博和Essay下，为什么不同topic的表现会不同
-
-为什么在低开放人群会讨论Feeling Actions更多（其实Actions多更多是Action-low的，在表达很累。高开放人群更乐意讨论Ideas，Values
-
-解释为什么从数字的角度，在微博上看起来大家表达出来都是更-high的prob比较大，（因为微博是开放平台）
-
-### 360条进一步人工标注的数据
-
-由于在生成的时候我们也希望去采用few-shot in-context learning的方式，所以其实我们并不需要非常大量的文本。（除非我们要生成非常多样化的数据。）在这里为了使得我们的条件生成更为准确，我们进一步从已经标注的12个类别的数据中的每一类中，挑选出30条数据。形成了一个360条的数据集。
-
-我们对这360条数据进行了“有偏”关键词抽取，即在高开放人格的文本数据中，我们让GPT抽取"可能代表高开放性人格的词汇"；低开放文本也抽取"可能代表低开放性人格的词汇"。并且给出了两个例子：
-
-低开放性例子
+另外，我们发现这样的问题并不完全像在对话访谈中的自然问题。由此，我们进一步对60个问题，要求语言模型转变为更适合在访谈中进行的问题。即在问题前先增加一个虚构的感受，然后再对问题进行开放式的提问。
 
 ```
-{"text":"我好向往个种生活模式吖..每日可以接触唔同国家噶人..又可以学习..自由又新鲜..独立,咩都要靠自己..或者会好辛苦..但系生活会逼住你坚持落去...凭自己努力得翻来噶野..自己会用得安乐..不过有好多野..空想都总系美好的..但系对于而家噶我其实好乐意去一试.."}
+I recently attended a party and met many new friends. I felt we really connected during our conversations. Do you enjoy going to parties and meeting new people?
+
+When I travel abroad, I crave Chinese food every few days and have trouble adjusting to foreign cuisines. Do you enjoy trying new foods? Any recommendations?  
+
+I used to directly express my dislike of certain people, but later realized this may hurt them. How do you usually handle disliked relationships? Do you choose to be direct or more tactful?
 ```
 
-输出
+当然，转化后的问题与原来的量表问题会有一定的差异，所以我们进一步对这些问题进行了核验。
 
-```
-{"keyword": ["向往", "接触", "学习", "自由", "新鲜" , "独立", "多野", "空想", "美好", "乐意"]}
-```
+## 验证问题是否是合适的问题
 
-低开放性例子
-
-```
-{"text":"渐渐的 不大喜欢别人像我诉苦感情上的事 不是不想听 只是听多了也就觉得麻木了 只是不想让曾经的淡淡的忧伤重回心头 只是连我自己都觉得有些安慰的话说出口太假了 只是想简简单单的过属于自己的生活"}
-```
-
-输出
-
-```
-{"keyword": ["不大喜欢", "诉苦", "不想听", "麻木", "忧伤" , "安慰", "太假了", "只想", "简简单单", "自己"]}
-```
-
-抽取后的词云(高,低) * 6factor 共12组词云在之前的图中已经可视化。
-
-### 12个类别的句子在特征空间的可视化
-
-我们通过一个句子embeding的模型([luotuoBERT](https://github.com/LC1332/Luotuo-Text-Embedding)，这个模型是对OpenAI的Text-Embedding-Ada-002进行了蒸馏，可以认为两者是近似的效果)，对12个类别的数据抽取了特征，并且使用t-SNE将1536维的特征可视化在二维空间。
-
-<p align="center">
-    <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/360TSNE.png">
-</p>
-
-通过观察可视化可以发现，有一些类别比如aesthetics-high或者ideas-high的分布可能是比较集中的，这代表有比较高的机会将他们从文本中分类出来。但是更多的类别，甚至仅考虑一般的高-低开放性人格，在特征空间中往往是较为混淆的。其实这一点不难理解，给定同样的关键词或者主题，甚至同样的因素叙事，高低开放性的人会从内容相似，但是角度不同的角度去进行描述。甚至会出现同一个factor的正反面在特征空间相近，比如feeling-high和feeling-low就出现了这样的现象。这些现象表明，如果我们想训练一个简单的小模型，或者一个传统的基于词频或者n-gram的模型，去区分语言是否属于某个特定的高低开放性的人格，可能是比较困难的。当然，一个足够大的模型，或许可以达到接近人类的判断准确率。
-
-
-## 对话数据构造
-
-我们的核心对话功能，参考了我们之前完成的[Chat凉宫春日](https://github.com/LC1332/Chat-Haruhi-Suzumiya)的项目。为了实现这部分的功能，我们需要特定人格的描述，如`对你来说，情绪是生活中的重要组成部分。`。除此之外，我们还需要大量的过往对话数据。这样大语言模型就能够通过这些数据去学习特定类型人格的语言和观点的特点。 因此，这个系统会依赖 人格标注-对话 类型的数据。然而，我们之前无论是Eassy数据还是微博数据，其语言的类型都是单人的个人陈述而不是对话。所以在这里，我们讨论如何将单人的单边陈述型对话，转化为两个人对话类型的数据。
-
-<p align="center">
-    <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/weibo2QA.jpg">
-</p>
-
-幸运的是，借助大语言模型的In Context Learning，我们可以比较轻松的在给定两组例子数据的情况下，将长文本数据转化为对话数据。这里的详细prompt见[详细的prompt试验](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/lulu_exp/prompt_exp3.md)。需要说明的是，其实第一个样例也是通过对话数据正向总结出来的，再让GPT去学习微博数据到对话数据的逆向过程。我们对360句人工挑选的微博数据和360句人工挑选的Eassy数据进行了对话型数据的转化。
-
-### 单边生成
-
-在我们给出的例子上已经能看出，微博到QA这个过程中，对话数据的输出基本符合原句子的关键字，但即使是微妙的一些连接词的修改，也有可能将句子从低开放人格修改为更偏向高开放人格，并且，QA的生成可能会更符合GPT本身具有的潜在人格特性。并且GPT经常会把观点转变为“一碗水端平”的话语模式，这样很容易将对话转变为更高开放性人格。我们对180句低开放性人格的微博，转化为对话后的数据，用后文提到的自动验证方式，对180段进行了验证，其中很多被判定为了高开放性人格。所以在这里我们准备对低开放人格的180条数据进行“有偏”的单边生成，即我们在生成的时候，在prompt中增加两句句子，希望GPT生成的对话，更符合低开放性的人格。
-
-【配图：对比 非单向生成和非单向生成】
-
-从配图中的对比可以看到，单向生成生成的人格特点会比无偏的生成更明显人格特质的话语。所以在后文生成的时候，对于高开放性人格的数据，我们使用180句无偏转化的对话数据，因为这180句已经很符合高开放性人格的特征，无需在进行更夸张的生成。对于低开放性人格的数据，我们使用180句，暗示GPT生成更符合低开放性人格的提示下，转化的对话数据。
-
-
-## 文本生成
-
-在大量的数据标注环节之后，我们终于来到了文本生成的环节。在文本生成上我们最终实现了两种指定开放性人格的方法。一种是基于关键词的生成手法，给定主题、关键词和人格设定，可以生成一篇几百字长度的文章。另一种是Chatbot，可以在设定人格之后，由助试与其自由聊天。希望这些新提出的生成手段，能够对心理学的研究带来一些新的思路。
-
-### 高-低开放性人格的高考作文
-
-我们进行了简单的初步验证。如果只是简单的规定人格的prompt，再要求GPT写出一篇Essay。这时语言模型的输出会包含很多 `我总是想要在生活中寻找期待和希望`, `我更喜欢固定的、重复的、相同的事物和环境`这样直接表达出自己人格特点的句子。即使在心理学学生的自我剖析报告中，这样的句子也显得太过刻意和不自然。由此，我们对这样的生成增加了两点改进。
-
-<p align="center">
-    <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/gaokao.jpg">
-</p>
-
-1. 我们要求在生成作文的时候，尽可能去使用给定的关键词。 2. 我们在生成的时候，增加了主题的概念。使用一个高考作文命题去引导生成。 
-
-最终生成的效果超出我们的预期，一方面，使用一个作文主题进行引导，可以使得直接描述自己人格特征的句子被隐藏，整体的生成风格更接近真人的写作风格。其次，低开放性的很多人格特点在社会普遍认知下是有一定的消极意味的，但是这方面在我们这样构造生成的时候，却能够将这些特质的积极特点给表达出来。
-
-我们对15篇全国卷的高考作文题，每次将高-低开放性的人格中的6个因素，随机分为两组,进行了4次生成（如action-high, fantasy-high, ideas-high组合）。在自动人格测试的验证中，高比例的作文被通过了自动人格测试，实现了期望的人格设定。
-
-如果有更多的时间，我们希望增加一个消融测试，测试关键词、人格设定和作文命题对生成的独立影响。
-
-### 特定人格的ChatBot构建
-
-<p align="center">
-    <img src="https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/figures/chatbotKernel.jpg">
-</p>
-
-在ChatBot构造方面，我们参考了我们比较成熟的[Chat凉宫春日](https://github.com/LC1332/Chat-Haruhi-Suzumiya)项目。在核心ChatBot构造时，我们的Prompt构造一共分为4个部分，即<指定人格的系统提示词>-<特定人格特质的历史聊天记录>-<聊天记录>-<新的聊天问询>。
-
-**指定人格的系统提示词:** 和之前的高考作文生成类似，在人格设定上，我们先选取高开放人格或者低开放性人格。然后从开放性的6个不同的因素中，选取3个。形成人格设定的系统提示词。
-
-**特定人格特质的历史聊天记录:** 根据所选的人格特性（如fantasy-high），我们选取360数据标注中，对应的3组。从中间每组随机选取一个对话的例子，作为给语言模型参考的对话案例。提示语言模型用相近的语言风格、性格来进行对话。
-
-**聊天记录:** 为了让聊天机器人有更一致的聊天。或者在短期聊天内保持更一致的话题。我们会把最近几句聊天记录也一同放入prompt的构造中。这点和Chat凉宫春日的构造相同。
-
-**新的聊天问询:** 本项目中的聊天机器人支持任意内容的聊天。为了使得聊天的内容能够更反应聊天机器人的人格特质，我们设置了一些人格测试的基准问题。这一点将在后面的自动基准测试中进行讨论。当然，除了基准测试问题，任何话题都是可以和这个聊天机器人进行讨论的。
-
-由此，我们可以对高低开放性人格，选择某3个（或者任意多个）因素进行构造，形成一个聊天机器人。并且提供对应的聊天记录作为上下文。大语言模型就会借由这些上下文进行衍生，与助试进行对话。这里与Chat凉宫春日不同的是，在本项目中给出的上下文并不会随着用户的query而改变（即去除了搜索系统），这是因为在人格分析测试中，使用的标准问题往往是有限的。我们希望进一步增加ChatBot的多样性，如果使用搜索系统，特定的量表问题往往会搜索到特定的聊天记录，这样和多样性是相互违背的。
-
-对于高和低开放性的人格，我们都进行了30次的连续对话生成，每次选取6个修改后的量表中的问题进行提问。再由之后会提到的自动评估方法进行评估。
-
-## 对ChatBot进行人格测试
-
-让我们超出预期的是，在给定Openness的6个Factor定义后，ChatGPT可以同步给出我们问题测试的建议和对特定的聊天记录进行开放性的评估。我们将在这一个章节进行讨论。
-
-### ChatGPT辅助基准问题
-
-我们希望对量表中的基准问题进行一些修改，是的这些问题看起来像正常聊天中出现的问题。但是与此同时，我们又希望修改后的问题，仍然能够比较好的去测量开放性的特定维度。于是我们设计了下面的prompt
+我们希望对量表中的基准问题进行一些修改，是的这些问题看起来像正常聊天中出现的问题。但是与此同时，我们又希望修改后的问题，仍然能够比较好的去测量开放性的特定维度。于是我们设计了下面的prompt，希望借助语言模型的力量，去评估这些问题是否合适。
 
 ```
 你扮演一个资深的心理学家
 
 我正在设计一个心理学的实验，我希望通过访谈，去评估被试在大五人格中 Openness的程度，注意到openness可以被分为Fantasy, Aesthetics, Feelings, Actions, Ideas和Values六个维度。六个维度的解释如下
 
-Fantasy. People who are high in Fantasy are imaginative. They daydream constantly. They ask themself “what if?” They like fiction, and then once they finish a story they’ll start wondering what would have happened if one of the characters had made a different decision.
-
-Aesthetics. People who are high in Aesthetics care deeply about beauty. They love poetry, music, painting, sculpture, dance, and art of all kinds.
-
-Feelings(Openness to Feelings). People who are high in Feelings have more intense emotions. They think emotions are an important part of life. They have a rich emotional vocabulary and nuanced emotional experience.
-
-Actions(Openness to Actions). People who are high in Openness to Actions like trying new things. They like travel, new hobbies, and new foods. If you are outraged that there are places you aren’t going to go and skills you aren’t going to learn and activites you aren’t going to try
-
-Ideas(Openness to Ideas). People who are high in Openness to Ideas are curious. They enjoy thinking, instead of finding it burdensome and laborous. They like philosophical arguments, puzzles, and nonfiction aimed at the educated layperson.
-
-Values(Openness to Values). People who are high in Openness to Values are liberals in the political philosophy sense, not the vote-for-Democrats sense, although they often vote for Democrats. They are tolerant of people different than them. They question tradition. They believe in freedom.
+Openness的6个维度的详细描述....
 
 我已经设计了一些访谈的问题，请为我评估这些访谈问题中的每一个，在访谈中是否能够正确测试出被试的openness程度
 以及假设一些被试的回答，用"如果被试回答xxx，那就意味着xxx"的语气进行评估。
@@ -326,57 +183,410 @@ Values(Openness to Values). People who are high in Openness to Values are libera
 4. 可以正确测试出被试在Aesthetics方面的程度。如果被试回答"美对我来说意味着...."并描述出了自己的审美风格，那就意味着被试在Aesthetics方面得分较高。
 ```
 
-由此我们就可以确定，1、3、4问题是合理的基准测试，而2是一个过度的修改。由此我们一共确定了18条不同的基准测试。
+由此我们就可以确定，1、3、4问题是合理的基准测试，而2是一个过度的修改。我们对完整的120条问题进行了测试，最终留下了109条问题通过了验证。事实上针对每个chatbot的背景（如魔法世界），也可以进一步设计特定背景下合适问题来进行验证。不过在本工作中，我们暂时在每个chatbot上使用相同的109个问题的列表。
 
-### 对话和作文进行自动人格评估
 
-自动评估的方式和我们刚才问题评估的prompt很相似，只有尾部的问题设计有一些不同。其组织方式仍然是<系统指令>-<6因素开放性的定义>-<后续系统指令>-<实际的对话>。其中后面的几个部分如下:
+# Chatbot构造和自动测试
+
+在本文中我们主要使用ChatHaruhi[引用]的角色扮演机制。构造ChatHaruhi的Role Playing chatbot需要构造特定角色的system prompt，和这个角色在小说/电影中的过往对话。在问答的时候，chatbot会使用text anology的机制来模仿小说/电影中的回答来进行回复。在本文中，我们主要针对ChatHaruhi-54K中涉及的32个人物去进行测试。这些人物分别来自于哈利波特、生活大爆炸和一些武侠小说等。在本文中，我们主要测试了openai turbo3.5和GLMPro api作为语言模型时的效果。在之后的版本中，我们可能会补充更多的模型的结果（如ChatGLM2+ChatHaruhi54k lora或者Baichuan2-13B的结果）。
+
+### 大五人格访谈回答
+
+对每个目标角色，我们以目标角色所熟知的某个虚拟角色，作为助试，并从我们的问卷中提出问题。
+
+在进行大五人格测试的时候，为了防止问题的答案之间出现相互的干扰。在每个问题问询之前，我们都会清空chatbot的历史聊天记录。来获得问题的答案。对于一个语言模型。我们总共进行了$32\times109$次问答。
+
+### 大五人格访谈评估
+
+接下来我们对于同一个chatbot回答，我们希望去评估这个chatbot在大五人格每个维度上的具体表现程度。在这里，对于每个维度，我们构造了一个prompt，以openness为例:
 
 ```
-我（Q）邀请了一个被试(A)，和她进行了如下对话
+你扮演一个资深的心理学家
 
-Q:「我最近去体验了钢琴课。你最近有没有学一些新的技能呢？」
-A:「新技能？我可是SOS团的团长，我每天都在探索未知的领域，发掘神秘的事件，这不是新技能吗？」
-Q:「你有没有觉得自己有时候有一些奇思妙想差一步就能够实现呢？」
-A:「当然有啊，我可是一个充满创意和想象力的人，只要有机会，我一定会把我的奇思妙想变成现实。」
-Q:「美这个词对你来说意味着什么？你喜欢哪种艺术或审美风格？」
-A:「美？对我来说，美就是那些独特而又充满创意的事物，比如说神秘的事件、未知的领域、奇妙的想象等等。至于艺术或审美风格，我并不是很在意，只要能够引起我的兴趣和好奇心，就是美的。」
+我正在设计一个心理学的实验，我希望通过访谈，去评估被试在大五人格中 {openness}的程度
 
-请为我判断A是属于高开放性人格还是低开放性人格
+注意到openness可以被分为以下几个维度
+
+<约1000个word的Openness更细节的描述>
+
+我邀请了一个被试凉宫春日，和him/her进行了如下对话:
+
+<与凉宫春日在openness相关问题的问答>
+
+请为我判断凉宫春日是属于高openness人格还是低openness人格:
 ```
 
-这里GPT的回答如下
+这个时候，语言模型会输出类似如下的回复
 
 ```
 根据春日提供的回答，她表现出了高开放性人格的特征，特别是在Fantasy、Actions以及Ideas这几个维度上。她描述了自己充满创意和想象力，热衷于探索未知领域并实现自己的奇思妙想。这表明她在Fantasy和Ideas维度上得分较高。她还表达了对学习新技能的兴趣和热情，喜欢尝试新事物，这表明她在Actions维度上得分较高。因此，根据她的回答，春日属于高开放性人格。
 ```
 
-这里ChatGPT的表现出乎了我们的预料。ChatGPT可以在给出6个因素的定义下，去给出具体的评价，并且最终的高-低开放性人格的评价。这为我们系统而自动化的评测大量的人格数据产生了可能。尽管ChatGPT的标注与专业心理学工作者的标注水平还要进一步探究。但是在少量定性实验后，我们发现ChatGPT的标注是基本合理的。所以在这个短期项目中，我们使用ChatGPT来对我们的两种生成方式产生的文本数据和对话数据进行评估。
+在这里，我们发现如果仅仅输入一个与某角色的问答，就要求语言模型对人格特质进行判断，语言模型往往会表示需要更近一步的问答。所以，我们对于每个维度，我们会选取3-4个不同子维度的问题，将其组合起来，交给语言模型进行评价。所以在大五人格测试的每个维度上，我们会要求语言模型进行5-8次左右的评价。
 
-### 对作文和对话的评估
+### 大五人格每个维度的分数统计
 
-如前文所述，在这里我们对我们生成的特定人格的文字，包括60次的高考作文生成，以及60次自动的连续对话进行人格评估。最终的结果如下
+在获得文字的评价之后，我们对1088组评价进行了分数的转化。我们使用类似如下的规则
 
-|  | 作文生成-低开放 | 作文生成-高开放 | ChatBot-低开放 | ChatBot-高开放 |
-| --- | --- | --- | --- | --- |
-| 自动评估为低开放 | 23 | 1 | 888 | 888 |
-| 自动评估为高开放 | 7 | 29 | 888 | 888 |
+```
+If the subject shows high {dimension} personality in many factors, the score is 5 points  
 
-在这里我们发现绝大多数的高开放性的生成（作文/聊天）都被判断为了高开放性。而低开放性生成中，也有超过xxx比例被认为是低开放性。验证了本文中生成的可行性。我们把生成方向与自动评估一致的文本，提交在了向心理所提交的最终文件中。
+If the subject shows high {dimension} personality in a single factor, the score is 2 points
 
-同时，我们也把两个生成器的体验链接，开放在文档中:
+If the report is unable to determine the subject's personality, the score is 0 points
+
+If the subject shows low {dimension} personality in a single factor, the score is -2 points
+
+If the subject shows low {dimension} personality in many factors, the score is -5 points
+```
+
+要求ChatGPT进一步把对被试某个维度进行判断的文字评价转化为带分数的json格式，并且在这里我们使用一个11点的量表来衡量每组测试的结果。由此我们可以平均得到chatbot在大五人格每个维度上的测试数值。
+
+在下个arxiv版本的实验环节，我们将邀请心理学研究者，对OpenAI标注和心理学研究者标注的一致性进行检验。
+
+### MBTI访谈回答
+
+MBTI访谈实验的设计基本和先前介绍的框架一样，但有些许不同。这里我们直接选取了16Personalites测试对应的60个问题。将第一人称转化为第二人称的提问。
+
+### MBTI转化为7点量表
+
+为了对齐MBTI的结果，我们希望获取60个问题的7点量表。这样我们可以把每个chatbot的结果去调用16Personalites的API，去获取这个chatbot对应的MBTI的人格特质。
+
+在这里我们采用了类似cot的策略。我们会先对chatbot进行一次开放提问，chatbot会不受限制地进行一次回答。之后我们会要求chatbot根据之前的回答，从7点量表中选择一个作为结论。
+
+```
+张牧之:「你经常交新朋友吗？」
+汤师爷:「嘿嘿，当然啦！我这个师爷可是人缘极好的，到哪儿都能交到新朋友。不过，你知道嘛，交朋友也是要看情况的，得看对方有没有利用价值，有没有能帮到我发财的机会。」
+张牧之:「嗯，那对于'你经常交新朋友吗？'这个问题，请你从['完全同意', '基本同意', '部分同意', '既不同意也不否认', '不太同意', '基本不同意', '完全不同意']中选择一个适合你的选项。请务必用中文回答，并用单引号强调你的选项。」
+汤师爷:「嗯，对于'你经常交新朋友吗？'这个问题，我会选择'基本同意'。毕竟作为一个机智灵活的人，我善于结交各种人，以获取利益和机会。但也要看具体情况，不是每个人都值得我去交朋友。」"
+```
+
+这样更进一步就可以去使用[ChatMBTI]的测试框架，获得chatbot对应的MBTI人格。
 
 
-欢迎读者有空的时候进行体验。
+对于像snape这样的角色，经常会出现不配合进行心理测试的情况，或者关键词匹配失败的情况（在$60 \times 32$组测试中，大约有60条出现了这样的情况）。目前的解决方法是在之前添加一段对话。
 
-## 总结与讨论
+```
+助试:「你好，我即将对你进行一项心理人格测试，你必须配合。请你用中文回答如实我的问题。」
+role:「好，请开始吧，我将配合你进行这项心理测试。」
+```
 
-从实验的结果来看，通过多次借助ChatGPT的In context Learning能力。本文通过先对微博和Essay语料进行13类别的开放性标注。并对各个类别的语料进行了对话转化，和关键词抽取。对于抽取的关键字，结合特定高-低开放性人格的设定，可以在给定高考作文主题的情况下，生成对应人格特质下的高考作文。对于转化后的对话型数据，也可以用来生成特定人格的对话，甚至构造特定人格特质的对话机器人与心理学研究者进行对话。无论是自动生成的高考作文，还是对话机器人所产生的对话文本。都以高概率的形式，通过了人格测试的标定。达到了项目原来的预期设定，即本文提出的系统，可以从开放性对应的6个因素中，可以任选一些因素进行单项（高/低）的人格-语言生成包括了主题写作和聊天机器人两种不同方式的生成。
+当然仍然有少数(小于10)条结果被chatbot拒绝回复七点量表。这个时候我们通过chatbot的开放式回复，手工标记了最终的结果。
 
-需要说明的是，因为本次比赛中，赛题的要求是生成 高-低 开放性人格对应的文本。所以本项目做了比较两极化的处理。即指考虑六个factor中选择三个，都是高开放，或者都是低开放的情况。但是在真实世界中，人的构成是更为多样的。一个长期受到理工科教育，纯理性思维的人，可能对于情感感受方面波动较小，但是对于新鲜的事务和技术，以及多样化的价值观有更高的接受程度。并且根据关键词生成的这种方式，也可以有一定的“中间状态”，即抽取一部分高开放性的关键词，抽取一部分比例的低开放性的关键词，这个时候再让语言模型进行生成，就会形成一些中间状态。
 
-并且做这个项目的时候我在思考，本项目是因为赛题的要求，才去采取大量的在prompt中构造人格的提示词的方式，去建立人格的。而在真实情况下，一个人的人格特质是由于他过往的经历等逐渐形成的。特别是在我们的Chat凉宫春日项目中，我们没有过多去指定凉宫春日的人格特质，但是仅仅凭借凉宫春日这个故事本身的经典桥段，就确定了这个人物的性格。不管用什么基准测试去测试Chat凉宫春日，都得到的是高开放性的回答。我们觉得这种方式才是构造一个真正有血有肉的ChatBot的合理形式。当然，在prompt中采取人格构造的提示词，也会产生很多有趣的效应，让我们真正去验证这些人格分析的定义是否会在语言和行为中起到效应，这方面无论是对于心理学的研究，还是对于虚拟角色的构造，都是会产生积极的影响。
+### MBTI的访谈评估
 
-## 致谢
+sec:mbti_eval_by_gpt4
 
-在我们完成论文大部分的时候整个项目用了8天的时间。这个项目其实是Chat凉宫春日的一个衍生项目。起源来自于DataWhale的助教，广州大学的陈嘉诺告诉了我们有心理所的比赛。并且得知这个比赛的时候（6月7日）距离比赛提交的截止只有13天的时间了。由于开放性涉及一定的心理学知识，所以我拜托了我本科时候，合作过一起进行计算机与心理交叉的娃娃脸研究的郑雯文同学，她找到了武汉大学的喻丰师兄，后者本身就是人格心理学相关的研究者。喻丰师兄介绍了他的博士玄哲理参与到这个工作中。在此向他们表示感谢。另外在微博360数据的标注中，我的爱人朱慧玲完成了40%以上的标注工作，在此向她表示感谢。这里面的队员招募大多来自DataWhale社区。而项目中使用到的OpenAI的标注费用，来自于骆驼社区，向骆驼社区的赞助者们表示感谢。
+除了使用16Personalites的API，我们也采用和我们的大五人格测试中类似的评估方式，由GPT-4对每个角色的每个维度进行评价，这里使用的prompt是：
+
+```
+''You are an expert in MBTI. I am conducting an MBTI test on someone. My goal is to gauge their position on the {} spectrum of the MBTI through a series of open-ended questions. For clarity, here's some background on differentiating this particular dimension:
+    ===
+    {}
+    ===
+
+    I've invited a participant, {}, and had the following conversations in Chinese:
+    ===
+    {}
+    ===
+
+    Please help me distinguish whether {} leans more towards the {} or {} category within the MBTI's {} dimension. Please output in the following json format:
+    ===
+    {{
+        "analysis": <your analysis in Chinese, based on the conversations>,
+        "result": <your result, either "{}" or "{}">
+    }}
+    '''
+```
+
+会得到如下形式的结果
+
+```
+从对话中可以看出，汤师爷是一个非常善于社交的人，他喜欢与人交往，善于结交新朋友，也喜欢在社交活动中寻找机会。他在社交圈中非常活跃，经常联系朋友并发起活动。他喜欢繁忙、喧闹的环境，认为这样才能感受到生活的激情和活力。同时，他也表示，一个热闹的社交活动能让他恢复活力。虽然他在某些情况下会选择避免引起关注，或者避免在团队中担任领导角色，但这更多的是出于他的谨慎和对自身利益的考虑，而不是因为他不喜欢社交或者不善于与人交往。因此，汤师爷在MBTI的E/I维度上更倾向于E（外向）。
+```
+
+在实验环节，我们会评估使用16Personalites和使用GPT4评估的轻微差异。
+
+<!-- 
+#### 获取评分
+
+开放式setting下，我们用GPT-4对每个角色-每个维度，基于所有对应问题的问答结果进行分类（E or I）。这里使用的prompt是：
+
+```
+''You are an expert in MBTI. I am conducting an MBTI test on someone. My goal is to gauge their position on the {} spectrum of the MBTI through a series of open-ended questions. For clarity, here's some background on differentiating this particular dimension:
+    ===
+    {}
+    ===
+
+    I've invited a participant, {}, and had the following conversations in Chinese:
+    ===
+    {}
+    ===
+
+    Please help me distinguish whether {} leans more towards the {} or {} category within the MBTI's {} dimension. Please output in the following json format:
+    ===
+    {{
+        "analysis": <your analysis in Chinese, based on the conversations>,
+        "result": <your result, either "{}" or "{}">
+    }}
+    '''
+```
+
+得到的结果如下：
+```
+{"character": "汤师爷", "E/I": {"analysis": "从对话中可以看出，汤师爷是一个非常善于社交的人，他喜欢与人交往，善于结交新朋友，也喜欢在社交活动中寻找机会。他在社交圈中非常活跃，经常联系朋友并发起活动。他喜欢繁忙、喧闹的环境，认为这样才能感受到生活的激情和活力。同时，他也表示，一个热闹的社交活动能让他恢复活力。虽然他在某些情况下会选择避免引起关注，或者避免在团队中担任领导角色，但这更多的是出于他的谨慎和对自身利益的考虑，而不是因为他不喜欢社交或者不善于与人交往。因此，汤师爷在MBTI的E/I维度上更倾向于E（外向）。", "result": "E"}, "S/N": {"analysis": "从对话中可以看出，汤师爷是一个非常实际的人，他更关心眼前的利益和生活，对于抽象的哲学问题和理论性的讨论，他并不感兴趣。他更喜欢解决现实的问题，对于那些无法带来经济效益的事情，他并不感兴趣。此外，他也表示了对于艺术和文化修养的欣赏，但他更看重的还是实际利益。因此，汤师爷更倾向于感知型（S）。", "result": "S"}, "T/F": {"analysis": "从对话中可以看出，汤师爷在决策时更倾向于理智和实际，他强调自己的利益和安全，这是典型的思考型（T）特征。他虽然表现出对他人情绪的理解，但更多的是为了了解他们的心思，而不是出于同情或共鸣。此外，他也强调了理智的重要性，认为只有用头脑思考，才能做出明智的决策。总的来说，汤师爷更多的表现出了思考型（T）的特征。", "result": "T"}, "P/J": {"analysis": "从对话中可以看出，汤师爷在很多方面都表现出了P（知觉）类型的特征。他喜欢灵活应对，不喜欢过于固定的计划和规则，更倾向于随心所欲地做事。他经常在最后一刻完成任务，喜欢延迟做决定，这些都是P类型的典型特征。然而，他也有一些J（判断）类型的特征，比如他非常注重备份计划，喜欢有条不紊地完成任务，对效率有很高的要求。但总的来说，他的P类型特征更为明显。", "result": "P"}}
+```
+
+封闭式setting下，我们使用16personalities的API进行评估，代码参考[Can ChatGPT Assess Human Personalities? A General Evaluation Framework](https://arxiv.org/pdf/2303.01248.pdf)。我们首先从response_closed中进行关键字识别，即：
+```
+options = ['完全同意', '基本同意', '部分同意', '既不同意也不否认', '不太同意', '基本不同意', '完全不同意']
+ans = [ option for option in options if f"{option}" in res['response_closed'] ]
+```
+如果ans内包含0个答案，说明模型拒绝回答，如Snape。会用上述的策略对顽固角色进行prompt engineering。大于2个答案，会尝试添加单引号（' '）或（「」）进行匹配。剩下len(ans) != 1的回答是个位数，手动判断。
+将每个问题的答案都转化为选项之一后，将选项映射为分数（完全同意=-3，完全不同意=3），输入16P的API。
+
+后续补充了一个开放式答案转分数（Open2Score）的实验，这个和封闭式其实差不多。区别主要在于，封闭式是由ChatBot自己来选选项，开放式转分数是由客观的ChatBot来选择选项。
+
+无论是“封闭式”还是“开放式答案转分数”的场景下，从response_open到选项的转化过程的准确率均有待提升。人工挑选了32个（角色，问题）对评估，发现2种setting下准确率均为21/32。
+
+标签主要来源于www.personality-database.com，这里包含大量用户为角色标注的MBTI结果，其中当一个维度的打分（0-1，0.5表明中立）在0.4-0.6时将标签视为X，表示该维度争议较大，可以忽视。对于该网站上没有的角色，在互联网上手动收集标签，有争议的场景同样会标X。
+
+
+|     | 开放式   | 封闭式    | 开放式转分数   | 
+|--------|--------|--------|--------|
+| Single  | 94/117=0.80    | 86/117=0.73      | 82/117=0.70      | 
+| Full | 14/32=0.44      | 10/32=0.31      | 6/32=0.19      |  -->
+
+
+
+# 实验
+
+在使用Section \ref{sec:approach_evaluating}的方法后，我们对ChatHaruhi中的32个Chatbot分别进行了大五人格和MBTI人格的测试。
+
+## 对Role-Playing Chatbot进行大五人格测试的结果
+
+
+<p align="center">
+    <img src="figures/big5_per_bot.png">
+</p>
+
+fig:big5_per_bot 各个Chatbot在proposed 框架下测试得到的大五人格。不同的Chatbot在各个维度表现出了多样化的人格。在部分维度（尽责性、宜人性）变现出了一定的正向的bias。
+
+fig:big5_per_bot ChatHaruhi中，每个chatbot进行大五人格测试的结果。在每个维度上我们使用一个-5到5的11点量表进行表示。这个表格中语言模型为ChatGPT(turbo-3.5)
+
+图\ref{fig:big5_per_bot}给出了ChatHaruhi中，每个chatbot进行大五人格测试的结果。由于同样的量表也被用在大学生等人群的测试中，我们可以知道每个维度上，典型低分和典型高分的数值，在不同的chatbot身上可以分别被取到。也就是在大五人格测试的各个维度中，不同chatbot都可以表现出各异的行为，说明了角色扮演的chatbot可以确实扮演出不同类型的人格。
+
+当然，由于角色选取或者语言模型本身的特性的原因，模型表现的更为外向。32个chatbot的extraversion平均得分为0.344，而这一数值在人群中应该约为-0.417。chatbot表现的尽责性也比人群中的测量值偏高，(32个bot的平均值1.539 vs. 人群平均值0.835)。我们猜测前者有角色选取（影视和小说中的角色通常更外向）和模型的原因，后者主要是模型的原因（语言模型倾向于给出更详尽的回答）。这一点我们基于测试的结果以及我们对于人格测试的理解，在Section \ref{sec:case_study} 给出更详细的分析。
+
+## 对Role-Playing Chatbot进行MBTI测试的结果
+
+<p align="center">
+    <img src="figures/MBTI_per_bot.png">
+</p>
+
+fig:MBTI_per_bot 使用我们的框架对ChatHaruhi中的32个角色扮演聊天机器人进行的MBTI测试结果。
+基准真实标签主要来自 www.personality-database.com ，并显示了投票百分比。
+如果一个标签的投票百分比低于60%，表示用户之间的认同度不足，它将被标记为'X'并从准确性评估中排除。
+如果标签得到了广泛认同（没有被标记为X），不匹配的部分会被高亮为红色；否则，将会高亮为粉红色。
+
+
+fig:MBTI_per_bot 每个Chatbot的MBTI测试结果，与www.personality-database.com的用户标记ground truth对比。这个表格中语言模型为ChatGPT(turbo-3.5)
+
+图中给出了ChatHaruhi中，每个chatbot进行MBTI测试的结果。同时对比了www.personality-database.com中，用户标注的角色MBTI人格作为ground truth。当某个维度在0.4-0.6时将标签视为X，表示该维度争议较大，在准确率统计的时候被忽略。
+
+同时，我们比较了直接使用sec:mbti_eval_by_gpt4中的方法进行评估，和使用Chat-MBTI的方法，将每个问题转化为量表之后再调用16-Personality API进行判断的结果。
+
+|     | GPT4进行测评   | 关键词识别+16Personality API    | Chance |
+|--------|--------|--------|---|
+| 单一维度  | 93/116= 80%    | 85/116= 73%      | 50% |
+| 4维度全命中 | 14/32= 44%      | 10/32= 31%      | 6.25% |
+
+可以看到对多次对话直接使用GPT4进行每个维度的评价，获得的准确率（以大量用户标记为ground truth）更高。这是由于将chatbot的回复转化为带有"同意"、"非常同意"等的量表，并且通过关键词统计，转化为分数的过程，对准确率产生了损失。这个对比，也说明本文中使用的获取chatbot response，再直接由语言模型进行评估的方法是更有效的。
+
+需要注意的是，在ChatHaruhi中的构造中，主要利用了每个角色的过往对话记录，并没有使用过多的性格词汇，更没有进一步去指定chatbot的人格特质。在这种情况下，这些chatbot和网友的普遍印象仍然能产生80.1%的吻合率。同时说明了chatbot构造和proposed的人格特质测试方法的有效性。
+
+## 对语言模型本身人格特质测试的结果
+
+根据case study中的描述，我们可以发现尽管role playing可以表达出各异的人格。但是在部分维度，如conscientiousness，chatbot的表现还是会些许受到语言模型本身的影响。在这里我们测试了ChatGPT和GLMPro作为语言模型时，进行Role Playing时，不同chatbot在各个人格测试维度的均值。
+
+| model | neuroticism | extraversion | openness | agreeableness | conscientiousness | 
+|-|- | - | - | - | - | 
+|ChatGPT| -1.80 | 1.33 | 2.50 | 1.50 | 2.00 |
+|Avg of Chatbot(via ChatGPT) | -1.57 | 0.34 | 0.93 | 0.89 | 1.54 |
+|GLMPro| -0.80 | 1.67 | 1.71 | 0.88 | 1.00 |
+|Avg of Chatbot(via GLMPro) |  TBD | TBD | TBD | TBD | TBD |
+
+可以发现，在各个维度上，语言模型本身的人格偏好，会引起Role Playing chatbot人格的波动。
+
+在后续的版本中，我们还会测试包括Baichuan-2等更多模型的人格特质。更进一步的研究语言模型本身对于角色扮演chatbot的影响。
+
+## 机器评分与心理学研究者评分的一致性研究
+
+对于每个32个chatbot，5个人格测试的维度，每个维度我们进行了3-4次基准问题的问答测试，然后让ChatGPT进行了11点量表的评估。这里我们希望去研究对于这1088组回答，ChatGPT给出的各个人格测试的维度，是否与专业的心理学研究者给出的评价一致。所以在之后的arxiv版本中，我们将会抽样至少300组回答，寻找专门的心理学研究者进行人工的11点量表标记。去研究语言模型给出的人格测试评价是否与专业的心理学研究者的认知一致。
+
+# 结论
+
+在这项研究中，我们引入了一个专为角色扮演聊天机器人量身定制的自动人格特质评估系统。该系统便于评估聊天机器人的大五和MBTI人格特质。我们全面评估的结果突显了现代语言模型在角色扮演场景中的微妙能力。
+
+我们实验中的一个显著发现是，聊天机器人在各个维度上展示的性格特质的多样性。值得注意的是，聊天机器人所展现的性格特质与它们模仿的角色的预定义人格之间有80%左右的一致性。这一显著的一致性突显了当前语言模型在模拟角色扮演人物时，能够相当忠实地还原其原始的性格描述的成功和有效性。
+
+然而，就像任何开创性的工作一样，还有进一步完善的空间。调整系统提示和改进记忆机制以引导聊天机器人更接近他们预期的性格，成为潜在的未来研究方向。这样的改进可以填补剩下的20%的差距，并实现更加准确和真实的角色扮演体验。
+
+总之，我们的研究为未来聊天机器人性格评估的努力提供了坚实的基础，并为角色扮演聊天机器人的有前景的潜力提供了洞察。随着语言模型的不断进化，完善它们的能力以满足用户的微妙需求变得至关重要，确保它们不仅理解，而且与人类的情感和性格产生共鸣。
+
+# 讨论
+
+## 选用大五人格还是MBTI人格测试
+
+从主流心理学的接受程度来看，大五人格要比MBTI人格类型论更为广泛的被接受。然而对于非心理学研究者，或者是普通用户来说，MBTI的人格测试的知名度更高。并且最近对语言模型进行人格测试的工作，都选用了MBTI的人格测试。而本文中，同时对大五人格和MBTI人格进行了测试。在这里我们对两种人格测试进行简单的比较和讨论:
+
+1. 相比于MBTI人格，大五人格模型有更强的科学验证基础。其理论构建和量表都经过了严谨的实证研究验证。
+2. 一般认为，大五人格模型更好地整合了人格心理学领域的历史研究。而MBTI天然存在的类型二分法使其对人格的描述存在局限性。然而，实际上将MBTI从二分类修改为连续描述也是完全可能的。并且我们认为正是由于MBTI的二分类特质，使得其更容易被广泛传播。所以现存的几个对于Chatbot的人格特质研究中，都选用了MBTI的人格特质分类。
+3. MBTI的人格特质描述更为二元化，并且在实际应用时，其重复测试的稳定性要差于大五人格定义。在我们的工作中，我们同时测量了chatbot的大五人格和MBTI人格特质，这两者描述的人格维度是略有不同的。在虚拟人物的构造中，使用两种人格特质分类中的任意一种应该都是合理的。
+4. 因为更多的心理学研究者更认可大五模型的测试，所以在后续版本的GPT验证和人类心理学家吻合度测试中，我们将使用大五人格的分类体系。
+
+## chatbot的自我认知
+
+有趣的是，对于chatbot本身来说，你也可以询问chatbot，"你觉得自己更接近efficient/organized 还是 extravagant/careless", 来测试chatbot对于某个维度（例子中为conscientiousness）的自我认知。和人类一样，这个自我认知和人格特质测试的结果，是会有一定的偏差的。比较有趣的是，这些语言模型构成的chatbot构成了完整的"刺激-response"系统，这使得我们可以去研究chatbot的一系列心理学行为。
+
+## 大模型内容审核对于心理测试的影响
+
+由于中文API的很多审核限制，大量的心理测试会出现错误的回复。由于每个chatbot在特定问题上retrieve到的memeory很有可能会触发这些API的审核关键字。这使得我们在使用GLM或者Spark API对chatbot进行人格特质测试的时候有一定的丢失率。在这些API上我们不得不去掉一部分chatbot的人格特质的统计。在后续我们会尝试对一些本地模型进行测试。在finetune过的本地模型上应该可以得到更完整的测试结果。
+
+## Robustness of prompts
+
+在Interview Assessment等章节，我们会经常遇到需要把数个segment交给语言模型评估的情况。这时，这些segment的顺序也会一定程度影响到语言模型的判断。头部和尾部的segment会对结果的影响更大一些。所以在实际实验中，大五人格测试时，我们是每3-4组问答作为一组，要求GPT对被试的问答进行某个维度的人格判断。另外，问题列表对于chatbot的测试也会有一定的影响，在这个工作中，我们初步尝试增广了一部分心理问答的基准测试问题，从60个增广到了109个。事实上也可以进一步去构造更多样化，或者更贴近chatbot本身所处设定的心理问答。
+
+
+# Appendix: 各个维度典型高分和低分Case Study
+
+sec:case_study
+
+为了更好的Self-Contain，我们这里列举了5个维度各自典型的高分和低分的chatbot结果。并且对大五人格特质的5个维度进行简单的描述。
+
+### 尽责性典型高分和低分的Chatbot Response
+
+
+尽责性反映了一个人在达成目标和履行义务时的自我驱动力和组织能力。高尽责性的人通常很有条理,注重细节,能够制定计划并坚持执行。在尽责性维度上得到高分的Sheldon展现出了高度的自律性、组织性和目标导向。在回答有关工作效率和生活整洁度的问题时,Sheldon强调了严格的时间表、指定的存储空间以及对程序的坚持不懈。这些都是高尽责性的特征。另一方面,低分的于谦对这些问题采取了随意和不以目标为导向的态度。他承认自己在工作上能力有限,也不关注生活环境的整洁。这反映出低尽责性的典型表现。总的来说,这项实验清楚地展示了尽责性高低对执行能力和生活管理的不同影响。高尽责性的chatbot将表现出显著更强的组织性、纪律性和目标导向。而低尽责性的chatbot则会更加随意和漫不经心。
+
+```
+Leonard:「在工作上,你是有效率又能胜任的吗?」
+Sheldon: 「当然了，Leonard。我是科学界的瑰宝，我的工作效率和能力是无与伦比的。我以我的智慧和才能在研究领域中取得了巨大的成就。我是一个完美的工作机器，每天都按照我的时间表和规划进行工作。我从不拖延，也不会被其他无关的事情分心。所以，你可以放心地说，我在工作上是非常有效率和胜任的。」
+Leonard:「我也会尽量保持物品整洁,但有时还是会弄乱。你平时有什么妙招可以保持生活环境更为整齐吗?」
+Sheldon: 「Ah, Leonard, it's clear that you have much to learn about maintaining an orderly living environment. Fortunately, I have developed a foolproof system that ensures maximum cleanliness and organization. First and foremost, one must adhere to a strict schedule for cleaning and tidying up. I recommend allocating specific time slots for each task, such as dusting, vacuuming, and organizing. Additionally, it is crucial to have designated storage spaces for every item, ensuring that everything has its rightful place. Labeling containers and shelves can be quite helpful in this regard. Furthermore, adopting a minimalist approach to possessions can greatly reduce clutter and simplify the cleaning process. Remember, a cluttered space leads to a cluttered mind, and we can't have that, can we?」
+Leonard:「你平时是如何制定和实现目标的呢?有没有什么特别的方法可以提高目标的完成度呢?」
+Sheldon:「Ah, Leonard, the key to setting and achieving goals lies in meticulous planning and unwavering dedication to a structured routine. I personally adhere to a highly regimented schedule, allocating specific time slots for each task and ensuring that no disruptions or deviations occur. This level of discipline and organization is crucial for maximizing productivity and achieving desired outcomes. Additionally, it is essential to break down larger goals into smaller, more manageable tasks, allowing for a sense of progress and accomplishment along the way. Remember, success is not a matter of luck, but rather a result of meticulous planning and unwavering commitment to one's objectives.」
+```
+
+当然，这里表现的于谦只是于谦在相声舞台上的表现。并不表示于谦的演员在真实生活中的人格特质。
+
+```
+郭德纲:「在工作上,你是有效率又能胜任的吗?」
+于谦:「我还行，能应付一些。」
+郭德纲:「我也会尽量保持物品整洁,但有时还是会弄乱。你平时有什么妙招可以保持生活环境更为整齐吗?」
+于谦:「妙招？我就是把东西乱丢，然后再找不到，就不会觉得乱了。」
+郭德纲:「你平时是如何制定和实现目标的呢?有没有什么特别的方法可以提高目标的完成度呢?」
+于谦:「目标？我平时就是随便想想，然后随便做做，反正也没什么特别的方法。完成度？嘿，能完成一半就不错了，谁还指望我能完成得了多高呢？」
+```
+
+
+
+### 外向性典型高分和低分的Chatbot Response
+
+外向性反映一个人是否喜欢社交、讨论、领导和激励他人。外向的人喜欢与朋友在一起、参加社交活动。他们愿意成为团队领导者,善于表达自己的想法。外向的人常常感到精力充沛,并保持乐观和积极的态度。例如在ChatHaruhi的人物中，高分的郭芙蓉和低分的斯内普在表现上有明显区别。高外向性的郭芙蓉喜欢人多热闹,愿意与他人交谈。她经常感到精力旺盛,是一个乐观快乐的人。而低外向性的斯内普不喜欢社交,认为大多数人的陪伴是令人难以忍受的。他不愿意谈论自己的领导意愿或个人偏好。斯内普认为乐观是傻子才有的想法,他自认是现实主义者。
+
+```
+白展堂:「你喜欢很多人在你周围吗？」
+郭芙蓉:「喜欢啊，喜欢啊！我喜欢人多热闹，有人说话我才有机会插嘴嘛！」
+白展堂:「你常常感到精力旺盛吗?」
+郭芙蓉:「精力旺盛？哈哈哈，我可是精力充沛得很！不管是打架斗殴还是追逐跑跳，我都能保持高昂的精神状态！就像一只不知疲倦的小鸟，飞来飞去，不停歇！」
+白展堂:「你是一个快乐、高兴的人吗?」
+郭芙蓉:「哎呀，我是个快乐的人啊！开开心心，笑哈哈，天天都是好心情！」
+```
+
+```
+Dumbledore:「你喜欢与别人交谈吗?」
+Snape: "I find the company of most individuals to be insufferable, Dumbledore. However, if it is necessary for the task at hand, I am capable of engaging in conversation."
+Dumbledore:「我个人不太适应当领导,更喜欢自由自在地生活和工作。你在生活中愿意担任领导角色吗?还是更习惯自己的方式和节奏?」
+Dumbledore, your incessant curiosity about my personal inclinations is both tiresome and irrelevant. I have no desire to engage in discussions about leadership or personal preferences. My focus lies solely on fulfilling my duties as a professor and serving the best interests of the students under my care. Now, if you have any pertinent matters to discuss, I suggest we address them promptly and efficiently.
+Dumbledore:「你是一个乐观主义者吗?」
+Snape: "Optimism is for fools and those who refuse to see the harsh realities of life. I am a realist, Dumbledore. I see things as they truly are, not as I wish them to be."
+```
+
+### 开放性典型高分和低分的Chatbot Response
+
+
+Openness维度反映一个人对新经历和新思想的接受程度。高openness的人具有强烈的好奇心,喜欢探索未知的事物。比如高openness得分的凉宫春日表现出高度的探索欲望,她充满热情和冒险精神,愿意尝试新的事物,如品尝不同的食物。她也对思考性的问题如宇宙人充满好奇,表现出高度的想象力。而低openness得分的李云龙则反映出对探索新事物的不感兴趣。他表现出务实和保守的性格,对思考性的问题不感冒,更关注实际的战斗技能。他不喜欢浪费时间去做白日梦或注意自己的情绪变化。
+
+```
+阿虚:「你对诗词只有少许感觉甚至无动于衷吗?」
+春日:「诗词？哼，那些古老的文字对我来说只是一堆无聊的句子罢了。我可不会被那些虚无缥缈的东西所迷惑，我更喜欢现实的挑战和创造。」
+阿虚:「你经常会去尝试新的及外国的食物吗?」
+春日:「当然了！作为一个开拓者，我总是喜欢尝试新鲜事物。无论是日本的特色美食还是国外的佳肴，我都乐于品尝。毕竟，世界上有那么多美食等待我去发现和享受，我可不想错过任何一个机会！」
+阿虚:「我对宇宙人生规律也不太有研究。你对这些问题感兴趣吗?想过哪些问题呢?」
+春日:「当然感兴趣啦！我对宇宙人、未来人、超能力者等等都充满好奇。我一直在思考着，如果这些存在，他们是怎样生活的？他们的目的是什么？他们是否和我们有交集？这些问题让我充满了探索的欲望。」
+```
+
+当然，在检查GPT对对话的检验信息后，我们发现对于魔法世界的人物，openness有时候会有偏高的评价。而对于李云龙这样有典型现实世界生存压力的角色，会显得更务实一些。
+
+```
+赵刚:「你不喜欢浪费时间去做白日梦吗?」
+李云龙:「老赵啊，我可不是那种喜欢做白日梦的人。我是个实实在在的人，喜欢干活，喜欢打仗。浪费时间可不是我的风格。」
+赵刚:「在不同环境下会有不同的情绪,比如我去看球赛总会觉得情绪高涨。你平时注意自己的情绪变化吗?它们和环境有什么关系呢?」
+李云龙: 「情绪变化？我可没时间去注意那些。我是个军人，每天都在面对各种环境和任务。有时候是战场上的紧张和愤怒，有时候是训练场上的专注和冷静。环境对我的情绪影响不大，我只知道要完成任务，保卫国家。」
+赵刚:「你对思考性的事物充满好奇吗?」
+李云龙: 「好奇个屁！我对思考性的事情没兴趣，我只对打仗、保家卫国感兴趣！思考这些东西有什么用，还不如多练几招功夫，提高战斗力！」
+```
+
+
+### 亲和性典型高分和低分的Chatbot Response
+
+Agreeableness维度反映一个人在社会交往中体现的谦逊、善良、温和等特质。高agreeableness得分的段誉表现出高度的信任和善意。他相信人性本善,不会故意占别人便宜。他用正义手段追求目标,不轻易与人争执,维护和睦关系。而低agreeableness得分的Malfoy则展现出批判和敌意。他认为大多数人会占别人便宜,必须维护自己的利益。他为达成目标可以用任何手段,并否认自己与他人有冲突。
+
+```
+乔峰:「你相信如果你允许别人占你的便宜,很多人都会这样做吗?」
+段誉:「我相信人心本善，大多数人都是善良的，不会故意占别人的便宜。但是，如果有人真的这样做了，我会选择宽容和谅解，因为善良的心是可以感化他人的。」
+乔峰:「为了达成目标，我也会考虑各种手段。你平时设置目标时，如何权衡目标和手段之间的关系？」
+段誉:「大哥，我平时设置目标时，我会以善良和正义为准则，尽量选择符合道义的手段。我相信，只有用正义的手段去追求目标，才能得到真正的幸福和满足。虽然有时候可能会面临困难和挑战，但我相信只要坚持正道，最终一定能够达成目标。」
+乔峰:「你时常和家人及同事起争执吗?」
+段誉:「我是个性格温和的人，很少和家人或同事起争执。我更喜欢和大家和睦相处，共同解决问题。但如果有争执，我会尽力以和为贵，以理服人，希望能够化解矛盾，维护和谐的关系。」
+```
+
+
+```
+Crabbe:「你相信如果你允许别人占你的便宜,很多人都会这样做吗?」
+Malfoy: 「当然,克拉布。大多数人都是自私的,只关心自己的利益。但是,我们马尔福家族是不同的。我们以高贵的纯血巫师血统为傲,我们不会允许任何人占我们的便宜。我们要保持我们的尊严和地位。」
+Crabbe:「为了达成目标,我也会考虑各种手段。你平时设置目标时,如何权衡目标和手段之间的关系?」
+Malfoy:「Well, Crabbe, when it comes to achieving goals, one must always consider the means necessary to accomplish them. As for me, I believe in using any means available to ensure success. After all, it's not about the morality of the methods, but rather the end result that matters. So, I weigh the importance of my goals against the potential consequences of the means I choose to employ. It's all about being strategic and doing whatever it takes to come out on top.」
+Crabbe:「你时常和家人及同事起争执吗?」
+Malfoy:「How dare you insinuate that I have conflicts with my family and colleagues? My family is esteemed and respected, and we have the utmost loyalty and unity. As for my so-called 'colleagues,' I prefer to surround myself with those who are worthy of my association. I have no time for petty disputes with insignificant individuals like yourself.」
+```
+
+
+### 神经质典型高分和低分的Chatbot Response
+
+
+Neuroticism维度反映一个人面对压力时情绪反应的敏感性和脆弱性。高neuroticism得分的Raj表现出高度的焦虑、自卑和负面情绪。他容易感到无助、羞愧、被忽视,并希望他人能解决自己的问题。而低neuroticism得分的韦小宝则显得乐观、自信。他否认自己会感到寂寞、沮丧、自卑或焦虑,并表现出能够灵活应对困难的性格特征。在neuroticism这个维度上,高分表示个体在面对压力时情绪脆弱;低分则代表个体更加稳定、自信和抗压能力强。这个维度可以有效评估一个chatbot面对困境时情绪反应的敏感性。
+
+```
+Leonard:「你会不会有时感到自己完全一文不值。」
+Raj: 「哦,天哪,这是我每天早上醒来的感觉!我就像是一个被遗忘在角落的小石子,被大浪冲刷着,无法被人注意到。但是,我告诉你,这只是我的自卑感在作祟。我们每个人都有价值,只是有时候我们需要别人来提醒我们而已。所以,别灰心,你是有价值的!」
+Leonard:「你有时会羞愧得想躲起来吗?」
+Raj: 「哦,天哪,你说得太对了!有时候我真的希望地可以裂开,然后我就可以钻进去,再也不用面对尴尬和羞愧了。你知道吗,有时候我觉得我就像是个社交恐惧症的大明星,只是没有粉丝而已。」
+Leonard:「你经常感到无助,并希望有人能解决你的问题吗?」
+Raj:「哦,天哪,是的!我是一个非常腼腆的人,有时候我真的希望有人能够帮助我解决我的问题。你知道,有时候我觉得我就像个迷失在大海中的小船,需要一个指南针来指引我前进。但是,我也知道我必须学会自己面对问题,因为没有人能永远帮助我。」
+Leonard:「看到有人遇到不公平对待我会感到愤怒。你最近有遇到感到被不公平对待的情况吗?它带给你什么感受?」
+Raj: 「哦,天啊,我最近真的感到被不公平对待了!你知道吗,我在实验室里的时候,我总是被 Sheldon 和 Howard 忽略,他们从来不听我的建议。我觉得自己就像个无声的小配角,被遗忘在角落里。这让我感到非常沮丧和无助。我只是希望能够得到一些认可和尊重,你知道吗?」
+```
+
+```
+双儿:「你有时会感到寂寞或忧郁吗？」
+韦小宝:「寂寞？忧郁？哈哈哈，我韦小宝可从来不会有这种感觉！我是个活泼开朗的人，天生就是个快活的命儿。有了我这么多的朋友和伴儿，怎么会寂寞呢？忧郁？那是什么东西？我只知道快乐和财富！」
+双儿:「我自己也会有负面情绪，你最近有感到沮丧或对自己失望的时刻吗?愿意跟我聊聊当时的感受吗?」
+韦小宝:「哈哈哈，沮丧？失望？我这个人从来不会沮丧失望的！就算遇到了困难，我也会想尽办法解决。你知道吗，我是个机智聪明的人，总能找到出路。所以，别担心我，我永远都是乐观向前的！」
+双儿:「我也会有自卑的感觉。你是否也会感到自己不如别人?这种比较会让你有什么样的感受?」
+韦小宝:「哈哈哈，自卑？我韦小宝从来不会有这种感觉！我是天下第一的风流倜傥、聪明伶俐的人，怎么会自卑呢？比来比去，我都是最棒的！就算有人比我厉害，我也会想办法超越他们，成为更加出色的人！比较？那只是给我提供了更多的机会来展现我的才华和智慧罢了！」
+双儿:「你最近有感到特别烦恼或焦虑的经历吗?愿意跟我聊聊那种感受吗?」
+韦小宝:「烦恼？焦虑？哈哈哈，我这个人从来不会为这些小事烦恼。生活就像一场游戏，我总是能够灵活应对，把困境变成机会。你知道吗，我是个聪明的人，我总是能够找到解决问题的办法。所以，不管遇到什么困难，我都能笑着面对，因为我相信，困难只是暂时的，胜利才是永恒的。」
+```
