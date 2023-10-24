@@ -1,19 +1,29 @@
 from .ChromaDB import ChromaDB
-from .LangChainGPT import LangChainGPT
 import os
 
 from .utils import luotuo_openai_embedding, tiktokenizer
 
+from .utils import response_postprocess
+
 class ChatHaruhi:
 
     def __init__(self, system_prompt = None, \
-                 role_name = None, \
+                 role_name = None, role_from_hf = None, \
                  story_db=None, story_text_folder = None, \
                  llm = 'openai', \
+                 embedding = 'luotuo_openai', \
                  max_len_story = None, max_len_history = None,
                  verbose = False):
         super(ChatHaruhi, self).__init__()
         self.verbose = verbose
+
+        # constants
+        self.story_prefix_prompt = "Classic scenes for the role are as follows:\n"
+        self.k_search = 19
+        self.narrator = ['旁白', '', 'scene','Scene','narrator' , 'Narrator']
+        self.dialogue_divide_token = '\n###\n'
+        self.dialogue_bra_token = '「'
+        self.dialogue_ket_token = '」'
 
         if system_prompt:
             self.system_prompt = self.check_system_prompt( system_prompt )
@@ -21,18 +31,35 @@ class ChatHaruhi:
         # TODO: embedding should be the seperately defined, so refactor this part later
         if llm == 'openai':
             # self.llm = LangChainGPT()
-            self.llm, self.embedding, self.tokenizer = self.get_models('openai')
+            self.llm, self.tokenizer = self.get_models('openai')
         elif llm == 'debug':
-            self.llm, self.embedding, self.tokenizer = self.get_models( 'debug')
+            self.llm, self.tokenizer = self.get_models('debug')
         elif llm == 'spark':
-            from .SparkGPT import SparkGPT
-            self.llm, self.embedding, self.tokenizer = self.get_models( 'spark')
+            self.llm, self.tokenizer = self.get_models('spark')
+        elif llm == 'GLMPro':
+            self.llm, self.tokenizer = self.get_models('GLMPro')
+        elif llm == 'ChatGLM2GPT':
+            self.llm, self.tokenizer = self.get_models('ChatGLM2GPT')
+            self.story_prefix_prompt = '\n'
+        elif llm == "BaiChuan2GPT":
+            self.llm, self.tokenizer = self.get_models('BaiChuan2GPT')
+        elif llm == "ernie":
+            self.llm, self.tokenizer = self.get_models('ernie')
         else:
             print(f'warning! undefined llm {llm}, use openai instead.')
-            self.llm, self.embedding, self.tokenizer = self.get_models('openai')
+            self.llm, self.tokenizer = self.get_models('openai')
 
+        if embedding == 'luotuo_openai':
+            self.embedding = luotuo_openai_embedding
+        elif embedding == 'bge_en':
+            from .utils import get_bge_embedding
+            self.embedding = get_bge_embedding
+        else:
+            print(f'warning! undefined embedding {embedding}, use luotuo_openai instead.')
+            self.embedding = luotuo_openai_embedding
+        
         if role_name:
-
+            # TODO move into a function
             from .role_name_to_file import get_folder_role_name
             # correct role_name to folder_role_name
             role_name, url = get_folder_role_name(role_name)
@@ -55,7 +82,49 @@ class ChatHaruhi:
             self.db = ChromaDB()
             self.db.load(db_folder)
             self.system_prompt = self.check_system_prompt(system_prompt)
+        elif role_from_hf:
+            # TODO move into a function
+            from datasets import load_dataset
 
+            if role_from_hf.count("/") == 1:
+                dataset = load_dataset(role_from_hf)
+                datas = dataset["train"]
+            elif role_from_hf.count("/") >= 2:
+                split_index = role_from_hf.index('/') 
+                second_split_index = role_from_hf.index('/', split_index+1)
+                dataset_name = role_from_hf[:second_split_index] 
+                split_name = role_from_hf[second_split_index+1:]
+                
+                fname = split_name + '.jsonl'
+                dataset = load_dataset(dataset_name,data_files={'train':fname})
+                datas = dataset["train"]
+
+
+            from .utils import base64_to_float_array
+            
+            if embedding == 'luotuo_openai':
+                embed_name = 'luotuo_openai'
+            elif embedding == 'bge_en':
+                embed_name = 'bge_en_s15'
+            else:
+                print('warning! unkown embedding name ', embedding ,' while loading role')
+                embed_name = 'luotuo_openai'
+
+            texts = []
+            vecs = []
+            for data in datas:
+                if data[embed_name] == 'system_prompt':
+                    self.system_prompt = data['text']
+                elif data[embed_name] == 'config':
+                    pass
+                else:
+                    vec = base64_to_float_array( data[embed_name] )
+                    text = data['text']
+                    vecs.append( vec )
+                    texts.append( text )
+
+            self.build_story_db_from_vec( texts, vecs )
+            
         elif story_db:
             self.db = ChromaDB() 
             self.db.load(story_db)
@@ -80,13 +149,7 @@ class ChatHaruhi:
 
         self.dialogue_history = []
 
-        # constants
-        self.story_prefix_prompt = "Classic scenes for the role are as follows:\n"
-        self.k_search = 19
-        self.narrator = ['旁白', '', 'scene','Scene','narrator' , 'Narrator']
-        self.dialogue_divide_token = '\n###\n'
-        self.dialogue_bra_token = '「'
-        self.dialogue_ket_token = '」'
+        
 
     def check_system_prompt(self, system_prompt):
         # if system_prompt end with .txt, read the file with utf-8
@@ -104,15 +167,30 @@ class ChatHaruhi:
         
         # return the combination of llm, embedding and tokenizer
         if model_name == 'openai':
-            return (LangChainGPT(), luotuo_openai_embedding, tiktokenizer)
+            from .LangChainGPT import LangChainGPT
+            return (LangChainGPT(), tiktokenizer)
         elif model_name == 'debug':
             from .PrintLLM import PrintLLM
-            return (PrintLLM(), luotuo_openai_embedding, tiktokenizer)
+            return (PrintLLM(), tiktokenizer)
         elif model_name == 'spark':
-            return (SparkGPT(), luotuo_openai_embedding, tiktokenizer)
+            from .SparkGPT import SparkGPT
+            return (SparkGPT(), tiktokenizer)
+        elif model_name == 'GLMPro':
+            from .GLMPro import GLMPro
+            return (GLMPro(), tiktokenizer)
+        elif model_name == 'ernie':
+            from .ErnieGPT import ErnieGPT
+            return (ErnieGPT(), tiktokenizer)
+        elif model_name == "ChatGLM2GPT":
+            from .ChatGLM2GPT import ChatGLM2GPT, GLM_tokenizer
+            return (ChatGLM2GPT(), GLM_tokenizer)
+        elif model_name == "BaiChuan2GPT":
+            from .BaiChuan2GPT import BaiChuan2GPT, BaiChuan_tokenizer
+            return (BaiChuan2GPT(), BaiChuan_tokenizer)
         else:
             print(f'warning! undefined model {model_name}, use openai instead.')
-            return (LangChainGPT(), luotuo_openai_embedding, tiktokenizer)
+            from .LangChainGPT import LangChainGPT
+            return (LangChainGPT(), tiktokenizer)
         
     def get_tokenlen_setting( self, model_name ):
         # return the setting of story and history token length
@@ -178,7 +256,9 @@ class ChatHaruhi:
         self.llm.user_message(query)
         
         # get response
-        response = self.llm.get_response()
+        response_raw = self.llm.get_response()
+
+        response = response_postprocess(response_raw, self.dialogue_bra_token, self.dialogue_ket_token)
 
         # record dialogue history
         self.dialogue_history.append((query, response))
@@ -189,7 +269,7 @@ class ChatHaruhi:
     
     def get_query_string(self, text, role):
         if role in self.narrator:
-            return ":" + text
+            return role + ":" + text
         else:
             return f"{role}:{self.dialogue_bra_token}{text}{self.dialogue_ket_token}"
         
@@ -223,8 +303,11 @@ class ChatHaruhi:
         sum_history_token = 0
         flag = 0
         for query, response in reversed(self.dialogue_history):
-            current_count = self.tokenizer(query) 
-            current_count += self.tokenizer(response)
+            current_count = 0
+            if query is not None:
+                current_count += self.tokenizer(query) 
+            if response is not None:
+                current_count += self.tokenizer(response)
             sum_history_token += current_count
             if sum_history_token > self.max_len_history:
                 break
@@ -235,8 +318,7 @@ class ChatHaruhi:
             print('warning! no history added. the last dialogue is too long.')
 
         for (query, response) in self.dialogue_history[-flag:]:
-            self.llm.user_message(query)
-            self.llm.ai_message(response)
-
-        
-        
+            if query is not None:
+                self.llm.user_message(query)
+            if response is not None:
+                self.llm.ai_message(response)
