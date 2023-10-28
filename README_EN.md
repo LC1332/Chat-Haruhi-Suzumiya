@@ -1,4 +1,4 @@
-[SponsorShip](#SponsorShip) | [Report](https://arxiv.org/abs/2308.09597) | [Personality](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) | [SponsorShip](#SponsorShip) | [Contributors](#Contributors) | [142 Characters](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/notebook/current_roles.md)
+[SponsorShip](#SponsorShip) | [Report](https://arxiv.org/abs/2308.09597) | [Personality_Traits](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) | [SponsorShip](#SponsorShip) | [Contributors](#Contributors) | [142 Characters](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/notebook/current_roles.md)
 
 <h1 id="BigTitle">
     Chat-Haruhi-Suzumiya
@@ -12,9 +12,9 @@
 
 <!-- (https://huggingface.co/spaces/silk-road/ChatHaruhi) -->
 
-The demos based on [OpenAI](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI) and [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) and [讯飞星火](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo)  are already online. 
+The demos based on [OpenAI](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI) and [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) and [讯飞星火](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo)  are already online. [Baichuan-53B](https://huggingface.co/spaces/silk-road/ChatHaruhi-BaichuanAPI)
 
-Added 95 new English character roles adapted from RoleLLM. The total number of roles reaches 142. Hugging Face demo Here [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi-RoleLLM-English).
+Added 95 new English character roles adapted from RoleLLM. The total number of roles reaches 142. Hugging Face demo Here [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi-RoleLLM-English). (API quota exceeded before Oct 30)
 
 <h4 align="center">
     <p>

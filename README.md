@@ -1,4 +1,4 @@
-中文 | [English](./README_EN.md) | [日本語](./README_JA.md) | [赞助](#赞助) | [报告](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/arxiv_paper.md) | [英文报告](https://arxiv.org/abs/2308.09597) | [从小说抽取角色](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/novel_collecting) | [特定人格的生成](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) | [142个角色一览](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/notebook/current_roles.md)
+中文 | [English](./README_EN.md) | [日本語](./README_JA.md) | [赞助](#赞助) | [报告](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/arxiv_paper.md) | [英文报告](https://arxiv.org/abs/2308.09597) | [从小说抽取角色](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/novel_collecting) | [人格特质研究](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) | [142个角色一览](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/notebook/current_roles.md)
 
 # Chat凉宫春日 Chat-Haruhi-Suzumiya
 ## Reviving Anime Character in Reality via Large Language Model
@@ -9,9 +9,9 @@
 
 <!-- (https://huggingface.co/spaces/silk-road/ChatHaruhi) -->
 
-目前基于[OpenAI](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI), [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro), [讯飞星火](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) 的demo已经上线。
+目前基于[OpenAI](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI), [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro), [讯飞星火](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) 的demo已经上线。新增[百川53B](https://huggingface.co/spaces/silk-road/ChatHaruhi-BaichuanAPI)
 
-[新增95个英文角色 Adapt From RoleLLM]((https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/notebook/current_roles.md))。角色数量达到142个。Hugging Face Demo Here [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi-RoleLLM-English) 。
+[新增95个英文角色 Adapt From RoleLLM]((https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/notebook/current_roles.md))。角色数量达到142个。Hugging Face Demo Here [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi-RoleLLM-English) 。（10月30日前 API已用尽）
 
 **Chat凉宫春日**是模仿凉宫春日等一系列动漫人物，使用近似语气、个性和剧情聊天的语言模型，
 
