@@ -1,4 +1,4 @@
- English|[中文](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/personality-data/README.md) |[💡Paper](https://arxiv.org/abs/2310.17976)
+ English| [中文](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/personality-data/README.md) |[💡Paper](https://arxiv.org/abs/2310.17976)
 
 
 # Does Role-Playing Chatbots Capture the Character Personalities? Assessing Personality Traits for Role-Playing Chatbots
@@ -33,3 +33,19 @@ We will organize the code and publish it soon. We will prepare some quick code t
 | raw_data/psy_test_gpt.txt | Responses of each chatbot to each question |
 | raw_data/psy_eval_gpt_with_id.txt | Personality test results (text) for each bot |
 | raw_data/psy_score_openai.txt | Converted scores from text |
+
+
+### Citation
+
+Please cite the repo if you use the data or code in this repo.
+
+```
+@misc{wang2023does,
+      title={Does Role-Playing Chatbots Capture the Character Personalities? Assessing Personality Traits for Role-Playing Chatbots}, 
+      author={Xintao Wang and Quan Tu and Yaying Fei and Ziang Leng and Cheng Li},
+      year={2023},
+      eprint={2310.17976},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```

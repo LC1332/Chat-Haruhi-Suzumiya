@@ -612,3 +612,18 @@ Raj: 「哦,天啊,我最近真的感到被不公平对待了!你知道吗,我�
 双儿:「你最近有感到特别烦恼或焦虑的经历吗?愿意跟我聊聊那种感受吗?」
 韦小宝:「烦恼？焦虑？哈哈哈，我这个人从来不会为这些小事烦恼。生活就像一场游戏，我总是能够灵活应对，把困境变成机会。你知道吗，我是个聪明的人，我总是能够找到解决问题的办法。所以，不管遇到什么困难，我都能笑着面对，因为我相信，困难只是暂时的，胜利才是永恒的。」
 ```
+
+### Citation
+
+Please cite the repo if you use the data or code in this repo.
+
+```
+@misc{wang2023does,
+      title={Does Role-Playing Chatbots Capture the Character Personalities? Assessing Personality Traits for Role-Playing Chatbots}, 
+      author={Xintao Wang and Quan Tu and Yaying Fei and Ziang Leng and Cheng Li},
+      year={2023},
+      eprint={2310.17976},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
