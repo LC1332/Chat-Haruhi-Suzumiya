@@ -1,4 +1,7 @@
-# [Does Role-Playing Chatbots Capture the Character Personalities? Assessing Personality Traits for Role-Playing Chatbots](https://arxiv.org/abs/2310.17976)
+ English|[中文](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/personality-data/README.md) |[💡Paper](https://arxiv.org/abs/2310.17976)
+
+
+# Does Role-Playing Chatbots Capture the Character Personalities? Assessing Personality Traits for Role-Playing Chatbots
 
 This page contains two parts of content, personality testing for chatbots and generating text for specific openness. The former can test the personality traits of a role-playing chatbot.
 
