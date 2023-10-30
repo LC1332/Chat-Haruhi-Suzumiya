@@ -9,17 +9,42 @@
 
 我们将在最近整理代码并发布
 
+我们将整理一份quick代码，支持单个ChatHaruhi bot的人格特质测试
+
 ## TODO
 
-- [ ] report发布在arxiv
-- [ ] 将所有实验数据、未整理的代码放到github
+- [x] report发布在arxiv
+- [x] 将所有实验数据、未整理的代码放到github
 - [ ] 发布一个可以问题列表中，随机选取一些问题对某个chatbot进行快速人格测试的sample code
+
+
+## 未整理的代码
+
+| 代码 | 描述 |
+| --- | --- |
+| raw_code/心理问答设计.ipynb | 设计第一人称问答的心理问题 |
+| raw_code/心理问答审核.ipynb | 判断每个问题是否可以用来进行人格测试 |
+| raw_code/根据问题，获取chatbot的response回复.ipynb | 获得每个chatbot对于每个问题的response |
+| raw_code/分析角色每个dim的得分.ipynb | 获取每个chatbot各个人格维度的评价(text) |
+| raw_code/将评价转化为分数.ipynb | 将text的评价转化为分数 |
+
+
+## 未整理的数据
+
+| 数据 | 描述 |
+| --- | --- |
+| questions_verified.jsonl | 问题列表 |
+| raw_data/psy_test_gpt.txt | 每个chatbot对于每个问题的回复 |
+| raw_data/psy_eval_gpt_with_id.txt | 每个bot的心理测试结果(text) |
+| raw_data/psy_score_openai.txt | text转化的分数 |
 
 
 ---
 
 # 对Chat凉宫春日的大五测试研究
 # A Big-Five Study on ChatHaruhi: Assessing Personality Traits for Role-Playing Chatbots
+
+英文版比中文版更新一些
 
 <details>
   <summary> 本项目由王鑫涛, 涂权, Aria Fei, 冷子昂, 李鲁鲁等开发。 </summary>
