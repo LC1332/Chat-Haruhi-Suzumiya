@@ -1,4 +1,4 @@
-[SponsorShip](#SponsorShip) | [Report](https://arxiv.org/abs/2308.09597) | [Personality_Traits](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) | [SponsorShip](#SponsorShip) | [Contributors](#Contributors) | [142 Characters](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/notebook/current_roles.md)
+[SponsorShip](#SponsorShip) | [Report](https://arxiv.org/abs/2308.09597) | [Personality_Traits](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/personality-data/README_EN.md) | [SponsorShip](#SponsorShip) | [Contributors](#Contributors) | [142 Characters](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/notebook/current_roles.md)
 
 <h1 id="BigTitle">
     Chat-Haruhi-Suzumiya
