@@ -1,4 +1,4 @@
-# A Big-Five Personality Study on ChatHaruhi: Assessing Personality Traits for Role-Playing Chatbots
+# [Does Role-Playing Chatbots Capture the Character Personalities? Assessing Personality Traits for Role-Playing Chatbots](https://arxiv.org/abs/2310.17976)
 
 This page contains two parts of content, personality testing for chatbots and generating text for specific openness. The former can test the personality traits of a role-playing chatbot.
 

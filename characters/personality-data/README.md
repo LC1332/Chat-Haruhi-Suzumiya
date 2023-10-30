@@ -1,7 +1,6 @@
-中文 | [English](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/personality-data/README.md)
+中文 | [English](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/personality-data/README.md) |[💡Paper](https://arxiv.org/abs/2310.17976)
 
-# 对Chat凉宫春日的大五测试研究
-# A Big-Five Study on ChatHaruhi: Assessing Personality Traits for Role-Playing Chatbots
+# Does Role-Playing Chatbots Capture the Character Personalities? Assessing Personality Traits for Role-Playing Chatbots
 
 这个页面包含两部分的内容，对Chatbot进行人格特质测试和对特定Openness的文本进行生成。前者可以对一个Role-Playing的Chatbot进行人格测试。
 
@@ -41,8 +40,7 @@
 
 ---
 
-# 对Chat凉宫春日的大五测试研究
-# A Big-Five Study on ChatHaruhi: Assessing Personality Traits for Role-Playing Chatbots
+# Does Role-Playing Chatbots Capture the Character Personalities? Assessing Personality Traits for Role-Playing Chatbots
 
 英文版比中文版更新一些
 
