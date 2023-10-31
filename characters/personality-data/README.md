@@ -32,9 +32,9 @@ MBTI相关
 | 代码 | 描述 |
 | --- | --- |
 | raw_code/get_mbti_results.py | 获取chatbot对MBTI问卷的回答 |
-| raw_code/eval_mbti_closed.py | 基于16 Personality进行MBTI测试 |
-| raw_code/eval_mbti_open.py | 基于LLM Evaluator进行MBTI测试，不分组 |
-| raw_code/eval_mbti_multigroup.py | 基于LLM Evaluator进行MBTI测试，不分组 |
+| raw_code/eval_mbti_closed.py | 基于16 Personality对MBTI问卷结果进行评估 |
+| raw_code/eval_mbti_open.py | 基于LLM Evaluator对MBTI问卷结果进行评估，不分组 |
+| raw_code/eval_mbti_multigroup.py | 基于LLM Evaluator对MBTI问卷结果进行评估，分组 |
 
 ## 未整理的数据
 
