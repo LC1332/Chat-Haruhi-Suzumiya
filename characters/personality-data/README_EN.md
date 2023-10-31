@@ -122,6 +122,24 @@ By investigating the consistency between BFI personality scores assessed by huma
 Then, we collect MBTI personality labels from fan websites for automatic evaluation of personality congruence between role-playing agents and human perception.   
 The proposed framework is depicted in the following figure. 
 
+<p align="center">
+    <img src="figures/BigfiveEvalPipeline.png">
+</p>
+
+In summary, the contributions of this paper are mainly three-fold:
+
++ We introduce an interview-style framework for personality assessment. 
+  It is designed for role-playing chatbots,  
+  but potentially applicable to human participants as well.
+  This approach uses LLMs to automatically rate participants' personality traits, allowing open-ended and information-rich answers from participants. 
+  Through its consistency with human psychologist assessment, we show the effectiveness of our automated assessment framework.
+
++ To the best of our knowledge, we are the first to study the personality traits in role-playing chatbots.  
+  We conduct personality assessments of both BFI and MBTI over 32 role-playing chatbots from ChatHaruhi.
+  Experimental results demonstrate that these role-playing agents exhibit diverse personalities consistent with the perception of human audience, suggesting the efficacy of current LLMs and frameworks for role-playing applications.
+
++ We introduce Haruhi-MBTI, a dataset of MBTI personality labels for 32 characters in ChatHaruhi from fan websites. Haruhi-MBTI, together with ChatHaruhi dataset, serves as the first practical benchmark to evaluate performance of role-playing conversational agents. Hence, we believe Haruhi-MBTI will facilitate future research in this direction.
+
 
 ### Citation
 
