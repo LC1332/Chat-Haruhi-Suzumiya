@@ -1,8 +1,7 @@
 中文 | [English](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/personality-data/README_EN.md) |[💡Paper](https://arxiv.org/abs/2310.17976)
 
-# Does Role-Playing Chatbots Capture the Character Personalities? Assessing Personality Traits for Role-Playing Chatbots
+# 角色扮演聊天机器人能准确捕捉角色的性格特征吗？角色扮演聊天机器人的性格特质研究。<br>Does Role-Playing Chatbots Capture the Character Personalities? Assessing Personality Traits for Role-Playing Chatbots
 
-这个页面包含两部分的内容，对Chatbot进行人格特质测试和对特定Openness的文本进行生成。前者可以对一个Role-Playing的Chatbot进行人格测试。
 
 ## Quick Start
 
@@ -19,6 +18,8 @@
 
 ## 未整理的代码
 
+大五人格相关
+
 | 代码 | 描述 |
 | --- | --- |
 | raw_code/心理问答设计.ipynb | 设计第一人称问答的心理问题 |
@@ -27,8 +28,17 @@
 | raw_code/分析角色每个dim的得分.ipynb | 获取每个chatbot各个人格维度的评价(text) |
 | raw_code/将评价转化为分数.ipynb | 将text的评价转化为分数 |
 
+MBTI相关
+| 代码 | 描述 |
+| --- | --- |
+| raw_code/get_mbti_results.py | 获取chatbot对MBTI问卷的回答 |
+| raw_code/eval_mbti_closed.py | 基于16 Personality进行MBTI测试 |
+| raw_code/eval_mbti_open.py | 基于LLM Evaluator进行MBTI测试，不分组 |
+| raw_code/eval_mbti_multigroup.py | 基于LLM Evaluator进行MBTI测试，不分组 |
 
 ## 未整理的数据
+
+大五人格相关
 
 | 数据 | 描述 |
 | --- | --- |
@@ -36,6 +46,16 @@
 | raw_data/psy_test_gpt.txt | 每个chatbot对于每个问题的回复 |
 | raw_data/psy_eval_gpt_with_id.txt | 每个bot的心理测试结果(text) |
 | raw_data/psy_score_openai.txt | text转化的分数 |
+
+MBTI相关
+| 数据 | 描述 |
+| --- | --- |
+| mbti_questions.jsonl | 问题列表 |
+| raw_data/mbti_labels.jsonl | 每个bot的mbti人格标签 |
+| raw_data/mbti_results.jsonl | 每个bot对mbti问卷的回答，包含open response和close options |
+| raw_data/mbti_results_closed.jsonl | 基于16 Personality的MBTI测试结果 |
+| raw_data/mbti_results_open.jsonl | 基于LLM Evaluator(GPT-4)的MBTI测试结果，不分组 |
+| raw_data/mbti_results_open_multigroup_split=True_gpt-4.jsonl | 基于LLM Evaluator的MBTI测试结果，分组 |
 
 
 ---
