@@ -14,6 +14,12 @@
     pip install transformers openai tiktoken langchain chromadb zhipuai chatharuhi datasets jsonlines
     ```
 
+进入code文件夹
+
+```bash
+cd code
+```
+
 ### 人格测试
 
 对某个ChatHaruhi Bot进行人格测试，可以使用如下命令：

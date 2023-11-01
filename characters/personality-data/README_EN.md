@@ -12,6 +12,10 @@ pip install torch torchvision torchaudio
 pip install transformers openai tiktoken langchain chromadb zhipuai chatharuhi datasets jsonlines
 ```
 
+Enter the code folder.
+```bash
+cd code
+```
 ### Personality Assessment
 
 To assess the personality of a specific ChatHaruhi Bot, use the following commands:
