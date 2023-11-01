@@ -14,11 +14,13 @@
     pip install transformers openai tiktoken langchain chromadb zhipuai chatharuhi datasets jsonlines
     ```
 
-进入code文件夹
+进入code文件夹。
 
 ```bash
 cd code
 ```
+
+在config.json中设置你的openai apikey。
 
 ### 人格测试
 

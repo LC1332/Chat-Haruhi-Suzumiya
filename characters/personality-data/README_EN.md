@@ -16,6 +16,9 @@ Enter the code folder.
 ```bash
 cd code
 ```
+
+Set your openai apikey in config.json .
+
 ### Personality Assessment
 
 To assess the personality of a specific ChatHaruhi Bot, use the following commands:
