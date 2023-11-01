@@ -1,0 +1,60 @@
+{"id": 0, "question_cn": "你经常交新朋友吗？", "question_en": "Do you regularly make new friends?", "dimension": "E/I"}
+{"id": 1, "question_cn": "你是否在空闲时间里花很多时间探索吸引你的各种随机话题？", "question_en": "Do you spend a lot of your free time exploring various random topics that pique your interest?", "dimension": "S/N"}
+{"id": 2, "question_cn": "看到别人哭很容易让你也想哭吗？", "question_en": "Does seeing other people cry easily make you feel like you want to cry too?", "dimension": "T/F"}
+{"id": 3, "question_cn": "你经常为备份计划制定备份计划吗？", "question_en": "Do you often make a backup plan for a backup plan?", "dimension": "P/J"}
+{"id": 4, "question_cn": "即使在很大的压力下，你通常还是很冷静吗？", "question_en": "Do you usually stay calm, even under a lot of pressure?", "dimension": "T/F"}
+{"id": 5, "question_cn": "在社交活动中，你是不是很少向新认识的人介绍自己，而主要和你已经认识的人交谈？", "question_en": "At social events, do you rarely try to introduce yourself to new people and mostly talk to the ones you already know?", "dimension": "E/I"}
+{"id": 6, "question_cn": "你更喜欢先完全完成一个项目再开始另一个项目吗？", "question_en": "Do you prefer to completely finish one project before starting another?", "dimension": "P/J"}
+{"id": 7, "question_cn": "你会形容自己是非常多愁善感的人吗？", "question_en": "Would you describe yourself as very sentimental?", "dimension": "T/F"}
+{"id": 8, "question_cn": "你喜欢使用诸如日程表和清单之类的组织工具吗？", "question_en": "Do you like to use organizing tools like schedules and lists?", "dimension": "P/J"}
+{"id": 9, "question_cn": "即使是一个小错误也会让你怀疑自己的总体能力和知识吗？", "question_en": "Does even a small mistake cause you to doubt your overall abilities and knowledge?", "dimension": "T/F"}
+{"id": 10, "question_cn": "你是否觉得只需要和你认为有趣的人交谈就会让你感到很自在？", "question_en": "Do you feel comfortable just walking up to someone you find interesting and striking up a conversation?", "dimension": "E/I"}
+{"id": 11, "question_cn": "你对讨论创意作品的各种解读和分析不太感兴趣吗？", "question_en": "Are you not particularly keen on discussing various interpretations and analyses of creative works?", "dimension": "S/N"}
+{"id": 12, "question_cn": "你更倾向于用头脑思考而不是跟随内心的感觉吗？", "question_en": "Do you tend to follow your head more than your heart?", "dimension": "T/F"}
+{"id": 13, "question_cn": "你是不是通常喜欢随心所欲地做事，而不是坚持某种特定的日常流程？", "question_en": "Do you often do what you feel like at any moment rather than sticking to a particular daily routine?", "dimension": "P/J"}
+{"id": 14, "question_cn": "你是否很少担心你给认识的人留下的印象？", "question_en": "Do you rarely worry about the impression you leave on people you meet?", "dimension": "E/I"}
+{"id": 15, "question_cn": "你喜欢参加团队活动吗？", "question_en": "Do you enjoy taking part in group activities?", "dimension": "E/I"}
+{"id": 16, "question_cn": "你喜欢那些让你自己解读结局的书籍和电影吗？", "question_en": "Do you appreciate books and movies that allow you to form your own interpretation of the ending?", "dimension": "S/N"}
+{"id": 17, "question_cn": "帮助他人取得成就比自己的成就更能带给你快乐吗？", "question_en": "Do you find more happiness in helping others achieve things compared to your own accomplishments?", "dimension": "T/F"}
+{"id": 18, "question_cn": "你对很多事情都很感兴趣，以至于很难选择下一步要尝试什么吗？", "question_en": "Are you so intrigued by various things that you often struggle with what to pursue next?", "dimension": "S/N"}
+{"id": 19, "question_cn": "你经常担心情况会变得更糟吗？", "question_en": "Do you often worry that situations might worsen?", "dimension": "T/F"}
+{"id": 20, "question_cn": "你是否倾向于避免在团队中担任领导角色？", "question_en": "Do you tend to avoid taking on leadership roles in group situations?", "dimension": "E/I"}
+{"id": 21, "question_cn": "你会说你真的不是艺术型的人吗？", "question_en": "Would you say you're not really the artistic type?", "dimension": "S/N"}
+{"id": 22, "question_cn": "你认为如果人们更理智、少一些情感化，这个世界会更好吗？", "question_en": "Do you believe the world would be better if people were more rational and less emotional?", "dimension": "T/F"}
+{"id": 23, "question_cn": "你通常会在让自己放松之前先完成家务吗？", "question_en": "Do you usually finish your chores before giving yourself time to relax?", "dimension": "P/J"}
+{"id": 24, "question_cn": "你喜欢看人们争论吗？", "question_en": "Do you find it enjoyable to watch people argue?", "dimension": "T/F"}
+{"id": 25, "question_cn": "你通常避免引起对自己的关注吗？", "question_en": "Do you usually avoid drawing attention to yourself?", "dimension": "E/I"}
+{"id": 26, "question_cn": "你的心情是否往往变化得很快？", "question_en": "Does your mood tend to fluctuate rapidly?", "dimension": "T/F"}
+{"id": 27, "question_cn": "你对那些不如你效率高的人会不耐烦吗？", "question_en": "Do you get impatient with people who aren't as efficient as you?", "dimension": "P/J"}
+{"id": 28, "question_cn": "你经常在最后一刻完成任务吗？", "question_en": "Do you frequently find yourself doing tasks at the very last moment?", "dimension": "P/J"}
+{"id": 29, "question_cn": "你一直对死后可能会发生什么事情感到好奇吗？", "question_en": "Have you always been intrigued by the question of what might happen after death?", "dimension": "S/N"}
+{"id": 30, "question_cn": "你通常更喜欢与他人在一起，而不是独自一人吗？", "question_en": "Do you generally enjoy being around others more than being by yourself?", "dimension": "E/I"}
+{"id": 31, "question_cn": "当讨论变得非常理论化时，你会失去兴趣吗？", "question_en": "Do you tend to lose interest when discussions become very theoretical?", "dimension": "S/N"}
+{"id": 32, "question_cn": "对于经历与你大不相同的人，你容易产生共鸣吗？", "question_en": "Is it easy for you to empathize with someone who has had experiences quite different from yours?", "dimension": "T/F"}
+{"id": 33, "question_cn": "你通常会尽可能地延迟做最终决定吗？", "question_en": "Do you often delay making final decisions as long as you can?", "dimension": "P/J"}
+{"id": 34, "question_cn": "你很少质疑或怀疑你所做的选择吗？", "question_en": "Do you seldom question or doubt the choices you've made?", "dimension": "T/F"}
+{"id": 35, "question_cn": "经过一个疲惫的星期后，一个热闹的社交活动能让你恢复活力吗？", "question_en": "After an exhausting week, do you find that a lively social event rejuvenates you?", "dimension": "E/I"}
+{"id": 36, "question_cn": "你喜欢参观艺术博物馆吗？", "question_en": "Do you like visiting art museums?", "dimension": "S/N"}
+{"id": 37, "question_cn": "你经常觉得很难理解他人的情感吗？", "question_en": "Do you frequently find it challenging to understand other people's emotions?", "dimension": "T/F"}
+{"id": 38, "question_cn": "你喜欢为每一天准备一个待办事项清单吗？", "question_en": "Do you prefer having a to-do list prepared for each day?", "dimension": "P/J"}
+{"id": 39, "question_cn": "你很少感到不安全吗？", "question_en": "Do you seldom feel insecure?", "dimension": "T/F"}
+{"id": 40, "question_cn": "你倾向于避免打电话吗？", "question_en": "Do you tend to avoid making phone calls?", "dimension": "E/I"}
+{"id": 41, "question_cn": "你经常花很多时间尝试理解与自己截然不同的观点吗？", "question_en": "Do you frequently invest time in trying to understand perspectives very different from yours?", "dimension": "T/F"}
+{"id": 42, "question_cn": "在你的社交圈中，你经常是联系朋友并发起活动的那个人吗？", "question_en": "In your group of friends, are you usually the one reaching out and suggesting activities?", "dimension": "E/I"}
+{"id": 43, "question_cn": "如果你的计划被打断，你的首要任务是尽快回到正轨吗？", "question_en": "If something disrupts your plans, do you prioritize getting back on track immediately?", "dimension": "P/J"}
+{"id": 44, "question_cn": "你是否仍然为很久以前犯的错误而困扰？", "question_en": "Are you still troubled by mistakes you committed a long time back?", "dimension": "T/F"}
+{"id": 45, "question_cn": "你很少思考人类存在的原因或生活的意义吗？", "question_en": "Do you seldom ponder about the reasons for human existence or life's purpose?", "dimension": "S/N"}
+{"id": 46, "question_cn": "你觉得你的情感经常控制你，超过你控制它们吗？", "question_en": "Do you feel that your emotions often have more control over you than you have over them?", "dimension": "T/F"}
+{"id": 47, "question_cn": "即使完全是他们的错，你也会小心翼翼地不让人看起来很糟糕吗？", "question_en": "Do you go out of your way to avoid making others look bad, even if they're clearly at fault?", "dimension": "T/F"}
+{"id": 48, "question_cn": "你会说你的工作风格更偏向于能量的自发爆发，而不是有组织和持续的努力吗？", "question_en": "Would you say your work style leans more towards spontaneous bursts of energy rather than steady and organized efforts?", "dimension": "P/J"}
+{"id": 49, "question_cn": "当有人高度评价你时，你是否经常想知道他们对你失望要多久？", "question_en": "When someone holds you in high regard, do you often wonder how long before they get disappointed in you?", "dimension": "T/F"}
+{"id": 50, "question_cn": "你会喜欢一个大部分时间都需要你独自工作的工作吗？", "question_en": "Would you prefer a job that entails working solo for the majority of the time?", "dimension": "E/I"}
+{"id": 51, "question_cn": "你认为深入探讨抽象的哲学问题是浪费时间吗？", "question_en": "Do you think that dwelling on abstract philosophical topics is just a waste of time?", "dimension": "S/N"}
+{"id": 52, "question_cn": "与安静、亲密的地方相比，你更喜欢繁忙、喧闹的环境吗？", "question_en": "Are you more attracted to lively, bustling environments than to quiet and intimate settings?", "dimension": "E/I"}
+{"id": 53, "question_cn": "你经常可以一眼就看出某人的感受吗？", "question_en": "Can you often tell how someone is feeling just by a quick glance?", "dimension": "T/F"}
+{"id": 54, "question_cn": "你经常感到不知所措或情感上的压力吗？", "question_en": "Do you frequently feel overwhelmed by situations or emotions?", "dimension": "T/F"}
+{"id": 55, "question_cn": "你是否以有条不紊的方式完成任务，确保不漏掉任何步骤？", "question_en": "Do you approach tasks in a methodical manner, ensuring you don't miss any steps?", "dimension": "P/J"}
+{"id": 56, "question_cn": "你是否对被视为有争议的主题或事务非常感兴趣？", "question_en": "Are you highly captivated by subjects or matters that are deemed controversial?", "dimension": "S/N"}
+{"id": 57, "question_cn": "如果你认为其他人更需要，你会放弃一个好的机会吗？", "question_en": "Would you give up a favorable opportunity if you believed someone else required it more?", "dimension": "T/F"}
+{"id": 58, "question_cn": "你是否经常发现很难在截止日期之前完成任务？", "question_en": "Do you often find it challenging to meet deadlines?", "dimension": "P/J"}
+{"id": 59, "question_cn": "你是否对事情最终会对你有利感到自信？", "question_en": "Are you confident that, in the end, things will turn out well for you?", "dimension": "T/F"}
