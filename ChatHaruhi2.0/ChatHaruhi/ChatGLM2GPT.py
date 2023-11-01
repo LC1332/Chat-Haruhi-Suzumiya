@@ -55,7 +55,7 @@ class ChatGLM2GPT(BaseLLM):
         self.messages = ""
 
     def initialize_message(self):
-        self.message = ""
+        self.messages = ""
 
     def ai_message(self, payload):
         self.messages = self.messages + "\n " + payload 
