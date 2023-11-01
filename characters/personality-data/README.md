@@ -5,15 +5,78 @@
 
 ## Quick Start
 
-我们将在最近整理代码并发布
+### 准备
 
-我们将整理一份quick代码，支持单个ChatHaruhi bot的人格特质测试
+确保你已经正确安装了`ChatHaruhi2`及必要的相关依赖。如尚未安装，你可以这样进行安装：
+
+    ```bash
+    pip install torch torchvision torchaudio
+    pip install transformers openai tiktoken langchain chromadb zhipuai chatharuhi datasets jsonlines
+    ```
+
+### 人格测试
+
+对某个ChatHaruhi Bot进行人格测试，可以使用如下命令：
+
+最快测试
+
+```bash
+python assess_personality.py --questionnaire_type mbti --character hutao --eval_setting sample
+```
+
+效果和效率折中
+
+```bash
+python assess_personality.py --questionnaire_type mbti --character hutao --eval_setting collective
+```
+
+最佳效果
+
+```bash
+python assess_personality.py --questionnaire_type mbti --character hutao --eval_setting batch --evaluator gpt-4 
+```
+
+采用`sample`设置时，系统会从问卷中采样20个问题进行测试，整个流程的时间大约为1-2分钟。完整的MBTI/大五测试流程需要大约8-15分钟，具体时间取决于是否采用分组评估。
+
+### 参数说明
+
+#### `--questionnaire_type`
+- 描述：人格测试所使用的问卷类型。
+- 选项: `bigfive`, `mbti`
+- 默认: `mbti`
+
+#### `--character`
+- 描述：角色名称，可以使用NAME_DICT中包含的中文或英文名。
+- 默认: `haruhi`
+
+#### `--agent_llm`
+- 描述：ChatHaruhi的底座LLM，这里`openai`等于`gpt-3.5-turbo`。
+- 选项: `gpt-3.5-turbo`, `openai`, `GLMPro`, `ChatGLM2GPT`
+- 默认: `gpt-3.5-turbo`
+
+#### `--evaluator`
+- 描述：使用什么方式对问卷结果进行人格分析，可以使用gpt等LLM，也可以使用16Personality的API（仅限MBTI）。
+- 选项: `api`, `gpt-3.5-turbo`, `gpt-4`
+- 默认: `gpt-3.5-turbo`
+
+#### `--eval_setting`
+- 描述：评估设置，batch会对问答对分组并多次用LLM打分，collective会一次基于某一维度下的所有问答对作判断，sample一开始就只采样问卷中的20条进行人格测试。
+- 选项: `batch`, `collective`, `sample`
+- 默认: `batch`
+
+#### `--language`
+- 描述：语言设置，目前仅支持选择中文（cn）。
+- 选项: `cn`, `en`
+- 默认: `cn` 
+
+
 
 ## TODO
 
 - [x] report发布在arxiv
 - [x] 将所有实验数据、未整理的代码放到github
-- [ ] 发布一个可以问题列表中，随机选取一些问题对某个chatbot进行快速人格测试的sample code
+- [x] 发布一个可以问题列表中，随机选取一些问题对某个chatbot进行快速人格测试的sample code
+- [x] 发布一个可以对某个chatbot进行人格测试的code，可以cover文章中的主要实验
 
 
 ## 未整理的代码
@@ -231,7 +294,7 @@ Openness的6个维度的详细描述....
 4. 可以正确测试出被试在Aesthetics方面的程度。如果被试回答"美对我来说意味着...."并描述出了自己的审美风格，那就意味着被试在Aesthetics方面得分较高。
 ```
 
-由此我们就可以确定，1、3、4问题是合理的基准测试，而2是一个过度的修改。我们对完整的120条问题进行了测试，最终留下了109条问题通过了验证。事实上针对每个chatbot的背景（如魔法世界），也可以进一步设计特定背景下合适问题来进行验证。不过在本工作中，我们暂时在每个chatbot上使用相同的109个问题的列表。
+由此我们就可以确定，1、3、4问题是合理的基准测试，而2是一个过度的修改。我们对完整的120条问题进行了测试，最终留下了106条问题通过了验证。事实上针对每个chatbot的背景（如魔法世界），也可以进一步设计特定背景下合适问题来进行验证。不过在本工作中，我们暂时在每个chatbot上使用相同的106个问题的列表。
 
 
 # Chatbot构造和自动测试
@@ -242,7 +305,7 @@ Openness的6个维度的详细描述....
 
 对每个目标角色，我们以目标角色所熟知的某个虚拟角色，作为助试，并从我们的问卷中提出问题。
 
-在进行大五人格测试的时候，为了防止问题的答案之间出现相互的干扰。在每个问题问询之前，我们都会清空chatbot的历史聊天记录。来获得问题的答案。对于一个语言模型。我们总共进行了$32\times109$次问答。
+在进行大五人格测试的时候，为了防止问题的答案之间出现相互的干扰。在每个问题问询之前，我们都会清空chatbot的历史聊天记录。来获得问题的答案。对于一个语言模型。我们总共进行了$32\times106$次问答。
 
 ### 大五人格访谈评估
 
@@ -504,7 +567,7 @@ fig:MBTI_per_bot 每个Chatbot的MBTI测试结果，与www.personality-database.
 
 ## Robustness of prompts
 
-在Interview Assessment等章节，我们会经常遇到需要把数个segment交给语言模型评估的情况。这时，这些segment的顺序也会一定程度影响到语言模型的判断。头部和尾部的segment会对结果的影响更大一些。所以在实际实验中，大五人格测试时，我们是每3-4组问答作为一组，要求GPT对被试的问答进行某个维度的人格判断。另外，问题列表对于chatbot的测试也会有一定的影响，在这个工作中，我们初步尝试增广了一部分心理问答的基准测试问题，从60个增广到了109个。事实上也可以进一步去构造更多样化，或者更贴近chatbot本身所处设定的心理问答。
+在Interview Assessment等章节，我们会经常遇到需要把数个segment交给语言模型评估的情况。这时，这些segment的顺序也会一定程度影响到语言模型的判断。头部和尾部的segment会对结果的影响更大一些。所以在实际实验中，大五人格测试时，我们是每3-4组问答作为一组，要求GPT对被试的问答进行某个维度的人格判断。另外，问题列表对于chatbot的测试也会有一定的影响，在这个工作中，我们初步尝试增广了一部分心理问答的基准测试问题，从60个增广到了106个。事实上也可以进一步去构造更多样化，或者更贴近chatbot本身所处设定的心理问答。
 
 
 # Appendix: 各个维度典型高分和低分Case Study

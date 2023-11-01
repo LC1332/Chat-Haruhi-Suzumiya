@@ -3,15 +3,76 @@
 
 # Does Role-Playing Chatbots Capture the Character Personalities? Assessing Personality Traits for Role-Playing Chatbots
 
-## Quick Start
+### Setup
 
-We will organize the code and publish it soon. We will prepare some quick code to support personality testing for a single ChatHaruhi bot.
+Ensure you have correctly installed `ChatHaruhi2` and all necessary dependencies. If not yet installed, you can do so with the following commands:
+
+```bash
+pip install torch torchvision torchaudio
+pip install transformers openai tiktoken langchain chromadb zhipuai chatharuhi datasets jsonlines
+```
+
+### Personality Assessment
+
+To assess the personality of a specific ChatHaruhi Bot, use the following commands:
+
+Quick Test:
+
+```bash
+python assess_personality.py --questionnaire_type mbti --character hutao --eval_setting sample
+```
+
+Balanced Effectiveness and Efficiency:
+
+```bash
+python assess_personality.py --questionnaire_type mbti --character hutao --eval_setting collective
+```
+
+Optimal Effectiveness:
+
+```bash
+python assess_personality.py --questionnaire_type mbti --character hutao --eval_setting batch --evaluator gpt-4 
+```
+
+Using the `sample` setting, the system will sample 20 questions from the questionnaire for testing. This process takes approximately 1-2 minutes. A full MBTI/Big Five test will take around 8-15 minutes, depending on whether batch evaluation is used.
+
+### Parameter Explanation
+
+#### `--questionnaire_type`
+- Description: The type of questionnaire used for the personality test.
+- Options: `bigfive`, `mbti`
+- Default: `mbti`
+
+#### `--character`
+- Description: Character name, which can be in Chinese or English as listed in NAME_DICT.
+- Default: `haruhi`
+
+#### `--agent_llm`
+- Description: The underlying LLM of ChatHaruhi. Here, `openai` is equivalent to `gpt-3.5-turbo`.
+- Options: `gpt-3.5-turbo`, `openai`, `GLMPro`, `ChatGLM2GPT`
+- Default: `gpt-3.5-turbo`
+
+#### `--evaluator`
+- Description: The method used to analyze questionnaire results for personality assessment. This can be an LLM like GPT or the 16Personality API (MBTI only).
+- Options: `api`, `gpt-3.5-turbo`, `gpt-4`
+- Default: `gpt-3.5-turbo`
+
+#### `--eval_setting`
+- Description: Evaluation setting. `batch` groups question-answer pairs and scores them multiple times using the LLM, `collective` evaluates based on all question-answer pairs for a specific dimension at once, `sample` starts by only sampling 20 questions from the questionnaire for the personality test.
+- Options: `batch`, `collective`, `sample`
+- Default: `batch`
+
+#### `--language`
+- Description: Language setting, currently only supports Chinese (cn).
+- Options: `cn`, `en`
+- Default: `cn`
 
 ## TODO
 
 - [x] Publish report on arxiv
 - [x] Put all experimental data and unorganized code on github 
-- [ ] Publish sample code that can randomly select some questions from the question list to quickly test the personality of a chatbot
+- [x] Publish sample code that can randomly select some questions from the question list to quickly test the personality of a chatbot
+- [x] Release a code that can conduct personality tests on a specific chatbot, covering the main experiments discussed in the article.
 
 ## Unorganized Code
 
