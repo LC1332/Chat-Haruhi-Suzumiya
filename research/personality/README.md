@@ -1,4 +1,4 @@
-中文 | [English](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/personality-data/README_EN.md) |[💡Paper](https://arxiv.org/abs/2310.17976)
+中文 | [English](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/research/personality/README_EN.md) |[💡Paper](https://arxiv.org/abs/2310.17976)
 
 # 角色扮演聊天机器人能准确捕捉角色的性格特征吗？角色扮演聊天机器人的性格特质研究。<br>Does Role-Playing Chatbots Capture the Character Personalities? Assessing Personality Traits for Role-Playing Chatbots
 
