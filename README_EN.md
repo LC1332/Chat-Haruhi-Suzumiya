@@ -1,4 +1,4 @@
-[SponsorShip](#SponsorShip) | [Report](https://arxiv.org/abs/2308.09597) | [Personality_Traits](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/personality-data/README_EN.md) | [SponsorShip](#SponsorShip) | [Contributors](#Contributors) | [142 Characters](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/notebook/current_roles.md)
+[SponsorShip](#SponsorShip) | [Report](https://arxiv.org/abs/2308.09597) | [Personality_Traits](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/research/personality/README_EN.md) | [SponsorShip](#SponsorShip) | [Contributors](#Contributors) | [142 Characters](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/notebook/current_roles.md)
 
 <h1 id="BigTitle">
     Chat-Haruhi-Suzumiya
@@ -116,7 +116,7 @@ ChatHaruhi 2.0 code can already be installed via pip.
 
 [2023-06-07] Chat Haruhi Suzumiya won the second prize in the Create@AI Hackathon hosted by the Modelscope Community, co-sponsored by Alibaba Cloud and NVIDIA, and co-organized by Tianchi(top3), [video](https://www.bilibili.com/video/BV1Xh411A7kC/)
 
-[2023-06-03] Honored with second prize(top3) and do oral presentation in July 17 for CAAI 8th-Big Data and Social Computing: 8th China National Conference, BDSC 2023, Urumqi, China, July 15–17, 2023 ，for more details [link](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
+[2023-06-03] Honored with second prize(top3) and do oral presentation in July 17 for CAAI 8th-Big Data and Social Computing: 8th China National Conference, BDSC 2023, Urumqi, China, July 15–17, 2023 ，for more details [link](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/research/personality)
 
 ## Demo Video
  
@@ -211,8 +211,8 @@ More documentation and code can be found at https://github.com/LC1332/Haruhi-2-D
 | Genesis                                                     |<a href="https://colab.research.google.com/github/LC1332/Prophet-Andrew-Ng/blob/main/prophet-code/haruhiLangChain.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| the first gradio chat developed by Lulu Li |
 | Baidu Studio Version                                               | [Baidu Studio Version](https://aistudio.baidu.com/aistudio/projectdetail/6386896) | A simplified version of Baidu Studio developed by DataWhale teaching assistant - Qijun Ma |
 | HuggingFace Version                                            | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi) | HuggingFace Version                                                                                    |
-| personality - College entrance exam essay | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/College_essays_gradio.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | College entrance exam essay generator tailored to high or low openness personalities，[link](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) |
-| personality-Chatbot                                               | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/PersonalityChatbot.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | Chatbot corresponding to high/low open personality，[link](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)  |
+| personality - College entrance exam essay | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/College_essays_gradio.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | College entrance exam essay generator tailored to high or low openness personalities，[link](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/research/personality) |
+| personality-Chatbot                                               | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/PersonalityChatbot.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | Chatbot corresponding to high/low open personality，[link](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/research/personality)  |
 | Chat Megumi                                                 |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/gradio_megumi.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| Chat Megumi was created using a corpus collected by community friends. |
 
 ## Previous News
@@ -250,7 +250,7 @@ TODO:
 
 - 🏆 Chat Haruhi Suzumiya won the second prize in the Create@AI Hackathon hosted by the Modelscope Community, co-sponsored by Alibaba Cloud and NVIDIA, and co-organized by Tianchi(top3) [video](https://www.bilibili.com/video/BV1Xh411A7kC/)
 
-- 🏆 Honored with the second prize (top3) and do oral presentation in July 17 for CAAI 8th-Big Data and Social Computing: 8th China National Conference, BDSC 2023, Urumqi, China, July 15–17, 2023 [for more details](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
+- 🏆 Honored with the second prize (top3) and do oral presentation in July 17 for CAAI 8th-Big Data and Social Computing: 8th China National Conference, BDSC 2023, Urumqi, China, July 15–17, 2023 [for more details](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/research/personality)
 
 ## SponsorShip
 
