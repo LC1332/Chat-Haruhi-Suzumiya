@@ -188,7 +188,7 @@ def submit(Answers):
     "content-type": "application/json",
     "origin": "https://www.16personalities.com",
     "referer": "https://www.16personalities.com/free-personality-test",
-    "sec-ch-ua": "'Not_A Brand';v='99', 'Google Chrome';v='109', 'Chromium';v='109'",
+    "sec-ch-ua": "'Not_A Brand';v='99', 'Google Chrome';v='', 'Chromium';v='109'",
     "sec-ch-ua-mobile": "?0",
     "sec-ch-ua-platform": "Windows",
     "sec-fetch-dest": "empty",
