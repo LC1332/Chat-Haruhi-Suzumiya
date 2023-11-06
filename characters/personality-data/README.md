@@ -1,4 +1,4 @@
-中文 | [English](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/personality-data/README.md)
+中文 | [English](https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/characters/personality-data/README_EN.md)
 
 # 对Chat凉宫春日的大五测试研究
 # A Big-Five Study on ChatHaruhi: Assessing Personality Traits for Role-Playing Chatbots
