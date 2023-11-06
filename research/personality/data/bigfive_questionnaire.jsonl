@@ -1,0 +1,106 @@
+{"id": 0, "question_cn": "你有时会感到寂寞或忧郁吗？", "dimension": "neuroticism", "sub_dimension": "N3 DEPRESSION"}
+{"id": 1, "question_cn": "你会不会有时感到自己完全一文不值。", "dimension": "neuroticism", "sub_dimension": "N3 DEPRESSION"}
+{"id": 2, "question_cn": "你很少感到忧郁或沮丧吗?", "dimension": "neuroticism", "sub_dimension": "N3 DEPRESSION"}
+{"id": 3, "question_cn": "很多时候,当事情不对劲时,你会感到挫败及想放弃吗?", "dimension": "neuroticism", "sub_dimension": "N3 DEPRESSION"}
+{"id": 4, "question_cn": "你有时会羞愧得想躲起来吗?", "dimension": "neuroticism", "sub_dimension": "N4 SELF-CONSCIOUSNESS"}
+{"id": 5, "question_cn": "你经常感到自己不如别人吗?", "dimension": "neuroticism", "sub_dimension": "N4 SELF-CONSCIOUSNESS"}
+{"id": 6, "question_cn": "你经常感到无助,并希望有人能解决你的问题吗?", "dimension": "neuroticism", "sub_dimension": "N6 VULNERABILITY"}
+{"id": 7, "question_cn": "当你处于极大压力下,有时候你会感到好像精神崩溃似的吗?", "dimension": "neuroticism", "sub_dimension": "N6 VULNERABILITY"}
+{"id": 8, "question_cn": "你最近有感到特别烦恼或焦虑的经历吗?愿意跟我聊聊那种感受吗?", "dimension": "neuroticism", "sub_dimension": "N1 ANXIETY"}
+{"id": 9, "question_cn": "看到有人遇到不公平对待我会感到愤怒。你最近有遇到感到被不公平对待的情况吗?它带给你什么感受?", "dimension": "neuroticism", "sub_dimension": "N2 ANGRY HOSTILITY"}
+{"id": 10, "question_cn": "你最近有过感到忧郁或沮丧的时刻吗?愿意告诉我那时的感受吗?", "dimension": "neuroticism", "sub_dimension": "N3 DEPRESSION"}
+{"id": 11, "question_cn": "在顶尖大学的时候，看到周围的同学很优秀，我会对自己有所质疑。你是否也会对自己产生怀疑或失去信心?在这种时刻,你通常如何应对?", "dimension": "neuroticism", "sub_dimension": "N4 SELF-CONSCIOUSNESS"}
+{"id": 12, "question_cn": "你最近遇到感到手无缚鸡之力的情况吗?它给你带来什么感觉?你是如何面对的?", "dimension": "neuroticism", "sub_dimension": "N6 VULNERABILITY"}
+{"id": 13, "question_cn": "你是否也有过因为压力太大，感到难以应对的经历?可否跟我讲讲你当时的感受以及你的应对方式?", "dimension": "neuroticism", "sub_dimension": "N6 VULNERABILITY"}
+{"id": 14, "question_cn": "我自己也会有负面情绪，你最近有感到沮丧或对自己失望的时刻吗?愿意跟我聊聊当时的感受吗?", "dimension": "neuroticism", "sub_dimension": "N3 DEPRESSION"}
+{"id": 15, "question_cn": "我偶尔也会质疑自己。你是否也会对自己产生怀疑或失去信心?在这种时刻，你通常如何应对?", "dimension": "neuroticism", "sub_dimension": "N4 SELF-CONSCIOUSNESS"}
+{"id": 16, "question_cn": "我也会有自卑的感觉。你是否也会感到自己不如别人?这种比较会让你有什么样的感受?", "dimension": "neuroticism", "sub_dimension": "N4 SELF-CONSCIOUSNESS"}
+{"id": 17, "question_cn": "你真的喜欢大部份你遇见的人吗？", "dimension": "extraversion", "sub_dimension": "E1 WARMTH"}
+{"id": 18, "question_cn": "你喜欢与别人交谈吗？", "dimension": "extraversion", "sub_dimension": "E2 GREGARIOUSNESS"}
+{"id": 19, "question_cn": "你喜欢很多人在你周围吗？", "dimension": "extraversion", "sub_dimension": "E2 GREGARIOUSNESS"}
+{"id": 20, "question_cn": "你一向喜欢单独工作吗?", "dimension": "extraversion", "sub_dimension": "E2 GREGARIOUSNESS"}
+{"id": 21, "question_cn": "你宁愿我行我素也不愿成为别人的领袖吗?", "dimension": "extraversion", "sub_dimension": "E3 ASSERTIVENESS"}
+{"id": 22, "question_cn": "你常常感到精力旺盛吗?", "dimension": "extraversion", "sub_dimension": "E4 ACTIVITY"}
+{"id": 23, "question_cn": "你的生活节奏很快吗?", "dimension": "extraversion", "sub_dimension": "E4 ACTIVITY"}
+{"id": 24, "question_cn": "你是一个十分活跃的人吗?", "dimension": "extraversion", "sub_dimension": "E4 ACTIVITY"}
+{"id": 25, "question_cn": "你喜欢身历其境,置身于事件之中吗?", "dimension": "extraversion", "sub_dimension": "E1 WARMTH"}
+{"id": 26, "question_cn": "你是一个乐观主义者吗?", "dimension": "extraversion", "sub_dimension": "E6 POSITIVE EMOTIONS"}
+{"id": 27, "question_cn": "你是一个快乐、高兴的人吗?", "dimension": "extraversion", "sub_dimension": "E6 POSITIVE EMOTIONS"}
+{"id": 28, "question_cn": "你很容易笑吗，或者说笑点低?", "dimension": "extraversion", "sub_dimension": "E6 POSITIVE EMOTIONS"}
+{"id": 29, "question_cn": "我最近参加了一个聚会，认识了很多新朋友，感觉交谈的时候彼此距离拉近了很多。你平时喜欢参加聚会认识新朋友吗？", "dimension": "extraversion", "sub_dimension": "E2 GREGARIOUSNESS"}
+{"id": 30, "question_cn": "我个人更喜欢一个人安静工作，可以让我更专注。你在工作的时候喜欢跟其他人一起合作，还是更习惯自己一个人独立完成呢?", "dimension": "extraversion", "sub_dimension": "E3 ASSERTIVENESS"}
+{"id": 31, "question_cn": "我每天都保持很高的工作效率，生活也比较忙碌。你平时的生活节奏是较快还是较慢的呢？喜欢积极参与各种活动吗?", "dimension": "extraversion", "sub_dimension": "E4 ACTIVITY"}
+{"id": 32, "question_cn": "你认为自己是一个乐观开朗的人吗？生活中容易感受到快乐吗？", "dimension": "extraversion", "sub_dimension": "E6 POSITIVE EMOTIONS"}
+{"id": 33, "question_cn": "我最近参加了一个聚会,认识了很多新朋友,大家都很友好亲切。你平时也喜欢结交新朋友吗?感觉跟大多数人聊天都能建立良好关系吗?", "dimension": "extraversion", "sub_dimension": "E1 WARMTH"}
+{"id": 34, "question_cn": "我个人不太适应当领导,更喜欢自由自在地生活和工作。你在生活中愿意担任领导角色吗?还是更习惯自己的方式和节奏?", "dimension": "extraversion", "sub_dimension": "E3 ASSERTIVENESS"}
+{"id": 35, "question_cn": "开始坚持锻炼后我每天都保持很高的精力。你平时也感觉自己精力充沛吗?属于比较活跃的那种人吗?", "dimension": "extraversion", "sub_dimension": "E4 ACTIVITY"}
+{"id": 36, "question_cn": "我是一个比较乐观开朗的人,经常会露出笑容。你也觉得自己容易感染到周围的欢乐气氛吗?", "dimension": "extraversion", "sub_dimension": "E6 POSITIVE EMOTIONS"}
+{"id": 37, "question_cn": "你不喜欢浪费时间去做白日梦吗?", "dimension": "openness", "sub_dimension": "O1 FANTASY"}
+{"id": 38, "question_cn": "大自然和艺术的规律形态使你感到极为奥妙吗?", "dimension": "openness", "sub_dimension": "O2 AESTHETICS"}
+{"id": 39, "question_cn": "你对诗词只有少许感觉甚至无动于衷吗?", "dimension": "openness", "sub_dimension": "O2 AESTHETICS"}
+{"id": 40, "question_cn": "当你阅读一首诗或欣赏一件艺术品时,你有时会感到兴奋或惊喜吗?", "dimension": "openness", "sub_dimension": "O2 AESTHETICS"}
+{"id": 41, "question_cn": "你很少注意自己在不同环境下的情绪或感觉吗?", "dimension": "openness", "sub_dimension": "O3 FEELINGS"}
+{"id": 42, "question_cn": "当你找到了做事情的正确方法后,你会坚持采用这个方法吗?", "dimension": "openness", "sub_dimension": "O4 ACTIONS"}
+{"id": 43, "question_cn": "你经常会去尝试新的及外国的食物吗?", "dimension": "openness", "sub_dimension": "O4 ACTIONS"}
+{"id": 44, "question_cn": "你喜欢思考及把玩理论或抽象的观念吗?", "dimension": "openness", "sub_dimension": "O5 IDEAS"}
+{"id": 45, "question_cn": "你有没有兴趣思索宇宙的规律或人类的情况?", "dimension": "openness", "sub_dimension": "O5 IDEAS"}
+{"id": 46, "question_cn": "你对思考性的事物充满好奇吗?", "dimension": "openness", "sub_dimension": "O5 IDEAS"}
+{"id": 47, "question_cn": "你相信让学生听富争论性的演讲只会混淆及误导他们的思想吗?", "dimension": "openness", "sub_dimension": "O6 VALUES"}
+{"id": 48, "question_cn": "你认为在道德问题上做决定时,我们应遵从宗教权威吗?", "dimension": "openness", "sub_dimension": "O6 VALUES"}
+{"id": 49, "question_cn": "我自己平时也不大熟悉诗词,你平时有在欣赏诗歌或其他艺术作品吗?它们给你带来什么感受?", "dimension": "openness", "sub_dimension": "O2 AESTHETICS"}
+{"id": 50, "question_cn": "很多时候我们去听交响乐之类的艺术作品也就是去凑个热闹,你有没有遇到过看着一件艺术作品时会突然有所感悟的经历?能说说那种体会吗?", "dimension": "openness", "sub_dimension": "O2 AESTHETICS"}
+{"id": 51, "question_cn": "在不同环境下会有不同的情绪,比如我去看球赛总会觉得情绪高涨。你平时注意自己的情绪变化吗?它们和环境有什么关系呢?", "dimension": "openness", "sub_dimension": "O3 FEELINGS"}
+{"id": 52, "question_cn": "你在学习新事物时,也喜欢先找对自己的方法吗?遇到什么情况你会改变做事方式呢?", "dimension": "openness", "sub_dimension": "O4 ACTIONS"}
+{"id": 53, "question_cn": "出国的时候，隔几天我总是想找中餐吃，不太习惯吃外国的菜。你喜欢尝试新食物吗?有什么推荐吗?", "dimension": "openness", "sub_dimension": "O4 ACTIONS"}
+{"id": 54, "question_cn": "我不大擅长抽象思考。你平时会思考一些理论性的问题吗?能举个例子吗?", "dimension": "openness", "sub_dimension": "O5 IDEAS"}
+{"id": 55, "question_cn": "我对宇宙人生规律也不太有研究。你对这些问题感兴趣吗?想过哪些问题呢?", "dimension": "openness", "sub_dimension": "O5 IDEAS"}
+{"id": 56, "question_cn": "我认为应该让学生接触各种观点。你认为学生应该学习什么样的知识?哪些对他们最有帮助?", "dimension": "openness", "sub_dimension": "O6 VALUES"}
+{"id": 57, "question_cn": "我觉得道德标准可以有不同看法。在面临道德选择时，你是根据什么判断的呢？", "dimension": "openness", "sub_dimension": "O6 VALUES"}
+{"id": 58, "question_cn": "你会怀疑及讽刺别人的企图吗?", "dimension": "agreeableness", "sub_dimension": "A1 TRUST"}
+{"id": 59, "question_cn": "你相信如果你允许别人占你的便宜,很多人都会这样做吗?", "dimension": "agreeableness", "sub_dimension": "A1 TRUST"}
+{"id": 60, "question_cn": "如果需要,你会去操纵别人而达到你所想要的吗?", "dimension": "agreeableness", "sub_dimension": "A2 STRAIGHTFORWARDNESS"}
+{"id": 61, "question_cn": "有人会觉得你自私又自我中心吗?", "dimension": "agreeableness", "sub_dimension": "A3 ALTRUISM"}
+{"id": 62, "question_cn": "有人会觉得你冷漠又爱算计吗?", "dimension": "agreeableness", "sub_dimension": "A2 STRAIGHTFORWARDNESS"}
+{"id": 63, "question_cn": "你通常会尽力体贴及顾虑周到吗?", "dimension": "agreeableness", "sub_dimension": "A3 ALTRUISM"}
+{"id": 64, "question_cn": "大部份认识你的人都喜欢你吗?", "dimension": "agreeableness", "sub_dimension": "A1 TRUST"}
+{"id": 65, "question_cn": "你宁愿与人合作,而不愿与人竞争吗?", "dimension": "agreeableness", "sub_dimension": "A4 COMPLIANCE"}
+{"id": 66, "question_cn": "如果你不喜欢某一个人,你会让他知道吗?", "dimension": "agreeableness", "sub_dimension": "A2 STRAIGHTFORWARDNESS"}
+{"id": 67, "question_cn": "你时常和家人及同事起争执吗?", "dimension": "agreeableness", "sub_dimension": "A4 COMPLIANCE"}
+{"id": 68, "question_cn": "你对自己有很高的评价吗?", "dimension": "agreeableness", "sub_dimension": "A5 MODESTY"}
+{"id": 69, "question_cn": "在态度上,你是顽固不妥协的吗?", "dimension": "agreeableness", "sub_dimension": "A4 COMPLIANCE"}
+{"id": 70, "question_cn": "我之前也会对别人的动机有所怀疑，你平时如何看待他人的好意呢？有没有遇到过被占便宜的情况？", "dimension": "agreeableness", "sub_dimension": "A1 TRUST"}
+{"id": 71, "question_cn": "我曾经也会觉得别人会趁机占便宜。你对此有什么看法？是否认为大多数人本质上是善意的？", "dimension": "agreeableness", "sub_dimension": "A1 TRUST"}
+{"id": 72, "question_cn": "为了达成目标，我也会考虑各种手段。你平时设置目标时，如何权衡目标和手段之间的关系？", "dimension": "agreeableness", "sub_dimension": "A2 STRAIGHTFORWARDNESS"}
+{"id": 73, "question_cn": "有时我也会反思自己是否过于自我或自私。你认为一个人怎样才能兼顾自我和他人，达到合理的平衡？", "dimension": "agreeableness", "sub_dimension": "A3 ALTRUISM"}
+{"id": 74, "question_cn": "我之前也被人说过冷漠和爱算计,你认为一个人应该如何权衡理性和感性?应该对他人多敞开心扉还是保持警惕?", "dimension": "agreeableness", "sub_dimension": "A2 STRAIGHTFORWARDNESS"}
+{"id": 75, "question_cn": "我也努力去体贴他人,但有时难免会有疏忽。你平时如何关心周围的人?有什么妙招可以变得更体贴吗?", "dimension": "agreeableness", "sub_dimension": "A3 ALTRUISM"}
+{"id": 76, "question_cn": "我也希望被更多人欣赏。你觉得被喜欢的关键是什么?如何能让更多人喜欢上自己?", "dimension": "agreeableness", "sub_dimension": "A1 TRUST"}
+{"id": 77, "question_cn": "我通常也更倾向协作。你认为合作和竞争两者有什么优劣?在什么情况下应该采取哪种策略?", "dimension": "agreeableness", "sub_dimension": "A4 COMPLIANCE"}
+{"id": 78, "question_cn": "我之前也会直接表达不喜欢某人,但后来发现这可能会伤害对方。你通常如何处理不喜欢的人际关系?会选择直接表述还是委婉一点?", "dimension": "agreeableness", "sub_dimension": "A2 STRAIGHTFORWARDNESS"}
+{"id": 79, "question_cn": "我和家人或同事也会有分歧和争执。你对处理分歧的方式有什么好的经验吗?你认为双方应该怎样沟通才能化解矛盾呢?", "dimension": "agreeableness", "sub_dimension": "A4 COMPLIANCE"}
+{"id": 80, "question_cn": "我也会对自己的能力和价值有较高的评价。你平时如何看待自我评价这个话题?你认为一个人对自我的看法会影响对他人的看法吗?", "dimension": "agreeableness", "sub_dimension": "A5 MODESTY"}
+{"id": 81, "question_cn": "我也有些理念比较坚持。你对妥协这件事什么看法?在什么情况下应该坚持原则,在什么情况下应该学会妥协?", "dimension": "agreeableness", "sub_dimension": "A4 COMPLIANCE"}
+{"id": 82, "question_cn": "在工作上,你是有效率又能胜任的吗?", "dimension": "conscientiousness", "sub_dimension": "C1 COMPETENCE"}
+{"id": 83, "question_cn": "你会保持你的物件整齐和清洁吗?", "dimension": "conscientiousness", "sub_dimension": "C2 ORDER"}
+{"id": 84, "question_cn": "你是不是一个做事有条不紊的人?", "dimension": "conscientiousness", "sub_dimension": "C2 ORDER"}
+{"id": 85, "question_cn": "你好像有时不能把事情安排得井井有条?", "dimension": "conscientiousness", "sub_dimension": "C2 ORDER"}
+{"id": 86, "question_cn": "你会尽心尽力完成一切分派给你的工作吗?", "dimension": "conscientiousness", "sub_dimension": "C1 COMPETENCE"}
+{"id": 87, "question_cn": "你有时不能做到你应有的可靠或可信吗?", "dimension": "conscientiousness", "sub_dimension": "C3 DUTIFULNESS"}
+{"id": 88, "question_cn": "当你做了承诺,通常你能贯彻到底吗?", "dimension": "conscientiousness", "sub_dimension": "C3 DUTIFULNESS"}
+{"id": 89, "question_cn": "你有一套明确的目标,并能有条不紊地朝着它而工作吗?", "dimension": "conscientiousness", "sub_dimension": "C2 ORDER"}
+{"id": 90, "question_cn": "你会努力完成你的目标吗?", "dimension": "conscientiousness", "sub_dimension": "C4 ACHIEVEMENT STRIVING"}
+{"id": 91, "question_cn": "你凡事必追求卓越吗?", "dimension": "conscientiousness", "sub_dimension": "C1 COMPETENCE"}
+{"id": 92, "question_cn": "你颇能按造自己的步伐,把事情准时办妥吗?", "dimension": "conscientiousness", "sub_dimension": "C5 SELF-DISCIPLINE"}
+{"id": 93, "question_cn": "你要花很多时间才能安顿下来工作吗?", "dimension": "conscientiousness", "sub_dimension": "C6 DELIBERATION"}
+{"id": 94, "question_cn": "我在工作时也注重效率,你平时有什么提高工作效率的技巧吗?怎样才能在工作中既出色又高效?", "dimension": "conscientiousness", "sub_dimension": "C1 COMPETENCE"}
+{"id": 95, "question_cn": "我也会尽量保持物品整洁,但有时还是会弄乱。你平时有什么妙招可以保持生活环境更为整齐吗?", "dimension": "conscientiousness", "sub_dimension": "C2 ORDER"}
+{"id": 96, "question_cn": "我在计划事项时也不总是条理清晰。你平时是怎么规划生活和工作的呢?有什么诀窍可以使日程更加井井有条吗?", "dimension": "conscientiousness", "sub_dimension": "C2 ORDER"}
+{"id": 97, "question_cn": "我也会感到自己没能很好地安排事项。你对于时间管理和生活规划有什么独到的见解吗?如何才能使生活步调更加有序呢?", "dimension": "conscientiousness", "sub_dimension": "C5 SELF-DISCIPLINE"}
+{"id": 98, "question_cn": "我在工作时也会尽力完成任务,你平时是怎么保持工作动力和效率的呢?有什么诀窍可以做到尽心尽力吗?", "dimension": "conscientiousness", "sub_dimension": "C4 ACHIEVEMENT STRIVING"}
+{"id": 99, "question_cn": "我也会有信守诺言方面不够完美的情况。你通常如何看待承诺这个话题呢?在生活中,什么样的承诺才值得坚守到底呢?", "dimension": "conscientiousness", "sub_dimension": "C3 DUTIFULNESS"}
+{"id": 100, "question_cn": "当我做出承诺时,执行起来也不总是万无一失。你对于如何践行诺言有什么独特的见解吗?怎样才能够信守诺言呢?", "dimension": "conscientiousness", "sub_dimension": "C5 SELF-DISCIPLINE"}
+{"id": 101, "question_cn": "我感觉给自己制定的目标常常会偏离。你平时如何制定生活和工作的目标呢?有什么妙计可以帮助自己更有条不紊地实现目标吗?", "dimension": "conscientiousness", "sub_dimension": "C2 ORDER"}
+{"id": 102, "question_cn": "你平时是如何制定和实现目标的呢?有没有什么特别的方法可以提高目标的完成度呢?", "dimension": "conscientiousness", "sub_dimension": "C4 ACHIEVEMENT STRIVING"}
+{"id": 103, "question_cn": "你对追求卓越有什么独特的见解吗?怎样才能在生活中更进一步呢?", "dimension": "conscientiousness", "sub_dimension": "C4 ACHIEVEMENT STRIVING"}
+{"id": 104, "question_cn": "我有时挺拖延的。你平时如何规划时间、提高执行效率的呢?有什么技巧可以帮助自己更准时完成任务吗?", "dimension": "conscientiousness", "sub_dimension": "C5 SELF-DISCIPLINE"}
+{"id": 105, "question_cn": "我开始工作时也常需要先进入状态。你是如何快速投入工作的呢?有什么诀窍可以帮助自己更高效地开始工作吗?", "dimension": "conscientiousness", "sub_dimension": "C6 DELIBERATION"}

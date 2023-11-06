@@ -1,4 +1,4 @@
-[スポンサーシップ](#スポンサーシップ) | [報告](https://arxiv.org/abs/2308.09597) | [パーソナリティ](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) | [コントリビューター](#コントリビューター)
+[スポンサーシップ](#スポンサーシップ) | [報告](https://arxiv.org/abs/2308.09597) | [パーソナリティ](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/research/personality) | [コントリビューター](#コントリビューター)
 
 <h1 id="BigTitle">
     Chat-Haruhi-Suzumiya
@@ -109,7 +109,7 @@ ChatHaruhi 2.0 のコードはすでに pip 経由でインストールできま
 
 [2023-06-07] Chat Haruhi Suzumiya が Modelscope コミュニティ主催、Alibaba Cloud と NVIDIA 共催、天地(top3)共催の Create@AI ハッカソンで準優勝、[動画](https://www.bilibili.com/video/BV1Xh411A7kC/)
 
-[2023-06-03] CAAI 8th-Big Data and Social Computing で 2 位(top3)に入賞し、7月17日に口頭発表を行います： 8th China National Conference, BDSC 2023, Urumqi, China, July 15-17, 2023， 詳細は[リンク](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
+[2023-06-03] CAAI 8th-Big Data and Social Computing で 2 位(top3)に入賞し、7月17日に口頭発表を行います： 8th China National Conference, BDSC 2023, Urumqi, China, July 15-17, 2023， 詳細は[リンク](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/research/personality)
 
 ## デモ動画
 
@@ -178,8 +178,8 @@ print(response)
 | Genesis                                                     |<a href="https://colab.research.google.com/github/LC1332/Prophet-Andrew-Ng/blob/main/prophet-code/haruhiLangChain.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| Lulu Li が開発した最初の Gradio チャット |
 | Baidu Studio 版                                               | [Baidu Studio Version](https://aistudio.baidu.com/aistudio/projectdetail/6386896) | DataWhale ティーチングアシスタントの Qijun Ma が開発した Baidu Studio の簡易版 |
 | Hugging Face 版                                            | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi) | Hugging Face 版                                                                                    |
-| パーソナリティ - 大学入試小論文 | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/College_essays_gradio.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | 開放性の高低に合わせた大学入試小論文ジェネレーター、[リンク](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data) |
-| パーソナリティ-Chatbot                                               | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/PersonalityChatbot.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | 開口性の高低に対応するチャットボット、[リンク](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)  |
+| パーソナリティ - 大学入試小論文 | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/College_essays_gradio.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | 開放性の高低に合わせた大学入試小論文ジェネレーター、[リンク](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/research/personality) |
+| パーソナリティ-Chatbot                                               | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/PersonalityChatbot.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | 開口性の高低に対応するチャットボット、[リンク](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/research/personality)  |
 | Chat Megumi                                                 |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/gradio_megumi.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| Chat Megumi は、コミュニティの仲間が集めたコーパスを利用して作成されました。 |
 
 ## 過去のニュース
@@ -217,7 +217,7 @@ TODO:
 
 - 🏆 ModelScope コミュニティ主催、Alibaba Cloud と NVIDIA 共催、天地(top3)共催の Create@AI ハッカソンで Chat Haruhi Suzumiya が準優勝、[動画](https://www.bilibili.com/video/BV1Xh411A7kC/)
 
-- 🏆 CAAI 8th-Big Data and Social Computing で 2 位(top3)を受賞し、7月17日に口頭発表を行います： 8th China National Conference, BDSC 2023, Urumqi, China, July 15-17, 2023 [詳細はこちら](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/personality-data)
+- 🏆 CAAI 8th-Big Data and Social Computing で 2 位(top3)を受賞し、7月17日に口頭発表を行います： 8th China National Conference, BDSC 2023, Urumqi, China, July 15-17, 2023 [詳細はこちら](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/research/personality)
 
 ## スポンサーシップ
 
