@@ -9,7 +9,7 @@
 
 <!-- (https://huggingface.co/spaces/silk-road/ChatHaruhi) -->
 
-为百度AGI Foundathon制作的 ChatHaruhi_x_AI糖糖 上线到hugging face [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi-Needy) 。
+为百度AGI Foundathon制作的 ChatHaruhi_x_AI糖糖 上线到hugging face [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi-Needy) ， 临时demo链接 [https://needy.sirly.cc/](https://needy.sirly.cc/)。
 
 目前基于[OpenAI](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI), [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro), [讯飞星火](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) , 新增[百川53B](https://huggingface.co/spaces/silk-road/ChatHaruhi-BaichuanAPI)的demo已经上线。新增[百度文心](https://huggingface.co/spaces/silk-road/ChatHaruhi-Erniebot)
 
