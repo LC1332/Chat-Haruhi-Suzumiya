@@ -1,20 +1,12 @@
 from argparse import Namespace
-
 import openai
 from transformers import AutoModel, AutoTokenizer
 import torch
 import random
-
 import tiktoken
 import re
-
-import numpy as np
-
 import base64
 import struct
-
-import os
-
 import tqdm
 
 def package_role( system_prompt, texts_path , embedding ):
@@ -82,18 +74,18 @@ def base64_to_float_array(base64_data):
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 _luotuo_model = None
-
 _luotuo_model_en = None
 _luotuo_en_tokenizer = None
-
+_max_length = 512
 _enc_model = None
 
 # ======== add bge model
-# by Cheng Li
-# for English only right now
+# by Cheng Li, modify by zR
+# Chinese and English Suppose
 
 _bge_model = None
 _bge_tokenizer = None
+_bge_path = 'BAAI/bge-large-zh-v1.5'
 
 def get_bge_embeddings( sentences ):
     # unsafe ensure batch size by yourself
@@ -103,13 +95,15 @@ def get_bge_embeddings( sentences ):
 
     if _bge_model is None:
         from transformers import AutoTokenizer, AutoModel
-        _bge_tokenizer = AutoTokenizer.from_pretrained('BAAI/bge-small-en-v1.5')
-        _bge_model = AutoModel.from_pretrained('BAAI/bge-small-en-v1.5')
+        _bge_tokenizer = AutoTokenizer.from_pretrained(_bge_path)
+        _bge_model = AutoModel.from_pretrained(_bge_path).to(device)
 
     _bge_model.eval()
 
     # Tokenize sentences
-    encoded_input = _bge_tokenizer(sentences, padding=True, truncation=True, return_tensors='pt', max_length = 512)
+    encoded_input = _bge_tokenizer(sentences, padding=True, truncation=True, return_tensors='pt', max_length = _max_length)
+    encoded_input = {k: v.to(device) for k, v in encoded_input.items()}
+
 
     # Compute token embeddings
     with torch.no_grad():
@@ -185,6 +179,7 @@ def response_postprocess(text,dialogue_bra_token = 'ã€Œ',dialogue_ket_token = 'ã
                 return text
             else:
                 return first_name + ":" + dialogue_bra_token +  new_lines + dialogue_ket_token
+
     return first_name + ":" + dialogue_bra_token + new_lines + dialogue_ket_token
 
 def download_models():
