@@ -6,6 +6,7 @@ from peft import PeftModel
 tokenizer_GLM = None
 model_GLM = None
 
+
 def initialize_GLM2LORA():
     global model_GLM, tokenizer_GLM
 
@@ -30,8 +31,10 @@ def initialize_GLM2LORA():
 
     return model_GLM, tokenizer_GLM
 
+
 def GLM_tokenizer(text):
     return len(tokenizer_GLM.encode(text))
+
 
 class ChatGLM2GPT(BaseLLM):
     def __init__(self, model = "haruhi-fusion"):
