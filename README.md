@@ -9,7 +9,7 @@
 
 <!-- (https://huggingface.co/spaces/silk-road/ChatHaruhi) -->
 
-New Dataset [ChatHaruhi-Expand-118K](https://huggingface.co/datasets/silk-road/ChatHaruhi-Expand-118K) Released!
+New Dataset [ChatHaruhi-Expand-118K](https://huggingface.co/datasets/silk-road/ChatHaruhi-Expand-118K) Released! Fine-Tuning Code Released!
 
 目前基于[OpenAI](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI), [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro), [讯飞星火](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) , 新增[百川53B](https://huggingface.co/spaces/silk-road/ChatHaruhi-BaichuanAPI)的demo已经上线。新增[百度文心](https://huggingface.co/spaces/silk-road/ChatHaruhi-Erniebot)
 
@@ -83,7 +83,9 @@ Chat凉宫春日是[Luotuo(骆驼)](https://github.com/LC1332/Luotuo-Chinese-LLM
 | AI糖糖 | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi-Needy) | 集成ChatHaruhi到复刻版本的主播女孩重度依赖 |
 | Prototype of StoryTeller | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/Story-teller) | Prototype of StoryTeller |
 | Prototype of StoryTeller | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/Build_Story_Teller_Gradio_exposure_version.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | Prototype of StoryTeller |
-| ChatHaruhi1.0                                                |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 能够支持角色切换的功能整合客户端                                                                                                 |
+| Fine-tuning(English) | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/LLaMA_Factory4phi15.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | 英文小模型Phi-1.5训练代码 |
+| Fine-tuning(Chinese) | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/LLaMA_Factory4phi15.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | 中文小模型Qwen-1.8B训练代码 |
+| ChatHaruhi1.0                                                |<a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>| 过往的代码（废弃）  |
 
 <!-- https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/GLM_LORA.ipynb -->
 

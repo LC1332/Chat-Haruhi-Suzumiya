@@ -12,6 +12,8 @@
 
 <!-- (https://huggingface.co/spaces/silk-road/ChatHaruhi) -->
 
+New Dataset [ChatHaruhi-Expand-118K](https://huggingface.co/datasets/silk-road/ChatHaruhi-Expand-118K) Released! Fine-Tuning Code Released!
+
 The demos based on [OpenAI](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI) and [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) and [讯飞星火](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo)  are already online. [Baichuan-53B](https://huggingface.co/spaces/silk-road/ChatHaruhi-BaichuanAPI)
 
 Added 95 new English character roles adapted from RoleLLM. The total number of roles reaches 142. Hugging Face demo Here [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi-RoleLLM-English). (API quota exceeded before Oct 30)
@@ -98,6 +100,8 @@ To get started with the ChatHaruhi project, you can directly run the following C
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) | Hugging Face Demo (GLMPro as LLM) |
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) | Hugging Face Demo (讯飞星火 as LLM) |
 | Prototype of StoryTeller | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/Story-teller) | Prototype of StoryTeller |
+| Fine-tuning(English) | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/LLaMA_Factory4phi15.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | English Small Model Phi-1.5 Tuning Code |
+| Fine-tuning(Chinese) | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/LLaMA_Factory4phi15.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | Chinese Small Model Qwen-1.8B Tuning |
 | ChatHaruhi1.0 | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/reform_main.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | Integrated client that supports character switching |
 
 ChatHaruhi 2.0 code can already be installed via pip.
