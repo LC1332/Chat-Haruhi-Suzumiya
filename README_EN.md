@@ -12,11 +12,10 @@
 
 <!-- (https://huggingface.co/spaces/silk-road/ChatHaruhi) -->
 
+We've just released finetuned ChatHaruhi-Qwen-1.8B model and code, try here <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/ChatHaruhi_x_Qwen1_8B.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+
 New Dataset [ChatHaruhi-Expand-118K](https://huggingface.co/datasets/silk-road/ChatHaruhi-Expand-118K) Released! Fine-Tuning Code Released!
 
-The demos based on [OpenAI](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI) and [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) and [讯飞星火](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo)  are already online. [Baichuan-53B](https://huggingface.co/spaces/silk-road/ChatHaruhi-BaichuanAPI)
-
-Added 95 new English character roles adapted from RoleLLM. The total number of roles reaches 142. Hugging Face demo Here [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi-RoleLLM-English). (API quota exceeded before Oct 30)
 
 <h4 align="center">
     <p>
@@ -95,6 +94,7 @@ To get started with the ChatHaruhi project, you can directly run the following C
 | Name | Colab Link | Description |
 |-|-|-|  
 | ChatHaruhi2.0(code) | <a href="https://colab.research.google.com/github/LC1332/Haruhi-2-Dev/blob/main/notebook/ChatHaruhi2_demo.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | The openAI version of ChatHaruhi2.0 is already running | 
+| Qwen-1.8B | <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/ChatHaruhi_x_Qwen1_8B.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> | Role-Playing with finetuned Qwen-1.8B |
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI) | Hugging Face Demo (openai as LLM) |
 | 95 Eng-Character | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/silk-road/ChatHaruhi-RoleLLM-English) | 95 English Chracters Adapted From [RoleLLM](https://github.com/InteractiveNLP-Team/RoleLLM-public) |
 | ChatHaruhi2.0 Demo | [![Huggingface Gradio](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) | Hugging Face Demo (GLMPro as LLM) |
