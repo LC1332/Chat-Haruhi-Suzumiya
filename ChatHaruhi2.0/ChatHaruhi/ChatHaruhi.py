@@ -1,26 +1,20 @@
 from .ChromaDB import ChromaDB
 import os
-
 from .utils import luotuo_openai_embedding, tiktokenizer
-
 from .utils import response_postprocess
+
 
 class ChatHaruhi:
 
-    def __init__(self, system_prompt = None, \
-                 role_name = None, role_from_hf = None, \
-                 story_db=None, story_text_folder = None, \
-                 llm = 'openai', \
-                 embedding = 'luotuo_openai', \
-                 max_len_story = None, max_len_history = None,
-                 verbose = False):
+    def __init__(self, system_prompt=None, role_name=None, role_from_hf=None, story_db=None, story_text_folder=None,
+                 llm='openai', embedding='luotuo_openai', max_len_story=None, max_len_history=None, verbose=False):
         super(ChatHaruhi, self).__init__()
         self.verbose = verbose
 
         # constants
-        self.story_prefix_prompt = "Classic scenes for the role are as follows:\n"
+        self.story_prefix_prompt = "\nClassic scenes for the role are as follows:"
         self.k_search = 19
-        self.narrator = ['旁白', '', 'scene','Scene','narrator' , 'Narrator']
+        self.narrator = ['旁白', '', 'scene', 'Scene', 'narrator', 'Narrator']
         self.dialogue_divide_token = '\n###\n'
         self.dialogue_bra_token = '「'
         self.dialogue_ket_token = '」'
@@ -45,6 +39,8 @@ class ChatHaruhi:
             self.llm, self.tokenizer = self.get_models('BaiChuan2GPT')
         elif llm == "ernie":
             self.llm, self.tokenizer = self.get_models('ernie')
+        elif llm == "Llama2GPT":
+            self.llm, self.tokenizer = self.get_models('Llama2GPT')
         else:
             print(f'warning! undefined llm {llm}, use openai instead.')
             self.llm, self.tokenizer = self.get_models('openai')
@@ -128,14 +124,20 @@ class ChatHaruhi:
         elif story_db:
             self.db = ChromaDB() 
             self.db.load(story_db)
+
         elif story_text_folder:
             # print("Building story database from texts...")
-            self.db = self.build_story_db(story_text_folder) 
+            db_name = "db_" + story_text_folder.split("/")[-1].replace(" ", "_")
+            if not os.path.exists(db_name):
+                self.db = self.build_story_db(story_text_folder)
+            else:
+                self.db = ChromaDB()
+                self.db.load(db_name)
+
         else:
             self.db = None
             print('warning! database not yet figured out, both story_db and story_text_folder are not inputted.')
             # raise ValueError("Either story_db or story_text_folder must be provided")
-        
 
         self.max_len_story, self.max_len_history = self.get_tokenlen_setting('openai')
 
@@ -149,8 +151,6 @@ class ChatHaruhi:
 
         self.dialogue_history = []
 
-        
-
     def check_system_prompt(self, system_prompt):
         # if system_prompt end with .txt, read the file with utf-8
         # else, return the string directly
@@ -159,7 +159,6 @@ class ChatHaruhi:
                 return f.read()
         else:
             return system_prompt
-    
 
     def get_models(self, model_name):
 
@@ -187,6 +186,9 @@ class ChatHaruhi:
         elif model_name == "BaiChuan2GPT":
             from .BaiChuan2GPT import BaiChuan2GPT, BaiChuan_tokenizer
             return (BaiChuan2GPT(), BaiChuan_tokenizer)
+        elif model_name == "Llama2GPT":
+            from .Llama2GPT import Llama2GPT, Llama_tokenizer
+            return (Llama2GPT(), Llama_tokenizer)
         else:
             print(f'warning! undefined model {model_name}, use openai instead.')
             from .LangChainGPT import LangChainGPT
@@ -232,7 +234,8 @@ class ChatHaruhi:
         for mystr in strs:
             vecs.append(self.embedding(mystr))
 
-        db.init_from_docs(vecs, strs)
+        db_name = "db_" + text_folder.split("/")[-1].replace(" ", "_")
+        db.init_from_docs(vecs, strs, db_name)
 
         return db
     
@@ -243,11 +246,10 @@ class ChatHaruhi:
         # add system prompt
         self.llm.initialize_message()
         self.llm.system_message(self.system_prompt)
-    
 
         # add story
         query = self.get_query_string(text, role)
-        self.add_story( query )
+        self.add_story(query)
 
         # add history
         self.add_history()
@@ -262,8 +264,6 @@ class ChatHaruhi:
 
         # record dialogue history
         self.dialogue_history.append((query, response))
-
-
 
         return response
     

@@ -24,3 +24,4 @@
 # }
 
 from .ChatHaruhi import ChatHaruhi
+from .ChatHaruhiTrain import ChatHaruhiTrain

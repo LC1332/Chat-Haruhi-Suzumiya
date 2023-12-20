@@ -17,6 +17,7 @@ import os
 
 import tqdm
 
+
 def package_role( system_prompt, texts_path , embedding ):
     datas = []
 
@@ -50,7 +51,6 @@ def package_role( system_prompt, texts_path , embedding ):
     return datas
 
 
-
 def float_array_to_base64(float_arr):
     
     byte_array = b''
@@ -64,6 +64,7 @@ def float_array_to_base64(float_arr):
     base64_data = base64.b64encode(byte_array)
     
     return base64_data.decode('utf-8')
+
 
 def base64_to_float_array(base64_data):
 
@@ -95,6 +96,7 @@ _enc_model = None
 _bge_model = None
 _bge_tokenizer = None
 
+
 def get_bge_embeddings( sentences ):
     # unsafe ensure batch size by yourself
 
@@ -103,8 +105,13 @@ def get_bge_embeddings( sentences ):
 
     if _bge_model is None:
         from transformers import AutoTokenizer, AutoModel
-        _bge_tokenizer = AutoTokenizer.from_pretrained('BAAI/bge-small-en-v1.5')
-        _bge_model = AutoModel.from_pretrained('BAAI/bge-small-en-v1.5')
+
+        # warren: 路径记得改回去
+        # bge_path = 'BAAI/bge-small-en-v1.5'
+        bge_path = '/group/30106/warrensun/kg/new_data/llm/BAAI'
+
+        _bge_tokenizer = AutoTokenizer.from_pretrained(bge_path)
+        _bge_model = AutoModel.from_pretrained(bge_path)
 
     _bge_model.eval()
 
@@ -120,16 +127,20 @@ def get_bge_embeddings( sentences ):
     sentence_embeddings = torch.nn.functional.normalize(sentence_embeddings, p=2, dim=1)
     return sentence_embeddings.cpu().tolist()
 
+
 def get_bge_embedding( text_or_texts ):
     if isinstance(text_or_texts, str):
         return get_bge_embeddings([text_or_texts])[0]
     else:
         return get_bge_embeddings_safe(text_or_texts)
 
+
 bge_batch_size = 32
+
 
 import math
 # from tqdm import tqdm
+
 
 def get_bge_embeddings_safe(sentences):
     
@@ -149,6 +160,7 @@ def get_bge_embeddings_safe(sentences):
 
 # === add bge model
 
+
 def tiktokenizer( text ):
     global _enc_model
 
@@ -156,7 +168,8 @@ def tiktokenizer( text ):
         _enc_model = tiktoken.get_encoding("cl100k_base")
 
     return len(_enc_model.encode(text))
-    
+
+
 def response_postprocess(text,dialogue_bra_token = '「',dialogue_ket_token = '」'):
     lines = text.split('\n')
     new_lines = ""
@@ -187,6 +200,7 @@ def response_postprocess(text,dialogue_bra_token = '「',dialogue_ket_token = '�
                 return first_name + ":" + dialogue_bra_token +  new_lines + dialogue_ket_token
     return first_name + ":" + dialogue_bra_token + new_lines + dialogue_ket_token
 
+
 def download_models():
     print("正在下载Luotuo-Bert")
     # Import our models. The package will take care of downloading the models automatically
@@ -196,6 +210,7 @@ def download_models():
         device)
     print("Luotuo-Bert下载完毕")
     return model
+
 
 def get_luotuo_model():
     global _luotuo_model
@@ -214,6 +229,7 @@ def luotuo_embedding(model, texts):
     with torch.no_grad():
         embeddings = model(**inputs, output_hidden_states=True, return_dict=True, sent_emb=True).pooler_output
     return embeddings
+
 
 def luotuo_en_embedding( texts ):
     # this function implemented by Cheng
@@ -280,7 +296,6 @@ def get_embedding_for_english(text, model="text-embedding-ada-002"):
     text = text.replace("\n", " ")
     return openai.Embedding.create(input=[text], model=model)['data'][0]['embedding']
 
-import os
 
 def luotuo_openai_embedding(texts, is_chinese= None ):
     """
