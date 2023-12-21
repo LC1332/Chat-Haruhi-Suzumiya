@@ -1,6 +1,9 @@
 from argparse import Namespace
 
-import openai
+from openai import OpenAI
+
+# client = OpenAI(api_key=<YOUR OPENAI API KEY>)
+
 from transformers import AutoModel, AutoTokenizer
 import torch
 import random
@@ -16,6 +19,35 @@ import struct
 import os
 
 import tqdm
+
+import requests
+
+
+
+def get_access_token():
+    API_KEY = os.getenv("StoryAudit_API_AK")
+    SECRET_KEY = os.getenv("StoryAudit_API_SK")
+
+    """
+    使用 AK，SK 生成鉴权签名（Access Token）
+    :return: access_token，或是None(如果错误)
+    """
+    url = "https://aip.baidubce.com/oauth/2.0/token"
+    params = {"grant_type": "client_credentials", "client_id": API_KEY, "client_secret": SECRET_KEY}
+    return str(requests.post(url, params=params).json().get("access_token"))
+
+'''
+文本审核接口
+'''
+def text_censor(text):
+    request_url = "https://aip.baidubce.com/rest/2.0/solution/v1/text_censor/v2/user_defined"
+
+    params = {"text":text}
+    access_token = get_access_token()
+    request_url = request_url + "?access_token=" + access_token
+    headers = {'content-type': 'application/x-www-form-urlencoded'}
+    response = requests.post(request_url, data=params, headers=headers)
+    return response.json()["conclusion"] == "合规"
 
 def package_role( system_prompt, texts_path , embedding ):
     datas = []
@@ -49,6 +81,22 @@ def package_role( system_prompt, texts_path , embedding ):
                 #     break
     return datas
 
+
+import struct
+
+def string_to_base64(text):
+    byte_array = b''
+    for char in text:
+        num_bytes = char.encode('utf-8')
+        byte_array += num_bytes
+
+    base64_data = base64.b64encode(byte_array)
+    return base64_data.decode('utf-8')
+
+def base64_to_string(base64_data):
+    byte_array = base64.b64decode(base64_data)
+    text = byte_array.decode('utf-8')
+    return text
 
 
 def float_array_to_base64(float_arr):
@@ -87,6 +135,71 @@ _luotuo_model_en = None
 _luotuo_en_tokenizer = None
 
 _enc_model = None
+
+# ======== add bge_zh mmodel
+# by Cheng Li
+# 这一次我们试图一次性去适配更多的模型
+
+_model_pool = {}
+_tokenizer_pool = {}
+
+# BAAI/bge-small-zh-v1.5
+
+def get_general_embeddings( sentences , model_name = "BAAI/bge-small-zh-v1.5" ):
+
+    global _model_pool
+    global _tokenizer_pool
+
+    if model_name not in _model_pool:
+        from transformers import AutoTokenizer, AutoModel
+        _tokenizer_pool[model_name] = AutoTokenizer.from_pretrained(model_name)
+        _model_pool[model_name] = AutoModel.from_pretrained(model_name)
+
+    _model_pool[model_name].eval()
+
+    # Tokenize sentences
+    encoded_input = _tokenizer_pool[model_name](sentences, padding=True, truncation=True, return_tensors='pt', max_length = 512)
+
+    # Compute token embeddings
+    with torch.no_grad():
+        model_output = _model_pool[model_name](**encoded_input)
+        # Perform pooling. In this case, cls pooling.
+        sentence_embeddings = model_output[0][:, 0]
+
+    # normalize embeddings
+    sentence_embeddings = torch.nn.functional.normalize(sentence_embeddings, p=2, dim=1)
+    return sentence_embeddings.cpu().tolist()
+
+def get_general_embedding( text_or_texts , model_name = "BAAI/bge-small-zh-v1.5" ):
+    if isinstance(text_or_texts, str):
+        return get_general_embeddings([text_or_texts], model_name)[0]
+    else:
+        return get_general_embeddings_safe(text_or_texts, model_name)
+    
+general_batch_size = 16
+
+import math
+
+def get_general_embeddings_safe(sentences, model_name = "BAAI/bge-small-zh-v1.5"):
+    
+    embeddings = []
+    
+    num_batches = math.ceil(len(sentences) / general_batch_size)
+    
+    for i in tqdm.tqdm( range(num_batches) ):
+        # print("run bge with batch ", i)
+        start_index = i * general_batch_size
+        end_index = min(len(sentences), start_index + general_batch_size)
+        batch = sentences[start_index:end_index]
+        embs = get_general_embeddings(batch, model_name)
+        embeddings.extend(embs)
+        
+    return embeddings
+
+def get_bge_zh_embedding( text_or_texts ):
+    return get_general_embedding(text_or_texts, "BAAI/bge-small-zh-v1.5")
+
+## TODO: 重构bge_en部分的代码，复用general的函数
 
 # ======== add bge model
 # by Cheng Li
@@ -255,6 +368,9 @@ def get_embedding_for_chinese(model, texts):
 
 
 def is_chinese_or_english(text):
+    # no longer use online openai api
+    return "chinese"
+
     text = list(text)
     is_chinese, is_english = 0, 0
 
@@ -273,12 +389,11 @@ def is_chinese_or_english(text):
 
 def get_embedding_openai(text, model="text-embedding-ada-002"):
     text = text.replace("\n", " ")
-    return openai.Embedding.create(input=[text], model=model)['data'][0]['embedding']
-
+    return client.embeddings.create(input = [text], model=model).data[0].embedding
 
 def get_embedding_for_english(text, model="text-embedding-ada-002"):
     text = text.replace("\n", " ")
-    return openai.Embedding.create(input=[text], model=model)['data'][0]['embedding']
+    return client.embeddings.create(input = [text], model=model).data[0].embedding
 
 import os
 

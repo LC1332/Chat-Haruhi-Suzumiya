@@ -5,27 +5,18 @@ from .utils import luotuo_openai_embedding, tiktokenizer
 
 from .utils import response_postprocess
 
-def get_text_from_data( data ):
-    if "text" in data:
-        return data['text']
-    elif "enc_text" in data:
-        from .utils import base64_to_string
-        return base64_to_string( data['enc_text'] )
-    else:
-        print("warning! failed to get text from data ", data)
-        return ""
+from .utils import text_censor
 
-class ChatHaruhi:
+class ChatHaruhi_safe:
 
     def __init__(self, system_prompt = None, \
-                 role_name = None, role_from_hf = None,
-                 role_from_jsonl = None,  \
+                 role_name = None, role_from_hf = None, \
                  story_db=None, story_text_folder = None, \
                  llm = 'openai', \
                  embedding = 'luotuo_openai', \
                  max_len_story = None, max_len_history = None,
                  verbose = False):
-        super(ChatHaruhi, self).__init__()
+        super(ChatHaruhi_safe, self).__init__()
         self.verbose = verbose
 
         # constants
@@ -60,8 +51,6 @@ class ChatHaruhi:
             self.llm, self.tokenizer = self.get_models('ernie3.5')
         elif llm == "ernie4.0":
             self.llm, self.tokenizer = self.get_models('ernie4.0')
-        elif "qwen" in llm:
-            self.llm, self.tokenizer = self.get_models(llm)
         else:
             print(f'warning! undefined llm {llm}, use openai instead.')
             self.llm, self.tokenizer = self.get_models('openai')
@@ -71,9 +60,6 @@ class ChatHaruhi:
         elif embedding == 'bge_en':
             from .utils import get_bge_embedding
             self.embedding = get_bge_embedding
-        elif embedding == 'bge_zh':
-            from .utils import get_bge_zh_embedding
-            self.embedding = get_bge_zh_embedding
         else:
             print(f'warning! undefined embedding {embedding}, use luotuo_openai instead.')
             self.embedding = luotuo_openai_embedding
@@ -118,44 +104,30 @@ class ChatHaruhi:
                 fname = split_name + '.jsonl'
                 dataset = load_dataset(dataset_name,data_files={'train':fname})
                 datas = dataset["train"]
+
+
+            from .utils import base64_to_float_array
             
             if embedding == 'luotuo_openai':
                 embed_name = 'luotuo_openai'
             elif embedding == 'bge_en':
                 embed_name = 'bge_en_s15'
-            elif embedding == 'bge_zh':
-                embed_name = 'bge_zh_s15'
             else:
                 print('warning! unkown embedding name ', embedding ,' while loading role')
                 embed_name = 'luotuo_openai'
 
-            texts, vecs, self.system_prompt = self.extract_text_vec_from_datas(datas, embed_name)
-
-            self.build_story_db_from_vec( texts, vecs )
-
-        elif role_from_jsonl:
-            import json
-            datas = []
-            with open( role_from_jsonl , encoding="utf-8") as f:
-                for line in f:
-                    try:
-                        data = json.loads(line)
-                        # 逐行处理JSON数据
-                        datas.append(data)
-                    except:
-                        print("warning! failed to load json line ", line)
-
-            if embedding == 'luotuo_openai':
-                embed_name = 'luotuo_openai'
-            elif embedding == 'bge_en':
-                embed_name = 'bge_en_s15'
-            elif embedding == 'bge_zh':
-                embed_name = 'bge_zh_s15'
-            else:
-                print('warning! unkown embedding name ', embedding ,' while loading role')
-                embed_name = 'luotuo_openai'
-
-            texts, vecs, self.system_prompt = self.extract_text_vec_from_datas(datas, embed_name)
+            texts = []
+            vecs = []
+            for data in datas:
+                if data[embed_name] == 'system_prompt':
+                    self.system_prompt = data['text']
+                elif data[embed_name] == 'config':
+                    pass
+                else:
+                    vec = base64_to_float_array( data[embed_name] )
+                    text = data['text']
+                    vecs.append( vec )
+                    texts.append( text )
 
             self.build_story_db_from_vec( texts, vecs )
             
@@ -182,25 +154,6 @@ class ChatHaruhi:
             # user setting will override default setting
 
         self.dialogue_history = []
-
-    def extract_text_vec_from_datas( self, datas, embed_name ):
-        # extract text and vec from huggingface dataset
-        # return texts, vecs
-        from .utils import base64_to_float_array
-
-        texts = []
-        vecs = []
-        for data in datas:
-            if data[embed_name] == 'system_prompt':
-                system_prompt = get_text_from_data( data )
-            elif data[embed_name] == 'config':
-                pass
-            else:
-                vec = base64_to_float_array( data[embed_name] )
-                text = get_text_from_data( data )
-                vecs.append( vec )
-                texts.append( text )
-        return texts, vecs, system_prompt
 
         
 
@@ -246,29 +199,6 @@ class ChatHaruhi:
         elif model_name == "BaiChuanAPIGPT":
             from .BaiChuanAPIGPT import BaiChuanAPIGPT
             return (BaiChuanAPIGPT(), tiktokenizer)
-        elif "qwen" in model_name:
-            if model_name == "qwen118k_raw":
-                from .Qwen118k2GPT import Qwen118k2GPT, Qwen_tokenizer
-                return (Qwen118k2GPT(model = "Qwen/Qwen-1_8B-Chat"), Qwen_tokenizer)
-            from huggingface_hub import HfApi 
-            from huggingface_hub.hf_api import ModelFilter
-            qwen_api = HfApi()
-            qwen_models = qwen_api.list_models(
-                filter = ModelFilter(model_name=model_name),
-                author = "silk-road"             
-            )
-            qwen_models_id = []
-            for qwen_model in qwen_models:
-                qwen_models_id.append(qwen_model.id)
-                # print(model.id)
-            if "silk-road/" + model_name in qwen_models_id:
-                from .Qwen118k2GPT import Qwen118k2GPT, Qwen_tokenizer
-                return (Qwen118k2GPT(model = "silk-road/" + model_name), Qwen_tokenizer)
-            else:
-                print(f'warning! undefined model {model_name}, use openai instead.')
-                from .LangChainGPT import LangChainGPT
-                return (LangChainGPT(), tiktokenizer) 
-            # print(models_id)
         else:
             print(f'warning! undefined model {model_name}, use openai instead.')
             from .LangChainGPT import LangChainGPT
@@ -320,50 +250,6 @@ class ChatHaruhi:
     
     def save_story_db(self, db_path):
         self.db.save(db_path)
-
-    def generate_prompt( self, text, role):
-        from langchain.schema import (
-            AIMessage,
-            HumanMessage,
-            SystemMessage
-        )
-        messages = self.generate_messages( text, role )
-        prompt = ""
-        for msg in messages:
-            if isinstance(msg, HumanMessage):
-                prompt += msg.content + "\n"
-            elif isinstance(msg, AIMessage):
-                prompt += msg.content + "\n"
-            elif isinstance(msg, SystemMessage):
-                prompt += msg.content + "\n"
-        return prompt
-
-
-    def generate_messages( self, text, role):
-        # add system prompt
-        self.llm.initialize_message()
-        self.llm.system_message(self.system_prompt)
-
-        # add story
-        query = self.get_query_string(text, role)
-        self.add_story( query )
-        self.last_query = query
-
-        # add query
-        self.llm.user_message(query)
-
-        return self.llm.messages
-    
-    def append_response( self, response, last_query = None ):
-        if last_query == None:
-            last_query_record = ""
-            if hasattr( self, "last_query" ):
-                last_query_record = self.last_query
-        else:
-            last_query_record = last_query
-
-        # record dialogue history
-        self.dialogue_history.append((last_query_record, response))
         
     def chat(self, text, role):
         # add system prompt
@@ -418,8 +304,9 @@ class ChatHaruhi:
             else:
                 sum_story_token += story_token
                 story_string += story + self.dialogue_divide_token
-
-        self.llm.user_message(story_string)
+        
+        if text_censor(story_string):
+            self.llm.user_message(story_string)
         
     def add_history(self):
 
