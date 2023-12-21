@@ -12,9 +12,7 @@
 
 <!-- (https://huggingface.co/spaces/silk-road/ChatHaruhi) -->
 
-We've just released finetuned ChatHaruhi-Qwen-1.8B model and code, try here <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/ChatHaruhi_x_Qwen1_8B.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-
-New Dataset [ChatHaruhi-Expand-118K](https://huggingface.co/datasets/silk-road/ChatHaruhi-Expand-118K) Released! Fine-Tuning Code Released!
+We've just released finetuned ChatHaruhi-Qwen-7B model and code, try here <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/ChatHaruhi_x_Qwen7B.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>. A detailed test on Harry Potter! <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/Harry_Potter_test_on_Qwen7B.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 
 
 <h4 align="center">

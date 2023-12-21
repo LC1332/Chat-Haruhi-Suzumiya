@@ -12,7 +12,8 @@
 
 <!-- (https://huggingface.co/spaces/silk-road/ChatHaruhi) -->
 
-[OpenAI](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI) と [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro) と [讯飞星火](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) をベースにしたデモはすでにオンラインで公開されています。現在、ローカルモデルはリリース済みですが、ローカルモデルのデモは開発中となっています。
+We've just released finetuned ChatHaruhi-Qwen-7B model and code, try here <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/ChatHaruhi_x_Qwen7B.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>. A detailed test on Harry Potter! <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/Harry_Potter_test_on_Qwen7B.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+
 
 <h4 align="center">
     <p>
