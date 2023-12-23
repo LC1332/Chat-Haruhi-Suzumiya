@@ -9,7 +9,7 @@
 
 <!-- (https://huggingface.co/spaces/silk-road/ChatHaruhi) -->
 
-We've just released finetuned ChatHaruhi-Qwen-7B model and code, try here <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/ChatHaruhi_x_Qwen7B.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>. A detailed test on Harry Potter! <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/Harry_Potter_test_on_Qwen7B.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+We've just released finetuned ChatHaruhi-Qwen-7B model and code, try here <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/ChatHaruhi_x_Qwen7B.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>. A detailed test on Harry Potter! <a href="https://colab.research.google.com/github/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/Harry_Potter_test_on_Qwen7B.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 
 目前基于[OpenAI](https://huggingface.co/spaces/chengli-thu/ChatHaruhi-OpenAI), [GLM](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-GLMPro), [讯飞星火](https://huggingface.co/spaces/hhhwmws/ChatHaruhi-Xinghuo) , 新增[百川53B](https://huggingface.co/spaces/silk-road/ChatHaruhi-BaichuanAPI)的demo已经上线。新增[百度文心](https://huggingface.co/spaces/silk-road/ChatHaruhi-Erniebot)
@@ -155,13 +155,25 @@ https://github.com/LC1332/Chat-Haruhi-Suzumiya/assets/5266090/8b88c8ac-262f-4705
 
 ## ChatHaruhi2
 
+### 基本的安装和使用
+
 为了方便后续研究，重构后的，ChatHaruhi2.0已经可以通过pip启动。目前2.0移除了图片和声音的设计，这些会在我们的后续研究中去重构。你可以通过下面的方式进行安装
 
 ```shell
-pip -q install transformers openai tiktoken langchain chromadb zhipuai chatharuhi datasets
+pip -q install transformers openai tiktoken langchain datasets charharuhi
 ```
 
-和如下的方式调用
+或者你也可以不安装charharuhi，改从
+
+https://github.com/LC1332/Haruhi-2-Dev
+
+去clone整个项目，再cd到ChatHaruhi文件夹进行使用（需要把```from chatharuhi```改为```from ChatHaruhi```
+
+详情见 https://github.com/LC1332/Haruhi-2-Dev/blob/main/notebook/ChatHaruhi2_demo.ipynb
+
+### 目前比较推荐的载入方式
+
+采用如下方式
 
 ```python
 from chatharuhi import ChatHaruhi
@@ -173,7 +185,18 @@ response = chatbot.chat(role='阿虚', text = '我看新一年的棒球比赛要
 print(response)
 ```
 
-现在ChatHaruhi支持直接从hugging face上拖取我们规定格式的chatbot的database。
+这个初始化目前和
+
+```python
+chatbot = ChatHaruhi( role_from_hf = 'silk-road/ChatHaruhi-RolePlaying/haruhi',\
+                      llm = 'openai')
+```
+
+是等价的。都会从 https://huggingface.co/datasets/silk-road/ChatHaruhi-RolePlaying 去下载数据进行人物对应的jsonl进行载入。
+
+### 从hf载入（推荐）
+
+也支持直接从hugging face上拖取我们规定格式的chatbot的database。
 
 ```python
 from chatharuhi import ChatHaruhi
@@ -193,22 +216,99 @@ chatbot = ChatHaruhi( role_from_hf = 'silk-road/ChatHaruhi-from-RoleLLM/Jack-Spa
                       embedding = 'bge_en')
 ```
 
-
 更多文档和代码见 https://github.com/LC1332/Haruhi-2-Dev 
 
 
-# 目前已经抽取的ChatBot
+### 从jsonl载入
 
-除了ChatHaruhi-54K中支持的32个人物外，我们还在不断添加人物
+```python
+chatbot = ChatHaruhi( role_from_jsonl = 'Your local jsonl file', \
+                      llm = 'openai')
+```
 
-| 人物 | hf地址 | 来自小说 | 备注 |
-| - | - | - | - |
-| 令狐冲 | [chengli-thu/linghuchong](https://huggingface.co/datasets/chengli-thu/linghuchong) | 笑傲江湖 | |
-| 岳不群 | [chengli-thu/yuebuqun](https://huggingface.co/datasets/chengli-thu/yuebuqun) | 笑傲江湖 | |
+### 仅有text和system_prompt的载入
+
+you need to prepare
+
+- all story files into a folder
+- the system prompt
+
+and use this interface
+
+```python
+from chatharuhi import ChatHaruhi
+
+text_folder = '/content/Haruhi-2-Dev/data/characters/haruhi/texts'
+
+system_prompt = '/content/Haruhi-2-Dev/data/characters/haruhi/system_prompt.txt'
+
+chatbot = ChatHaruhi( system_prompt = system_prompt,\
+                      llm = 'debug' ,\
+                      story_text_folder = text_folder)
+
+chatbot.chat(role='阿虚', text = 'Haruhi, 你好啊')
+```
+
+### Run with Local Model
+
+如果你想用我们prompt尝试 我们微调过的模型，或者是自己的模型
+
+see this notebook
+
+https://github.com/LC1332/Chat-Haruhi-Suzumiya/blob/main/notebook/ChatHaruhi_x_Qwen7B.ipynb
+
+### llm支持
+
+现在支持的llm字段
+
+
+```python
+if llm == 'openai':
+    self.llm, self.tokenizer = self.get_models('openai')
+elif llm == 'debug':
+    self.llm, self.tokenizer = self.get_models('debug')
+elif llm == 'spark':
+    self.llm, self.tokenizer = self.get_models('spark')
+elif llm == 'GLMPro':
+    self.llm, self.tokenizer = self.get_models('GLMPro')
+elif llm == 'ChatGLM2GPT':
+    self.llm, self.tokenizer = self.get_models('ChatGLM2GPT')
+    self.story_prefix_prompt = '\n'
+elif llm == "BaiChuan2GPT":
+    self.llm, self.tokenizer = self.get_models('BaiChuan2GPT')
+elif llm == "BaiChuanAPIGPT":
+    self.llm, self.tokenizer = self.get_models('BaiChuanAPIGPT')
+elif llm == "ernie3.5":
+    self.llm, self.tokenizer = self.get_models('ernie3.5')
+elif llm == "ernie4.0":
+    self.llm, self.tokenizer = self.get_models('ernie4.0')
+elif "qwen" in llm:
+    self.llm, self.tokenizer = self.get_models(llm)
+```
+
+### embedding支持
+
+Currently we support
+
+"luotuo_openai" for Chinese using a distilled LuotuoBert model / English using openai api (text-embedding-ada-002)
+
+"bge_en" using bge_small_en_v1.5
+
+"bge_zh" using bge_small_zh_v1.5
+
+Now, we need corresponding embeddings in the jsonl library.
+
+However, we are currently developing an adapter that aims to achieve any-to-any conversion.
+
+
+### 目前已经抽取的ChatBot
+
+除了ChatHaruhi-54K中支持的32个人物外，我们还在不断添加人物，目前已经支持140多个 [142个角色一览](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/notebook/current_roles.md)
 
 你也可以添加你喜欢的人物，整理成满足我们格式要求的dataset。然后merge到表格中。
 
-格式规则见 [众筹数据抽取](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/novel_collecting)
+格式规则见 [众筹数据抽取](https://github.com/LC1332/Chat-Haruhi-Suzumiya/tree/main/characters/novel_collecting) 
+
 
 
 ## 各个demo的快速启动
