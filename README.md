@@ -160,10 +160,10 @@ https://github.com/LC1332/Chat-Haruhi-Suzumiya/assets/5266090/8b88c8ac-262f-4705
 为了方便后续研究，重构后的，ChatHaruhi2.0已经可以通过pip启动。目前2.0移除了图片和声音的设计，这些会在我们的后续研究中去重构。你可以通过下面的方式进行安装
 
 ```shell
-pip -q install transformers openai tiktoken langchain datasets charharuhi
+pip -q install transformers openai tiktoken langchain datasets chatharuhi
 ```
 
-或者你也可以不安装charharuhi，改从
+或者你也可以不安装chatharuhi，改从
 
 https://github.com/LC1332/Haruhi-2-Dev
 
