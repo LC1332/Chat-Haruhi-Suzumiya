@@ -489,7 +489,7 @@ Please cite the repo if you use the data or code in this repo.
 
 ## 当前模型结果
 
-Cherrypick了一些有趣的结果，如果你也想测请私下联系我。
+Cherrypick了一些有趣的结果，如果你也想测请私下联系我~
 
 ```
 老师:「凉宫，来做个自我介绍」
