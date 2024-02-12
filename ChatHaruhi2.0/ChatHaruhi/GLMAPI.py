@@ -12,9 +12,9 @@ SUCCESS = "SUCCESS"
 PROCESSING = "PROCESSING"
 
 
-class GLM3Turbo(BaseLLM):
+class GLMAPI(BaseLLM):
     def __init__(self, model="glm-3-turbo", verbose=False):
-        super(GLM3Turbo, self).__init__()
+        super(GLMAPI, self).__init__()
 
         self.client = ZhipuAI(api_key=zhipu_api)
 
