@@ -49,6 +49,10 @@ class ChatHaruhi:
             self.llm, self.tokenizer = self.get_models('spark')
         elif llm == 'GLMPro':
             self.llm, self.tokenizer = self.get_models('GLMPro')
+        elif llm == 'GLM3Turbo':
+            self.llm, self.tokenizer = self.get_models('GLM3Turbo')
+        elif llm == "GLM4":
+            self.llm, self.tokenizer = self.get_models('GLM4')
         elif llm == 'ChatGLM2GPT':
             self.llm, self.tokenizer = self.get_models('ChatGLM2GPT')
             self.story_prefix_prompt = '\n'
@@ -231,6 +235,12 @@ class ChatHaruhi:
         elif model_name == 'GLMPro':
             from .GLMPro import GLMPro
             return (GLMPro(), tiktokenizer)
+        elif model_name == 'GLM3Turbo':
+            from .GLMAPI import GLMAPI
+            return (GLMAPI(model="glm-3-turbo"), tiktokenizer)
+        elif model_name == 'GLM4':
+            from .GLMAPI import GLMAPI
+            return (GLMAPI(model="glm-4"),tiktokenizer)
         elif model_name == 'ernie3.5':
             from .ErnieGPT import ErnieGPT
             return (ErnieGPT(), tiktokenizer)
