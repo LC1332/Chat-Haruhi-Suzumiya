@@ -1,0 +1,22 @@
+{
+  "files": [],
+  "include": [
+    "src/**/*",
+    "./.eslintrc.cjs",
+    "./components.d.ts",
+    "./auto-imports.d.ts",
+    "./uno.config.ts"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ],
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "types": ["unplugin-icons/types/vue"]
+  }
+}
