@@ -261,10 +261,9 @@ class ChatHaruhi:
                 from .Qwen118k2GPT import Qwen118k2GPT, Qwen_tokenizer
                 return (Qwen118k2GPT(model = "Qwen/Qwen-1_8B-Chat"), Qwen_tokenizer)
             from huggingface_hub import HfApi 
-            from huggingface_hub.hf_api import ModelFilter
             qwen_api = HfApi()
             qwen_models = qwen_api.list_models(
-                filter = ModelFilter(model_name=model_name),
+                model_name=model_name,
                 author = "silk-road"             
             )
             qwen_models_id = []
